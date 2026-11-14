@@ -18,7 +18,7 @@ import tempfile
 from pathlib import Path
 
 AQUI = Path(__file__).resolve().parent
-CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 LARGURA, ALTURA = 1080, 1350
 
 # Paleta oficial Petróleo & Âmbar (nenhum HEX novo)

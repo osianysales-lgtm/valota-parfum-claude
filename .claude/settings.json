@@ -1,0 +1,14 @@
+{
+  "agents": {
+    "location": "agents/",
+    "enabled": true
+  },
+  "skills": {
+    "location": "skills/",
+    "enabled": true
+  },
+  "organizes": {
+    "location": "_expxagents/",
+    "enabled": true
+  }
+}

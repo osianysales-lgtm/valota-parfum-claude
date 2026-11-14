@@ -18,7 +18,7 @@ import tempfile
 from pathlib import Path
 
 AQUI = Path(__file__).resolve().parent
-CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 L, A = 1080, 1350
 MONTSERRAT = (AQUI.parent / "carrossel-tweet/fonts/Montserrat-VariableFont_wght.ttf").as_uri()
 GOTHAM = (Path.home() / "Library/Fonts/Gotham Black.otf").as_uri()
