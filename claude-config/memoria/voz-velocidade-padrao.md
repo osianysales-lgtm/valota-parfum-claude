@@ -22,3 +22,5 @@ Histórico: 1,3x (11/11, top 5 árabes) → 1,15x (12/11, pedido dela) → no v2
 - **Fator final = (fim da fala em 1x × 4,35) ÷ nº de palavras**: no v28 deu 1,47x; no v24 deu ~1,3x depois do corte. Acelerar o MP4 final com `setpts=PTS/F,fps=30` + `atempo=F`, e conferir a clareza transcrevendo o áudio final.
 - **Tamanho do roteiro a ~4,3 palavras/s:** 20–30 s ≈ 85–130 palavras · 30–45 s ≈ 130–190 · 45–60 s ≈ 190–260.
 - Não refazer vídeo antigo sem ela pedir ([[regra-nova-vale-pros-proximos]]). Ver [[video-avatar-formato]].
+
+**v32 (14/11/2026):** a conta deu 1,51x (67,42 s × 4,35 ÷ 194). Mandei 1,47x e 1,51x e ela pediu "mais acelerado" e confirmou "1,51". Histórico de escolhas: v28 1,47 · v29 1,67 · v31 1,73 · v32 1,51. Ela sempre escolhe a amostra MAIS RÁPIDA quando as duas ficam perto do ritmo. Ela lembra sempre: "não esquece a velocidade da voz que combinamos".

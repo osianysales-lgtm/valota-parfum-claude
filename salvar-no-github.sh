@@ -1,7 +1,7 @@
 #!/bin/zsh
 # Copia memórias + skills do Claude pra dentro do projeto e envia tudo pro GitHub.
 # Uso: ./salvar-no-github.sh   (ou peça ao Claude: "salva no GitHub")
-set -e
+set -e; export PATH="$HOME/.local/bin:$PATH"
 cd "$(dirname "$0")"
 DEST=claude-config
 mkdir -p "$DEST"

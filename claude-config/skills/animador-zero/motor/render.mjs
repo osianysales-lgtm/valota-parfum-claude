@@ -48,7 +48,7 @@ if (!CHROME) { console.error('FALTA: Google Chrome ou Microsoft Edge. Instale o 
 const srv = await serve();
 const args = ['--enable-gpu', '--ignore-gpu-blocklist', '--hide-scrollbars', '--force-device-scale-factor=1', '--window-size=1080,1920', '--disable-background-timer-throttling'];
 if (os.platform() === 'win32') args.push('--use-angle=d3d11');
-const browser = await puppeteer.launch({ executablePath: CHROME, headless: true, args });
+const browser = await puppeteer.launch({ executablePath: CHROME, headless: true, args, protocolTimeout: 0 });   // sem limite: se o Mac engasgar, o quadro espera em vez de derrubar o render
 const page = await browser.newPage();
 await page.setViewport({ width: 1080, height: 1920, deviceScaleFactor: 1 });
 let erro = null;

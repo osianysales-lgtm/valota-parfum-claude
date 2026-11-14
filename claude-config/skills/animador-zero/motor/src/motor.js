@@ -658,7 +658,8 @@ window.renderFrame = (t) => {
     else { const kk = s.ease ? 1 - Math.pow(1 - k, 3) : k; vp.set(s.p[0] + s.d[0] * kk, s.p[1] + s.d[1] * kk, s.p[2] + s.d[2] * kk); }
     if (!s.still) { vp.x += Math.sin(t * 0.7) * 0.025 + (CINE ? 0.008 * Math.sin(t * 2.3) : 0); vp.y += Math.sin(t * 0.53 + 1.3) * 0.016 + (CINE ? 0.006 * Math.sin(t * 3.1 + 2) : 0); }
     camera.fov = (s.fov || (CINE ? 33 : 35)) * (1 + (s.still ? 0 : CINE ? 0.035 : 0.07) * (1 - smooth(0, 0.3, lt))); camera.updateProjectionMatrix();   // "soco" de zoom a cada corte
-    camera.position.copy(vp); camera.lookAt(vq);
+    if (camera.near !== 0.1) { camera.near = 0.1; camera.updateProjectionMatrix(); if (CINE && cine.bokeh) cine.bokeh.uniforms.nearClip.value = 0.1; }
+    camera.up.set(0, 1, 0); camera.position.copy(vp); camera.lookAt(vq);
     return { name, turn: !!s.turn, still: !!s.still, scr: !!s.scr, focus: vp.distanceTo(vq) };
   }
 
@@ -1119,10 +1120,15 @@ window.renderFrame = (t) => {
     bon.frasco = bottle(0, 0xd49a4e, goldM, 0.85); bon.frasco.position.set(0.0, -0.53, 0.07); bon.frasco.rotation.x = -0.15; hero.armR.add(bon.frasco);
     bon.cel = new THREE.Group(); hero.armL.add(bon.cel); bon.cel.position.set(0.04, -0.56, 0.03); bon.cel.rotation.set(0, Math.PI / 2, 0);
     bon.cel.add(new THREE.Mesh(new RoundedBoxGeometry(0.085, 0.17, 0.012, 2, 0.01), blackM));
-    { const sc = new THREE.Mesh(new THREE.PlaneGeometry(0.075, 0.155), new THREE.MeshBasicMaterial({ color: 0x9cc8ff, toneMapped: false })); sc.position.z = -0.007; sc.rotation.y = Math.PI; bon.cel.add(sc); }
+    if (V.telaCelular) {   // 14/11: info = corte pra tela do celular dentro do 3D (a imagem do card fica deitada na tela)
+      bon.cel.children[0].geometry = new RoundedBoxGeometry(0.155, 0.218, 0.012, 2, 0.012);
+      const hold = new THREE.Group(); hold.position.z = -0.007; hold.rotation.y = Math.PI; bon.cel.add(hold);
+      const sc = new THREE.Mesh(new THREE.PlaneGeometry(0.2, 0.14), new THREE.MeshBasicMaterial({ map: tTex, toneMapped: false })); sc.material.color.setScalar(0.88); sc.rotation.z = Math.PI / 2; hold.add(sc); bon.celScr = sc;
+    } else { const sc = new THREE.Mesh(new THREE.PlaneGeometry(0.075, 0.155), new THREE.MeshBasicMaterial({ color: 0x9cc8ff, toneMapped: false })); sc.position.z = -0.007; sc.rotation.y = Math.PI; bon.cel.add(sc); }
     bon.celA = new THREE.Group(); val.armR.add(bon.celA); bon.celA.position.set(0.0, -0.58, 0.05); bon.celA.rotation.set(-1.25, 0, 0);
-    bon.celA.add(new THREE.Mesh(new RoundedBoxGeometry(0.18, 0.095, 0.012, 2, 0.01), blackM));
-    { const sc = new THREE.Mesh(new THREE.PlaneGeometry(0.165, 0.083), new THREE.MeshBasicMaterial({ map: tTex, toneMapped: false })); sc.position.z = 0.007; bon.celA.add(sc); }
+    const TL = !!V.telaCelular;
+    bon.celA.add(new THREE.Mesh(TL ? new RoundedBoxGeometry(0.218, 0.155, 0.012, 2, 0.012) : new RoundedBoxGeometry(0.18, 0.095, 0.012, 2, 0.01), blackM));
+    { const sc = new THREE.Mesh(TL ? new THREE.PlaneGeometry(0.2, 0.14) : new THREE.PlaneGeometry(0.165, 0.083), new THREE.MeshBasicMaterial({ map: tTex, toneMapped: false })); if (TL) sc.material.color.setScalar(0.88); sc.position.z = 0.007; bon.celA.add(sc); bon.celAscr = sc; }
     bon.caixa = new THREE.Group(); hero.armR.add(bon.caixa); bon.caixa.position.set(0.0, -0.6, 0.06);
     mesh(new RoundedBoxGeometry(0.13, 0.19, 0.07, 2, 0.01), new THREE.MeshStandardMaterial({ color: C(V.caixaCor || '#3a2340'), roughness: 0.45 }), 0, 0, 0, bon.caixa);
     mesh(new RoundedBoxGeometry(0.135, 0.03, 0.075, 2, 0.008), goldM, 0, 0.04, 0, bon.caixa);
@@ -1319,6 +1325,21 @@ window.renderFrame = (t) => {
     }
     return { fr, cel, celA, cx };
   }
+  const _tS = new THREE.Vector3(), _tN = new THREE.Vector3(), _tU = new THREE.Vector3(), _tQ = new THREE.Quaternion();
+  function bonTela(shot, t) {
+    let m = bon.celA.visible ? bon.celAscr : bon.cel.visible && bon.celScr ? bon.celScr : null;
+    if (!m) { bon.celA.visible = true; m = bon.celAscr; }
+    hero.g.updateMatrixWorld(true); bon.val.g.updateMatrixWorld(true);
+    m.getWorldPosition(_tS); m.getWorldQuaternion(_tQ);
+    _tN.set(0, 0, 1).applyQuaternion(_tQ); _tU.set(0, 1, 0).applyQuaternion(_tQ);
+    const fov = 33, hh = Math.tan(fov * Math.PI / 360) * 1080 / 1920, dist = (0.1 / 0.9) / hh;   // a tela ocupa ~90% da largura
+    camera.fov = fov; camera.near = dist - 0.006; camera.updateProjectionMatrix();   // corta o que fica entre a camera e a tela (mao, cabeca)
+    if (cine.bokeh) cine.bokeh.uniforms.nearClip.value = camera.near;
+    camera.position.copy(_tS).addScaledVector(_tN, dist);
+    camera.position.x += Math.sin(t * 0.7) * 0.004; camera.position.y += Math.sin(t * 0.53 + 1.3) * 0.003;   // leve camera na mao
+    camera.up.copy(_tU); camera.lookAt(_tS);
+    shot.focus = dist;
+  }
   function frameBonecos(t, env, shot) {
     const P = actor('h', t), A = actor('a', t);
     P.x = bon.hx; P.z = bon.hz; P.yaw = 0.5; A.x = bon.ax; A.z = bon.az; A.yaw = -0.5;
@@ -1416,7 +1437,7 @@ window.renderFrame = (t) => {
     cine.scrL.intensity = ug ? 0 : 1.0;
     cine.uglyHemi.visible = ug;
     cine.shafts.visible = cine.dust.visible = !ug;
-    cine.shafts.children.forEach((m, i) => (m.material.opacity = cine.shaftOp * flick * (0.75 + 0.25 * Math.sin(t * 0.6 + i * 0.9))));
+    cine.shafts.children.forEach((m, i) => (m.material.opacity = cine.shaftOp * flick * 0.85));
     const dp = cine.dust.geometry.attributes.position; cine.dustSeed.forEach((pp, i) => dp.setXYZ(i, pp.x + 0.06 * Math.sin(t * 0.3 + i), pp.y + 0.03 * Math.sin(t * 0.23 + i * 1.7), pp.z + 0.06 * Math.cos(t * 0.27 + i * 0.7))); dp.needsUpdate = true;
     scene.overrideMaterial = ug ? cine.ugly : null; cine.gtao.enabled = cine.bokeh.enabled = !ug;
     scene.fog = ug ? null : cine.fog; scene.background = ug ? cine.uglyBg : cine.bg;
@@ -1424,7 +1445,7 @@ window.renderFrame = (t) => {
     if (ug) bot.inner.intensity = 0;
     cine.bokeh.uniforms.focus.value = shot.focus;
     cine.bokeh.uniforms.aperture.value = shot.name === 'MOUTH' ? 0.005 : shot.name === 'EST' || shot.name.startsWith('ORB') || shot.name === 'W2' || shot.name === 'REV' ? 0.0013 : shot.scr ? 0.0022 : 0.003;
-    bloom.strength = ug ? 0 : 0.3 + 0.05 * env; bloom.threshold = 0.8;
+    bloom.strength = ug ? 0 : 0.32; bloom.threshold = 0.8;   // luz fixa (nao pulsa com a voz)
   }
 
   const TX = V.textos || {};
@@ -1460,6 +1481,7 @@ window.renderFrame = (t) => {
   function stepScene(t) {
     const env = envAt(t), shot = cam(t);
     const work = PLANO ? (framePlano(t, env, shot), 0) : BLENDER ? ((BON ? frameBonecos : frameBlender)(t, env, shot), 0) : frameFesta(t, env, shot);
+    if (BON && V.telaCelular && shot.scr) bonTela(shot, t);
     drawTelao(t); if (!CINE) drawMinis(t);
     // luzes: neon pulsando no tempo da musica (100 bpm)
     const beat = 0.78 + 0.22 * Math.exp(-((t % 0.6) * 5)), dim = 1 - 0.65 * work;
@@ -1474,7 +1496,8 @@ window.renderFrame = (t) => {
     cityMats.forEach(m => m.color.setScalar(1.0));
     bloom.strength = 0.42 + 0.06 * env;
     if (CINE) cineLights(t, env, shot);
-    if (BON) { halo.visible = false; cine.lamp.intensity = 0; if (shot.scr) cine.bokeh.uniforms.aperture.value = 0.0007; }
+    if (BON) { halo.visible = false; cine.lamp.intensity = 0; if (shot.scr) cine.bokeh.uniforms.aperture.value = 0.0007;
+      if (V.telaCelular && shot.scr) { cine.shafts.visible = cine.dust.visible = false; bloom.strength = 0; } }   // nada de raio de sol lavando a tela do celular
     return { shot, car };
   }
   function cineRender(t) {
@@ -1506,9 +1529,7 @@ window.renderFrame = (t) => {
   window.renderFrame = (t) => {
     let st;
     if (CINE) { st = cineRender(t); cineOverlays(t); }
-    if (BON && V.telaCelular) { const on = st.shot.scr, el = document.getElementById('celtela'); el.style.opacity = on ? 1 : 0;
-      if (on) { const cv = document.getElementById('celcv'); cv.getContext('2d').drawImage(tc, 0, 0); } }
-    else { st = stepScene(t); composer.render(); }
+    else { st = stepScene(t); composer.render(); }   // 14/11: o celular grande no topo saiu (info = corte pra tela dentro do 3D)
     fadeEl.style.opacity = Math.max(BON ? 0 : 1 - smooth(0, 0.3, t), smooth(DUR - (BON ? 0.5 : 0.9), DUR - 0.1, t));
     discEl.style.opacity = st.car ? 1 : 0;
     let html = '', who = 'h';

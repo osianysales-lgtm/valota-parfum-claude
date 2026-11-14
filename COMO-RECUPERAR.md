@@ -23,7 +23,7 @@ Ou peça ao Claude: **"salva no GitHub"**.
 2. Baixe o projeto:
    ```
    cd ~/Downloads
-   git clone https://github.com/SEU-USUARIO/valota-parfum-claude.git ClaudCode
+   git clone https://github.com/osianysales-lgtm/valota-parfum-claude.git ClaudCode
    ```
 3. Peça ao Claude: **"restaura as memórias e skills que estão em claude-config"**. Ele copia:
    - `claude-config/memoria/` → `~/.claude/projects/<nome-da-pasta>/memory/`

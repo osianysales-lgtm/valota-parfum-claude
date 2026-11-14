@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: 02bdb40f-fa2f-4926-bbea-c3f2c4a23276
-  modified: 2026-11-14T13:26:03.816Z
+  modified: 2026-11-14T16:43:16.699Z
 ---
 
 Referência: reel de onde ela comprou a skill Animador Zero — instagram.com/reel/Dfp6Q94tYU6 (menino + robô laranja, quarto com computador antigo).
@@ -22,6 +22,10 @@ Referência: reel de onde ela comprou a skill Animador Zero — instagram.com/re
 
 **Boca**
 7. **Boca mexe em TODA fala**, bem visível, nunca parada enquanto o boneco fala. Conferir no close.
+
+**Luz**
+8. **Iluminação fixa, de ambiente, sem piscar/pulsar** (14/11): no motor, o brilho (bloom) seguia a voz (`0.3 + 0.05 * env`) e os raios de sol "respiravam" (seno) → a imagem brilhava indo e voltando. Nos próximos: bloom constante e raios constantes, como no reel de exemplo. (Também havia um render duplo no motor — `if (BON && V.telaCelular) … else composer.render()` — que deixava a loja estourada/tremendo; corrigido 14/11, conferir que `renderFrame` é só `if (CINE) cineRender else stepScene`.)
+9. **Info no celular = insert 3D** (feito 14/11, `bonTela` no motor): com `telaCelular`, o plano SCR leva a câmera até a tela do celular na mão da Bia (ou do Rafa se só o dele estiver visível); a tela enche o quadro, o que fica na frente é cortado, sem raio de sol nem brilho. O celular grande no topo da tela foi aposentado.
 
 **Why:** ela viu os 6 primeiros episódios e reclamou: boca fechada falando, card sobre o rosto da Bia, plano só da cabeça, coisa surgindo do nada ("coisa de preguiçoso", "faz isso virar realmente uma história"). A tentativa de pôr o card no topo da tela também foi reprovada.
 
