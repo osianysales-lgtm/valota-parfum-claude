@@ -40,7 +40,7 @@ export default {
   acoes: [
     [0, ini(1), 'mostraCaixa', 'h'],
     [i1 - 0.5, INS[0][1] + 0.2, 'mostraCelular', 'a'],
-    [tEsc - 0.2, tOrig + 0.2, 'escaneia', 'h'],
+    [tEsc - 0.2, tOrig + 2.6, 'escaneia', 'h'],
     [i3 - 0.5, INS[3][1] + 0.2, 'mostraCelular', 'a'],
     [i4 - 0.5, INS[4][1] + 0.2, 'mostraCelular', 'a'],
     [ini(10) - 0.1, DUR, 'olhaCamera', 'h'],

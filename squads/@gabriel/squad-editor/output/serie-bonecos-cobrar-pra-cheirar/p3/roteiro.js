@@ -46,11 +46,11 @@ export default {
   cuts: [
     [0, 'EST'], [ini(1) - 0.05, 'W2'], [8.0, 'LOWV'],          // gancho na tela ate 8 s: so planos abertos
     [ini(2) - 0.05, 'CH'], [tEspanta - 0.05, 'OTS'],
-    [ini(3) - 0.05, 'MOUTHV'],
+    [ini(3) - 0.05, 'CV'],
     [ini(4) - 0.05, 'LOWH'], [tAmostra - 0.05, 'W2'],
     [ini(5) - 0.05, 'CV'],
     [ini(6) - 0.05, 'MOUTH'],
-    [tVai, 'ANDA'], [tPega - 0.1, 'PLACA'], [tPendura + 1.0, 'SCR'], [tVolta, 'ANDA'], [tVolta + 1.15, 'CV'],
+    [tVai, 'ANDA'], [tPendura + 1.0, 'SCR'], [tVolta, 'ANDA'], [tVolta + 1.15, 'CV'],
     [ini(9) - 0.05, 'ORB'],
     [ini(10) - 0.1, 'CAMH'],
   ],
