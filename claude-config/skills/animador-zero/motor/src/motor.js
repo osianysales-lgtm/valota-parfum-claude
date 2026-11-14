@@ -1030,7 +1030,7 @@ window.renderFrame = (t) => {
           c = mix(c, c * c * (3.0 - 2.0 * c), 0.18 * amount);
           c = c * (1.0 - 0.03 * amount) + 0.025 * amount;
           c *= 1.0 - amount * r * 0.8;
-          c += amount * (rnd(vUv * vec2(1080.0, 1920.0) + fract(time * 7.13) * 91.7) - 0.5) * 0.045;
+          // 14/11: sem granulado (no video em alta ficava cintilando)
           gl_FragColor = vec4(c, 1.0);
         }` }));
 

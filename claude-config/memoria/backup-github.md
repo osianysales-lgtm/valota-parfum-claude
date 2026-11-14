@@ -14,3 +14,4 @@ Backup do projeto ClaudCode no GitHub **privado** `osianysales-lgtm/valota-parfu
 - `gh` foi instalado em `~/.local/bin/gh` (sem Homebrew no Mac), já logado.
 - Ficam FORA (.gitignore): `.env*`, vídeos mp4/mov, mídia de `output/` e `carrosseis/` (posts já publicados, ela não precisa), venvs, node_modules.
 - Guia de restauração: `COMO-RECUPERAR.md` na raiz.
+- 14/11/2026: conta GitHub `isabella612` virou colaboradora (outro computador, outra conta). Scripts agora são portáteis (caminho da memória calculado pela pasta) e há `./puxar-do-github.sh` = "puxa as novidades do GitHub" (git pull + instala memórias/skills). `salvar` também puxa antes de enviar. settings.json não é mais copiado (é pessoal de cada computador).

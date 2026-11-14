@@ -37,4 +37,4 @@
 - [Não generalizar ajuste de uma saga/peça](nao-generalizar-ajuste-de-uma-saga.md) — pedido dela vale só pro que ela está olhando; não virar regra geral nem mexer em outra saga sem perguntar
 - [Série de bonecos: 6 episódios aprovados](serie-bonecos-6-episodios.md) — roteiros FINAIS das sagas Cobrar pra cheirar + Bidaya; legenda ≤20 caracteres/linha, selo PARTE, bipe no Vanilla P*rn
 - [Direção de cena dos bonecos](bonecos-direcao-cena.md) — seguir reel referência; ação vira cena (Valdir anda e pendura a placa); info = corte pra tela 3D; nada na cara; nunca só o casco; boca sempre mexendo
-- [Backup no GitHub](backup-github.md) — repo privado osianysales-lgtm/valota-parfum-claude; "salva no GitHub" = ./salvar-no-github.sh
+- [Backup no GitHub](backup-github.md) — repo privado osianysales-lgtm/valota-parfum-claude, colaboradora isabella612; "salva no GitHub" = ./salvar-no-github.sh, "puxa as novidades" = ./puxar-do-github.sh

@@ -19,14 +19,13 @@ Ou peça ao Claude: **"salva no GitHub"**.
 
 ## Usar em outro computador
 
-1. Instale o Claude Code e faça login no GitHub.
-2. Baixe o projeto:
-   ```
-   cd ~/Downloads
-   git clone https://github.com/osianysales-lgtm/valota-parfum-claude.git ClaudCode
-   ```
-3. Peça ao Claude: **"restaura as memórias e skills que estão em claude-config"**. Ele copia:
-   - `claude-config/memoria/` → `~/.claude/projects/<nome-da-pasta>/memory/`
-   - `claude-config/skills/` → `~/.claude/skills/`
-   - `claude-config/settings.json` → `~/.claude/settings.json`
+1. A conta do GitHub precisa ser colaboradora do repositório (já feito pra `isabella612`).
+2. Instale o VS Code + extensão Claude Code e clone o projeto (`Git: Clone` → `osianysales-lgtm/valota-parfum-claude`) dentro de `Downloads`.
+3. Na pasta `ClaudCode`, rode `./puxar-do-github.sh` (ou peça ao Claude: **"puxa as novidades do GitHub"**). Ele instala as memórias e skills de `claude-config/` no lugar certo deste computador.
 4. Recrie o arquivo `.env` com as chaves (ElevenLabs etc.) e reinstale as dependências (`npm install` dentro de `squads/@gabriel/squad-editor` e de `claude-config/skills/animador-zero/motor`).
+
+## Duas pessoas usando ao mesmo tempo
+
+- **Antes de começar:** `./puxar-do-github.sh` ("puxa as novidades do GitHub").
+- **Ao terminar:** `./salvar-no-github.sh` ("salva no GitHub"). O script puxa antes de enviar, então junta as memórias das duas.
+- Os dois scripts calculam sozinhos a pasta de memória de cada computador.
