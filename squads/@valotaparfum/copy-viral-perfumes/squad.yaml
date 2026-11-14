@@ -1,0 +1,207 @@
+squad:
+  code: copy-viral-perfumes
+  setor: marketing
+  grupo: redes-sociais
+  sessao: copy
+  name: Copy Viral Perfumes
+  description: >
+    Squad especialista em perfumaria que escreve copy e roteiros para viralizar vídeos da
+    Valota Parfum no TikTok e no Instagram Reels. Toda peça segue os dois materiais-base da
+    pasta "projeto copy": a Estrutura Viral em 9 etapas (Ganchismo, Promessa aberta,
+    Introdução, Bloco 1, Ponta solta 1, Bloco 2, Ponta solta 2, Solução, CTA) e o guia de
+    ganchos (5 fórmulas de gancho falado + método de 6 passos do gancho escrito + 10
+    categorias de palavras de impacto). Dois modos: vídeo único (um perfume ou tema) e
+    pacote (pautas + roteiros da semana). Fatos de perfume conferidos na Fragrantica,
+    números sempre reais (nunca inventados), QA com nota de corte 8. Toda entrega traz NO MÍNIMO
+    3 VERSÕES completas de roteiro para a Osiany escolher, e entrega TUDO NO CHAT (sem HTML, pra economizar
+    token). Entrega só a copy.
+  icon: pen-tool
+  version: "1.0.0"
+  category: marketing
+  tags:
+    - copywriting
+    - roteiro
+    - ganchos
+    - tiktok
+    - reels
+    - perfumaria
+
+  company: "_expxagents/_memory/company.md"
+  preferences: "_expxagents/_memory/preferences.md"
+  memory: "_memory/memories.md"
+
+  knowledge:
+    - conhecimento/vencedores.md
+    - conhecimento/estrutura-viral.md
+    - conhecimento/ganchos.md
+    - conhecimento/ganchos-usados.md
+    - conhecimento/formatos-perfume.md
+    - conhecimento/ctas.md
+    - conhecimento/boas-praticas-reels-copy.md
+    - conhecimento/serie-bonecos.md   # episódios de bonecos 3D: opinião + cena vivida + humor, P1/P2/P3
+  sources:
+    - "projeto copy/Estrutura de video.pdf"
+    - "projeto copy/exemplos de ganchos.pdf"
+    - "_expxagents/core/best-practices/instagram-reels.md"
+    - "_expxagents/core/best-practices/copywriting.md"
+
+  target_audience: Valota Parfum (@valotaparfum), criadora de conteúdo de perfumes de nicho, grife e árabes
+  platform: tiktok + instagram
+  format: instagram-reels   # carrega _expxagents/core/best-practices/instagram-reels.md (antes "roteiro + copy" não carregava nada)
+
+  schedule:
+    enabled: false
+
+  skills:
+    - web_search
+    - web_fetch
+    - file_management
+
+  agents:
+    - id: diretora-pauta
+      name: "Helena Brandão"
+      icon: compass
+      avatar: "https://api.dicebear.com/9.x/adventurer/svg?seed=Helena"
+      prompt: agents/diretora-pauta.agent.md
+
+    - id: perfumista-pesquisador
+      name: "Caio Ferraz"
+      icon: search
+      avatar: "https://api.dicebear.com/9.x/adventurer/svg?seed=Caio"
+      prompt: agents/perfumista-pesquisador.agent.md
+
+    - id: mestre-ganchos
+      name: "Lara Vieira"
+      icon: zap
+      avatar: "https://api.dicebear.com/9.x/adventurer/svg?seed=Lara"
+      prompt: agents/mestre-ganchos.agent.md
+
+    - id: roteirista
+      name: "Nina Prado"
+      icon: pencil
+      avatar: "https://api.dicebear.com/9.x/adventurer/svg?seed=Nina"
+      prompt: agents/roteirista.agent.md
+
+    - id: copy-distribuicao
+      name: "Téo Martins"
+      icon: hash
+      avatar: "https://api.dicebear.com/9.x/adventurer/svg?seed=Teo"
+      prompt: agents/copy-distribuicao.agent.md
+
+    - id: revisor-retencao
+      name: "Otto Reis"
+      icon: shield
+      avatar: "https://api.dicebear.com/9.x/adventurer/svg?seed=Otto"
+      prompt: agents/revisor-retencao.agent.md
+
+    - id: apresentadora-visual
+      name: "Íris Monteiro"
+      icon: layout
+      avatar: "https://api.dicebear.com/9.x/adventurer/svg?seed=Iris"
+      prompt: agents/apresentadora-visual.agent.md
+
+  pipeline:
+    # REGRAS PERMANENTES
+    # 1. A duração de cada vídeo é SEMPRE perguntada antes de escrever (padrão sugerido 30–60s).
+    # 2. Número, preço, fixação e elogios são sempre reais (briefing da Osiany ou fonte conferida).
+    #    O que faltar vira [PREENCHER], nunca é inventado.
+    # 3. Gancho escrito nunca repete o gancho falado.
+    # 4. A squad entrega só a copy. Não despacha para a squad-editor.
+    # 5. MÍNIMO 3 VERSÕES completas por vídeo (A, B, C), cada uma com gancho/ângulo diferente.
+    #    A Osiany escolhe no final, comparando no CHAT (tabela "Qual escolher?"). NÃO gerar HTML.
+    # 6. TODO pedido de copy roda a squad inteira (os 7 agentes, na ordem) e cada agente lê os 5 arquivos
+    #    de conhecimento INTEIROS antes de trabalhar: vencedores, estrutura-viral, ganchos, formatos-perfume, ctas
+    #    e boas-praticas-reels-copy (guias de Reels e Copywriting da plataforma, que antes não eram carregados).
+    #    ganchos.md é a transcrição completa dos PDFs de ganchos; ninguém escreve gancho sem ter lido tudo.
+    # 8. COSTURA: as 9 etapas são esqueleto, não blocos. Fala fluida e conectada, ponte em toda virada,
+    #    Solução continua a cena do gancho (nada de lista "Calor: X. Encontro: Y."), piada armada e paga.
+    #    Otto reprova (eliminatório) roteiro que soe como lista. Ver estrutura-viral.md seção 10.
+    #    + CONVERSACIONAL (13/11/2026, todo roteiro): 15–25 palavras por frase, poucos pontos, toda frase
+    #    começa com conectivo/retomada, lista = uma frase só. Corta item, nunca conectivo. Seção 10, regra 7.
+    # 9. GANCHO ESCRITO FIXO (Osiany, 11/11/2026): o texto do gancho aparece no 1º quadro, GRANDE, e fica
+    #    PARADO na tela durante todo o gancho falado (mínimo ~5 s, ideal até o fim da 1ª frase, ~8–10 s).
+    #    Muita gente assiste no mudo: é o texto que segura. Frase curta e de impacto ("PARA DE FAZER LAYERING ERRADO").
+    # 7. CTA PADRÃO (Osiany, 13/11/2026): toda fala final termina em "Segue a Valota Parfum pra mais dicas e achados de perfumaria."
+    #    Indicação de perfume: "Salva esse vídeo pra não esquecer. Quer ficar cheiroso sem pagar preço de grife? Segue a Valota Parfum pra mais dicas e achados de perfumaria."
+    #    Engraçado: "Compartilha com alguém que você quer ver cheiroso e segue a Valota Parfum pra mais dicas e achados de perfumaria."
+    #    Legenda: 1ª linha = gancho de leitura; corpo COMPLEMENTA o vídeo (nunca repete); termina em
+    #    "...siga @valotaparfum para mais dicas e achados de perfumaria." "Comenta aqui" quase nunca. Só vale pros próximos.
+
+    steps:
+      - id: step-01
+        agent: diretora-pauta
+        label: "Helena identifica o modo (vídeo único ou pacote), pergunta formato, objetivo, DURAÇÃO e dados reais da Osiany; no pacote, sugere as pautas"
+        execution: inline
+
+      - id: checkpoint-01
+        type: checkpoint
+        label: "Osiany confirma o briefing (e aprova a lista de pautas, no Modo Pacote)"
+        deliverFrom: diretora-pauta
+        options: [approve, request_changes]
+        on_reject: step-01
+
+      - id: step-02
+        agent: perfumista-pesquisador
+        label: "Caio monta a Ficha Técnica Traduzida de cada perfume (Fragrantica via Playwright, fatos curiosos com fonte, riscos de comentário)"
+        deliverFrom: diretora-pauta
+        execution: inline
+        condition: "se o vídeo citar perfume(s) específico(s)"
+
+      - id: step-03
+        agent: mestre-ganchos
+        label: "Lara cria no mínimo 3 combos de Ganchismo (falado + escrito + visual + sonoro + promessa aberta) por vídeo, com Hook Score; cada combo vira uma versão"
+        deliverFrom: perfumista-pesquisador
+        execution: inline
+
+      - id: step-04
+        agent: roteirista
+        label: "Nina escreve NO MÍNIMO 3 VERSÕES completas do roteiro em 9 etapas (uma por combo de gancho, com ângulos diferentes), com tempos, orientação de tela e narração corrida"
+        deliverFrom: mestre-ganchos
+        execution: inline
+
+      - id: step-05
+        agent: copy-distribuicao
+        label: "Téo escreve legenda TikTok, legenda Instagram, capa e comentário fixado para CADA versão"
+        deliverFrom: roteirista
+        execution: inline
+
+      - id: step-06
+        agent: revisor-retencao
+        label: "Otto aplica o Checklist de Retenção em CADA versão (nota de corte 8) e monta a tabela Qual escolher?"
+        deliverFrom: copy-distribuicao
+        execution: inline
+
+      - id: step-06b
+        agent: roteirista
+        label: "Correção pelo agente apontado por Otto (Lara, Nina, Téo ou Caio)"
+        deliverFrom: revisor-retencao
+        execution: inline
+        condition: "se houver vídeo com score < 8 ou item eliminatório"
+        on_complete: step-06c
+
+      - id: step-06c
+        agent: revisor-retencao
+        label: "Otto repontua do zero; o ciclo se repete até todos os vídeos estarem ≥ 8"
+        deliverFrom: roteirista
+        execution: inline
+        condition: "se houve correção"
+        on_complete: step-06b
+
+      - id: step-07
+        agent: revisor-retencao
+        label: "Salvar o pacote com as 3+ versões em output/videos/ ou output/carrosseis/ (AAAA-MM-DD-[tema].md) e registrar aprendizados em _memory/memories.md"
+        execution: inline
+
+      - id: step-08
+        agent: apresentadora-visual
+        label: "DESATIVADO (pedido da Osiany em 08/11 e 11/11/2026: HTML consome muito token). Só rodar se ela pedir o painel explicitamente."
+        deliverFrom: revisor-retencao
+        execution: inline
+        condition: "SÓ se a Osiany pedir o painel HTML explicitamente"
+
+      - id: checkpoint-03
+        type: checkpoint
+        label: "Osiany compara as versões no painel, escolhe a melhor (ou pede ajustes) e preenche os [PREENCHER] pendentes"
+        deliverFrom: apresentadora-visual
+        options: [choose_version, mix_versions, request_changes]
+        on_reject: step-04

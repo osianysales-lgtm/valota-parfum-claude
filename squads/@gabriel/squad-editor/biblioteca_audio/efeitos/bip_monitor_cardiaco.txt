@@ -1,0 +1,3 @@
+prompt: hospital heart monitor beeping three times, clean electronic beep
+duracao: 1.6
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)

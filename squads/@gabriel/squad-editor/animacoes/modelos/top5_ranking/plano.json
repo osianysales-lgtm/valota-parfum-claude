@@ -1,0 +1,211 @@
+{
+  "tipo": "motion",
+  "titulo": "Top 5 árabes que rendem elogio · Versão A \"Que perfume é esse?\" · Valota Parfum (66,2 s em 1x → ~50,9 s em 1.3x)",
+  "referencia": "Padrão @matheusueta (docs/referencia_edicao_notas/PADRAO.md) + modelo product shot do v3-1mblack: fotos oficiais recortadas (frasco inteiro, em pé, sem crop), notas em PNG recortado, cartela com flash, ênfase Anton amarelo, legenda branca 1–3 palavras. Ranking 5→1 com número gigante e whip-pan entre itens. Vídeo final acelerado 1.3x (pedido da Osiany).",
+  "ficha": "ficha.json",
+  "legenda": {
+    "usar": true,
+    "destaque": "chave",
+    "palavras_chave": [
+      "maçã",
+      "gengibre",
+      "pimenta",
+      "tabaco",
+      "baunilha",
+      "abacaxi",
+      "limão",
+      "bétula",
+      "canela",
+      "lavanda",
+      "tâmara",
+      "praliné",
+      "Fakhar",
+      "Asad",
+      "Khamrah",
+      "elogio",
+      "encontro"
+    ]
+  },
+  "cenas": [
+    {
+      "id": "c1",
+      "inicio": 0,
+      "fim": 4.8,
+      "fala": "Imagina ela chegando perto do seu pescoço e perguntando: que perfume é esse?",
+      "ideia": "Gancho: cena do elogio",
+      "layout": "cheia",
+      "visual": "Os 5 frascos entram um a um, enfileirados (5→1) com número embaixo; topo: 5 ÁRABES / que deixam ela louca",
+      "movimento": "luz acende, pop em cada frasco",
+      "quadro": {
+        "html": "cena.html",
+        "t": 2.2
+      }
+    },
+    {
+      "id": "c2",
+      "inicio": 4.8,
+      "fim": 7.85,
+      "fala": "E o número um é o que eu usaria num primeiro encontro.",
+      "ideia": "Promessa: nº 1 no final",
+      "layout": "cheia",
+      "visual": "Khamrah só em silhueta com contraluz e '?' gigante; topo: o Nº 1 / fica pro final",
+      "movimento": "whip-pan + push-in",
+      "quadro": {
+        "html": "cena.html",
+        "t": 6.2
+      }
+    },
+    {
+      "id": "c3",
+      "inicio": 7.85,
+      "fim": 11.6,
+      "fala": "Todos com DNA de grife famosa por render elogio.",
+      "ideia": "Critério do ranking",
+      "layout": "cheia",
+      "visual": "Fila dos 5 de novo; ênfase amarela DNA DE GRIFE",
+      "movimento": "whip-pan, luz varrendo os vidros",
+      "quadro": {
+        "html": "cena.html",
+        "t": 9.3
+      }
+    },
+    {
+      "id": "c4",
+      "inicio": 11.6,
+      "fim": 19.95,
+      "fala": "Cinco: Fakhar Black, da Lattafa. Lembra o Y, da YSL: maçã e gengibre. Fresco, pro dia.",
+      "ideia": "Nº 5 Fakhar Black",
+      "layout": "cheia",
+      "visual": "Número 5 gigante amarelo → flash + cartela FAKHAR BLACK/LATTAFA → 'lembra o YSL Y' → PNGs maçã e gengibre → FRESCO ☀️ DIA",
+      "movimento": "whip + punch no número, frasco entra com bounce",
+      "quadro": {
+        "html": "cena.html",
+        "t": 18
+      }
+    },
+    {
+      "id": "c5",
+      "inicio": 19.95,
+      "fim": 26.85,
+      "fala": "Quatro: Asad, da Lattafa. DNA do Sauvage Elixir: pimenta, tabaco e baunilha. Pra noite.",
+      "ideia": "Nº 4 Asad",
+      "layout": "cheia",
+      "visual": "4 → ASAD/LATTAFA → 'DNA do SAUVAGE ELIXIR' → pimenta, tabaco, baunilha → 🌙 NOITE",
+      "movimento": "idem",
+      "quadro": {
+        "html": "cena.html",
+        "t": 25.4
+      }
+    },
+    {
+      "id": "c6",
+      "inicio": 26.85,
+      "fim": 33.1,
+      "fala": "Três: Club de Nuit Intense, da Armaf. O mais comparado ao Aventus: abacaxi, limão e bétula.",
+      "ideia": "Nº 3 CDN Intense",
+      "layout": "cheia",
+      "visual": "3 → CLUB DE NUIT INTENSE/ARMAF → 'o mais comparado ao AVENTUS' → abacaxi, limão, bétula",
+      "movimento": "idem",
+      "quadro": {
+        "html": "cena.html",
+        "t": 32.7
+      }
+    },
+    {
+      "id": "c7",
+      "inicio": 33.1,
+      "fim": 36.12,
+      "fala": "Agora, o top dois é onde a coisa fica séria.",
+      "ideia": "Ponta solta 1",
+      "layout": "cheia",
+      "visual": "Palco escurece; 9pm e Khamrah em silhueta; ênfase TOP 2 com impacto",
+      "movimento": "whip + push-in, luz baixa",
+      "quadro": {
+        "html": "cena.html",
+        "t": 34.6
+      }
+    },
+    {
+      "id": "c8",
+      "inicio": 36.12,
+      "fim": 45.5,
+      "fala": "Dois: Nine PM, da Afnan. Lembra o Ultra Male: maçã, canela, lavanda e baunilha. Doce, pra balada.",
+      "ideia": "Nº 2 9pm",
+      "layout": "cheia",
+      "visual": "2 → 9PM/AFNAN → 'lembra o ULTRA MALE' → 4 notas → luzes de balada coloridas + DOCE 🪩 BALADA",
+      "movimento": "idem + luzes girando",
+      "quadro": {
+        "html": "cena.html",
+        "t": 44.8
+      }
+    },
+    {
+      "id": "c9",
+      "inicio": 45.5,
+      "fim": 48.85,
+      "fala": "Mas o número um tem uma nota que nenhum outro da lista tem.",
+      "ideia": "Ponta solta 2",
+      "layout": "cheia",
+      "visual": "Khamrah em silhueta, contraluz; ênfase NOTA ÚNICA; riser",
+      "movimento": "whip + push-in lento",
+      "quadro": {
+        "html": "cena.html",
+        "t": 47.6
+      }
+    },
+    {
+      "id": "c10",
+      "inicio": 48.85,
+      "fim": 60.85,
+      "fala": "Khamrah, da Lattafa: canela, tâmara, praliné e baunilha. A comunidade compara com o Angels' Share, da Kilian. Quentinho, perfeito pra encontro e pro frio.",
+      "ideia": "Nº 1 Khamrah",
+      "layout": "cheia",
+      "visual": "Revelação com flash: KHAMRAH/LATTAFA; notas (tâmara com brilho amarelo + ênfase TÂMARA); 'a comunidade compara com ANGELS' SHARE'; QUENTINHO ❤️ ENCONTRO",
+      "movimento": "flash, luz acende, close no frasco",
+      "quadro": {
+        "html": "cena.html",
+        "t": 52
+      }
+    },
+    {
+      "id": "c11",
+      "inicio": 60.85,
+      "fim": 63.55,
+      "fala": "Salva essa lista pra lembrar na hora de comprar.",
+      "ideia": "CTA salvar",
+      "layout": "cheia",
+      "visual": "Fila dos 5 com números; pílula dourada SALVA ESSA LISTA 📌 + @valotaparfum",
+      "movimento": "whip-pan",
+      "quadro": {
+        "html": "cena.html",
+        "t": 62.2
+      }
+    },
+    {
+      "id": "assin",
+      "inicio": 63.55,
+      "fim": 66.2,
+      "fala": "(sem fala)",
+      "ideia": "assinatura",
+      "layout": "cheia",
+      "visual": "VALOTA PARFUM em Bodoni dourado + @valotaparfum, frascos ao fundo com luz baixa (último quadro nunca preto)",
+      "movimento": "letras se aproximam, brilho passa",
+      "quadro": {
+        "html": "cena.html",
+        "t": 65.5
+      }
+    }
+  ],
+  "encerramento": "SALVA ESSA LISTA 📌 + @valotaparfum (CTA salvar), depois assinatura VALOTA PARFUM",
+  "audio": {
+    "narracao": "narracao.mp3 (voz da Osiany v2, ElevenLabs, 0,95)",
+    "trilha": "biblioteca_audio/trilhas/trilha_trap_luxo_beat.mp3 (0,14, abaixa sob a voz)",
+    "efeitos": "biblioteca_audio: whoosh em todo whip-pan/transição, impacto grave em cada número e nas pontas soltas, brilho nas cartelas, pop em cada nota e frasco, riser antes da revelação do nº 1, vidro, ding no CTA, brilho na assinatura (62 efeitos, audio_map.json)"
+  },
+  "aprovacao": {
+    "aprovado": true,
+    "em": "2026-11-08T20:29:57.979Z",
+    "nota": "Osiany pediu 'cadê o link do vídeo' após ver o storyboard — tratado como ok para renderizar",
+    "impressao": "5c64ff0e36878fee"
+  }
+}

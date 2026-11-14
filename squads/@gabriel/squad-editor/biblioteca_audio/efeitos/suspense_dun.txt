@@ -1,0 +1,3 @@
+prompt: dramatic suspense sting dun dun dunnn, comedic orchestral
+duracao: 2
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)

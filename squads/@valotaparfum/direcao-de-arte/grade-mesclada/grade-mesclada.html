@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Valota Parfum · grade mesclada v2 (50 dark / 30 light / 15 foto)</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=block" rel="stylesheet">
+<style>
+  :root{
+    --petroleo:#0F2E33; --noite:#0A1F23; --luz:#1A4A52; --creme:#F2E8D8;
+    --ambar:#D49A4E; --amarelo:#FFC93C;
+    --cedro:#6B4430; --bergamota:#B8BC5C; --menta:#7DBFB3; --rosa:#E6AEB9; --pimenta:#9C452A; --algodao:#DCD6E2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#fff;font-family:'Montserrat',sans-serif;width:1628px}
+  .grade{display:grid;grid-template-columns:repeat(3,540px);gap:4px}
+  .t{position:relative;width:540px;height:720px;overflow:hidden}
+  .abs{position:absolute}
+
+  /* fundos oficiais */
+  .D{background:radial-gradient(90% 90% at 35% 40%,var(--luz) 0%,var(--petroleo) 55%,var(--noite) 100%);color:var(--creme)}
+  .D.pontos::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(242,232,216,.07) 1.2px,transparent 1.4px);background-size:22px 22px}
+  .L{background:var(--creme);color:var(--noite)}
+  .L .filete{position:absolute;left:0;right:0;bottom:0;height:16px;background:var(--petroleo)}
+
+  /* componentes que se repetem em todo post */
+  .chip{display:inline-block;background:var(--amarelo);color:var(--noite);padding:0 .22em;border-radius:.14em;line-height:1.15}
+  .chip-n{display:inline-block;background:var(--noite);color:var(--amarelo);padding:0 .22em;border-radius:.14em;line-height:1.15}
+  .pilula{display:inline-block;background:var(--amarelo);color:var(--noite);font-weight:800;font-size:15px;letter-spacing:.04em;padding:5px 14px;border-radius:999px;text-transform:uppercase}
+  .pilula-n{display:inline-block;background:var(--noite);color:var(--creme);font-weight:700;font-size:13px;letter-spacing:.12em;padding:6px 14px;border-radius:999px;text-transform:uppercase}
+  .arrasta{display:inline-block;border:1.5px solid currentColor;font-weight:700;font-size:11px;letter-spacing:.16em;padding:8px 16px;border-radius:999px;text-transform:uppercase}
+  .arroba{font-size:13px;font-weight:600}
+  .marca{font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase}
+  .legenda{font-weight:800;font-size:31px;color:#fff;text-align:center;line-height:1.25;text-shadow:0 2px 0 rgba(10,31,35,.9),0 0 12px rgba(10,31,35,.55)}
+  .legenda .chip{text-shadow:none}
+  .adesivo{display:inline-block;background:var(--creme);color:var(--noite);font-weight:800;font-size:19px;padding:5px 14px;border-radius:6px;transform:rotate(-3deg);box-shadow:0 6px 18px rgba(0,0,0,.25)}
+  .nota{position:absolute;font-weight:700;font-size:12px;letter-spacing:.06em;padding:4px 11px;border-radius:999px;text-transform:uppercase;color:var(--noite)}
+  .sombra-frasco{filter:drop-shadow(0 22px 26px rgba(0,0,0,.55))}
+</style>
+</head>
+<body>
+<div class="grade">
+
+  <!-- 1 · D · cena cinematográfica do frasco -->
+  <div class="t D">
+    <div class="abs" style="left:50%;top:-40px;width:420px;height:560px;transform:translateX(-50%);background:radial-gradient(50% 100% at 50% 0%,rgba(255,201,60,.18) 0%,rgba(255,201,60,0) 70%)"></div>
+    <div class="abs" style="left:50%;top:470px;width:380px;height:80px;transform:translateX(-50%);border-radius:50%;border:3px solid rgba(212,154,78,.9);box-shadow:0 0 28px 6px rgba(212,154,78,.55),inset 0 0 22px rgba(212,154,78,.45)"></div>
+    <img class="abs sombra-frasco" src="img/club-de-nuit.png" style="height:340px;left:50%;transform:translateX(-50%);top:168px" alt="">
+    <div class="abs legenda" style="left:20px;right:20px;bottom:86px"><span class="chip">R$ 200</span> com cheiro<br>de R$ 3 mil</div>
+  </div>
+
+  <!-- 2 · D · tipográfica (manchete) -->
+  <div class="t D pontos">
+    <div class="abs marca" style="top:30px;left:34px;letter-spacing:.22em;color:var(--ambar)">● Nicho × Árabe</div>
+    <div class="abs" style="top:190px;left:34px;right:30px">
+      <span style="display:inline-block;border:2px solid var(--ambar);color:var(--ambar);border-radius:6px;font-weight:800;font-size:17px;letter-spacing:.08em;padding:5px 12px">VEREDITO</span>
+      <div style="font-weight:900;font-size:56px;line-height:1;letter-spacing:-.02em;margin-top:22px">ÁRABE NÃO É<br><span class="chip">CÓPIA.</span></div>
+      <div style="width:60px;height:3px;background:var(--ambar);margin:30px 0 22px"></div>
+      <div style="font-weight:400;font-size:17px;line-height:1.45;max-width:400px;opacity:.9">Inspirado é uma coisa. Falsificado é outra. Te mostro como saber a diferença antes de comprar.</div>
+    </div>
+    <div class="abs marca" style="bottom:28px;left:34px;font-size:9px">Valota Parfum</div>
+    <div class="abs marca" style="bottom:28px;right:30px;font-size:9px;letter-spacing:.2em">Toda terça</div>
+  </div>
+
+  <!-- 3 · L · você inteira em fundo bege -->
+  <div class="t L" style="background:radial-gradient(80% 70% at 50% 45%,#FBF5EA 0%,var(--creme) 65%)">
+    <img class="abs" src="img/osiany-recorte.png" style="width:86%;left:7%;bottom:16px" alt="">
+    <div class="abs" style="top:30px;left:0;right:0;text-align:center"><span class="pilula-n">Bidaya · Vanilla P*rn</span></div>
+    <div class="abs legenda" style="left:20px;right:20px;bottom:130px">o perfume <span class="chip">doce</span><br>que não enjoa</div>
+    <div class="filete"></div>
+  </div>
+
+  <!-- 4 · D · notas à mesa (as cores das famílias entram nas etiquetas das notas) -->
+  <div class="t D">
+    <div class="abs" style="top:34px;left:0;right:0;text-align:center">
+      <div style="font-weight:300;font-size:30px;line-height:1">o que tem dentro do</div>
+      <div style="font-weight:900;font-size:66px;line-height:1.05;margin-top:8px;letter-spacing:-.02em"><span class="chip">AVENTUS?</span></div>
+    </div>
+    <img class="abs" src="img/limao.png" style="width:140px;left:30px;top:250px;transform:rotate(-12deg);filter:drop-shadow(0 14px 18px rgba(0,0,0,.45))" alt="">
+    <img class="abs" src="img/abacaxi.png" style="width:140px;right:26px;top:232px;transform:rotate(10deg);filter:drop-shadow(0 14px 18px rgba(0,0,0,.45))" alt="">
+    <img class="abs" src="img/betula.png" style="width:120px;left:44px;bottom:130px;transform:rotate(8deg);filter:drop-shadow(0 14px 18px rgba(0,0,0,.45))" alt="">
+    <img class="abs" src="img/baunilha.png" style="width:160px;right:22px;bottom:160px;transform:rotate(-14deg);filter:drop-shadow(0 14px 18px rgba(0,0,0,.45))" alt="">
+    <span class="nota" style="background:var(--bergamota);left:40px;top:370px">limão</span>
+    <span class="nota" style="background:var(--bergamota);right:40px;top:352px">abacaxi</span>
+    <span class="nota" style="background:var(--cedro);color:var(--creme);left:46px;bottom:110px">bétula</span>
+    <span class="nota" style="background:var(--ambar);right:44px;bottom:132px">baunilha</span>
+    <img class="abs sombra-frasco" src="img/aventus.png" style="height:320px;left:50%;transform:translateX(-50%);top:215px" alt="">
+    <div class="abs" style="bottom:34px;left:0;right:0;text-align:center"><span class="arrasta">Arrasta pro lado →</span></div>
+  </div>
+
+  <!-- 5 · F · foto editorial (carrossel) -->
+  <div class="t" style="color:var(--creme)">
+    <img src="img/capa-borrifando.png" style="width:100%;height:100%;object-fit:cover;object-position:center 30%" alt="">
+    <div class="abs" style="inset:0;background:linear-gradient(180deg,rgba(10,31,35,.55) 0%,rgba(10,31,35,0) 22%,rgba(10,31,35,0) 40%,rgba(10,31,35,.92) 70%,var(--noite) 100%)"></div>
+    <div class="abs arroba" style="top:26px;left:30px">@valotaparfum</div>
+    <div class="abs" style="left:30px;right:30px;bottom:34px">
+      <div style="font-weight:300;font-size:27px;line-height:1.15">5 erros que fazem<br>seu perfume</div>
+      <div style="font-weight:900;font-size:104px;line-height:.95;color:var(--amarelo);letter-spacing:-.02em;margin-top:4px">SUMIR</div>
+      <div class="adesivo" style="margin-top:6px">antes do almoço</div>
+      <div style="margin-top:26px"><span class="arrasta">Arrasta pro lado →</span></div>
+    </div>
+  </div>
+
+  <!-- 6 · L · cartão de app em bege -->
+  <div class="t L">
+    <div class="abs marca" style="top:30px;left:0;right:0;text-align:center;font-size:10px;letter-spacing:.3em;opacity:.7">Valota Parfum</div>
+    <div class="abs" style="left:40px;right:40px;top:270px;background:#FBF7F0;border-radius:22px;box-shadow:0 24px 50px rgba(10,31,35,.16);padding:26px 26px 24px 30px;display:flex;gap:26px;border-left:7px solid var(--petroleo)">
+      <div style="color:var(--pimenta);font-weight:800;font-size:13px;letter-spacing:.08em">QUI<div style="color:var(--noite);font-weight:900;font-size:46px;letter-spacing:-.02em;line-height:1;margin-top:4px">13</div></div>
+      <div>
+        <div style="font-weight:800;font-size:23px;line-height:1.15">Borrifar o perfume<br>no lugar certo</div>
+        <div style="font-weight:400;font-size:14px;opacity:.65;margin-top:6px">7h40 · antes de vestir a roupa</div>
+        <div style="margin-top:14px;display:inline-block;background:var(--menta);color:var(--noite);font-weight:700;font-size:12px;padding:4px 12px;border-radius:999px">● lembrete ativado</div>
+      </div>
+    </div>
+    <div class="filete"></div>
+  </div>
+
+  <!-- 7 · L · minimalista com rostinho -->
+  <div class="t L">
+    <div class="abs arroba" style="top:26px;right:30px;opacity:.75">@valotaparfum</div>
+    <div class="abs" style="left:126px;top:0;width:1.5px;height:322px;background:var(--noite);opacity:.75;transform:rotate(-14deg);transform-origin:top"></div>
+    <div class="abs" style="left:28px;top:300px;width:112px;height:112px;border-radius:50%;overflow:hidden;border:4px solid #fff;box-shadow:0 10px 26px rgba(10,31,35,.28)">
+      <img src="img/osiany-recorte.png" style="width:260%;margin-left:-55%;margin-top:-22%" alt="">
+    </div>
+    <div class="abs" style="left:156px;top:302px;right:20px;font-weight:900;font-size:44px;line-height:1;letter-spacing:-.01em">ÁRABE OU<br><span class="chip-n">GRIFE?</span></div>
+    <div class="abs" style="left:156px;top:410px;font-weight:300;font-size:17px">adivinha pelo cheiro</div>
+    <div class="abs marca" style="bottom:110px;left:0;right:0;text-align:center;font-size:10px;letter-spacing:.24em">Série · Nicho × Árabe · Parte 1</div>
+    <div class="filete"></div>
+  </div>
+
+  <!-- 8 · D · comparativo -->
+  <div class="t D pontos">
+    <div class="abs arroba" style="top:26px;left:30px">@valotaparfum</div>
+    <div class="abs" style="top:70px;left:30px;right:30px">
+      <div style="font-weight:800;font-size:26px">ROUBE ESTE</div>
+      <div style="font-weight:900;font-size:104px;line-height:.9;letter-spacing:-.03em">CHEIRO</div>
+      <div class="adesivo" style="background:var(--amarelo);margin-top:8px;margin-left:200px">por 10x menos</div>
+    </div>
+    <div class="abs" style="left:50px;top:330px;width:200px;height:250px;background:rgba(242,232,216,.07);border:1px solid rgba(212,154,78,.55);border-radius:18px"></div>
+    <div class="abs" style="right:50px;top:330px;width:200px;height:250px;background:rgba(242,232,216,.07);border:1px solid rgba(212,154,78,.55);border-radius:18px"></div>
+    <img class="abs" src="img/aventus.png" style="height:220px;left:150px;transform:translateX(-50%);top:346px;filter:drop-shadow(0 16px 18px rgba(0,0,0,.5))" alt="">
+    <img class="abs" src="img/club-de-nuit.png" style="height:220px;right:150px;transform:translateX(50%);top:346px;filter:drop-shadow(0 16px 18px rgba(0,0,0,.5))" alt="">
+    <div class="abs" style="left:50px;width:200px;top:592px;text-align:center;font-weight:800;font-size:22px;color:var(--ambar)">R$ 3 mil</div>
+    <div class="abs" style="right:50px;width:200px;top:592px;text-align:center;font-weight:800;font-size:22px;color:var(--ambar)">R$ 200</div>
+    <div class="abs" style="bottom:30px;left:0;right:0;text-align:center"><span class="arrasta">Arrasta pro lado →</span></div>
+  </div>
+
+  <!-- 9 · D · você recortada sobre o petróleo (vídeo) -->
+  <div class="t D">
+    <div class="abs" style="left:50%;top:150px;width:520px;height:520px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(212,154,78,.28) 0%,rgba(212,154,78,0) 65%)"></div>
+    <img class="abs" src="img/osiany-recorte.png" style="width:96%;left:2%;bottom:0" alt="">
+    <div class="abs" style="top:26px;left:0;right:0;text-align:center"><span class="pilula">o mais hypado</span></div>
+    <div class="abs legenda" style="left:20px;right:20px;bottom:70px">vale o <span class="chip">hype</span> ou não?</div>
+  </div>
+
+</div>
+</body>
+</html>

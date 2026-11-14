@@ -1,0 +1,3 @@
+prompt: sneaky comedic detective, pizzicato, walking bass, brushed snare, muted trumpet, 110 bpm, instrumental
+duracao: 52
+fonte: ElevenLabs Music

@@ -1,0 +1,3 @@
+prompt: deep cinematic bass impact hit, punchy, short tail
+duracao: 1.5
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)

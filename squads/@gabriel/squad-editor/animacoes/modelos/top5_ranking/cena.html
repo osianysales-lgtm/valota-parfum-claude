@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<!--
+  TOP 5 ÁRABES QUE RENDEM ELOGIO — Versão A "Que perfume é esse?" · Valota Parfum
+  Ranking 5 → 1 com fotos oficiais recortadas (fundo removido, frasco inteiro, em pé).
+  Product shot de estúdio (modelo v3-1mblack): luz varrendo o vidro, bokeh, poeira, reflexo no chão,
+  grão de filme, câmera na mão, whip-pan entre itens, número gigante do ranking, notas em PNG
+  (padrão @matheusueta), ênfase Anton amarelo, legenda Figtree. Tempos = narracao.json (voz da Osiany).
+  Render em 1x; o vídeo final é acelerado 1.3x depois (setpts + atempo).
+-->
+<html><head><meta charset="utf-8">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1080px;height:1920px;overflow:hidden;background:#0b0705}
+  #cam{position:absolute;inset:0;transform-origin:540px 920px}
+  #bg{position:absolute;inset:-200px;background:radial-gradient(ellipse 60% 42% at 50% 40%,#4a3020 0%,#2a1a10 38%,#1A110C 62%,#0a0604 100%)}
+  #bokeh{position:absolute;inset:0}
+  #bokeh i{position:absolute;border-radius:50%;filter:blur(18px);mix-blend-mode:screen}
+  #feixe{position:absolute;left:140px;top:-200px;width:800px;height:1500px;pointer-events:none;mix-blend-mode:screen;
+         background:radial-gradient(ellipse 34% 55% at 50% 0%,rgba(255,214,160,.30),rgba(255,214,160,0) 70%)}
+  #balada{position:absolute;inset:-300px;pointer-events:none;mix-blend-mode:screen;opacity:0;
+          background:conic-gradient(from 0deg at 50% 30%,rgba(140,60,255,.0),rgba(140,60,255,.45) 8%,rgba(140,60,255,0) 16%,rgba(0,170,255,0) 30%,rgba(0,170,255,.40) 38%,rgba(0,170,255,0) 46%,rgba(255,40,160,0) 60%,rgba(255,40,160,.40) 68%,rgba(255,40,160,0) 76%,rgba(140,60,255,0) 100%)}
+  #chao{position:absolute;left:-200px;right:-200px;top:1250px;height:1000px;
+        background:linear-gradient(180deg,rgba(20,12,8,.0) 0%,rgba(10,6,4,.55) 30%,#070403 70%)}
+  #chao:before{content:'';position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,transparent,rgba(255,210,150,.18),transparent)}
+  #num{position:absolute;left:0;right:0;top:120px;text-align:center;font-family:var(--fonte-titulo,'Anton'),Impact,sans-serif;font-size:1150px;line-height:1;
+       color:transparent;-webkit-text-stroke:6px rgba(232,180,95,.9);opacity:0;transform-origin:50% 55%}
+  #num.cheio{color:#FFE600;-webkit-text-stroke:0;filter:drop-shadow(0 0 60px rgba(255,214,0,.45)) drop-shadow(0 30px 40px rgba(0,0,0,.6))}
+  .prod{position:absolute;left:0;top:0;transform-origin:50% 100%}
+  .prod canvas{display:block}
+  .prod .ref{position:absolute;left:0;top:100%;opacity:.22;filter:blur(2px);
+             -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,0) 45%)}
+  .prod .sombra{position:absolute;left:-15%;width:130%;height:90px;bottom:-45px;border-radius:50%;
+                background:radial-gradient(ellipse at center,rgba(0,0,0,.85) 0%,rgba(0,0,0,0) 70%)}
+  #halo{position:absolute;left:540px;top:900px;width:900px;height:900px;margin:-450px 0 0 -450px;border-radius:50%;pointer-events:none;mix-blend-mode:screen;opacity:0;
+        background:radial-gradient(circle,rgba(255,200,120,.55) 0%,rgba(255,170,80,.15) 40%,rgba(255,170,80,0) 70%)}
+  #rank{position:absolute;inset:0;pointer-events:none}
+  #rank b{position:absolute;top:1290px;width:120px;margin-left:-60px;text-align:center;font-family:var(--fonte-titulo,'Anton'),sans-serif;font-weight:400;font-size:84px;color:#e8c58e;opacity:0;text-shadow:0 4px 18px rgba(0,0,0,.8)}
+  #rank b.um{color:#FFE600}
+  #poeira{position:absolute;inset:0;pointer-events:none}
+  #vin{position:absolute;inset:0;pointer-events:none;
+       background:radial-gradient(ellipse 85% 65% at 50% 45%,rgba(0,0,0,0) 50%,rgba(0,0,0,.6) 100%),linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 30%)}
+  #grao{position:absolute;inset:0;width:1080px;height:1920px;opacity:.10;mix-blend-mode:overlay;image-rendering:pixelated}
+  #notas{position:absolute;inset:0;pointer-events:none}
+  .nota{position:absolute;filter:drop-shadow(0 0 22px rgba(255,214,160,.45)) drop-shadow(0 18px 26px rgba(0,0,0,.55));transform-origin:50% 60%}
+  .nota.hi{filter:drop-shadow(0 0 10px #FFE600) drop-shadow(0 0 40px rgba(255,230,0,.7)) drop-shadow(0 18px 26px rgba(0,0,0,.55))}
+  #top{position:absolute;left:50px;right:50px;top:170px;text-align:center;pointer-events:none}
+  .anton{font-family:var(--fonte-titulo,'Anton'),Impact,sans-serif;text-transform:uppercase;line-height:.95;letter-spacing:1px}
+  .am{color:#FFE600}
+  .cr{color:var(--cor-texto,#EFE3CF)}
+  .ouro{background:linear-gradient(100deg,#9c6a2a 0%,#f6d48f 30%,#fff1c9 45%,#d49a4e 60%,#8a5a22 100%);background-size:220% 100%;
+        -webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 22px rgba(232,180,95,.45))}
+  .sh{text-shadow:0 6px 26px rgba(0,0,0,.75)}
+  .marca{margin-top:20px;font:300 50px var(--fonte-texto,'Figtree');letter-spacing:22px;color:#fff}
+  #leg{position:absolute;left:70px;right:70px;top:1500px;height:170px;display:flex;align-items:center;justify-content:center;text-align:center;
+       font-family:var(--fonte-legenda,'Figtree'),sans-serif;font-weight:600;font-size:60px;line-height:1.1;color:#fff;
+       text-shadow:0 3px 14px rgba(0,0,0,.85),0 0 2px rgba(0,0,0,.9)}
+  #leg span{display:inline-block;margin:0 9px}
+  #leg span.k{color:#FFE600}
+  #enf{position:absolute;left:30px;right:30px;top:1440px;height:290px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;text-align:center}
+  #enf span{display:inline-block;margin:0 16px;font-size:140px}
+  #flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none}
+  #pilula{position:absolute;left:50%;top:230px;padding:26px 50px 22px;border-radius:999px;white-space:nowrap;opacity:0;
+          background:linear-gradient(180deg,#f8dc9a 0%,#d49a4e 60%,#a8732f 100%);color:#1A110C;font-size:96px;
+          box-shadow:0 0 0 3px rgba(255,240,200,.5) inset,0 18px 60px rgba(212,154,78,.5)}
+  #arroba{position:absolute;left:0;right:0;top:410px;text-align:center;opacity:0;font-family:var(--fonte-texto,'Figtree'),sans-serif;font-weight:600;font-size:58px;color:#EFE3CF;letter-spacing:2px}
+  #assin{position:absolute;left:0;right:0;top:260px;text-align:center;opacity:0}
+  #assin .nome{font-family:var(--fonte-assinatura,'Bodoni Moda'),Didot,serif;font-weight:600;font-size:96px;letter-spacing:6px;line-height:1.1;white-space:nowrap}
+  #assin .sub{margin-top:34px;font-family:var(--fonte-texto,'Figtree'),sans-serif;font-weight:500;font-size:44px;letter-spacing:14px;color:#EFE3CF}
+  #assin .linha{margin:34px auto 0;height:2px;background:linear-gradient(90deg,transparent,#d49a4e,transparent)}
+</style></head><body>
+<div id="cam">
+  <div id="bg"></div><div id="bokeh"></div><div id="feixe"></div><div id="balada"></div><div id="chao"></div>
+  <div id="num" class="anton">5</div>
+  <div id="halo"></div>
+  <div id="prods"></div>
+  <div id="rank"></div>
+  <canvas id="poeira" width="1080" height="1920"></canvas>
+</div>
+<div id="vin"></div>
+<div id="notas"></div>
+<div id="top"></div>
+<div id="leg"></div>
+<div id="enf" class="anton am sh"></div>
+<div id="pilula" class="anton">SALVA ESSA LISTA 📌</div>
+<div id="arroba">@valotaparfum</div>
+<div id="assin"><div class="nome ouro">VALOTA PARFUM</div><div class="linha"></div><div class="sub">@VALOTAPARFUM</div></div>
+<canvas id="grao" width="270" height="480"></canvas>
+<div id="flash"></div>
+<script src="cena_dados.js"></script>
+<script>
+// ── imagens no DOM (a Dafne espera carregarem) ───────────────────────────
+const IM = {};
+for (const n of ['fakhar','asad','cdni','9pm','khamrah','maca','gengibre','pimenta','tabaco','baunilha','abacaxi','limao','betula','canela','lavanda','tamara','praline']) {
+  const i = new Image(); i.src = 'png/' + n + '.png'; i.style.cssText = 'position:absolute;width:1px;height:1px;opacity:0'; document.body.appendChild(i); IM[n] = i;
+}
+const D = window.DADOS;
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const ease = k => { k = clamp(k); return k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2; };
+const eout = k => 1 - Math.pow(1 - clamp(k), 3);
+const sstep = (a, b, x) => { const k = clamp((x - a) / (b - a)); return k * k * (3 - 2 * k); };
+const backOut = k => { k = clamp(k); const c = 1.7; return 1 + (c + 1) * Math.pow(k - 1, 3) + c * Math.pow(k - 1, 2); };
+const janela = (t, a, b, fi = .2, fo = .2) => sstep(a - fi, a, t) * (1 - sstep(b, b + fo, t));
+function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+const ruido = (t, s) => Math.sin(t * 1.7 + s) * .5 + Math.sin(t * 2.9 + s * 2.3) * .3 + Math.sin(t * 5.3 + s * 4.1) * .2;
+const $ = id => document.getElementById(id);
+
+// ── produtos (canvas: foto + brilho que varre o vidro + reflexo) ─────────
+function criaProd(img, altura) {
+  const el = document.createElement('div'); el.className = 'prod'; $('prods').appendChild(el);
+  const c = document.createElement('canvas'), r = document.createElement('canvas'), s = document.createElement('div');
+  r.className = 'ref'; s.className = 'sombra'; el.append(s, c, r);
+  return { el, img, c, r, altura, pronto: false, w: 0, h: altura };
+}
+// ordem do ranking: 5 → 1
+const ORDEM = ['fakhar', 'asad', 'cdni', '9pm', 'khamrah'];
+const ALT = { fakhar: 650, asad: 720, cdni: 700, '9pm': 760, khamrah: 600 };
+const PR = {}; ORDEM.forEach(n => PR[n] = criaProd(IM[n], ALT[n]));
+function prepara(p) {
+  if (p.pronto || !p.img.complete || !p.img.naturalWidth) return;
+  p.w = Math.round(p.h * p.img.naturalWidth / p.img.naturalHeight);
+  for (const cv of [p.c, p.r]) { cv.width = p.w; cv.height = p.h; }
+  p.pronto = true;
+}
+function pintaProd(p, brilhoX, luz) {
+  if (!p.pronto) return;
+  const g = p.c.getContext('2d');
+  g.globalCompositeOperation = 'source-over'; g.clearRect(0, 0, p.w, p.h);
+  g.filter = `brightness(${luz})`; g.drawImage(p.img, 0, 0, p.w, p.h); g.filter = 'none';
+  g.globalCompositeOperation = 'source-atop';
+  const cx = lerp(-0.6, 1.6, brilhoX) * p.w;
+  const gr = g.createLinearGradient(cx - p.w * .35, 0, cx + p.w * .35, p.h * .25);
+  gr.addColorStop(0, 'rgba(255,240,215,0)'); gr.addColorStop(.5, `rgba(255,240,215,${.42 * clamp(luz)})`); gr.addColorStop(1, 'rgba(255,240,215,0)');
+  g.fillStyle = gr; g.fillRect(0, 0, p.w, p.h);
+  const r = p.r.getContext('2d'); r.clearRect(0, 0, p.w, p.h); r.save(); r.scale(1, -1); r.drawImage(p.c, 0, -p.h, p.w, p.h); r.restore();
+}
+function poe(p, x, chao, esc, op, luz, brilhoX) {
+  p.el.style.opacity = op;
+  if (op <= 0.001) return;
+  pintaProd(p, brilhoX, luz);
+  p.el.style.transform = `translate(${x - p.w / 2}px, ${chao - p.h}px) scale(${esc})`;
+}
+const esconde = () => ORDEM.forEach(n => PR[n].el.style.opacity = 0);
+
+// ── bokeh e poeira ───────────────────────────────────────────────────────
+const RB = rng(5), bok = [];
+for (let i = 0; i < 16; i++) { const e = document.createElement('i'); const s = 30 + RB() * 110; e.style.width = e.style.height = s + 'px';
+  const quente = RB() > .3; e.style.background = quente ? `rgba(255,${170 + RB() * 50 | 0},${90 + RB() * 50 | 0},${.10 + RB() * .18})` : `rgba(255,240,220,${.06 + RB() * .1})`;
+  $('bokeh').appendChild(e); bok.push({ e, x: RB() * 1080, y: 150 + RB() * 900, v: .2 + RB() * .6, f: RB() * 6 }); }
+const RP = rng(9), dust = Array.from({ length: 90 }, () => ({ x: 280 + RP() * 520, y: RP() * 1200, s: .6 + RP() * 2.2, v: 4 + RP() * 10, f: RP() * 6 }));
+function poeira(t, forca) {
+  const g = $('poeira').getContext('2d'); g.clearRect(0, 0, 1080, 1920); if (forca <= 0) return;
+  g.globalCompositeOperation = 'lighter';
+  for (const d of dust) { const y = (d.y + t * d.v) % 1200, x = d.x + Math.sin(t * .4 + d.f) * 30;
+    const a = forca * (.25 + .35 * Math.abs(Math.sin(t * .9 + d.f))) * (1 - Math.abs(x - 540) / 380);
+    if (a <= 0) continue; g.fillStyle = `rgba(255,228,190,${a})`; g.beginPath(); g.arc(x, y, d.s, 0, 7); g.fill(); }
+}
+
+// ── grão de filme ────────────────────────────────────────────────────────
+const GR = $('grao').getContext('2d'), gimg = GR.createImageData(270, 480);
+function grao(q) { const R = rng(q * 7919 + 13); for (let i = 0; i < gimg.data.length; i += 4) { const v = 128 + (R() - .5) * 255; gimg.data[i] = gimg.data[i + 1] = gimg.data[i + 2] = v; gimg.data[i + 3] = 255; } GR.putImageData(gimg, 0, 0); }
+
+// ── notas em PNG (aparecem quando a palavra é dita) ──────────────────────
+const NOTAS = [
+  // [nota, t entra, t sai, x, y, largura, destaque]
+  ['maca',     17.22, 19.90,  40, 330, 290],
+  ['gengibre', 17.91, 19.90, 760, 380, 290],
+  ['pimenta',  24.00, 26.82,  40, 300, 280],
+  ['tabaco',   24.59, 26.82, 760, 330, 290],
+  ['baunilha', 25.14, 26.82,  50, 690, 270],
+  ['abacaxi',  31.21, 33.08,  20, 260, 330],
+  ['limao',    32.00, 33.08, 770, 300, 270],
+  ['betula',   32.50, 33.08,  40, 700, 280],
+  ['maca',     40.98, 45.45,  40, 280, 260],
+  ['canela',   41.63, 45.45, 770, 290, 270],
+  ['lavanda',  42.33, 45.45,  40, 650, 270],
+  ['baunilha', 43.17, 45.45, 770, 660, 260],
+  ['canela',   50.71, 53.95,  40, 280, 270],
+  ['tamara',   51.52, 53.95, 750, 270, 300, 1],
+  ['praline',  52.22, 53.95,  40, 650, 280],
+  ['baunilha', 53.16, 53.95, 770, 660, 260],
+];
+const notasEl = NOTAS.map(([n, a, b, x, y, w, hi]) => { const e = document.createElement('img'); e.className = 'nota' + (hi ? ' hi' : ''); e.src = 'png/' + n + '.png';
+  e.style.left = x + 'px'; e.style.top = y + 'px'; e.style.width = w + 'px'; e.style.opacity = 0; $('notas').appendChild(e); return { e, a, b, f: x * .01 + y * .003 }; });
+function notas(t) { for (const n of notasEl) { const vis = t >= n.a && t < n.b + .15; if (!vis) { n.e.style.opacity = 0; continue; }
+  const k = (t - n.a) / .16, s = k < 1 ? lerp(.2, 1, backOut(k)) : 1, sai = sstep(n.b, n.b + .15, t);
+  n.e.style.opacity = String(clamp(k * 2) * (1 - sai)); n.e.style.transform = `scale(${s * (1 - .1 * sai)}) translateY(${Math.sin(t * 1.6 + n.f) * 6}px) rotate(${Math.sin(t * .9 + n.f) * 2}deg)`; } }
+
+// ── textos do topo [início, fim, linha1, linha2, t da linha2] ────────────
+const nome = (n, fs = 170) => `<div class="anton ouro" style="font-size:${fs}px">${n}</div>`;
+const marca = m => `<div class="marca">${m}</div>`;
+const lembra = (a, b, fs = 150) => [`<div class="anton sh cr" style="font-size:78px">${a}</div>`, `<div class="anton sh am" style="font-size:${fs}px;margin-top:8px">${b}</div>`];
+const TOP = [
+  [0.30, 4.78, `<div class="anton sh am" style="font-size:190px">5 ÁRABES</div>`, `<div class="anton sh cr" style="font-size:92px;margin-top:6px">que deixam ela louca</div>`, 1.60],
+  [4.84, 7.80, `<div class="anton sh cr" style="font-size:110px">o <span class="am">Nº 1</span></div>`, `<div class="anton sh cr" style="font-size:96px;margin-top:8px">fica pro final</div>`, 5.56],
+  [12.55, 14.52, nome('FAKHAR<br>BLACK', 160), marca('LATTAFA'), 13.57],
+  [14.55, 17.15, ...lembra('lembra o', 'YSL Y'), 15.05],
+  [20.48, 22.30, nome('ASAD', 230), marca('LATTAFA'), 21.36],
+  [22.30, 23.95, ...lembra('DNA do', 'SAUVAGE ELIXIR', 120), 23.00],
+  [27.30, 29.45, nome('CLUB DE NUIT<br>INTENSE', 140), marca('ARMAF'), 28.73],
+  [29.45, 31.15, ...lembra('o mais comparado ao', 'AVENTUS'), 30.59],
+  [36.80, 39.42, nome('9PM', 240), marca('AFNAN'), 38.20],
+  [39.42, 40.93, ...lembra('lembra o', 'ULTRA MALE'), 40.10],
+  [48.85, 50.66, nome('KHAMRAH', 210), marca('LATTAFA'), 49.68],
+  [54.00, 57.62, ...lembra('a comunidade compara com', "ANGELS' SHARE", 130), 55.66],
+];
+const topEl = $('top'); let topAt = -1;
+function topo(t) {
+  const i = TOP.findIndex(x => t >= x[0] && t < x[1]);
+  if (i !== topAt) { topAt = i; topEl.innerHTML = i < 0 ? '' : `<div id="t1">${TOP[i][2]}</div><div id="t2">${TOP[i][3]}</div>`; }
+  if (i < 0) return; const [a, b, , , t2] = TOP[i];
+  const k1 = (t - a) / .3, k2 = (t - t2) / .3, sai = sstep(b - .12, b, t);
+  const e1 = $('t1'), e2 = $('t2');
+  e1.style.opacity = clamp(k1 * 2) * (1 - sai); e1.style.transform = `translateY(${(1 - eout(k1)) * 40}px) scale(${lerp(.85, 1, backOut(k1))})`;
+  e2.style.opacity = clamp(k2 * 2) * (1 - sai); e2.style.transform = `translateY(${(1 - eout(k2)) * 40}px) scale(${lerp(.8, 1, backOut(k2))})`;
+  topEl.querySelectorAll('.ouro').forEach(o => o.style.backgroundPosition = `${(t * 40) % 220}% 0`);
+}
+
+// ── ênfase amarela (substitui a legenda) ─────────────────────────────────
+const ENF = [
+  [8.45, 9.95, [['DNA', 8.49], ['DE', 8.92], ['GRIFE', 9.04]]],
+  [18.78, 19.95, [['FRESCO', 18.82], ['☀️ DIA', 19.45]]],
+  [25.70, 26.85, [['🌙 NOITE', 25.74]]],
+  [33.85, 36.10, [['TOP', 33.94], ['2', 34.31]]],
+  [43.90, 45.50, [['DOCE', 43.94], ['🪩 BALADA', 44.48]]],
+  [46.74, 48.80, [['NOTA', 46.79], ['ÚNICA', 47.28]]],
+  [51.48, 52.20, [['TÂMARA', 51.52]]],
+  [57.65, 60.85, [['QUENTINHO', 57.69], ['❤️ ENCONTRO', 59.00]]],
+];
+const enfEl = $('enf'); let enfAt = -1;
+function enfase(t) {
+  const i = ENF.findIndex(x => t >= x[0] && t < x[1]);
+  if (i !== enfAt) { enfAt = i; enfEl.innerHTML = i < 0 ? '' : ENF[i][2].map(([w]) => `<span>${w}</span>`).join(''); if (i >= 0 && ENF[i][2].length === 1) enfEl.firstChild.style.fontSize = '200px'; }
+  if (i < 0) return false;
+  [...enfEl.children].forEach((s, j) => { const k = (t - ENF[i][2][j][1]) / .14; s.style.opacity = k < 0 ? 0 : 1; s.style.transform = `scale(${k < 0 ? .5 : lerp(.5, 1, backOut(k))})`; });
+  return true;
+}
+
+// ── legenda (1–3 palavras, palavras-chave em amarelo) ────────────────────
+const norm = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^\w%@]+/g, '');
+const kws = new Set(D.palavras_chave.map(norm));
+const pal = D.palavras.map((w, i, a) => {
+  let txt = w.word, ant = a[i - 1] ? a[i - 1].word : '';
+  if (txt === 'Nine') txt = '9pm,'; if (txt === 'PM,' && ant === 'Nine') txt = '';
+  if (/^um$/.test(txt) && /^número$/.test(ant)) txt = '1';
+  if (txt === 'dois' && ant === 'top') txt = '2';
+  return { ...w, txt };
+}).filter(w => w.txt);
+const blocos = []; { let at = [];
+  pal.forEach((w, i) => { at.push(w); const prox = pal[i + 1];
+    if (at.length >= 3 || /[.!?,:]$/.test(w.txt) || !prox || prox.start - w.end > .25) { blocos.push({ p: at, ini: at[0].start - .05 }); at = []; } });
+  blocos.forEach((b, i) => { const n = blocos[i + 1], f = b.p[b.p.length - 1].end + .3; b.fim = n ? Math.min(n.ini, f) : f; }); }
+const leg = $('leg'); let legAt = -1;
+function legenda(t, oculta) {
+  const i = oculta ? -1 : blocos.findIndex(b => t >= b.ini && t < b.fim);
+  if (i !== legAt) { legAt = i; leg.innerHTML = i < 0 ? '' : '<div>' + blocos[i].p.map(w => `<span class="${kws.has(norm(w.word)) || kws.has(norm(w.txt)) ? 'k' : ''}">${w.txt.replace(/[,:]$/, '')}</span>`).join('') + '</div>'; }
+  if (i >= 0) { const k = (t - blocos[i].ini) / .1; leg.style.transform = `scale(${lerp(.9, 1, backOut(k))})`; leg.style.opacity = clamp(k * 3); }
+}
+
+// ── planos (corte seco ou whip-pan; dentro de cada um, a câmera se move) ──
+// pos: line (os 5 enfileirados) · misterio (nº1 na sombra) · numero · heroi · escuro · cta · assin
+const PL = [
+  { a: 0.00,  z: [1.00, 1.04], x: [0, 0],    y: [0, -10],   pos: 'line' },
+  { a: 4.80,  z: [1.06, 1.16], x: [0, 0],    y: [40, 10],   pos: 'misterio', p: 'khamrah', whip: 1 },
+  { a: 7.85,  z: [1.04, 1.00], x: [0, 0],    y: [-10, 0],   pos: 'line', whip: 1 },
+  { a: 11.60, z: [1.00, 1.06], x: [0, 0],    y: [0, 0],     pos: 'numero', n: 5, whip: 1 },
+  { a: 12.55, z: [1.00, 1.10], x: [0, 0],    y: [60, 40],   pos: 'heroi', p: 'fakhar' },
+  { a: 17.10, z: [1.10, 1.18], x: [0, -20],  y: [40, 20],   pos: 'heroi', p: 'fakhar' },
+  { a: 19.95, z: [1.00, 1.06], x: [0, 0],    y: [0, 0],     pos: 'numero', n: 4, whip: 1 },
+  { a: 20.48, z: [1.00, 1.10], x: [0, 0],    y: [60, 40],   pos: 'heroi', p: 'asad' },
+  { a: 23.95, z: [1.10, 1.18], x: [0, 20],   y: [40, 20],   pos: 'heroi', p: 'asad' },
+  { a: 26.85, z: [1.00, 1.06], x: [0, 0],    y: [0, 0],     pos: 'numero', n: 3, whip: 1 },
+  { a: 27.30, z: [1.00, 1.10], x: [0, 0],    y: [60, 40],   pos: 'heroi', p: 'cdni' },
+  { a: 31.10, z: [1.10, 1.18], x: [0, -20],  y: [40, 20],   pos: 'heroi', p: 'cdni' },
+  { a: 33.10, z: [1.00, 1.14], x: [0, 0],    y: [20, -10],  pos: 'escuro', whip: 1 },
+  { a: 36.12, z: [1.00, 1.06], x: [0, 0],    y: [0, 0],     pos: 'numero', n: 2, whip: 1 },
+  { a: 36.80, z: [1.00, 1.10], x: [0, 0],    y: [60, 40],   pos: 'heroi', p: '9pm' },
+  { a: 40.90, z: [1.10, 1.18], x: [0, 20],   y: [40, 20],   pos: 'heroi', p: '9pm' },
+  { a: 45.50, z: [1.08, 1.24], x: [0, 0],    y: [40, -20],  pos: 'misterio', p: 'khamrah', whip: 1 },
+  { a: 48.85, z: [1.00, 1.08], x: [0, 0],    y: [60, 40],   pos: 'heroi', p: 'khamrah', revela: 1 },
+  { a: 50.62, z: [1.08, 1.16], x: [0, -20],  y: [40, 20],   pos: 'heroi', p: 'khamrah' },
+  { a: 53.98, z: [1.30, 1.42], x: [0, 0],    y: [-80, -110],pos: 'heroi', p: 'khamrah' },
+  { a: 57.62, z: [1.04, 1.12], x: [0, 0],    y: [40, 20],   pos: 'heroi', p: 'khamrah' },
+  { a: 60.85, z: [1.02, 1.00], x: [0, 0],    y: [0, 0],     pos: 'cta', whip: 1 },
+  { a: 63.55, z: [0.96, 1.00], x: [0, 0],    y: [-20, -40], pos: 'assin' },
+];
+const DUR = 66.2;
+PL.forEach((p, i) => p.b = i < PL.length - 1 ? PL[i + 1].a : DUR);
+const CHAO = 1250;
+// fila dos 5 (do 5º ao 1º, esquerda → direita)
+const LINE = { fakhar: 131, asad: 326, cdni: 516, '9pm': 702, khamrah: 920 }, LINE_H = 330;
+const rankEl = $('rank'); const rk = ORDEM.map((n, i) => { const b = document.createElement('b'); b.textContent = 5 - i; if (i === 4) b.className = 'um'; b.style.left = LINE[n] + 'px'; rankEl.appendChild(b); return b; });
+const BATIDAS = [11.66, 19.99, 26.90, 33.94, 36.16, 48.92, 51.52];
+
+window.render = function (t) {
+  ORDEM.forEach(n => prepara(PR[n]));
+  const q = Math.round(t * 30);
+  const pi = PL.findIndex(p => t >= p.a && t < p.b), P = PL[pi < 0 ? PL.length - 1 : pi];
+  const k = ease((t - P.a) / (P.b - P.a));
+  // whip-pan na entrada do plano
+  const kw = (t - P.a) / .24, whip = P.whip && kw < 1 ? 1 - eout(kw) : 0;
+  const bate = Math.max(...BATIDAS.map(b => { const d = t - b; return d >= 0 && d < .35 ? 1 - d / .35 : 0; }));
+  const z = lerp(P.z[0], P.z[1], k) * (1 + .03 * bate);
+  const hx = ruido(t * .6, 1) * 7 + Math.sin(t * 61) * 6 * bate, hy = ruido(t * .6, 7) * 6 + Math.cos(t * 53) * 6 * bate, hr = ruido(t * .4, 3) * .25;
+  $('cam').style.transform = `translate(${lerp(P.x[0], P.x[1], k) + hx + whip * 760}px, ${lerp(P.y[0], P.y[1], k) + hy}px) scale(${z}) rotate(${hr}deg)`;
+  $('cam').style.filter = whip > .02 ? `blur(${whip * 26}px)` : 'none';
+
+  // luz geral
+  let luz = 1;
+  if (P.pos === 'misterio') luz = .55;
+  if (P.pos === 'escuro') luz = lerp(.8, .5, sstep(33.2, 34.2, t));
+  if (P.pos === 'assin') luz = lerp(1, .5, sstep(63.6, 64.4, t));
+  if (P.pos === 'line' && P.a === 0) luz = lerp(.3, 1, eout(t / .8));
+  $('bg').style.filter = `brightness(${luz})`;
+  $('feixe').style.opacity = String((.7 + .3 * Math.sin(t * .8)) * luz);
+  bok.forEach(b => { b.e.style.transform = `translate(${(b.x + Math.sin(t * .2 * b.v + b.f) * 40)}px, ${b.y + Math.cos(t * .15 * b.v + b.f) * 25}px)`; b.e.style.opacity = luz; });
+  poeira(t, luz);
+  $('balada').style.opacity = janela(t, 43.94, 45.45, .25, .2);
+  $('balada').style.transform = `rotate(${t * 40}deg)`;
+
+  const brilho = ((t - P.a) / 2.6) % 1.4;
+  esconde();
+  const num = $('num'); num.style.opacity = 0; $('halo').style.opacity = 0;
+  rk.forEach(b => b.style.opacity = 0);
+
+  if (P.pos === 'line' || P.pos === 'cta' || P.pos === 'assin') {
+    const fim = P.pos === 'assin' ? .45 : 1;
+    ORDEM.forEach((n, i) => {
+      const p = PR[n]; if (!p.pronto) return;
+      const t0 = P.a === 0 ? .25 + i * .3 : P.a + i * .05;
+      const ke = (t - t0) / .35, esc = LINE_H / p.h * (ke < 1 ? lerp(.3, 1, backOut(ke)) : 1);
+      const flutua = Math.sin(t * 1.3 + i) * 4;
+      poe(p, LINE[n], CHAO + flutua, esc, clamp(ke * 3), (n === 'khamrah' && P.pos === 'line' && P.a === 0 ? 1.05 : 1.0) * fim, ((t - t0) / 2.2 + i * .15) % 1.4);
+      rk[i].style.opacity = clamp(((t - t0) - .2) / .3) * (P.pos === 'assin' ? 1 - sstep(63.6, 64.2, t) : 1);
+    });
+  } else if (P.pos === 'numero') {
+    num.textContent = P.n; num.className = 'anton cheio';
+    const kn = (t - P.a) / .35;
+    num.style.opacity = clamp(kn * 3); num.style.transform = `scale(${lerp(1.9, .78, backOut(kn))}) translateY(150px)`;
+  } else if (P.pos === 'misterio') {
+    const p = PR[P.p];
+    // nº 1 na sombra: só a silhueta com contraluz
+    $('halo').style.opacity = .55 + .1 * Math.sin(t * 3);
+    poe(p, 540, CHAO, 1, 1, .16, .5);
+    num.textContent = '?'; num.className = 'anton'; num.style.opacity = .5; num.style.transform = 'scale(.8) translateY(80px)';
+  } else if (P.pos === 'escuro') {
+    // top 2: os dois que faltam, na sombra
+    poe(PR["9pm"], 330, CHAO, .7, 1, .18, .5); poe(PR.khamrah, 760, CHAO, .78, 1, .18, .5);
+    $('halo').style.opacity = .35;
+  } else if (P.pos === 'heroi') {
+    const p = PR[P.p], n = 5 - ORDEM.indexOf(P.p);
+    num.textContent = n; num.className = 'anton';
+    num.style.opacity = .22; num.style.transform = `scale(${lerp(.92, .98, k)}) translateY(60px)`;
+    let L = 1.03, ent = 1;
+    if (P.revela) { L = lerp(.05, 1.06, eout((t - P.a) / .5)); $('halo').style.opacity = 1 - sstep(P.a, P.a + 1.2, t); }
+    // entrada do frasco quando o plano é o primeiro do item
+    const primeiro = PL[pi - 1] && PL[pi - 1].pos !== 'heroi';
+    if (primeiro && !P.revela) { const ke = (t - P.a) / .4; ent = lerp(.85, 1, backOut(ke)); }
+    poe(p, 540, CHAO, ent, 1, L, brilho);
+  }
+  return fim(t, q, P);
+};
+
+function fim(t, q, P) {
+  notas(t); topo(t);
+  const emEnf = enfase(t);
+  // CTA
+  const cta = janela(t, 60.91, 63.45, .05, .25), kc = (t - 60.91) / .3;
+  $('pilula').style.opacity = cta; $('pilula').style.transform = `translateX(-50%) scale(${lerp(.5, 1, backOut(kc))}) rotate(${-2 * (1 - clamp(kc))}deg)`;
+  $('arroba').style.opacity = janela(t, 61.4, 63.45, .2, .25);
+  // assinatura
+  const ka = (t - 63.65) / .8, as = $('assin');
+  as.style.opacity = sstep(63.65, 64.25, t);
+  as.querySelector('.nome').style.letterSpacing = lerp(24, 10, eout(ka)) + 'px';
+  as.querySelector('.nome').style.backgroundPosition = `${lerp(200, 0, clamp((t - 63.85) / 1.6))}% 0`;
+  as.querySelector('.linha').style.width = lerp(0, 620, eout((t - 64.05) / .8)) + 'px';
+  as.querySelector('.sub').style.opacity = sstep(64.45, 64.95, t);
+  const cartela = TOP.some(x => x[2].includes('ouro') && t >= x[0] && t < x[0] + .5);
+  legenda(t, emEnf || t >= 60.85 || P.pos === 'numero' || cartela);
+  // flash branco nas cartelas de título e na revelação do nº 1 (2 quadros)
+  const fl = [12.55, 20.48, 27.30, 36.80, 48.85].find(a => t >= a - .02 && t < a + .2);
+  $('flash').style.opacity = String(fl !== undefined ? (P.p === 'khamrah' ? 1 : .85) * (1 - (t - fl + .02) / .23) : 0);
+  grao(q);
+}
+render(0);
+</script></body></html>

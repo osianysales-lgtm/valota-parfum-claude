@@ -1,0 +1,3 @@
+prompt: outboard boat motor starting and revving up, short, clean
+duracao: 2.5
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)

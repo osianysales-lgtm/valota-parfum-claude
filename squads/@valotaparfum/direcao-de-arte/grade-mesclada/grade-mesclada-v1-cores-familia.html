@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Valota Parfum · grade mesclada (prévia)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=block" rel="stylesheet">
+<style>
+  :root{
+    --petroleo:#0F2E33; --noite:#0A1F23; --luz:#1A4A52; --creme:#F2E8D8;
+    --ambar:#D49A4E; --amarelo:#FFC93C;
+    --cedro:#6B4430; --bergamota:#B8BC5C; --menta:#7DBFB3; --rosa:#E6AEB9;
+    --pimenta:#9C452A; --algodao:#DCD6E2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#fff;font-family:'Montserrat',sans-serif;width:1628px}
+  .grade{display:grid;grid-template-columns:repeat(3,540px);gap:4px}
+  .t{position:relative;width:540px;height:720px;overflow:hidden}
+  .abs{position:absolute}
+  .up{text-transform:uppercase}
+
+  /* ===== componentes que se repetem em TODO post (a "cola" da marca) ===== */
+  .chip{display:inline-block;background:var(--amarelo);color:var(--noite);padding:0 .22em;border-radius:.14em;line-height:1.15}
+  .chip-n{display:inline-block;background:var(--noite);color:var(--amarelo);padding:0 .22em;border-radius:.14em;line-height:1.15}
+  .pilula{display:inline-block;background:var(--amarelo);color:var(--noite);font-weight:800;font-size:15px;letter-spacing:.04em;padding:5px 14px;border-radius:999px;text-transform:uppercase}
+  .pilula-n{display:inline-block;background:var(--noite);color:var(--creme);font-weight:700;font-size:13px;letter-spacing:.12em;padding:6px 14px;border-radius:999px;text-transform:uppercase}
+  .arrasta{display:inline-block;border:1.5px solid currentColor;font-weight:700;font-size:11px;letter-spacing:.16em;padding:8px 16px;border-radius:999px;text-transform:uppercase}
+  .arroba{font-size:13px;font-weight:600;letter-spacing:.02em}
+  .marca{font-size:11px;font-weight:600;letter-spacing:.32em;text-transform:uppercase}
+  .legenda{font-weight:800;font-size:31px;color:#fff;text-align:center;line-height:1.25;
+           text-shadow:0 2px 0 rgba(10,31,35,.9),0 0 12px rgba(10,31,35,.55)}
+  .legenda .chip{text-shadow:none}
+  .adesivo{display:inline-block;background:var(--creme);color:var(--noite);font-weight:800;font-size:19px;padding:5px 14px;border-radius:6px;transform:rotate(-3deg);box-shadow:0 6px 18px rgba(0,0,0,.25)}
+
+  /* 1 · carrossel capa cinematográfica (foto) */
+  .t1 img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+  .t1 .sombra{inset:0;background:linear-gradient(180deg,rgba(10,31,35,.55) 0%,rgba(10,31,35,0) 22%,rgba(10,31,35,0) 40%,rgba(10,31,35,.92) 70%,var(--noite) 100%)}
+  /* 2 · pessoa inteira em fundo creme */
+  .t2{background:radial-gradient(80% 70% at 50% 45%,#FBF5EA 0%,var(--creme) 60%,#E9DCC6 100%)}
+  /* 3 · cor chapada tipográfica (Cedro) */
+  .t3{background:var(--cedro);color:var(--creme)}
+  /* 4 · notas à mesa (Bergamota) */
+  .t4{background:radial-gradient(90% 80% at 50% 60%,#C6CA70 0%,var(--bergamota) 70%)}
+  /* 5 · vídeo cru com legenda */
+  .t5 img{width:100%;height:100%;object-fit:cover;object-position:center 62%}
+  /* 6 · minimalista claro com rosto */
+  .t6{background:var(--creme)}
+  /* 7 · cartão de app (Algodão) */
+  .t7{background:radial-gradient(90% 80% at 50% 45%,#ECE8F0 0%,var(--algodao) 70%)}
+  /* 8 · cena cinematográfica dark */
+  .t8{background:radial-gradient(90% 90% at 50% 40%,var(--luz) 0%,var(--petroleo) 55%,var(--noite) 100%)}
+  /* 9 · carrossel comparativo (Pimenta) */
+  .t9{background:radial-gradient(100% 80% at 50% 70%,#B0563A 0%,var(--pimenta) 65%,#7E361F 100%);color:var(--creme)}
+</style>
+</head>
+<body>
+<div class="grade">
+
+  <!-- 1 · CARROSSEL · capa com foto cheia (ref.: "4 CLIENTES QUE NÃO EXISTEM") -->
+  <div class="t t1">
+    <img src="img/capa-borrifando.png" alt="">
+    <div class="abs sombra"></div>
+    <div class="abs arroba" style="top:26px;left:30px;color:var(--creme)">@valotaparfum</div>
+    <div class="abs" style="left:30px;right:30px;bottom:34px;color:var(--creme)">
+      <div style="font-weight:300;font-size:27px;line-height:1.15">5 erros que fazem<br>seu perfume</div>
+      <div style="font-weight:900;font-size:104px;line-height:.95;color:var(--amarelo);letter-spacing:-.02em;margin-top:4px">SUMIR</div>
+      <div class="adesivo" style="margin-top:6px">antes do almoço</div>
+      <div style="margin-top:26px"><span class="arrasta">Arrasta pro lado →</span></div>
+    </div>
+  </div>
+
+  <!-- 2 · REEL · você inteira, fundo claro (ref.: moça na poltrona) -->
+  <div class="t t2">
+    <img class="abs" src="img/osiany-recorte.png" style="width:86%;left:7%;bottom:0" alt="">
+    <div class="abs" style="top:30px;left:0;right:0;text-align:center"><span class="pilula-n">Bidaya · Vanilla P*rn</span></div>
+    <div class="abs legenda" style="left:20px;right:20px;bottom:120px">o perfume <span class="chip">doce</span><br>que não enjoa</div>
+  </div>
+
+  <!-- 3 · ESTÁTICO · cor chapada tipográfica (ref.: "VENDAS FECHADAS.") -->
+  <div class="t t3">
+    <div class="abs marca" style="top:30px;left:34px;letter-spacing:.22em">● Nicho × Árabe</div>
+    <div class="abs" style="top:190px;left:34px;right:30px">
+      <span style="display:inline-block;border:2px solid var(--creme);border-radius:6px;font-weight:800;font-size:17px;letter-spacing:.08em;padding:5px 12px">VEREDITO</span>
+      <div style="font-weight:900;font-size:56px;line-height:1;letter-spacing:-.02em;margin-top:22px">ÁRABE NÃO É<br><span class="chip">CÓPIA.</span></div>
+      <div style="width:60px;height:3px;background:var(--creme);margin:30px 0 22px"></div>
+      <div style="font-weight:400;font-size:17px;line-height:1.45;max-width:400px;opacity:.92">Inspirado é uma coisa. Falsificado é outra. Te mostro como saber a diferença antes de comprar.</div>
+    </div>
+    <div class="abs marca" style="bottom:28px;left:34px;font-size:9px">Valota Parfum</div>
+    <div class="abs marca" style="bottom:28px;right:30px;font-size:9px;letter-spacing:.2em">Toda terça</div>
+  </div>
+
+  <!-- 4 · CARROSSEL · notas à mesa, cor da família cítrica (ref.: laptop "DENTRO DO SEU PROJETO.") -->
+  <div class="t t4">
+    <div class="abs" style="top:34px;left:0;right:0;text-align:center;color:var(--noite)">
+      <div style="font-weight:900;font-size:44px;line-height:1;letter-spacing:-.01em">O QUE TEM DENTRO</div>
+      <div style="font-weight:900;font-size:44px;line-height:1.15;margin-top:6px">DO <span class="chip-n">AVENTUS?</span></div>
+    </div>
+    <img class="abs" src="img/limao.png" style="width:150px;left:28px;top:240px;transform:rotate(-12deg);filter:drop-shadow(0 14px 18px rgba(10,31,35,.3))" alt="">
+    <img class="abs" src="img/abacaxi.png" style="width:150px;right:24px;top:220px;transform:rotate(10deg);filter:drop-shadow(0 14px 18px rgba(10,31,35,.3))" alt="">
+    <img class="abs" src="img/betula.png" style="width:130px;left:40px;bottom:120px;transform:rotate(8deg);filter:drop-shadow(0 14px 18px rgba(10,31,35,.3))" alt="">
+    <img class="abs" src="img/baunilha.png" style="width:170px;right:20px;bottom:150px;transform:rotate(-14deg);filter:drop-shadow(0 14px 18px rgba(10,31,35,.3))" alt="">
+    <img class="abs" src="img/aventus.png" style="height:330px;left:50%;transform:translateX(-50%);top:205px;filter:drop-shadow(0 22px 26px rgba(10,31,35,.4))" alt="">
+    <div class="abs" style="bottom:34px;left:0;right:0;text-align:center;color:var(--noite)"><span class="arrasta">Arrasta pro lado →</span></div>
+  </div>
+
+  <!-- 5 · REEL · vídeo cru + legenda com chip (ref.: rapaz falando na câmera) -->
+  <div class="t t5">
+    <img src="img/frame-original-81s.jpg" alt="">
+    <div class="abs" style="top:26px;left:0;right:0;text-align:center"><span class="pilula">o mais hypado</span></div>
+    <div class="abs legenda" style="left:20px;right:20px;bottom:70px">vale o <span class="chip">hype</span> ou não?</div>
+  </div>
+
+  <!-- 6 · REEL · minimalista claro + rostinho (ref.: "AGENTE DE SUPORTE") -->
+  <div class="t t6">
+    <div class="abs arroba" style="top:26px;right:30px;color:var(--noite);opacity:.75">@valotaparfum</div>
+    <div class="abs" style="left:126px;top:0;width:1.5px;height:322px;background:var(--noite);opacity:.75;transform:rotate(-14deg);transform-origin:top"></div>
+    <div class="abs" style="left:28px;top:300px;width:112px;height:112px;border-radius:50%;overflow:hidden;border:4px solid #fff;box-shadow:0 10px 26px rgba(10,31,35,.28)">
+      <img src="img/osiany-recorte.png" style="width:260%;margin-left:-55%;margin-top:-22%" alt="">
+    </div>
+    <div class="abs" style="left:156px;top:302px;right:20px;color:var(--noite);font-weight:900;font-size:44px;line-height:1;letter-spacing:-.01em">ÁRABE OU<br>GRIFE?</div>
+    <div class="abs" style="left:156px;top:400px;color:var(--noite);font-weight:300;font-size:17px">adivinha pelo cheiro</div>
+    <div class="abs marca" style="bottom:120px;left:0;right:0;text-align:center;color:var(--noite);font-size:10px;letter-spacing:.24em">Série · Nicho × Árabe · Parte 1</div>
+  </div>
+
+  <!-- 7 · REEL · cartão de app em fundo pastel (ref.: "QUA 11 · Seu Time de Agentes") -->
+  <div class="t t7">
+    <div class="abs" style="left:40px;right:40px;top:270px;background:#FBF7F0;border-radius:22px;box-shadow:0 24px 50px rgba(10,31,35,.18);padding:26px 26px 24px 30px;display:flex;gap:26px;border-left:7px solid var(--amarelo)">
+      <div style="color:var(--pimenta);font-weight:800;font-size:13px;letter-spacing:.08em">QUI<div style="color:var(--noite);font-weight:900;font-size:46px;letter-spacing:-.02em;line-height:1;margin-top:4px">13</div></div>
+      <div style="color:var(--noite)">
+        <div style="font-weight:800;font-size:23px;line-height:1.15">Borrifar o perfume<br>no lugar certo</div>
+        <div style="font-weight:400;font-size:14px;opacity:.65;margin-top:6px">7h40 · antes de vestir a roupa</div>
+        <div style="margin-top:14px;display:inline-block;background:#E5F2EF;color:var(--petroleo);font-weight:700;font-size:12px;padding:4px 12px;border-radius:999px">● lembrete ativado</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8 · REEL · cena cinematográfica do frasco (ref.: anel neon "Uma empresa tinha cinco") -->
+  <div class="t t8">
+    <div class="abs" style="left:50%;top:-40px;width:420px;height:560px;transform:translateX(-50%);background:radial-gradient(50% 100% at 50% 0%,rgba(255,201,60,.18) 0%,rgba(255,201,60,0) 70%)"></div>
+    <div class="abs" style="left:50%;top:470px;width:380px;height:80px;transform:translateX(-50%);border-radius:50%;border:3px solid rgba(212,154,78,.9);box-shadow:0 0 28px 6px rgba(212,154,78,.55),inset 0 0 22px rgba(212,154,78,.45)"></div>
+    <img class="abs" src="img/club-de-nuit.png" style="height:340px;left:50%;transform:translateX(-50%);top:168px;filter:drop-shadow(0 26px 30px rgba(0,0,0,.6))" alt="">
+    <div class="abs legenda" style="left:20px;right:20px;bottom:86px"><span class="chip">R$ 200</span> com cheiro<br>de R$ 3 mil</div>
+  </div>
+
+  <!-- 9 · CARROSSEL · comparativo em cor de família (ref.: "ROUBE ESTA STACK") -->
+  <div class="t t9">
+    <div class="abs arroba" style="top:26px;left:30px">@valotaparfum</div>
+    <div class="abs" style="top:70px;left:30px;right:30px">
+      <div style="font-weight:800;font-size:26px">ROUBE ESTE</div>
+      <div style="font-weight:900;font-size:104px;line-height:.9;letter-spacing:-.03em">CHEIRO</div>
+      <div class="adesivo" style="background:var(--amarelo);margin-top:8px;margin-left:200px">por 10x menos</div>
+    </div>
+    <div class="abs" style="left:50px;top:330px;width:200px;height:250px;background:rgba(242,232,216,.12);border:1px solid rgba(242,232,216,.3);border-radius:18px"></div>
+    <div class="abs" style="right:50px;top:330px;width:200px;height:250px;background:rgba(242,232,216,.12);border:1px solid rgba(242,232,216,.3);border-radius:18px"></div>
+    <img class="abs" src="img/aventus.png" style="height:220px;left:150px;transform:translateX(-50%);top:346px;filter:drop-shadow(0 16px 18px rgba(0,0,0,.4))" alt="">
+    <img class="abs" src="img/club-de-nuit.png" style="height:220px;right:150px;transform:translateX(50%);top:346px;filter:drop-shadow(0 16px 18px rgba(0,0,0,.4))" alt="">
+    <div class="abs marca" style="left:50px;width:200px;top:594px;text-align:center;font-size:10px;letter-spacing:.14em">R$ 3 mil</div>
+    <div class="abs marca" style="right:50px;width:200px;top:594px;text-align:center;font-size:10px;letter-spacing:.14em">R$ 200</div>
+    <div class="abs" style="bottom:30px;left:0;right:0;text-align:center"><span class="arrasta">Arrasta pro lado →</span></div>
+  </div>
+
+</div>
+</body>
+</html>

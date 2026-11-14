@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<!--
+  TEMPLATE: ANIM 03 ORBIT
+  Substitua os placeholders abaixo antes de usar:
+
+  {{PRODUTO}}      — Nome do produto/plataforma (ex: "Meu App", "FlowBoard")
+  {{EMPRESA}}      — Prefixo/sigla da empresa para logo CSS outline (ex: "EXP", "ACM")
+  {{EMPRESA_X}}    — Último caractere ou sufixo da logo com destaque colorido (ex: "X", "E")
+  {{SLOGAN}}       — Subtítulo/label do produto abaixo da logo (ex: "FLOW", "PRO", "HUB")
+  {{URL}}          — URL exibida na cena final (ex: "minhaempresa.com.br")
+  {{CTA}}          — Texto do botão de call-to-action (ex: "SAIBA MAIS", "ACESSE AGORA")
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      width: 1080px;
+      height: 1920px;
+      overflow: hidden;
+      font-family: 'Segoe UI', Arial Black, sans-serif;
+      background: #0b0b1e;
+      transition: background 0.7s ease;
+      position: relative;
+    }
+
+    /* ── Partículas ── */
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      animation: float-p linear forwards;
+    }
+    @keyframes float-p {
+      0%   { opacity: 0; transform: translateY(0) scale(1); }
+      10%  { opacity: 0.7; }
+      85%  { opacity: 0.3; }
+      100% { opacity: 0; transform: translateY(-500px) scale(0.4); }
+    }
+
+    /* ── Scan line ── */
+    .scan {
+      position: absolute;
+      top: 0; left: -100%;
+      width: 80%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent);
+      pointer-events: none;
+      transition: left 0.7s ease;
+    }
+
+    /* ── Scenes ── */
+    .scene {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 90px 80px;
+      opacity: 0;
+    }
+
+    /* ── Linhas deco ── */
+    .deco-line {
+      position: absolute;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+      height: 1px; width: 100%;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    /* ===================================================
+       CENA 1 — HOOK
+    =================================================== */
+    .c1-eyebrow {
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 10px;
+      color: #6c63ff;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    .c1-line1 {
+      font-size: 96px;
+      font-weight: 900;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.05;
+      letter-spacing: -2px;
+      opacity: 0;
+      transform: translateX(-80px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+    .c1-line1 .hl { color: #a78bfa; }
+    .c1-line2 {
+      font-size: 96px;
+      font-weight: 900;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.05;
+      letter-spacing: -2px;
+      margin-top: 8px;
+      opacity: 0;
+      transform: translateX(80px);
+      transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+    .c1-big {
+      font-size: 140px;
+      font-weight: 900;
+      color: #a78bfa;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: -4px;
+      margin-top: 20px;
+      opacity: 0;
+      transform: scale(0.4);
+      transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.175,0.885,0.32,1.4);
+      text-shadow: 0 0 80px rgba(167,139,250,0.5);
+    }
+    .c1-sub {
+      font-size: 34px;
+      font-weight: 400;
+      color: #5c5888;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-top: 50px;
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    /* ===================================================
+       CENA 2 — PRODUTO
+    =================================================== */
+    .c2-label {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: 12px;
+      color: #60a5fa;
+      text-transform: uppercase;
+      opacity: 0;
+      transform: translateY(-40px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+    .c2-text {
+      font-size: 58px;
+      font-weight: 700;
+      color: #cde4ff;
+      text-align: center;
+      line-height: 1.3;
+      max-width: 880px;
+      margin-top: 32px;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+    .c2-text .hl { color: #93c5fd; }
+
+    .card {
+      width: 920px;
+      background: #0a1228;
+      border: 1px solid rgba(96,165,250,0.2);
+      border-radius: 28px;
+      padding: 50px 56px;
+      margin-top: 48px;
+      opacity: 0;
+      transform: translateX(80px) rotate(1.5deg);
+      transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94);
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0;
+      width: 5px; height: 100%;
+      background: linear-gradient(180deg, #3b82f6, #60a5fa);
+    }
+    .card-glow {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(96,165,250,0.06), transparent 60%);
+      border-radius: 28px;
+      pointer-events: none;
+    }
+    .card-title {
+      font-size: 40px;
+      font-weight: 800;
+      color: #ddefff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    .card-meta { display: flex; gap: 52px; margin-top: 28px; }
+    .meta { display: flex; flex-direction: column; gap: 8px; }
+    .meta-l { font-size: 22px; color: #374370; letter-spacing: 4px; text-transform: uppercase; font-weight: 700; }
+    .meta-v {
+      font-size: 34px; font-weight: 800;
+      color: #60a5fa; text-transform: uppercase; letter-spacing: 1px;
+      opacity: 0; transform: translateY(10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .bar-wrap { margin-top: 32px; height: 6px; background: #1a2340; border-radius: 10px; overflow: hidden; }
+    .bar-fill {
+      height: 100%; width: 0%;
+      background: linear-gradient(90deg, #3b82f6, #93c5fd);
+      border-radius: 10px;
+      box-shadow: 0 0 14px rgba(96,165,250,0.7);
+      transition: width 1.8s cubic-bezier(0.4,0,0.2,1);
+    }
+    .ftag {
+      position: absolute; border-radius: 100px; padding: 16px 30px;
+      font-size: 28px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px;
+      opacity: 0; transform: scale(0.5);
+      transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.175,0.885,0.32,1.4);
+    }
+    .ftag-blue  { background: rgba(59,130,246,0.15); border: 1px solid rgba(96,165,250,0.4); color: #60a5fa; }
+    .ftag-purp  { background: rgba(139,92,246,0.15); border: 1px solid rgba(167,139,250,0.4); color: #a78bfa; }
+    .ftag-green { background: rgba(52,211,153,0.12); border: 1px solid rgba(52,211,153,0.35); color: #34d399; }
+
+    /* ===================================================
+       CENA 3 — BENEFÍCIO
+    =================================================== */
+    .c3-check {
+      font-size: 130px; color: #34d399;
+      text-shadow: 0 0 60px rgba(52,211,153,0.7);
+      opacity: 0; transform: scale(0);
+      transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.175,0.885,0.32,1.5);
+    }
+    .c3-w {
+      display: inline-block;
+      font-size: 88px; font-weight: 900;
+      text-transform: uppercase; letter-spacing: -2px;
+      color: #e0fff8; line-height: 1.15;
+      opacity: 0; transform: scale(0.5);
+      transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.175,0.885,0.32,1.4);
+    }
+    .c3-w.green { color: #34d399; }
+    .c3-ul {
+      height: 6px;
+      background: linear-gradient(90deg, #34d399, #059669);
+      border-radius: 6px; width: 0;
+      box-shadow: 0 0 20px rgba(52,211,153,0.6);
+      transition: width 0.6s ease;
+      margin-top: 6px;
+    }
+
+    /* ===================================================
+       CENA 4 — CTA / LOGO
+    =================================================== */
+
+    /* Logo da empresa em CSS: prefixo outline branco + sufixo colorido */
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      line-height: 1;
+      opacity: 0;
+      transform: scale(0.6);
+      transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.175,0.885,0.32,1.3);
+    }
+    .logo-exp {
+      font-size: 200px;
+      font-weight: 900;
+      letter-spacing: -8px;
+      color: transparent;
+      -webkit-text-stroke: 5px rgba(255,255,255,0.92);
+      text-transform: uppercase;
+    }
+    .logo-x {
+      font-size: 200px;
+      font-weight: 900;
+      color: #0BDB0B;
+      text-shadow: 0 0 60px rgba(11,219,11,0.7), 0 0 120px rgba(11,219,11,0.3);
+      text-transform: uppercase;
+      letter-spacing: -8px;
+    }
+
+    /* Subtítulo/slogan abaixo da logo */
+    .flow-label {
+      font-size: 80px;
+      font-weight: 300;
+      letter-spacing: 28px;
+      color: rgba(255,255,255,0.45);
+      text-transform: uppercase;
+      margin-top: 8px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+    .flow-label span {
+      color: #0BDB0B;
+      font-weight: 700;
+      text-shadow: 0 0 30px rgba(11,219,11,0.5);
+    }
+
+    .cta-url {
+      font-size: 40px;
+      color: rgba(255,255,255,0.3);
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      margin-top: 28px;
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+    .cta-btn {
+      margin-top: 72px;
+      background: linear-gradient(135deg, #0BDB0B, #059669);
+      color: #000;
+      font-size: 52px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 46px 110px;
+      border-radius: 100px;
+      opacity: 0;
+      transform: scale(0.85);
+      transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.175,0.885,0.32,1.3), box-shadow 1s ease;
+      box-shadow: 0 0 60px rgba(11,219,11,0.4);
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-shine {
+      position: absolute;
+      top: 0; left: -80%;
+      width: 60%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      transform: skewX(-20deg);
+      transition: left 0.6s ease;
+    }
+
+    /* ===================================================
+       CENA 3 — SMARTPHONE
+    =================================================== */
+    .phone-scene-label {
+      font-size: 30px; font-weight: 800; letter-spacing: 10px;
+      color: #0BDB0B; text-transform: uppercase;
+      margin-bottom: 40px;
+      opacity: 0; transform: translateY(-20px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    .phone {
+      width: 520px;
+      height: 1040px;
+      background: #0a0a0a;
+      border-radius: 60px;
+      border: 10px solid #1e1e1e;
+      box-shadow:
+        0 0 0 2px #333,
+        0 40px 120px rgba(0,0,0,0.8),
+        0 0 80px rgba(11,219,11,0.2);
+      position: relative;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(80px) scale(0.92);
+      transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+    /* Câmera / notch */
+    .phone-notch {
+      position: absolute; top: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 140px; height: 36px;
+      background: #0a0a0a;
+      border-radius: 0 0 26px 26px;
+      z-index: 10;
+    }
+    .phone-camera {
+      position: absolute; top: 10px; left: 50%;
+      transform: translateX(-50%);
+      width: 16px; height: 16px;
+      background: #1a1a1a;
+      border-radius: 50%;
+      border: 3px solid #222;
+      z-index: 11;
+    }
+    /* Tela do app */
+    .phone-screen {
+      position: absolute; inset: 0;
+      background: #0d1020;
+      border-radius: 52px;
+      overflow: hidden;
+      padding: 50px 22px 24px;
+      display: flex; flex-direction: column; gap: 16px;
+    }
+    /* Header do app */
+    .app-header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 10px 8px;
+      opacity: 0; transform: translateY(-16px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .app-logo-sm {
+      font-size: 32px; font-weight: 900; letter-spacing: -1px;
+    }
+    .app-logo-sm .exp { color: transparent; -webkit-text-stroke: 2px #fff; }
+    .app-logo-sm .x   { color: #0BDB0B; }
+    .app-logo-sm .flow{ color: rgba(255,255,255,0.4); font-weight: 300; font-size: 26px; margin-left: 4px; }
+    .app-notif {
+      background: rgba(11,219,11,0.15); border: 1px solid rgba(11,219,11,0.4);
+      border-radius: 20px; padding: 8px 18px;
+      font-size: 22px; font-weight: 700; color: #0BDB0B;
+    }
+    /* Sprint bar */
+    .sprint-block {
+      background: #141830; border-radius: 18px; padding: 20px 18px;
+      opacity: 0; transform: translateX(-20px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    .sprint-title { font-size: 20px; font-weight: 700; color: #60a5fa; letter-spacing: 3px; text-transform: uppercase; }
+    .sprint-sub   { font-size: 26px; font-weight: 800; color: #ddefff; margin-top: 6px; }
+    .sprint-bar-w { height: 5px; background: #1e2a4a; border-radius: 10px; margin-top: 12px; overflow: hidden; }
+    .sprint-bar-f { height: 100%; width: 0; background: linear-gradient(90deg, #3b82f6, #60a5fa); border-radius: 10px; box-shadow: 0 0 8px rgba(96,165,250,0.6); transition: width 1.4s ease; }
+    /* Task cards mini */
+    .mini-card {
+      background: #141830; border-radius: 16px; padding: 18px 18px;
+      display: flex; align-items: center; gap: 14px;
+      border-left: 4px solid #3b82f6;
+      opacity: 0; transform: translateX(30px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .mini-card.done  { border-left-color: #0BDB0B; }
+    .mini-card.warn  { border-left-color: #f59e0b; }
+    .mc-dot { width: 14px; height: 14px; border-radius: 50%; background: #3b82f6; flex-shrink: 0; }
+    .mini-card.done .mc-dot { background: #0BDB0B; }
+    .mini-card.warn .mc-dot { background: #f59e0b; }
+    .mc-text { flex: 1; }
+    .mc-title { font-size: 24px; font-weight: 700; color: #ddefff; }
+    .mc-meta  { font-size: 18px; color: #4a5580; margin-top: 4px; text-transform: uppercase; letter-spacing: 2px; }
+    .mc-badge { font-size: 20px; font-weight: 800; padding: 6px 14px; border-radius: 20px; }
+    .badge-blue  { background: rgba(59,130,246,0.15); color: #60a5fa; }
+    .badge-green { background: rgba(11,219,11,0.12); color: #0BDB0B; }
+    .badge-warn  { background: rgba(245,158,11,0.15); color: #f59e0b; }
+    /* Notificação popup */
+    .phone-popup {
+      position: absolute; bottom: 30px; left: 18px; right: 18px;
+      background: #1a2040; border: 1px solid rgba(11,219,11,0.3);
+      border-radius: 18px; padding: 18px 20px;
+      display: flex; align-items: center; gap: 14px;
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    .popup-icon { font-size: 28px; }
+    .popup-text { font-size: 22px; font-weight: 700; color: #e0fff8; }
+    .popup-sub  { font-size: 18px; color: #0BDB0B; margin-top: 3px; }
+
+    /* Linha verde brilhante na cena 4 */
+    .c4-line {
+      position: absolute;
+      bottom: 200px;
+      left: 0; width: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #0BDB0B, transparent);
+      box-shadow: 0 0 20px rgba(11,219,11,0.8);
+      transition: width 0.8s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="scan" id="scan"></div>
+  <div class="deco-line" id="dl1" style="top:480px;"></div>
+  <div class="deco-line" id="dl2" style="top:960px;"></div>
+  <div class="deco-line" id="dl3" style="top:1440px;"></div>
+
+  <!-- ====== CENA 1 — HOOK ====== -->
+  <div class="scene" id="s1">
+    <div class="c1-eyebrow" id="c1ey">Times de desenvolvimento</div>
+    <div class="c1-line1" id="c1l1">Coordenar <span class="hl">tarefas</span></div>
+    <div class="c1-line2" id="c1l2">por chat</div>
+    <div class="c1-big"   id="c1big">que executar.</div>
+    <div class="c1-sub"   id="c1sub">consome mais tempo</div>
+  </div>
+
+  <!-- ====== CENA 2 — PRODUTO ====== -->
+  <div class="scene" id="s2">
+    <div class="c2-label" id="c2lbl">● {{PRODUTO}}</div>
+    <div class="c2-text"  id="c2tx">Cada tarefa com <span class="hl">responsável,</span><br>prazo e histórico visível<br>para o time.</div>
+    <div class="card" id="card">
+      <div class="card-glow"></div>
+      <div class="card-title" id="ctitle">Refatorar módulo de pagamento</div>
+      <div class="card-meta">
+        <div class="meta"><span class="meta-l">Responsável</span><span class="meta-v" id="mv1">Lucas M.</span></div>
+        <div class="meta"><span class="meta-l">Prazo</span><span class="meta-v" id="mv2">Sexta-feira</span></div>
+        <div class="meta"><span class="meta-l">Status</span><span class="meta-v" id="mv3">Em andamento</span></div>
+      </div>
+      <div class="bar-wrap"><div class="bar-fill" id="bfill"></div></div>
+    </div>
+    <div class="ftag ftag-blue"  id="ft1" style="top:300px; right:50px;">Sprint 4</div>
+    <div class="ftag ftag-purp"  id="ft2" style="top:480px; left:40px;">Live</div>
+    <div class="ftag ftag-green" id="ft3" style="bottom:200px; right:70px;">3 tasks</div>
+  </div>
+
+  <!-- ====== CENA 3 — SMARTPHONE ====== -->
+  <div class="scene" id="s3phone">
+    <div class="phone-scene-label" id="pslabel">No seu bolso. Em tempo real.</div>
+    <div class="phone" id="phone">
+      <div class="phone-notch"></div>
+      <div class="phone-camera"></div>
+      <div class="phone-screen">
+
+        <!-- Header -->
+        <div class="app-header" id="appHeader">
+          <div class="app-logo-sm">
+            <span class="exp">{{EMPRESA}}</span><span class="x">{{EMPRESA_X}}</span><span class="flow">{{SLOGAN}}</span>
+          </div>
+          <div class="app-notif" id="appNotif">3 pendentes</div>
+        </div>
+
+        <!-- Sprint progress -->
+        <div class="sprint-block" id="sprintBlock">
+          <div class="sprint-title">Sprint 4</div>
+          <div class="sprint-sub">8 de 12 tarefas concluídas</div>
+          <div class="sprint-bar-w"><div class="sprint-bar-f" id="sprintBar"></div></div>
+        </div>
+
+        <!-- Task cards -->
+        <div class="mini-card done" id="mc1">
+          <div class="mc-dot"></div>
+          <div class="mc-text">
+            <div class="mc-title">Setup ambiente staging</div>
+            <div class="mc-meta">Lucas M. · Entregue</div>
+          </div>
+          <div class="mc-badge badge-green">✓</div>
+        </div>
+        <div class="mini-card" id="mc2">
+          <div class="mc-dot"></div>
+          <div class="mc-text">
+            <div class="mc-title">Refatorar módulo pagamento</div>
+            <div class="mc-meta">Ana R. · Em andamento</div>
+          </div>
+          <div class="mc-badge badge-blue">67%</div>
+        </div>
+        <div class="mini-card warn" id="mc3">
+          <div class="mc-dot"></div>
+          <div class="mc-text">
+            <div class="mc-title">Testes de integração API</div>
+            <div class="mc-meta">Pedro S. · Amanhã</div>
+          </div>
+          <div class="mc-badge badge-warn">!</div>
+        </div>
+
+        <!-- Popup de notificação -->
+        <div class="phone-popup" id="phonePopup">
+          <div class="popup-icon">🔔</div>
+          <div>
+            <div class="popup-text">Lucas concluiu a tarefa</div>
+            <div class="popup-sub">Sprint 4 · agora mesmo</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== CENA 5 — BENEFÍCIO ====== -->
+  <div class="scene" id="s3">
+    <div class="c3-check" id="c3ck">✓</div>
+    <div style="text-align:center; margin-top:40px; line-height:1.2;">
+      <div><span class="c3-w" id="sw1">A equipe</span></div>
+      <div><span class="c3-w" id="sw2">acompanha o sprint</span></div>
+      <div>
+        <span class="c3-w green" id="sw3">SEM REUNIÃO</span>
+        <div class="c3-ul" id="c3ul"></div>
+      </div>
+      <div><span class="c3-w" id="sw4" style="font-size:68px; color:#a7f3d0;">de alinhamento.</span></div>
+    </div>
+  </div>
+
+  <!-- ====== CENA 6 — CTA ====== -->
+  <div class="scene" id="s4">
+    <!-- Logo da empresa: prefixo outline + sufixo colorido -->
+    <div class="logo-wrap" id="logoWrap">
+      <span class="logo-exp">{{EMPRESA}}</span><span class="logo-x">{{EMPRESA_X}}</span>
+    </div>
+    <!-- Slogan/subtítulo abaixo da logo -->
+    <div class="flow-label" id="flowLabel">
+      <span>{{SLOGAN}}</span>
+    </div>
+    <div class="cta-url" id="ctaUrl">{{URL}}</div>
+    <div class="cta-btn" id="ctaBtn">
+      <div class="btn-shine" id="btnShine"></div>
+      {{CTA}}
+    </div>
+    <div class="c4-line" id="c4line"></div>
+  </div>
+
+  <!-- FRED — timeline de motion -->
+  <script>
+    const $ = id => document.getElementById(id);
+    const wait = ms => new Promise(r => setTimeout(r, ms));
+
+    // ─── Partículas ───
+    const pColors = {
+      1: ['#6c63ff','#a78bfa','#7c3aed'],
+      2: ['#3b82f6','#60a5fa','#93c5fd'],
+      3: ['#059669','#34d399','#6ee7b7'],
+      4: ['#0BDB0B','#059669','#34d399','#7c3aed']
+    };
+    let scene = 1;
+    function spawnParticle() {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      const sz = Math.random() * 10 + 3;
+      const cols = pColors[scene];
+      const c = cols[Math.floor(Math.random() * cols.length)];
+      const dur = Math.random() * 9 + 6;
+      Object.assign(p.style, {
+        width: sz+'px', height: sz+'px',
+        left: (Math.random() * 1080)+'px',
+        top: (1920 + sz)+'px',
+        background: c,
+        boxShadow: `0 0 ${sz*2}px ${c}`,
+        animationDuration: dur+'s',
+        animationDelay: (Math.random()*1.5)+'s'
+      });
+      document.body.appendChild(p);
+      setTimeout(() => p.remove(), (dur + 2.5) * 1000);
+    }
+    setInterval(spawnParticle, 160);
+
+    // ─── Helpers ───
+    function show(el) {
+      el.style.opacity  = '1';
+      el.style.transform = 'none';
+      el.style.filter   = 'none';
+    }
+    function fadeOut(el, ms = 320) {
+      return new Promise(r => {
+        el.style.transition = `opacity ${ms}ms ease, transform ${ms}ms ease`;
+        el.style.opacity    = '0';
+        el.style.transform  = 'scale(0.96) translateY(-18px)';
+        setTimeout(r, ms);
+      });
+    }
+    function setBg(c)  { document.body.style.background = c; }
+    function doScan()  { $('scan').style.left = '120%'; }
+    function resetScan() { $('scan').style.transition = 'none'; $('scan').style.left = '-100%'; requestAnimationFrame(() => { $('scan').style.transition = 'left 0.7s ease'; }); }
+
+    // ─── Main ───
+    async function run() {
+      ['dl1','dl2','dl3'].forEach(id => $(id).style.opacity = '1');
+
+      // ── CENA 1 ──
+      scene = 1;
+      setBg('#0b0b1e');
+      $('s1').style.opacity = '1';
+      doScan();
+
+      await wait(200);
+      show($('c1ey'));
+      await wait(280);
+      show($('c1l1'));
+      await wait(260);
+      show($('c1l2'));
+      await wait(380);
+      show($('c1big'));
+      await wait(480);
+      show($('c1sub'));
+
+      await wait(1900);
+      await fadeOut($('s1'));
+
+      // ── CENA 2 ──
+      scene = 2;
+      setBg('#060d1f');
+      $('s2').style.opacity = '1';
+      resetScan(); await wait(60); doScan();
+
+      show($('c2lbl'));
+      await wait(250);
+      show($('c2tx'));
+      await wait(350);
+      show($('card'));
+      await wait(300);
+      show($('ctitle'));
+      await wait(200);
+      show($('mv1'));
+      await wait(150);
+      show($('mv2'));
+      await wait(150);
+      show($('mv3'));
+      await wait(200);
+      $('bfill').style.width = '67%';
+
+      await wait(500);
+      show($('ft1'));
+      await wait(280);
+      show($('ft2'));
+      await wait(280);
+      show($('ft3'));
+
+      await wait(2400);
+      await fadeOut($('s2'));
+
+      // ── CENA 3 — SMARTPHONE ──
+      scene = 3;
+      setBg('#060d06');
+      $('s3phone').style.opacity = '1';
+      resetScan(); await wait(60); doScan();
+
+      show($('pslabel'));
+      await wait(300);
+      show($('phone'));
+      await wait(500);
+      show($('appHeader'));
+      await wait(250);
+      show($('sprintBlock'));
+      await wait(200);
+      $('sprintBar').style.width = '67%';
+      await wait(350);
+      show($('mc1'));
+      await wait(220);
+      show($('mc2'));
+      await wait(220);
+      show($('mc3'));
+      await wait(600);
+      show($('phonePopup'));
+
+      await wait(2000);
+      await fadeOut($('s3phone'));
+
+      // ── CENA 4 — BENEFÍCIO ──
+      scene = 3;
+      setBg('#04120f');
+      $('s3').style.opacity = '1';
+      resetScan(); await wait(60); doScan();
+
+      show($('c3ck'));
+      await wait(350);
+      show($('sw1'));
+      await wait(220);
+      show($('sw2'));
+      await wait(220);
+      show($('sw3'));
+      await wait(180);
+      $('c3ul').style.width = '100%';
+      await wait(380);
+      show($('sw4'));
+
+      await wait(1500);
+      await fadeOut($('s3'));
+
+      // ── CENA 5 — CTA ──
+      scene = 4;
+      setBg('#050d05');
+      $('s4').style.opacity = '1';
+      resetScan(); await wait(60); doScan();
+
+      // Logo surge com pamp
+      await wait(200);
+      show($('logoWrap'));
+      await wait(400);
+      show($('flowLabel'));
+      await wait(350);
+      show($('ctaUrl'));
+      await wait(300);
+      show($('ctaBtn'));
+
+      // Linha verde se desenha
+      await wait(200);
+      $('c4line').style.width = '100%';
+
+      // Shimmer no botão
+      await wait(300);
+      $('btnShine').style.transition = 'left 0.6s ease';
+      $('btnShine').style.left = '130%';
+
+      // Pulse de brilho no botão
+      await wait(600);
+      $('ctaBtn').style.boxShadow = '0 0 120px rgba(11,219,11,0.7)';
+      await wait(600);
+      $('ctaBtn').style.transition = 'box-shadow 0.8s ease';
+      $('ctaBtn').style.boxShadow  = '0 0 60px rgba(11,219,11,0.4)';
+    }
+
+    run();
+  </script>
+</body>
+</html>

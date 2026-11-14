@@ -1,0 +1,868 @@
+{
+ "fonte": "elevenlabs",
+ "voz": "Osiany Sales v2",
+ "voice_id": "LajrwgPkHCxzLCvnEwi7",
+ "palavras": [
+  {
+   "word": "Oi,",
+   "start": 0.0,
+   "end": 0.306
+  },
+  {
+   "word": "meninos!",
+   "start": 0.327,
+   "end": 0.876
+  },
+  {
+   "word": "Hoje",
+   "start": 0.897,
+   "end": 1.119
+  },
+  {
+   "word": "tem",
+   "start": 1.15,
+   "end": 1.277
+  },
+  {
+   "word": "tutorial",
+   "start": 1.33,
+   "end": 1.784
+  },
+  {
+   "word": "de",
+   "start": 1.836,
+   "end": 1.889
+  },
+  {
+   "word": "meique",
+   "start": 1.942,
+   "end": 2.153
+  },
+  {
+   "word": "masculina.",
+   "start": 2.195,
+   "end": 2.924
+  },
+  {
+   "word": "E",
+   "start": 3.072,
+   "end": 3.177
+  },
+  {
+   "word": "o",
+   "start": 3.24,
+   "end": 3.283
+  },
+  {
+   "word": "último",
+   "start": 3.315,
+   "end": 3.652
+  },
+  {
+   "word": "passo",
+   "start": 3.694,
+   "end": 3.968
+  },
+  {
+   "word": "tem",
+   "start": 4.021,
+   "end": 4.158
+  },
+  {
+   "word": "ciência.",
+   "start": 4.222,
+   "end": 4.865
+  },
+  {
+   "word": "Passo",
+   "start": 5.151,
+   "end": 5.509
+  },
+  {
+   "word": "um,",
+   "start": 5.615,
+   "end": 5.858
+  },
+  {
+   "word": "a",
+   "start": 5.964,
+   "end": 6.026
+  },
+  {
+   "word": "base:",
+   "start": 6.101,
+   "end": 6.544
+  },
+  {
+   "word": "banho",
+   "start": 6.724,
+   "end": 6.966
+  },
+  {
+   "word": "tomado.",
+   "start": 7.008,
+   "end": 7.515
+  },
+  {
+   "word": "Passo",
+   "start": 7.663,
+   "end": 7.958
+  },
+  {
+   "word": "dois,",
+   "start": 8.0,
+   "end": 8.348
+  },
+  {
+   "word": "o",
+   "start": 8.412,
+   "end": 8.517
+  },
+  {
+   "word": "práimer:",
+   "start": 8.581,
+   "end": 9.087
+  },
+  {
+   "word": "hidratante.",
+   "start": 9.119,
+   "end": 9.836
+  },
+  {
+   "word": "Passo",
+   "start": 10.122,
+   "end": 10.417
+  },
+  {
+   "word": "três,",
+   "start": 10.47,
+   "end": 10.818
+  },
+  {
+   "word": "o",
+   "start": 10.871,
+   "end": 10.976
+  },
+  {
+   "word": "iluminador:",
+   "start": 11.019,
+   "end": 11.705
+  },
+  {
+   "word": "perfume.",
+   "start": 11.736,
+   "end": 12.391
+  },
+  {
+   "word": "Três",
+   "start": 12.602,
+   "end": 12.845
+  },
+  {
+   "word": "borrifadas",
+   "start": 12.897,
+   "end": 13.51
+  },
+  {
+   "word": "e",
+   "start": 13.552,
+   "end": 13.573
+  },
+  {
+   "word": "o",
+   "start": 13.615,
+   "end": 13.647
+  },
+  {
+   "word": "cara",
+   "start": 13.7,
+   "end": 13.922
+  },
+  {
+   "word": "sai",
+   "start": 13.975,
+   "end": 14.112
+  },
+  {
+   "word": "brilhando",
+   "start": 14.154,
+   "end": 14.618
+  },
+  {
+   "word": "igual",
+   "start": 14.65,
+   "end": 14.924
+  },
+  {
+   "word": "blogueira.",
+   "start": 14.966,
+   "end": 15.525
+  },
+  {
+   "word": "Mas",
+   "start": 15.736,
+   "end": 15.885
+  },
+  {
+   "word": "a",
+   "start": 15.937,
+   "end": 15.958
+  },
+  {
+   "word": "paleta",
+   "start": 16.0,
+   "end": 16.327
+  },
+  {
+   "word": "do",
+   "start": 16.359,
+   "end": 16.423
+  },
+  {
+   "word": "momento",
+   "start": 16.465,
+   "end": 16.782
+  },
+  {
+   "word": "não",
+   "start": 16.835,
+   "end": 16.929
+  },
+  {
+   "word": "é",
+   "start": 16.972,
+   "end": 17.003
+  },
+  {
+   "word": "de",
+   "start": 17.045,
+   "end": 17.119
+  },
+  {
+   "word": "grife.",
+   "start": 17.172,
+   "end": 17.647
+  },
+  {
+   "word": "É",
+   "start": 17.932,
+   "end": 18.016
+  },
+  {
+   "word": "árabe!",
+   "start": 18.143,
+   "end": 18.692
+  },
+  {
+   "word": "Todo",
+   "start": 18.903,
+   "end": 19.156
+  },
+  {
+   "word": "mundo",
+   "start": 19.198,
+   "end": 19.42
+  },
+  {
+   "word": "tá",
+   "start": 19.473,
+   "end": 19.568
+  },
+  {
+   "word": "usando",
+   "start": 19.631,
+   "end": 19.948
+  },
+  {
+   "word": "o",
+   "start": 19.979,
+   "end": 20.001
+  },
+  {
+   "word": "Ráuas",
+   "start": 20.054,
+   "end": 20.391
+  },
+  {
+   "word": "Bléc.",
+   "start": 20.455,
+   "end": 20.887
+  },
+  {
+   "word": "A",
+   "start": 21.267,
+   "end": 21.32
+  },
+  {
+   "word": "internet",
+   "start": 21.384,
+   "end": 21.826
+  },
+  {
+   "word": "jura",
+   "start": 21.975,
+   "end": 22.227
+  },
+  {
+   "word": "que",
+   "start": 22.291,
+   "end": 22.385
+  },
+  {
+   "word": "ele",
+   "start": 22.407,
+   "end": 22.523
+  },
+  {
+   "word": "lembra",
+   "start": 22.575,
+   "end": 22.903
+  },
+  {
+   "word": "o",
+   "start": 22.935,
+   "end": 22.977
+  },
+  {
+   "word": "Nichâne",
+   "start": 23.04,
+   "end": 23.589
+  },
+  {
+   "word": "Rácivat,",
+   "start": 23.642,
+   "end": 24.413
+  },
+  {
+   "word": "um",
+   "start": 24.56,
+   "end": 24.665
+  },
+  {
+   "word": "nicho",
+   "start": 24.718,
+   "end": 25.025
+  },
+  {
+   "word": "que",
+   "start": 25.077,
+   "end": 25.162
+  },
+  {
+   "word": "custa",
+   "start": 25.215,
+   "end": 25.521
+  },
+  {
+   "word": "um",
+   "start": 25.574,
+   "end": 25.647
+  },
+  {
+   "word": "rim.",
+   "start": 25.711,
+   "end": 26.038
+  },
+  {
+   "word": "O",
+   "start": 26.217,
+   "end": 26.302
+  },
+  {
+   "word": "Ráuas",
+   "start": 26.386,
+   "end": 26.714
+  },
+  {
+   "word": "custa",
+   "start": 26.776,
+   "end": 27.083
+  },
+  {
+   "word": "um",
+   "start": 27.125,
+   "end": 27.177
+  },
+  {
+   "word": "dedinho.",
+   "start": 27.241,
+   "end": 27.8
+  },
+  {
+   "word": "E",
+   "start": 28.085,
+   "end": 28.191
+  },
+  {
+   "word": "o",
+   "start": 28.255,
+   "end": 28.285
+  },
+  {
+   "word": "rim",
+   "start": 28.328,
+   "end": 28.475
+  },
+  {
+   "word": "continua",
+   "start": 28.539,
+   "end": 29.025
+  },
+  {
+   "word": "no",
+   "start": 29.077,
+   "end": 29.151
+  },
+  {
+   "word": "lugar.",
+   "start": 29.194,
+   "end": 29.689
+  },
+  {
+   "word": "Agora,",
+   "start": 29.868,
+   "end": 30.396
+  },
+  {
+   "word": "a",
+   "start": 30.502,
+   "end": 30.565
+  },
+  {
+   "word": "parte",
+   "start": 30.639,
+   "end": 30.914
+  },
+  {
+   "word": "que",
+   "start": 30.966,
+   "end": 31.04
+  },
+  {
+   "word": "nenhuma",
+   "start": 31.083,
+   "end": 31.41
+  },
+  {
+   "word": "blogueira",
+   "start": 31.452,
+   "end": 31.843
+  },
+  {
+   "word": "conta.",
+   "start": 31.905,
+   "end": 32.391
+  },
+  {
+   "word": "Em",
+   "start": 32.676,
+   "end": 32.814
+  },
+  {
+   "word": "dois",
+   "start": 32.845,
+   "end": 33.025
+  },
+  {
+   "word": "mil",
+   "start": 33.077,
+   "end": 33.183
+  },
+  {
+   "word": "e",
+   "start": 33.225,
+   "end": 33.246
+  },
+  {
+   "word": "nove,",
+   "start": 33.299,
+   "end": 33.647
+  },
+  {
+   "word": "pesquisadores",
+   "start": 33.679,
+   "end": 34.355
+  },
+  {
+   "word": "britânicos",
+   "start": 34.396,
+   "end": 34.977
+  },
+  {
+   "word": "dividiram",
+   "start": 35.009,
+   "end": 35.505
+  },
+  {
+   "word": "homens",
+   "start": 35.536,
+   "end": 35.832
+  },
+  {
+   "word": "em",
+   "start": 35.875,
+   "end": 35.927
+  },
+  {
+   "word": "dois",
+   "start": 35.969,
+   "end": 36.148
+  },
+  {
+   "word": "grupos.",
+   "start": 36.201,
+   "end": 36.687
+  },
+  {
+   "word": "Um",
+   "start": 36.835,
+   "end": 37.066
+  },
+  {
+   "word": "usou",
+   "start": 37.173,
+   "end": 37.446
+  },
+  {
+   "word": "spray",
+   "start": 37.499,
+   "end": 37.774
+  },
+  {
+   "word": "com",
+   "start": 37.816,
+   "end": 37.932
+  },
+  {
+   "word": "perfume.",
+   "start": 37.975,
+   "end": 38.618
+  },
+  {
+   "word": "O",
+   "start": 38.829,
+   "end": 38.904
+  },
+  {
+   "word": "outro,",
+   "start": 39.051,
+   "end": 39.399
+  },
+  {
+   "word": "um",
+   "start": 39.463,
+   "end": 39.557
+  },
+  {
+   "word": "igualzinho,",
+   "start": 39.61,
+   "end": 40.212
+  },
+  {
+   "word": "sem",
+   "start": 40.36,
+   "end": 40.55
+  },
+  {
+   "word": "perfume.",
+   "start": 40.603,
+   "end": 41.152
+  },
+  {
+   "word": "Depois,",
+   "start": 41.436,
+   "end": 42.027
+  },
+  {
+   "word": "mulheres",
+   "start": 42.091,
+   "end": 42.471
+  },
+  {
+   "word": "avaliaram",
+   "start": 42.524,
+   "end": 42.956
+  },
+  {
+   "word": "fotos",
+   "start": 43.019,
+   "end": 43.389
+  },
+  {
+   "word": "e",
+   "start": 43.442,
+   "end": 43.463
+  },
+  {
+   "word": "vídeos",
+   "start": 43.515,
+   "end": 43.822
+  },
+  {
+   "word": "deles.",
+   "start": 43.875,
+   "end": 44.275
+  },
+  {
+   "word": "Na",
+   "start": 44.403,
+   "end": 44.529
+  },
+  {
+   "word": "foto?",
+   "start": 44.614,
+   "end": 45.12
+  },
+  {
+   "word": "Empate.",
+   "start": 45.268,
+   "end": 45.922
+  },
+  {
+   "word": "Mas",
+   "start": 46.134,
+   "end": 46.313
+  },
+  {
+   "word": "no",
+   "start": 46.365,
+   "end": 46.439
+  },
+  {
+   "word": "vídeo,",
+   "start": 46.492,
+   "end": 46.883
+  },
+  {
+   "word": "os",
+   "start": 46.946,
+   "end": 47.073
+  },
+  {
+   "word": "perfumados",
+   "start": 47.136,
+   "end": 47.653
+  },
+  {
+   "word": "foram",
+   "start": 47.705,
+   "end": 47.895
+  },
+  {
+   "word": "achados",
+   "start": 47.959,
+   "end": 48.35
+  },
+  {
+   "word": "mais",
+   "start": 48.413,
+   "end": 48.571
+  },
+  {
+   "word": "atraentes.",
+   "start": 48.625,
+   "end": 49.236
+  },
+  {
+   "word": "Por",
+   "start": 49.384,
+   "end": 49.532
+  },
+  {
+   "word": "quê?",
+   "start": 49.585,
+   "end": 49.891
+  },
+  {
+   "word": "Eles",
+   "start": 50.038,
+   "end": 50.281
+  },
+  {
+   "word": "ficaram",
+   "start": 50.313,
+   "end": 50.651
+  },
+  {
+   "word": "mais",
+   "start": 50.682,
+   "end": 50.851
+  },
+  {
+   "word": "confiantes.",
+   "start": 50.904,
+   "end": 51.569
+  },
+  {
+   "word": "E",
+   "start": 51.59,
+   "end": 51.675
+  },
+  {
+   "word": "confiança",
+   "start": 51.748,
+   "end": 52.276
+  },
+  {
+   "word": "aparece",
+   "start": 52.318,
+   "end": 52.762
+  },
+  {
+   "word": "no",
+   "start": 52.804,
+   "end": 52.877
+  },
+  {
+   "word": "jeito",
+   "start": 52.93,
+   "end": 53.142
+  },
+  {
+   "word": "de",
+   "start": 53.184,
+   "end": 53.236
+  },
+  {
+   "word": "falar",
+   "start": 53.289,
+   "end": 53.658
+  },
+  {
+   "word": "e",
+   "start": 53.765,
+   "end": 53.87
+  },
+  {
+   "word": "de",
+   "start": 53.912,
+   "end": 53.975
+  },
+  {
+   "word": "se",
+   "start": 54.017,
+   "end": 54.081
+  },
+  {
+   "word": "mexer.",
+   "start": 54.123,
+   "end": 54.587
+  },
+  {
+   "word": "Ou",
+   "start": 54.767,
+   "end": 54.935
+  },
+  {
+   "word": "seja:",
+   "start": 55.01,
+   "end": 55.432
+  },
+  {
+   "word": "é",
+   "start": 55.611,
+   "end": 55.695
+  },
+  {
+   "word": "a",
+   "start": 55.748,
+   "end": 55.769
+  },
+  {
+   "word": "única",
+   "start": 55.854,
+   "end": 56.202
+  },
+  {
+   "word": "meique",
+   "start": 56.255,
+   "end": 56.519
+  },
+  {
+   "word": "que",
+   "start": 56.572,
+   "end": 56.645
+  },
+  {
+   "word": "não",
+   "start": 56.688,
+   "end": 56.794
+  },
+  {
+   "word": "aparece",
+   "start": 56.825,
+   "end": 57.205
+  },
+  {
+   "word": "no",
+   "start": 57.247,
+   "end": 57.311
+  },
+  {
+   "word": "espelho.",
+   "start": 57.342,
+   "end": 57.817
+  },
+  {
+   "word": "Aparece",
+   "start": 57.965,
+   "end": 58.397
+  },
+  {
+   "word": "no",
+   "start": 58.44,
+   "end": 58.514
+  },
+  {
+   "word": "elogio.",
+   "start": 58.556,
+   "end": 59.073
+  },
+  {
+   "word": "Segue",
+   "start": 59.285,
+   "end": 59.622
+  },
+  {
+   "word": "a",
+   "start": 59.654,
+   "end": 59.675
+  },
+  {
+   "word": "Valota",
+   "start": 59.727,
+   "end": 60.055
+  },
+  {
+   "word": "Parfum",
+   "start": 60.097,
+   "end": 60.487
+  },
+  {
+   "word": "pra",
+   "start": 60.593,
+   "end": 60.773
+  },
+  {
+   "word": "nunca",
+   "start": 60.825,
+   "end": 61.046
+  },
+  {
+   "word": "ficar",
+   "start": 61.089,
+   "end": 61.353
+  },
+  {
+   "word": "sem",
+   "start": 61.405,
+   "end": 61.564
+  },
+  {
+   "word": "meique.",
+   "start": 61.595,
+   "end": 62.145
+  }
+ ],
+ "nota": "tempos /1.1 (atempo=1.1 sobre original/narracao.mp3)"
+}

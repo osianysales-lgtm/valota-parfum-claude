@@ -1,0 +1,3 @@
+prompt: vinyl record scratch stop, comedic interruption
+duracao: 0.8
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)

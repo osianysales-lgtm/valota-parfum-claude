@@ -1,0 +1,2 @@
+duracao_total=43.24
+fator=1.25

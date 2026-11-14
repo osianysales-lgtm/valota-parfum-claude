@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Capas mescladas · Valota Parfum</title>
+<style>
+@font-face { font-family: "Gotham"; src: url("img/GothamBlack.otf"); font-weight: 900; }
+@font-face { font-family: "Montserrat"; src: url("img/Montserrat.ttf"); font-weight: 100 900; }
+:root { --pet:#0F2E33; --noite:#0A1F23; --luz:#1A4A52; --creme:#F2E8D8; --ambar:#D49A4E; --amarelo:#FFC93C;
+        --cedro:#6B4430; --menta:#7DBFB3; --pimenta:#9C452A; --algodao:#DCD6E2; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #000; font-family: "Montserrat", sans-serif; }
+.capa { position: relative; width: 1080px; height: 1920px; overflow: hidden; display: none; }
+body.all .capa { display: block; margin-bottom: 40px; }
+.capa.on { display: block; }
+/* área segura 3:4 da grade: y 240 a 1680 */
+.safe { position: absolute; left: 0; top: 240px; width: 1080px; height: 1440px; }
+.g1 { background: radial-gradient(90% 60% at 35% 40%, var(--luz) 0%, var(--pet) 55%, var(--noite) 100%); }
+.gotham { font-family: "Gotham", "Montserrat", sans-serif; font-weight: 900; text-transform: uppercase; line-height: .92; }
+.thin { font-weight: 200; }
+.light { font-weight: 300; }
+.handle { position: absolute; font-weight: 600; font-size: 26px; letter-spacing: .04em; }
+.pill { display: inline-block; border-radius: 999px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.chip { display: inline-block; background: var(--amarelo); color: var(--noite); padding: 0 .18em; border-radius: .12em; }
+.marca { position: absolute; font-weight: 800; font-size: 22px; letter-spacing: .3em; }
+.bottle { position: absolute; filter: drop-shadow(0 30px 40px rgba(0,0,0,.35)); }
+.ph { position: absolute; background-size: cover; background-position: center; }
+</style>
+</head>
+<body>
+
+<!-- 1 · MAKE MASCULINA · Petróleo (D) · arco com foto à direita -->
+<section class="capa g1" id="make">
+  <div class="safe">
+    <div class="handle" style="left:72px;top:70px;color:var(--creme);opacity:.8">@valotaparfum</div>
+    <div class="ph" style="right:-30px;top:640px;width:560px;height:800px;border-radius:280px 280px 0 0;background-image:url(img/f-make.jpg);background-position:50% 25%;box-shadow:0 0 0 10px var(--ambar)"></div>
+    <div style="position:absolute;left:72px;top:150px;color:var(--creme)">
+      <div class="light" style="font-size:54px">oi, meninos!</div>
+      <div class="gotham" style="font-size:230px;margin-top:20px">Make</div>
+      <div class="thin" style="font-size:118px;letter-spacing:.02em;margin-top:6px">masculina</div>
+      <div class="pill" style="margin-top:40px;background:var(--amarelo);color:var(--noite);font-size:30px;padding:16px 34px">tutorial</div>
+    </div>
+    <div style="position:absolute;left:72px;bottom:90px;width:16px;height:180px;background:var(--ambar)"></div>
+  </div>
+</section>
+
+<!-- 2 · LEVE MÉDIO PESADO · Âmbar chapado (A) · foto em círculo -->
+<section class="capa" id="leve" style="background:var(--ambar)">
+  <div class="safe">
+    <div class="handle" style="left:72px;top:70px;color:var(--noite)">@valotaparfum</div>
+    <div style="position:absolute;left:0;right:0;top:190px;text-align:center;color:var(--noite)">
+      <div class="light" style="font-size:52px">qual é o</div>
+      <div class="gotham" style="font-size:200px;margin-top:6px">seu?</div>
+    </div>
+    <div style="position:absolute;left:0;right:0;top:600px;display:flex;justify-content:center;gap:22px">
+      <span class="pill" style="background:var(--menta);color:var(--noite);font-size:38px;padding:20px 40px">leve</span>
+      <span class="pill" style="background:var(--creme);color:var(--noite);font-size:38px;padding:20px 40px">médio</span>
+      <span class="pill" style="background:var(--cedro);color:var(--creme);font-size:38px;padding:20px 40px">pesado</span>
+    </div>
+    <div class="ph" style="left:270px;top:770px;width:540px;height:540px;border-radius:50%;background-image:url(img/f-leve.jpg);background-position:50% 18%;background-size:125%;box-shadow:0 0 0 14px var(--noite)"></div>
+    <div class="marca" style="right:72px;bottom:60px;color:var(--noite)">VALOTA PARFUM</div>
+  </div>
+</section>
+
+<!-- 3 · 4 PERFUMES TREINO · Foto cheia (F) -->
+<section class="capa" id="treino" style="background:var(--noite)">
+  <div class="ph" style="inset:0;background-image:url(img/f-treino.jpg);background-position:50% 30%"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(10,31,35,0) 35%, rgba(10,31,35,.92) 72%, var(--noite) 100%)"></div>
+  <div class="safe">
+    <div class="pill" style="position:absolute;left:72px;top:70px;background:var(--creme);color:var(--noite);font-size:24px;padding:12px 26px">treino pesado</div>
+    <div style="position:absolute;left:72px;right:72px;bottom:110px;color:var(--creme)">
+      <div class="gotham" style="font-size:122px;white-space:nowrap">4 perfumes</div>
+      <div style="font-weight:700;font-size:62px;margin-top:22px;line-height:1.15">que duram o <span class="chip">treino inteiro</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · 3 BARATOS QUE PARECEM CAROS · Creme (L) · frascos -->
+<section class="capa" id="baratos" style="background:var(--creme)">
+  <div class="safe">
+    <div class="handle" style="right:72px;top:70px;color:var(--noite)">@valotaparfum</div>
+    <div style="position:absolute;left:72px;top:150px;color:var(--noite)">
+      <div class="gotham" style="font-size:140px">3 perfumes<br>baratos</div>
+      <div style="font-weight:300;font-size:64px;margin-top:22px">que parecem <span class="gotham chip" style="font-size:78px;padding:4px 16px">caros</span></div>
+    </div>
+    <img class="bottle" src="img/brun.png" style="left:110px;top:720px;height:560px">
+    <img class="bottle" src="img/elite.png" style="left:370px;top:680px;height:600px">
+    <img class="bottle" src="img/fahad.png" style="left:720px;top:740px;height:540px">
+    <div style="position:absolute;left:0;right:0;bottom:0;height:16px;background:var(--pet)"></div>
+    <div class="ph" style="right:60px;top:1130px;width:210px;height:210px;border-radius:50%;background-image:url(img/f-baratos.jpg);background-position:50% 22%;background-size:160%;box-shadow:0 0 0 8px var(--pet)"></div>
+  </div>
+</section>
+
+<!-- 5 · O MAIS HYPADO · Petróleo Noite (D) · card de foto inclinado -->
+<section class="capa" id="hypado" style="background:radial-gradient(70% 45% at 50% 62%, var(--luz) 0%, var(--pet) 50%, var(--noite) 100%)">
+  <div class="safe">
+    <div style="position:absolute;left:0;right:0;top:110px;text-align:center;color:var(--creme)">
+      <div class="light" style="font-size:56px">o mais</div>
+      <div class="gotham" style="font-size:190px;color:var(--amarelo);margin-top:6px">hypado</div>
+      <div class="light" style="font-size:56px;margin-top:12px">da internet</div>
+    </div>
+    <div class="ph" style="left:150px;top:600px;width:780px;height:780px;border-radius:36px;background-image:url(img/f-bidaya.png);background-position:70% 30%;background-size:125%;box-shadow:0 0 0 10px var(--creme), 0 40px 80px rgba(0,0,0,.5);transform:rotate(-3deg)"></div>
+    <div style="position:absolute;right:80px;top:560px;transform:rotate(6deg);background:var(--amarelo);color:var(--noite);font-weight:800;font-size:44px;padding:16px 30px;border-radius:14px;box-shadow:0 12px 30px rgba(0,0,0,.35)">vale o hype?</div>
+  </div>
+</section>
+
+<!-- 6 · O HÁBITO MAIS SAUDÁVEL · Amarelo Laudo (A) -->
+<section class="capa" id="habito" style="background:var(--amarelo)">
+  <div class="safe">
+    <div class="handle" style="left:72px;top:70px;color:var(--noite)">@valotaparfum</div>
+    <div style="position:absolute;left:72px;top:170px;color:var(--noite)">
+      <div style="font-weight:300;font-size:70px">o hábito mais</div>
+      <div class="gotham" style="font-size:168px;margin-top:8px">saudável</div>
+      <div style="display:inline-block;background:var(--noite);color:var(--creme);font-weight:700;font-size:40px;padding:10px 24px;margin-top:28px">pro seu olfato</div>
+    </div>
+    <img class="bottle" src="img/sauvage.png" style="left:150px;top:690px;height:640px">
+    <img class="bottle" src="img/goodgirl.png" style="left:470px;top:700px;height:620px">
+    <div class="ph" style="right:72px;top:860px;width:250px;height:330px;border-radius:24px;background-image:url(img/f-habito.jpg);background-position:50% 25%;box-shadow:0 0 0 8px var(--noite);transform:rotate(4deg)"></div>
+  </div>
+</section>
+
+<!-- 7 · PLANTÃO URGENTE · Pimenta (família especiado) -->
+<section class="capa" id="plantao" style="background:var(--pimenta)">
+  <div style="position:absolute;left:0;right:0;top:240px;height:110px;background:var(--noite);display:flex;align-items:center;padding:0 72px;gap:22px">
+    <span style="width:26px;height:26px;border-radius:50%;background:var(--amarelo)"></span>
+    <span class="gotham" style="font-size:52px;color:var(--amarelo);letter-spacing:.04em">plantão urgente</span>
+  </div>
+  <div class="safe">
+    <div style="position:absolute;left:72px;top:200px;color:var(--creme)">
+      <div class="gotham" style="font-size:132px">Ela roubou</div>
+      <div style="font-weight:300;font-size:84px;margin-top:14px">o perfume <b style="font-weight:800">dele</b></div>
+    </div>
+    <img class="bottle" src="img/prat_fada.png" style="left:330px;top:640px;height:620px;transform:rotate(-6deg)">
+    <div class="pill" style="position:absolute;left:72px;bottom:80px;background:var(--creme);color:var(--noite);font-size:26px;padding:14px 30px">caso Fada Gold</div>
+    <div class="marca" style="right:72px;bottom:94px;color:var(--creme)">VALOTA PARFUM</div>
+  </div>
+</section>
+
+<!-- 8 · 5 ÁRABES QUE RENDEM ELOGIO · Petróleo (D3, números Âmbar) -->
+<section class="capa g1" id="arabes">
+  <div class="safe">
+    <div style="position:absolute;left:0;right:0;top:60px;text-align:center;color:var(--creme)">
+      <div class="gotham" style="font-size:300px;color:var(--ambar)">5</div><div class="gotham" style="font-size:170px;color:var(--creme);margin-top:-10px">árabes</div>
+      <div style="font-weight:300;font-size:64px;margin-top:20px">que rendem <span class="chip" style="font-weight:800">elogio</span></div>
+    </div>
+    <div style="position:absolute;left:40px;right:40px;top:660px;height:560px;display:flex;align-items:flex-end;justify-content:center;gap:10px">
+      <img src="img/khamrah.png" style="height:270px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.4))">
+      <img src="img/9pm.png" style="height:360px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.4))">
+      <img src="img/fakhar.png" style="height:430px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.4))">
+      <img src="img/asad.png" style="height:360px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.4))">
+      <img src="img/hawas.png" style="height:270px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.4))">
+    </div>
+    <div style="position:absolute;left:0;right:0;top:1250px;height:4px;background:linear-gradient(90deg,transparent,var(--ambar),transparent)"></div>
+    <div class="marca" style="left:0;right:0;text-align:center;bottom:50px;color:var(--creme);opacity:.7">VALOTA PARFUM</div>
+  </div>
+</section>
+
+<script>
+  const id = location.hash.slice(1);
+  if (id) document.getElementById(id).classList.add('on'); else document.body.classList.add('all');
+</script>
+</body>
+</html>

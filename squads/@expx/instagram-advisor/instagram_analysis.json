@@ -1,0 +1,1294 @@
+{
+  "timestamp": "2026-04-16T14:27:11.514385",
+  "instagram_id": "17841451605580609",
+  "username": "softwarehouseexponencial",
+  "account_name": "EXPX | Software House",
+  "profile_picture_url": "https://scontent.fcaw3-1.fna.fbcdn.net/v/t51.82787-15/658906885_18051218351720187_637318279702602441_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7d201b&_nc_ohc=A1bSqyvQKPwQ7kNvwF8-xke&_nc_oc=AdqrPpdOqUcDTk3g5w53WT7IQ7obOak04Jjye3jZH7ezr9YtlrfQGBjGrzgVw-ztKr4&_nc_zt=23&_nc_ht=scontent.fcaw3-1.fna&edm=AL-3X8kEAAAA&_nc_gid=Hoog--ZZlMipUt3diSL49A&oh=00_Af0cluuNj5xRoLcmdSEEoigqT6TfYaMx2GsnAEz72hrnAA&oe=69E7086E",
+  "followers_count": 30744,
+  "media_count": 428,
+  "analysis_summary": {
+    "total_posts_analyzed": 30,
+    "post_types": {
+      "Padrão": 10,
+      "Pergunta/Engajamento": 18,
+      "Texto Longo/Story": 2
+    },
+    "avg_metrics_by_type": {
+      "Padrão": {
+        "count": 10,
+        "avg_engagement_rate": 0.0,
+        "avg_reach": 0.0,
+        "avg_engagement_count": 0.0
+      },
+      "Pergunta/Engajamento": {
+        "count": 18,
+        "avg_engagement_rate": 0.0,
+        "avg_reach": 0.0,
+        "avg_engagement_count": 0.0
+      },
+      "Texto Longo/Story": {
+        "count": 2,
+        "avg_engagement_rate": 0.0,
+        "avg_reach": 0.0,
+        "avg_engagement_count": 0.0
+      }
+    },
+    "characteristics": {
+      "with_hashtags": 0,
+      "with_emoji": 20,
+      "with_cta": 0,
+      "with_question": 18,
+      "with_numbers": 15,
+      "with_link": 0
+    },
+    "top_performing_posts": [
+      {
+        "id": "18039089147788996",
+        "timestamp": "2026-04-15T17:42:48+0000",
+        "media_type": "CAROUSEL_ALBUM",
+        "caption_preview": "Um aumento de 12,5% nos custos de anúncios não é apenas um \"ajuste de mercado\", é um teste de sobrev",
+        "thumbnail_url": "",
+        "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/670686566_18052947155720187_5650240580725356082_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Ip4nmRKN2L8Q7kNvwGtJj2S&_nc_oc=AdoVBx-UTAymiQYqRd8A83ReIhEs0lwrU7sg8vhZDr3jh1Z8VhkSPIuo1ljVGSJvV3E&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af1hmC6xY_QD4SgrTssUEKIDsipZHrMeP0_EtrB15rGPDA&oe=69E6EC98",
+        "permalink": "https://www.instagram.com/p/DXKT26yj63W/",
+        "content_analysis": {
+          "type": "Padrão",
+          "word_count": 75,
+          "has_hashtags": false,
+          "hashtag_count": 0,
+          "has_emoji": true,
+          "emoji_count": 1,
+          "has_cta": false,
+          "has_question": false,
+          "has_numbers": true,
+          "has_link": false
+        },
+        "metrics": {
+          "like_count": 5,
+          "comments_count": 0,
+          "impressions": 1,
+          "reach": 0,
+          "engagement": 0,
+          "engagement_rate": 0.0,
+          "saves": 0,
+          "shares": 0
+        }
+      },
+      {
+        "id": "17945147055147849",
+        "timestamp": "2026-04-14T19:00:43+0000",
+        "media_type": "CAROUSEL_ALBUM",
+        "caption_preview": "🚀 A Meta está revolucionando a forma como você faz publicidade, e você precisa estar pronto!\n\nEssas ",
+        "thumbnail_url": "",
+        "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/670918060_18052848440720187_7359692485500644185_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ObgeJgp-E3QQ7kNvwGTxJJW&_nc_oc=AdrwUbSnL_Ek1JMYmaLC_JQahFLIQopPHWWlAUIaRbawUm0GP2tQSZeS0qCkjb42_7U&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af3UZf4I40pLrTtWvEFr_uUWkuxx1GLqtFWMf_b4ZKxofg&oe=69E6D44F",
+        "permalink": "https://www.instagram.com/p/DXH3-p2kxWf/",
+        "content_analysis": {
+          "type": "Padrão",
+          "word_count": 40,
+          "has_hashtags": false,
+          "hashtag_count": 0,
+          "has_emoji": true,
+          "emoji_count": 2,
+          "has_cta": false,
+          "has_question": false,
+          "has_numbers": true,
+          "has_link": false
+        },
+        "metrics": {
+          "like_count": 6,
+          "comments_count": 0,
+          "impressions": 1,
+          "reach": 0,
+          "engagement": 0,
+          "engagement_rate": 0.0,
+          "saves": 0,
+          "shares": 0
+        }
+      },
+      {
+        "id": "18115826413669513",
+        "timestamp": "2026-04-13T16:56:22+0000",
+        "media_type": "CAROUSEL_ALBUM",
+        "caption_preview": "Seu software funcionou em 3 dias. Parabéns! 🎉\n\nAgora vem a parte que separa amadores de profissionai",
+        "thumbnail_url": "",
+        "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/670797927_18052715003720187_7694197011621314173_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=oJoewSmnAsMQ7kNvwHej2YU&_nc_oc=Adr9DdXXkkaCwkNTptloVEKjvm9RfVA04wJf3XWkhlRAG4GONW_3z7iQfM58wTgLlFs&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af37Khh9b6-rF3hjhHQzjpwJyeZc4qggS0Ncds4dIowj0Q&oe=69E6F595",
+        "permalink": "https://www.instagram.com/p/DXFE8sMCfxZ/",
+        "content_analysis": {
+          "type": "Pergunta/Engajamento",
+          "word_count": 170,
+          "has_hashtags": false,
+          "hashtag_count": 0,
+          "has_emoji": true,
+          "emoji_count": 3,
+          "has_cta": false,
+          "has_question": true,
+          "has_numbers": true,
+          "has_link": false
+        },
+        "metrics": {
+          "like_count": 10,
+          "comments_count": 0,
+          "impressions": 1,
+          "reach": 0,
+          "engagement": 0,
+          "engagement_rate": 0.0,
+          "saves": 0,
+          "shares": 0
+        }
+      },
+      {
+        "id": "18202827823338917",
+        "timestamp": "2026-04-13T14:42:14+0000",
+        "media_type": "CAROUSEL_ALBUM",
+        "caption_preview": "O Claude Code zerou o jogo: agora o foco não é mais escrever código, mas entregar estratégia. Descub",
+        "thumbnail_url": "",
+        "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/670361585_18052701380720187_3992444978327038500_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ZWno95PUSfIQ7kNvwGYYz5b&_nc_oc=Adrb94kaZchGUJZzVMMYOag0iOMsYOw0C7pqiV8FfY1p5ZcrT6PxBb0HQqcosrAOXAY&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af1SDqEjufTOAzbwux-Woo4lbqANxc9yduaobtK29c50yg&oe=69E6F6D9",
+        "permalink": "https://www.instagram.com/p/DXE1ndYjubm/",
+        "content_analysis": {
+          "type": "Padrão",
+          "word_count": 26,
+          "has_hashtags": false,
+          "hashtag_count": 0,
+          "has_emoji": true,
+          "emoji_count": 2,
+          "has_cta": false,
+          "has_question": false,
+          "has_numbers": true,
+          "has_link": false
+        },
+        "metrics": {
+          "like_count": 18,
+          "comments_count": 1,
+          "impressions": 1,
+          "reach": 0,
+          "engagement": 0,
+          "engagement_rate": 0.0,
+          "saves": 0,
+          "shares": 0
+        }
+      },
+      {
+        "id": "18388578217085320",
+        "timestamp": "2026-04-06T15:03:57+0000",
+        "media_type": "CAROUSEL_ALBUM",
+        "caption_preview": "Muitos acreditaram que os sistemas tradicionais estariam com os dias contados. 📉\n\nMas a realidade, s",
+        "thumbnail_url": "",
+        "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/662281542_18051833084720187_3744452836146260755_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=tcV2fZNVjTQQ7kNvwFqdV6y&_nc_oc=AdoovRYKRXFmqseaTc_bLNVUWBfDrAvqkdBpWad3guVHNP4i8VcW6xVbzkY0o4aIEks&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af1ERBxXD8RBnQT7QsFvCng-mSJECTB8n09zSbQNR7W-YQ&oe=69E6EB4B",
+        "permalink": "https://www.instagram.com/p/DWy2iYGDixg/",
+        "content_analysis": {
+          "type": "Padrão",
+          "word_count": 48,
+          "has_hashtags": false,
+          "hashtag_count": 0,
+          "has_emoji": true,
+          "emoji_count": 2,
+          "has_cta": false,
+          "has_question": false,
+          "has_numbers": false,
+          "has_link": false
+        },
+        "metrics": {
+          "like_count": 16,
+          "comments_count": 3,
+          "impressions": 1,
+          "reach": 0,
+          "engagement": 0,
+          "engagement_rate": 0.0,
+          "saves": 0,
+          "shares": 0
+        }
+      }
+    ],
+    "bottom_performing_posts": [
+      {
+        "id": "18039089147788996",
+        "timestamp": "2026-04-15T17:42:48+0000",
+        "media_type": "CAROUSEL_ALBUM",
+        "caption_preview": "Um aumento de 12,5% nos custos de anúncios não é apenas um \"ajuste de mercado\", é um teste de sobrev",
+        "thumbnail_url": "",
+        "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/670686566_18052947155720187_5650240580725356082_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Ip4nmRKN2L8Q7kNvwGtJj2S&_nc_oc=AdoVBx-UTAymiQYqRd8A83ReIhEs0lwrU7sg8vhZDr3jh1Z8VhkSPIuo1ljVGSJvV3E&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af1hmC6xY_QD4SgrTssUEKIDsipZHrMeP0_EtrB15rGPDA&oe=69E6EC98",
+        "permalink": "https://www.instagram.com/p/DXKT26yj63W/",
+        "content_analysis": {
+          "type": "Padrão",
+          "word_count": 75,
+          "has_hashtags": false,
+          "hashtag_count": 0,
+          "has_emoji": true,
+          "emoji_count": 1,
+          "has_cta": false,
+          "has_question": false,
+          "has_numbers": true,
+          "has_link": false
+        },
+        "metrics": {
+          "like_count": 5,
+          "comments_count": 0,
+          "impressions": 1,
+          "reach": 0,
+          "engagement": 0,
+          "engagement_rate": 0.0,
+          "saves": 0,
+          "shares": 0
+        }
+      },
+      {
+        "id": "17945147055147849",
+        "timestamp": "2026-04-14T19:00:43+0000",
+        "media_type": "CAROUSEL_ALBUM",
+        "caption_preview": "🚀 A Meta está revolucionando a forma como você faz publicidade, e você precisa estar pronto!\n\nEssas ",
+        "thumbnail_url": "",
+        "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/670918060_18052848440720187_7359692485500644185_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ObgeJgp-E3QQ7kNvwGTxJJW&_nc_oc=AdrwUbSnL_Ek1JMYmaLC_JQahFLIQopPHWWlAUIaRbawUm0GP2tQSZeS0qCkjb42_7U&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af3UZf4I40pLrTtWvEFr_uUWkuxx1GLqtFWMf_b4ZKxofg&oe=69E6D44F",
+        "permalink": "https://www.instagram.com/p/DXH3-p2kxWf/",
+        "content_analysis": {
+          "type": "Padrão",
+          "word_count": 40,
+          "has_hashtags": false,
+          "hashtag_count": 0,
+          "has_emoji": true,
+          "emoji_count": 2,
+          "has_cta": false,
+          "has_question": false,
+          "has_numbers": true,
+          "has_link": false
+        },
+        "metrics": {
+          "like_count": 6,
+          "comments_count": 0,
+          "impressions": 1,
+          "reach": 0,
+          "engagement": 0,
+          "engagement_rate": 0.0,
+          "saves": 0,
+          "shares": 0
+        }
+      },
+      {
+        "id": "18115826413669513",
+        "timestamp": "2026-04-13T16:56:22+0000",
+        "media_type": "CAROUSEL_ALBUM",
+        "caption_preview": "Seu software funcionou em 3 dias. Parabéns! 🎉\n\nAgora vem a parte que separa amadores de profissionai",
+        "thumbnail_url": "",
+        "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/670797927_18052715003720187_7694197011621314173_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=oJoewSmnAsMQ7kNvwHej2YU&_nc_oc=Adr9DdXXkkaCwkNTptloVEKjvm9RfVA04wJf3XWkhlRAG4GONW_3z7iQfM58wTgLlFs&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af37Khh9b6-rF3hjhHQzjpwJyeZc4qggS0Ncds4dIowj0Q&oe=69E6F595",
+        "permalink": "https://www.instagram.com/p/DXFE8sMCfxZ/",
+        "content_analysis": {
+          "type": "Pergunta/Engajamento",
+          "word_count": 170,
+          "has_hashtags": false,
+          "hashtag_count": 0,
+          "has_emoji": true,
+          "emoji_count": 3,
+          "has_cta": false,
+          "has_question": true,
+          "has_numbers": true,
+          "has_link": false
+        },
+        "metrics": {
+          "like_count": 10,
+          "comments_count": 0,
+          "impressions": 1,
+          "reach": 0,
+          "engagement": 0,
+          "engagement_rate": 0.0,
+          "saves": 0,
+          "shares": 0
+        }
+      },
+      {
+        "id": "18202827823338917",
+        "timestamp": "2026-04-13T14:42:14+0000",
+        "media_type": "CAROUSEL_ALBUM",
+        "caption_preview": "O Claude Code zerou o jogo: agora o foco não é mais escrever código, mas entregar estratégia. Descub",
+        "thumbnail_url": "",
+        "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/670361585_18052701380720187_3992444978327038500_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ZWno95PUSfIQ7kNvwGYYz5b&_nc_oc=Adrb94kaZchGUJZzVMMYOag0iOMsYOw0C7pqiV8FfY1p5ZcrT6PxBb0HQqcosrAOXAY&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af1SDqEjufTOAzbwux-Woo4lbqANxc9yduaobtK29c50yg&oe=69E6F6D9",
+        "permalink": "https://www.instagram.com/p/DXE1ndYjubm/",
+        "content_analysis": {
+          "type": "Padrão",
+          "word_count": 26,
+          "has_hashtags": false,
+          "hashtag_count": 0,
+          "has_emoji": true,
+          "emoji_count": 2,
+          "has_cta": false,
+          "has_question": false,
+          "has_numbers": true,
+          "has_link": false
+        },
+        "metrics": {
+          "like_count": 18,
+          "comments_count": 1,
+          "impressions": 1,
+          "reach": 0,
+          "engagement": 0,
+          "engagement_rate": 0.0,
+          "saves": 0,
+          "shares": 0
+        }
+      },
+      {
+        "id": "18388578217085320",
+        "timestamp": "2026-04-06T15:03:57+0000",
+        "media_type": "CAROUSEL_ALBUM",
+        "caption_preview": "Muitos acreditaram que os sistemas tradicionais estariam com os dias contados. 📉\n\nMas a realidade, s",
+        "thumbnail_url": "",
+        "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/662281542_18051833084720187_3744452836146260755_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=tcV2fZNVjTQQ7kNvwFqdV6y&_nc_oc=AdoovRYKRXFmqseaTc_bLNVUWBfDrAvqkdBpWad3guVHNP4i8VcW6xVbzkY0o4aIEks&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af1ERBxXD8RBnQT7QsFvCng-mSJECTB8n09zSbQNR7W-YQ&oe=69E6EB4B",
+        "permalink": "https://www.instagram.com/p/DWy2iYGDixg/",
+        "content_analysis": {
+          "type": "Padrão",
+          "word_count": 48,
+          "has_hashtags": false,
+          "hashtag_count": 0,
+          "has_emoji": true,
+          "emoji_count": 2,
+          "has_cta": false,
+          "has_question": false,
+          "has_numbers": false,
+          "has_link": false
+        },
+        "metrics": {
+          "like_count": 16,
+          "comments_count": 3,
+          "impressions": 1,
+          "reach": 0,
+          "engagement": 0,
+          "engagement_rate": 0.0,
+          "saves": 0,
+          "shares": 0
+        }
+      }
+    ],
+    "avg_engagement_rate": 0.0,
+    "avg_reach": 0.0,
+    "total_impressions": 30
+  },
+  "detailed_posts": [
+    {
+      "id": "18039089147788996",
+      "timestamp": "2026-04-15T17:42:48+0000",
+      "media_type": "CAROUSEL_ALBUM",
+      "caption_preview": "Um aumento de 12,5% nos custos de anúncios não é apenas um \"ajuste de mercado\", é um teste de sobrev",
+      "thumbnail_url": "",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/670686566_18052947155720187_5650240580725356082_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Ip4nmRKN2L8Q7kNvwGtJj2S&_nc_oc=AdoVBx-UTAymiQYqRd8A83ReIhEs0lwrU7sg8vhZDr3jh1Z8VhkSPIuo1ljVGSJvV3E&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af1hmC6xY_QD4SgrTssUEKIDsipZHrMeP0_EtrB15rGPDA&oe=69E6EC98",
+      "permalink": "https://www.instagram.com/p/DXKT26yj63W/",
+      "content_analysis": {
+        "type": "Padrão",
+        "word_count": 75,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 1,
+        "has_cta": false,
+        "has_question": false,
+        "has_numbers": true,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 5,
+        "comments_count": 0,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "17945147055147849",
+      "timestamp": "2026-04-14T19:00:43+0000",
+      "media_type": "CAROUSEL_ALBUM",
+      "caption_preview": "🚀 A Meta está revolucionando a forma como você faz publicidade, e você precisa estar pronto!\n\nEssas ",
+      "thumbnail_url": "",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/670918060_18052848440720187_7359692485500644185_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ObgeJgp-E3QQ7kNvwGTxJJW&_nc_oc=AdrwUbSnL_Ek1JMYmaLC_JQahFLIQopPHWWlAUIaRbawUm0GP2tQSZeS0qCkjb42_7U&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af3UZf4I40pLrTtWvEFr_uUWkuxx1GLqtFWMf_b4ZKxofg&oe=69E6D44F",
+      "permalink": "https://www.instagram.com/p/DXH3-p2kxWf/",
+      "content_analysis": {
+        "type": "Padrão",
+        "word_count": 40,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 2,
+        "has_cta": false,
+        "has_question": false,
+        "has_numbers": true,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 6,
+        "comments_count": 0,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18115826413669513",
+      "timestamp": "2026-04-13T16:56:22+0000",
+      "media_type": "CAROUSEL_ALBUM",
+      "caption_preview": "Seu software funcionou em 3 dias. Parabéns! 🎉\n\nAgora vem a parte que separa amadores de profissionai",
+      "thumbnail_url": "",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/670797927_18052715003720187_7694197011621314173_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=oJoewSmnAsMQ7kNvwHej2YU&_nc_oc=Adr9DdXXkkaCwkNTptloVEKjvm9RfVA04wJf3XWkhlRAG4GONW_3z7iQfM58wTgLlFs&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af37Khh9b6-rF3hjhHQzjpwJyeZc4qggS0Ncds4dIowj0Q&oe=69E6F595",
+      "permalink": "https://www.instagram.com/p/DXFE8sMCfxZ/",
+      "content_analysis": {
+        "type": "Pergunta/Engajamento",
+        "word_count": 170,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 3,
+        "has_cta": false,
+        "has_question": true,
+        "has_numbers": true,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 10,
+        "comments_count": 0,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18202827823338917",
+      "timestamp": "2026-04-13T14:42:14+0000",
+      "media_type": "CAROUSEL_ALBUM",
+      "caption_preview": "O Claude Code zerou o jogo: agora o foco não é mais escrever código, mas entregar estratégia. Descub",
+      "thumbnail_url": "",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/670361585_18052701380720187_3992444978327038500_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ZWno95PUSfIQ7kNvwGYYz5b&_nc_oc=Adrb94kaZchGUJZzVMMYOag0iOMsYOw0C7pqiV8FfY1p5ZcrT6PxBb0HQqcosrAOXAY&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af1SDqEjufTOAzbwux-Woo4lbqANxc9yduaobtK29c50yg&oe=69E6F6D9",
+      "permalink": "https://www.instagram.com/p/DXE1ndYjubm/",
+      "content_analysis": {
+        "type": "Padrão",
+        "word_count": 26,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 2,
+        "has_cta": false,
+        "has_question": false,
+        "has_numbers": true,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 18,
+        "comments_count": 1,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18388578217085320",
+      "timestamp": "2026-04-06T15:03:57+0000",
+      "media_type": "CAROUSEL_ALBUM",
+      "caption_preview": "Muitos acreditaram que os sistemas tradicionais estariam com os dias contados. 📉\n\nMas a realidade, s",
+      "thumbnail_url": "",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/662281542_18051833084720187_3744452836146260755_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=tcV2fZNVjTQQ7kNvwFqdV6y&_nc_oc=AdoovRYKRXFmqseaTc_bLNVUWBfDrAvqkdBpWad3guVHNP4i8VcW6xVbzkY0o4aIEks&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af1ERBxXD8RBnQT7QsFvCng-mSJECTB8n09zSbQNR7W-YQ&oe=69E6EB4B",
+      "permalink": "https://www.instagram.com/p/DWy2iYGDixg/",
+      "content_analysis": {
+        "type": "Padrão",
+        "word_count": 48,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 2,
+        "has_cta": false,
+        "has_question": false,
+        "has_numbers": false,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 16,
+        "comments_count": 3,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "17877568239553512",
+      "timestamp": "2026-04-01T13:09:38+0000",
+      "media_type": "CAROUSEL_ALBUM",
+      "caption_preview": "O lançamento do mascote Kit sinaliza o fim da era onde o usuário serve ao sistema. \n\nAgora, o softwa",
+      "thumbnail_url": "",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/657885986_18051217172720187_1437257098437826898_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=YOCn9jUQgkgQ7kNvwGWsSoy&_nc_oc=AdpLaKvqKuzj_1GiSyUhTRsSejUfPlNcONpi0tAOGJKSinAZZh6g_UNqFqXwZorRmWg&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af0KQTe60WUiMcVI3rnBj5HEEFVUDGaMXcV_DrIQFHmF_A&oe=69E6EAC2",
+      "permalink": "https://www.instagram.com/p/DWlxetYjluY/",
+      "content_analysis": {
+        "type": "Padrão",
+        "word_count": 47,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 2,
+        "has_cta": false,
+        "has_question": false,
+        "has_numbers": false,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 19,
+        "comments_count": 9,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18054910367651133",
+      "timestamp": "2026-03-27T18:11:50+0000",
+      "media_type": "VIDEO",
+      "caption_preview": "Uma empresa é feita de processos, mas é movida por pessoas. ♟️\n\nE a nossa cultura só é forte porque ",
+      "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/656380862_18050608364720187_5276881589207334001_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=bb_4XQ6oBe8Q7kNvwE_oIKT&_nc_oc=AdrvdxrRLRfSwGTbG5ibOl3ecX-UtUYKQ9Yvp_NL8khSJp75euOjX4nCr0qK1EeuUFM&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&_nc_tpa=Q5bMBQG6P95ZN7RZGJEF9qDJxv0ag45IEJ8RF4_aqH9ZJ-iQvxw9eLQJW9g9_pJgqyk-jsZV1-3IIXaBXg&oh=00_Af36oyY29PdN94daCQ-Ra0SCPnY_kk8GwnwLC1gqFGvgJw&oe=69E6E631",
+      "media_url": "https://instagram.fcaw3-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQM1yDP9jL0gUaKpGj0xo5rkbTqFqW57xMjUagzBm3VCuOEgadYwEcQhaM9i2MhZeb926f6XfPxsonuTI0DcJSBkvX0OHH3prBe75SY.mp4?_nc_cat=107&_nc_oc=AdpT3wbpgOFGrWVqnvLCyR67iYOUIlQPjOumg-t8yEiFca_CU1sPOAnB30-62UySo9Y&_nc_sid=5e9851&_nc_ht=instagram.fcaw3-1.fna.fbcdn.net&_nc_ohc=ZXQsEYgmOWUQ7kNvwGf1Y8x&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5NTE5OTA1NzQxMTM3MTMsImFzc2V0X2FnZV9kYXlzIjoxOSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjU5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=ab29d6186074b772&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC80QjRDNzA0N0YyMDk1N0UwMDQ5NEQzOTY3NDdDMkE5Rl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzkyNEFDQzk4REIyNDJERDdDNUVDNzg0RDk0MkRBMEFFX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbijvPSsM_jPxUCKAJDMywXQE3EOVgQYk4YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&edm=AM6HXa8EAAAA&_nc_zt=28&oh=00_Af08i3Hxdma5vb0wqJ-qZ4AaUd_RXim2zBxuxzy7kayRFA&oe=69E308B8",
+      "permalink": "https://www.instagram.com/reel/DWZcBbWjji-/",
+      "content_analysis": {
+        "type": "Padrão",
+        "word_count": 90,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 2,
+        "has_cta": false,
+        "has_question": false,
+        "has_numbers": false,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 18,
+        "comments_count": 3,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18109065364836437",
+      "timestamp": "2026-03-23T14:40:28+0000",
+      "media_type": "IMAGE",
+      "caption_preview": "Você é dono da sua empresa ou o funcionário mais caro dela? \n\nMuitos empresários de software acredit",
+      "thumbnail_url": "",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/656060296_18050042771720187_3893019537044596087_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=J5887SmoTzUQ7kNvwHOzXfe&_nc_oc=AdqE_KwoxRNEzKqWm0KDLc6B6ZuUGSqLX86G3xxfbdRkJXHn4sfT2x-WSZ_JpaOl1d8&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af2g3xzLKOfm3nO9JSBmKvqLeHgYrPiX1SDtxt2fNwzHZw&oe=69E6D3CC",
+      "permalink": "https://www.instagram.com/p/DWOwtyYjgUr/",
+      "content_analysis": {
+        "type": "Pergunta/Engajamento",
+        "word_count": 241,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 2,
+        "has_cta": false,
+        "has_question": true,
+        "has_numbers": true,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 2,
+        "comments_count": 0,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "17884793325466207",
+      "timestamp": "2026-03-20T15:00:51+0000",
+      "media_type": "VIDEO",
+      "caption_preview": "Muitas vezes, o seu \"concorrente mais barato\" ganha o contrato porque você falhou em explicar o valo",
+      "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/641779269_18047637809720187_450166421901131669_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=GSYUrVI-B9sQ7kNvwE9lIal&_nc_oc=Adr3Ace4iclR6YvnAulbHA6UWzzsVt0z0HOp7OCDfsgbGxx1FKpazrBCJlVmOten9OA&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&_nc_tpa=Q5bMBQGa-xPpZK2dlzIWVO_uc9JuM3-vbznwqjZ1YFKJe2Uk1CQXkXQAPWwJhlH9MmoWpOcfbGFpyunbxA&oh=00_Af2xXPKsWtt3UAd9y69CFuqYhL_6gdeFlhtPWeFas_HzjA&oe=69E6D7B8",
+      "media_url": "https://instagram.fcaw3-1.fna.fbcdn.net/o1/v/t16/f2/m69/AQMf5y2DJWayo_rIGa18t-3fLWBjtzzgiGCgSfOugbro6rUk01gz7_8CnikZ--cw16M_dr6e6tdKOGDMb4lLTYLe.mp4?strext=1&_nc_cat=107&_nc_oc=AdqE8uAc6xCNB1CoR58oJbacSZAy6WNvrpFEbK98Y1UsPbm34yL4z9VX7zNOBxZAfNY&_nc_sid=5e9851&_nc_ht=instagram.fcaw3-1.fna.fbcdn.net&_nc_ohc=1kDu5krlSZ8Q7kNvwEv8DRL&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5NDY1MDAzODgxMTM3MTMsImFzc2V0X2FnZV9kYXlzIjo0MCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjUxLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=defaf9ac19e2e131&_nc_vs=HBksFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HTEJmZmlhOFh0WDl0X2NFQVBCZ0wxWlZjUmhWYnNwVEFRQUYVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzYwNDNDNkQ0RUZCQzYzMUVBRkM3RkIxMTc2QzA4RjhEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbitMLJ54_hPxUCKAJDMywXQEnZmZmZmZoYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&edm=AM6HXa8EAAAA&_nc_zt=28&oh=00_Af1afahuiDNspAUBKEvyi5XHXYsTgkAznZwTg0ZNxKt9qg&oe=69E6DC55",
+      "permalink": "https://www.instagram.com/reel/DWHEmipiRNY/",
+      "content_analysis": {
+        "type": "Pergunta/Engajamento",
+        "word_count": 115,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": false,
+        "emoji_count": 0,
+        "has_cta": false,
+        "has_question": true,
+        "has_numbers": false,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 8,
+        "comments_count": 1,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18516439639072007",
+      "timestamp": "2026-03-19T14:54:29+0000",
+      "media_type": "IMAGE",
+      "caption_preview": "A \"planilha premium\" que você vende está com os dias contados.\n\nSe o seu software ainda exige que o ",
+      "thumbnail_url": "",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/655076847_18049382813720187_2608643540074540623_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-MlqfHrStfYQ7kNvwGO_155&_nc_oc=AdrU1yHl3t-tkDF-Nnw1Cb6EcwCAVSt14uVrBlF6fxKAxOQ1UyQ7pVkbe1j5Y3Y_qZ4&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af2rtVdXdBkNxiUhXri865DSS3h2Tz6CnubmCV0oDXoWXg&oe=69E6FCB6",
+      "permalink": "https://www.instagram.com/p/DWEfI4hDoQ5/",
+      "content_analysis": {
+        "type": "Pergunta/Engajamento",
+        "word_count": 312,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 3,
+        "has_cta": false,
+        "has_question": true,
+        "has_numbers": true,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 2,
+        "comments_count": 0,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18569010898051551",
+      "timestamp": "2026-03-18T15:00:02+0000",
+      "media_type": "CAROUSEL_ALBUM",
+      "caption_preview": "O custo do erro subiu. A solução não é apenas técnica (código), é matemática e estratégica.\n\n🚀 Quer ",
+      "thumbnail_url": "",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/652845307_18049144424720187_7909412250747937361_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=eWnzITYm5LwQ7kNvwGkO5qg&_nc_oc=AdoXlqj-H9nVX7C42GUlv2oZIFZZuilfRvVDi-i9Bk3Act3zUwOuRD3lOC8i9e-T17I&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af1xKQNaDK1P20fBIAXJgy8W0t7WzJGxhiG-zokSqaPXuw&oe=69E70110",
+      "permalink": "https://www.instagram.com/p/DWB7BGEjjch/",
+      "content_analysis": {
+        "type": "Pergunta/Engajamento",
+        "word_count": 31,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 1,
+        "has_cta": false,
+        "has_question": true,
+        "has_numbers": false,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 3,
+        "comments_count": 0,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18081140645341331",
+      "timestamp": "2026-03-13T18:33:21+0000",
+      "media_type": "VIDEO",
+      "caption_preview": "Enquanto sua equipe gasta 40% do tempo em tarefas manuais e repetitivas, o backlog só acumula. \n\nEm ",
+      "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/649842744_18048512675720187_8999012887565162265_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=jZMRk2Iak9EQ7kNvwGxdxdQ&_nc_oc=AdqHon05BhbfO8zKiyhQRsdONSZEo3NSq1fmOsvHwQfys_QbyjDAWTPm0WQ4BI_KTwQ&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&_nc_tpa=Q5bMBQFG-yzC04h-FVd2vQt4_GmZk_8sloBhOIyIYtt1MLzc5y-r0N2SzrBRpc44245YXv6RTVBMirXFlw&oh=00_Af2DrRIxFX6WHf8O5hwMQx-wYUPq_9Fv5CWimZoI-Rx5eg&oe=69E6EA62",
+      "media_url": "https://instagram.fcaw3-1.fna.fbcdn.net/o1/v/t16/f2/m69/AQNFItV8Wn44SEehMeJysjt-_52y9eNpctvvfH5b-Wa0q483XxT7k8btJmVELPug9Bs0UTWwuhat6VErZVTZtb2c.mp4?strext=1&_nc_cat=108&_nc_oc=AdpIN4fD1s1Ds0QeO78J3RsC8ZYnHYPJJla1ADj_CLK5knfiavxQyVklj-kKlpx6A2k&_nc_sid=5e9851&_nc_ht=instagram.fcaw3-1.fna.fbcdn.net&_nc_ohc=ylILW7erU5AQ7kNvwHKbxqm&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5NDgyODcxNzkxMTM3MTMsImFzc2V0X2FnZV9kYXlzIjozMywidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjQ1LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=2a706008b6d9e6d1&_nc_vs=HBksFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HSzVla3lZUnJKRnlOQW9GQURTMTRvMjQ0V1JhYnNwVEFRQUYVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzkzNEIzQzQ2MkQyQzEyMjc4RjRBMDY3MEVCQTVFN0FDX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbik5qa6PfhPxUCKAJDMywXQEaAAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&edm=AM6HXa8EAAAA&_nc_zt=28&oh=00_Af1crUEHL0VJ5uSwF0n9C1dYq0tD0PIitioIY12aLF3q5w&oe=69E6E058",
+      "permalink": "https://www.instagram.com/reel/DV1bWZ4jq22/",
+      "content_analysis": {
+        "type": "Texto Longo/Story",
+        "word_count": 106,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 2,
+        "has_cta": false,
+        "has_question": false,
+        "has_numbers": true,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 20,
+        "comments_count": 4,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18058593410400482",
+      "timestamp": "2026-03-11T15:00:36+0000",
+      "media_type": "VIDEO",
+      "caption_preview": "Tem muito dono de Software House que foca 100% na entrega técnica e esquece que produto bom parado n",
+      "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/641772073_18047637458720187_6174675031752201689_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Jc2KLu8O4D8Q7kNvwHDj683&_nc_oc=AdqBxT5aFayot2Pey51mkd9KM9jTGFZGEGUCkrR4XjG6H_88IQaOXjLMHKPrSt6voa4&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&_nc_tpa=Q5bMBQGLsh40_qrw4HAm018YnUZk0CsFgYOzotL6SfAgGIplMr9qkQCtle5-Sle3O3WiLbuoO8pKbvlz4Q&oh=00_Af2_QAre_G_cpO968RUCcCQHgA1eMgAyBVv8sw6WKdkEtw&oe=69E70120",
+      "media_url": "https://instagram.fcaw3-1.fna.fbcdn.net/o1/v/t16/f2/m69/AQP3H1pZ5KH722LOmFujKjPjkiMPRlTzvLp6ZhTM_OkCS_VfFyJLL-9r3L1kyhJQyfaIH_JSvs6o6opdPhh3gmnV.mp4?strext=1&_nc_cat=102&_nc_oc=AdonlBH9eIQcKMoGgPpXjo5Ad1VcPmcH9B5PP6poDqmlqiZWktCq95MuyVt4ppLC2pM&_nc_sid=5e9851&_nc_ht=instagram.fcaw3-1.fna.fbcdn.net&_nc_ohc=HL_omgKD0l0Q7kNvwHolVd4&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5NDY0OTkwMTcxMTM3MTMsImFzc2V0X2FnZV9kYXlzIjo0MCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjU2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=4812bde827862d6d&_nc_vs=HBksFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HS2RWb1NaeEs0SUtwR0lEQUVtbDJOQ0xSUzRSYnNwVEFRQUYVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzg2NDA1RTdBQ0MyRTFFRENFNzIwNTFFNkYwQjA3RDk1X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbigYSu3Y_hPxUCKAJDMywXQExIcrAgxJwYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&edm=AM6HXa8EAAAA&_nc_zt=28&oh=00_Af0SpQ63HizIQnibi9hOr1UGSt_03ClB9CLCk3RZp9elzQ&oe=69E6FFE6",
+      "permalink": "https://www.instagram.com/reel/DV1DA9tCf1f/",
+      "content_analysis": {
+        "type": "Texto Longo/Story",
+        "word_count": 161,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": false,
+        "emoji_count": 0,
+        "has_cta": false,
+        "has_question": false,
+        "has_numbers": true,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 8,
+        "comments_count": 2,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18091692436886235",
+      "timestamp": "2026-03-10T19:55:25+0000",
+      "media_type": "IMAGE",
+      "caption_preview": "Você governa sua Software House ou é governado pelo próximo incêndio? \n\nMuitos empresários de tecnol",
+      "thumbnail_url": "",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/649373291_18048150029720187_5726353169432385101_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=XEOzimuQegIQ7kNvwFvFLP3&_nc_oc=AdqwznMF8AcWGVqK4iXlvY0IZUx3_L5u0_hJyH10u-e-7GwGXgarVmTAm9QconzHSmg&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af2_c5K0Ebz6pUB43PvJEGPuLMIVvX_C8KpA2Ulp0tnv7Q&oe=69E6D344",
+      "permalink": "https://www.instagram.com/p/DVt2bW8AeY5/",
+      "content_analysis": {
+        "type": "Pergunta/Engajamento",
+        "word_count": 213,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 2,
+        "has_cta": false,
+        "has_question": true,
+        "has_numbers": true,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 2,
+        "comments_count": 0,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "17908475958359275",
+      "timestamp": "2026-03-09T20:08:28+0000",
+      "media_type": "IMAGE",
+      "caption_preview": "Você gere uma empresa de tecnologia ou uma \"planilha premium\" baseada em palpites? 📊 \n\nMuitos donos ",
+      "thumbnail_url": "",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/649684489_18048032642720187_8486039486497582046_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=oyPSI3z6UygQ7kNvwGsNOIB&_nc_oc=AdoBox-1CPCVYZLnYsDZHD5v9cwgGpcUycg3L8X3XhCV7VVp0H0umIaYeAJZCaumXuo&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af12ea5p7vKoqldTItalJXeR-b6IIwDgFXQYtY838VU7-Q&oe=69E707B3",
+      "permalink": "https://www.instagram.com/p/DVrTIFjAeaX/",
+      "content_analysis": {
+        "type": "Pergunta/Engajamento",
+        "word_count": 226,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 3,
+        "has_cta": false,
+        "has_question": true,
+        "has_numbers": true,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 4,
+        "comments_count": 0,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "17913188949325192",
+      "timestamp": "2026-03-06T17:19:46+0000",
+      "media_type": "VIDEO",
+      "caption_preview": "Acontecendo agora em Guarulhos: mais de 50 donos de software houses reunidos no 10X. O mercado de Sa",
+      "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/649235838_18047641619720187_636624383503511730_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Mo8JtEuH8BYQ7kNvwFhWhKK&_nc_oc=Adp2oPSaMHIoC13ALX5mYzOZK0rmNCotUIIjkhZ7fWpr53gziBdPuBOxTmfnLdkaXrg&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&_nc_tpa=Q5bMBQGyxaGGxMkbqY-J7nxM3a2nAEv63VATFbavK0vSAbbFZbAnq6wkunJ-jVl0PqO0jyiQoI19jfUQKw&oh=00_Af1_DLPE7g34Nd3SZXUOMPbI84IUGmF-6VwLCTk9lfsJVA&oe=69E7089A",
+      "media_url": "https://instagram.fcaw3-1.fna.fbcdn.net/o1/v/t16/f2/m69/AQM8FJgF2hBFtHgidrK1dYcslp13QZIKyNebX21qSgPRMKFdrGoiHWpD-bGtqDbNR8-0Dm9wIdG7R8Xe3vTfvajt.mp4?strext=1&_nc_cat=107&_nc_oc=AdoJe7SOmEpaUrXlqd3IjcAkO5ZhNx4t51dx1HIEP0Q8h9Df7vaVM-llLgfnj3zciaM&_nc_sid=5e9851&_nc_ht=instagram.fcaw3-1.fna.fbcdn.net&_nc_ohc=qjeodG9fGcoQ7kNvwGBsyjn&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5NDY0ODU5NjExMTM3MTMsImFzc2V0X2FnZV9kYXlzIjo0MSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjQ2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=6a1957f338229403&_nc_vs=HBksFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HSDRKb1NabHZYUW1rMmdFQUd6b0t4dklZY29VYnNwVEFRQUYVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzIyNEY1QTk3NTgxQTNCNkI3QjEwOTFFOTcxNERDMEI0X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbige6K_I7hPxUCKAJDMywXQEcEOVgQYk4YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&edm=AM6HXa8EAAAA&_nc_zt=28&oh=00_Af05y3BP6700u1Nll7lS25qaN5Hka1XxdsuJVe7FBR3FcA&oe=69E7090D",
+      "permalink": "https://www.instagram.com/reel/DVjRXvGDlFo/",
+      "content_analysis": {
+        "type": "Pergunta/Engajamento",
+        "word_count": 114,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": false,
+        "emoji_count": 0,
+        "has_cta": false,
+        "has_question": true,
+        "has_numbers": true,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 9,
+        "comments_count": 1,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18033286037592149",
+      "timestamp": "2026-03-05T20:09:45+0000",
+      "media_type": "VIDEO",
+      "caption_preview": "Trabalhar 12h ou 15h por dia não é sinal de produtividade, é sinal de que você virou o bombeiro da s",
+      "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/642364576_18047505887720187_1223745002201535571_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Nu_aXk1DZncQ7kNvwHrG35g&_nc_oc=AdqSj0NGHk16c_kE3aYJItjkP_VxffcvwtTIQ5YRXowox5YbDVl-GJkDzovxQgPcxJQ&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&_nc_tpa=Q5bMBQGZg8rJ9pzCSifloOaAumb3bKp89QSws8BTo10WhORtQR84un2G1Snd0oyCZNKTQHa-2e9JYY16mw&oh=00_Af0mdptelOsPgt3R7cd9R6EBGLr5w2cXQJAcQHy4Lmz0Lw&oe=69E6FC1C",
+      "media_url": "https://instagram.fcaw3-1.fna.fbcdn.net/o1/v/t16/f2/m69/AQM1hcKLGtWyvf-aU_1Fk1m-PvOgSxmTW6PyTpUhbDCzOANqbC0CMcaKKhzo2xT94pdGQXw-CyZfY0cNbRI2avMU.mp4?strext=1&_nc_cat=104&_nc_oc=AdrSj1vFuPjgUagZ1sHLsw7UYtb4ITH5QyQ6QKuicGXOee7hSfDQoucCegvE_49XMQQ&_nc_sid=5e9851&_nc_ht=instagram.fcaw3-1.fna.fbcdn.net&_nc_ohc=5mLwMGvSoekQ7kNvwGJjms8&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5NDYyNzkwMzAxMTM3MTMsImFzc2V0X2FnZV9kYXlzIjo0MSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjU0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=67f63f76a2dddf76&_nc_vs=HBksFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HRms1ZUNZdExRSmVfZUFDQVBlMFBRc3BYdXNNYnNwVEFRQUYVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzg5NDI0OTUwNDJFMEU3NzY1QzBENjc1M0QyMTlCMUFDX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbiloqq9oLhPxUCKAJDMywXQEtd0vGp--cYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&edm=AM6HXa8EAAAA&_nc_zt=28&oh=00_Af2KnzdfeyXA4V_wJ6ShcrPTCq2Rk2JNW67VlrPrWH3FDQ&oe=69E6E5DC",
+      "permalink": "https://www.instagram.com/reel/DVhAEE0AajR/",
+      "content_analysis": {
+        "type": "Pergunta/Engajamento",
+        "word_count": 132,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 2,
+        "has_cta": false,
+        "has_question": true,
+        "has_numbers": true,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 9,
+        "comments_count": 0,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18068234102259487",
+      "timestamp": "2026-03-04T18:43:49+0000",
+      "media_type": "IMAGE",
+      "caption_preview": "Por que sua Software House ainda parece uma oficina artesanal em pleno 2026? ⚙️\n\nMuitos donos de tec",
+      "thumbnail_url": "",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/641265567_18047386037720187_1750072407496400359_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=b32QlajqX_cQ7kNvwESZY0z&_nc_oc=AdoyB2bRlRhSIpu0Gt0ADk43WiZtakCr8GhkqLwuf2JNx0jfeaKHOhMdEgQtyhhY-yE&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af31HTiUd32uGvvHrkABvAbIXyg09AHuIA31Mlgbsiu5iw&oe=69E6FB2C",
+      "permalink": "https://www.instagram.com/p/DVeRdiRDr7E/",
+      "content_analysis": {
+        "type": "Pergunta/Engajamento",
+        "word_count": 245,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 1,
+        "has_cta": false,
+        "has_question": true,
+        "has_numbers": true,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 5,
+        "comments_count": 1,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18097836281498519",
+      "timestamp": "2026-03-03T20:03:21+0000",
+      "media_type": "IMAGE",
+      "caption_preview": "O equilíbrio entre a excelência técnica e o crescimento do negócio\nO domínio técnico é, geralmente, ",
+      "thumbnail_url": "",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/641164855_18047264720720187_2354145140218457487_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=DvViHSfxPt4Q7kNvwHUv7E8&_nc_oc=AdpmO6f-xP-Whi9N4mcR1X_TpwkRxRgK4NXmlNUeVnDZDxyGoZAiZr9dLfHBplVEQwM&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&oh=00_Af1l6xjZ3y97l8a-ORVZA6AkdFQsUOBKp8-x9aiskLPbRw&oe=69E6E7DF",
+      "permalink": "https://www.instagram.com/p/DVb1xZ9gcTs/",
+      "content_analysis": {
+        "type": "Pergunta/Engajamento",
+        "word_count": 279,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": false,
+        "emoji_count": 0,
+        "has_cta": false,
+        "has_question": true,
+        "has_numbers": false,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 2,
+        "comments_count": 0,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "17899619550392942",
+      "timestamp": "2026-02-27T19:28:55+0000",
+      "media_type": "VIDEO",
+      "caption_preview": "O anúncio dos Agentes Autônomos mudou as regras: \no software deixou de ser passivo para se tornar ex",
+      "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/642157656_18046789037720187_1525425146514895926_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Gcu1KdmIJ0oQ7kNvwHrUpDk&_nc_oc=AdqAJowEyxsDf0AtStfrZemwPJ0ckd5JYasbV3kLk8suwp9UVFBmK9-Om8MaRGfhhOQ&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&_nc_tpa=Q5bMBQEpuR03zsjw-r5TDRZKJHW3aRn_a7oJu0wYZ-3kiMk6dDAtBXsyGapu8qo2tQIo_OV1ugtRQmm6Sg&oh=00_Af1FPuA0Zr2ey3Oeh3N8_-gWRJxBfpC3oP1wELXDPNYKfg&oe=69E6E868",
+      "media_url": "https://instagram.fcaw3-1.fna.fbcdn.net/o1/v/t16/f2/m69/AQMC3evqAfjVjJtlT01LH-ZGKqS6Hf_nZJJY0vmbYRhpjshMlMW6zr8zSLp2-X81w9TXEsMzTBfU4uFxALnlU-Rm.mp4?strext=1&_nc_cat=110&_nc_oc=Ado3_x4yRlE-bpbWe31cC-CmQGyr2uZS4lYISs4YCXf8RVGcmnrwnwcIejlSOlP08XU&_nc_sid=5e9851&_nc_ht=instagram.fcaw3-1.fna.fbcdn.net&_nc_ohc=IigubNIkwtcQ7kNvwGz35bY&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5NDQ3ODM3MDcxMTM3MTMsImFzc2V0X2FnZV9kYXlzIjo0NywidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjc0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=46e3007cccddccfa&_nc_vs=HBksFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HRzZxWFNhNFNjem9sam9EQUxTbTh6RDZjY2xZYnNwVEFRQUYVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0IxNDMxMUMyRUM4NTEwRjg0QzYzMkJBOTE4Qjc5NzhGX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbio_im8avgPxUCKAJDMywXQFKxBiTdLxsYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&edm=AM6HXa8EAAAA&_nc_zt=28&oh=00_Af3_cBKtzX-iNpFy-JrfsVgbZoNEliPy43-bBnx6Sh8hzw&oe=69E6D7D2",
+      "permalink": "https://www.instagram.com/reel/DVRelkpAUPP/",
+      "content_analysis": {
+        "type": "Pergunta/Engajamento",
+        "word_count": 100,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 2,
+        "has_cta": false,
+        "has_question": true,
+        "has_numbers": false,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 19,
+        "comments_count": 5,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18077124191077518",
+      "timestamp": "2026-02-19T15:00:40+0000",
+      "media_type": "VIDEO",
+      "caption_preview": "Muita gente confunde Customer Success com suporte de luxo, mas a nossa Cs trouxe um insight que muda",
+      "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/639806914_18046790189720187_4087977199655891119_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Tw5kC5e9M_sQ7kNvwFTHrxA&_nc_oc=Adpt09P91hnVPZQ5WuQ3CE49Hp6prhQfSAS3DnK0IrAG6F8zjRzGIBab3XKUS6dsjTI&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&_nc_tpa=Q5bMBQFxDFn8RW-BXCZgEFpGWLckuTf6N0o-hfqW7EB_Dsi509ds88Ky_xZBTm9u80y9Sra5j2DthTW_nw&oh=00_Af1KDulVYzvCmX9BS9Ouk-d-BPSJJ3HsTLdxdcpnadqqHg&oe=69E7067C",
+      "media_url": "https://instagram.fcaw3-1.fna.fbcdn.net/o1/v/t16/f2/m69/AQMC61vpfNrijJ30ddWj6uXwZTU5n6cSR-Lsfnj-tOMy7AqF84UcVU-YvZM1mePXmktgvGsR99Zq4YuRRrW5mm_k.mp4?strext=1&_nc_cat=109&_nc_oc=AdpPBTCe0iCOc47XI8-ypnoqmjvkzO6qWdXcgYywBWWok5KFrhCicTZjaDxf6_oYEH0&_nc_sid=5e9851&_nc_ht=instagram.fcaw3-1.fna.fbcdn.net&_nc_ohc=aMlgve8tgMMQ7kNvwGKHGNU&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5NDEzMjU2OTQxMTM3MTMsImFzc2V0X2FnZV9kYXlzIjo2MywidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjQ0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=16d9892e473f0aeb&_nc_vs=HBksFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HQ05aa3lVR3RvMTBvM1FDQUlSVmhJRkNRYXNpYnNwVEFRQUYVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzA5NEEzNURCQTYwNEVCRDlFOTIwMDJENDRCQkZEOUI3X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbi3uCMzeLePxUCKAJDMywXQEYu2RaHKwIYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&edm=AM6HXa8EAAAA&_nc_zt=28&oh=00_Af2JtmqgmZsfNUP52IeDSeSUxx9XcFWubb_hW1sIxHlutQ&oe=69E6E49F",
+      "permalink": "https://www.instagram.com/reel/DUs80ldgb7z/",
+      "content_analysis": {
+        "type": "Pergunta/Engajamento",
+        "word_count": 150,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 3,
+        "has_cta": false,
+        "has_question": true,
+        "has_numbers": false,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 7,
+        "comments_count": 0,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "17863758708577852",
+      "timestamp": "2026-02-06T20:00:32+0000",
+      "media_type": "VIDEO",
+      "caption_preview": "Software bom parado na prateleira é apenas custo de servidor e folha de programador.\n\nNa EXPX, nós p",
+      "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/640393103_18046790903720187_5993324766829159870_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=5GN7Bs5_z6oQ7kNvwGhG045&_nc_oc=AdooEqQLFp0F1SN_KwO5XdA36Hc9oCWYK4ZRoX5KbppBBb9Y1DWjXfKCD7WADu2PoI8&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&_nc_tpa=Q5bMBQGWBHG-6g0oMt3KxVo1eI66XmMJJDz0WXLmeBtIoY05SnJfqnEna3d69wQdfWXdz5TmzkV9UGPzOw&oh=00_Af09tC-2x3vDRXx4TfpR_F-PjZhnNsa6SJXLzgDn5IX1DA&oe=69E6EB0A",
+      "media_url": "https://instagram.fcaw3-1.fna.fbcdn.net/o1/v/t16/f2/m69/AQOQr3lER-BVZRbNay8jWxYFROBJDBe7BAQhli8v2uQpr7OSvC8ZXY6ZQc91wf-DA-Yhe6O6fBMDFXAG0HJI37f2.mp4?strext=1&_nc_cat=104&_nc_oc=AdrfS1hum91cbg8PyuVvWUvBJkAoC9dOnuuGEiTNs8w-ENdfCE4EWDR0p9wjHZET9xs&_nc_sid=5e9851&_nc_ht=instagram.fcaw3-1.fna.fbcdn.net&_nc_ohc=yBixooZ6hLMQ7kNvwEmhfqS&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5NDAzOTEyNTExMTM3MTMsImFzc2V0X2FnZV9kYXlzIjo2OCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjQ0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=da209856d4173a65&_nc_vs=HBksFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HSlU0c0NOdDZFVUhfTFFIQU9HcTl1S1pPRTV3YnNwVEFRQUYVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzQ5NDFERTI3QUU0NjEwNTZENDZGRTQ0MUI5NTc0NTg1X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbi27v6mqzePxUCKAJDMywXQEZZmZmZmZoYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&edm=AM6HXa8EAAAA&_nc_zt=28&oh=00_Af2m4rsEGxFybSZHx6PhFqDEIEfAzAsX4zvIXv-xBzqQgw&oe=69E6DAB8",
+      "permalink": "https://www.instagram.com/reel/DUbdgLCgfnh/",
+      "content_analysis": {
+        "type": "Pergunta/Engajamento",
+        "word_count": 53,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": false,
+        "emoji_count": 0,
+        "has_cta": false,
+        "has_question": true,
+        "has_numbers": false,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 23,
+        "comments_count": 4,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "17868713589453644",
+      "timestamp": "2026-02-04T15:00:58+0000",
+      "media_type": "VIDEO",
+      "caption_preview": "Se o jogo zerasse hoje e só sobrasse R$ 5 mil no bolso, era exatamente isso que eu faria. \nSiga o pe",
+      "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/639826151_18046790999720187_1252172856501902825_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=9aNIZVL7uRoQ7kNvwFjlDqY&_nc_oc=AdondO-n-O9A-FX8X5FXtOTVsVyQGp-FqGAGfZYUUi3_ExiVT89Q3Z5_OnKS6xs9pms&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&_nc_tpa=Q5bMBQFXIx03jhq1jt-G_WBArw9IQS4GQh8BKU0hu2ihyJBmH3e-MUjL_kv1fy2eAFcD0ZVlqVrrhvLr3Q&oh=00_Af12cKun5-U05U_jE6xbcNsR8H53QOoNZsLftEGm61oMmA&oe=69E6FA42",
+      "media_url": "https://instagram.fcaw3-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQM7_VI4qTFtqQL6u2dgwAuiOshyqHF-PNPYLENkb1khySQgiFfYtW6K7_N28ib8bJ0CVOKhVfiBM9GrGclviuj8I_xxoq82QpGzQlE.mp4?_nc_cat=102&_nc_oc=AdrLo7CuDHRqYAy3lkGqt8AYgP4fteO32d__svtFLiXq6Z8jSwRcj_iHOcpf-ZOVfI0&_nc_sid=5e9851&_nc_ht=instagram.fcaw3-1.fna.fbcdn.net&_nc_ohc=QiSEBp_9CeEQ7kNvwGihdJg&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5Mzk2NDM5NTcxMTM3MTMsImFzc2V0X2FnZV9kYXlzIjo3MywidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjQwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=8a06d557be37715e&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83MjQ3QzZBODAzRkRERDFGOUVCN0E4MEUyOEMyQ0FBRl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzA1NDY1OEFFQjMxMjY1ODc4MDI1NUQ3QTBEOEI0RkFDX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbiza-X24DePxUCKAJDMywXQEQEOVgQYk4YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&edm=AM6HXa8EAAAA&_nc_zt=28&oh=00_Af3e0FsBU-15T68_Y_ZbsyoIPYc5lH9smEzmEjQVSt2ZJQ&oe=69E2FB53",
+      "permalink": "https://www.instagram.com/reel/DUVxq8TDk73/",
+      "content_analysis": {
+        "type": "Padrão",
+        "word_count": 30,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": false,
+        "emoji_count": 0,
+        "has_cta": false,
+        "has_question": false,
+        "has_numbers": true,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 16,
+        "comments_count": 1,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18113051434616817",
+      "timestamp": "2026-01-30T15:28:25+0000",
+      "media_type": "VIDEO",
+      "caption_preview": "Nossa responsabilidade é antecipar gargalos e já chegar com a solução pronta antes mesmo do problema",
+      "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/624749354_18043757171720187_1068989199121184500_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=-Y7hkB-uRAEQ7kNvwGdXfeM&_nc_oc=AdrLunPrhtdhd6yD1ou2sSTzgVTsdSL76uwr3ZiT_j5LGtAM-TjpZQ3CGhOxbi8l6mQ&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&_nc_tpa=Q5bMBQG1lq7SCOs2rSVFvxFZhNFQZPJupS5asjsgqpozI2z9NTkwya_bAPCnIqcrm4l0XehmfffykKpyCA&oh=00_Af1pN5Rpzi7Km-8ulYi4NYlIe1eWa8HdfjdL4OpkVq5Gcg&oe=69E70373",
+      "media_url": "https://instagram.fcaw3-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQP1SXAugns-UABbzAkbRWYjw4Feo6sbi_4WodXGD6Pf523Cosa5PENe_7bVUJNGOBSIcjp7yn6NLW0xVAi6bw7lOeanTmb-baeNpIo.mp4?_nc_cat=106&_nc_oc=AdoZi1CbnAH0wF7aH6kQ4pFAT7GVlPdZZcou0P2vCGCxU93eAIKRwnBKuE1ZhPzgrJo&_nc_sid=5e9851&_nc_ht=instagram.fcaw3-1.fna.fbcdn.net&_nc_ohc=haZzGz5YHRwQ7kNvwGGTGE7&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5MzkxMDEzNTkxMTM3MTMsImFzc2V0X2FnZV9kYXlzIjo3NiwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjQyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=345048b07fe742a3&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xQTQ2QjNEQzcwMDhCQTk1NjkyQTIwNkYwRURCQjg4NF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzk0NDFFOERDMzA5NUM5QjAzNDYxQ0YwRTcxQjUwM0FBX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbil8zBkOHdPxUCKAJDMywXQEUZmZmZmZoYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&edm=AM6HXa8EAAAA&_nc_zt=28&oh=00_Af15iq9jtje-4JUaLGZaWQSVD6itGdXPHMhUdG7CaZ5KyA&oe=69E2EAFB",
+      "permalink": "https://www.instagram.com/reel/DUI81g4DmOU/",
+      "content_analysis": {
+        "type": "Pergunta/Engajamento",
+        "word_count": 38,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": false,
+        "emoji_count": 0,
+        "has_cta": false,
+        "has_question": true,
+        "has_numbers": false,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 15,
+        "comments_count": 2,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18018357749637069",
+      "timestamp": "2026-01-28T14:56:12+0000",
+      "media_type": "VIDEO",
+      "caption_preview": "​O que a gente entrega aqui, ninguém mais te conta. Siga o perfil para não perder os próximos insigh",
+      "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/641089980_18046791698720187_7200862806545080881_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=9WamPGXEJrwQ7kNvwFokF2y&_nc_oc=Adq-ClKWvtmdIbF3Sa7g9aPOqFFcmYoxAkJSohfN5g1kizY_ForuoQvny-He0t2ku-Q&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&_nc_tpa=Q5bMBQHINc_8oetX8CGfcwGqhTlissxhXbLUdSEvh8LOfiJLL7nPfDt9LTIntI5OpKeUgzAqweTikStnBQ&oh=00_Af1VKcaIRFWGODjHgnjLAv5tY_TpTlwfcVWCyx0JlM4Nwg&oe=69E6FBFB",
+      "media_url": "https://instagram.fcaw3-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQPAkXIailKeDTWHp1AiEDiBBoVvEUXAA22TWHQ8NerRRE1gA2V9P1xiOhJWE2gOS4TMR7Z3Zw5lJimHwe_QkxcNwcO8xVZqO5369Ww.mp4?_nc_cat=103&_nc_oc=Adryv9Y_w7SUuZabhPrL3YgWJVqiNw6MPM_cz4T9C43wRW_H6ZTwEDFf6MWkN-aZhiI&_nc_sid=5e9851&_nc_ht=instagram.fcaw3-1.fna.fbcdn.net&_nc_ohc=NF3TjhYCmBMQ7kNvwES9vq1&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5Mzg3MjQ2MjUxMTM3MTMsImFzc2V0X2FnZV9kYXlzIjo3OCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjMxLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=78d36d7c0c3fd09f&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9BQzQ1ODgyNTE4RUVBRTczRTU0QjRDQURDNkYyQTE5NF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzVFNDE2MjNCM0JGRTEzOTlGNkFFMUQyRUIyODlGOTg1X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbiiYfQmcvdPxUCKAJDMywXQD87peNT988YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&edm=AM6HXa8EAAAA&_nc_zt=28&oh=00_Af2CvekF0c1PTpXWybhc4TtQoFRrKJ_Kp0x3lXasS1IXCQ&oe=69E3093C",
+      "permalink": "https://www.instagram.com/reel/DUDvaLrjtlq/",
+      "content_analysis": {
+        "type": "Padrão",
+        "word_count": 25,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 1,
+        "has_cta": false,
+        "has_question": false,
+        "has_numbers": false,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 29,
+        "comments_count": 4,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18101901823837891",
+      "timestamp": "2026-01-16T20:06:19+0000",
+      "media_type": "VIDEO",
+      "caption_preview": "Qual é a sua opinião sobre esse assunto? Me conta aqui!",
+      "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/641240956_18046791272720187_3889068800514229530_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=pxJGwwjEouEQ7kNvwEESGCI&_nc_oc=Adp5_fZbTD43LQLw3TUZkRsJHNfIXNMYhyd8jR4gFyEQ5NVfiVMazRC87Q-zVUhVTTQ&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&_nc_tpa=Q5bMBQE1KcTm8Dj7DHbRkcXrx_wGCwie7F6ZnZSc52offcZxwDg2wGeSUwZ0hx14FanKQNqpY8y9Fa3sCQ&oh=00_Af2EVRjiF91iXGjyGgKFnRGuoaOl774s2sLVtHZaSF2qWw&oe=69E6D486",
+      "media_url": "https://instagram.fcaw3-1.fna.fbcdn.net/o1/v/t16/f2/m69/AQP8Dysl5V5Tbx4KCAGSin7iuU_3rvak0LIt2aXmpbKbAWkgWmPTZAm3XYaB_iv93w0_ybaRFYJQRUqlbppM3XoU.mp4?strext=1&_nc_cat=102&_nc_oc=AdrMP8ILbCUMl5spTfmEzZST7JK4xY6UZPHVkD8k_aOuQX5IFjoAal8nlxe6qMf1_e8&_nc_sid=5e9851&_nc_ht=instagram.fcaw3-1.fna.fbcdn.net&_nc_ohc=Kw8191yhW6kQ7kNvwGlt_a5&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5MzY2OTQyMzQxMTM3MTMsImFzc2V0X2FnZV9kYXlzIjo4OSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjY3LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=b8c7ff74e7c35228&_nc_vs=HBksFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HRWhCMWlUSUJYbDlkQVFLQUJ0RnpXUW9FS0lxYnNwVEFRQUYVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0Q0NEE3Q0ZGRDhFRkQyRDVFOTBFMUM3NTZEM0U2RDg3X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbimqeEgtXcPxUCKAJDMywXQFDZmZmZmZoYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&edm=AM6HXa8EAAAA&_nc_zt=28&oh=00_Af3lxJ_qhzh6DIqRsnPbDP8UDi7D8O1iDIF6jgz_aRj6Rw&oe=69E6FBCA",
+      "permalink": "https://www.instagram.com/reel/DTlZgVGAYHv/",
+      "content_analysis": {
+        "type": "Pergunta/Engajamento",
+        "word_count": 11,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": false,
+        "emoji_count": 0,
+        "has_cta": false,
+        "has_question": true,
+        "has_numbers": false,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 21,
+        "comments_count": 0,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18083459072141269",
+      "timestamp": "2026-01-14T19:58:25+0000",
+      "media_type": "VIDEO",
+      "caption_preview": "Dono de Software House: feito é melhor que perfeito (e muito mais lucrativo).\n\nSiga a Expx para o pr",
+      "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/642130165_18046791446720187_101027690642084935_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=jXJ-ijdW5e4Q7kNvwGIEdtv&_nc_oc=Adp-wWhPJQoH4PvyNa2MNKFuOGchMQeLSOONLofr4mrRt6x1M3c2BT7282aKNJHMq_I&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&_nc_tpa=Q5bMBQGNpk6ByspTdWOzOX39o984du42lbIwu_EF50_YCm_OMlE48zt12yOpUi8g9tjGLq_kmIAtLTS6rw&oh=00_Af17GI7QDbqfrmuApccEhPtdkhAzy8upJGy8AF-p0y7JAw&oe=69E6F680",
+      "media_url": "https://instagram.fcaw3-1.fna.fbcdn.net/o1/v/t16/f2/m69/AQNDv6f732iLGANVpGnEEMZi1z0e7ablAxqiDHduQ8rbaAzFoMETgUHxuwF0Aomttl7jriR6pt1meSMdPV6RhoD7.mp4?strext=1&_nc_cat=108&_nc_oc=AdqO_roYM-xt8K_JtWQQ4m-am-CzpYLUJIg0RIpGubOT8gTfsbExzwZ5uL4i0KMmj84&_nc_sid=5e9851&_nc_ht=instagram.fcaw3-1.fna.fbcdn.net&_nc_ohc=sOkHJ-b5XtEQ7kNvwHRDpoT&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjAxMDA3MzM1OTc3NTM3OCwiYXNzZXRfYWdlX2RheXMiOjkxLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6NjgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=78ecd07f1cde33b&_nc_vs=HBksFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HTTFwa3lUYXpmQVlhTmNFQUFUVno1QmFQYnBuYnNwVEFRQUYVAALIARIAFQIYRmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83MzM4NjcyMDY0NDcwMzlfNTAyMTE3Njg2MTczMzMzNTU3My5tcDQVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmpNqnydWJkgcVAigCQzMsF0BRDul41P30GBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&edm=AM6HXa8EAAAA&_nc_zt=28&oh=00_Af2Xw7nLQ1E2r6pKoTD7RvlMrBpfNPDNErR5-JPYJJt8nA&oe=69E6FFFC",
+      "permalink": "https://www.instagram.com/reel/DTgO95bAdDy/",
+      "content_analysis": {
+        "type": "Padrão",
+        "word_count": 21,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 1,
+        "has_cta": false,
+        "has_question": false,
+        "has_numbers": false,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 22,
+        "comments_count": 5,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18384261997148797",
+      "timestamp": "2026-01-09T19:55:14+0000",
+      "media_type": "VIDEO",
+      "caption_preview": "Software houses morrem por medo de mudar. Quer entender como inovar do jeito certo? Entre em contato",
+      "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/641556159_18046791623720187_330675824123057394_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=EfOqVvayVwYQ7kNvwGr41zP&_nc_oc=AdqEd6Iqb12b_jUBRK0Lc0Lw-6H-LrPDN4ygeN2jv2WpLxJosz7-GvwWaRyPIWx_pjk&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&_nc_tpa=Q5bMBQHyjZs7iRTKQNvd9YO3ZNTAuLYdD537RoqEeSAdcxfoL042uRISzxmj3QHG51XUgTquWkOn1GvJ5w&oh=00_Af23WEqzoMb4WV-l59ie5vzULYAE2GNCqekCHk0eBIbkZg&oe=69E6FEFF",
+      "media_url": "https://instagram.fcaw3-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQMSOlfqVS3i09N1E9kICpaRCJ_aNmiTQSBpqt_JFU3VxhdeKYCFkC4okOO5wCulFDgSjOgwSbQfvqucNWGgl4g9cBpjASNUUXU7ReM.mp4?_nc_cat=109&_nc_oc=AdqSb14T9ndHIs3Bq7xIGlFTEv10eYDv5CZVyjjqkmYm0UcipOHZhg4p35CKpjDmDOg&_nc_sid=5e9851&_nc_ht=instagram.fcaw3-1.fna.fbcdn.net&_nc_ohc=gv4InRnPFhgQ7kNvwEd5GrB&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5MzU5MDE1NTYxMTM3MTMsImFzc2V0X2FnZV9kYXlzIjo5NiwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjU0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=fd387a30191dc0d5&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC84RjQ2QzI1MzQzOTIxOEQwQURFN0UxRUQyMjlEMTBCN192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYRmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC85MDU0MDc0MzIxNzAyNjNfNzYyMzAyMzg3MDMxOTk1NzExNi5tcDQVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm4oTUj_Cm3D8VAigCQzMsF0BLVT987ZFoGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&edm=AM6HXa8EAAAA&_nc_zt=28&oh=00_Af1xndUvIJejSaJ71ehwJHYsHmKwmLit041O2FMpp23zJA&oe=69E3012E",
+      "permalink": "https://www.instagram.com/reel/DTTWoVBku2q/",
+      "content_analysis": {
+        "type": "Pergunta/Engajamento",
+        "word_count": 24,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": false,
+        "emoji_count": 0,
+        "has_cta": false,
+        "has_question": true,
+        "has_numbers": false,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 29,
+        "comments_count": 11,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "18115646380582343",
+      "timestamp": "2025-12-31T15:00:47+0000",
+      "media_type": "VIDEO",
+      "caption_preview": "Feliz ano novo Exponencial! Tudo que somos e que conquistamos só foi possível graças a vocês!\nObriga",
+      "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.71878-15/588855057_1404242854434099_8210546757917194076_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=FkZwuq3V8iYQ7kNvwEXh693&_nc_oc=AdoCSbtMAnXjTsOb2AXhPHx4bqsTPuMgKtt_jeZcjVC_VCVijzBkR6ZisxhpwKq78xw&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&_nc_tpa=Q5bMBQGs3MfRRV5fYIykjlnOor0PCBDBlO0oDjPSPsdOk6xwcMJzpuhrM8OZVlD4ErRvD-RICii4FVVliw&oh=00_Af1e3M3XiBrqXIBrtIV3BSTY0wwePI9ptd0ClQVEGxgAHw&oe=69E6F355",
+      "media_url": "https://instagram.fcaw3-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQPbn6CZfsEC7LhCTA81zaLoBJyePRcgyuMEm1pe7tuLXRinAwbO8C1rk0ofz3CR3m_HoBZtg8XvKk2_BXtiIfYmsUYUJNdH0t4BH9E.mp4?_nc_cat=105&_nc_oc=Adpm5ksbTV45P_SJyzwGmHJvgt_0TPwRQMMrkfUZy7X35HQ67RgxFiqPrBmg3YQ4U5c&_nc_sid=5e9851&_nc_ht=instagram.fcaw3-1.fna.fbcdn.net&_nc_ohc=K94o2JJLUBwQ7kNvwGRz863&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5MzMyMDk3NzYxMTM3MTMsImFzc2V0X2FnZV9kYXlzIjoxMTksInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoyNiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=d8443120279d5545&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9CQjRBQkY1RTk2RUFCRDI0NDc4ODEyNTk4OTc1NTNCNV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xODg4NDM1NTI4NDY0Mjg5XzgxMjk2MzAxNzA1MTQ3NTU4NDgubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJuKgmuaYits_FQIoAkMzLBdAOfdLxqfvnhgSZGFzaF9iYXNlbGluZV8xX3YxEQB1_gdl5p0BAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&edm=AM6HXa8EAAAA&_nc_zt=28&oh=00_Af1woc21ZtzcczEBwGBuKCYCsxxPqWAyUit8vRjdNvn1WQ&oe=69E3092E",
+      "permalink": "https://www.instagram.com/reel/DS7pyPEjnQW/",
+      "content_analysis": {
+        "type": "Padrão",
+        "word_count": 25,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": false,
+        "emoji_count": 0,
+        "has_cta": false,
+        "has_question": false,
+        "has_numbers": true,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 22,
+        "comments_count": 9,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "17910872448260460",
+      "timestamp": "2025-12-18T19:37:34+0000",
+      "media_type": "VIDEO",
+      "caption_preview": "Futebol na Exponencial? Temos!\nManeira divertida de manter a equipe unida...ou não 😂",
+      "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.71878-15/600491267_1493696885033654_8890570956912496641_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=WzV3iWJMpEEQ7kNvwEhn1Z6&_nc_oc=AdqtzYFqK9YDg6nJmKV11NIwtHoN2BObAD3KfJF6rU2q0JaY3Qk9Fg_-kJX8JvAUSXE&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&_nc_tpa=Q5bMBQFoC-8eEgcdDXruXfk-s--26XqhfHw3CNtTe_-wBB1YPbrdj2waOHWGnnhCutmP6Ap8SBKjG0bHow&oh=00_Af0D1A3WsQC243GTN68yxwpQQlHVDUWeqP_wG8oaFF1Grw&oe=69E6D329",
+      "media_url": "https://instagram.fcaw3-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQN2p4V_FD2PYHCCvfBmrqLiZJK4ivE6TGKq_kkwFHpjPnWe6IVfBhNcVMSQauVx7cNorJLLT_IRKaJaJm_-VXRM9-tRkn5LOzOauZ8.mp4?_nc_cat=101&_nc_oc=AdqoEeEFOHyHbMefg1tq_f91Hu2iFftN9eL830qDzx0xTKVklqEePdWc1bNs40j7VLU&_nc_sid=5e9851&_nc_ht=instagram.fcaw3-1.fna.fbcdn.net&_nc_ohc=Nx7R21DQOPQQ7kNvwHUVqVo&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5MzMyNTA3MDIxMTM3MTMsImFzc2V0X2FnZV9kYXlzIjoxMTgsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxMDEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=70db38afa4992905&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9GRTRBQ0RENENCMTVCQkNDQjlDNjQxN0UwNzQ4MUQ4Q192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8zMjkzODg4NjEwNzc4ODYxXzc2NDQwNjMxNTczMjE5ODA0NjIubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJuLuo9zJjNs_FQIoAkMzLBdAWU7peNT99BgSZGFzaF9iYXNlbGluZV8xX3YxEQB1_gdl5p0BAA&_nc_gid=SbV72W2owNcMlfyzf3y5RQ&edm=AM6HXa8EAAAA&_nc_zt=28&oh=00_Af1WNxT5yf7cDExxtjSx9fGAX_ls4lBCtmQ2Qw2Y1FTJzw&oe=69E2F9EE",
+      "permalink": "https://www.instagram.com/reel/DSarJ_2geTf/",
+      "content_analysis": {
+        "type": "Pergunta/Engajamento",
+        "word_count": 13,
+        "has_hashtags": false,
+        "hashtag_count": 0,
+        "has_emoji": true,
+        "emoji_count": 1,
+        "has_cta": false,
+        "has_question": true,
+        "has_numbers": false,
+        "has_link": false
+      },
+      "metrics": {
+        "like_count": 50,
+        "comments_count": 13,
+        "impressions": 1,
+        "reach": 0,
+        "engagement": 0,
+        "engagement_rate": 0.0,
+        "saves": 0,
+        "shares": 0
+      }
+    }
+  ]
+}

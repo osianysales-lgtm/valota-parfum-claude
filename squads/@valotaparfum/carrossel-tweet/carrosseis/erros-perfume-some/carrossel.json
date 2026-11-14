@@ -1,0 +1,50 @@
+{
+  "fundo": "branco",
+  "slides": [
+    {
+      "tipo": "capa",
+      "titulo": "🚨 5 erros que fazem seu perfume sumir antes do almoço!",
+      "subtitulo": "O problema pode não ser o perfume, e sim o jeito que você usa. ➡️",
+      "imagens": [
+        {
+          "img": "capa-borrifando.png",
+          "pos": "center 20%"
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "1. Esfregar os pulsos depois de borrifar.",
+      "texto": "Parece instinto, mas o atrito esquenta a pele e acelera a evaporação das notas de saída.\n\nO cheiro muda e vai embora mais rápido.",
+      "passo": "Borrifa → espera secar sozinho → **não encosta**."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "2. Passar perfume na pele seca.",
+      "texto": "Pele ressecada \"bebe\" o perfume. Na pele hidratada, a fragrância costuma ficar mais tempo.",
+      "passo": "Banho → hidratante sem cheiro → perfume."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "3. Borrifar no ar e passar pela \"nuvem\".",
+      "texto": "Parece chique, mas a maior parte do perfume cai no chão e não na sua pele.\n\nVocê gasta mais e cheira menos.",
+      "passo": "Borrifa direto na pele, a um palmo de distância."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "4. Guardar o perfume no banheiro.",
+      "texto": "Calor, luz e umidade do banho estragam o perfume com o tempo. Ele perde força e pode até mudar de cheiro.",
+      "passo": "Guarda na caixa, dentro do armário do quarto."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "5. Achar que sumiu só porque você parou de sentir.",
+      "texto": "Seu nariz se acostuma com o próprio cheiro e para de perceber. Quem chega perto de você continua sentindo.\n\nReaplicar por isso só faz você exagerar.",
+      "passo": "Antes de reaplicar, pergunta pra alguém perto de você."
+    },
+    {
+      "tipo": "final",
+      "texto": "Se esse post te ajudou, já segue a **Valota Parfum** que por aqui eu te mostro de forma prática como fazer o seu perfume render mais e cheirar melhor :)"
+    }
+  ]
+}

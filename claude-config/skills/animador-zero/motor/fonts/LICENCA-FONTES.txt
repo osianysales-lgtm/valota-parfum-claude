@@ -1,0 +1,7 @@
+Montserrat
+Copyright 2011 The Montserrat Project Authors (https://github.com/JulietaUla/Montserrat)
+
+Estas fontes sao distribuidas sob a SIL Open Font License, versao 1.1.
+Texto completo da licenca: https://openfontlicense.org/open-font-license-official-text/
+
+Arquivos: Montserrat-Black.ttf, Montserrat-ExtraBold.ttf, Montserrat-Bold.ttf (sem modificacoes).

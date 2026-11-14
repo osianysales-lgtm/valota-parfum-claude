@@ -1,0 +1,3 @@
+prompt: dark luxury trap hip hop instrumental beat, 90 bpm, deep 808 bass, soft hi-hats, moody cinematic piano, no vocals, loopable
+duracao: 22
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)

@@ -1,0 +1,3 @@
+prompt: short police siren wail, comedic, two cycles
+duracao: 2
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)

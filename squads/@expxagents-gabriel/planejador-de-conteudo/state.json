@@ -1,0 +1,54 @@
+{
+ "squad": "planejador-de-conteudo",
+ "status": "completed",
+ "step": {
+  "current": 8,
+  "total": 8,
+  "label": "step-07"
+ },
+ "agents": [
+  {
+   "id": "investigador-nicho",
+   "name": "Renata Cavalcanti",
+   "icon": "search",
+   "status": "done",
+   "stepIndex": 1,
+   "stepLabel": "step-01",
+   "deliverTo": "curador-referencias",
+   "message": "Dossiê entregue"
+  },
+  {
+   "id": "curador-referencias",
+   "name": "Gabriel Tavares",
+   "icon": "compass",
+   "status": "done",
+   "stepIndex": 2,
+   "stepLabel": "step-02",
+   "deliverTo": "estrategista-conteudo",
+   "message": "Banco de referências (Ueta principal)"
+  },
+  {
+   "id": "estrategista-conteudo",
+   "name": "Marina Solano",
+   "icon": "target",
+   "status": "done",
+   "stepIndex": 3,
+   "stepLabel": "checkpoint-01",
+   "deliverTo": null,
+   "message": "Briefing aguardando aprovação"
+  },
+  {
+   "id": "montador-calendario",
+   "name": "Yasmin Cordeiro",
+   "icon": "layout",
+   "status": "done",
+   "stepIndex": 7,
+   "stepLabel": "step-07",
+   "deliverTo": null,
+   "message": "Calendário HTML entregue"
+  }
+ ],
+ "handoff": null,
+ "startedAt": "2026-11-07T20:10:00Z",
+ "updatedAt": "2026-11-07T23:40:00Z"
+}

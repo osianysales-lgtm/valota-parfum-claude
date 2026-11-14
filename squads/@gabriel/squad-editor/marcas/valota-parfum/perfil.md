@@ -1,0 +1,12 @@
+# Valota Parfum — perfil (07/11/2026)
+- Criadora: Osiany · TikTok @valotaparfum · reviews de perfumes (nicho, grife, árabes). Público principal: homens.
+- **IDENTIDADE OFICIAL (09/11/2026, brand-squad, vale para TODO vídeo e conteúdo de perfume):** paleta "Petróleo & Âmbar". Manual completo: squads/@community/brand-squad/brand-squad/output/v1/step-04-identity-system.md
+- Cores: fundo Petróleo #0F2E33 (degradê radial com centro Petróleo Luz #1A4A52 e borda Petróleo Noite #0A1F23) · texto creme #F2E8D8 · âmbar #D49A4E só em detalhe (filete, preço, número de ranking) · Amarelo Laudo #FFC93C para ênfase, palavra-chave da legenda, Selo e piada (no máximo 15% da tela).
+- Fontes: Anton (ênfase, Selo, Plantão) · Figtree SemiBold (legenda e texto, nunca fina) · Bodoni Moda SemiBold 600 com opsz 18 (títulos e assinatura). Nada de letra fina: ela pediu que ninguém tenha dificuldade para ler.
+- Assinatura: "VALOTA PARFUM" em Bodoni creme, sem brilho dourado. Bordão de fechamento: "Se vale, a Valota fala."
+- Selo de veredito (VALE O FRASCO / VALE O DECANT / PASSA LONGE): amarelo #FFC93C, texto #0A1F23, vetor limpo, girado −8°, canto superior direito.
+- Proibido: preto + dourado, texto âmbar ou amarelo sobre creme, letra fina, selo com textura borrada.
+- (Antes de 09/11/2026 a marca usava marrom #1A110C + amarelo #FFE600. Ficha antiga salva em ficha.antiga-2026-11-09.json, apenas para referência.)
+- Referência de edição: @matheusueta (docs/referencia_edicao_notas/PADRAO.md) — notas em PNG recortado, cartela de título, texto amarelo.
+- Áudio: sem pasta própria → biblioteca_audio/ (efeitos + trilha_trap_luxo_beat). Narração = voz da Osiany no ElevenLabs, ID da voz sempre o do .env da raiz (Elevenlabs_voz_id), velocidade 0,95.
+- Visual: fotos reais com fundo removido, frascos sempre em pé, nunca desenho/cartoon.

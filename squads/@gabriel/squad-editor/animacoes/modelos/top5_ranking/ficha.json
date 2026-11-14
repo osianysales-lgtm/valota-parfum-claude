@@ -1,0 +1,15 @@
+{
+  "marca": "Valota Parfum",
+  "cores": { "fundo": "#1A110C", "destaque": "#D49A4E", "texto": "#EFE3CF", "apoio": "#FFE600" },
+  "fontes": {
+    "titulo":  { "familia": "Anton", "arquivo": "/Users/osianysales/Downloads/Arquivos/squads/@gabriel/squad-editor/output/v4-top5arabes/fontes/Anton-Regular.ttf" },
+    "texto":   { "familia": "Figtree", "arquivo": "/Users/osianysales/Downloads/Arquivos/squads/@gabriel/squad-editor/output/v4-top5arabes/fontes/Figtree.ttf", "peso": 600 },
+    "legenda": { "familia": "Figtree", "arquivo": "/Users/osianysales/Downloads/Arquivos/squads/@gabriel/squad-editor/output/v4-top5arabes/fontes/Figtree.ttf", "peso": 600 },
+    "assinatura": { "familia": "Bodoni Moda", "arquivo": "/Users/osianysales/Downloads/Arquivos/squads/@gabriel/squad-editor/output/v4-top5arabes/fontes/BodoniModa.ttf", "peso": 600 }
+  },
+  "logos": {},
+  "legenda": { "usar": true, "destaque": "cor", "corDestaque": "#FFE600", "caixa": "original", "tamanho": 64, "palavrasPorCard": 3, "posicaoY": 1100 },
+  "enfase": { "cor": "#FFE600", "fonte": "Anton", "caixa": "alta" },
+  "assinatura": { "texto": "VALOTA PARFUM", "handle": "@valotaparfum" },
+  "glossario": ["Valota Parfum", "Rabanne", "1 Million", "1 Million Black", "One Million", "Christophe Raynaud", "Quentin Bisch", "fava tonka", "sálvia esclaréia", "patchouli", "cardamomo"]
+}

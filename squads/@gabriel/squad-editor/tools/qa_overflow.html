@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><style>*{box-sizing:border-box}body{margin:0;background:#0F2E33}.cena{position:relative;width:1080px;height:1920px;overflow:hidden}</style></head><body>
+<script>
+window.auditar = async () => {
+  const cenas = ['gancho','promessa','leve','medio','pesado','fragrantica','cta','captions'];
+  const out = [];
+  for (const c of cenas) {
+    const html = (await (await fetch('compositions/' + c + '.html')).text()).replace(/\.\.\/assets/g, 'assets');
+    const tpl = document.createElement('div'); tpl.className = 'cena'; tpl.innerHTML = html.replace(/<\/?template>/g, '').replace(/<script[\s\S]*?<\/script>/g, '');
+    document.body.appendChild(tpl);
+    await document.fonts.ready; await new Promise(r => setTimeout(r, 300));
+    const sel = '.bub,.pill,.chip,.stamp,.msg,.card,.res3,.hd,.big,.sub,.busca,.res,.cap,.assin .n';
+    tpl.querySelectorAll(sel).forEach(el => {
+      const r = el.getBoundingClientRect(); const rg = document.createRange(); rg.selectNodeContents(el); const t = rg.getBoundingClientRect();
+      const id = (el.closest('[id]') || el).id;
+      const fora = [];
+      if (t.width && (t.left < r.left - 2 || t.right > r.right + 2)) fora.push(`texto ${Math.round(t.width)}px > caixa ${Math.round(r.width)}px`);
+      if (t.height && (t.top < r.top - 4 || t.bottom > r.bottom + 4) && !el.classList.contains('big') && !el.classList.contains('sub')) fora.push(`altura texto ${Math.round(t.height)} > ${Math.round(r.height)}`);
+      const base = tpl.getBoundingClientRect();
+      const L = Math.min(r.left, t.left || r.left) - base.left, Rr = Math.max(r.right, t.right || r.right) - base.left;
+      if (L < 0 || Rr > 1080) fora.push(`fora da tela (${Math.round(L)}…${Math.round(Rr)})`);
+      const chat = el.closest('.chat'); if (chat && el.classList.contains('msg')) { const cr = chat.getBoundingClientRect(); if (r.right > cr.right - 4) fora.push('mensagem passa do card'); }
+      if (fora.length) out.push(`${c} #${id} .${el.className.split(' ')[0]} "${el.textContent.trim().slice(0, 40)}": ${fora.join('; ')}`);
+    });
+    tpl.remove();
+  }
+  return out;
+};
+</script></body></html>

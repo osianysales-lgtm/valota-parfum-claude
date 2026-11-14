@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: 'Montserrat'; font-weight: 500 700; src: url(/fonts/Montserrat-Bold.ttf); }
+  @font-face { font-family: 'Montserrat'; font-weight: 800; src: url(/fonts/Montserrat-ExtraBold.ttf); }
+  @font-face { font-family: 'Montserrat'; font-weight: 900; src: url(/fonts/Montserrat-Black.ttf); }
+  html, body { margin: 0; background: #000; overflow: hidden; }
+  #stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+  canvas { position: absolute; inset: 0; width: 1080px; height: 1920px; display: block; }
+  #vig { position: absolute; inset: 0; pointer-events: none;
+    background: radial-gradient(ellipse 85% 70% at 50% 42%, rgba(0,0,0,0) 55%, rgba(4,2,12,.55) 100%); }
+  #sub { position: absolute; left: 80px; right: 80px; top: 1480px; text-align: center;
+    font: 700 48px/1.22 'Montserrat', 'Segoe UI', sans-serif; color: #fff; letter-spacing: -.5px;
+    text-shadow: 0 4px 18px rgba(0,0,0,.95), 0 0 3px rgba(0,0,0,.9); }
+  #sub.c { color: #ff9a6b; font-style: italic; font-weight: 600; }
+  #sub:not(:empty) { background: rgba(8,6,16,.55); border-radius: 22px; padding: 14px 24px; }
+  #sub.a { color: #a8ecff; }
+  #fade { position: absolute; inset: 0; background: #07060c; opacity: 0; pointer-events: none; }
+  #disc { position: absolute; left: 0; right: 0; top: 1700px; text-align: center; opacity: 0; color: rgba(255,255,255,.6); font: 500 26px 'Montserrat', sans-serif; }
+  #ttl { position: absolute; left: 0; right: 0; top: 300px; text-align: center; opacity: 0; color: #fff; font: italic 900 168px/1 'Montserrat', sans-serif; letter-spacing: -6px; text-shadow: 0 10px 50px rgba(0,0,0,.8); }
+  #ttl span { position: relative; display: inline-block; }
+  #ttl span::after { content: ''; position: absolute; left: -4%; top: 52%; height: 22px; width: 0; background: #ff3b3b; transform: rotate(-6deg); box-shadow: 0 0 30px rgba(255,59,59,.8); }
+  #ttl.x span::after { width: 108%; }
+  #cmts { position: absolute; inset: 0; opacity: 0; pointer-events: none; }
+  #cmts div { position: absolute; background: rgba(255,255,255,.94); color: #15121c; border-radius: 30px; padding: 16px 26px; font: 700 36px 'Montserrat', sans-serif; box-shadow: 0 14px 40px rgba(0,0,0,.45); opacity: 0; }
+  #tag { position: absolute; left: 50%; top: 150px; transform: translateX(-50%); opacity: 0; font: 800 36px 'Montserrat', sans-serif; letter-spacing: .22em; padding: 12px 28px; border-radius: 999px; background: rgba(0,0,0,.55); }
+  #tag.bad { color: #ff6b6b; border: 3px solid #ff6b6b; } #tag.good { color: #7CFC8A; border: 3px solid #7CFC8A; }
+  #flash { position: absolute; inset: 0; background: #fff; opacity: 0; pointer-events: none; }
+  #gancho, #fimtxt { position: absolute; left: 50px; right: 50px; top: 230px; text-align: center; opacity: 0; pointer-events: none; }
+  #gancho .l1, #fimtxt .l1 { white-space: nowrap; font: 900 104px/1.0 'Montserrat', sans-serif; color: #fff; letter-spacing: -3px; text-shadow: 0 8px 40px rgba(0,0,0,.85), 0 2px 6px rgba(0,0,0,.9); }
+  #gancho .l2, #fimtxt .l2 { display: inline-block; margin-top: 22px; font: 800 58px/1.12 'Montserrat', sans-serif; color: #0F2E33; background: #D49A4E; padding: 12px 28px; border-radius: 18px; box-shadow: 0 12px 40px rgba(0,0,0,.45); }
+  #fimtxt { top: 250px; } #fimtxt .l1 { font-size: 104px; } #fimtxt .l2 { font-size: 46px; background: #F3E9DA; }
+  #celtela { position: absolute; inset: 0; opacity: 0; pointer-events: none; display: flex; align-items: flex-start; justify-content: center; padding-top: 470px; background: rgba(4,10,12,.5); }
+  #celtela .ph { position: relative; background: #0b0b0e; padding: 22px 54px; border-radius: 64px; box-shadow: 0 30px 90px rgba(0,0,0,.6), inset 0 0 0 3px #2a2a30; }
+  #celtela canvas { position: static; inset: auto; display: block; width: 880px; height: 616px; border-radius: 24px; }
+  #selo { position: absolute; top: 96px; left: 60px; opacity: 0; font: 800 34px 'Montserrat', sans-serif; letter-spacing: .16em; color: #0F2E33; background: #F3E9DA; padding: 10px 24px; border-radius: 999px; box-shadow: 0 8px 26px rgba(0,0,0,.4); }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "/node_modules/three/build/three.module.js",
+  "three/addons/": "/node_modules/three/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<div id="stage">
+  <canvas id="c" width="1080" height="1920"></canvas>
+  <div id="vig"></div>
+  <div id="celtela"><div class="ph"><canvas id="celcv" width="1100" height="770"></canvas></div></div>
+  <div id="sub"></div>
+  <div id="disc">resultados variam</div>
+  <div id="ttl"><span></span></div>
+  <div id="cmts"></div>
+  <div id="tag"></div>
+  <div id="flash"></div>
+  <div id="gancho"><div class="l1"></div><div class="l2"></div></div>
+  <div id="fimtxt"><div class="l1"></div><div class="l2"></div></div>
+  <div id="selo"></div>
+  <div id="fade"></div>
+</div>
+<script type="module" src="/src/motor.js"></script>
+</body>
+</html>

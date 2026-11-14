@@ -1,0 +1,538 @@
+{
+  "version": 1,
+  "historyId": "48120ab9-f670-43e2-8e0a-ae70b2eb915f",
+  "currentRevision": "4d523933-b61d-48a6-838f-996f52cef54d",
+  "pendingChanges": false,
+  "files": {
+    "assets/audio/badum_tss.mp3": {
+      "hash": "0253fd628a92e1cecd621941f2789557997c37246cf1d11f3b0940b1b146ef6b",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/02/0253fd628a92e1cecd621941f2789557997c37246cf1d11f3b0940b1b146ef6b"
+    },
+    "assets/audio/boing_cartoon.mp3": {
+      "hash": "92518833bb14c87d52c7fe292c8fe4be4520b06d7b41be54ac3891e34bed1b50",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/92/92518833bb14c87d52c7fe292c8fe4be4520b06d7b41be54ac3891e34bed1b50"
+    },
+    "assets/audio/buzzer_erro.mp3": {
+      "hash": "6844f7fa2843e145fca7f68b81876420b56dbe0b86afcd7c73767e5ed2de5879",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/68/6844f7fa2843e145fca7f68b81876420b56dbe0b86afcd7c73767e5ed2de5879"
+    },
+    "assets/audio/carimbo.mp3": {
+      "hash": "846df595f60b0ed49e6a2f98696ce153613989cef740d46887c7ac0539ce3b8f",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/84/846df595f60b0ed49e6a2f98696ce153613989cef740d46887c7ac0539ce3b8f"
+    },
+    "assets/audio/click_ui.mp3": {
+      "hash": "ada71f8ac3e8fd7aa08696bf794a8567452739b0166a7b5020387f477105a0ec",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/ad/ada71f8ac3e8fd7aa08696bf794a8567452739b0166a7b5020387f477105a0ec"
+    },
+    "assets/audio/ding_acerto.mp3": {
+      "hash": "e8df94186213019121eefee5be9274af5866821e68c1c04c8552a9d799dfb7ea",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/e8/e8df94186213019121eefee5be9274af5866821e68c1c04c8552a9d799dfb7ea"
+    },
+    "assets/audio/ding_notificacao.mp3": {
+      "hash": "61ce24bdd97b62d2dce2e622909fc3eaf4465a104782edf0a34e8d917c3002f4",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/61/61ce24bdd97b62d2dce2e622909fc3eaf4465a104782edf0a34e8d917c3002f4"
+    },
+    "assets/audio/impact_grave.mp3": {
+      "hash": "3027be6ba9d9e28fb2f3a3a7280e81d1c37210c50ec1d54c996eb10a076d47dc",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/30/3027be6ba9d9e28fb2f3a3a7280e81d1c37210c50ec1d54c996eb10a076d47dc"
+    },
+    "assets/audio/plim_brilho_magico.mp3": {
+      "hash": "21d8c6c613564f850b41b7d9e99184735304f5584785ebb85e2f93299c0a84ca",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/21/21d8c6c613564f850b41b7d9e99184735304f5584785ebb85e2f93299c0a84ca"
+    },
+    "assets/audio/pop_leve.mp3": {
+      "hash": "29e1d2efbc6e723841802c1d84b9d112f79cf1877ef98abee12e9798a0a5a169",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/29/29e1d2efbc6e723841802c1d84b9d112f79cf1877ef98abee12e9798a0a5a169"
+    },
+    "assets/audio/riser_curto.mp3": {
+      "hash": "4c262bc397997ebc33d5ee0f55387f7aa0010a9cee72f3fd2f4f2c73cfd8ce5d",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/4c/4c262bc397997ebc33d5ee0f55387f7aa0010a9cee72f3fd2f4f2c73cfd8ce5d"
+    },
+    "assets/audio/shine_brilho.mp3": {
+      "hash": "6d663ccb583115e641ee39ca7c52c5db74fd500c14db619954e2a2e601295a5b",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/6d/6d663ccb583115e641ee39ca7c52c5db74fd500c14db619954e2a2e601295a5b"
+    },
+    "assets/audio/sirene_policia.mp3": {
+      "hash": "b99d33bca25284922ed080ca8e737c733c798d40cbe4bba8945eafa9a44cc768",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/b9/b99d33bca25284922ed080ca8e737c733c798d40cbe4bba8945eafa9a44cc768"
+    },
+    "assets/audio/spray_perfume.mp3": {
+      "hash": "c506aca33ee6769abc0747115634aeecaf82fb2af5da9c2f1d9b80216e925544",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/c5/c506aca33ee6769abc0747115634aeecaf82fb2af5da9c2f1d9b80216e925544"
+    },
+    "assets/audio/suspense_dun.mp3": {
+      "hash": "c58d624b4683d6b9cc31637059d04267fc4cdd3c38604468cddf31f3ef66bb86",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/c5/c58d624b4683d6b9cc31637059d04267fc4cdd3c38604468cddf31f3ef66bb86"
+    },
+    "assets/audio/swipe_tela.mp3": {
+      "hash": "be4238cac016a06c72040e42e674ad5c34ca406b35f7b16b8ede850cc1c740d2",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/be/be4238cac016a06c72040e42e674ad5c34ca406b35f7b16b8ede850cc1c740d2"
+    },
+    "assets/audio/trombone_triste.mp3": {
+      "hash": "845fb7bb772a2282964d2b15688cb756590eb97a345ae49cd7cdad4f64d31bad",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/84/845fb7bb772a2282964d2b15688cb756590eb97a345ae49cd7cdad4f64d31bad"
+    },
+    "assets/audio/typing_teclado.mp3": {
+      "hash": "097e6db008668133b816ebdf1086ccba1372ca8fb216773efba639a831fbd640",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/09/097e6db008668133b816ebdf1086ccba1372ca8fb216773efba639a831fbd640"
+    },
+    "assets/audio/whoosh_rapido.mp3": {
+      "hash": "983dde10b23be643334004e05ef1459ce767fc69e958303e33de6c1cbfb4c936",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/98/983dde10b23be643334004e05ef1459ce767fc69e958303e33de6c1cbfb4c936"
+    },
+    "assets/audio/whoosh_suave.mp3": {
+      "hash": "7fb73f0f296bbdcb2d0c890067b574a0f192b1c146696d2e263b95600268e33b",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/7f/7fb73f0f296bbdcb2d0c890067b574a0f192b1c146696d2e263b95600268e33b"
+    },
+    "assets/fonts/GothamBlack.otf": {
+      "hash": "99b87c0c6bf6947cd0034d9636fc2b8926dd1007281edf7a108b74e78636c5b0",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/99/99b87c0c6bf6947cd0034d9636fc2b8926dd1007281edf7a108b74e78636c5b0"
+    },
+    "assets/fonts/Montserrat.ttf": {
+      "hash": "0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/0f/0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7"
+    },
+    "assets/img/acqua.png": {
+      "hash": "59103d0b8db6fa9b88139fb1fb82a9cd3a00e766800f5358ea2e5e0e45029103",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/59/59103d0b8db6fa9b88139fb1fb82a9cd3a00e766800f5358ea2e5e0e45029103"
+    },
+    "assets/img/aventus.png": {
+      "hash": "d73ab7c0385060ebc53326576ce7b453b3c08249257f731cd38505d5ae0a5efa",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/d7/d73ab7c0385060ebc53326576ce7b453b3c08249257f731cd38505d5ae0a5efa"
+    },
+    "assets/img/bleu.png": {
+      "hash": "aa15710439168eeddf4662995b69e384314d594883a21946aec9b9a9249ceadf",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/aa/aa15710439168eeddf4662995b69e384314d594883a21946aec9b9a9249ceadf"
+    },
+    "assets/img/c212.png": {
+      "hash": "fbca717eb9fd852d00b9c9dedea9c0af2fd02e8c88531d5e245af0cbf4f02f01",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/fb/fbca717eb9fd852d00b9c9dedea9c0af2fd02e8c88531d5e245af0cbf4f02f01"
+    },
+    "assets/img/elixir.png": {
+      "hash": "30d007bee424d95a3f8a55e77fa87c8804aa0d7b09773ee26762f8d4c680e658",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/30/30d007bee424d95a3f8a55e77fa87c8804aa0d7b09773ee26762f8d4c680e658"
+    },
+    "assets/img/lemale.png": {
+      "hash": "cf995e24b8fb17fdd4268502167f8caa8cd764df9334851b1f822e18f8a9b55f",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/cf/cf995e24b8fb17fdd4268502167f8caa8cd764df9334851b1f822e18f8a9b55f"
+    },
+    "assets/img/lightblue.png": {
+      "hash": "e6f1ef3647ab236258b376f0a66dedcdc5947e435e9e0a58e032f4da4a880c56",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/e6/e6f1ef3647ab236258b376f0a66dedcdc5947e435e9e0a58e032f4da4a880c56"
+    },
+    "assets/img/sauvage.png": {
+      "hash": "40468afb36e9b7a6a4086d8351b5fa74e9288271a2b9c8a7023b96a36cecacd4",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/40/40468afb36e9b7a6a4086d8351b5fa74e9288271a2b9c8a7023b96a36cecacd4"
+    },
+    "assets/img/spicebomb.png": {
+      "hash": "9203f281596d5736b71ef7c36894d19d12b716c1caa392352f0b3977a692ebe3",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/92/9203f281596d5736b71ef7c36894d19d12b716c1caa392352f0b3977a692ebe3"
+    },
+    "assets/img/swy.png": {
+      "hash": "746b91d4c5877666c9313238a3f3749ce537d54614ac7ec447966f9a057a0980",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/74/746b91d4c5877666c9313238a3f3749ce537d54614ac7ec447966f9a057a0980"
+    },
+    "assets/img/terre.png": {
+      "hash": "44175a74960f3e3beb79c88d31e667e36d980715b0b235e4d4ce9d6fb70da9d2",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/44/44175a74960f3e3beb79c88d31e667e36d980715b0b235e4d4ce9d6fb70da9d2"
+    },
+    "assets/img/versace.png": {
+      "hash": "a88a6efce41754dd2258b13bfc2cd4d5464a41a3c9d57d0fbe2ea34b96a17f63",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/a8/a88a6efce41754dd2258b13bfc2cd4d5464a41a3c9d57d0fbe2ea34b96a17f63"
+    },
+    "compositions/camera.html": {
+      "hash": "5ff9ce8b9cf9db27d7386a5436584c566ecf55ed68b24dc8d731286b2298cd94",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/5f/5ff9ce8b9cf9db27d7386a5436584c566ecf55ed68b24dc8d731286b2298cd94"
+    },
+    "compositions/captions.html": {
+      "hash": "61671e2c0a33720b63eb7514152da335fa8f96034bb8c953fa0f6bb3e07861af",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/61/61671e2c0a33720b63eb7514152da335fa8f96034bb8c953fa0f6bb3e07861af"
+    },
+    "compositions/cta.html": {
+      "hash": "a14841392dd10e69b73268f4c3992f6640da6405f2c5739e1edd7335ed179f51",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/a1/a14841392dd10e69b73268f4c3992f6640da6405f2c5739e1edd7335ed179f51"
+    },
+    "compositions/fragrantica.html": {
+      "hash": "6a8b295bf9d0fd59ca32a98f7eaf95d8bccef034f4f4653a50f2462cbf94a19b",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/6a/6a8b295bf9d0fd59ca32a98f7eaf95d8bccef034f4f4653a50f2462cbf94a19b"
+    },
+    "compositions/gancho.html": {
+      "hash": "1d9c6c85b00b949471708857cd5cb334463ca77c5550e257dba08076ac2fbb48",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/1d/1d9c6c85b00b949471708857cd5cb334463ca77c5550e257dba08076ac2fbb48"
+    },
+    "compositions/leve.html": {
+      "hash": "8191e995cf80ea9b5eba67a16bd8f830d0d2817f35fd0cb5f983abbdcdc61c7c",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/81/8191e995cf80ea9b5eba67a16bd8f830d0d2817f35fd0cb5f983abbdcdc61c7c"
+    },
+    "compositions/medio.html": {
+      "hash": "e53b660b038dcb3aa7c3ddb36c2599d79141024f5bec915b46a3de56e5e66e75",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/e5/e53b660b038dcb3aa7c3ddb36c2599d79141024f5bec915b46a3de56e5e66e75"
+    },
+    "compositions/pesado.html": {
+      "hash": "894bebd0d789378431286e8d272bba793591ec38560817786ae80044556f65f4",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/89/894bebd0d789378431286e8d272bba793591ec38560817786ae80044556f65f4"
+    },
+    "compositions/promessa.html": {
+      "hash": "e46d589b2ffaeffbbf55657d2f01a85e90202a677b0b133eee1d22c7773844e7",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/e4/e46d589b2ffaeffbbf55657d2f01a85e90202a677b0b133eee1d22c7773844e7"
+    },
+    "hyperframes.json": {
+      "hash": "35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/35/35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7"
+    },
+    "index.html": {
+      "hash": "057aadddffa3bf9ae12169050c019c6f8381164d75c0a58827ffd404b7af5484",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/05/057aadddffa3bf9ae12169050c019c6f8381164d75c0a58827ffd404b7af5484"
+    },
+    "package.json": {
+      "hash": "8719e4d437cef7697e4b084f577a9c50c611a831d91b56270ef094cd31575216",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/87/8719e4d437cef7697e4b084f577a9c50c611a831d91b56270ef094cd31575216"
+    },
+    "assets/video/avatar.mp4": {
+      "hash": "084f5a1a9d90eceab7334c66fed903cc9e1050502f0b54c127721982508f8d2a",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/08/084f5a1a9d90eceab7334c66fed903cc9e1050502f0b54c127721982508f8d2a"
+    },
+    "qa_overflow.html": {
+      "hash": "179a6244694e25cb01343ac429bccd072604f0c839e4c41fb6c98b9f6ffc2df7",
+      "content": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/17/179a6244694e25cb01343ac429bccd072604f0c839e4c41fb6c98b9f6ffc2df7"
+    }
+  },
+  "revisions": {
+    "db71445e-9fca-4797-8633-2a4a0085913f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794324334945,
+      "endedAt": 1794324334955,
+      "files": {
+        "compositions/camera.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/b1/b124ea166fa03f7b4062e8be25f6601bfb50ce8590b7ba7fffcca3291f5e32ce",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/02/0249b67f3b9876e6d4da535fff31be1844352bc36b6cc47d9b102191c7527ae9"
+        },
+        "compositions/captions.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/b9/b93f63c0beffc35a1ca2c140970ea211334ea354ff2025bcd07f1ac458e832f3",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/5f/5fdd73619872d35ba62c4e0f0e302e48e7f103a3395303bf371b53533af6553c"
+        },
+        "compositions/cta.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/76/765fc9dda770ef17dd6c6bce693483c5e4e2a64eec3bcd98b6186c1c60bbe882",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/ce/ceff6b6b1d6891a4afd8e54197c30a032b1909a9cc58845be0a58370eeb7d634"
+        },
+        "compositions/fragrantica.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/4c/4cf38592a31fb26f96ec85c76a00e872f72bafc09e3326627750816d2e2b8e00",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/e3/e374364ac627347b7bc03101b960b256fbe618797a0279f4953fb4457e659f30"
+        },
+        "compositions/gancho.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/52/52bf0c5ee3511d8d1c1735825876ee7a187cbd199979b1aadde2668a76e9c7cd",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/16/160d776dfcb5fc0bfac4279fda44211369ce3d80a409e4a50e88e79fcd8ae440"
+        },
+        "compositions/leve.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/77/770043f9707549b0925ab5a185008e55b03528922b3a3fe7dc870a01cb644111",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/59/595530aedbf49f093656504e863bfb63178a739d79ac437b2f032799ff575bab"
+        },
+        "compositions/medio.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/f9/f99ce5b5cb76a9ff683d9b0774705b97ecc75a859a44aa6ba2a6fad8010f4898",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/c5/c5fd22879fd65be9846fa8d3b6d4b1300db2abf9acdfb778674cc38c604d8a48"
+        },
+        "compositions/pesado.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/8d/8d31420d15a7892e41c985a26127a8422a76b0e9fd2fdf4b1587062119ce4682",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/e6/e68c1e7ae913c1f03f3732ad0eff648cd2bb56aca348af4e5828a805bef1dcbd"
+        },
+        "compositions/promessa.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/d2/d252bc1ab73acb0c6d30ac2d045a0d0c157b80b0083a7862a37d3b447acbbe78",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/44/442035a50a28da93488ac03bef9b25d31682ac264f19c226651de3ffbd190fe6"
+        },
+        "index.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/47/474767b2864aae5e9cfd181bf5d549183ab0bbaa77063765234c2cee7e5254a7",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/61/6117be8e5e25d9d08d2d0d6d774604eb64a551fc6f25397a82720768778e25ee"
+        }
+      }
+    },
+    "1762472f-c373-4249-9f7c-3c1846c60bc5": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794324538103,
+      "endedAt": 1794324538118,
+      "files": {
+        "compositions/cta.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/ce/ceff6b6b1d6891a4afd8e54197c30a032b1909a9cc58845be0a58370eeb7d634",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/83/83f2d0d2504c0a4ab3861c1604c78984c458dadd69e713201299761f444f7e02"
+        },
+        "compositions/fragrantica.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/e3/e374364ac627347b7bc03101b960b256fbe618797a0279f4953fb4457e659f30",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/b8/b8f81f4920d0c9a1bfcfeb888c209634b526f9e1f5728cf8a92f798941281d81"
+        },
+        "compositions/gancho.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/16/160d776dfcb5fc0bfac4279fda44211369ce3d80a409e4a50e88e79fcd8ae440",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/4e/4ec4c21d11bf6162364a01005e4fec6fe575a75d04fa5a1f217463155a280103"
+        },
+        "compositions/leve.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/59/595530aedbf49f093656504e863bfb63178a739d79ac437b2f032799ff575bab",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/bf/bf5b3ae701cfb91f04e22f03650bbfb38a352315cb763291dd33ec42eb41e551"
+        },
+        "compositions/medio.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/c5/c5fd22879fd65be9846fa8d3b6d4b1300db2abf9acdfb778674cc38c604d8a48",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/be/be4cf636a3b02152cb4aa8113d4514d2f6c907620e5841706d7fc36f6c051179"
+        },
+        "compositions/pesado.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/e6/e68c1e7ae913c1f03f3732ad0eff648cd2bb56aca348af4e5828a805bef1dcbd",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/1b/1bed8cc21e833582d9826ad87f1a01ace506c5c0aa07dfddcfa91271a3b7aaca"
+        },
+        "compositions/promessa.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/44/442035a50a28da93488ac03bef9b25d31682ac264f19c226651de3ffbd190fe6",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/5c/5cda66a080ec66faf1d96ce5a5106f46eac9c7741b4e314fcc940990c2582c3a"
+        }
+      }
+    },
+    "8df2daec-fe22-4403-89a2-5e3ab484ab1c": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794326242037,
+      "endedAt": 1794326243534,
+      "files": {
+        "assets/audio/trilha_comedia_leve.mp3": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/44/44efd282edc3a66398c2df3350befec570b5fcf035156b6d57a8b98f736cdc75",
+          "after": null
+        },
+        "assets/img/acqua.png": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/6a/6aea8485953f6557a618c43d43d13db0113c4a55613f02ab78b779b9be47a2fd",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/59/59103d0b8db6fa9b88139fb1fb82a9cd3a00e766800f5358ea2e5e0e45029103"
+        },
+        "assets/img/aventus.png": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/88/88db5bfeba12a9ecda732f2d42980be055d283524d85aabf4fbc1e2a22df05fe",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/d7/d73ab7c0385060ebc53326576ce7b453b3c08249257f731cd38505d5ae0a5efa"
+        },
+        "assets/img/bleu.png": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/95/95e9dba8bf50d1a10eb0380214f50a09564bf922cd84332f966f09f55c20181e",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/aa/aa15710439168eeddf4662995b69e384314d594883a21946aec9b9a9249ceadf"
+        },
+        "assets/img/c212.png": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/94/94cde87a4461a3b18e806f1b622651eb99c703999979ee595f7cc8d7dfa00c4f",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/fb/fbca717eb9fd852d00b9c9dedea9c0af2fd02e8c88531d5e245af0cbf4f02f01"
+        },
+        "assets/img/elixir.png": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/01/011ccee772697ac5d708b9cea0159605651ca3c903ba8b5f6026e14e39671ce3",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/30/30d007bee424d95a3f8a55e77fa87c8804aa0d7b09773ee26762f8d4c680e658"
+        },
+        "assets/img/lemale.png": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/56/56212a564aa3e048507753c006f09d1eda2125e893619ede21d049c9baeba0fe",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/cf/cf995e24b8fb17fdd4268502167f8caa8cd764df9334851b1f822e18f8a9b55f"
+        },
+        "assets/img/lightblue.png": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/e3/e3f00d4c6a521ad690ccbcb48dbb09c77d4674ae5fb4a6a37e22480acda4f795",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/e6/e6f1ef3647ab236258b376f0a66dedcdc5947e435e9e0a58e032f4da4a880c56"
+        },
+        "assets/img/spicebomb.png": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/3d/3d7cc3f89f31b6abd19d9c4e37ca11bdc22f5b2f3fb2bd618487069a0d921ff6",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/92/9203f281596d5736b71ef7c36894d19d12b716c1caa392352f0b3977a692ebe3"
+        },
+        "assets/img/swy.png": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/f3/f318d89c7f9fded9cf37dfb3041f795238fb21f4c9c53a66546eb5efb43d6cf8",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/74/746b91d4c5877666c9313238a3f3749ce537d54614ac7ec447966f9a057a0980"
+        },
+        "assets/img/terre.png": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/82/8273fdd7b9637b60e030307e235a2ad0005e54130c440c6a6ac08b8fdb6c59a5",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/44/44175a74960f3e3beb79c88d31e667e36d980715b0b235e4d4ce9d6fb70da9d2"
+        },
+        "assets/img/versace.png": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/47/47dbe5261f72a36c590e0acf8ba8f7cb8f79d4976940a76542196aaadd2a51cc",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/a8/a88a6efce41754dd2258b13bfc2cd4d5464a41a3c9d57d0fbe2ea34b96a17f63"
+        },
+        "assets/video/avatar.mp4": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/42/42ae8b0c616e7bfe0116dc7dcc0d2d4cce3dd3753337b8f0ef47809bf2e32e51",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/08/084f5a1a9d90eceab7334c66fed903cc9e1050502f0b54c127721982508f8d2a"
+        },
+        "compositions/camera.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/02/0249b67f3b9876e6d4da535fff31be1844352bc36b6cc47d9b102191c7527ae9",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/5f/5ff9ce8b9cf9db27d7386a5436584c566ecf55ed68b24dc8d731286b2298cd94"
+        },
+        "compositions/captions.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/5f/5fdd73619872d35ba62c4e0f0e302e48e7f103a3395303bf371b53533af6553c",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/61/61671e2c0a33720b63eb7514152da335fa8f96034bb8c953fa0f6bb3e07861af"
+        },
+        "compositions/cta.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/83/83f2d0d2504c0a4ab3861c1604c78984c458dadd69e713201299761f444f7e02",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/a1/a14841392dd10e69b73268f4c3992f6640da6405f2c5739e1edd7335ed179f51"
+        },
+        "compositions/fragrantica.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/b8/b8f81f4920d0c9a1bfcfeb888c209634b526f9e1f5728cf8a92f798941281d81",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/6a/6a8b295bf9d0fd59ca32a98f7eaf95d8bccef034f4f4653a50f2462cbf94a19b"
+        },
+        "compositions/gancho.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/4e/4ec4c21d11bf6162364a01005e4fec6fe575a75d04fa5a1f217463155a280103",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/1d/1d9c6c85b00b949471708857cd5cb334463ca77c5550e257dba08076ac2fbb48"
+        },
+        "compositions/leve.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/bf/bf5b3ae701cfb91f04e22f03650bbfb38a352315cb763291dd33ec42eb41e551",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/81/8191e995cf80ea9b5eba67a16bd8f830d0d2817f35fd0cb5f983abbdcdc61c7c"
+        },
+        "compositions/medio.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/be/be4cf636a3b02152cb4aa8113d4514d2f6c907620e5841706d7fc36f6c051179",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/08/085aac8ca94c6109b945b7ba81802a6a0a52f2898f7afa3e6677d0d116f57ed8"
+        },
+        "compositions/pesado.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/1b/1bed8cc21e833582d9826ad87f1a01ace506c5c0aa07dfddcfa91271a3b7aaca",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/89/894bebd0d789378431286e8d272bba793591ec38560817786ae80044556f65f4"
+        },
+        "compositions/promessa.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/5c/5cda66a080ec66faf1d96ce5a5106f46eac9c7741b4e314fcc940990c2582c3a",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/e4/e46d589b2ffaeffbbf55657d2f01a85e90202a677b0b133eee1d22c7773844e7"
+        },
+        "index.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/61/6117be8e5e25d9d08d2d0d6d774604eb64a551fc6f25397a82720768778e25ee",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/05/057aadddffa3bf9ae12169050c019c6f8381164d75c0a58827ffd404b7af5484"
+        },
+        "qa_overflow.html": {
+          "before": null,
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/17/179a6244694e25cb01343ac429bccd072604f0c839e4c41fb6c98b9f6ffc2df7"
+        }
+      }
+    },
+    "4d523933-b61d-48a6-838f-996f52cef54d": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794326422370,
+      "endedAt": 1794326422375,
+      "files": {
+        "compositions/medio.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/08/085aac8ca94c6109b945b7ba81802a6a0a52f2898f7afa3e6677d0d116f57ed8",
+          "after": "/Users/osianysales/.cache/hyperframes/history/48120ab9-f670-43e2-8e0a-ae70b2eb915f/blobs/e5/e53b660b038dcb3aa7c3ddb36c2599d79141024f5bec915b46a3de56e5e66e75"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "8df2daec-fe22-4403-89a2-5e3ab484ab1c",
+      "id": "783f2dbd-e89b-4e88-8ea0-b67f11cdf1ec"
+    },
+    "revisions": {
+      "db71445e-9fca-4797-8633-2a4a0085913f": [
+        {
+          "id": "8411ddb3-5fa0-45a5-96a2-7839f3e83e4c",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794324349159,
+          "contentHash": "7ae32963ae2607ec26f973bb1b02fb91d49bcbf4f518bb4ee343d87dbfee0f52",
+          "revision": "db71445e-9fca-4797-8633-2a4a0085913f",
+          "inputFingerprint": "0c059bd16964dd4d73a04a58e5f09a87c10d280174b8798c7c4521348660a057",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "fc318cfb-5e99-4138-9625-f0e31c9dde30"
+        }
+      ],
+      "8df2daec-fe22-4403-89a2-5e3ab484ab1c": [
+        {
+          "id": "783f2dbd-e89b-4e88-8ea0-b67f11cdf1ec",
+          "scope": "project",
+          "report": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v16-borrifadas-avatar/hf/.hyperframes/artifacts/checks/783f2dbd-e89b-4e88-8ea0-b67f11cdf1ec.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794326255511,
+          "contentHash": "9a224d1cd2197053d1233c13c15e46ffb39818f1552cc1cd956510be7f1c747d",
+          "revision": "8df2daec-fe22-4403-89a2-5e3ab484ab1c",
+          "inputFingerprint": "1e09f1987735d6bf1e94c7f41a75609c601df31fe3d3cc4a0e9336301dfbe5bc",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "b7590592-8be0-46d7-a928-cfc3316a43af",
+        "scope": "project",
+        "report": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v16-borrifadas-avatar/hf/.hyperframes/artifacts/checks/b7590592-8be0-46d7-a928-cfc3316a43af.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "cache": true,
+            "contrast": true,
+            "craft": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto",
+            "includeUnmounted": false
+          }
+        },
+        "createdAt": 1794324313352,
+        "contentHash": "d686fcedb7ad5c6897bc32bdb02d901c51d1344d799861b9f80903afe62b9a5e",
+        "revision": null,
+        "inputFingerprint": "d7e3b9d07ef979793e1366c72c5e3b9d1928b6df3e000b50c10554cdec05c80f",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "7e21d860-fded-42ef-af40-e402152c683f",
+      "completedAt": 1794326615741,
+      "output": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v16-borrifadas-avatar/REELS VALOTA PARFUM QUANTAS BORRIFADAS AVATAR v2.mp4",
+      "status": "completed",
+      "revision": "4d523933-b61d-48a6-838f-996f52cef54d"
+    },
+    "retainedRevisions": [
+      "4d523933-b61d-48a6-838f-996f52cef54d",
+      "8df2daec-fe22-4403-89a2-5e3ab484ab1c"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

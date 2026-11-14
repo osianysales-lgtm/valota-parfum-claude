@@ -1,0 +1,152 @@
+<template>
+<style>@font-face{font-family:"Montserrat";src:url("../assets/fonts/Montserrat.ttf");font-weight:100 900}@font-face{font-family:"Gotham";src:url("../assets/fonts/GothamBlack.otf");font-weight:900}
+#root{position:absolute;inset:0;overflow:hidden;font-family:"Montserrat",sans-serif}
+.abs{position:absolute}
+.card{width:100%;height:100%;background:radial-gradient(ellipse 90% 120% at 30% 40%, #1A4A52 0%, #0F2E33 60%, #0A1F23 100%);border-radius:30px;box-shadow:0 14px 40px rgba(10,31,35,.55);border-bottom:6px solid #D49A4E;display:flex}
+.col{flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.ab1row{display:flex;align-items:center;gap:26px}
+.glt{display:inline-block;font-family:"Gotham",sans-serif;font-weight:900;font-size:100px;line-height:1;color:#F2E8D8;text-shadow:-6px 0 #7DBFB3,6px 0 #D49A4E}
+.pt2{font-weight:900;font-size:40px;line-height:1;color:#0A1F23;background:#FFC93C;padding:12px 22px;border-radius:999px;border:5px solid #0A1F23;transform:rotate(-4deg);white-space:nowrap}
+.ab2{font-family:"Montserrat",sans-serif;font-weight:900;font-size:70px;line-height:1.05;color:#F2E8D8;letter-spacing:.02em;white-space:nowrap}
+.pcard{width:100%;height:100%;border-radius:30px;display:flex;border:6px solid #0A1F23;box-shadow:10px 12px 0 rgba(10,31,35,.55);gap:4px}
+.pcard .nome{display:inline-block;font-family:"Gotham",sans-serif;font-weight:900;font-size:88px;line-height:1;text-shadow:-5px 0 #F2E8D8,5px 0 #D49A4E}
+.marca{font-weight:800;font-size:28px;letter-spacing:.3em;opacity:.9}
+.chip{width:100%;height:100%;display:flex;align-items:center;justify-content:center;border-radius:999px;font-weight:900;letter-spacing:.02em;white-space:nowrap;border:5px solid var(--b,#0A1F23);box-shadow:6px 8px 0 rgba(10,31,35,.55)}
+.chip svg{flex:none}
+.stat{width:100%;height:100%;display:flex;align-items:center;justify-content:center;gap:34px;border-radius:34px;border:6px solid #0A1F23;box-shadow:10px 12px 0 rgba(10,31,35,.55)}
+.stat svg{flex:none}
+.scol{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+.cnt{display:inline-grid}.cnt .d{grid-area:1/1}
+.big{font-family:"Gotham",sans-serif;font-weight:900;font-size:124px;line-height:.95}
+.big2{font-family:"Gotham",sans-serif;font-weight:900;font-size:76px;line-height:1;white-space:nowrap}
+.lab{font-weight:900;font-size:40px;letter-spacing:.06em;white-space:nowrap}
+.selo{width:100%;height:100%;border-radius:50%;background:radial-gradient(circle at 50% 40%, #FFC93C 0%, #FFC93C 62%, #D49A4E 100%);border:8px solid #0A1F23;outline:4px dashed #0A1F23;outline-offset:-22px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;box-shadow:10px 12px 0 rgba(10,31,35,.55);color:#0A1F23;text-align:center}
+.s1{font-weight:900;font-size:28px;letter-spacing:.3em;padding-left:.3em}
+.s2{font-family:"Gotham",sans-serif;font-weight:900;font-size:56px;line-height:.95}
+.s3{font-weight:900;font-size:22px;letter-spacing:.06em;color:#0A1F23;margin-top:4px}
+.selo.mini{border-width:6px;outline-width:3px;outline-offset:-16px;box-shadow:7px 9px 0 rgba(10,31,35,.55)}
+.mini .s1{font-size:19px}.mini .s2{font-size:38px}.mini .s3{font-size:15px;margin-top:2px}
+.fol1{font-weight:900;font-size:44px;color:#F2E8D8;line-height:1;letter-spacing:.04em}
+.fol2{font-family:"Gotham",sans-serif;font-weight:900;font-size:110px;color:#FFC93C;line-height:1}
+.fol3{font-weight:800;font-size:32px;color:#F2E8D8;line-height:1.15;padding:0 40px}
+.btn{width:100%;height:100%;display:flex;align-items:center;justify-content:center;border-radius:999px;background:#FFC93C;color:#0A1F23;border:6px solid #0A1F23;box-shadow:8px 10px 0 rgba(10,31,35,.55);font-family:"Gotham",sans-serif;font-weight:900;font-size:50px;letter-spacing:.03em;white-space:nowrap}
+.btn span{display:flex;align-items:center;justify-content:center}
+.handle{width:100%;text-align:center;font-weight:800;font-size:36px;letter-spacing:.12em;color:#F2E8D8;-webkit-text-stroke:8px #0A1F23;paint-order:stroke fill}
+</style>
+<div id="root" data-composition-id="graficos" data-width="1080" data-height="1920" data-layout-allow-overlap data-layout-allow-overflow>
+<div id="dim" class="abs" style="left:0px;top:0px;width:1080px;height:1920px;background:#0A1F23"></div>
+<div id="ab" class="abs" style="left:70px;top:110px;width:940px;height:250px;"><div class="card col" style="gap:8px">
+  <div class="ab1row"><span class="glt">GLITCH</span><span class="pt2">PARTE 2</span></div>
+  <div class="ab2">VALE O <span style="color:#FFC93C">FRASCO?</span></div></div></div>
+<div id="seloA" class="abs" style="left:846px;top:560px;width:220px;height:220px;transform-origin:50% 50%"><div class="selo mini"><div class="s1">SELO</div><div class="s2">VALE O<br>FRASCO</div><div class="s3" data-layout-ignore>VALOTA PARFUM</div></div></div>
+<div id="verd" class="abs" style="left:290px;top:382px;width:500px;height:80px;transform-origin:50% 50%;"><div class="chip" style="background:#F2E8D8;color:#0A1F23;font-size:40px"><svg viewBox="0 0 44 44" width="40" height="40"><rect x="6" y="8" width="22" height="12" rx="3" transform="rotate(-35 17 14)" fill="#6B4430" stroke="#0A1F23" stroke-width="4"/><path d="M20 20l16 16" stroke="#0A1F23" stroke-width="6" stroke-linecap="round"/></svg>&nbsp;O VEREDITO</div></div>
+<div id="ext" class="abs" style="left:190px;top:380px;width:700px;height:86px;transform-origin:50% 50%;"><div class="chip" style="background:#D49A4E;color:#0A1F23;font-size:44px"><svg viewBox="0 0 36 44" width="30" height="38"><path d="M18 3C12 13 5 20 5 28a13 13 0 0 0 26 0c0-8-7-15-13-25z" fill="#F2E8D8" stroke="#0A1F23" stroke-width="4" stroke-linejoin="round"/></svg>&nbsp;EXTRATO DE PERFUME</div></div>
+<div id="expl" class="abs" style="left:280px;top:478px;width:520px;height:66px;transform-origin:50% 50%;"><div class="chip" style="background:#F2E8D8;color:#0A1F23;font-size:32px"><svg viewBox="0 0 40 40" width="34" height="34"><circle cx="20" cy="20" r="18" fill="#FFC93C" stroke="#0A1F23" stroke-width="4"/><path d="M11 21l6 6 12-13" fill="none" stroke="#0A1F23" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>&nbsp;ISSO EXPLICA TUDO</div></div>
+<div id="n22" class="abs" style="left:150px;top:380px;width:780px;height:86px;transform-origin:50% 50%;--b:#D49A4E"><div class="chip" style="background:#0F2E33;color:#F2E8D8;font-size:40px"><svg viewBox="0 0 44 44" width="38" height="38"><path d="M30 6a17 17 0 1 0 8 26A14 14 0 0 1 30 6z" fill="#F2E8D8" stroke="#0A1F23" stroke-width="4" stroke-linejoin="round"/></svg>&nbsp;ATÉ AS 22H NA MINHA PELE</div></div>
+<div id="noc" class="abs" style="left:330px;top:478px;width:420px;height:70px;transform-origin:50% 50%;"><div class="chip" style="background:#FFC93C;color:#0A1F23;font-size:38px">TEM NOÇÃO?</div></div>
+<div id="fix" class="abs" style="left:190px;top:290px;width:700px;height:230px;transform-origin:50% 50%"><div class="stat" style="background:#B8BC5C;color:#0A1F23">
+  <svg viewBox="0 0 44 44" width="96" height="96"><circle cx="22" cy="22" r="18" fill="#F2E8D8" stroke="#0A1F23" stroke-width="4"/><path d="M22 11v12l8 5" fill="none" stroke="#0A1F23" stroke-width="4" stroke-linecap="round"/></svg>
+  <div class="scol"><div class="big"><span class="cnt"><span class="d" id="d1">1</span><span class="d" id="d2">2</span><span class="d" id="d3">3</span><span class="d" id="d4">4</span><span class="d" id="d5">5</span><span class="d" id="d6">6</span><span class="d" id="d7">7</span><span class="d" id="d8">8</span><span class="d" id="d9">9</span></span>H</div><div class="lab">DE FIXAÇÃO</div></div></div></div>
+<div id="prj" class="abs" style="left:190px;top:290px;width:700px;height:230px;transform-origin:50% 50%"><div class="stat" style="background:#7DBFB3;color:#0A1F23">
+  <svg viewBox="0 0 48 40" width="104" height="86"><circle cx="10" cy="20" r="6" fill="#0A1F23"/><path d="M20 10a14 14 0 0 1 0 20M28 5a22 22 0 0 1 0 30M36 1a29 29 0 0 1 0 38" fill="none" stroke="#0A1F23" stroke-width="4" stroke-linecap="round"/></svg>
+  <div class="scol"><div class="lab">PROJEÇÃO</div><div class="big2">2H A 2H30</div></div></div></div>
+<div id="evd" class="abs" style="left:240px;top:330px;width:600px;height:90px;transform-origin:50% 50%;"><div class="chip" style="background:#F2E8D8;color:#0A1F23;font-size:44px"><svg viewBox="0 0 44 44" width="40" height="40"><rect x="6" y="8" width="22" height="12" rx="3" transform="rotate(-35 17 14)" fill="#6B4430" stroke="#0A1F23" stroke-width="4"/><path d="M20 20l16 16" stroke="#0A1F23" stroke-width="6" stroke-linecap="round"/></svg>&nbsp;E O VEREDITO É…</div></div>
+<div id="vf" class="abs" style="left:170px;top:300px;width:740px;height:130px;transform-origin:50% 50%;"><div class="chip" style="background:#FFC93C;color:#0A1F23;font-size:72px"><svg viewBox="0 0 40 40" width="70" height="70"><circle cx="20" cy="20" r="18" fill="#B8BC5C" stroke="#0A1F23" stroke-width="4"/><path d="M11 21l6 6 12-13" fill="none" stroke="#0A1F23" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>&nbsp;VALE O FRASCO</div></div>
+<div id="pc" class="abs" style="left:120px;top:110px;width:840px;height:170px;"><div class="pcard col" style="background:#7DBFB3;color:#0A1F23">
+  <div class="nome">Glitch</div><div class="marca">MYKONOS · EXTRATO</div></div></div>
+<div id="cx" class="abs" style="left:300px;top:310px;width:480px;height:76px;transform-origin:50% 50%;"><div class="chip" style="background:#F2E8D8;color:#0A1F23;font-size:38px"><svg viewBox="0 0 44 44" width="38" height="38"><path d="M6 14l16-8 16 8v18l-16 8-16-8z" fill="#6B4430" stroke="#0A1F23" stroke-width="4" stroke-linejoin="round"/><path d="M6 14l16 8 16-8M22 22v18" fill="none" stroke="#0A1F23" stroke-width="4"/></svg>&nbsp;A CAIXINHA</div></div>
+<div id="selo" class="abs" style="left:50px;top:300px;width:330px;height:330px;transform-origin:50% 50%"><div class="selo "><div class="s1">SELO</div><div class="s2">VALE O<br>FRASCO</div><div class="s3" data-layout-ignore>VALOTA PARFUM</div></div></div>
+<div id="fol" class="abs" style="left:90px;top:110px;width:900px;height:340px;"><div class="card col" style="gap:10px">
+  <div class="fol1">GOSTOU DO VEREDITO?</div>
+  <div class="fol2">ME SEGUE!</div>
+  <div class="fol3">e descobre se o próximo perfume<br>vale o frasco</div></div></div>
+<div id="btn" class="abs" style="left:310px;top:490px;width:460px;height:96px;transform-origin:50% 50%"><div class="btn"><span class="b1">+ SEGUIR</span><span class="b2"><svg viewBox="0 0 40 40" width="34" height="34"><circle cx="20" cy="20" r="18" fill="#F2E8D8" stroke="#0A1F23" stroke-width="4"/><path d="M11 21l6 6 12-13" fill="none" stroke="#0A1F23" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>&nbsp;SEGUINDO</span></div></div>
+<div id="handle" class="abs" style="left:290px;top:606px;width:500px;height:50px;"><div class="handle">@valotaparfum</div></div>
+</div>
+<script>
+(function(){
+  window.__timelines = window.__timelines || {};
+  gsap.set("#verd,#ext,#expl,#n22,#noc,#fix,#prj,#evd,#vf,#pc,#cx,#selo,#dim,#fol,#btn,#handle",{opacity:0});
+  const tl = gsap.timeline({ paused: true });
+  tl.fromTo("#ab",{scale:1.06},{scale:1,duration:0.5,ease:"back.out(2)"},0);
+  tl.set(".glt",{x:-14,skewX:-4},0.050);
+  tl.set(".glt",{x:10,skewX:6},0.095);
+  tl.set(".glt",{x:-6,skewX:-4},0.140);
+  tl.set(".glt",{x:16,skewX:6},0.185);
+  tl.set(".glt",{x:-10,skewX:-4},0.230);
+  tl.set(".glt",{x:4,skewX:6},0.275);
+  tl.set(".glt",{x:0,skewX:-4},0.320);
+  tl.set(".glt",{x:0,skewX:0},0.365);
+  tl.set(".glt",{x:-14,skewX:-4},1.250);
+  tl.set(".glt",{x:10,skewX:6},1.295);
+  tl.set(".glt",{x:-6,skewX:-4},1.340);
+  tl.set(".glt",{x:16,skewX:6},1.385);
+  tl.set(".glt",{x:-10,skewX:-4},1.430);
+  tl.set(".glt",{x:0,skewX:0},1.475);
+  tl.fromTo("#seloA",{scale:1.08,rotation:-8},{scale:1,rotation:-8,duration:0.5,ease:"back.out(2)"},0);
+  tl.fromTo("#seloA",{scale:1},{scale:1.06,duration:0.18,yoyo:true,repeat:1,ease:"power1.inOut"},0.530);
+  tl.fromTo("#verd",{opacity:0,scale:2.2,rotation:-13},{opacity:1,scale:1,rotation:-3,duration:0.28,ease:"power4.in",immediateRender:false},0.430);
+  tl.to("#verd",{opacity:0,y:-30,duration:0.3,ease:"power2.in"},2.607);
+  tl.to("#ab, #seloA",{opacity:0,y:-30,duration:0.3,ease:"power2.in"},9.537);
+  tl.fromTo("#ext",{opacity:0,scale:2.2,rotation:-13},{opacity:1,scale:1,rotation:-3,duration:0.28,ease:"power4.in",immediateRender:false},2.907);
+  tl.fromTo("#expl",{opacity:0,scale:0.6,y:24},{opacity:1,scale:1,y:0,duration:0.38,ease:"back.out(2.2)",immediateRender:false},4.017);
+  tl.to("#ext, #expl",{opacity:0,y:-30,duration:0.3,ease:"power2.in"},5.077);
+  tl.fromTo("#n22",{opacity:0,scale:0.6,y:24},{opacity:1,scale:1,y:0,duration:0.38,ease:"back.out(2.2)",immediateRender:false},5.607);
+  tl.fromTo("#noc",{opacity:0,scale:2.2,rotation:-14},{opacity:1,scale:1,rotation:-4,duration:0.28,ease:"power4.in",immediateRender:false},9.177);
+  tl.to("#n22, #noc",{opacity:0,y:-30,duration:0.3,ease:"power2.in"},9.537);
+  tl.fromTo("#fix",{opacity:0,scale:0.5,y:24},{opacity:1,scale:1,y:0,duration:0.38,ease:"back.out(2.2)",immediateRender:false},9.737);
+  tl.set("#fix .d",{opacity:0},0);
+  tl.set("#d1",{opacity:1},0);
+  tl.set("#d1",{opacity:0},9.782);
+  tl.set("#d2",{opacity:1},9.782);
+  tl.set("#d2",{opacity:0},9.827);
+  tl.set("#d3",{opacity:1},9.827);
+  tl.set("#d3",{opacity:0},9.872);
+  tl.set("#d4",{opacity:1},9.872);
+  tl.set("#d4",{opacity:0},9.917);
+  tl.set("#d5",{opacity:1},9.917);
+  tl.set("#d5",{opacity:0},9.962);
+  tl.set("#d6",{opacity:1},9.962);
+  tl.set("#d6",{opacity:0},10.007);
+  tl.set("#d7",{opacity:1},10.007);
+  tl.set("#d7",{opacity:0},10.052);
+  tl.set("#d8",{opacity:1},10.052);
+  tl.set("#d8",{opacity:0},10.097);
+  tl.set("#d9",{opacity:1},10.097);
+  tl.fromTo("#fix",{x:-10},{x:0,duration:0.32,ease:"elastic.out(1.2,0.25)"},10.787);
+  tl.to("#fix",{opacity:0,y:-30,duration:0.3,ease:"power2.in"},11.637);
+  tl.fromTo("#prj",{opacity:0,scale:0.5,y:24},{opacity:1,scale:1,y:0,duration:0.38,ease:"back.out(2.2)",immediateRender:false},11.887);
+  tl.set(".big2",{opacity:0},0);
+  tl.fromTo(".big2",{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.32,ease:"back.out(2.5)",immediateRender:false},13.197);
+  tl.to("#prj",{opacity:0,y:-30,duration:0.3,ease:"power2.in"},15.307);
+  tl.fromTo("#evd",{opacity:0,scale:0.6,y:24},{opacity:1,scale:1,y:0,duration:0.38,ease:"back.out(2.2)",immediateRender:false},15.557);
+  tl.to("#evd",{opacity:0,y:-30,duration:0.18,ease:"power2.in"},16.947);
+  tl.fromTo("#vf",{opacity:0,scale:2.2,rotation:-15},{opacity:1,scale:1,rotation:-5,duration:0.28,ease:"power4.in",immediateRender:false},17.027);
+  tl.to("#vf",{opacity:0,y:-30,duration:0.3,ease:"power2.in"},18.767);
+  tl.fromTo("#pc",{opacity:0,y:-60},{opacity:1,y:0,duration:0.45,ease:"power3.out",immediateRender:false},18.967);
+  tl.set("#pc .nome",{x:-14,skewX:-4},22.217);
+  tl.set("#pc .nome",{x:10,skewX:6},22.262);
+  tl.set("#pc .nome",{x:-6,skewX:-4},22.307);
+  tl.set("#pc .nome",{x:16,skewX:6},22.352);
+  tl.set("#pc .nome",{x:-10,skewX:-4},22.397);
+  tl.set("#pc .nome",{x:4,skewX:6},22.442);
+  tl.set("#pc .nome",{x:0,skewX:0},22.487);
+  tl.fromTo("#cx",{opacity:0,scale:0.6,y:24},{opacity:1,scale:1,y:0,duration:0.38,ease:"back.out(2.2)",immediateRender:false},23.697);
+  tl.to("#cx",{opacity:0,y:-30,duration:0.3,ease:"power2.in"},25.557);
+  tl.fromTo("#selo",{opacity:0,scale:2.2,rotation:-20},{opacity:1,scale:1,rotation:-10,duration:0.28,ease:"power4.in",immediateRender:false},25.957);
+  tl.fromTo("#selo .selo",{boxShadow:"0 0 0 0 rgba(255,201,60,.0)"},{boxShadow:"0 0 0 26px rgba(255,201,60,0)",duration:0.6,ease:"power2.out"},26.257);
+  tl.to("#pc, #selo",{opacity:0,y:-30,duration:0.25,ease:"power2.in"},29.150);
+  tl.fromTo("#dim",{opacity:0},{opacity:0.62,duration:0.5,ease:"power2.out",immediateRender:false},29.350);
+  tl.fromTo("#fol",{opacity:0,y:-60},{opacity:1,y:0,duration:0.45,ease:"power3.out",immediateRender:false},29.400);
+  tl.fromTo("#btn",{opacity:0,scale:0.6,y:24},{opacity:1,scale:1,y:0,duration:0.38,ease:"back.out(2.2)",immediateRender:false},29.750);
+  tl.set(".b2",{display:"none"},0);
+  tl.to("#btn",{scale:0.88,duration:0.1,ease:"power2.in"},30.500);
+  tl.set(".b1",{display:"none"},30.600);
+  tl.set(".b2",{display:"flex"},30.600);
+  tl.set(".btn",{backgroundColor:"#0F2E33",color:"#F2E8D8",borderColor:"#D49A4E"},30.600);
+  tl.to("#btn",{scale:1,duration:0.35,ease:"back.out(3)"},30.600);
+  tl.fromTo("#handle",{opacity:0,scale:0.6,y:24},{opacity:1,scale:1,y:0,duration:0.38,ease:"back.out(2.2)",immediateRender:false},30.050);
+  window.__timelines["graficos"] = tl;
+})();
+</script>
+</template>

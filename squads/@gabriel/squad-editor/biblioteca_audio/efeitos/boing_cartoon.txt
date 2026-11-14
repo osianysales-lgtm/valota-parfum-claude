@@ -1,0 +1,3 @@
+prompt: cartoon spring boing bounce, funny
+duracao: 0.7
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)

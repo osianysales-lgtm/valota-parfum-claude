@@ -1,0 +1,3 @@
+prompt: quirky comedic explainer, plucked synth, marimba, snaps, 118 bpm, instrumental
+duracao: 62
+fonte: ElevenLabs Music

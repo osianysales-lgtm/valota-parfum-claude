@@ -1,0 +1,91 @@
+{
+  "marca": "Valota Parfum",
+  "cores": {
+    "fundo": "#0F2E33",
+    "destaque": "#D49A4E",
+    "texto": "#F2E8D8",
+    "apoio": "#FFC93C",
+    "fundoProfundo": "#0A1F23",
+    "fundoLuz": "#1A4A52",
+    "tinta": "#0A1F23"
+  },
+  "fontes": {
+    "titulo": {
+      "familia": "Anton",
+      "arquivo": "marcas/valota-parfum/arquivos/Anton-Regular.ttf"
+    },
+    "texto": {
+      "familia": "Figtree",
+      "arquivo": "marcas/valota-parfum/arquivos/Figtree.ttf",
+      "peso": 600
+    },
+    "legenda": {
+      "familia": "Figtree",
+      "arquivo": "marcas/valota-parfum/arquivos/Figtree.ttf",
+      "peso": 600
+    },
+    "assinatura": {
+      "familia": "Bodoni Moda",
+      "arquivo": "marcas/valota-parfum/arquivos/BodoniModa.ttf",
+      "peso": 600,
+      "opsz": 18
+    }
+  },
+  "logos": {},
+  "legenda": {
+    "usar": true,
+    "destaque": "cor",
+    "corDestaque": "#FFC93C",
+    "caixa": "original",
+    "tamanho": 64,
+    "palavrasPorCard": 3,
+    "posicaoY": 1100
+  },
+  "enfase": {
+    "cor": "#FFC93C",
+    "fonte": "Anton",
+    "caixa": "alta"
+  },
+  "assinatura": {
+    "texto": "VALOTA PARFUM",
+    "handle": "@valotaparfum"
+  },
+  "glossario": [
+    "Valota Parfum",
+    "Rabanne",
+    "1 Million",
+    "1 Million Black",
+    "One Million",
+    "Christophe Raynaud",
+    "Quentin Bisch",
+    "fava tonka",
+    "sálvia esclaréia",
+    "patchouli",
+    "cardamomo"
+  ],
+  "selo": {
+    "vereditos": [
+      "VALE O FRASCO",
+      "VALE O DECANT",
+      "PASSA LONGE"
+    ],
+    "fundo": "#FFC93C",
+    "texto": "#0A1F23",
+    "anelSuperior": "VALOTA PARFUM",
+    "anelInferior": "NA PELE, NÃO NO HYPE",
+    "rotacao": -8,
+    "posicao": "canto superior direito",
+    "regra": "vetor limpo, sem textura; PASSA LONGE nunca tem link"
+  },
+  "familiasOlfativas": {
+    "amadeirado/oud": "#6B4430",
+    "ambar/baunilha/gourmand": "#D49A4E",
+    "citrico": "#B8BC5C",
+    "fresco/aquatico": "#7DBFB3",
+    "floral": "#E6AEB9",
+    "especiado/couro": "#9C452A",
+    "almiscar/limpo": "#DCD6E2"
+  },
+  "bordao": "Se vale, a Valota fala.",
+  "identidadeOficial": "squads/@community/brand-squad/brand-squad/output/v1/step-04-identity-system.md (aprovada em 09/11/2026)"
+}

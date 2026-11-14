@@ -1,0 +1,37 @@
+---
+name: carrossel-lista-por-blocos
+description: "Template de carrossel 'lista por blocos' (modelo @tiagodesign.br) com a cartela oficial: capa com frasco gigante + tarja âmbar, 5 blocos alternando creme-grade/petróleo/foto, CTA âmbar"
+metadata:
+  type: project
+---
+
+Em 12/11/2026 a Osiany pediu um carrossel seguindo **exatamente** o modelo do post instagram.com/p/DYvTF2YH67x (@tiagodesign.br, "Os 23 melhores ganchos"), "só que com 5 partes", com imagens do nicho e **o template de cores dela** (cartela oficial, ver [[paleta-50-50-cores-familia]]).
+
+Gerador: `squads/@valotaparfum/carrossel-lista/gerar.py` + `carrosseis/<nome>/carrossel.json` → `saida/01..07.png`. Estrutura:
+- capa: fundo petróleo (degradê com Luz no centro), frasco recortado grande, mas não estourando o slide (860 px de altura, topo em 110; ela achou o de 1170 px grande demais em 12/11), com efeito de brilho âmbar atrás, raios de luz suaves e brilhinhos creme/amarelo; o título fica embaixo (top 760) pra mostrar o rótulo do frasco; "OS N MELHORES" creme + tarja Âmbar com a palavra-chave em Gotham Black (texto Petróleo Noite) + faixa creme, pílula com seta;
+- 5 blocos: chip da família (cor + ícone) + título em itálico 900 + itens numerados em sequência, cada um com frasco pequeno recortado, "lembra **Grife**" e 3 notas; fundos alternados creme com grade → petróleo → foto (nota olfativa do Commons, escurecida) → creme → petróleo;
+- final: fundo Âmbar, CTA em itálico (curtiu / salva / "Quer ficar cheiroso sem pagar preço de grife? Segue a Valota Parfum.") + barrinhas com as cores das famílias.
+
+1º uso: `carrosseis/10-arabes-grife` (13/11 às 08h, "Os 10 melhores árabes com cheiro de perfume de grife"). Os frascos vêm da Fragrantica (`fimgs.net/mdimg/perfume/o.<id>.jpg`, até 1080 px), recortados com o recortar-pessoa.swift + aparar-recorte.swift. O gerador tem um filtro SVG ("limpa") que tira a borda clara do recorte.
+
+**How to apply:** quando ela pedir lista/top/"os melhores" em carrossel, oferecer esse template e intercalar com o CA1 (tweet). Ainda não foi aprovado por ela depois de pronto: confirmar e atualizar esta nota. Ver [[sistema-templates-por-formato]] e [[valota-carrossel-tweet]].
+
+**12/11/2026 (capa):** com brilho âmbar, raios de luz e brilhinhos de 4 pontas, ela disse "ainda não gostei, ficou muito amador". **Nada de clip-art (estrelinhas, raios, tarja com borda e sombra pesada).** O que fica premium é o visual de foto de estúdio: luz de cima, frasco apoiado num piso com reflexo e sombra de contato, vinheta e grão leve, tipografia limpa sem caixa. Isso está no `carrossel-lista/capa_variantes.py`: capa-A é fiel ao modelo (tarja chapada) e capa-B é editorial (frasco inteiro em cima, título embaixo sem caixa). Registrar aqui qual ela escolher.
+
+**12/11/2026 (recorte):** ela reclamou do recorte do frasco (borda serrilhada, canto comido) e da linha do "piso" embaixo do frasco ("então tira"). **Sem piso nem linha de horizonte:** o frasco flutua com uma sombra suave embaixo. O recorte do Vision (`recortar-pessoa.swift`) tem máscara de baixa resolução e serrilha produto. Para foto em fundo branco usar **`direcao-de-arte/ferramentas/recortar-fundo-branco.swift`**: a borda vem da cor, o miolo é protegido pelo Vision, tira o halo branco e fecha 1 px. Depois rodar o `aparar-recorte.swift`. Conferir a borda com zoom (sips -c) antes de entregar. 
+
+**ESCOLHA DELA (12/11/2026): capa A** (`capa_a` em `capa_variantes.py`), com mais destaque nas linhas de cima e de baixo. A capa fica com 3 tarjas chapadas empilhadas sobre o frasco (fundo de estúdio, sem piso): **Petróleo Noite** com "OS **10** MELHORES" (creme 900, 78 px, número em Amarelo Laudo), **Âmbar** com a palavra-chave em Gotham Black 172 px (texto Petróleo Noite) e **Creme** com a linha de apoio em 56 px, com o trecho-chave em negrito 900 ("perfume de grife"). Usar esse padrão de capa nos próximos carrosséis em lista.
+
+**12/11/2026 (ajustes finais):**
+- O `gerar.py` já gera a capa A em 01.png.
+- **Frascos dos blocos maiores** (coluna de 270 px, até 255×330): ela pediu "deixa o vidro dos perfumes maior".
+- **Frasco opaco com parte vazada** (ex.: alça do Armaf Odyssey Mandarin Sky): recortar com `recortar-fundo-branco.swift ... so-cor`. Com o miolo protegido, o vazado vira um quadrado branco.
+- **Slide final:** leva um cartão creme de perfil com a foto (carrossel-tweet/avatar.png, aro Âmbar→Amarelo→Pimenta), @valotaparfum, "Valota Parfum" e o botão "Seguir" Petróleo, sem número de seguidores e sem bio inventada.
+
+**12/11/2026 (CTA e fonte):** ela disse: "o CTA tem 3 opções, precisamos escolher uma". **O slide final leva UM CTA só.** Neste, ela pediu foco em SALVAR, "mais original, mostrando como salva no Instagram". O slide final ficou assim: "SALVA ESSE POST" + benefício, um post desenhado (cabeçalho "valotaparfum · Seguir" com foto, miniatura do 01.png, barra coração/comentário/enviar/salvar), o ícone de salvar preenchido num círculo Amarelo Laudo, a seta "TOCA AQUI" e a explicação "Fica no canto direito… abrir em Salvos". **Fontes do carrossel: SÓ Montserrat** ("pra não bagunçar"). A Gotham saiu da capa; o ÁRABES ficou em Montserrat 900.
+
+**13/11/2026 (versão "todos com foto"):** ela mandou o print do bloco PRA BALADA (foto de anis + canela) e pediu "todos assim nesse estilo", cada bloco com a foto de uma nota dos perfumes dele. Ficou em `carrosseis/10-arabes-grife-fotos` (mesmos perfumes e frases, frascos lidos de `../10-arabes-grife/recortes-v2`). Fotos do Commons: menta (calor), fatias de limão (trabalhar), anis-canela (balada), grãos de cacau (rico), lascas de oud/agarwood (presença). O `gerar.py` aceita `"foto_pos"` por bloco (posição do background, padrão "30% 100%"). Foto com fundo branco (macro de limão) fica abstrata demais; escolher foto em que a nota se reconhece na faixa de baixo. Ainda falta a aprovação dela.
+
+**13/11/2026 ("Homens ___ usam"):** quando ela mandar um post de referência, ABRIR O LINK antes de tudo (ela ficou brava porque não abri). O certo era instagram.com/p/De9xh5kkVBS: 4 slides "Homens poderosos/românticos/elegantes/que deixam saudades usam", 3 perfumes cada. Ela quis **exatamente os mesmos perfumes e frases**, frascos baixados da internet (Fragrantica, não as fotos da loja do post), Montserrat e foto de nota no fundo de todo bloco. Ficou em `carrosseis/homens-usam` (4 blocos + slide SALVA, sem capa: `"capa": null`). O `gerar.py` agora tem modo compacto automático para 3 itens por bloco, `lembra` opcional e o ícone `semente`. Foto de nota com fundo branco fica lavada embaixo; preferir foto com fundo escuro/madeira (ex.: fava tonka).
+
+**13/11/2026 ("Você não sente o PERFUME que os outros sentem", 08h):** `carrosseis/nao-sente-o-proprio-perfume`, com 5 motivos e 2 perfumes conhecidos por motivo. Ela pediu "o último template + o mesmo CTA (SALVA), só muda a cor". O `gerar.py` agora aceita: `"acento": "<família>"` (cor da tarja da capa, dos números no escuro e do fundo do slide SALVA; padrão âmbar, e neste foi **menta**); `"texto"` por bloco (explicação de 2–3 linhas embaixo do título, frascos um pouco menores); `"detalhe"` por item (substitui o "lembra", aceita **negrito**); `tam1` e `tam_destaque` na capa. O título do bloco deve ter no máximo 15 caracteres, senão quebra em 2 linhas. **Recorte com borda clara (La Vie Est Belle, Terre d'Hermès) fica em fundo CREME**; o filtro limpa3 nos frascos pequenos come os cantos, não usar. Ainda falta a aprovação dela.

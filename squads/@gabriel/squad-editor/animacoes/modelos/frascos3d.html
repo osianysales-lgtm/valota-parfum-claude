@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!--
+  FRASCOS 3D — personagens-frasco conversando (Three.js, render pela Dafne quadro a quadro)
+
+  Dados: cena_dados.js na MESMA pasta (gerado por tools/dialogo.js): falas, tempos por palavra, boca (lip-sync),
+         palavras_chave (legenda dourada) e reforcos (selos na tela).
+  Uso:   copie este arquivo para output/vN/cena.html e rode
+         node daphne.js output/vN/cena.html <duracao> output/vN/audio_map.json --out output/vN/video.mp4
+  Personagens: "azul" (grife, frasco retangular azul) e "dourado" (árabe, frasco octogonal âmbar).
+  Câmera automática: close em quem fala, plano conjunto a cada 3 falas e no final, punch-in + tremida nos reforços.
+-->
+<html><head><meta charset="utf-8">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1080px;height:1920px;overflow:hidden;background:#05070d}
+  canvas{position:absolute;inset:0;display:block}
+  #vin{position:absolute;inset:0;pointer-events:none;
+       background:radial-gradient(ellipse 75% 60% at 50% 46%,rgba(0,0,0,0) 55%,rgba(0,0,0,.6) 100%),
+                  linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 14%,rgba(0,0,0,0) 80%,rgba(0,0,0,.45) 100%)}
+  #leg{position:absolute;left:70px;right:70px;top:1250px;height:170px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+       text-align:center;font:800 78px/1.08 'Avenir Next','Helvetica Neue',Arial,sans-serif;color:#fff;letter-spacing:-1px;
+       -webkit-text-stroke:3px rgba(0,0,0,.65);paint-order:stroke fill;text-shadow:0 6px 18px rgba(0,0,0,.75)}
+  #leg span{display:inline-block;margin:0 11px}
+  #leg>div{display:inline-flex;flex-wrap:wrap;justify-content:center;padding:14px 26px 18px;border-radius:28px;background:rgba(6,8,14,.62);backdrop-filter:blur(6px);box-shadow:0 10px 40px rgba(0,0,0,.45)}
+  #leg span.k{color:#F5C451}
+  .selo{position:absolute;top:0;left:0;padding:20px 38px;border-radius:999px;white-space:nowrap;
+        font:800 62px/1 'Avenir Next','Helvetica Neue',Arial,sans-serif;color:#17110a;letter-spacing:-.5px;
+        background:linear-gradient(180deg,#FFE7A8 0%,#E9B85A 55%,#B9842E 100%);
+        box-shadow:0 0 0 3px rgba(255,236,190,.55) inset,0 14px 50px rgba(233,184,90,.55)}
+  .selo.azul{color:#0b1530;background:linear-gradient(180deg,#F4F7FB 0%,#BAC6D8 55%,#7D8BA3 100%);
+        box-shadow:0 0 0 3px rgba(255,255,255,.6) inset,0 14px 50px rgba(140,170,220,.45)}
+  .selo.risco::after{content:'';position:absolute;left:8%;right:8%;top:50%;height:7px;border-radius:4px;background:#E0334A;
+        transform:rotate(-8deg) scaleX(var(--r,0));transform-origin:left center}
+  #marca{position:absolute;left:0;right:0;top:170px;text-align:center;opacity:0;
+         font:500 40px/1 Didot,'Bodoni 72',Georgia,serif;letter-spacing:14px;color:#F1D79A;text-shadow:0 0 24px rgba(241,215,154,.5)}
+</style></head><body>
+<div id="vin"></div><div id="marca">VALOTA PARFUM</div><div id="selos"></div><div id="leg"></div>
+<script src="cena_dados.js"></script>
+<script type="module">
+import * as THREE from 'three';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { Reflector } from 'three/addons/objects/Reflector.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+
+const D = window.DIALOGO, W = 1080, H = 1920, FPS = D.fps || 30;
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const ease = k => k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
+const sstep = (a, b, x) => { const k = clamp((x - a) / (b - a)); return k * k * (3 - 2 * k); };
+const backOut = k => { const c = 1.9; return 1 + (c + 1) * Math.pow(k - 1, 3) + c * Math.pow(k - 1, 2); };
+function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+const norm = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^\w%$@]+/g, '');
+
+// ── RENDERER ──────────────────────────────────────────────────────────────
+const renderer = new THREE.WebGLRenderer({ antialias: false, preserveDrawingBuffer: true, powerPreference: 'high-performance' });
+renderer.setPixelRatio(1); renderer.setSize(W, H);
+renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 0.92;
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+document.body.prepend(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x04060c);
+scene.fog = new THREE.FogExp2(0x060914, 0.085);
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+scene.environmentIntensity = 0.55;
+const camera = new THREE.PerspectiveCamera(30, W / H, 0.05, 80);
+
+function tex(w, h, draw) {
+  const c = document.createElement('canvas'); c.width = w; c.height = h; draw(c.getContext('2d'), w, h);
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; return t;
+}
+
+// ── PALCO ────────────────────────────────────────────────────────────────
+scene.add(new THREE.HemisphereLight(0x6f7fb8, 0x0a0705, 0.32));
+const floorRef = new Reflector(new THREE.PlaneGeometry(40, 40), { textureWidth: 720, textureHeight: 1280, color: 0x8a8a96 });
+floorRef.rotation.x = -Math.PI / 2; scene.add(floorRef);
+const floorTop = new THREE.Mesh(new THREE.PlaneGeometry(40, 40),
+  new THREE.MeshStandardMaterial({ color: 0x0a0c13, roughness: 0.32, metalness: 0.3, transparent: true, opacity: 0.72 }));
+floorTop.rotation.x = -Math.PI / 2; floorTop.position.y = 0.002; floorTop.receiveShadow = true; scene.add(floorTop);
+
+const wall = new THREE.Mesh(new THREE.PlaneGeometry(40, 14), new THREE.MeshStandardMaterial({ color: 0x0b0f1c, roughness: 0.85 }));
+wall.position.set(0, 7, -4.2); scene.add(wall);
+
+// filetes de luz dourada (verticais) + prateleiras iluminadas com frascos ao fundo
+const ouroLuz = new THREE.MeshStandardMaterial({ color: 0x000000, emissive: 0xffa640, emissiveIntensity: 4.2 });
+for (let i = -4; i <= 4; i++) {
+  const b = new THREE.Mesh(new THREE.BoxGeometry(0.05, 8, 0.05), ouroLuz);
+  b.position.set(i * 1.05, 4, -3.9); scene.add(b);
+}
+const R = rng(7);
+const prateleira = new THREE.MeshStandardMaterial({ color: 0x1a1612, roughness: 0.4, metalness: 0.6 });
+const fundoPrat = new THREE.MeshStandardMaterial({ color: 0x000000, emissive: 0xffc27a, emissiveIntensity: 0.1 });
+const vidros = [0x2b4a9a, 0xc98a2e, 0x6b1f2a, 0x1f5a4a, 0xd9d4c8, 0x101010].map(c =>
+  new THREE.MeshPhysicalMaterial({ color: c, roughness: 0.12, metalness: 0.1, clearcoat: 1, emissive: c, emissiveIntensity: 0.12 }));
+for (let col = -4; col < 4; col++) for (const y of [1.0, 1.85, 2.7, 3.55]) {
+  const x0 = col * 1.05 + 0.525;
+  const s = new THREE.Mesh(new THREE.BoxGeometry(0.98, 0.035, 0.32), prateleira); s.position.set(x0, y, -3.7); scene.add(s);
+  const bg = new THREE.Mesh(new THREE.PlaneGeometry(0.98, 0.8), fundoPrat); bg.position.set(x0, y + 0.4, -3.88); scene.add(bg);
+  for (let k = 0; k < 5; k++) {
+    const h = 0.16 + R() * 0.14, r = 0.045 + R() * 0.035, round = R() > 0.5;
+    const g = round ? new THREE.CylinderGeometry(r, r, h, 16) : new THREE.BoxGeometry(r * 1.9, h, r * 1.3);
+    const m = new THREE.Mesh(g, vidros[Math.floor(R() * vidros.length)]);
+    m.position.set(x0 - 0.38 + k * 0.19 + (R() - .5) * 0.04, y + 0.02 + h / 2, -3.68); scene.add(m);
+    const cap = new THREE.Mesh(new THREE.CylinderGeometry(r * 0.5, r * 0.5, 0.05, 12), prateleira);
+    cap.position.set(m.position.x, y + 0.045 + h, -3.68); scene.add(cap);
+  }
+}
+
+// cones de luz (volume)
+const coneMat = new THREE.ShaderMaterial({
+  transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide,
+  uniforms: { cor: { value: new THREE.Color(0xffe2b0) }, forca: { value: 0.16 } },
+  vertexShader: `varying float vY; varying vec3 vN; varying vec3 vV;
+    void main(){ vY = position.y; vec4 mv = modelViewMatrix * vec4(position,1.); vN = normalize(normalMatrix*normal); vV = normalize(-mv.xyz); gl_Position = projectionMatrix*mv; }`,
+  fragmentShader: `uniform vec3 cor; uniform float forca; varying float vY; varying vec3 vN; varying vec3 vV;
+    void main(){ float h = clamp((vY + 3.0)/6.0, 0., 1.); float f = pow(abs(dot(vN, vV)), 1.6);
+      gl_FragColor = vec4(cor * forca * pow(h, 1.3) * f, 1.); }`,
+});
+for (const x of [-0.72, 0.72]) {
+  const c = new THREE.Mesh(new THREE.ConeGeometry(1.25, 6, 48, 1, true), coneMat);
+  c.position.set(x, 3, -0.2); scene.add(c);
+}
+
+// poeira dourada
+const NP = 520, pBase = new Float32Array(NP * 3), pPos = new Float32Array(NP * 3);
+const Rp = rng(11);
+for (let i = 0; i < NP; i++) { pBase[i * 3] = (Rp() - .5) * 7; pBase[i * 3 + 1] = Rp() * 5; pBase[i * 3 + 2] = -3 + Rp() * 5.5; }
+const pGeo = new THREE.BufferGeometry(); pGeo.setAttribute('position', new THREE.BufferAttribute(pPos, 3));
+const dot = tex(64, 64, (g, w, h) => { const r = g.createRadialGradient(32, 32, 0, 32, 32, 32); r.addColorStop(0, 'rgba(255,230,180,1)'); r.addColorStop(1, 'rgba(255,200,120,0)'); g.fillStyle = r; g.fillRect(0, 0, w, h); });
+const poeira = new THREE.Points(pGeo, new THREE.PointsMaterial({ size: 0.035, map: dot, transparent: true, opacity: 0.75, depthWrite: false, blending: THREE.AdditiveBlending, color: 0xffd9a0 }));
+scene.add(poeira);
+
+// luzes de cada personagem
+function luzes(x, rim) {
+  const s = new THREE.SpotLight(0xfff0dc, 38, 16, 0.42, 0.7, 1.6);
+  s.position.set(x * 0.6, 6.2, 2.4); s.target.position.set(x, 1.0, 0);
+  s.castShadow = true; s.shadow.mapSize.set(1024, 1024); s.shadow.bias = -0.0004; s.shadow.radius = 4;
+  scene.add(s, s.target);
+  const r = new THREE.PointLight(rim, 5, 6, 1.6); r.position.set(x * 1.9, 2.2, -1.2); scene.add(r);
+  const f = new THREE.PointLight(0xffffff, 0.5, 6, 2); f.position.set(x * 0.4, 1.4, 2.6); scene.add(f);
+}
+luzes(-0.72, 0x4f78ff); luzes(0.72, 0xffa53d);
+
+// ── PERSONAGENS ──────────────────────────────────────────────────────────
+const LEG = 0.42;
+function criar(tipo) {
+  const azul = tipo === 'azul';
+  const root = new THREE.Group(), corpo = new THREE.Group(); root.add(corpo);
+  const bodyH = azul ? 1.12 : 1.0, bodyW = azul ? 0.8 : 1.04;
+  let frontZ;
+  const vidro = new THREE.MeshPhysicalMaterial(azul
+    ? { color: 0x3b62d6, transmission: 0.88, thickness: 0.6, roughness: 0.05, ior: 1.5, attenuationColor: new THREE.Color(0x0b2378), attenuationDistance: 0.45, clearcoat: 1, clearcoatRoughness: 0.04 }
+    : { color: 0xf0b45a, transmission: 0.88, thickness: 0.6, roughness: 0.05, ior: 1.5, attenuationColor: new THREE.Color(0xa45a08), attenuationDistance: 0.45, clearcoat: 1, clearcoatRoughness: 0.04 });
+  const liquido = new THREE.MeshStandardMaterial(azul
+    ? { color: 0x0d2f9a, roughness: 0.12, metalness: 0.15, emissive: 0x08206a, emissiveIntensity: 0.55 }
+    : { color: 0xd88a1c, roughness: 0.12, metalness: 0.15, emissive: 0x6a3500, emissiveIntensity: 0.55 });
+  const metal = new THREE.MeshPhysicalMaterial(azul
+    ? { color: 0x121318, roughness: 0.16, metalness: 0.6, clearcoat: 1 }
+    : { color: 0xd9a24a, roughness: 0.2, metalness: 1, clearcoat: 0.6 });
+  const y0 = LEG + bodyH / 2;
+  let g, gl;
+  if (azul) {
+    const d = 0.44; frontZ = d / 2;
+    g = new RoundedBoxGeometry(bodyW, bodyH, d, 6, 0.075);
+    gl = new RoundedBoxGeometry(bodyW - 0.1, bodyH * 0.84, d - 0.1, 3, 0.04);
+  } else {
+    const r = 0.56; frontZ = r * Math.cos(Math.PI / 8);
+    g = new THREE.CylinderGeometry(r, r * 0.96, bodyH, 8, 1); g.rotateY(Math.PI / 8);
+    gl = new THREE.CylinderGeometry(r - 0.07, r * 0.96 - 0.07, bodyH * 0.84, 8, 1); gl.rotateY(Math.PI / 8);
+  }
+  const corpoV = new THREE.Mesh(g, vidro); corpoV.position.y = y0; corpoV.castShadow = true; corpo.add(corpoV);
+  const liq = new THREE.Mesh(gl, liquido); liq.position.y = y0 - bodyH * 0.06; corpo.add(liq);
+
+  // gargalo + tampa
+  const topo = LEG + bodyH;
+  if (azul) {
+    const n = new THREE.Mesh(new THREE.CylinderGeometry(0.1, 0.11, 0.07, 24), new THREE.MeshStandardMaterial({ color: 0xc9ced8, metalness: 1, roughness: 0.2 }));
+    n.position.y = topo + 0.035; corpo.add(n);
+    const c = new THREE.Mesh(new RoundedBoxGeometry(0.38, 0.32, 0.32, 4, 0.05), metal); c.position.y = topo + 0.07 + 0.16; c.castShadow = true; corpo.add(c);
+  } else {
+    const ombro = new THREE.Mesh(new THREE.CylinderGeometry(0.22, 0.4, 0.09, 8), metal); ombro.geometry.rotateY(Math.PI / 8); ombro.position.y = topo + 0.045; corpo.add(ombro);
+    const c1 = new THREE.Mesh(new THREE.CylinderGeometry(0.17, 0.19, 0.16, 32), metal); c1.position.y = topo + 0.17; corpo.add(c1);
+    const anel = new THREE.Mesh(new THREE.TorusGeometry(0.18, 0.018, 12, 48), metal); anel.rotation.x = Math.PI / 2; anel.position.y = topo + 0.25; corpo.add(anel);
+    const domo = new THREE.Mesh(new THREE.SphereGeometry(0.17, 32, 16, 0, Math.PI * 2, 0, Math.PI / 2), metal); domo.scale.y = 1.25; domo.position.y = topo + 0.25; corpo.add(domo);
+    const pin = new THREE.Mesh(new THREE.SphereGeometry(0.05, 20, 12), metal); pin.position.y = topo + 0.49; corpo.add(pin);
+    [c1, domo, pin].forEach(m => m.castShadow = true);
+  }
+
+  // rótulo
+  const rot = azul
+    ? tex(640, 360, (x, w, h) => {
+        const gr = x.createLinearGradient(0, 0, w, h); gr.addColorStop(0, '#e9edf3'); gr.addColorStop(.5, '#aab4c4'); gr.addColorStop(1, '#dfe4ec');
+        x.fillStyle = gr; x.fillRect(0, 0, w, h); x.strokeStyle = '#1b2a55'; x.lineWidth = 6; x.strokeRect(14, 14, w - 28, h - 28);
+        x.fillStyle = '#0f1d45'; x.textAlign = 'center'; x.font = '600 132px Didot, "Bodoni 72", serif'; x.fillText('GRIFE', w / 2, 190);
+        x.font = '500 34px "Avenir Next", sans-serif'; x.fillText('E A U   D E   P A R F U M', w / 2, 262); x.font = '500 26px "Avenir Next", sans-serif'; x.fillText('P A R I S', w / 2, 312);
+      })
+    : tex(640, 400, (x, w, h) => {
+        const gr = x.createLinearGradient(0, 0, w, h); gr.addColorStop(0, '#fbe3a6'); gr.addColorStop(.5, '#c99236'); gr.addColorStop(1, '#f5d58c');
+        x.fillStyle = gr; x.fillRect(0, 0, w, h); x.strokeStyle = '#4a2a06'; x.lineWidth = 5; x.strokeRect(16, 16, w - 32, h - 32); x.strokeRect(30, 30, w - 60, h - 60);
+        x.fillStyle = '#3b2104'; x.textAlign = 'center'; x.font = '600 128px Didot, "Bodoni 72", serif'; x.fillText('ÁRABE', w / 2, 210);
+        x.font = '600 36px "Avenir Next", sans-serif'; x.fillText('O U D   ·   A M B E R', w / 2, 290); x.font = '500 26px "Avenir Next", sans-serif'; x.fillText('E X T R A I T', w / 2, 340);
+      });
+  const lw = azul ? 0.56 : 0.4, lh = azul ? 0.315 : 0.25;
+  const rotulo = new THREE.Mesh(new THREE.PlaneGeometry(lw, lh), new THREE.MeshStandardMaterial({ map: rot, metalness: 0.55, roughness: 0.32 }));
+  rotulo.position.set(0, LEG + bodyH * 0.25, frontZ + 0.004); corpo.add(rotulo);
+
+  // rosto
+  const rosto = new THREE.Group(); rosto.position.set(0, LEG + bodyH * 0.66, frontZ + 0.006); corpo.add(rosto);
+  const er = azul ? 0.085 : 0.08, esp = azul ? 0.135 : 0.12;
+  const branco = new THREE.MeshStandardMaterial({ color: 0xe9e9ea, roughness: 0.5 });
+  const preto = new THREE.MeshStandardMaterial({ color: 0x07080b, roughness: 0.08 });
+  const palpebraM = new THREE.MeshStandardMaterial({ color: azul ? 0x0f2466 : 0x7a4a10, roughness: 0.3, metalness: 0.2 });
+  const olhos = [];
+  for (const s of [-1, 1]) {
+    const o = new THREE.Group(); o.position.set(s * esp, 0, 0); o.scale.z = 0.55; rosto.add(o);
+    o.add(new THREE.Mesh(new THREE.SphereGeometry(er, 40, 24), branco));
+    const pup = new THREE.Group(); o.add(pup);
+    const p = new THREE.Mesh(new THREE.SphereGeometry(er * 0.52, 28, 16), preto); p.position.z = er * 0.62; pup.add(p);
+    const b = new THREE.Mesh(new THREE.SphereGeometry(er * 0.14, 12, 8), new THREE.MeshBasicMaterial({ color: 0xffffff })); b.position.set(-er * 0.17, er * 0.2, er * 1.12); pup.add(b);
+    const pal = new THREE.Mesh(new THREE.SphereGeometry(er * 1.06, 40, 20, 0, Math.PI * 2, 0, Math.PI / 2), palpebraM); o.add(pal);
+    const sob = new THREE.Mesh(new RoundedBoxGeometry(er * 2.1, 0.03, 0.03, 2, 0.012), new THREE.MeshStandardMaterial({ color: azul ? 0x0a0a0e : 0x2e1a05, roughness: 0.5 }));
+    sob.position.set(s * esp, er * 1.35, 0.035); rosto.add(sob);
+    const cilios = [];
+    if (!azul) for (let k = 0; k < 3; k++) {
+      const c = new THREE.Mesh(new THREE.BoxGeometry(0.012, 0.045, 0.01), preto);
+      c.position.set(s * (er * (0.35 + k * 0.32)), er * 1.0, er * 0.5); c.rotation.z = -s * (0.35 + k * 0.25); o.add(c); cilios.push(c);
+    }
+    olhos.push({ s, o, pup, pal, sob });
+  }
+  const boca = new THREE.Group(); boca.position.set(0, -0.175, 0.004); rosto.add(boca);
+  const bocaIn = new THREE.Mesh(new THREE.CircleGeometry(0.1, 40), new THREE.MeshBasicMaterial({ color: 0x2a0809 })); boca.add(bocaIn);
+  const lingua = new THREE.Mesh(new THREE.CircleGeometry(0.06, 32), new THREE.MeshBasicMaterial({ color: 0xb2333f })); lingua.position.set(0, -0.047, 0.001); lingua.scale.y = 0.55; boca.add(lingua);
+  const dentes = new THREE.Mesh(new THREE.PlaneGeometry(0.115, 0.03), new THREE.MeshBasicMaterial({ color: 0xf6f3ee })); dentes.position.set(0, 0.068, 0.002); boca.add(dentes);
+  const labio = new THREE.Mesh(new THREE.TorusGeometry(0.1, 0.011, 10, 48), new THREE.MeshStandardMaterial({ color: azul ? 0x0a1640 : 0x5a3006, roughness: 0.3 })); boca.add(labio);
+
+  // braços (ombro → cotovelo → mão de luva)
+  const corBraco = azul ? new THREE.MeshPhysicalMaterial({ color: 0x15171d, roughness: 0.3, clearcoat: 1 }) : metal;
+  const luva = new THREE.MeshStandardMaterial({ color: 0xf7f5f0, roughness: 0.55 });
+  const bracos = [];
+  for (const s of [-1, 1]) {
+    const ombro = new THREE.Group(); ombro.position.set(s * (bodyW / 2 + 0.005), LEG + bodyH * 0.6, 0); corpo.add(ombro);
+    const sup = new THREE.Mesh(new THREE.CapsuleGeometry(0.033, 0.25, 6, 14), corBraco); sup.position.y = -0.15; sup.castShadow = true; ombro.add(sup);
+    const cot = new THREE.Group(); cot.position.y = -0.3; ombro.add(cot);
+    const ant = new THREE.Mesh(new THREE.CapsuleGeometry(0.031, 0.24, 6, 14), corBraco); ant.position.y = -0.14; ant.castShadow = true; cot.add(ant);
+    const mao = new THREE.Group(); mao.position.y = -0.3; cot.add(mao);
+    const palma = new THREE.Mesh(new THREE.SphereGeometry(0.066, 24, 16), luva); palma.scale.set(1, 1.08, 0.78); palma.castShadow = true; mao.add(palma);
+    const ded = new THREE.Mesh(new THREE.SphereGeometry(0.028, 16, 10), luva); ded.position.set(-s * 0.055, 0.02, 0.02); mao.add(ded);
+    const punho = new THREE.Mesh(new THREE.TorusGeometry(0.05, 0.016, 10, 24), luva); punho.rotation.x = Math.PI / 2; punho.position.y = 0.055; mao.add(punho);
+    bracos.push({ s, ombro, cot, mao });
+  }
+
+  // pernas + tênis
+  const corSola = azul ? 0x1b2c66 : 0xd9a24a;
+  const pernas = [];
+  for (const s of [-1, 1]) {
+    const q = new THREE.Group(); q.position.set(s * 0.18, LEG, 0); root.add(q);
+    const p = new THREE.Mesh(new THREE.CapsuleGeometry(0.038, 0.28, 6, 14), corBraco); p.position.y = -0.18; p.castShadow = true; q.add(p);
+    const t = new THREE.Group(); t.position.set(0, -LEG + 0.07, 0.05); q.add(t);
+    const cab = new THREE.Mesh(new RoundedBoxGeometry(0.19, 0.11, 0.3, 4, 0.05), new THREE.MeshStandardMaterial({ color: 0xf4f4f2, roughness: 0.5 })); cab.castShadow = true; t.add(cab);
+    const sola = new THREE.Mesh(new RoundedBoxGeometry(0.2, 0.04, 0.32, 3, 0.017), new THREE.MeshStandardMaterial({ color: corSola, roughness: 0.35, metalness: azul ? 0 : 0.8 })); sola.position.y = -0.06; t.add(sola);
+    const faixa = new THREE.Mesh(new THREE.BoxGeometry(0.195, 0.025, 0.12), new THREE.MeshStandardMaterial({ color: corSola, roughness: 0.4, metalness: azul ? 0 : 0.8 })); faixa.position.set(0, 0.0, -0.02); faixa.scale.x = 1.01; t.add(faixa);
+    pernas.push(q);
+  }
+  return { tipo, root, corpo, rosto, olhos, boca, bocaIn, lingua, dentes, bracos, pernas, er, bodyH };
+}
+
+const POS = { azul: -0.72, dourado: 0.72 }, GIRO = { azul: 0.3, dourado: -0.3 };
+const P = {};
+for (const q of ['azul', 'dourado']) { P[q] = criar(q); P[q].root.position.x = POS[q]; P[q].root.rotation.y = GIRO[q]; scene.add(P[q].root); }
+
+// ── LINHA DO TEMPO ───────────────────────────────────────────────────────
+const falas = D.falas;
+function falaEm(t) { for (const f of falas) if (t >= f.inicio - 0.05 && t <= f.fim + 0.12) return f; return null; }
+function bocaDe(q, t) {
+  const arr = D.boca[q] || []; const i = t * FPS, a = Math.floor(i), k = i - a;
+  const v = lerp(arr[a] || 0, arr[a + 1] || 0, k);
+  return clamp(Math.max(v, (arr[a - 1] || 0) * 0.6));
+}
+// planos de câmera
+const shots = falas.map((f, i) => {
+  const ini = i === 0 ? 0 : (falas[i - 1].fim + f.inicio) / 2;
+  const fim = i === falas.length - 1 ? D.duracao + 1 : (f.fim + falas[i + 1].inicio) / 2;
+  const tipo = i === falas.length - 1 ? 'wide' : (i === 2 ? 'duo' : 'close');   // close em quem fala · conjunto na 3ª fala · aberto no final
+  return { ini, fim, quem: f.quem, tipo, i };
+});
+const reforcos = (D.reforcos || []).map(r => ({ ...r }));
+function shotEm(t) { for (const s of shots) if (t >= s.ini && t < s.fim) return s; return shots[shots.length - 1]; }
+
+function faceWorld(q) { const p = P[q]; return new THREE.Vector3(POS[q], LEG + p.bodyH * 0.6, 0); }
+function cameraEm(t) {
+  const s = shotEm(t), k = ease(clamp((t - s.ini) / Math.max(0.5, s.fim - s.ini)));
+  let pos, alvo;
+  if (s.tipo === 'close') {
+    const n = new THREE.Vector3(Math.sin(GIRO[s.quem]), 0, Math.cos(GIRO[s.quem]));
+    const f = faceWorld(s.quem), baixo = s.i % 2 === 1 ? -0.28 : 0.08;
+    const larg = s.quem === 'dourado' ? 1.32 : 1;   // frasco mais largo pede câmera mais longe
+    const dist = larg * lerp(s.i === 0 ? 4.3 : 3.75, s.i === 0 ? 3.35 : 3.3, k);
+    pos = f.clone().addScaledVector(n, dist).add(new THREE.Vector3(-n.x * 0.15 * (1 - k), baixo + 0.1, 0));
+    alvo = f.clone().add(new THREE.Vector3(0, -0.06 + (baixo < 0 ? 0.05 : 0), 0));
+  } else if (s.tipo === 'duo') {
+    pos = new THREE.Vector3(lerp(-1.2, -0.7, k), lerp(1.5, 1.4, k), lerp(9.4, 8.4, k)); alvo = new THREE.Vector3(-0.1, 0.92, 0);
+  } else {
+    const a = lerp(0.32, -0.08, k);
+    pos = new THREE.Vector3(Math.sin(a) * lerp(9.6, 7.8, k), lerp(1.55, 1.35, k), Math.cos(a) * lerp(9.6, 7.8, k)); alvo = new THREE.Vector3(0, 0.95, 0);
+  }
+  // punch-in + tremida nos reforços
+  let punch = 0, treme = 0;
+  for (const r of reforcos) if (r.t >= s.ini && r.t < s.fim) {
+    punch = Math.max(punch, sstep(r.t - 0.04, r.t + 0.14, t) * 0.16);
+    const d = t - r.t; if (d >= 0 && d < 0.3) treme = Math.max(treme, (1 - d / 0.3));
+  }
+  pos.lerp(alvo, punch);
+  pos.x += Math.sin(t * 71) * 0.018 * treme; pos.y += Math.cos(t * 83) * 0.018 * treme;
+  // respiração da câmera
+  pos.x += Math.sin(t * 0.7) * 0.012; pos.y += Math.sin(t * 0.9 + 1) * 0.01;
+  return { pos, alvo };
+}
+
+function piscar(t, seed) { const per = 3.2 + seed * 0.9, p = (t + seed * 1.7) % per; return p < 0.13 ? Math.sin(p / 0.13 * Math.PI) : 0; }
+
+function animar(p, t) {
+  const q = p.tipo, outro = q === 'azul' ? 'dourado' : 'azul', s = q === 'azul' ? 1 : -1;
+  const f = falaEm(t), falando = f && f.quem === q, b = bocaDe(q, t);
+  const ph = q === 'azul' ? 0 : 2.1;
+  // corpo: respiração + pulo com a voz + inclinação para o outro quando fala
+  const fala01 = falando ? sstep(f.inicio - 0.1, f.inicio + 0.15, t) * (1 - sstep(f.fim, f.fim + 0.25, t)) : 0;
+  p.corpo.position.y = 0.012 * Math.sin(t * 2.2 + ph) + 0.045 * b;
+  p.corpo.scale.set(1 - 0.02 * b, 1 + 0.03 * b, 1 - 0.02 * b);
+  p.corpo.rotation.z = 0.025 * Math.sin(t * 1.3 + ph) - s * 0.05 * fala01 * Math.sin(t * 3.1);
+  p.root.rotation.y = GIRO[q] + s * 0.06 * fala01 + 0.03 * Math.sin(t * 0.8 + ph);
+  p.corpo.rotation.x = -0.05 * fala01 * (0.5 + 0.5 * Math.sin(t * 2.4 + ph));
+
+  // boca
+  p.boca.scale.set(0.62 + 0.5 * b, 0.1 + 0.95 * b, 1);
+  p.lingua.visible = b > 0.25; p.dentes.visible = b > 0.35;
+  p.boca.rotation.z = q === 'dourado' && b < 0.1 ? 0.18 : 0;   // sorrisinho de canto
+
+  // olhos: olham o outro (ou a câmera no gancho), piscam; humor muda sobrancelhas e pálpebras
+  const olharCamera = t < 1.2 && falando;
+  const lookX = olharCamera ? 0 : s * 0.38, lookY = olharCamera ? 0 : 0.05;
+  const humor = q === 'azul'
+    ? (falando ? 0.28 : 0.42)                 // azul: bravo / metido
+    : (falando ? 0.05 : -0.15);               // dourado: debochada (uma sobrancelha em cima)
+  const susto = q === 'azul' && f && f.quem === 'azul' && /rico/i.test(f.texto) ? sstep(f.inicio, f.inicio + 0.2, t) : 0;
+  const pisca = piscar(t, q === 'azul' ? 0 : 1);
+  const lidBase = q === 'azul' ? lerp(0.22, 0.0, susto) : 0.3 - 0.15 * fala01;
+  for (const o of p.olhos) {
+    o.pup.position.set(lookX * p.er, lookY * p.er, 0);
+    const fecha = clamp(Math.max(lidBase, pisca));
+    o.pal.rotation.x = -Math.PI / 2 + fecha * Math.PI;
+    o.o.scale.set(1 + 0.18 * susto, 1 + 0.18 * susto, 0.55);
+    const arco = 0.018 * b + 0.03 * susto;
+    if (q === 'azul') { o.sob.rotation.z = o.s * humor * (1 - susto) - o.s * 0.15 * susto; o.sob.position.y = p.er * 1.35 + arco; }
+    else { const ergue = o.s > 0 ? 0.035 : 0; o.sob.rotation.z = o.s > 0 ? -0.25 : 0.08 + humor * 0.2; o.sob.position.y = p.er * 1.35 + ergue + arco; }
+  }
+
+  // braços
+  for (const a of p.bracos) {
+    const interno = a.s === s;               // braço do lado do outro personagem
+    let oz, ox, cx, cz;
+    if (falando && interno) {                 // gesticula / aponta para o outro
+      const g = 0.5 + 0.5 * Math.sin(t * 4.2 + ph);
+      oz = a.s * (0.55 + 0.35 * fala01 + 0.15 * g * b); ox = -0.9 * fala01 - 0.2 * g; cx = -0.35 - 0.4 * g * fala01; cz = 0;
+    } else if (falando) {                     // outra mão na cintura
+      oz = a.s * 0.55; ox = 0.15; cx = -0.1; cz = -a.s * 1.75;
+    } else if (q === 'dourado') {             // ouvindo: mãos na cintura, debochada
+      oz = a.s * 0.6; ox = 0.1; cx = -0.1; cz = -a.s * 1.7;
+    } else {                                  // azul ouvindo: braços cruzados de leve na frente
+      oz = a.s * 0.18; ox = -0.55; cx = -1.2; cz = a.s * 0.9;
+    }
+    a.ombro.rotation.set(ox + 0.03 * Math.sin(t * 2 + ph), 0, oz);
+    a.cot.rotation.set(cx, 0, cz);
+  }
+  // pezinho batendo quando a dourado fala com deboche
+  p.pernas.forEach((pe, i) => { pe.rotation.x = q === 'dourado' && falando && i === 1 ? -0.12 * Math.max(0, Math.sin(t * 9)) : 0; });
+}
+
+// ── LEGENDA E SELOS ──────────────────────────────────────────────────────
+const kws = new Set((D.palavras_chave || []).map(norm));
+const blocos = [];
+for (const f of falas) {
+  let atual = [];
+  f.palavras.forEach((w, i) => {
+    atual.push(w);
+    const pont = /[.!?,…]$/.test(w.word) || /\.\.\.$/.test(w.word);
+    if (atual.length >= 3 || pont || i === f.palavras.length - 1) { blocos.push({ palavras: atual, ini: atual[0].start - 0.06 }); atual = []; }
+  });
+}
+blocos.forEach((b, i) => { const prox = blocos[i + 1]; const fimFala = b.palavras[b.palavras.length - 1].end + 0.35; b.fim = prox ? Math.min(prox.ini, fimFala) : fimFala; });
+const leg = document.getElementById('leg');
+let legAtual = -1;
+function legenda(t) {
+  const i = blocos.findIndex(b => t >= b.ini && t < b.fim);
+  if (i !== legAtual) {
+    legAtual = i;
+    leg.innerHTML = i < 0 ? '' : '<div>' + blocos[i].palavras.map(w => `<span class="${kws.has(norm(w.word)) ? 'k' : ''}">${w.word.replace(/</g, '&lt;')}</span>`).join('') + '</div>';
+  }
+  if (i >= 0) { const k = clamp((t - blocos[i].ini) / 0.12); leg.style.transform = `scale(${lerp(0.86, 1, backOut(k))})`; leg.style.opacity = String(clamp(k * 3)); }
+}
+const selosEl = document.getElementById('selos');
+const selos = reforcos.map(r => {
+  const e = document.createElement('div'); e.className = 'selo ' + (r.quem === 'azul' ? 'azul' : '') + (r.quem === 'azul' && /R\$/.test(r.texto) ? ' risco' : '');
+  e.textContent = r.texto; e.style.opacity = '0'; selosEl.appendChild(e);
+  const s = shotEm(r.t); r.fimSelo = Math.min(r.t + 2.3, s.fim + 0.02);
+  return { r, e };
+});
+const marca = document.getElementById('marca');
+function overlay(t) {
+  legenda(t);
+  for (const { r, e } of selos) {
+    const k = clamp((t - r.t) / 0.32), sai = sstep(r.fimSelo - 0.2, r.fimSelo, t);
+    const vis = t >= r.t - 0.01 && t < r.fimSelo;
+    e.style.opacity = vis ? String(1 - sai) : '0';
+    if (!vis) continue;
+    const head = faceWorld(r.quem).add(new THREE.Vector3(0, P[r.quem].bodyH * 0.85, 0)).project(camera);
+    const x = clamp((head.x * 0.5 + 0.5) * W, 260, W - 260);
+    const wEl = e.offsetWidth, top = 300 + (r.quem === 'azul' ? 0 : 0);
+    e.style.transform = `translate(${x - wEl / 2}px, ${top - 30 * (1 - backOut(k))}px) scale(${lerp(0.5, 1, backOut(k))}) rotate(${r.quem === 'azul' ? -3 : 3}deg)`;
+    e.style.setProperty('--r', String(sstep(r.t + 1.0, r.t + 1.3, t)));
+  }
+  const ult = falas[falas.length - 1];
+  marca.style.opacity = String(sstep(ult.inicio + 0.4, ult.inicio + 1.0, t));
+  marca.style.letterSpacing = lerp(24, 14, sstep(ult.inicio + 0.4, ult.inicio + 1.6, t)) + 'px';
+}
+
+// ── PÓS (bloom) ──────────────────────────────────────────────────────────
+const rt = new THREE.WebGLRenderTarget(W, H, { samples: 4, type: THREE.HalfFloatType });
+const composer = new EffectComposer(renderer, rt);
+composer.addPass(new RenderPass(scene, camera));
+composer.addPass(new UnrealBloomPass(new THREE.Vector2(W / 2, H / 2), 0.42, 0.45, 0.93));
+composer.addPass(new OutputPass());
+
+window.render = function (t) {
+  for (const q in P) animar(P[q], t);
+  const c = cameraEm(t); camera.position.copy(c.pos); camera.lookAt(c.alvo);
+  for (let i = 0; i < NP; i++) {
+    pPos[i * 3] = pBase[i * 3] + Math.sin(t * 0.3 + i) * 0.08;
+    pPos[i * 3 + 1] = (pBase[i * 3 + 1] + t * 0.06) % 5;
+    pPos[i * 3 + 2] = pBase[i * 3 + 2];
+  }
+  pGeo.attributes.position.needsUpdate = true;
+  composer.render();
+  overlay(t);
+};
+window.render(0);
+</script>
+</body></html>

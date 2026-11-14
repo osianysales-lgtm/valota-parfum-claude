@@ -1,0 +1,3 @@
+prompt: magical sparkle shimmer shine, glittering luxury perfume reveal
+duracao: 1.5
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)

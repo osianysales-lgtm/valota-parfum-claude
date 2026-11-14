@@ -1,0 +1,3 @@
+prompt: Upbeat feel-good adventure commercial instrumental, acoustic guitar strums, punchy modern drums, claps, warm bass, summer river and fishing trip vibe, bright and energetic, 118 bpm, no vocals, builds to a confident ending
+duracao: 42
+fonte: ElevenLabs Music

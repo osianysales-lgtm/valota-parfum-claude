@@ -1,0 +1,16 @@
+{
+  "_comentario": "Padrões do Caminho 4 (avatar HeyGen). O avatar vem SEMPRE do .env da raiz (heygen_avatar_id); aqui ficam só os ajustes do vídeo gerado.",
+  "aspect_ratio": "9:16",
+  "resolution": "1080p",
+  "engine": "avatar_iv",
+  "expressiveness": "medium",
+  "fit": "cover",
+  "motion_prompt": "",
+  "fundo": null,
+  "timeout_minutos": 30,
+  "voz_heygen": {
+    "_comentario": "Só com --roteiro (voz da HeyGen). ID da voz = heygen_voz_id do .env.",
+    "velocidade": 1.0,
+    "locale": "pt-BR"
+  }
+}

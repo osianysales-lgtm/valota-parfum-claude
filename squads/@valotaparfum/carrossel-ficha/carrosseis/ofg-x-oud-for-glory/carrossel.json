@@ -1,0 +1,191 @@
+{
+  "topo": "FICHA LADO A LADO",
+  "rodape": "@valotaparfum",
+  "slides": [
+    {
+      "tipo": "capa",
+      "esq": {
+        "frasco": "frascos/initio.png",
+        "alt": 520,
+        "marca": "INITIO"
+      },
+      "dir": {
+        "frasco": "frascos/oud-for-glory-hd.png",
+        "alt": 540,
+        "marca": "LATTAFA"
+      },
+      "linha1": "Achei as 6 notas do oud\nde R$ 1.737",
+      "linha2": "NUM ÁRABE.",
+      "tam1": 66,
+      "tam2": 124,
+      "topo_titulo": 110,
+      "fundo": "petroleo"
+    },
+    {
+      "tipo": "ficha",
+      "kicker": "1 · QUEM É QUEM",
+      "titulo": "Um é nicho francês.\nO outro, árabe.",
+      "esq": {
+        "familia": "cedro",
+        "frasco": "frascos/initio.png",
+        "marca": "INITIO PARFUMS PRIVÉS",
+        "nome": "Oud for Greatness",
+        "linhas": [
+          [
+            "Feito na",
+            "França"
+          ],
+          [
+            "Lançado em",
+            "2018"
+          ],
+          [
+            "Frasco",
+            "90 ml"
+          ],
+          [
+            "Mercado Livre",
+            "R$ 1.737"
+          ]
+        ]
+      },
+      "dir": {
+        "familia": "ambar",
+        "frasco": "frascos/oud-for-glory-hd.png",
+        "marca": "LATTAFA · BADE'E AL OUD",
+        "nome": "Oud for Glory",
+        "linhas": [
+          [
+            "Feito nos",
+            "Emirados"
+          ],
+          [
+            "Lançado em",
+            "2020"
+          ],
+          [
+            "Frasco",
+            "100 ml"
+          ],
+          [
+            "Mercado Livre",
+            "R$ 194,90"
+          ]
+        ]
+      },
+      "faixa": "Por ml: **R$ 19,30 x R$ 1,95**. Com o preço de 1 Initio, dá pra levar 8 Oud for Glory.",
+      "fundo": "creme"
+    },
+    {
+      "tipo": "notas",
+      "kicker": "2 · A SAÍDA",
+      "titulo": "Abriu o frasco: as mesmas 3 notas.",
+      "col": [
+        "INITIO",
+        "LATTAFA"
+      ],
+      "notas": [
+        {
+          "familia": "pimenta",
+          "icone": "chama",
+          "nome": "Açafrão",
+          "traducao": "quentinho, meio couro"
+        },
+        {
+          "familia": "pimenta",
+          "icone": "pimenta",
+          "nome": "Noz-moscada",
+          "traducao": "tempero seco, aquece"
+        },
+        {
+          "familia": "algodao",
+          "icone": "flor",
+          "nome": "Lavanda",
+          "traducao": "o frescor de barbearia"
+        }
+      ],
+      "faixa": "E o fundo, que é o que fica na pele, também bate. Olha só ➜",
+      "fundo": "petroleo"
+    },
+    {
+      "tipo": "notas",
+      "kicker": "3 · O FUNDO",
+      "titulo": "Horas depois: oud, patchouli e almíscar.",
+      "col": [
+        "INITIO",
+        "LATTAFA"
+      ],
+      "notas": [
+        {
+          "familia": "cedro",
+          "icone": "madeira",
+          "nome": "Oud",
+          "traducao": "madeira escura, defumada"
+        },
+        {
+          "familia": "cedro",
+          "icone": "folha",
+          "nome": "Patchouli",
+          "traducao": "terroso, de mata molhada"
+        },
+        {
+          "familia": "algodao",
+          "icone": "nuvem",
+          "nome": "Almíscar",
+          "traducao": "cheiro de pele limpa"
+        }
+      ],
+      "faixa": "6 de 6 na ficha. Então por que o Initio custa R$ 1.542 a mais? ➜",
+      "fundo": "creme"
+    },
+    {
+      "tipo": "texto",
+      "kicker": "4 · O QUE A FICHA NÃO MOSTRA",
+      "titulo": "A diferença está no que a caixa não conta.",
+      "cards": [
+        {
+          "familia": "cedro",
+          "frasco": "frascos/initio.png",
+          "marca": "INITIO",
+          "texto": "Diz que usa a **essência natural** de oud e fabrica na França."
+        },
+        {
+          "familia": "ambar",
+          "frasco": "frascos/oud-for-glory-hd.png",
+          "marca": "LATTAFA",
+          "texto": "**Não diz** de onde vem o oud dela."
+        }
+      ],
+      "paragrafos": [
+        "Ficha mostra **quais** notas tem. Não mostra a qualidade nem a dose de cada uma. É aí que um perfume caro costuma se pagar, e é por isso que **parecido não é igual**."
+      ],
+      "fundo": "pimenta"
+    },
+    {
+      "tipo": "veredito",
+      "kicker": "5 · O VEREDITO",
+      "titulo": "Então, qual comprar?",
+      "esq": {
+        "familia": "cedro",
+        "frasco": "frascos/initio.png",
+        "rotulo": "O NOME",
+        "texto": "Quer o **oud natural** e a assinatura Initio? Junta e vai de Initio."
+      },
+      "dir": {
+        "familia": "ambar",
+        "frasco": "frascos/oud-for-glory-hd.png",
+        "rotulo": "O CUSTO-BENEFÍCIO",
+        "texto": "Quer o **mesmo caminho** de oud com açafrão no dia a dia? O Oud for Glory resolve."
+      },
+      "faixa": "Borrifa os dois na pele, espera **1 hora** e só aí decide.",
+      "fundo": "creme"
+    },
+    {
+      "tipo": "final",
+      "titulo": "SALVA ESSE POST",
+      "subtitulo": "pra ter a ficha na mão\nna hora de comprar perfume",
+      "dica": "toca aqui",
+      "pos_miniatura": "28%"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+node_modules/
+.env
+.mcp.json
+*.tmp
+squads/*/state.json
+squads/*/state.json.tmp
+squads/*/output/
+# Local secrets written by `elevenlabs onboard`
+/.env.local
+.cache/
+
+# --- adicionado pro backup no GitHub (14/11/2026) ---
+# Mac
+.DS_Store
+# ambientes/caches pesados (reinstaláveis)
+.venv*/
+venv/
+__pycache__/
+*.pyc
+.playwright-mcp/
+# segredos
+.env*
+*.pem
+*.key
+# mídia pesada (GitHub recusa arquivo >100 MB; vídeos vão pro Drive/iCloud)
+*.mp4
+*.mov
+*.MOV
+*.m4v
+*.webm
+*.onnx
+# mídia de posts já renderizados/publicados (foco do backup = regras, copy, squads, templates)
+**/output/**/*.wav
+**/output/**/*.mp3
+**/output/**/*.png
+**/output/**/*.jpg
+**/output/**/*.jpeg
+**/carrosseis/**/*.png
+**/carrosseis/**/*.jpg
+**/carrosseis/**/*.jpeg
+*.log

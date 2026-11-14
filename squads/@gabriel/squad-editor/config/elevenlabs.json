@@ -1,0 +1,26 @@
+{
+  "_nota": "Configuração padrão da narração e dos efeitos. A chave da API NUNCA fica aqui: vem de ELEVENLABS_API_KEY no .env.local da raiz do projeto. O ID DA VOZ vem SEMPRE do .env da raiz (Elevenlabs_voz_id); o voice_id abaixo é só reserva, usado se a variável faltar (tools/elevenlabs.js avisa).",
+  "voz": {
+    "nome": "Osiany Sales v2",
+    "voice_id": "LajrwgPkHCxzLCvnEwi7",
+    "modelo": "eleven_multilingual_v2",
+    "idioma": "pt-BR",
+    "formato": "mp3_44100_128",
+    "ajustes": {
+      "stability": 0.5,
+      "similarity_boost": 0.92,
+      "style": 0.0,
+      "use_speaker_boost": true,
+      "speed": 0.95
+    }
+  },
+  "efeitos": {
+    "modelo": "eleven_text_to_sound_v2",
+    "pasta": "biblioteca_audio/efeitos",
+    "prompt_influence": 0.5
+  },
+  "voz_anterior": {
+    "nome": "Osiany Sales (clone do áudio de WhatsApp, 07/11/2026 — abafado/metálico, não usar)",
+    "voice_id": "GuuntRfY6J2EeSBkavod"
+  }
+}

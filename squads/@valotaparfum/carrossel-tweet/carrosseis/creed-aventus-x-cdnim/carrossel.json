@@ -1,0 +1,99 @@
+{
+  "fundo": "branco",
+  "slides": [
+    {
+      "tipo": "capa",
+      "titulo": "🚨 5 diferenças entre o Creed Aventus e o árabe que custa 10x menos!",
+      "subtitulo": "Não é igual, mas a diferença é bem menor que o preço. ➡️",
+      "imagens": [
+        {
+          "recorte": "frascos/aventus.png",
+          "nome": "a partir de R$ 3 mil",
+          "legenda": "CREED AVENTUS",
+          "marcador": "foto do frasco Aventus"
+        },
+        {
+          "recorte": "frascos/club-de-nuit.png",
+          "nome": "R$ 200 a R$ 300",
+          "legenda": "CLUB DE NUIT INTENSE MAN",
+          "marcador": "foto do frasco Club de Nuit"
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "1. O preço é a diferença mais gritante.",
+      "texto": "O Creed Aventus de 100 ml sai a partir de uns R$ 3 mil nas lojas grandes. O Armaf Club de Nuit Intense Man de 105 ml aparece entre R$ 200 e R$ 300.\n\nCom 1 Aventus dá pra comprar uns 10 Club de Nuit.",
+      "passo": "Compara em mais de uma loja → confere se é o **Intense Man EDT 105 ml**."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "2. A saída: abacaxi de um lado, limão do outro.",
+      "texto": "O Aventus abre frutado, com abacaxi, bergamota e groselha preta. O Club de Nuit abre mais cítrico e seco, com o limão na frente.",
+      "passo": "Não julga pelo 1º minuto → espera uns 30 min na pele.",
+      "recortes": [
+        {
+          "recorte": "notas/abacaxi.png",
+          "nome": "abacaxi",
+          "legenda": "AVENTUS"
+        },
+        {
+          "recorte": "notas/limao.png",
+          "nome": "limão",
+          "legenda": "CLUB DE NUIT"
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "3. Depois de 1 hora, eles ficam bem parecidos.",
+      "texto": "Os dois têm o mesmo esqueleto: bétula defumada, patchouli e baunilha. É o \"cheiro de Aventus\" que a maioria reconhece.\n\nO Club de Nuit costuma ficar mais defumado. O Aventus, mais frutado e liso.",
+      "passo": "Saída diferente → **fundo parecido**.",
+      "recortes": [
+        {
+          "recorte": "notas/betula-casca.jpg",
+          "forma": "circulo",
+          "nome": "bétula"
+        },
+        {
+          "recorte": "notas/patchouli.png",
+          "nome": "patchouli"
+        },
+        {
+          "recorte": "notas/baunilha.png",
+          "nome": "baunilha"
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "4. Na força, o árabe não fica atrás.",
+      "texto": "O Club de Nuit tem fama de projetar bastante nas primeiras horas, mesmo sendo EDT. O Aventus costuma ser mais discreto, e muita gente reclama que ele muda de lote pra lote.\n\nNa pele de cada um isso varia.",
+      "passo": "Club de Nuit: 2 ou 3 borrifadas → mais que isso pesa no ambiente."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "5. O veredito: mesmo DNA, não o mesmo perfume.",
+      "texto": "Pro dia a dia, o Club de Nuit entrega muito pelo preço. Quer a saída frutada mais refinada e o nome Creed? Aí é o Aventus.\n\nNão é cópia idêntica. É o mesmo caminho pagando bem menos.",
+      "passo": "Gostou do fundo do Aventus → **o Club de Nuit já resolve**.",
+      "recortes": [
+        {
+          "recorte": "frascos/aventus.png",
+          "nome": "o nome Creed",
+          "legenda": "CREED AVENTUS",
+          "marcador": "foto do frasco Aventus"
+        },
+        {
+          "recorte": "frascos/club-de-nuit.png",
+          "nome": "o custo-benefício",
+          "legenda": "CLUB DE NUIT INTENSE MAN",
+          "marcador": "foto do frasco Club de Nuit"
+        }
+      ]
+    },
+    {
+      "tipo": "final",
+      "texto": "Se esse post te ajudou, já segue a **Valota Parfum** que por aqui eu te mostro de forma prática a alternativa árabe que cabe no bolso antes de você gastar com perfume caro :)"
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "version": 1,
+  "historyId": "5649e0ec-d357-4dea-985b-d42dc6ed7bb1",
+  "currentRevision": "2a626a3e-5571-47c0-9a59-d409fa1a6e68",
+  "pendingChanges": false,
+  "files": {
+    "assets/audio/agua_ondas.mp3": {
+      "hash": "36abbee93aa3f7b2a10e413fcbdf6d2c9f8669226093f168cee56f305cefe56f",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/36/36abbee93aa3f7b2a10e413fcbdf6d2c9f8669226093f168cee56f305cefe56f"
+    },
+    "assets/audio/buzzer_erro.mp3": {
+      "hash": "6844f7fa2843e145fca7f68b81876420b56dbe0b86afcd7c73767e5ed2de5879",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/68/6844f7fa2843e145fca7f68b81876420b56dbe0b86afcd7c73767e5ed2de5879"
+    },
+    "assets/audio/caixa_registradora.mp3": {
+      "hash": "47b5c9127417fec3c1a797031abc9ed820c23e0d9dd11869de40e957e76d0a95",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/47/47b5c9127417fec3c1a797031abc9ed820c23e0d9dd11869de40e957e76d0a95"
+    },
+    "assets/audio/carimbo.mp3": {
+      "hash": "846df595f60b0ed49e6a2f98696ce153613989cef740d46887c7ac0539ce3b8f",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/84/846df595f60b0ed49e6a2f98696ce153613989cef740d46887c7ac0539ce3b8f"
+    },
+    "assets/audio/click_ui.mp3": {
+      "hash": "ada71f8ac3e8fd7aa08696bf794a8567452739b0166a7b5020387f477105a0ec",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/ad/ada71f8ac3e8fd7aa08696bf794a8567452739b0166a7b5020387f477105a0ec"
+    },
+    "assets/audio/ding_acerto.mp3": {
+      "hash": "e8df94186213019121eefee5be9274af5866821e68c1c04c8552a9d799dfb7ea",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/e8/e8df94186213019121eefee5be9274af5866821e68c1c04c8552a9d799dfb7ea"
+    },
+    "assets/audio/ding_notificacao.mp3": {
+      "hash": "61ce24bdd97b62d2dce2e622909fc3eaf4465a104782edf0a34e8d917c3002f4",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/61/61ce24bdd97b62d2dce2e622909fc3eaf4465a104782edf0a34e8d917c3002f4"
+    },
+    "assets/audio/glitch_digital.mp3": {
+      "hash": "2e036b36b970e74cf73421d6cea927c884dd0f8155bee9e0486dfd716f91deeb",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/2e/2e036b36b970e74cf73421d6cea927c884dd0f8155bee9e0486dfd716f91deeb"
+    },
+    "assets/audio/impact_grave.mp3": {
+      "hash": "3027be6ba9d9e28fb2f3a3a7280e81d1c37210c50ec1d54c996eb10a076d47dc",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/30/3027be6ba9d9e28fb2f3a3a7280e81d1c37210c50ec1d54c996eb10a076d47dc"
+    },
+    "assets/audio/martelo_juiz.mp3": {
+      "hash": "783a92266d8d5855feeb6e9ba1df03898b84c15c22e95bb2853a9246aa5b0a2b",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/78/783a92266d8d5855feeb6e9ba1df03898b84c15c22e95bb2853a9246aa5b0a2b"
+    },
+    "assets/audio/plim_brilho_magico.mp3": {
+      "hash": "21d8c6c613564f850b41b7d9e99184735304f5584785ebb85e2f93299c0a84ca",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/21/21d8c6c613564f850b41b7d9e99184735304f5584785ebb85e2f93299c0a84ca"
+    },
+    "assets/audio/pop_leve.mp3": {
+      "hash": "29e1d2efbc6e723841802c1d84b9d112f79cf1877ef98abee12e9798a0a5a169",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/29/29e1d2efbc6e723841802c1d84b9d112f79cf1877ef98abee12e9798a0a5a169"
+    },
+    "assets/audio/relogio_tique.mp3": {
+      "hash": "86df35735b871d259a4d5042d2740a8e186e78b8ce8bb0790190160270a2ef32",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/86/86df35735b871d259a4d5042d2740a8e186e78b8ce8bb0790190160270a2ef32"
+    },
+    "assets/audio/riser_curto.mp3": {
+      "hash": "4c262bc397997ebc33d5ee0f55387f7aa0010a9cee72f3fd2f4f2c73cfd8ce5d",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/4c/4c262bc397997ebc33d5ee0f55387f7aa0010a9cee72f3fd2f4f2c73cfd8ce5d"
+    },
+    "assets/audio/shine_brilho.mp3": {
+      "hash": "6d663ccb583115e641ee39ca7c52c5db74fd500c14db619954e2a2e601295a5b",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/6d/6d663ccb583115e641ee39ca7c52c5db74fd500c14db619954e2a2e601295a5b"
+    },
+    "assets/audio/spray_perfume.mp3": {
+      "hash": "c506aca33ee6769abc0747115634aeecaf82fb2af5da9c2f1d9b80216e925544",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/c5/c506aca33ee6769abc0747115634aeecaf82fb2af5da9c2f1d9b80216e925544"
+    },
+    "assets/audio/suspense_dun.mp3": {
+      "hash": "c58d624b4683d6b9cc31637059d04267fc4cdd3c38604468cddf31f3ef66bb86",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/c5/c58d624b4683d6b9cc31637059d04267fc4cdd3c38604468cddf31f3ef66bb86"
+    },
+    "assets/audio/swipe_tela.mp3": {
+      "hash": "be4238cac016a06c72040e42e674ad5c34ca406b35f7b16b8ede850cc1c740d2",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/be/be4238cac016a06c72040e42e674ad5c34ca406b35f7b16b8ede850cc1c740d2"
+    },
+    "assets/audio/vidro_tilintar.mp3": {
+      "hash": "0a5b4f0c08374ad55aebc5a8053d4dd074141707f6877ae43488859388f757d5",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/0a/0a5b4f0c08374ad55aebc5a8053d4dd074141707f6877ae43488859388f757d5"
+    },
+    "assets/audio/voz.mp3": {
+      "hash": "714b5c422dd19ab6d3361d8dea6ab8b511dc64448580eecd58fc0c34138a1f00",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/71/714b5c422dd19ab6d3361d8dea6ab8b511dc64448580eecd58fc0c34138a1f00"
+    },
+    "assets/audio/whoosh_rapido.mp3": {
+      "hash": "983dde10b23be643334004e05ef1459ce767fc69e958303e33de6c1cbfb4c936",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/98/983dde10b23be643334004e05ef1459ce767fc69e958303e33de6c1cbfb4c936"
+    },
+    "assets/audio/whoosh_suave.mp3": {
+      "hash": "7fb73f0f296bbdcb2d0c890067b574a0f192b1c146696d2e263b95600268e33b",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/7f/7fb73f0f296bbdcb2d0c890067b574a0f192b1c146696d2e263b95600268e33b"
+    },
+    "assets/fonts/GothamBlack.otf": {
+      "hash": "99b87c0c6bf6947cd0034d9636fc2b8926dd1007281edf7a108b74e78636c5b0",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/99/99b87c0c6bf6947cd0034d9636fc2b8926dd1007281edf7a108b74e78636c5b0"
+    },
+    "assets/fonts/Montserrat.ttf": {
+      "hash": "0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/0f/0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7"
+    },
+    "compositions/captions.html": {
+      "hash": "ddcb0b8af02bd639e0a8da6149acd49246f617e7c181c976ce1daa9c23b3821a",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/dd/ddcb0b8af02bd639e0a8da6149acd49246f617e7c181c976ce1daa9c23b3821a"
+    },
+    "compositions/graficos.html": {
+      "hash": "b332b549ada5e736681a1df03e5b023328c331c02738060b34f67e83bec5867b",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/b3/b332b549ada5e736681a1df03e5b023328c331c02738060b34f67e83bec5867b"
+    },
+    "hyperframes.json": {
+      "hash": "35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/35/35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7"
+    },
+    "index.html": {
+      "hash": "65f74432718ac0e00ec05645651d639ac644fb5fbae9f002d2c4e9ae0fc930dc",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/65/65f74432718ac0e00ec05645651d639ac644fb5fbae9f002d2c4e9ae0fc930dc"
+    },
+    "package.json": {
+      "hash": "8719e4d437cef7697e4b084f577a9c50c611a831d91b56270ef094cd31575216",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/87/8719e4d437cef7697e4b084f577a9c50c611a831d91b56270ef094cd31575216"
+    },
+    "assets/video/base_fim.mp4": {
+      "hash": "0124f89f54ff1bbb081a784f004e20ca73f7eaf1c908cc686f49ae6cd47c9b8e",
+      "content": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/01/0124f89f54ff1bbb081a784f004e20ca73f7eaf1c908cc686f49ae6cd47c9b8e"
+    }
+  },
+  "revisions": {
+    "2a626a3e-5571-47c0-9a59-d409fa1a6e68": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794497618066,
+      "endedAt": 1794497618086,
+      "files": {
+        "assets/video/base_fim.mp4": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/49/4924b6548ec88bdbfb3b9f11e5fb37845273fe0f2d275d31262d35daf183a128",
+          "after": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/01/0124f89f54ff1bbb081a784f004e20ca73f7eaf1c908cc686f49ae6cd47c9b8e"
+        },
+        "index.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/fb/fb769a7bf488ee2f24b30918425a18337c79c3a0ebf01c72a497716583e214a8",
+          "after": "/Users/osianysales/.cache/hyperframes/history/5649e0ec-d357-4dea-985b-d42dc6ed7bb1/blobs/65/65f74432718ac0e00ec05645651d639ac644fb5fbae9f002d2c4e9ae0fc930dc"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "2a626a3e-5571-47c0-9a59-d409fa1a6e68",
+      "id": "3b10ae36-bf02-4f6f-8e78-27c341aa4516-7"
+    },
+    "revisions": {
+      "2a626a3e-5571-47c0-9a59-d409fa1a6e68": [
+        {
+          "scope": "full",
+          "id": "3b10ae36-bf02-4f6f-8e78-27c341aa4516-0",
+          "image": "/Users/osianysales/Documents/Projeto - Valota Parfum /squads/@gabriel/squad-editor/output/v22-glitch-parte2/snaps_selo/frame-00-at-0s.png",
+          "time": 0,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794497648536,
+          "contentHash": "d93271c9ad812b6032302e2c1f502c5f3882c2a3040253e960faff045afa580b",
+          "revision": "2a626a3e-5571-47c0-9a59-d409fa1a6e68",
+          "inputFingerprint": "0409218ec7e3f70b221bda65a678f5929d34febdcc42e762973b234631828baa",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "3b10ae36-bf02-4f6f-8e78-27c341aa4516-1",
+          "image": "/Users/osianysales/Documents/Projeto - Valota Parfum /squads/@gabriel/squad-editor/output/v22-glitch-parte2/snaps_selo/frame-01-at-0.9s.png",
+          "time": 0.9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794497648536,
+          "contentHash": "75ba2e3b7fbc71c628f9507d07e58b23108982321028fc1e04679a1e2dcc2d97",
+          "revision": "2a626a3e-5571-47c0-9a59-d409fa1a6e68",
+          "inputFingerprint": "0409218ec7e3f70b221bda65a678f5929d34febdcc42e762973b234631828baa",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "3b10ae36-bf02-4f6f-8e78-27c341aa4516-2",
+          "image": "/Users/osianysales/Documents/Projeto - Valota Parfum /squads/@gabriel/squad-editor/output/v22-glitch-parte2/snaps_selo/frame-02-at-3.6s.png",
+          "time": 3.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794497648536,
+          "contentHash": "75f45f05ddce7637f5861347fecd897faaf67db73de3d494766ca233a2712c2c",
+          "revision": "2a626a3e-5571-47c0-9a59-d409fa1a6e68",
+          "inputFingerprint": "0409218ec7e3f70b221bda65a678f5929d34febdcc42e762973b234631828baa",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "3b10ae36-bf02-4f6f-8e78-27c341aa4516-3",
+          "image": "/Users/osianysales/Documents/Projeto - Valota Parfum /squads/@gabriel/squad-editor/output/v22-glitch-parte2/snaps_selo/frame-03-at-4.8s.png",
+          "time": 4.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794497648536,
+          "contentHash": "7349f4a39c3cd0301d1005e757fc67cba6771d9d2636165f59a9daedfd178906",
+          "revision": "2a626a3e-5571-47c0-9a59-d409fa1a6e68",
+          "inputFingerprint": "0409218ec7e3f70b221bda65a678f5929d34febdcc42e762973b234631828baa",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "3b10ae36-bf02-4f6f-8e78-27c341aa4516-4",
+          "image": "/Users/osianysales/Documents/Projeto - Valota Parfum /squads/@gabriel/squad-editor/output/v22-glitch-parte2/snaps_selo/frame-04-at-6.2s.png",
+          "time": 6.2,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794497648537,
+          "contentHash": "b606ce3dd471b241b7cab6ab8c1d7ef1dc7baab41d2fca1b214ed83d8cfe5d65",
+          "revision": "2a626a3e-5571-47c0-9a59-d409fa1a6e68",
+          "inputFingerprint": "0409218ec7e3f70b221bda65a678f5929d34febdcc42e762973b234631828baa",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "3b10ae36-bf02-4f6f-8e78-27c341aa4516-5",
+          "image": "/Users/osianysales/Documents/Projeto - Valota Parfum /squads/@gabriel/squad-editor/output/v22-glitch-parte2/snaps_selo/frame-05-at-7.5s.png",
+          "time": 7.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794497648537,
+          "contentHash": "6ad215c9f11a710fe3db562ebab9fad75c686da6c9f737bc7b61356eea4e9540",
+          "revision": "2a626a3e-5571-47c0-9a59-d409fa1a6e68",
+          "inputFingerprint": "0409218ec7e3f70b221bda65a678f5929d34febdcc42e762973b234631828baa",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "3b10ae36-bf02-4f6f-8e78-27c341aa4516-6",
+          "image": "/Users/osianysales/Documents/Projeto - Valota Parfum /squads/@gabriel/squad-editor/output/v22-glitch-parte2/snaps_selo/frame-06-at-8.9s.png",
+          "time": 8.9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794497648537,
+          "contentHash": "703eee039e202118dbd24fda81e847c6b620daeefaec74c7be29f92268436df0",
+          "revision": "2a626a3e-5571-47c0-9a59-d409fa1a6e68",
+          "inputFingerprint": "0409218ec7e3f70b221bda65a678f5929d34febdcc42e762973b234631828baa",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "3b10ae36-bf02-4f6f-8e78-27c341aa4516-7",
+          "image": "/Users/osianysales/Documents/Projeto - Valota Parfum /squads/@gabriel/squad-editor/output/v22-glitch-parte2/snaps_selo/frame-07-at-9.4s.png",
+          "time": 9.4,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794497648537,
+          "contentHash": "0cc0364594be1df3f913e1c7a4398dda5ab27a6f5788bd813b7728740cd519e4",
+          "revision": "2a626a3e-5571-47c0-9a59-d409fa1a6e68",
+          "inputFingerprint": "0409218ec7e3f70b221bda65a678f5929d34febdcc42e762973b234631828baa",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "a77b0b51-9ea1-41ab-84d0-13ed94db7caa",
+      "completedAt": 1794497849813,
+      "output": "/Users/osianysales/Documents/Projeto - Valota Parfum /squads/@gabriel/squad-editor/output/v22-glitch-parte2/REELS VALOTA PARFUM GLITCH PARTE 2 VALE O FRASCO SELO NA CAPA.mp4",
+      "status": "completed",
+      "revision": "2a626a3e-5571-47c0-9a59-d409fa1a6e68"
+    },
+    "retainedRevisions": [
+      "2a626a3e-5571-47c0-9a59-d409fa1a6e68",
+      "4f19174e-f62e-45bc-b50e-df32279eede8"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

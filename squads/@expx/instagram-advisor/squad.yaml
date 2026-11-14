@@ -1,0 +1,83 @@
+squad:
+  code: instagram-advisor
+  name: Instagram Advisor
+  description: Análise de performance e consultoria estratégica de conteúdo Instagram — identifica padrões de copy, tipos de conteúdo e gera dashboard HTML interativo com design system extraído da conta.
+  icon: instagram
+  version: "1.0.0"
+  category: marketing
+  tags:
+    - instagram
+    - analytics
+    - content-strategy
+    - meta-ads
+    - social-media
+    - copywriting
+    - dashboard
+
+  agents:
+    - id: instagram-analytics-specialist
+      name: Instagram Analytics Specialist
+      icon: bar-chart-3
+      prompt: agents/instagram-analytics-specialist.agent.md
+
+    - id: content-strategist
+      name: Content Strategist
+      icon: lightbulb
+      prompt: agents/content-strategist.agent.md
+
+    - id: visual-identity-analyzer
+      name: Visual Identity Analyzer
+      icon: palette
+      prompt: agents/visual-identity-analyzer.agent.md
+
+    - id: report-generator
+      name: Report Generator
+      icon: file-text
+      prompt: agents/report-generator.agent.md
+
+    - id: html-report-specialist
+      name: HTML Report Specialist
+      icon: layout-dashboard
+      prompt: agents/html-report-specialist.agent.md
+
+  pipeline:
+    steps:
+      - id: step-01-validate
+        agent: instagram-analytics-specialist
+        label: Validar variáveis de ambiente (METAADS_TOKEN e METAADS_INSTAGRAM_ID)
+        execution: inline
+
+      - id: step-02-fetch
+        agent: instagram-analytics-specialist
+        label: Buscar últimas 30 postagens via Meta Graph API
+        execution: inline
+
+      - id: step-03-insights
+        agent: instagram-analytics-specialist
+        label: Coletar insights e métricas de cada postagem
+        execution: inline
+
+      - id: step-04-classify
+        agent: content-strategist
+        label: Classificar tipos de conteúdo e estrutura de copy
+        execution: inline
+
+      - id: step-05-patterns
+        agent: content-strategist
+        label: Identificar padrões de alta performance
+        execution: inline
+
+      - id: step-06-visual
+        agent: visual-identity-analyzer
+        label: Extrair design system da identidade visual da conta
+        execution: inline
+
+      - id: step-07-report
+        agent: report-generator
+        label: Gerar relatório executivo em Markdown com recomendações
+        execution: inline
+
+      - id: step-08-dashboard
+        agent: html-report-specialist
+        label: Gerar dashboard HTML interativo com filtros e gráficos
+        execution: inline

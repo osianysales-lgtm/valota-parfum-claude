@@ -1,0 +1,388 @@
+squad:
+  code: squad-editor
+  setor: marketing
+  grupo: conteudo
+  sessao: video
+  name: Squad Editor de Vídeo
+  description: >
+    Squad universal de edição de vídeo para qualquer empresa, setor ou tema.
+    Três caminhos de produção:
+    Caminho 1 — vídeo motion (HTML animado → vídeo, sem material gravado; o roteiro vem do usuário);
+    Caminho 2 — vídeo gravado (seleção de takes, corte pela fala, reenquadramento, legenda e áudio);
+    Caminho 3 — híbrido (vídeo gravado + camadas de motion: tela dividida, B-roll, overlays e encerramento);
+    Caminho 4 — avatar HeyGen (o avatar do .env fala a narração do ElevenLabs e o vídeo é editado aqui como híbrido:
+    motions, efeitos visuais, zoom in/out, SFX e legenda).
+    O formato (animação · narração + motion · avatar HeyGen · gravado) é SEMPRE perguntado na etapa 3.
+    Sem identidade visual fixa: cores, fontes, logo, legenda e linguagem de edição vêm da ficha da marca
+    e das referências analisadas a cada execução. Render quadro a quadro (Dafne v3) e transcrição local.
+  icon: film
+  version: "3.9.0"
+  category: marketing
+  tags:
+    - video
+    - edicao-video
+    - motion-design
+    - whisper
+    - ffmpeg
+    - puppeteer
+    - legenda
+    - bgm
+    - reels
+    - shorts
+    - heygen
+    - avatar
+    - instagram
+    - tiktok
+    - youtube
+
+  company: "_expxagents/_memory/company.md"
+  preferences: "_expxagents/_memory/preferences.md"
+  memory: "_memory/memories.md"
+
+  target_audience: Qualquer pessoa ou equipe que precise produzir ou editar vídeos para redes sociais
+  platform: nodejs + python
+  format: mp4
+
+  schedule:
+    enabled: false
+
+  skills:
+    - file_management
+
+  data: []
+
+  # ─────────────────────────────────────────────
+  # AGENTES
+  # ─────────────────────────────────────────────
+  agents:
+    - id: fred
+      name: "Fred"
+      icon: clipboard
+      avatar: "https://api.dicebear.com/9.x/adventurer/svg?seed=Fred"
+      description: "Diretor de produção — briefing, ficha da marca, significado de cada frase, plano + storyboard e aprovação obrigatória antes de qualquer render"
+      prompt: agents/fred.agent.md
+
+    - id: velma
+      name: "Velma"
+      icon: book
+      avatar: "https://api.dicebear.com/9.x/adventurer/svg?seed=Velma"
+      description: "Direção de motion — cenas de lettering e de ilustração, símbolo animado e assinatura final, sempre a partir da ficha e das referências (sem identidade fixa)"
+      prompt: agents/velma.agent.md
+
+    - id: dafne
+      name: "Dafne"
+      icon: video
+      avatar: "https://api.dicebear.com/9.x/adventurer/svg?seed=Dafne"
+      description: "Engine de renderização v3 — HTML animado → vídeo quadro a quadro (30 fps fixos, PNG sem perda, alfa para overlays)"
+      prompt: agents/dafne.agent.md
+      script: daphne.js
+      usage: "node daphne.js <arquivo.html> <duracao_segundos> [audio_map.json] [--alpha] [--ficha ficha.json] [--params json] [--out arquivo]  |  fotos sem render: --quadros 0.5,2,4  |  render exige plano aprovado"
+
+    - id: scooby
+      name: "Scooby"
+      icon: music
+      avatar: "https://api.dicebear.com/9.x/adventurer/svg?seed=Scooby"
+      description: "Engine de áudio — SFX sempre da biblioteca da squad (biblioteca_audio/, ElevenLabs Sound Effects) + BGM/SFX da pasta da pessoa; gera audio_map.json"
+      prompt: agents/scooby.agent.md
+      script: tools/audio_inventario.js
+      usage: "node tools/audio_inventario.js --pasta <pasta_de_audio> --duracao <segundos> --out output/vN/audio"
+
+    - id: scrappy
+      name: "Salsicha"
+      icon: scissors
+      avatar: "https://api.dicebear.com/9.x/adventurer/svg?seed=Salsicha"
+      description: "Editor de vídeo v3 — transcreve com glossário, detecta regravações, corta pela fala, reenquadra, aplica camadas, legenda no estilo da marca e confere (QA)"
+      prompt: agents/scrappy.agent.md
+      script: scrappy_editor.js
+      usage: "node scrappy_editor.js --input <pasta> --ficha ficha.json [--dry-run --json-out analise.json] [--analise analise.json --cortes cortes.json --simular] [--zoom auto] [--legendas] --output video.mp4  |  edição exige plano aprovado"
+
+  # ─────────────────────────────────────────────
+  # CAMINHOS DE PRODUÇÃO
+  # ─────────────────────────────────────────────
+  caminhos:
+    - id: caminho-1
+      nome: "Vídeo com Texto"
+      descricao: >
+        Vídeo 100% animado com textos em motion design, música e efeitos sonoros.
+        Não requer material gravado. O ROTEIRO É OBRIGATÓRIO E VEM DO USUÁRIO: a squad
+        não escreve copy. Fred coleta o briefing e organiza o roteiro em cenas sem
+        alterar o texto e dá significado a cada frase, Velma cria uma cena por ideia,
+        o plano + storyboard é aprovado pelo usuário, Scooby sincroniza os áudios e Dafne renderiza.
+      agentes: [fred, velma, scooby, dafne]
+
+    - id: caminho-2
+      nome: "Vídeo Editado"
+      descricao: >
+        Edição profissional de material gravado (celular, câmera, etc).
+        Salsicha transcreve com glossário; Fred dá significado a cada frase (o que fica, o que sai,
+        qual é o gancho) e escolhe os takes olhando os quadros; ênfases (punch-in) nos momentos-chave,
+        elementos de reforço, legenda com destaque nas palavras-chave, áudio −14 LUFS e QA.
+        Plano + storyboard aprovados pelo usuário antes de renderizar.
+      agentes: [fred, scrappy, dafne]
+      requisitos:
+        - "Pasta com arquivos gravados (MP4, MOV, AVI, MKV — todos aceitos)"
+        - "Python 3.8+, faster-whisper e FFmpeg — instalados automaticamente por tools/setup.js na 1ª execução"
+
+    - id: caminho-3
+      nome: "Vídeo Híbrido"
+      descricao: >
+        Vídeo gravado + motion, quando a referência mistura a pessoa falando com tela dividida,
+        interface animada, B-roll, cards ou encerramento em motion. A tela muda quando a ideia muda:
+        Velma cria as camadas pelo significado de cada frase e pelos tempos simulados
+        (transcricao_editada.json), tudo entra no plano + storyboard, e só depois da aprovação
+        Dafne renderiza e Salsicha compõe (camadas.json) e confere.
+      agentes: [fred, scrappy, velma, scooby, dafne]
+
+    - id: caminho-4
+      nome: "Vídeo com Avatar (HeyGen)"
+      descricao: >
+        O roteiro do usuário vira narração com a voz da Osiany no ElevenLabs (tools/voz.js); o avatar da HeyGen
+        (SEMPRE heygen_avatar_id do .env da raiz) faz o lip-sync dessa narração (tools/avatar.js, CLI heygen logada).
+        O MP4 baixado vira o material gravado e segue o fluxo do híbrido: significado, cortes, zoom in/out (punch-in
+        e zoom out nas viradas), camadas de motion e efeitos visuais (Velma), SFX + trilha (Scooby), legenda no estilo
+        da ficha (Salsicha), plano + storyboard aprovados e QA. Gerar o avatar gasta créditos: só com o ok do usuário.
+      agentes: [fred, scrappy, velma, scooby, dafne]
+      requisitos:
+        - "CLI heygen instalada e logada (heygen auth login --oauth)"
+        - "heygen_avatar_id e Elevenlabs_voz_id no .env da raiz"
+
+  # ─────────────────────────────────────────────
+  # PIPELINE
+  # ─────────────────────────────────────────────
+  pipeline:
+    steps:
+      - id: step-01
+        agent: fred
+        label: "Onboarding em etapas: 0) aviso de modelo + confirmação · 1) apresentação + briefing da marca · 2) pasta de efeitos/trilhas · 3) motion ou gravado · 4) roteiro + narração (motion) ou roteiro + pasta das gravações (gravado)"
+        execution: inline
+        note: |
+          Uma etapa por mensagem (agents/fred.agent.md, "ONBOARDING EM ETAPAS").
+          0. PRIMEIRA MENSAGEM, SOZINHA: aviso de modelo (texto fixo) + confirmação do usuário (Opus 5.5 ou Fable).
+             Sem confirmação nada roda (nem setup, nem apresentação, nem perguntas). "Vou trocar o modelo" → Fred para.
+          1. Só depois da confirmação: apresentação + formulário A da marca. Marca já salva em marcas/<marca>/ → só "para qual marca?".
+             Com as respostas: procurar arquivos, analisar os vídeos de referência, montar e confirmar a ficha
+             (papéis das cores: fundo principal, destaque, terceira cor) e salvar com node tools/marca.js salvar
+             (copia fontes e logos para marcas/<marca>/arquivos/; caminhos relativos, funciona em qualquer computador).
+          2. Pasta de efeitos sonoros e trilhas → tools/audio_inventario.js (registrada no perfil da marca).
+          3. FORMATO — SEMPRE perguntar (AskUserQuestion), toda execução, mesmo se parecer óbvio:
+             Animação (motion sem narração) · Narração + motion (voz ElevenLabs) · Avatar HeyGen (Caminho 4) · Vídeo gravado.
+             (híbrido é proposto se a referência do gravado pedir).
+          4. Animação: roteiro. Narração + motion: roteiro (narração com a voz da Osiany no ElevenLabs: tools/voz.js).
+             Avatar HeyGen: roteiro (narração ElevenLabs → avatar do .env heygen_avatar_id via tools/avatar.js). Gravado: roteiro + pasta das gravações.
+          Áudio nunca implícito.
+
+      - id: step-01-checkpoint
+        type: checkpoint
+        label: "Perfil visual e referências — confirmar ou corrigir a ficha antes de seguir"
+        options: [confirmar, corrigir]
+        on_reject: step-01
+
+      - id: step-01b
+        agent: fred
+        label: "Fred recebe o briefing do vídeo — objetivo, plataforma, tom, material disponível e caminho desejado"
+        execution: inline
+        note: "Usa a ficha de perfil confirmada como único contexto de empresa. Não pergunta a empresa de novo. Registra caminho = motion | gravado | hibrido | avatar e, no motion, narracao = true (Narração + motion) | false (Animação). As conditions dos steps seguintes dependem delas."
+
+      - id: step-02-fork
+        type: fork
+        label: "Decisão de caminho — o Fred registra caminho = motion | gravado | hibrido; cada step abaixo tem uma condition que depende dessa variável"
+        branches:
+          - condition: "caminho-1"
+            goto: step-c1-01
+          - condition: "caminho-2"
+            goto: step-c2-01
+          - condition: "caminho-3"
+            goto: step-c2-01
+          - condition: "caminho-4"
+            goto: step-c4-01
+
+      # ═════════════════════════════════════════════════════════════
+      # REGRA DE TODOS OS CAMINHOS: SIGNIFICADO → QUADROS → PLANO → APROVAÇÃO → RENDER
+      # Nenhum render acontece sem plano aprovado pelo usuário (tools/plano.js).
+      # A Dafne e o Salsicha BLOQUEIAM o render sem aprovação ou se o plano mudou depois dela.
+      # ═════════════════════════════════════════════════════════════
+
+      # ── CAMINHO 1 — MOTION ──────────────────────────────────
+      - id: step-c1-01
+        condition: "caminho == \"motion\""
+        agent: fred
+        label: "Fred recebe o roteiro do usuário (obrigatório), mantém o texto e gera o significado de cada frase"
+        execution: inline
+        note: |
+          GATE: sem roteiro do usuário o Caminho 1 não avança (a squad não escreve copy).
+          Salva output/vN/step-c1-01-roteiro.md (texto exato) e output/vN/roteiro.txt.
+          NARRAÇÃO PADRÃO — voz da Osiany no ElevenLabs. ID da voz = SEMPRE Elevenlabs_voz_id do .env da raiz (nunca fixo, nunca --voz); ajustes em config/elevenlabs.json:
+            node tools/voz.js --roteiro output/vN/roteiro.txt --out output/vN/narracao.mp3
+            node tools/narracao.js --audio output/vN/narracao.mp3 --roteiro output/vN/roteiro.txt --transcricao output/vN/narracao_palavras.json --out output/vN/narracao.json
+          COM narração em arquivo próprio (só se a pessoa mandar):
+            node tools/narracao.js --audio <narração.mp3> --roteiro output/vN/roteiro.txt --out output/vN/narracao.json
+            node tools/frases.js --editada output/vN/narracao.json --out output/vN/significado.json
+            (tempos das cenas = tempos da voz; diferenças entre voz e roteiro são mostradas ao usuário)
+          SEM narração:
+            node tools/frases.js --roteiro output/vN/roteiro.txt --out output/vN/significado.json
+          Preenche em cada frase: funcao, ideia, palavras_chave (da própria fala), visual.
+          Confere: node tools/frases.js --validar output/vN/significado.json
+
+      - id: step-c1-assets
+        condition: "caminho == \"motion\" and a referência/marca usa vídeo real de fundo"
+        agent: fred
+        label: "(Opcional) Vídeos de fundo via Pexels — só quando a referência usa imagem real de fundo"
+        execution: cli
+        note: "Motion gráfico (tipografia, interface, formas da marca) NÃO usa banco de imagens. Chave em .env, nunca exposta."
+
+      - id: step-c1-02
+        condition: "caminho == \"motion\""
+        agent: velma
+        label: "Velma cria os HTMLs: cenas de lettering (modelos/lettering.js) alternadas com ilustração, uma por ideia (2–4 s), símbolo animado em algumas cenas e assinatura final (modelos/assinatura.html); revisa com fotos (--quadros), sem renderizar"
+        execution: inline
+
+      - id: step-c1-plano
+        condition: "caminho == \"motion\""
+        agent: fred
+        label: "Fred monta output/vN/plano.json (cenas com tempo, fala, ideia, visual, quadro) e roda node tools/plano.js preparar"
+        execution: cli
+
+      - id: step-c1-aprovacao
+        condition: "caminho == \"motion\""
+        type: checkpoint
+        label: "APROVAÇÃO OBRIGATÓRIA — Fred mostra plano.md + storyboard.jpg; só com o ok explícito roda node tools/plano.js aprovar"
+        options: [aprovar, ajustar]
+        on_reject: step-c1-02
+
+      - id: step-c1-04
+        condition: "caminho == \"motion\" and a animação requer áudio"
+        agent: scooby
+        label: "Scooby escolhe SFX da biblioteca_audio/ (sempre) e BGM/SFX da pasta da pessoa (tools/audio_inventario.js; efeito faltando: tools/sfx.js) e monta o audio_map.json"
+        execution: cli
+
+      - id: step-c1-05
+        condition: "caminho == \"motion\""
+        agent: dafne
+        label: "Dafne renderiza quadro a quadro — node daphne.js <anim.html> <duracao> [audio_map.json] [--narracao narração.mp3] --ficha output/vN/ficha.json --out output/vN/<nome>.mp4 (plano aprovado na mesma pasta; só áudio: --remixar video.mp4)"
+        execution: cli
+
+      - id: checkpoint-c1
+        condition: "caminho == \"motion\""
+        type: checkpoint
+        label: "Revisão do MP4 — Fred confere antes (folha de quadros + QA); o usuário aprova ou pede ajuste"
+        options: [aprovar, ajustar]
+
+      # ── CAMINHO 4 — AVATAR HEYGEN ───────────────────────────
+      - id: step-c4-01
+        condition: "caminho == \"avatar\""
+        agent: fred
+        label: "Fred recebe o roteiro (obrigatório), organiza sem reescrever e gera a narração com a voz da Osiany (tools/voz.js); entrega a narracao.mp3 para ouvir"
+        execution: inline
+        note: |
+          Mesmas regras de roteiro do Caminho 1 (agents/fred.agent.md, "ROTEIRO" e "CAMINHO 4 — AVATAR HEYGEN").
+            node tools/voz.js --roteiro output/vN/roteiro.txt --out output/vN/narracao.mp3
+
+      - id: step-c4-custo
+        condition: "caminho == \"avatar\""
+        type: checkpoint
+        label: "Ok para gastar créditos — Fred roda node tools/avatar.js --audio output/vN/narracao.mp3 --out output/vN/gravacao/avatar.mp4 (sem --confirmar: mostra avatar do .env, formato, duração e créditos) e pergunta"
+        options: [gerar o avatar, ajustar a narração]
+        on_reject: step-c4-01
+
+      - id: step-c4-02
+        condition: "caminho == \"avatar\""
+        agent: fred
+        label: "Gerar e baixar o avatar — node tools/avatar.js --audio output/vN/narracao.mp3 --out output/vN/gravacao/avatar.mp4 --confirmar; depois segue como híbrido com --input output/vN/gravacao"
+        execution: cli
+        note: |
+          Avatar = SEMPRE heygen_avatar_id do .env (nunca fixo). Voz = ElevenLabs (a HeyGen só faz lip-sync).
+          Falhou o download: node tools/avatar.js --video-id <id> --out output/vN/gravacao/avatar.mp4 (não gerar de novo).
+          A partir daqui os steps step-c2-* e step-c3-01 rodam com caminho = avatar, e são OBRIGATÓRIOS:
+          zoom in/out (--zoom auto + ênfases), camadas de motion/efeitos visuais (Velma), SFX + trilha (Scooby) e --legendas.
+
+      # ── CAMINHOS 2, 3 E 4 — GRAVADO / HÍBRIDO / AVATAR (edição) ─
+      - id: step-c2-01
+        condition: "caminho == \"gravado\" or caminho == \"hibrido\" or caminho == \"avatar\""
+        agent: fred
+        label: "Fred confirma pasta dos arquivos gravados, referência de edição, legenda e BGM (formato e tamanho são padrão: não pergunta)"
+        execution: inline
+        note: "Copiar o bruto do Google Drive para disco local antes (o streaming do Drive é lento)."
+
+      - id: step-c2-02
+        condition: "caminho == \"gravado\" or caminho == \"hibrido\" or caminho == \"avatar\""
+        agent: scrappy
+        label: "Análise — node scrappy_editor.js --input <pasta> --ficha output/vN/ficha.json --modelo large-v3-turbo --dry-run --json-out output/vN/analise.json --output output/vN/video.mp4"
+        execution: cli
+
+      - id: step-c2-significado
+        condition: "caminho == \"gravado\" or caminho == \"hibrido\" or caminho == \"avatar\""
+        agent: fred
+        label: "Significado — node tools/frases.js --analise output/vN/analise.json --out output/vN/significado.json; Fred corrige nomes e preenche funcao/ideia/palavras_chave/visual/manter"
+        execution: inline
+        note: "Repetição e enrolação saem (manter:false). Gancho mais forte primeiro (campo ordem). Validar com --validar."
+
+      - id: step-c2-quadros
+        condition: "caminho == \"gravado\" or caminho == \"hibrido\" or caminho == \"avatar\""
+        agent: fred
+        label: "Quadros — node tools/quadros.js --significado ... --analise ... ; Fred abre as folhas e escolhe takes pela IMAGEM (olho fechado, olhar perdido, cabeça cortada, energia) e marca gestos para ênfase"
+        execution: inline
+
+      - id: step-c2-cortes
+        condition: "caminho == \"gravado\" or caminho == \"hibrido\" or caminho == \"avatar\""
+        agent: fred
+        label: "Cortes — node tools/frases.js --cortes output/vN/significado.json --out output/vN/cortes.json; acrescenta ênfases (punch-in) nos momentos-chave; simula: scrappy_editor.js ... --simular"
+        execution: cli
+
+      - id: step-c3-01
+        condition: "caminho == \"hibrido\" or caminho == \"avatar\" or (caminho == \"gravado\" and a fala cita número, ferramenta ou resultado)"
+        agent: velma
+        label: "(Caminho 3 e reforços) Velma cria camadas e elementos de reforço sincronizados com transcricao_editada.json (simulada); Fred monta camadas.json"
+        execution: inline
+        note: "Também no Caminho 2: elementos de reforço (animacoes/modelos/reforco.html, layout sobreposta) quando a fala cita número, ferramenta ou resultado."
+
+      - id: step-c2-plano
+        condition: "caminho == \"gravado\" or caminho == \"hibrido\" or caminho == \"avatar\""
+        agent: fred
+        label: "Fred monta output/vN/plano.json (cortes, camadas, legenda com palavras-chave, cenas com quadro) e roda node tools/plano.js preparar"
+        execution: cli
+
+      - id: step-c2-aprovacao
+        condition: "caminho == \"gravado\" or caminho == \"hibrido\" or caminho == \"avatar\""
+        type: checkpoint
+        label: "APROVAÇÃO OBRIGATÓRIA — Fred mostra plano.md + storyboard.jpg (gancho, o que sai, ordem, zooms, camadas); só com o ok explícito roda node tools/plano.js aprovar"
+        options: [aprovar, ajustar]
+        on_reject: step-c2-significado
+
+      - id: step-c2-04
+        condition: "caminho == \"gravado\" or caminho == \"hibrido\" or caminho == \"avatar\""
+        agent: scrappy
+        label: "Edição — node scrappy_editor.js --input <pasta> --analise output/vN/analise.json --ficha output/vN/ficha.json --zoom auto --legendas [--bgm ...] --output output/vN/<nome>.mp4 (cortes/camadas/palavras-chave vêm do plano aprovado)"
+        execution: cli
+
+      - id: checkpoint-c2
+        condition: "caminho == \"gravado\" or caminho == \"hibrido\" or caminho == \"avatar\""
+        type: checkpoint
+        label: "Fred lê qa/<nome>_relatorio.md e abre qa/<nome>_folha.jpg; corrige problemas antes; depois o usuário aprova ou pede ajuste"
+        options: [aprovar, ajustar]
+
+      # ── FINAL (todos os caminhos) ──────────────────────────────
+      - id: step-entrega
+        agent: fred
+        label: "Entrega — copia o MP4 aprovado para a pasta do material gravado com o nome REELS <MARCA> <CONTEÚDO> EDITADO.mp4, confere o tamanho, apaga os temporários (output/vN/temp, frames, wav) e informa o caminho completo"
+        execution: inline
+        note: "Regra em agents/fred.agent.md, seções 'ENTREGA DO VÍDEO FINAL' e 'ARQUIVOS TEMPORÁRIOS — LIMPEZA'. Só roda depois da aprovação do usuário; pedido de ajuste volta ao step anterior sem apagar nada."
+
+  # ─────────────────────────────────────────────
+  # SETUP
+  # ─────────────────────────────────────────────
+  setup:
+    automatico: "tools/setup.js roda sozinho na 1ª execução da Dafne/Salsicha (e pelo Fred no início): npm install, FFmpeg (winget/brew), Python (winget/brew), faster-whisper (pip). Resultado em .ambiente.json, por computador."
+    manual: "node tools/setup.js   (ou npm run setup) — --forcar refaz a conferência"
+    unico_pre_requisito: "Node.js >= 18 (https://nodejs.org) — é ele que roda o setup"
+    node_version: ">=18"
+    python_version: ">=3.8"
+    ffmpeg: "instalado pelo setup (Windows: winget Gyan.FFmpeg)"
+    dependencies_node:
+      - puppeteer: "^25.1.0"
+      - fluent-ffmpeg: "^2.1.3"
+      - "@ffmpeg-installer/ffmpeg": "^1.1.0"
+      - dotenv: "^17.4.2"
+      - gsap: "^3.12.5   (cópia local usada pela Dafne — o render não depende de CDN)"
+    dependencies_python:
+      - faster-whisper: "gratuito, 100% local, mais rápido e preciso (large-v3-turbo)"
+      - openai-whisper: "alternativa"

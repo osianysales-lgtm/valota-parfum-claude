@@ -1,0 +1,3 @@
+prompt: short tension riser building up, cinematic, ends abruptly
+duracao: 2
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)

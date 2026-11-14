@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      width: 1080px;
+      height: 1920px;
+      background: #0d0d0d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    /* VELMA — arte visual */
+    .btn-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: scale(0);
+    }
+
+    .btn {
+      background: #ffffff;
+      color: #0d0d0d;
+      font-size: 52px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      padding: 44px 100px;
+      border-radius: 80px;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 60px rgba(255,255,255,0.15);
+      animation: pulse 1.2s ease-in-out 1.4s 2;
+    }
+
+    /* FRED — motion */
+
+    /* 1. Pamp: nasce do 0 e estoura antes de assentar */
+    .btn-wrapper {
+      animation:
+        popup 0.8s ease 0.4s both,
+        click  0.25s ease 4s both;
+    }
+
+    @keyframes popup {
+      0%   { transform: scale(0);    opacity: 0; }
+      55%  { transform: scale(1.2);  opacity: 1; }
+      72%  { transform: scale(0.8);  }
+      88%  { transform: scale(1.1);  }
+      100% { transform: scale(1.0);  }
+    }
+
+    @keyframes click {
+      0%   { transform: scale(1); }
+      45%  { transform: scale(0.91); }
+      100% { transform: scale(1); }
+    }
+
+    /* 2. Pulso de brilho */
+    @keyframes pulse {
+      0%   { box-shadow: 0 0 60px rgba(255,255,255,0.15); }
+      50%  { box-shadow: 0 0 100px rgba(255,255,255,0.4); }
+      100% { box-shadow: 0 0 60px rgba(255,255,255,0.15); }
+    }
+
+    /* 3. Ripple no clique */
+    .ripple {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 80px;
+      background: rgba(0,0,0,0.18);
+      opacity: 0;
+      animation: ripple 0.4s ease 4s both;
+    }
+
+    @keyframes ripple {
+      0%   { opacity: 0.5; transform: scale(0.85); }
+      100% { opacity: 0;   transform: scale(1.15); }
+    }
+
+    /* 4. Cursor */
+    .cursor {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border: 4px solid rgba(255,255,255,0.8);
+      border-radius: 50%;
+      top: 50%;
+      left: 60%;
+      transform: translate(-50%, -50%) scale(0);
+      animation:
+        cursor-appear 0.3s ease 3.2s forwards,
+        cursor-click  0.25s ease 4s forwards;
+    }
+
+    @keyframes cursor-appear {
+      0%   { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+      100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+    }
+
+    @keyframes cursor-click {
+      0%   { transform: translate(-50%, -50%) scale(1); }
+      50%  { transform: translate(-50%, -50%) scale(0.6); }
+      100% { transform: translate(-50%, -50%) scale(1); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="btn-wrapper">
+    <button class="btn">
+      <div class="ripple"></div>
+      clique aqui
+    </button>
+    <div class="cursor"></div>
+  </div>
+
+</body>
+</html>

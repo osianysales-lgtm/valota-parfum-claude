@@ -1,0 +1,3 @@
+prompt: gentle river water lapping against aluminum boat hull, calm ambience
+duracao: 5
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)

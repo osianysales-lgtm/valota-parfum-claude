@@ -1,0 +1,602 @@
+{
+  "version": 1,
+  "historyId": "726589d2-a61d-4cfa-a0ee-e0c85e509e7b",
+  "currentRevision": "84054850-bbb8-4e72-befd-5620d910be3e",
+  "pendingChanges": false,
+  "files": {
+    "assets/audio/caixa_registradora.mp3": {
+      "hash": "47b5c9127417fec3c1a797031abc9ed820c23e0d9dd11869de40e957e76d0a95",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/47/47b5c9127417fec3c1a797031abc9ed820c23e0d9dd11869de40e957e76d0a95"
+    },
+    "assets/audio/carimbo.mp3": {
+      "hash": "846df595f60b0ed49e6a2f98696ce153613989cef740d46887c7ac0539ce3b8f",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/84/846df595f60b0ed49e6a2f98696ce153613989cef740d46887c7ac0539ce3b8f"
+    },
+    "assets/audio/click_ui.mp3": {
+      "hash": "ada71f8ac3e8fd7aa08696bf794a8567452739b0166a7b5020387f477105a0ec",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/ad/ada71f8ac3e8fd7aa08696bf794a8567452739b0166a7b5020387f477105a0ec"
+    },
+    "assets/audio/ding_acerto.mp3": {
+      "hash": "e8df94186213019121eefee5be9274af5866821e68c1c04c8552a9d799dfb7ea",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/e8/e8df94186213019121eefee5be9274af5866821e68c1c04c8552a9d799dfb7ea"
+    },
+    "assets/audio/ding_notificacao.mp3": {
+      "hash": "61ce24bdd97b62d2dce2e622909fc3eaf4465a104782edf0a34e8d917c3002f4",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/61/61ce24bdd97b62d2dce2e622909fc3eaf4465a104782edf0a34e8d917c3002f4"
+    },
+    "assets/audio/disco_arranhado.mp3": {
+      "hash": "564374110c72cdf7f6f4c4c3fbf6042fd617f1a19223d4c0ab919daaab4fa29f",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/56/564374110c72cdf7f6f4c4c3fbf6042fd617f1a19223d4c0ab919daaab4fa29f"
+    },
+    "assets/audio/impact_grave.mp3": {
+      "hash": "3027be6ba9d9e28fb2f3a3a7280e81d1c37210c50ec1d54c996eb10a076d47dc",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/30/3027be6ba9d9e28fb2f3a3a7280e81d1c37210c50ec1d54c996eb10a076d47dc"
+    },
+    "assets/audio/plim_brilho_magico.mp3": {
+      "hash": "21d8c6c613564f850b41b7d9e99184735304f5584785ebb85e2f93299c0a84ca",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/21/21d8c6c613564f850b41b7d9e99184735304f5584785ebb85e2f93299c0a84ca"
+    },
+    "assets/audio/pop_leve.mp3": {
+      "hash": "29e1d2efbc6e723841802c1d84b9d112f79cf1877ef98abee12e9798a0a5a169",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/29/29e1d2efbc6e723841802c1d84b9d112f79cf1877ef98abee12e9798a0a5a169"
+    },
+    "assets/audio/shine_brilho.mp3": {
+      "hash": "6d663ccb583115e641ee39ca7c52c5db74fd500c14db619954e2a2e601295a5b",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/6d/6d663ccb583115e641ee39ca7c52c5db74fd500c14db619954e2a2e601295a5b"
+    },
+    "assets/audio/suspense_dun.mp3": {
+      "hash": "c58d624b4683d6b9cc31637059d04267fc4cdd3c38604468cddf31f3ef66bb86",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/c5/c58d624b4683d6b9cc31637059d04267fc4cdd3c38604468cddf31f3ef66bb86"
+    },
+    "assets/audio/whoosh_rapido.mp3": {
+      "hash": "983dde10b23be643334004e05ef1459ce767fc69e958303e33de6c1cbfb4c936",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/98/983dde10b23be643334004e05ef1459ce767fc69e958303e33de6c1cbfb4c936"
+    },
+    "assets/audio/whoosh_suave.mp3": {
+      "hash": "7fb73f0f296bbdcb2d0c890067b574a0f192b1c146696d2e263b95600268e33b",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/7f/7fb73f0f296bbdcb2d0c890067b574a0f192b1c146696d2e263b95600268e33b"
+    },
+    "assets/fonts/GothamBlack.otf": {
+      "hash": "99b87c0c6bf6947cd0034d9636fc2b8926dd1007281edf7a108b74e78636c5b0",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/99/99b87c0c6bf6947cd0034d9636fc2b8926dd1007281edf7a108b74e78636c5b0"
+    },
+    "assets/fonts/Montserrat.ttf": {
+      "hash": "0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/0f/0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7"
+    },
+    "assets/img/attar.png": {
+      "hash": "1490a5cfe7310a5129e3262d6a6a1695116b16070623e0ee2dd87e6748eca05b",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/14/1490a5cfe7310a5129e3262d6a6a1695116b16070623e0ee2dd87e6748eca05b"
+    },
+    "assets/img/jorge.png": {
+      "hash": "02cd316c6993cecc83c9a97fb49d1f0e5a6b26705f0df3ecdc25852a7f84f641",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/02/02cd316c6993cecc83c9a97fb49d1f0e5a6b26705f0df3ecdc25852a7f84f641"
+    },
+    "assets/img/pegasus.png": {
+      "hash": "d358fcabd68544ade1a0033d7022268a506803bb9f460887a2271de5c08b8595",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/d3/d358fcabd68544ade1a0033d7022268a506803bb9f460887a2271de5c08b8595"
+    },
+    "assets/img/perseus.png": {
+      "hash": "fd91bd083b6eef62240615b56712c6a4e1fda671de3460f02872f9275c65c477",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/fd/fd91bd083b6eef62240615b56712c6a4e1fda671de3460f02872f9275c65c477"
+    },
+    "assets/img/qaed.png": {
+      "hash": "f5a8803e50938dfe52c29068f915874a3e1c3c063da089b13078642267d0ba44",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/f5/f5a8803e50938dfe52c29068f915874a3e1c3c063da089b13078642267d0ba44"
+    },
+    "assets/img/salvo.png": {
+      "hash": "4e415b5afc88593136118cfc78b929661785f8af88c1c51db2ad9c7f5d9bd678",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/4e/4e415b5afc88593136118cfc78b929661785f8af88c1c51db2ad9c7f5d9bd678"
+    },
+    "compositions/captions.html": {
+      "hash": "33933f2e0f1d0ccef86aade46211ed257214ff758e0ee01a436f8fc483c7c244",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/33/33933f2e0f1d0ccef86aade46211ed257214ff758e0ee01a436f8fc483c7c244"
+    },
+    "compositions/dois.html": {
+      "hash": "44d148b5153884734cf89699f27ad08430a2a5369dd450d42278a59f00bf3a63",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/44/44d148b5153884734cf89699f27ad08430a2a5369dd450d42278a59f00bf3a63"
+    },
+    "compositions/final.html": {
+      "hash": "8479f6ea950528fe91162bafc70c89328b92ed9696d579b6fae0eefba5484898",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/84/8479f6ea950528fe91162bafc70c89328b92ed9696d579b6fae0eefba5484898"
+    },
+    "compositions/fundo.html": {
+      "hash": "1e0c60e56ebb0a8e0f77824442f1eb603f400fe1196abb2a2eb4a01a058bfed2",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/1e/1e0c60e56ebb0a8e0f77824442f1eb603f400fe1196abb2a2eb4a01a058bfed2"
+    },
+    "compositions/gancho.html": {
+      "hash": "65ee0a6490174fd269258d9dfcea46f2d273254f4106b44aae0edba84df7e12c",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/65/65ee0a6490174fd269258d9dfcea46f2d273254f4106b44aae0edba84df7e12c"
+    },
+    "compositions/lista.html": {
+      "hash": "f9bd662941248596ef1eca600999857a798483c28323c075e6ce5fc0b56d1112",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/f9/f9bd662941248596ef1eca600999857a798483c28323c075e6ce5fc0b56d1112"
+    },
+    "compositions/selo.html": {
+      "hash": "a74d10d948dcc6c560e77233bac100b0acfd215e414dee939e3cc8843bf4676b",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/a7/a74d10d948dcc6c560e77233bac100b0acfd215e414dee939e3cc8843bf4676b"
+    },
+    "compositions/um.html": {
+      "hash": "cf5c2090af7489195b34a8ed1e8c6f934a50c1f5b77c63ca8508b5a54665544f",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/cf/cf5c2090af7489195b34a8ed1e8c6f934a50c1f5b77c63ca8508b5a54665544f"
+    },
+    "hyperframes.json": {
+      "hash": "35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/35/35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7"
+    },
+    "index.html": {
+      "hash": "685abcb717857ee59ecaffa025b597fcf90c5a53aec0317b09147e7df6be9ce1",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/68/685abcb717857ee59ecaffa025b597fcf90c5a53aec0317b09147e7df6be9ce1"
+    },
+    "package.json": {
+      "hash": "8719e4d437cef7697e4b084f577a9c50c611a831d91b56270ef094cd31575216",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/87/8719e4d437cef7697e4b084f577a9c50c611a831d91b56270ef094cd31575216"
+    },
+    "assets/audio/narracao.mp3": {
+      "hash": "41a89d1daa45fdad20fd750f282e4b0240344a95a0155cf27715722dd3be0d53",
+      "content": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/41/41a89d1daa45fdad20fd750f282e4b0240344a95a0155cf27715722dd3be0d53"
+    }
+  },
+  "revisions": {
+    "84054850-bbb8-4e72-befd-5620d910be3e": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794664044048,
+      "endedAt": 1794664044077,
+      "files": {
+        "compositions/dois.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/49/49f1406d12f219c7ea1e16c0af81c500ba9786863f7b1edae3e45c19d8e74751",
+          "after": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/44/44d148b5153884734cf89699f27ad08430a2a5369dd450d42278a59f00bf3a63"
+        },
+        "compositions/um.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/db/db8eab1f283d56ec09abbf189ef37b908b195538670e08372544bf4cb7a458e7",
+          "after": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/cf/cf5c2090af7489195b34a8ed1e8c6f934a50c1f5b77c63ca8508b5a54665544f"
+        },
+        "index.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/34/3472791405dd7a6298d69f851ba5b6df523ccbcd2741c8b1e59774712d32a3ec",
+          "after": "/Users/osianysales/.cache/hyperframes/history/726589d2-a61d-4cfa-a0ee-e0c85e509e7b/blobs/68/685abcb717857ee59ecaffa025b597fcf90c5a53aec0317b09147e7df6be9ce1"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "84054850-bbb8-4e72-befd-5620d910be3e",
+      "id": "423b10d5-a7e2-4767-92bd-f4805280f0a0-5"
+    },
+    "revisions": {
+      "84054850-bbb8-4e72-befd-5620d910be3e": [
+        {
+          "scope": "full",
+          "id": "423b10d5-a7e2-4767-92bd-f4805280f0a0-0",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap2/frame-00-at-37.5s.png",
+          "time": 37.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794664054050,
+          "contentHash": "9291f6b86fdb873a7e72db275122bfc6565c5b1ea0346736e655892879ddc5ad",
+          "revision": "84054850-bbb8-4e72-befd-5620d910be3e",
+          "inputFingerprint": "9d28dfcaa219a95037db3cd589e29297998e7dda038ee3a6aac305bb256beaf4",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "423b10d5-a7e2-4767-92bd-f4805280f0a0-1",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap2/frame-01-at-41.5s.png",
+          "time": 41.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794664054050,
+          "contentHash": "9f5179e0c161cc20cb2d07dcee118a08c550e872c76012a3dfe3f44888ed28d9",
+          "revision": "84054850-bbb8-4e72-befd-5620d910be3e",
+          "inputFingerprint": "9d28dfcaa219a95037db3cd589e29297998e7dda038ee3a6aac305bb256beaf4",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "423b10d5-a7e2-4767-92bd-f4805280f0a0-2",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap2/frame-02-at-44.6s.png",
+          "time": 44.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794664054050,
+          "contentHash": "7f42ba10b67df63c2a3afe255cfb98e990c389046ed061a7c4ee8c3781fcec84",
+          "revision": "84054850-bbb8-4e72-befd-5620d910be3e",
+          "inputFingerprint": "9d28dfcaa219a95037db3cd589e29297998e7dda038ee3a6aac305bb256beaf4",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "423b10d5-a7e2-4767-92bd-f4805280f0a0-3",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap2/frame-03-at-47.95s.png",
+          "time": 47.95,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794664054050,
+          "contentHash": "d74e95199be94380dfafa21a1b415752aa2b2b50151e1c16a1cee32b31939e6d",
+          "revision": "84054850-bbb8-4e72-befd-5620d910be3e",
+          "inputFingerprint": "9d28dfcaa219a95037db3cd589e29297998e7dda038ee3a6aac305bb256beaf4",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "423b10d5-a7e2-4767-92bd-f4805280f0a0-4",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap2/frame-04-at-50.6s.png",
+          "time": 50.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794664054050,
+          "contentHash": "5bf8ed56ab7a2f96d2060df8bb0514954843117f73a409e28fb8514df705d885",
+          "revision": "84054850-bbb8-4e72-befd-5620d910be3e",
+          "inputFingerprint": "9d28dfcaa219a95037db3cd589e29297998e7dda038ee3a6aac305bb256beaf4",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "423b10d5-a7e2-4767-92bd-f4805280f0a0-5",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap2/frame-05-at-54.6s.png",
+          "time": 54.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794664054050,
+          "contentHash": "9cb7b2135f5e38bd69d13950df1fd88438aa279a17523feea6db2f598346be3d",
+          "revision": "84054850-bbb8-4e72-befd-5620d910be3e",
+          "inputFingerprint": "9d28dfcaa219a95037db3cd589e29297998e7dda038ee3a6aac305bb256beaf4",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "b3307eaa-1743-4898-80a3-02186b38c2aa-0",
+        "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap/frame-00-at-0s.png",
+        "time": 0,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794664011003,
+        "contentHash": "5f80b07a6fbd03ee35a9a3edfd9739b443c8ac92f456a31a5c3c4409fdf8d5c6",
+        "revision": null,
+        "inputFingerprint": "9a36985b3be1fe594d5df097d2da0f8d5e19e75dd76e9a0ce0e1709e82c1d95b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "b3307eaa-1743-4898-80a3-02186b38c2aa-1",
+        "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap/frame-01-at-5.8s.png",
+        "time": 5.8,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794664011003,
+        "contentHash": "e763a5b85ddd266094ac0dbd3b6007654a89f7f5422aafafa1fb9cc868b190d5",
+        "revision": null,
+        "inputFingerprint": "9a36985b3be1fe594d5df097d2da0f8d5e19e75dd76e9a0ce0e1709e82c1d95b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "b3307eaa-1743-4898-80a3-02186b38c2aa-2",
+        "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap/frame-02-at-13.95s.png",
+        "time": 13.95,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794664011003,
+        "contentHash": "92ad8a341138b8a0c9751738ff1fa5a6fd3469798c6bb0006c76dca2c8107d49",
+        "revision": null,
+        "inputFingerprint": "9a36985b3be1fe594d5df097d2da0f8d5e19e75dd76e9a0ce0e1709e82c1d95b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "b3307eaa-1743-4898-80a3-02186b38c2aa-3",
+        "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap/frame-03-at-17.6s.png",
+        "time": 17.6,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794664011003,
+        "contentHash": "704a1d4891f41e78effd9dd106304ca58eabc967cb57ff0cb2a7fb4a31a3c503",
+        "revision": null,
+        "inputFingerprint": "9a36985b3be1fe594d5df097d2da0f8d5e19e75dd76e9a0ce0e1709e82c1d95b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "b3307eaa-1743-4898-80a3-02186b38c2aa-4",
+        "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap/frame-04-at-24.9s.png",
+        "time": 24.9,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794664011003,
+        "contentHash": "2327fc23fa77d31996e5df5249fdeb8653f1d2fdd67f2a39d1daaa93e40f2db4",
+        "revision": null,
+        "inputFingerprint": "9a36985b3be1fe594d5df097d2da0f8d5e19e75dd76e9a0ce0e1709e82c1d95b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "b3307eaa-1743-4898-80a3-02186b38c2aa-5",
+        "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap/frame-05-at-28.9s.png",
+        "time": 28.9,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794664011003,
+        "contentHash": "b10bc4721651ff255e12c2638827a0a0900b0f2fd894f006041fb03051520118",
+        "revision": null,
+        "inputFingerprint": "9a36985b3be1fe594d5df097d2da0f8d5e19e75dd76e9a0ce0e1709e82c1d95b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "b3307eaa-1743-4898-80a3-02186b38c2aa-6",
+        "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap/frame-06-at-34.9s.png",
+        "time": 34.9,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794664011003,
+        "contentHash": "dda11555f1d8aa7c462e42e03f229bb0a6d7fe5d41b13d1ee14149e1952b3753",
+        "revision": null,
+        "inputFingerprint": "9a36985b3be1fe594d5df097d2da0f8d5e19e75dd76e9a0ce0e1709e82c1d95b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "b3307eaa-1743-4898-80a3-02186b38c2aa-7",
+        "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap/frame-07-at-44.6s.png",
+        "time": 44.6,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794664011003,
+        "contentHash": "5cb5a1657655aab52366a5a7cae3117fec96f37fdc68b08bf193dccec8ea3f0e",
+        "revision": null,
+        "inputFingerprint": "9a36985b3be1fe594d5df097d2da0f8d5e19e75dd76e9a0ce0e1709e82c1d95b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "b3307eaa-1743-4898-80a3-02186b38c2aa-8",
+        "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap/frame-08-at-47.95s.png",
+        "time": 47.95,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794664011003,
+        "contentHash": "43d4a5bdafb928471ebcdf3296840af191249e4e66db5c660cb9fd1253058c32",
+        "revision": null,
+        "inputFingerprint": "9a36985b3be1fe594d5df097d2da0f8d5e19e75dd76e9a0ce0e1709e82c1d95b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "b3307eaa-1743-4898-80a3-02186b38c2aa-9",
+        "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap/frame-09-at-50.6s.png",
+        "time": 50.6,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794664011003,
+        "contentHash": "744d1e5500392aa9474e8a13013cfc05a4f3d7840a44bee9f1c72786351f2b68",
+        "revision": null,
+        "inputFingerprint": "9a36985b3be1fe594d5df097d2da0f8d5e19e75dd76e9a0ce0e1709e82c1d95b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "b3307eaa-1743-4898-80a3-02186b38c2aa-10",
+        "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap/frame-10-at-54.6s.png",
+        "time": 54.6,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794664011003,
+        "contentHash": "877cd7e4d00c4aaf81a5574402b771a1e5295d57868d732edb5fd541d561f975",
+        "revision": null,
+        "inputFingerprint": "9a36985b3be1fe594d5df097d2da0f8d5e19e75dd76e9a0ce0e1709e82c1d95b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "b3307eaa-1743-4898-80a3-02186b38c2aa-11",
+        "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap/frame-11-at-58.1s.png",
+        "time": 58.1,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794664011003,
+        "contentHash": "cdb6356eb0d36d3be7f306298548d1866391a2c7da29dbcb4c6c99eabf525ab9",
+        "revision": null,
+        "inputFingerprint": "9a36985b3be1fe594d5df097d2da0f8d5e19e75dd76e9a0ce0e1709e82c1d95b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "b3307eaa-1743-4898-80a3-02186b38c2aa-12",
+        "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap/frame-12-at-60.4s.png",
+        "time": 60.4,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794664011003,
+        "contentHash": "33378c30dd9c9d9f9ffb06d57205ad8ce8a552f773b651d94ebd01fb84e872e8",
+        "revision": null,
+        "inputFingerprint": "9a36985b3be1fe594d5df097d2da0f8d5e19e75dd76e9a0ce0e1709e82c1d95b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "b3307eaa-1743-4898-80a3-02186b38c2aa-13",
+        "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap/frame-13-at-66s.png",
+        "time": 66,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794664011003,
+        "contentHash": "143dc8563a21cd7c7bb2513ed933235cf587641639ce82ec41f16b5f534ecb19",
+        "revision": null,
+        "inputFingerprint": "9a36985b3be1fe594d5df097d2da0f8d5e19e75dd76e9a0ce0e1709e82c1d95b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "b3307eaa-1743-4898-80a3-02186b38c2aa-14",
+        "image": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v32-top5-arabes-ate-200-narracao-na2/qa/snap/frame-14-at-69.6s.png",
+        "time": 69.6,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794664011003,
+        "contentHash": "4aeb7d739d333ffa5d8f9bd742ddb4e95d24a64e873de0cd0f9ceb0bcf41d81b",
+        "revision": null,
+        "inputFingerprint": "9a36985b3be1fe594d5df097d2da0f8d5e19e75dd76e9a0ce0e1709e82c1d95b",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  }
+}

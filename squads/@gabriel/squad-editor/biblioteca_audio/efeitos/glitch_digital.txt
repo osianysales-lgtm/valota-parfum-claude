@@ -1,0 +1,3 @@
+prompt: short digital glitch stutter, data corruption bleeps and static crackle, modern tech transition
+duracao: 1
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)

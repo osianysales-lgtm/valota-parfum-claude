@@ -1,0 +1,39 @@
+- [Direção de arte do Instagram Valota](valota-instagram-direcao-de-arte.md) — sempre checar últimas 9 publicações + cadência Petróleo & Âmbar antes de criar capa
+- [Paleta oficial + cartela aprovada](paleta-50-50-cores-familia.md) — SEMPRE abrir direcao-de-arte/paleta/paleta-valota-parfum.png antes de criar conteúdo; 50% base + 50% famílias
+- [Tipografia de posts e vídeos](tipografia-posts-videos.md) — usar Montserrat (ExtraBold, Regular, Light/Thin) + Gotham em todo post/vídeo novo
+- [Nome sempre "Valota Parfum"](nome-valota-parfum.md) — nunca escrever/falar só "Valota", em nada
+- [Controle de conteúdo 6 posts/dia](valota-parfum-controle-conteudo.md) — sistema local em Documentos + plano 10/11–09/12/2026, como usar e dados do TikTok
+- [PADRÃO de carrossel estilo tweet](valota-carrossel-tweet.md) — template + estrutura de copy aprovados; pedir print das 3 últimas publicações antes de gerar
+- [Não cortar quando cheira/mostra perfume](video-nao-cortar-cheirando-perfume.md) — conferir quadros de todo trecho removido antes de montar
+- [Ruído sem comer o "s" + legenda ≤20 caracteres](video-ruido-e-legenda-sem-cortar-palavra.md) — filtro dividido graves/agudos; "fresco" virou "fre" no v19
+- [Vídeo gravado sem espelhar](video-sem-espelhar.md) — nunca hflip nos vídeos dela, manter orientação original
+- [Formato dos vídeos de avatar](video-avatar-formato.md) — avatar pequeno em card embaixo (v13/v14), osianyreal + voz ElevenLabs, squad-editor
+- [Sempre mostrar o nome do arquivo](sempre-mostrar-nome-arquivo.md) — escrever nome exato + pasta de todo arquivo entregue, pra ela pesquisar
+- [Modelo "Que perfume é esse?"](modelo-que-perfume-e-esse.md) — vídeo que MAIS viralizou; virou vencedores.md no squad de copy; registrar todo novo vencedor lá
+- [Copy sempre pelo squad + narração](copy-sempre-squad-e-narracao.md) — perguntar se é avatar; avatar = fala fluida, poucas pausas, vícios de linguagem naturais
+- [Feed de referência @imersaoexponencia](referencia-feed-imersaoexponencia.md) — é assim que ela quer o feed; prints em direcao-de-arte/referencias/
+- [Narração = fundo creme + âmbar](video-narracao-fundo-creme.md) — NA1 creme (v20) e NA2 âmbar (v24) intercalados; fundo claro = fontes grossas
+- [Velocidade da voz = ritmo do v28 (~4,35 palavras/s)](voz-velocidade-padrao.md) — fator muda por geração (v28 1,47x, v29 1,67x); calcular e mandar amostra; 1,15x é LENTO
+- [CTA padrão 13/11: "...pra mais dicas e achados de perfumaria"](cta-final-indicacao-perfume.md) — fala "Segue a Valota Parfum pra…", legenda "Siga @valotaparfum para…"; salva (indicação/dica), compartilha (engraçado), comenta quase nunca · BONECOS: fala "parte X sai no próximo episódio aqui com a gente" (tela: "dos bonecos") + TODO pedido de seguir gera curiosidade do próximo vídeo ("aproveita e comenta": SIM no Cobrar pra cheirar, NÃO na Bidaya, decidido por saga)
+- [Legenda complementa + 1ª linha chamativa](legenda-complementa-gancho-1a-linha.md) — legenda traz algo a mais, nunca repete o vídeo; primeiras palavras fazem continuar lendo
+- [Sugestão de hashtags com nome do perfume](hashtags-sugestao-nome-perfume.md) — bloco TikTok+Instagram em toda legenda; nome de cada perfume certinho; base #perfume #perfumes #cheiroso
+- [Regra nova = só pros próximos](regra-nova-vale-pros-proximos.md) — não refazer vídeo pronto nem gastar crédito ElevenLabs/render sem ela pedir
+- [Copy fluida e conectada](copy-fluida-conectada.md) — REGRA DE TODA COPY (inclusive diálogo de bonecos e copy pronta do squad): 15–25 palavras/frase, conectivo em toda frase; conferir ANTES de gerar voz, sem ela pedir
+- [Lembrete: testar vídeo de 15–30 s](lembrete-testar-videos-curtos.md) — toda vez que 3+ vídeos seguidos forem de 50 s a 1 min, lembrar ela de testar curto
+- [Sistema de templates por formato](sistema-templates-por-formato.md) — COR VEM DO FORMATO: AV1 petróleo/AV2 react CREME, NA1 creme/NA2 âmbar, HU selo, CA1–CA3; intercalar; substitui 50/30/15/5
+- [Nunca gerar HTML](nao-gerar-html.md) — copy/roteiro vai direto no chat; painel da Íris desativado (gasta muito token)
+- [Gancho escrito fixo na tela](gancho-escrito-fixo-na-tela.md) — aparece grande no 1º quadro e fica 5–10 s parado (maioria assiste no mudo)
+- [Template de veredito com selo na capa](template-veredito-selo-capa.md) — selo amarelo (vale) / Pimenta (não vale) junto do gancho ~10 s, lateral direita, v22 gen.js chave VEREDITO
+- [Variar os perfumes](variar-perfumes.md) — não repetir Sauvage/BR540/Untold/Aventus; contar menções e priorizar perfumes novos
+- [Carrossel lista por blocos](carrossel-lista-por-blocos.md) — modelo @tiagodesign.br na cartela oficial; carrossel-lista/gerar.py; 1º uso 13/11 08h (10 árabes)
+- [Não repetir gancho](ganchos-nao-repetir.md) — ler conhecimento/ganchos-usados.md antes; nada de 8X/18X, preço x preço, "qual é você", "3 X", "não compra"
+- [Sem "padaria" e sem borrifadas](copy-sem-padaria-sem-borrifadas.md) — doce = "sobremesa", nunca padaria (lembra pão); não usar contagem de borrifadas
+- [Linguagem leiga, sem termo técnico](linguagem-leiga-sem-termo-tecnico.md) — nada de Iso E Super/ambroxan em post; trocar por imagem do dia a dia ("cheiro fantasma", "madeira macia")
+- [Sauvage = "Sauvage EDT"](sauvage-edt.md) — sempre citar a concentração EDT, na fala e no texto
+- [Gancho "hábito diário + desafio"](gancho-habito-diario-desafio.md) — APROVADO 13/11: "faz X todo santo dia, só que… aposto que você trava, né?"; copy de referência = mesmos tópicos/ordem, estratégia sem plágio
+- [Frase-chave sem efeito sonoro](video-frase-chave-sem-efeito.md) — lição do vídeo só com a voz; tique de roleta baixo (~0,1) e curto
+- [Série de bonecos 3D em episódios](serie-bonecos-3d-episodios.md) — só 2 sagas ativas (Cobrar pra cheirar R$29,90 + Bidaya x árabe milenar), resto em espera; fala emendada c/ conectivo, humor, segue + prévia ("comenta" decidido por saga), não criticar marca
+- [Vozes do elenco da série de bonecos](serie-bonecos-vozes-elenco.md) — Valdir=Sergio, Rafa=Davi Andrei, Bia=Raquel (ElevenLabs); nunca a voz dela nos bonecos
+- [Não generalizar ajuste de uma saga/peça](nao-generalizar-ajuste-de-uma-saga.md) — pedido dela vale só pro que ela está olhando; não virar regra geral nem mexer em outra saga sem perguntar
+- [Série de bonecos: 6 episódios aprovados](serie-bonecos-6-episodios.md) — roteiros FINAIS das sagas Cobrar pra cheirar + Bidaya; legenda ≤20 caracteres/linha, selo PARTE, bipe no Vanilla P*rn
+- [Direção de cena dos bonecos](bonecos-direcao-cena.md) — seguir reel referência; ação vira cena (Valdir anda e pendura a placa); info = corte pra tela 3D; nada na cara; nunca só o casco; boca sempre mexendo

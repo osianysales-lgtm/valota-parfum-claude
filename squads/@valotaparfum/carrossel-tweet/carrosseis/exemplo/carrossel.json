@@ -1,0 +1,38 @@
+{
+  "fundo": "branco",
+  "slides": [
+    {
+      "tipo": "capa",
+      "titulo": "🚨 5 erros que fazem seu perfume sumir antes do almoço!",
+      "subtitulo": "O problema pode não ser o perfume, e sim o jeito que você usa. ➡️",
+      "imagens": [
+        {"marcador": "8h"},
+        {"marcador": "Meio-dia"}
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "1. Esfregar os pulsos depois de borrifar.",
+      "texto": "Parece instinto, mas o atrito esquenta a pele e acelera a evaporação das notas de saída.\n\nO cheiro muda e vai embora mais rápido.",
+      "passo": "Borrifa → espera secar sozinho → **não encosta**."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "2. Passar perfume na pele seca.",
+      "texto": "Pele ressecada \"bebe\" o perfume. Pele hidratada segura a fragrância por mais tempo.",
+      "passos": [
+        "Banho → hidratante sem cheiro → perfume.",
+        "Pontos de calor: pescoço, atrás da orelha e dobra do braço."
+      ]
+    },
+    {
+      "tipo": "final",
+      "texto": "Se esse post te ajudou, já segue a **Valota Parfum** que por aqui eu te mostro de forma prática qual perfume vale cada centavo :)",
+      "posts": [
+        {"marcador": "Árabe ou grife?", "legenda": "Teste às cegas"},
+        {"marcador": "Top 5 árabes", "legenda": "Ranking da semana"},
+        {"marcador": "Vale o hype?", "legenda": "Laudo Valota Parfum"}
+      ]
+    }
+  ]
+}

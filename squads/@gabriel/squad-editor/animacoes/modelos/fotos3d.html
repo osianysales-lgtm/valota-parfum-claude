@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--
+  FOTOS 3D — perfumes reais (foto com fundo removido) "conversando" num palco 3D (Three.js, render pela Dafne)
+
+  Arquivos na MESMA pasta do HTML:
+    cena_dados.js   ← gerado por tools/dialogo.js (falas, tempos por palavra, boca/voz por quadro, palavras_chave, reforcos)
+    cena_config.js  ← window.CENA = {
+                        personagens: { <id>: { foto: "recortes/x_final.png", x: -0.62, altura: 1.75, rim: "#4f78ff", selo: "prata" | "ouro" } },
+                        narrador: "osiany", narradorNome: "OSIANY · VALOTA PARFUM", marca: "VALOTA PARFUM" }
+  Fotos: node tools/recorte.js --entrada fotos --out recortes   (fundo removido, PNG com transparência)
+  Render: node daphne.js cena.html <duracao> audio_map.json --out video.mp4
+
+  Quem fala: pula e deforma com a voz, ganha brilho atrás e luz; quem escuta fica mais apagado.
+  Narrador (sem foto): plano aberto + tarja com nome e barra de voz.
+  Câmera: foco em quem fala, aberto na fala do narrador e no final, punch-in + tremida nos reforços.
+-->
+<html><head><meta charset="utf-8">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1080px;height:1920px;overflow:hidden;background:#05070d}
+  canvas{position:absolute;inset:0;display:block}
+  img.foto{position:absolute;width:1px;height:1px;opacity:0}
+  #vin{position:absolute;inset:0;pointer-events:none;
+       background:radial-gradient(ellipse 80% 62% at 50% 44%,rgba(0,0,0,0) 55%,rgba(0,0,0,.62) 100%),
+                  linear-gradient(180deg,rgba(0,0,0,.4) 0%,rgba(0,0,0,0) 14%,rgba(0,0,0,0) 80%,rgba(0,0,0,.5) 100%)}
+  #leg{position:absolute;left:60px;right:60px;top:1250px;height:180px;display:flex;align-items:center;justify-content:center;text-align:center;
+       font:800 78px/1.08 'Avenir Next','Helvetica Neue',Arial,sans-serif;color:#fff;letter-spacing:-1px}
+  #leg>div{display:inline-flex;flex-wrap:wrap;justify-content:center;padding:14px 28px 18px;border-radius:28px;background:rgba(6,8,14,.62);box-shadow:0 10px 40px rgba(0,0,0,.45)}
+  #leg span{display:inline-block;margin:0 11px}
+  #leg span.k{color:#F5C451}
+  .selo{position:absolute;top:0;left:0;padding:20px 38px;border-radius:999px;white-space:nowrap;
+        font:800 60px/1 'Avenir Next','Helvetica Neue',Arial,sans-serif;color:#17110a;letter-spacing:-.5px;
+        background:linear-gradient(180deg,#FFE7A8 0%,#E9B85A 55%,#B9842E 100%);
+        box-shadow:0 0 0 3px rgba(255,236,190,.55) inset,0 14px 50px rgba(233,184,90,.55)}
+  .selo.prata{color:#0b1530;background:linear-gradient(180deg,#F4F7FB 0%,#BAC6D8 55%,#7D8BA3 100%);
+        box-shadow:0 0 0 3px rgba(255,255,255,.6) inset,0 14px 50px rgba(140,170,220,.45)}
+  #marca{position:absolute;left:0;right:0;top:170px;text-align:center;opacity:0;
+         font:500 40px/1 Didot,'Bodoni 72',Georgia,serif;letter-spacing:14px;color:#F1D79A;text-shadow:0 0 24px rgba(241,215,154,.5)}
+  #tarja{position:absolute;left:90px;top:1460px;display:flex;align-items:center;gap:22px;padding:18px 30px 18px 22px;border-radius:22px;opacity:0;
+         background:linear-gradient(90deg,rgba(18,14,8,.88),rgba(18,14,8,.6));border:2px solid rgba(241,215,154,.55);box-shadow:0 12px 40px rgba(0,0,0,.5)}
+  #tarja .mic{width:58px;height:58px;border-radius:50%;background:linear-gradient(180deg,#FFE7A8,#C9913A);display:flex;align-items:center;justify-content:center;font-size:30px}
+  #tarja .nome{font:700 36px/1.1 'Avenir Next',sans-serif;color:#F7E7C1;letter-spacing:2px}
+  #tarja .barras{display:flex;gap:6px;align-items:center;height:46px;margin-left:8px}
+  #tarja .barras i{display:block;width:8px;border-radius:4px;background:#F5C451;height:10px}
+</style></head><body>
+<div id="vin"></div><div id="marca"></div><div id="selos"></div>
+<div id="tarja"><div class="mic">🎙</div><div class="nome"></div><div class="barras"></div></div>
+<div id="leg"></div>
+<script src="cena_config.js"></script>
+<script src="cena_dados.js"></script>
+<script>
+  // <img> no DOM: a Dafne espera as imagens carregarem antes do 1º quadro
+  for (const [id, p] of Object.entries(window.CENA.personagens)) {
+    const i = document.createElement('img'); i.className = 'foto'; i.id = 'foto_' + id; i.src = p.foto; document.body.appendChild(i);
+  }
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { Reflector } from 'three/addons/objects/Reflector.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+
+const D = window.DIALOGO, C = window.CENA, W = 1080, H = 1920, FPS = D.fps || 30;
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const ease = k => k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
+const sstep = (a, b, x) => { const k = clamp((x - a) / (b - a)); return k * k * (3 - 2 * k); };
+const backOut = k => { const c = 1.9; return 1 + (c + 1) * Math.pow(k - 1, 3) + c * Math.pow(k - 1, 2); };
+function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+const norm = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^\w%$@]+/g, '');
+
+// ── RENDERER / CENA ──────────────────────────────────────────────────────
+const renderer = new THREE.WebGLRenderer({ antialias: false, preserveDrawingBuffer: true, powerPreference: 'high-performance' });
+renderer.setPixelRatio(1); renderer.setSize(W, H);
+renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 0.95;
+document.body.prepend(renderer.domElement);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x04060c);
+scene.fog = new THREE.FogExp2(0x060914, 0.08);
+scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture;
+scene.environmentIntensity = 0.5;
+const camera = new THREE.PerspectiveCamera(30, W / H, 0.05, 80);
+function tex(w, h, draw) { const c = document.createElement('canvas'); c.width = w; c.height = h; draw(c.getContext('2d'), w, h); const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t; }
+const radial = (cor) => tex(256, 256, (g, w, h) => { const r = g.createRadialGradient(128, 128, 0, 128, 128, 128); r.addColorStop(0, cor); r.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = r; g.fillRect(0, 0, w, h); });
+
+// ── PALCO ────────────────────────────────────────────────────────────────
+scene.add(new THREE.HemisphereLight(0x6f7fb8, 0x0a0705, 0.35));
+const floorRef = new Reflector(new THREE.PlaneGeometry(40, 40), { textureWidth: 720, textureHeight: 1280, color: 0x9a9aa6 });
+floorRef.rotation.x = -Math.PI / 2; scene.add(floorRef);
+const floorTop = new THREE.Mesh(new THREE.PlaneGeometry(40, 40), new THREE.MeshStandardMaterial({ color: 0x0a0c13, roughness: 0.3, metalness: 0.3, transparent: true, opacity: 0.66 }));
+floorTop.rotation.x = -Math.PI / 2; floorTop.position.y = 0.002; scene.add(floorTop);
+const wall = new THREE.Mesh(new THREE.PlaneGeometry(40, 14), new THREE.MeshStandardMaterial({ color: 0x0b0f1c, roughness: 0.85 }));
+wall.position.set(0, 7, -4.2); scene.add(wall);
+const ouroLuz = new THREE.MeshStandardMaterial({ color: 0x000000, emissive: 0xffa640, emissiveIntensity: 4 });
+for (let i = -4; i <= 4; i++) { const b = new THREE.Mesh(new THREE.BoxGeometry(0.05, 8, 0.05), ouroLuz); b.position.set(i * 1.05, 4, -3.9); scene.add(b); }
+const R = rng(7);
+const prat = new THREE.MeshStandardMaterial({ color: 0x1a1612, roughness: 0.4, metalness: 0.6 });
+const fundoPrat = new THREE.MeshStandardMaterial({ color: 0x000000, emissive: 0xffc27a, emissiveIntensity: 0.1 });
+const vidros = [0x2b4a9a, 0xc98a2e, 0x6b1f2a, 0x1f5a4a, 0xd9d4c8, 0x101010].map(c => new THREE.MeshPhysicalMaterial({ color: c, roughness: 0.12, metalness: 0.1, clearcoat: 1, emissive: c, emissiveIntensity: 0.12 }));
+for (let col = -4; col < 4; col++) for (const y of [1.0, 1.85, 2.7, 3.55]) {
+  const x0 = col * 1.05 + 0.525;
+  const s = new THREE.Mesh(new THREE.BoxGeometry(0.98, 0.035, 0.32), prat); s.position.set(x0, y, -3.7); scene.add(s);
+  const bg = new THREE.Mesh(new THREE.PlaneGeometry(0.98, 0.8), fundoPrat); bg.position.set(x0, y + 0.4, -3.88); scene.add(bg);
+  for (let k = 0; k < 5; k++) {
+    const h = 0.16 + R() * 0.14, r = 0.045 + R() * 0.035;
+    const g = R() > 0.5 ? new THREE.CylinderGeometry(r, r, h, 16) : new THREE.BoxGeometry(r * 1.9, h, r * 1.3);
+    const m = new THREE.Mesh(g, vidros[Math.floor(R() * vidros.length)]); m.position.set(x0 - 0.38 + k * 0.19 + (R() - .5) * 0.04, y + 0.02 + h / 2, -3.68); scene.add(m);
+  }
+}
+const coneMat = new THREE.ShaderMaterial({
+  transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide,
+  uniforms: { cor: { value: new THREE.Color(0xffe2b0) }, forca: { value: 0.14 } },
+  vertexShader: `varying float vY; varying vec3 vN; varying vec3 vV; void main(){ vY = position.y; vec4 mv = modelViewMatrix*vec4(position,1.); vN = normalize(normalMatrix*normal); vV = normalize(-mv.xyz); gl_Position = projectionMatrix*mv; }`,
+  fragmentShader: `uniform vec3 cor; uniform float forca; varying float vY; varying vec3 vN; varying vec3 vV; void main(){ float h = clamp((vY+3.)/6.,0.,1.); float f = pow(abs(dot(vN,vV)),1.6); gl_FragColor = vec4(cor*forca*pow(h,1.3)*f,1.); }`,
+});
+const NP = 520, pBase = new Float32Array(NP * 3), pPos = new Float32Array(NP * 3), Rp = rng(11);
+for (let i = 0; i < NP; i++) { pBase[i * 3] = (Rp() - .5) * 7; pBase[i * 3 + 1] = Rp() * 5; pBase[i * 3 + 2] = -3 + Rp() * 5.5; }
+const pGeo = new THREE.BufferGeometry(); pGeo.setAttribute('position', new THREE.BufferAttribute(pPos, 3));
+scene.add(new THREE.Points(pGeo, new THREE.PointsMaterial({ size: 0.035, map: radial('rgba(255,230,180,1)'), transparent: true, opacity: 0.75, depthWrite: false, blending: THREE.AdditiveBlending, color: 0xffd9a0 })));
+
+// ── PERSONAGENS (fotos) ──────────────────────────────────────────────────
+const P = {};
+const sombraTex = radial('rgba(0,0,0,0.9)');
+for (const [id, cfg] of Object.entries(C.personagens)) {
+  const root = new THREE.Group(); root.position.x = cfg.x; scene.add(root);
+  const corpo = new THREE.Group(); root.add(corpo);
+  const img = document.getElementById('foto_' + id);
+  const t = new THREE.Texture(img); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8;
+  const mat = new THREE.MeshBasicMaterial({ map: t, transparent: true, alphaTest: 0.02, toneMapped: false, side: THREE.DoubleSide });
+  const foto = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), mat); corpo.add(foto);
+  const brilho = new THREE.Sprite(new THREE.SpriteMaterial({ map: radial(cfg.rim || '#ffb347'), transparent: true, blending: THREE.AdditiveBlending, depthWrite: false, opacity: 0 }));
+  brilho.position.z = -0.25; root.add(brilho);
+  const sombra = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.MeshBasicMaterial({ map: sombraTex, transparent: true, depthWrite: false, opacity: 0.85 }));
+  sombra.rotation.x = -Math.PI / 2; sombra.position.y = 0.004; root.add(sombra);
+  const spot = new THREE.SpotLight(0xfff0dc, 30, 14, 0.4, 0.7, 1.6); spot.position.set(cfg.x * 0.6, 6, 2.4); spot.target.position.set(cfg.x, 0.8, 0); scene.add(spot, spot.target);
+  const cone = new THREE.Mesh(new THREE.ConeGeometry(1.15, 6, 48, 1, true), coneMat.clone()); cone.position.set(cfg.x, 3, -0.3); scene.add(cone);
+  const rim = new THREE.PointLight(new THREE.Color(cfg.rim || '#ffb347'), 5, 6, 1.6); rim.position.set(cfg.x * 2, 2.2, -1.2); scene.add(rim);
+  P[id] = { id, cfg, root, corpo, foto, mat, tex: t, img, brilho, sombra, cone, pronto: false, w: 1, h: cfg.altura || 1.8 };
+}
+function prepararFotos() {
+  for (const p of Object.values(P)) if (!p.pronto && p.img.complete && p.img.naturalWidth) {
+    p.tex.needsUpdate = true; p.pronto = true;
+    p.w = p.h * p.img.naturalWidth / p.img.naturalHeight;
+    p.foto.scale.set(p.w, p.h, 1); p.foto.position.y = p.h / 2;
+    p.brilho.scale.set(p.w * 2.6, p.h * 1.7, 1); p.brilho.position.y = p.h * 0.5;
+    p.sombra.scale.set(p.w * 1.5, p.w * 0.55, 1);
+  }
+}
+
+// ── LINHA DO TEMPO ───────────────────────────────────────────────────────
+const falas = D.falas, NARR = C.narrador;
+const ids = Object.keys(P);
+function falaEm(t) { for (const f of falas) if (t >= f.inicio - 0.05 && t <= f.fim + 0.12) return f; return null; }
+function vozDe(q, t) { const arr = D.boca[q] || []; const i = t * FPS, a = Math.floor(i); return clamp(Math.max(lerp(arr[a] || 0, arr[a + 1] || 0, i - a), (arr[a - 1] || 0) * 0.6)); }
+const shots = falas.map((f, i) => ({
+  ini: i === 0 ? 0 : (falas[i - 1].fim + f.inicio) / 2,
+  fim: i === falas.length - 1 ? D.duracao + 1 : (f.fim + falas[i + 1].inicio) / 2,
+  quem: f.quem, i, tipo: (f.quem === NARR || !P[f.quem] || i === falas.length - 1) ? 'aberto' : 'foco',
+}));
+function shotEm(t) { for (const s of shots) if (t >= s.ini && t < s.fim) return s; return shots[shots.length - 1]; }
+const reforcos = (D.reforcos || []).map(r => ({ ...r }));
+
+function cameraEm(t) {
+  const s = shotEm(t), k = ease(clamp((t - s.ini) / Math.max(0.5, s.fim - s.ini)));
+  let pos, alvo;
+  if (s.tipo === 'foco') {
+    const p = P[s.quem], x = p.cfg.x, lado = Math.sign(x) || 1, h = p.h;
+    const dist = lerp(s.i === 0 ? 6.6 : 6.0, 5.2, k) * (h / 1.8);
+    pos = new THREE.Vector3(x * 0.45 + lado * 0.35 * (s.i % 2 ? 1 : -1) * (1 - k), h * (s.i % 2 ? 0.38 : 0.62), dist);
+    alvo = new THREE.Vector3(x * 0.8, h * 0.44, 0);
+  } else {
+    const a = lerp(0.18, -0.12, k);
+    pos = new THREE.Vector3(Math.sin(a) * lerp(8.8, 7.5, k), lerp(1.45, 1.25, k), Math.cos(a) * lerp(8.8, 7.5, k)); alvo = new THREE.Vector3(0, 0.95, 0);
+  }
+  let punch = 0, treme = 0;
+  for (const r of reforcos) if (r.t >= s.ini && r.t < s.fim) {
+    punch = Math.max(punch, sstep(r.t - 0.04, r.t + 0.14, t) * 0.14);
+    const d = t - r.t; if (d >= 0 && d < 0.3) treme = Math.max(treme, 1 - d / 0.3);
+  }
+  pos.lerp(alvo, punch);
+  pos.x += Math.sin(t * 71) * 0.02 * treme + Math.sin(t * 0.7) * 0.012;
+  pos.y += Math.cos(t * 83) * 0.02 * treme + Math.sin(t * 0.9 + 1) * 0.01;
+  return { pos, alvo };
+}
+
+function animar(p, t) {
+  const f = falaEm(t), falando = !!f && f.quem === p.id, v = falando ? vozDe(p.id, t) : 0;
+  const ph = p.cfg.x > 0 ? 2.1 : 0, lado = Math.sign(p.cfg.x) || 1;
+  const on = falando ? sstep(f.inicio - 0.12, f.inicio + 0.12, t) * (1 - sstep(f.fim, f.fim + 0.3, t)) : 0;
+  // entrada: cada foto "cai" no palco no começo
+  const entra = backOut(clamp((t - (p.cfg.x < 0 ? 0.0 : 0.12)) / 0.45));
+  p.corpo.position.y = (1 - entra) * 0.9 + 0.01 * Math.sin(t * 2.1 + ph) + 0.07 * v;
+  p.corpo.scale.set(1 - 0.03 * v + 0.012 * on, 1 + 0.045 * v + 0.012 * on, 1);
+  p.corpo.rotation.z = 0.012 * Math.sin(t * 1.3 + ph) + 0.05 * v * Math.sin(t * 9 + ph) - lado * 0.035 * on;
+  // a foto sempre de frente para a câmera (só no eixo Y)
+  p.root.rotation.y = Math.atan2(camera.position.x - p.cfg.x, camera.position.z) * 0.85;
+  // quem escuta fica mais apagado
+  const narr = f && f.quem === NARR;
+  const luz = falando ? 1.0 : (f && !narr ? 0.6 : 0.9);
+  p.mat.color.setScalar(lerp(p.mat.color.r, luz, 0.35));
+  p.brilho.material.opacity = 0.18 + 0.5 * on + 0.35 * v;
+  p.cone.material.uniforms.forca.value = 0.08 + 0.12 * on;
+  p.sombra.material.opacity = 0.85 - 0.3 * (p.corpo.position.y / 0.3);
+}
+
+// ── LEGENDA, SELOS, TARJA DO NARRADOR, MARCA ────────────────────────────
+const kws = new Set((D.palavras_chave || []).map(norm));
+const blocos = [];
+for (const f of falas) {
+  let at = [];
+  f.palavras.forEach((w, i) => { at.push(w); if (at.length >= 3 || /[.!?,…]$/.test(w.word) || i === f.palavras.length - 1) { blocos.push({ palavras: at, ini: at[0].start - 0.06 }); at = []; } });
+}
+blocos.forEach((b, i) => { const n = blocos[i + 1], fimF = b.palavras[b.palavras.length - 1].end + 0.35; b.fim = n ? Math.min(n.ini, fimF) : fimF; });
+const leg = document.getElementById('leg'); let legAt = -1;
+function legenda(t) {
+  const i = blocos.findIndex(b => t >= b.ini && t < b.fim);
+  if (i !== legAt) { legAt = i; leg.innerHTML = i < 0 ? '' : '<div>' + blocos[i].palavras.map(w => `<span class="${kws.has(norm(w.word)) ? 'k' : ''}">${w.word.replace(/</g, '&lt;')}</span>`).join('') + '</div>'; }
+  if (i >= 0) { const k = clamp((t - blocos[i].ini) / 0.12); leg.style.transform = `scale(${lerp(0.86, 1, backOut(k))})`; leg.style.opacity = String(clamp(k * 3)); }
+}
+const selosEl = document.getElementById('selos');
+const selos = reforcos.map(r => {
+  const e = document.createElement('div'); const cfg = (C.personagens[r.quem] || {});
+  e.className = 'selo ' + (cfg.selo === 'prata' ? 'prata' : ''); e.textContent = r.texto; e.style.opacity = '0'; selosEl.appendChild(e);
+  r.fimSelo = Math.min(r.t + 2.3, shotEm(r.t).fim + 0.02); return { r, e };
+});
+const tarja = document.getElementById('tarja'); tarja.querySelector('.nome').textContent = C.narradorNome || '';
+const barras = tarja.querySelector('.barras'); for (let i = 0; i < 9; i++) barras.appendChild(document.createElement('i'));
+const marca = document.getElementById('marca'); marca.textContent = C.marca || '';
+function overlay(t) {
+  legenda(t);
+  for (const { r, e } of selos) {
+    const k = clamp((t - r.t) / 0.32), sai = sstep(r.fimSelo - 0.2, r.fimSelo, t), vis = t >= r.t - 0.01 && t < r.fimSelo;
+    e.style.opacity = vis ? String(1 - sai) : '0'; if (!vis) continue;
+    const p = P[r.quem];
+    const ref = p ? new THREE.Vector3(p.cfg.x, p.h * 1.08, 0).project(camera) : new THREE.Vector3(0, 0.5, 0);
+    const x = clamp((ref.x * 0.5 + 0.5) * W, 280, W - 280), y = clamp((-ref.y * 0.5 + 0.5) * H - 90, 260, 560);
+    e.style.transform = `translate(${x - e.offsetWidth / 2}px, ${y - 30 * (1 - backOut(k))}px) scale(${lerp(0.5, 1, backOut(k))}) rotate(${p && p.cfg.x < 0 ? -3 : 3}deg)`;
+  }
+  // tarja do narrador
+  const f = falaEm(t), narr = f && f.quem === NARR;
+  const fn = falas.filter(x => x.quem === NARR);
+  let op = 0; for (const x of fn) op = Math.max(op, sstep(x.inicio - 0.25, x.inicio, t) * (1 - sstep(x.fim + 0.3, x.fim + 0.6, t)));
+  tarja.style.opacity = String(op); tarja.style.transform = `translateX(${(1 - backOut(clamp(op))) * -60}px)`;
+  const v = vozDe(NARR, t);
+  [...barras.children].forEach((b, i) => { b.style.height = (10 + 36 * clamp(v * (0.55 + 0.45 * Math.abs(Math.sin(t * 13 + i * 1.7))))) + 'px'; });
+  const ult = falas[falas.length - 1];
+  marca.style.opacity = String(sstep(ult.inicio + 0.3, ult.inicio + 0.9, t));
+  marca.style.letterSpacing = lerp(24, 14, sstep(ult.inicio + 0.3, ult.inicio + 1.5, t)) + 'px';
+}
+
+// ── PÓS ──────────────────────────────────────────────────────────────────
+const composer = new EffectComposer(renderer, new THREE.WebGLRenderTarget(W, H, { samples: 4, type: THREE.HalfFloatType }));
+composer.addPass(new RenderPass(scene, camera));
+composer.addPass(new UnrealBloomPass(new THREE.Vector2(W / 2, H / 2), 0.4, 0.45, 0.93));
+composer.addPass(new OutputPass());
+
+window.render = function (t) {
+  prepararFotos();
+  const c = cameraEm(t); camera.position.copy(c.pos); camera.lookAt(c.alvo);
+  for (const p of Object.values(P)) animar(p, t);
+  for (let i = 0; i < NP; i++) { pPos[i * 3] = pBase[i * 3] + Math.sin(t * 0.3 + i) * 0.08; pPos[i * 3 + 1] = (pBase[i * 3 + 1] + t * 0.06) % 5; pPos[i * 3 + 2] = pBase[i * 3 + 2]; }
+  pGeo.attributes.position.needsUpdate = true;
+  composer.render(); overlay(t);
+};
+</script>
+</body></html>

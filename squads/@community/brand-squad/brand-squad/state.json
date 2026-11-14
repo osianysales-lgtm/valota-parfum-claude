@@ -1,0 +1,112 @@
+{
+  "squad": "brand-squad",
+  "status": "completed",
+  "step": {
+    "current": 7,
+    "total": 7,
+    "label": "Final checkpoint, memory update, and delivery"
+  },
+  "agents": [
+    {
+      "id": "brand-chief",
+      "name": "Brand Chief",
+      "icon": "palette",
+      "status": "done",
+      "stepIndex": 7,
+      "stepLabel": "step-07",
+      "desk": {
+        "col": 1,
+        "row": 1
+      },
+      "deliverTo": null,
+      "message": ""
+    },
+    {
+      "id": "brand-identity-designer",
+      "name": "Brand Identity Designer",
+      "icon": "pen-tool",
+      "status": "done",
+      "stepIndex": 2,
+      "stepLabel": "step-02",
+      "desk": {
+        "col": 2,
+        "row": 1
+      },
+      "deliverTo": "brand-chief",
+      "message": ""
+    },
+    {
+      "id": "evidence-based-strategist",
+      "name": "Evidence-Based Strategist",
+      "icon": "bar-chart",
+      "status": "done",
+      "stepIndex": 2,
+      "stepLabel": "step-02",
+      "desk": {
+        "col": 3,
+        "row": 1
+      },
+      "deliverTo": "brand-chief",
+      "message": ""
+    },
+    {
+      "id": "positioning-specialist",
+      "name": "Positioning Specialist",
+      "icon": "target",
+      "status": "done",
+      "stepIndex": 2,
+      "stepLabel": "step-02",
+      "desk": {
+        "col": 4,
+        "row": 1
+      },
+      "deliverTo": "brand-chief",
+      "message": ""
+    },
+    {
+      "id": "archetype-consultant",
+      "name": "Archetype Consultant",
+      "icon": "layers",
+      "status": "done",
+      "stepIndex": 2,
+      "stepLabel": "step-02",
+      "desk": {
+        "col": 1,
+        "row": 2
+      },
+      "deliverTo": "brand-chief",
+      "message": ""
+    },
+    {
+      "id": "brand-messaging-architect",
+      "name": "Brand Messaging Architect",
+      "icon": "message-square",
+      "status": "done",
+      "stepIndex": 2,
+      "stepLabel": "step-02",
+      "desk": {
+        "col": 2,
+        "row": 2
+      },
+      "deliverTo": "brand-chief",
+      "message": "BrandScript, bio e bordão prontos"
+    },
+    {
+      "id": "startup-brand-advisor",
+      "name": "Startup Brand Advisor",
+      "icon": "zap",
+      "status": "done",
+      "stepIndex": 2,
+      "stepLabel": "step-02",
+      "desk": {
+        "col": 3,
+        "row": 2
+      },
+      "deliverTo": "brand-chief",
+      "message": ""
+    }
+  ],
+  "handoff": null,
+  "startedAt": "2026-11-09T16:11:56.532569+00:00",
+  "updatedAt": "2026-11-09T16:58:17.071666+00:00"
+}

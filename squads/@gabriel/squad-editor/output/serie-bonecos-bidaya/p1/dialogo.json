@@ -1,0 +1,84 @@
+{
+  "personagens": {
+    "rafa": {
+      "voz": "2CECaLAGTS5NRGxgbcxr",
+      "ajustes": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.3,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      }
+    },
+    "bia": {
+      "voz": "GDzHdQOi6jjf8zaXhCYD",
+      "ajustes": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.3,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      }
+    }
+  },
+  "inicio": 0.3,
+  "pausa": 0.12,
+  "fim": 1.5,
+  "falas": [
+    {
+      "quem": "rafa",
+      "texto": "Bia, chega mais e sente isso aqui, porque a partir de hoje eu sou homem de perfume árabe, de tradição milenar, viu?"
+    },
+    {
+      "quem": "bia",
+      "texto": "Tradição milenar, é? Porque cheiroso você tá, só que me conta direito que perfume é esse que te deixou com essa pose de xeique.",
+      "legenda": "Tradição milenar, é? Porque cheiroso você tá, só que me conta direito que perfume é esse que te deixou com essa pose de sheik."
+    },
+    {
+      "quem": "rafa",
+      "texto": "Então, é Bidáia, direto de Dubai, e o vendedor jurou que é receita de família, passada de geração em geração.",
+      "legenda": "Então, é Bidaya, direto de Dubai, e o vendedor jurou que é receita de família, passada de geração em geração."
+    },
+    {
+      "quem": "bia",
+      "texto": "De geração em geração, Rafa? Porque a Bidáia nasceu em dois mil e vinte e cinco, então essa família aí tem tipo um aninho de idade.",
+      "legenda": "De geração em geração, Rafa? Porque a Bidaya nasceu em dois mil e vinte e cinco, então essa família aí tem tipo um aninho de idade."
+    },
+    {
+      "quem": "rafa",
+      "texto": "Um aninho? Mas pelo menos o nome é árabe, né, porque isso ninguém tira de mim."
+    },
+    {
+      "quem": "bia",
+      "texto": "Isso é, porque Bidáia em árabe quer dizer \"começo\", e combina demais, já que a marca mal começou e já tá em todo lugar.",
+      "legenda": "Isso é, porque Bidaya em árabe quer dizer \"começo\", e combina demais, já que a marca mal começou e já tá em todo lugar."
+    },
+    {
+      "quem": "rafa",
+      "texto": "Tá vendo, então é árabe sim, e o meu ainda é o Vanilla Porn, que é o mais falado de todos.",
+      "legenda": "Tá vendo, então é árabe sim, e o meu ainda é o Vanilla P*rn, que é o mais falado de todos."
+    },
+    {
+      "quem": "bia",
+      "texto": "E árabe de Dubai ele é, só que hoje árabe virou estilo também, porque tem o árabe de tradição, com madeira escura, rosa e açafrão, e tem os novos, com cheiro de sobremesa, que nem o seu."
+    },
+    {
+      "quem": "rafa",
+      "texto": "Sobremesa ou não, o importante é que ele veio de Dubai direitinho até aqui, né?"
+    },
+    {
+      "quem": "bia",
+      "texto": "Até aqui… aí é que tá, porque eu fui ver onde mais tem Bidáia pra vender, e olha, tem um país aqui do lado que adora essa marca.",
+      "legenda": "Até aqui… aí é que tá, porque eu fui ver onde mais tem Bidaya pra vender, e olha, tem um país aqui do lado que adora essa marca."
+    },
+    {
+      "quem": "rafa",
+      "texto": "Como assim, que país?"
+    },
+    {
+      "quem": "bia",
+      "texto": "E que país é esse eu conto no próximo episódio aqui com a gente, então segue a Valota Parfum, porque a viagem desse perfume até o Rafa tem mais escala que voo promocional.",
+      "pausa_antes": 0.45
+    }
+  ]
+}

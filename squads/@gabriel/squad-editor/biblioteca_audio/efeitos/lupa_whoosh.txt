@@ -1,0 +1,3 @@
+prompt: magical investigative magnifying glass swoosh with sparkle
+duracao: 0.8
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)

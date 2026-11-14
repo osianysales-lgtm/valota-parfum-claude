@@ -1,0 +1,3 @@
+prompt: old camera flash shutter click with flash whine, mugshot
+duracao: 0.8
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)

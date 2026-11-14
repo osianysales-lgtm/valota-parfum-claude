@@ -1,0 +1,3 @@
+prompt: light soft UI pop sound, bubbly, short
+duracao: 0.5
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)

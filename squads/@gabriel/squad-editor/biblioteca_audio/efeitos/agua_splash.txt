@@ -1,0 +1,3 @@
+prompt: boat hull splashing into river water, big refreshing water splash, close
+duracao: 1.5
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)

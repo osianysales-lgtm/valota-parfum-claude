@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Performance - @softwarehouseexponencial</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{--g:#00D26A;--o:#FF6B35;--bg:#000000;--card:#111111;--border:#1a1a1a;--tx:#ffffff;--tx2:#888888;--r:10px}
+        body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);min-height:100vh;padding:20px}
+        .wrap{max-width:1400px;margin:0 auto}
+
+        /* HEADER PROFILE */
+        .profile{display:flex;align-items:center;gap:20px;padding:30px 0;border-bottom:1px solid var(--border)}
+        .profile img{width:64px;height:64px;border-radius:50%;border:2px solid var(--g)}
+        .profile .name{font-weight:700;font-size:1.15em}
+        .profile .handle{color:var(--g);font-size:0.92em;font-weight:500}
+        .profile .bio{color:var(--tx2);font-size:0.85em;margin-top:2px}
+
+        /* FILTROS */
+        .filters{display:flex;gap:8px;padding:20px 0;border-bottom:1px solid var(--border)}
+        .fbtn{background:transparent;color:var(--tx2);border:1px solid var(--border);padding:8px 20px;border-radius:20px;cursor:pointer;font-family:inherit;font-size:0.85em;font-weight:600;transition:all .2s}
+        .fbtn.active{background:var(--g);color:#000;border-color:var(--g)}
+        .fbtn:hover{border-color:var(--g);color:var(--g)}
+        .fbtn.active:hover{color:#000}
+
+        /* GRID */
+        .g4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:20px 0}
+        .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0}
+        .g2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:20px 0}
+
+        /* STAT CARD */
+        .sc{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:20px}
+        .sc .lb{color:var(--tx2);font-size:0.75em;text-transform:uppercase;letter-spacing:1px;font-weight:600;margin-bottom:8px}
+        .sc .vl{font-size:2em;font-weight:700;color:var(--g)}
+        .sc .ch{color:var(--g);font-size:0.8em;font-weight:500;margin-top:4px}
+        .sc .vl.orange{color:var(--o)}
+        .sc .vl.white{color:var(--tx)}
+
+        /* SEÇÃO */
+        .sec{margin:32px 0}
+        .sec h2{font-size:1.15em;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+
+        /* GRÁFICO */
+        .chart-box{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:20px;height:320px;position:relative}
+
+        /* RANKING */
+        .rk{list-style:none}
+        .rk li{display:flex;align-items:center;gap:14px;padding:14px 16px;background:var(--card);border:1px solid var(--border);border-radius:var(--r);margin-bottom:8px;transition:all .2s}
+        .rk li:hover{border-color:var(--g);background:#0a0a0a}
+        .rk .n{font-weight:700;color:var(--g);font-size:1.1em;min-width:32px}
+        .rk .inf{flex:1}
+        .rk .t{font-weight:600;font-size:0.92em;margin-bottom:2px}
+        .rk .s{color:var(--tx2);font-size:0.8em}
+        .rk .e{color:var(--g);font-weight:700;font-size:0.95em}
+
+        /* MÉTRICAS */
+        .mc{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:20px}
+        .mc h3{color:var(--tx2);font-size:0.72em;text-transform:uppercase;letter-spacing:1px;font-weight:600;margin-bottom:10px}
+        .mc .v{font-size:2em;font-weight:700}
+        .mc .v.gr{color:var(--g)} .mc .v.yl{color:var(--o)} .mc .v.rd{color:#ef4444}
+        .mc .d{color:var(--tx2);font-size:0.82em;margin-top:6px}
+
+        /* COPYWRITER */
+        .cw{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:24px;margin-bottom:16px}
+        .cw:hover{border-color:#222}
+        .cw-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px;flex-wrap:wrap;gap:8px}
+        .cw-nm{font-weight:700;font-size:1.1em;color:var(--g)}
+        .cw-sp{color:var(--tx2);font-size:0.82em;margin-top:2px}
+        .cw-mt{color:var(--tx2);font-size:0.82em;text-align:right}
+        .cw-txt{color:#ccc;line-height:1.7;font-size:0.9em;margin-bottom:16px;padding:16px;background:#0a0a0a;border-radius:8px;border-left:3px solid var(--g);white-space:pre-line}
+        .cw-ml{background:rgba(0,210,106,0.05);border:1px solid rgba(0,210,106,0.15);border-radius:8px;padding:16px}
+        .cw-ml h4{color:var(--g);font-weight:700;margin-bottom:10px;font-size:0.88em}
+        .cw-ml ul{list-style:none;padding:0}
+        .cw-ml li{color:#ccc;padding:6px 0 6px 18px;position:relative;font-size:0.88em;line-height:1.5}
+        .cw-ml li::before{content:'→';position:absolute;left:0;color:var(--g);font-weight:700}
+
+        /* TABELA */
+        .tb{width:100%;border-collapse:collapse;margin-top:12px}
+        .tb th{background:var(--card);color:var(--g);padding:12px 16px;text-align:left;font-size:0.82em;text-transform:uppercase;letter-spacing:0.5px;border-bottom:2px solid var(--g)}
+        .tb td{padding:12px 16px;border-bottom:1px solid var(--border);font-size:0.88em;color:#ccc}
+        .tb tr:hover{background:#0a0a0a}
+
+        /* IMPACTO */
+        .imp{background:rgba(0,210,106,0.05);border:1px solid rgba(0,210,106,0.15);border-radius:var(--r);padding:20px;text-align:center}
+        .imp h3{color:var(--tx2);font-size:0.72em;text-transform:uppercase;letter-spacing:1px;font-weight:600;margin-bottom:8px}
+        .imp .v{font-size:2em;font-weight:700;color:var(--g)}
+        .imp .d{color:var(--tx2);font-size:0.82em;margin-top:4px}
+
+        footer{padding:20px;text-align:center;color:var(--tx2);font-size:0.82em;border-top:1px solid var(--border);margin-top:30px}
+
+        .hidden{display:none}
+        @media(max-width:900px){.g4,.g3{grid-template-columns:repeat(2,1fr)}.g2{grid-template-columns:1fr}.profile{flex-direction:column;text-align:center}.cw-top{flex-direction:column}.cw-mt{text-align:left}}
+        @media(max-width:600px){.g4,.g3,.g2{grid-template-columns:1fr}body{padding:12px}}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+
+        <!-- PERFIL -->
+        <div class="profile">
+            <img src="https://scontent.fcaw3-1.fna.fbcdn.net/v/t51.82787-15/658906885_18051218351720187_637318279702602441_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7d201b&_nc_ohc=A1bSqyvQKPwQ7kNvwF8-xke&_nc_oc=AdqrPpdOqUcDTk3g5w53WT7IQ7obOak04Jjye3jZH7ezr9YtlrfQGBjGrzgVw-ztKr4&_nc_zt=23&_nc_ht=scontent.fcaw3-1.fna&edm=AL-3X8kEAAAA&_nc_gid=Hoog--ZZlMipUt3diSL49A&oh=00_Af0cluuNj5xRoLcmdSEEoigqT6TfYaMx2GsnAEz72hrnAA&oe=69E7086E" alt="@softwarehouseexponencial">
+            <div>
+                <div class="name">EXPX | Software House</div>
+                <div class="handle">@softwarehouseexponencial</div>
+                <div class="bio">Relatório gerado em 16/04/2026 14:42</div>
+            </div>
+        </div>
+
+        <!-- FILTROS -->
+        <div class="filters">
+            <button class="fbtn active" onclick="filterPeriod('all', event)">Últimos 30 dias</button>
+            <button class="fbtn" onclick="filterPeriod('7', event)">Últimos 7 dias</button>
+        </div>
+
+        <!-- VISÃO GERAL -->
+        <div class="sec">
+            <h2>Visão Geral</h2>
+            <div class="g4">
+                <div class="sc">
+                    <div class="lb">Seguidores</div>
+                    <div class="vl">30,744</div>
+                </div>
+                <div class="sc">
+                    <div class="lb">Posts Analisados</div>
+                    <div class="vl white" id="stat-posts">30</div>
+                </div>
+                <div class="sc">
+                    <div class="lb">Total de Posts</div>
+                    <div class="vl orange">428</div>
+                </div>
+                <div class="sc">
+                    <div class="lb">Engajamento Médio</div>
+                    <div class="vl" id="stat-eng">17</div>
+                </div>
+            </div>
+
+            <div class="chart-box">
+                <canvas id="growthChart"></canvas>
+            </div>
+        </div>
+
+        <!-- TOP POSTS -->
+        <div class="sec">
+            <h2>Posts Mais Engajados</h2>
+
+            <div id="period-all">
+                <ul class="rk">
+
+                    <li>
+                        <div class="n">#1</div>
+                        <div class="inf">
+                            <div class="t">Pergunta/Engajamento</div>
+                            <div class="s">Vídeo · 13 palavras · <a href="https://www.instagram.com/reel/DSarJ_2geTf/" target="_blank" style="color:var(--g)">ver post</a></div>
+                        </div>
+                        <div class="e">+63</div>
+                    </li>
+                    <li>
+                        <div class="n">#2</div>
+                        <div class="inf">
+                            <div class="t">Pergunta/Engajamento</div>
+                            <div class="s">Vídeo · 24 palavras · <a href="https://www.instagram.com/reel/DTTWoVBku2q/" target="_blank" style="color:var(--g)">ver post</a></div>
+                        </div>
+                        <div class="e">+40</div>
+                    </li>
+                    <li>
+                        <div class="n">#3</div>
+                        <div class="inf">
+                            <div class="t">Padrão</div>
+                            <div class="s">Vídeo · 25 palavras · <a href="https://www.instagram.com/reel/DUDvaLrjtlq/" target="_blank" style="color:var(--g)">ver post</a></div>
+                        </div>
+                        <div class="e">+33</div>
+                    </li>
+                    <li>
+                        <div class="n">#4</div>
+                        <div class="inf">
+                            <div class="t">Padrão</div>
+                            <div class="s">Vídeo · 25 palavras · <a href="https://www.instagram.com/reel/DS7pyPEjnQW/" target="_blank" style="color:var(--g)">ver post</a></div>
+                        </div>
+                        <div class="e">+31</div>
+                    </li>
+                    <li>
+                        <div class="n">#5</div>
+                        <div class="inf">
+                            <div class="t">Padrão</div>
+                            <div class="s">Carrossel · 47 palavras · <a href="https://www.instagram.com/p/DWlxetYjluY/" target="_blank" style="color:var(--g)">ver post</a></div>
+                        </div>
+                        <div class="e">+28</div>
+                    </li>
+                </ul>
+                <div class="g3" style="margin-top:16px">
+                    <div class="mc">
+                        <h3>Tema Mais Comum</h3>
+                        <div class="v gr">IA/Tecnologia</div>
+                    </div>
+                    <div class="mc">
+                        <h3>Formato Preferido</h3>
+                        <div class="v gr">Carrossel</div>
+                    </div>
+                    <div class="mc">
+                        <h3>Comprimento Ideal</h3>
+                        <div class="v gr">76 palavras</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="period-7" class="hidden">
+                <ul class="rk">
+                    <li>
+                        <div class="n">#1</div>
+                        <div class="inf">
+                            <div class="t">Padrão</div>
+                            <div class="s">Carrossel · 26 palavras · <a href="https://www.instagram.com/p/DXE1ndYjubm/" target="_blank" style="color:var(--g)">ver post</a></div>
+                        </div>
+                        <div class="e">+19</div>
+                    </li>
+                    <li>
+                        <div class="n">#2</div>
+                        <div class="inf">
+                            <div class="t">Pergunta/Engajamento</div>
+                            <div class="s">Carrossel · 170 palavras · <a href="https://www.instagram.com/p/DXFE8sMCfxZ/" target="_blank" style="color:var(--g)">ver post</a></div>
+                        </div>
+                        <div class="e">+10</div>
+                    </li>
+                    <li>
+                        <div class="n">#3</div>
+                        <div class="inf">
+                            <div class="t">Padrão</div>
+                            <div class="s">Carrossel · 40 palavras · <a href="https://www.instagram.com/p/DXH3-p2kxWf/" target="_blank" style="color:var(--g)">ver post</a></div>
+                        </div>
+                        <div class="e">+6</div>
+                    </li>
+                    <li>
+                        <div class="n">#4</div>
+                        <div class="inf">
+                            <div class="t">Padrão</div>
+                            <div class="s">Carrossel · 75 palavras · <a href="https://www.instagram.com/p/DXKT26yj63W/" target="_blank" style="color:var(--g)">ver post</a></div>
+                        </div>
+                        <div class="e">+5</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CARACTERÍSTICAS DO CONTEÚDO -->
+        <div class="sec">
+            <h2>Características do Conteúdo</h2>
+            <div class="g3">
+                <div class="mc">
+                    <h3>Hashtags</h3>
+                    <div class="v gr" id="mc-hashtag">0%</div>
+                    <div class="d">dos posts utilizam hashtags</div>
+                </div>
+                <div class="mc">
+                    <h3>Emojis</h3>
+                    <div class="v yl" id="mc-emoji">67%</div>
+                    <div class="d">dos posts utilizam emojis</div>
+                </div>
+                <div class="mc">
+                    <h3>Perguntas</h3>
+                    <div class="v yl" id="mc-question">60%</div>
+                    <div class="d">dos posts contêm perguntas</div>
+                </div>
+            </div>
+            <div class="g3" style="margin-top:0">
+                <div class="mc">
+                    <h3>Dados e Números</h3>
+                    <div class="v gr" id="mc-numbers">50%</div>
+                    <div class="d">dos posts utilizam números</div>
+                </div>
+                <div class="mc">
+                    <h3>Chamada pra Ação</h3>
+                    <div class="v yl" id="mc-cta">0%</div>
+                    <div class="d">dos posts possuem CTA</div>
+                </div>
+                <div class="mc">
+                    <h3>Média de Palavras</h3>
+                    <div class="v gr" id="mc-words">105</div>
+                    <div class="d">palavras por legenda</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- O QUE OS COPYWRITERS DIRIAM -->
+        <div class="sec">
+            <h2>O Que os Maiores Copywriters Diriam do Seu Conteúdo</h2>
+            <p style="color:var(--tx2);margin-bottom:20px;font-size:0.9em">Cada especialista analisou seus últimos 30 posts e compartilhou sua visão e recomendações</p>
+
+            <div class="cw">
+                <div class="cw-top">
+                    <div>
+                        <div class="cw-nm">Alex Hormozi</div>
+                        <div class="cw-sp">Negócios, Crescimento e Copy Direto</div>
+                    </div>
+                    <div class="cw-mt">
+                        <div>2.4M seguidores</div>
+                        <div>Engajamento: 8.5%</div>
+                    </div>
+                </div>
+                <div class="cw-txt">Olha, vou ser direto contigo. Teu conteúdo tem base boa: 50% dos posts usam dados e números, isso é forte. Mas tá faltando o básico de conversão.
+
+Primeiro problema: ZERO chamadas pra ação. Nenhum post direcionando o público pra algo. Você tá educando de graça sem pedir nada em troca. Cada post precisa ter um próximo passo claro.
+
+Segundo: só 67% dos posts com emoji. O feed fica pesado demais visualmente. Não precisa exagerar, mas 2-3 emojis estratégicos quebram o texto e aumentam a leitura.
+
+Terceiro: seus vídeos representam 57% do conteúdo. Bom. Mas falta o formato problema-solução. Comece com a dor, mostre o resultado, depois ensine o caminho.</div>
+                <div class="cw-ml">
+                    <h4>O que eu faria se cuidasse desse Instagram:</h4>
+                    <ul><li>Adicionar CTA claro em cada post (link na bio, salvar, compartilhar)</li>
+<li>Usar formato problema → resultado → método em 80% dos vídeos</li>
+<li>Criar posts de prova social com números reais de clientes</li>
+<li>Reduzir hashtags para 3-5 mais estratégicas e específicas</li>
+</ul>
+                </div>
+            </div>
+
+            <div class="cw">
+                <div class="cw-top">
+                    <div>
+                        <div class="cw-nm">Gary Vaynerchuk</div>
+                        <div class="cw-sp">Autenticidade, Storytelling e Marca Pessoal</div>
+                    </div>
+                    <div class="cw-mt">
+                        <div>9.2M seguidores</div>
+                        <div>Engajamento: 6.2%</div>
+                    </div>
+                </div>
+                <div class="cw-txt">Cara, o conteúdo é técnico e tem valor. Mas falta VOCÊ. Falta humanidade. Eu olho os posts e vejo uma empresa falando, não uma pessoa.
+
+60% dos posts têm perguntas — isso é baixo demais. Cada post deveria terminar com uma pergunta genuína que faça a pessoa parar e pensar. Não pergunta genérica. Pergunta específica do dia a dia dela.
+
+As hashtags estão em 0% dos posts, o que é bom pra descoberta. Mas o que realmente faz crescer é gerar conversa nos comentários.
+
+Outra coisa: cadê os bastidores? Cadê o dia a dia real? As pessoas se conectam com pessoas, não com conteúdo polido. Mostra os erros, mostra o processo, mostra a bagunça.</div>
+                <div class="cw-ml">
+                    <h4>O que eu faria se cuidasse desse Instagram:</h4>
+                    <ul><li>Terminar 60% dos posts com pergunta específica e provocativa</li>
+<li>Criar série de bastidores mostrando o dia a dia real da operação</li>
+<li>Responder TODOS os comentários para gerar comunidade</li>
+<li>Misturar conteúdo técnico com histórias pessoais de aprendizado</li>
+</ul>
+                </div>
+            </div>
+
+            <div class="cw">
+                <div class="cw-top">
+                    <div>
+                        <div class="cw-nm">Tai Lopez</div>
+                        <div class="cw-sp">Educacional, Curiosidade e Carrossel</div>
+                    </div>
+                    <div class="cw-mt">
+                        <div>3.8M seguidores</div>
+                        <div>Engajamento: 7.3%</div>
+                    </div>
+                </div>
+                <div class="cw-txt">O conteúdo educacional é forte, mas a estrutura tá deixando valor na mesa. 23% é carrossel — isso é bom, mas os carrosséis precisam ter ganchos melhores na primeira slide.
+
+Vi que 50% dos posts usam dados. Excelente. Mas os dados precisam criar curiosidade, não só informar. Em vez de "300+ SHs atendidas", use "O erro que 300 SHs cometem e que custa R$50k/ano".
+
+A legenda média tá boa, mas falta estrutura de aprendizado. Cada post deveria ensinar UMA coisa de forma clara. Lista numerada. Passo a passo. Framework com nome.
+
+Falta também referência a livros, estudos e autoridades. Isso aumenta credibilidade instantaneamente.</div>
+                <div class="cw-ml">
+                    <h4>O que eu faria se cuidasse desse Instagram:</h4>
+                    <ul><li>Criar ganchos de curiosidade na primeira slide dos carrosséis</li>
+<li>Usar formato "X coisas que aprendi com Y" para gerar salvamentos</li>
+<li>Nomear frameworks próprios (Ex: "Método EXPX de Receita Recorrente")</li>
+<li>Adicionar referências a estudos e dados de mercado nos posts</li>
+</ul>
+                </div>
+            </div>
+
+            <div class="cw">
+                <div class="cw-top">
+                    <div>
+                        <div class="cw-nm">Grant Cardone</div>
+                        <div class="cw-sp">Vendas, Energia Alta e Posicionamento</div>
+                    </div>
+                    <div class="cw-mt">
+                        <div>4.1M seguidores</div>
+                        <div>Engajamento: 9.1%</div>
+                    </div>
+                </div>
+                <div class="cw-txt">Teu conteúdo é muito passivo. Falta energia. Falta posicionamento forte. Quando eu olho o feed, tudo é informativo mas nada é MEMORÁVEL.
+
+Só 67% dos posts com emoji e 0% com chamada pra ação? Isso é conteúdo de quem tem medo de vender. Se você não direciona o público, outra pessoa vai.
+
+Os vídeos precisam de mais intensidade. Comece com uma afirmação polêmica. Algo que faça a pessoa parar de rolar. "Software house que cobra por hora está destinada a falir" — esse tipo de gancho.
+
+Precisa também de mais frequência. 30 posts em 30 dias tá bom, mas o ideal é postar 2-3 vezes por dia em diferentes formatos.</div>
+                <div class="cw-ml">
+                    <h4>O que eu faria se cuidasse desse Instagram:</h4>
+                    <ul><li>Abrir cada vídeo com afirmação forte e polêmica nos primeiros 3 segundos</li>
+<li>Aumentar frequência para 2-3 posts por dia em diferentes formatos</li>
+<li>Adicionar urgência nos posts (por que agir AGORA e não depois)</li>
+<li>Criar posts de posicionamento: "Eu acredito que..." com opinião forte</li>
+</ul>
+                </div>
+            </div>
+
+            <div class="cw">
+                <div class="cw-top">
+                    <div>
+                        <div class="cw-nm">Sabrina Sato</div>
+                        <div class="cw-sp">Visual Storytelling, Marca Pessoal e Lifestyle</div>
+                    </div>
+                    <div class="cw-mt">
+                        <div>32M seguidores</div>
+                        <div>Engajamento: 4.8%</div>
+                    </div>
+                </div>
+                <div class="cw-txt">O feed tem conteúdo de valor, mas visualmente precisa de mais personalidade. Quando alguém entra no perfil, precisa sentir a energia da marca em 3 segundos.
+
+Vi que 67% dos posts usam emojis. Isso deixa o feed muito "frio" e corporativo. Emojis criam personalidade e aproximação. Não precisa ser infantil, mas precisa ter vida.
+
+A identidade visual precisa ser mais consistente. Cores, fontes, estilo de thumbnail — tudo isso comunica antes da pessoa ler uma palavra.
+
+Falta conteúdo de lifestyle da marca. Eventos, time, escritório, celebrações. As pessoas querem saber QUEM está por trás da empresa.</div>
+                <div class="cw-ml">
+                    <h4>O que eu faria se cuidasse desse Instagram:</h4>
+                    <ul><li>Padronizar identidade visual do feed com cores da marca em thumbnails</li>
+<li>Criar conteúdo de bastidores do time e cultura da empresa</li>
+<li>Usar 2-3 emojis estratégicos por post para criar personalidade</li>
+<li>Alternar entre conteúdo técnico e conteúdo humano/lifestyle da marca</li>
+</ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- IMPACTO ESPERADO -->
+        <div class="sec">
+            <h2>Impacto Esperado com as Melhorias</h2>
+            <div class="g3">
+                <div class="imp">
+                    <h3>Emojis</h3>
+                    <div class="v">+15%</div>
+                    <div class="d">atratividade visual</div>
+                </div>
+                <div class="imp">
+                    <h3>Perguntas</h3>
+                    <div class="v">+25%</div>
+                    <div class="d">comentários</div>
+                </div>
+                <div class="imp">
+                    <h3>Engajamento Total</h3>
+                    <div class="v">+20%</div>
+                    <div class="d">estimativa em 4 semanas</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PLANO DE AÇÃO -->
+        <div class="sec">
+            <h2>Plano de Ação — Próximas 4 Semanas</h2>
+            <table class="tb">
+                <thead>
+                    <tr>
+                        <th>Semana</th>
+                        <th>Objetivo</th>
+                        <th>Ação</th>
+                        <th>Métrica de Sucesso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1-2</strong></td>
+                        <td>Emojis e Perguntas</td>
+                        <td>2-3 emojis por post + pergunta no final</td>
+                        <td>60% dos posts com perguntas</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2-3</strong></td>
+                        <td>Ganchos Fortes</td>
+                        <td>Primeira frase polêmica ou curiosa</td>
+                        <td>Aumento de salvamentos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3-4</strong></td>
+                        <td>CTAs Estratégicos</td>
+                        <td>Testar 3-4 posts com chamada pra ação</td>
+                        <td>Medir cliques e conversão</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4+</strong></td>
+                        <td>Consolidação</td>
+                        <td>Manter o que funcionou + bastidores</td>
+                        <td>+20% engajamento geral</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>Relatório gerado em 16/04/2026 14:42 · @softwarehouseexponencial</p>
+            <p>Próxima análise recomendada: daqui a 7 dias</p>
+        </footer>
+    </div>
+
+    <script>
+        // Dados por período
+        const periodData = {
+            'all': {
+                posts: 30,
+                eng: 17,
+                hashtag: '0%',
+                emoji: '67%',
+                question: '60%',
+                numbers: '50%',
+                cta: '0%',
+                words: 105,
+                chartLabels: ["09/01", "14/01", "16/01", "28/01", "30/01", "04/02", "06/02", "19/02", "27/02", "03/03", "04/03", "05/03", "06/03", "09/03", "10/03", "11/03", "13/03", "18/03", "19/03", "20/03", "23/03", "27/03", "01/04", "06/04", "13/04", "14/04", "15/04", "18/12", "31/12"],
+                chartValues: [40, 67, 88, 121, 138, 155, 182, 189, 213, 215, 221, 230, 240, 244, 246, 256, 280, 283, 285, 294, 296, 317, 345, 364, 393, 399, 404, 467, 498]
+            },
+            '7': {
+                posts: 4,
+                eng: 10,
+                hashtag: '0%',
+                emoji: '100%',
+                question: '25%',
+                numbers: '100%',
+                cta: '0%',
+                words: 78,
+                chartLabels: ["13/04", "14/04", "15/04"],
+                chartValues: [29, 35, 40]
+            }
+        };
+
+        const chartOpts = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: { color: '#888' },
+                    grid: { color: '#00D26A14' }
+                },
+                x: {
+                    ticks: { color: '#888' },
+                    grid: { display: false }
+                }
+            }
+        };
+
+        const ctx = document.getElementById('growthChart').getContext('2d');
+        let chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: periodData['all'].chartLabels,
+                datasets: [{
+                    label: 'Engajamento Acumulado',
+                    data: periodData['all'].chartValues,
+                    borderColor: '#00D26A',
+                    backgroundColor: '#00D26A14',
+                    tension: 0.4,
+                    fill: true,
+                    pointBackgroundColor: '#00D26A',
+                    pointBorderColor: '#000000',
+                    pointBorderWidth: 2,
+                    pointRadius: 4
+                }]
+            },
+            options: chartOpts
+        });
+
+        function filterPeriod(period, event) {
+            // Alterna ranking
+            document.getElementById('period-all').classList.add('hidden');
+            document.getElementById('period-7').classList.add('hidden');
+            if (period === 'all') {
+                document.getElementById('period-all').classList.remove('hidden');
+            } else {
+                document.getElementById('period-7').classList.remove('hidden');
+            }
+
+            // Atualiza stats
+            const d = periodData[period];
+            document.getElementById('stat-posts').textContent = d.posts;
+            document.getElementById('stat-eng').textContent = d.eng;
+
+            // Atualiza características
+            document.getElementById('mc-hashtag').textContent = d.hashtag;
+            document.getElementById('mc-emoji').textContent = d.emoji;
+            document.getElementById('mc-question').textContent = d.question;
+            document.getElementById('mc-numbers').textContent = d.numbers;
+            document.getElementById('mc-cta').textContent = d.cta;
+            document.getElementById('mc-words').textContent = d.words;
+
+            // Atualiza gráfico
+            chart.data.labels = d.chartLabels;
+            chart.data.datasets[0].data = d.chartValues;
+            chart.update();
+
+            // Atualiza botões
+            document.querySelectorAll('.fbtn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

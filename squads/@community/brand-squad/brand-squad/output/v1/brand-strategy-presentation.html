@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valota Parfum · Estratégia de marca</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,500;1,6..96,600&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --petroleo:#0F2E33; --noite:#0A1F23; --luz:#1A4A52;
+  --creme:#F2E8D8; --ambar:#D49A4E; --amarelo:#FFC93C;
+  --creme-70:rgba(242,232,216,.88); --creme-45:rgba(242,232,216,.78); --linha:rgba(242,232,216,.14);
+  --serif:'Bodoni Moda', Georgia, serif; --opsz:'opsz' 18; --grot:'Anton', Impact, sans-serif; --sans:'Figtree', system-ui, sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--noite);color:var(--creme);font-family:var(--sans);font-size:19px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--amarelo);color:var(--noite)}
+a{color:inherit}
+h1,h2,h3,blockquote,.quote,.bordao,.fact b,.t-serif,.when,.serie b,.sw b,.arc-bar div,.node .dot,.loader p{font-optical-sizing:none;font-variation-settings:var(--opsz)}
+:focus-visible{outline:3px solid var(--amarelo);outline-offset:4px}
+
+/* fundo */
+#mist{position:fixed;inset:0;z-index:0;pointer-events:none}
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.07;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.glow{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(70% 60% at 30% 35%,var(--luz) 0%,var(--petroleo) 45%,var(--noite) 100%)}
+main{position:relative;z-index:2}
+
+/* progresso */
+.progress{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:var(--ambar);z-index:50}
+
+/* loader */
+.loader{position:fixed;inset:0;z-index:60;background:var(--noite);display:grid;place-items:center;transition:opacity .6s ease .1s,visibility .6s}
+.loader.done{opacity:0;visibility:hidden}
+.loader p{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--creme-70)}
+.loader p span{display:inline-block;animation:puff 1.4s ease-in-out infinite}
+.loader p span:nth-child(2){animation-delay:.15s}.loader p span:nth-child(3){animation-delay:.3s}
+@keyframes puff{0%,100%{opacity:.2}50%{opacity:1}}
+
+/* layout */
+.wrap{width:min(1160px,100% - 48px);margin-inline:auto}
+section{padding:clamp(88px,12vw,160px) 0;border-top:1px solid var(--linha)}
+section:first-of-type{border-top:0}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(36px,5.2vw,64px);line-height:1.04;letter-spacing:-.01em;max-width:18ch}
+h3{font-family:var(--serif);font-weight:600;font-size:clamp(24px,2.6vw,30px);line-height:1.15}
+.lead{font-size:clamp(19px,1.6vw,22px);color:var(--creme-70);max-width:60ch;margin-top:24px}
+.small{font-size:16px;color:var(--creme-45)}
+.cite{font-size:15px;color:var(--creme-45);margin-top:10px;line-height:1.5}
+.head{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;margin-bottom:clamp(40px,6vw,72px)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+/* hero */
+.hero{min-height:100svh;display:grid;align-items:center;padding:96px 0 120px;border:0}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .9fr;gap:clamp(24px,5vw,72px);align-items:center}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(54px,8.6vw,124px);line-height:.95;letter-spacing:-.02em}
+.hero h1 em{font-style:italic;font-weight:600;color:var(--creme)}
+.hero .sub{margin-top:32px;font-size:clamp(18px,1.6vw,21px);color:var(--creme-70);max-width:44ch}
+.hero .meta{margin-top:40px;font-size:15.5px;color:var(--creme-45)}
+.selo-hero{width:min(420px,80vw);justify-self:center;transform:rotate(-8deg) scale(1.9);opacity:0}
+.selo-hero.stamp{animation:stamp .55s cubic-bezier(.3,1.6,.5,1) forwards}
+@keyframes stamp{0%{transform:rotate(-14deg) scale(1.9);opacity:0}60%{opacity:1}100%{transform:rotate(-8deg) scale(1);opacity:1}}
+.scroll-hint{position:absolute;left:50%;bottom:32px;transform:translateX(-50%);font-size:14.5px;color:var(--creme-45);display:flex;flex-direction:column;align-items:center;gap:10px;transition:opacity .4s}
+.scroll-hint i{width:1px;height:44px;background:linear-gradient(var(--creme-45),transparent);animation:drip 2s ease-in-out infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.scroll-hint.gone{opacity:0}
+
+/* resumo: fatos carimbados */
+.facts{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+.fact{padding:32px 20px 28px;border-left:1px solid var(--linha);transition:background .3s}
+.fact:first-child{border-left:0;padding-left:0}
+.fact:hover{background:rgba(242,232,216,.03)}
+.fact b{display:block;font-family:var(--serif);font-weight:600;font-size:clamp(44px,5vw,68px);line-height:1;color:var(--creme)}
+.fact span{display:block;margin-top:14px;font-size:16px;font-weight:500;color:var(--creme-70);line-height:1.45}
+.summary{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,96px);margin-top:64px}
+.summary p{color:var(--creme-70);max-width:56ch}
+.summary p strong{color:var(--creme);font-weight:600}
+
+/* desafio antes/depois */
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:var(--linha);border:1px solid var(--linha)}
+.ba > div{background:var(--noite);padding:clamp(28px,4vw,48px)}
+.ba .after{background:var(--petroleo)}
+.ba h3{margin-bottom:22px}
+.ba ul{list-style:none;display:grid;gap:14px}
+.ba li{padding-left:28px;position:relative;color:var(--creme-70)}
+.ba .before li::before{content:"";position:absolute;left:0;top:.75em;width:14px;height:1px;background:var(--creme-45)}
+.ba .after li{color:var(--creme)}
+.ba .after li::before{content:"";position:absolute;left:0;top:.45em;width:12px;height:12px;border-radius:50%;border:2px solid var(--amarelo)}
+.quote{font-family:var(--serif);font-weight:500;font-style:italic;font-size:clamp(22px,2.4vw,30px);line-height:1.3;max-width:34ch;margin-top:56px;color:var(--creme)}
+.quote + .cite{margin-top:12px}
+
+/* posicionamento */
+.word{font-family:var(--grot);font-size:clamp(96px,22vw,320px);line-height:.82;letter-spacing:.01em;color:var(--creme);margin:8px 0 40px;-webkit-text-stroke:0}
+.word-wrap{position:relative}
+.word-wrap .mini-selo{position:absolute;right:2%;top:-6%;width:clamp(110px,15vw,190px)}
+.pos-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(32px,6vw,96px)}
+blockquote{font-family:var(--serif);font-weight:500;font-size:clamp(20px,1.9vw,24px);line-height:1.45;border-left:2px solid var(--ambar);padding-left:28px;color:var(--creme)}
+.sacrifices h3{margin-bottom:18px}
+.sacrifices li{list-style:none;padding:12px 0;border-bottom:1px solid var(--linha);color:var(--creme-70);font-size:17.5px}
+
+/* arquitetura */
+.arch{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
+.arch::before{content:"";position:absolute;left:0;right:0;top:27px;height:1px;background:var(--ambar);opacity:.6}
+.node{padding-right:20px;position:relative}
+.node .dot{width:56px;height:56px;border-radius:50%;border:1px solid var(--ambar);background:var(--noite);display:grid;place-items:center;font-family:var(--serif);font-style:italic;font-size:22px;color:var(--ambar);margin-bottom:22px;transition:background .3s,color .3s}
+.node:hover .dot{background:var(--ambar);color:var(--noite)}
+.node h3{font-size:22px;margin-bottom:8px}
+.node p{font-size:16.5px;color:var(--creme-70);line-height:1.5}
+
+/* identidade */
+.palette{display:flex;height:clamp(220px,30vw,340px);border-radius:4px;overflow:hidden}
+.sw{position:relative;padding:18px;display:flex;flex-direction:column;justify-content:flex-end;font-size:14px;line-height:1.35;transition:flex .5s cubic-bezier(.2,.7,.2,1)}
+.sw b{font-family:var(--serif);font-weight:600;font-size:20px;display:block;margin-bottom:4px}
+.sw:hover{flex-grow:calc(var(--g) + 1.2)}
+.sw-p{--g:6;flex:6;background:radial-gradient(90% 90% at 35% 40%,var(--luz),var(--petroleo) 60%,var(--noite));color:var(--creme);box-shadow:inset 0 0 0 1px var(--linha)}
+.sw-c{--g:3;flex:3;background:var(--creme);color:var(--noite)}
+.sw-a{--g:.5;flex:.55;background:var(--ambar);color:var(--noite);writing-mode:vertical-rl;justify-content:flex-start}
+.sw-y{--g:.6;flex:.75;background:var(--amarelo);color:var(--noite);writing-mode:vertical-rl;justify-content:flex-start}
+.sw-a b,.sw-y b{font-size:17px;margin:0 0 0 6px}
+.id-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);margin-top:72px}
+.why li{list-style:none;padding:14px 0;border-bottom:1px solid var(--linha);color:var(--creme-70);font-size:16.5px}
+.why li strong{color:var(--creme);font-weight:600}
+.types{display:grid;gap:26px}
+.type{border-bottom:1px solid var(--linha);padding-bottom:22px}
+.type .spec{font-size:15px;font-weight:500;color:var(--creme-45);margin-bottom:6px}
+.t-serif{font-family:var(--serif);font-weight:600;font-size:clamp(34px,3.6vw,48px);line-height:1.05}
+.t-grot{font-family:var(--grot);font-size:clamp(34px,3.6vw,48px);line-height:1;color:var(--amarelo)}
+.t-sans{font-family:var(--sans);font-size:20px;color:var(--creme-70)}
+.selos{display:flex;gap:clamp(16px,4vw,48px);justify-content:center;flex-wrap:wrap;margin-top:88px;padding:56px 24px;background:var(--petroleo);border:1px solid var(--linha);border-radius:4px}
+.selos svg{width:clamp(150px,20vw,210px);transform:rotate(-8deg);transition:transform .35s cubic-bezier(.3,1.6,.5,1)}
+.selos svg:hover{transform:rotate(-8deg) scale(1.06)}
+.selos-note{text-align:center;margin-top:20px}
+.fams{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin-top:56px}
+.fam{border-radius:4px;padding:64px 12px 12px;font-size:15px;font-weight:700;line-height:1.3}
+.fam small{display:block;font-size:13.5px;font-weight:500;opacity:.9;margin-top:2px}
+
+/* arquétipo */
+.arc-bar{display:flex;height:96px;border-radius:4px;overflow:hidden;margin-top:8px}
+.arc-bar div{display:flex;align-items:center;padding:0 22px;font-family:var(--serif);font-weight:600;font-size:clamp(18px,2vw,24px);white-space:nowrap}
+.arc-bar .j{flex:60;background:var(--amarelo);color:var(--noite)}
+.arc-bar .l{flex:30;background:var(--ambar);color:var(--noite)}
+.arc-bar .s{flex:10;background:var(--creme);color:var(--noite);padding:0 10px;justify-content:center}
+.arc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,56px);margin-top:48px}
+.arc-grid h3{margin-bottom:10px}
+.arc-grid p{color:var(--creme-70);font-size:16.5px}
+.faces{margin-top:72px;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--linha)}
+.face{padding:28px 24px 8px 0}
+.face + .face{padding-left:24px;border-left:1px solid var(--linha)}
+.face h3{font-size:22px;margin-bottom:8px}
+.face p{color:var(--creme-70);font-size:16px}
+
+/* mensagem */
+.bordao{font-family:var(--serif);font-weight:600;font-style:italic;font-size:clamp(52px,8vw,112px);line-height:1;letter-spacing:-.02em;max-width:14ch}
+.oneliner{font-size:clamp(20px,1.9vw,24px);max-width:48ch;margin-top:36px;color:var(--creme-70)}
+.plan{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:72px;counter-reset:p}
+.step{padding:28px 28px 28px 0;border-top:2px solid var(--amarelo)}
+.step + .step{padding-left:28px}
+.step .n{font-family:var(--grot);font-size:44px;color:var(--amarelo);line-height:1}
+.step h3{margin:14px 0 8px;font-size:24px}
+.step p{color:var(--creme-70);font-size:16.5px}
+.bio{margin-top:72px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;background:var(--petroleo);border:1px solid var(--linha);border-radius:4px;padding:28px}
+.bio svg{width:96px}
+.bio .name{font-weight:600}
+.bio .txt{white-space:pre-line;color:var(--creme);font-size:16.5px;line-height:1.5;margin-top:4px}
+.bio .chars{font-size:14.5px;color:var(--creme-45);margin-top:8px}
+.series{margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--linha);border:1px solid var(--linha)}
+.serie{background:var(--noite);padding:22px}
+.serie b{display:block;font-family:var(--serif);font-weight:600;font-size:20px;margin-bottom:6px}
+.serie span{font-size:15.5px;color:var(--creme-70)}
+
+/* roteiro */
+.timeline{position:relative;display:grid;gap:0}
+.phase{display:grid;grid-template-columns:200px 1fr;gap:clamp(24px,4vw,64px);padding:40px 0;border-top:1px solid var(--linha)}
+.phase .when{font-family:var(--serif);font-weight:600;font-size:clamp(28px,3vw,40px);line-height:1}
+.phase .when small{display:block;font-family:var(--sans);font-weight:500;font-size:15px;color:var(--creme-45);margin-top:10px}
+.phase ul{list-style:none;display:grid;gap:12px}
+.phase li{padding-left:22px;position:relative;color:var(--creme-70)}
+.phase li::before{content:"";position:absolute;left:0;top:.7em;width:10px;height:1px;background:var(--ambar)}
+.phase li strong{color:var(--creme);font-weight:600}
+.phase.hot .when{color:var(--amarelo)}
+
+/* metas */
+.goals{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,40px)}
+.goal b{display:block;font-family:var(--grot);font-size:clamp(56px,7vw,96px);line-height:.9;color:var(--amarelo)}
+.goal p{margin-top:16px;color:var(--creme-70);font-size:16.5px;max-width:26ch}
+
+/* riscos */
+.risks{width:100%;border-collapse:collapse;font-size:16px}
+.risks th{text-align:left;font-weight:600;font-size:15px;color:var(--creme-45);padding:0 16px 14px 0;border-bottom:1px solid var(--linha)}
+.risks td{padding:18px 16px 18px 0;border-bottom:1px solid var(--linha);vertical-align:top;color:var(--creme-70)}
+.risks td:first-child{color:var(--creme);font-weight:500;width:32%}
+.lvl{display:inline-block;min-width:64px;font-size:14.5px;font-weight:600;padding:2px 10px;border-radius:20px;border:1px solid var(--creme-45);color:var(--creme)}
+.lvl.alta{border-color:var(--amarelo);color:var(--amarelo)}
+
+/* CTA */
+.cta{text-align:center;padding-bottom:180px}
+.cta h2{margin-inline:auto;max-width:20ch}
+.cta .lead{margin-inline:auto}
+.next{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:48px}
+.btn{display:inline-block;padding:16px 28px;border-radius:40px;font-weight:600;font-size:16px;text-decoration:none;border:1px solid var(--creme-45);transition:background .25s,color .25s,border-color .25s}
+.btn:hover{background:var(--creme);color:var(--noite);border-color:var(--creme)}
+.btn.primary{background:var(--amarelo);color:var(--noite);border-color:var(--amarelo)}
+.btn.primary:hover{background:var(--creme);border-color:var(--creme)}
+footer{position:relative;z-index:2;text-align:center;padding:40px 0 56px;font-size:15px;color:var(--creme-45);border-top:1px solid var(--linha)}
+
+@media (max-width:960px){
+  .hero .wrap,.summary,.ba,.pos-grid,.id-grid{grid-template-columns:1fr}
+  .selo-hero{width:min(300px,70vw);grid-row:1}
+  .facts{grid-template-columns:repeat(2,1fr)}
+  .fact,.fact:first-child{border-left:0;padding-left:0;border-bottom:1px solid var(--linha)}
+  .arch{grid-template-columns:1fr;gap:28px}
+  .arch::before{left:27px;right:auto;top:0;bottom:0;width:1px;height:auto}
+  .node{display:grid;grid-template-columns:56px 1fr;gap:0 20px}.node .dot{grid-row:span 2;margin:0}
+  .fams{grid-template-columns:repeat(2,1fr)}
+  .arc-grid,.faces,.plan,.goals{grid-template-columns:1fr}
+  .face + .face{padding-left:0;border-left:0;border-top:1px solid var(--linha)}
+  .step + .step{padding-left:0}
+  .series{grid-template-columns:1fr 1fr}
+  .phase{grid-template-columns:1fr;gap:16px}
+  .risks thead{display:none}.risks tr{display:grid;grid-template-columns:1fr 1fr;padding:14px 0;border-bottom:1px solid var(--linha)}
+  .risks td{border:0;padding:4px 0}.risks td:first-child,.risks td:last-child{grid-column:1/-1;width:auto}
+  .arc-bar .s{font-size:14px}
+}
+@media (max-width:520px){.facts,.series{grid-template-columns:1fr}.bio{grid-template-columns:1fr}.word-wrap{padding-top:84px}.word-wrap .mini-selo{top:0;right:0;width:100px}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}.selo-hero{opacity:1;transform:rotate(-8deg)}
+}
+</style>
+</head>
+<body>
+
+<!-- Selo reutilizável -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="arcTop" d="M26,100 A74,74 0 0,1 174,100"/><path id="arcBot" d="M16,100 A84,84 0 0,0 184,100"/>
+    
+    <symbol id="selo-base" viewBox="0 0 200 200">
+      <g>
+        <circle cx="100" cy="100" r="96" fill="#FFC93C"/>
+        <circle cx="100" cy="100" r="91" fill="none" stroke="#0A1F23" stroke-width="2.5"/>
+        <circle cx="100" cy="100" r="61" fill="none" stroke="#0A1F23" stroke-width="5.5"/>
+        <text font-family="Figtree, sans-serif" font-weight="700" font-size="13" letter-spacing="2.4" fill="#0A1F23" text-anchor="middle"><textPath href="#arcTop" startOffset="50%">VALOTA PARFUM</textPath></text><text font-family="Figtree, sans-serif" font-weight="700" font-size="12" letter-spacing="1.6" fill="#0A1F23" text-anchor="middle"><textPath href="#arcBot" startOffset="50%">NA PELE, NÃO NO HYPE</textPath></text><circle cx="18" cy="100" r="2.6" fill="#0A1F23"/><circle cx="182" cy="100" r="2.6" fill="#0A1F23"/>
+        <text x="100" y="62" text-anchor="middle" font-family="'Bodoni Moda', serif" font-weight="700" font-size="22" fill="#0A1F23" style="font-variation-settings:'opsz' 6">V</text>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="loader" id="loader" role="status" aria-live="polite"><p><span>borri</span><span>fan</span><span>do…</span></p></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="glow" aria-hidden="true"></div>
+<canvas id="mist" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="topo" aria-label="Abertura">
+  <div class="wrap">
+    <div>
+      <h1>Se vale,<br>a Valota <em>fala.</em></h1>
+      <p class="sub">A estratégia de marca da Valota Parfum para o Instagram: a resenha sincera de perfumes de nicho, árabes e de grife, com visual de luxo e humor de cara séria.</p>
+      <p class="meta">Brand Squad, 6 especialistas · 9 de novembro de 2026</p>
+    </div>
+    <svg class="selo-hero" id="seloHero" viewBox="0 0 200 200" role="img" aria-label="Selo Valota: vale o frasco">
+      <use href="#selo-base"/>
+      <text x="100" y="97" text-anchor="middle" font-family="Anton, sans-serif" font-size="29" fill="#0A1F23">VALE O</text><text x="100" y="130" text-anchor="middle" font-family="Anton, sans-serif" font-size="29" fill="#0A1F23">FRASCO</text>
+    </svg>
+  </div>
+  <div class="scroll-hint" id="hint"><span>role para ler o laudo</span><i></i></div>
+</section>
+
+<!-- RESUMO -->
+<section id="resumo">
+  <div class="wrap">
+    <div class="head rv"><h2>O resumo, para quem só vai ler esta parte</h2></div>
+    <div class="facts rv">
+      <div class="fact"><b>1</b><span>palavra para possuir no nicho: sincera</span></div>
+      <div class="fact"><b>3</b><span>vereditos fixos no Selo, em toda resenha</span></div>
+      <div class="fact"><b>5</b><span>ativos que aparecem em 100% dos Reels</span></div>
+      <div class="fact"><b>0</b><span>links em perfume com PASSA LONGE</span></div>
+      <div class="fact"><b>27/11</b><span>Black Friday: estreia do Plantão Valota</span></div>
+    </div>
+    <div class="summary">
+      <p class="rv">O feed brasileiro de perfume virou vitrine de comissão, e o público já desconfia. O espaço livre não é ser mais um perfil de "cheiro de rico": é ser <strong>a sincera do perfume</strong>, quem diz se vale, inclusive quando não vale, e ri do próprio vício enquanto diz.</p>
+      <p class="rv">O movimento mais importante é lançar o Instagram já com o <strong>kit fixo</strong> (nome nos primeiros segundos, Selo amarelo, base Petróleo, bordão e a dupla Bodoni + Anton) e estrear o <strong>Plantão Valota na Black Friday</strong>. Perfis movidos a comissão não conseguem copiar isso sem perder receita.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DESAFIO -->
+<section id="desafio">
+  <div class="wrap">
+    <div class="head rv"><h2>O feed de perfume hoje, e o lugar da Valota</h2></div>
+    <div class="ba rv">
+      <div class="before">
+        <h3>O que o seguidor encontra</h3>
+        <ul>
+          <li>Todo perfume "rende elogio" e tem "cheiro de rico"</li>
+          <li>Link de TikTok Shop em tudo, sem dizer quem pagou</li>
+          <li>Preto com dourado em todos os perfis</li>
+          <li>Blind buy caro baseado em hype</li>
+        </ul>
+      </div>
+      <div class="after">
+        <h3>O que a Valota entrega</h3>
+        <ul>
+          <li>Veredito claro: vale o frasco, vale o decant ou passa longe</li>
+          <li>Origem à vista: comprado, enviado ou com link</li>
+          <li>Petróleo com Selo amarelo, reconhecível em um segundo</li>
+          <li>Teste na pele, no calor do Brasil, com preço em reais</li>
+        </ul>
+      </div>
+    </div>
+    <p class="quote rv">"Quais influencers BR são menos jabazeiros?"</p>
+    <p class="cite rv">Tópico real do fórum da Fragrantica BR, citado pelo Positioning Specialist.</p>
+  </div>
+</section>
+
+<!-- POSICIONAMENTO -->
+<section id="posicionamento">
+  <div class="wrap">
+    <div class="head rv"><h2>A palavra que a Valota vai possuir</h2></div>
+    <div class="word-wrap rv">
+      <div class="word">SINCERA</div>
+      <svg class="mini-selo" viewBox="0 0 200 200" role="img" aria-label="Selo: passa longe"><use href="#selo-base"/><text x="100" y="97" text-anchor="middle" font-family="Anton, sans-serif" font-size="29" fill="#0A1F23">PASSA</text><text x="100" y="130" text-anchor="middle" font-family="Anton, sans-serif" font-size="29" fill="#0A1F23">LONGE</text></svg>
+    </div>
+    <div class="pos-grid">
+      <blockquote class="rv">Para viciados em perfume que já se queimaram com compra às cegas por causa de hype, a Valota Parfum é a resenha anti-hype: a única que dá veredito claro, inclusive "passa longe", com humor e estética de luxo, porque mostra a origem de cada perfume, testa na pele e mantém à vista a galeria dos reprovados.</blockquote>
+      <div class="sacrifices rv">
+        <h3>O que a Valota abre mão para ser dona dessa palavra</h3>
+        <ul>
+          <li>Ser vitrine de achadinho sem veredito</li>
+          <li>Elogiar todo lançamento hypado</li>
+          <li>Publi que exige resenha positiva</li>
+          <li>Análise técnica de perfumista e humor de duplo sentido</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARQUITETURA -->
+<section id="arquitetura">
+  <div class="wrap">
+    <div class="head rv"><h2>Como as peças da marca se encaixam</h2><p class="lead">Cada camada nasce da anterior. A cor e o bordão não são decoração: são a promessa em forma visível.</p></div>
+    <div class="arch rv">
+      <div class="node"><div class="dot">p</div><h3>Promessa</h3><p>Toda resenha termina num veredito honesto. Nenhum reprovado ganha link.</p></div>
+      <div class="node"><div class="dot">s</div><h3>Posição</h3><p>A sincera do perfume: a resenha anti-hype.</p></div>
+      <div class="node"><div class="dot">b</div><h3>Personalidade</h3><p>Bobo da Corte com moldura de Amante e régua de Sábio.</p></div>
+      <div class="node"><div class="dot">v</div><h3>Identidade</h3><p>Petróleo, Selo amarelo, Bodoni + Anton, frasco real.</p></div>
+      <div class="node"><div class="dot">m</div><h3>Mensagem</h3><p>"Se vale, a Valota fala." e "Na pele, não no hype."</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- IDENTIDADE -->
+<section id="identidade">
+  <div class="wrap">
+    <div class="head rv"><h2>Petróleo &amp; Âmbar, a paleta escolhida</h2><p class="lead">Escolhida pela Osiany entre três candidatas do estudo de cores. As proporções abaixo são as de uso: 60% base, 30% papel, 5% âmbar e até 10% de amarelo.</p></div>
+    <div class="palette rv" role="img" aria-label="Paleta: Petróleo 60%, Creme 30%, Âmbar 5%, Amarelo Laudo 5 a 10%">
+      <div class="sw sw-p"><b>Petróleo</b>#0F2E33 · Noite #0A1F23 · Luz #1A4A52</div>
+      <div class="sw sw-c"><b>Creme Pergaminho</b>#F2E8D8</div>
+      <div class="sw sw-a"><b>Âmbar</b>#D49A4E</div>
+      <div class="sw sw-y"><b>Amarelo Laudo</b>#FFC93C</div>
+    </div>
+    <div class="id-grid">
+      <ul class="why rv">
+        <li><strong>Azul e verde-azulado são os favoritos universais</strong> de homens e mulheres. <span class="cite">Hurlbert &amp; Ling 2007; Palmer &amp; Schloss 2010</span></li>
+        <li><strong>Escuro e pouco saturado sinaliza status</strong> e marca com história. <span class="cite">Calderón Urbina &amp; Stamatogiannakis; Zhou et al. 2025</span></li>
+        <li><strong>O azul é lido como competente</strong>, o que reforça a palavra sincera. <span class="cite">Labrecque &amp; Milne 2012</span></li>
+        <li><strong>Turquesa combina com o fresco</strong> na correspondência cor e cheiro. <span class="cite">Demattè, Sanabria &amp; Spence 2006</span></li>
+        <li><strong>Casa com o grade frio</strong> já usado nas gravações. O Petróleo Luz no centro dos degradês faz o fundo ler como cor, e não como preto, no modo escuro.</li>
+      </ul>
+      <div class="types rv">
+        <div class="type"><p class="spec">Bodoni Moda, para o lado sério</p><p class="t-serif">Khamrah, <i>na pele</i></p></div>
+        <div class="type"><p class="spec">Anton, para a piada</p><p class="t-grot">PLANTÃO VALOTA</p></div>
+        <div class="type"><p class="spec">Figtree, para o texto</p><p class="t-sans">Fixação de 7 horas no calor. Preço médio de R$ 189.</p></div>
+      </div>
+    </div>
+
+    <div class="selos rv" aria-label="Os três vereditos do Selo">
+      <svg viewBox="0 0 200 200" role="img" aria-label="Vale o frasco"><use href="#selo-base"/><text x="100" y="97" text-anchor="middle" font-family="Anton, sans-serif" font-size="29" fill="#0A1F23">VALE O</text><text x="100" y="130" text-anchor="middle" font-family="Anton, sans-serif" font-size="29" fill="#0A1F23">FRASCO</text></svg>
+      <svg viewBox="0 0 200 200" role="img" aria-label="Vale o decant"><use href="#selo-base"/><text x="100" y="97" text-anchor="middle" font-family="Anton, sans-serif" font-size="29" fill="#0A1F23">VALE O</text><text x="100" y="130" text-anchor="middle" font-family="Anton, sans-serif" font-size="29" fill="#0A1F23">DECANT</text></svg>
+      <svg viewBox="0 0 200 200" role="img" aria-label="Passa longe"><use href="#selo-base"/><text x="100" y="97" text-anchor="middle" font-family="Anton, sans-serif" font-size="29" fill="#0A1F23">PASSA</text><text x="100" y="130" text-anchor="middle" font-family="Anton, sans-serif" font-size="29" fill="#0A1F23">LONGE</text></svg>
+    </div>
+    <p class="selos-note small rv">Sempre amarelo, no canto superior direito, girado −8°. Muda só o texto. O monograma do perfil nasce deste anel.</p>
+
+    <div class="fams rv" aria-label="Cores das famílias olfativas">
+      <div class="fam" style="background:#6B4430;color:#F2E8D8;box-shadow:inset 0 0 0 2px #F2E8D8">Cedro<small>amadeirado, oud</small></div>
+      <div class="fam" style="background:#D49A4E;color:#0A1F23">Âmbar<small>baunilha, gourmand</small></div>
+      <div class="fam" style="background:#B8BC5C;color:#0A1F23">Bergamota<small>cítrico</small></div>
+      <div class="fam" style="background:#7DBFB3;color:#0A1F23">Menta<small>fresco, aquático</small></div>
+      <div class="fam" style="background:#E6AEB9;color:#0A1F23">Rosa Antigo<small>floral</small></div>
+      <div class="fam" style="background:#9C452A;color:#F2E8D8;box-shadow:inset 0 0 0 2px #F2E8D8">Pimenta<small>especiado, couro</small></div>
+      <div class="fam" style="background:#DCD6E2;color:#0A1F23">Algodão<small>almíscar, limpo</small></div>
+    </div>
+    <p class="cite rv">Cheiros mais intensos ganham cores mais escuras (Kemp &amp; Gilbert 1997), e cada chip sempre leva o nome escrito, para quem é daltônico.</p>
+  </div>
+</section>
+
+<!-- ARQUÉTIPO -->
+<section id="arquetipo">
+  <div class="wrap">
+    <div class="head rv"><h2>Humor de cara séria, moldura de luxo</h2><p class="lead">Luxo e humor não brigam: o luxo fica na forma, e o humor fica no conteúdo. A piada solene só funciona com moldura elegante.</p></div>
+    <div class="arc-bar rv" role="img" aria-label="Bobo da Corte 60%, Amante 30%, Sábio 10%">
+      <div class="j">Bobo da Corte 60%</div><div class="l">Amante 30%</div><div class="s">Sábio</div>
+    </div>
+    <div class="arc-grid">
+      <div class="rv"><h3>Bobo da Corte</h3><p>Plantão, Tribunal, documentário, bipe de censura. Regra: toda comédia entrega pelo menos uma informação útil, e a piada nunca mira o seguidor.</p></div>
+      <div class="rv"><h3>Amante</h3><p>A textura, o frasco real, a descrição sensorial. O luxo da Valota é prazer, não ostentação.</p></div>
+      <div class="rv"><h3>Sábio</h3><p>O dado conferido, o "mas" em toda resenha, o "esse eu não recomendo". É o que transforma risada em clique.</p></div>
+    </div>
+    <div class="faces">
+      <div class="face rv"><h3>Osiany real</h3><p>Laudos e todo veredito que leva a um link.</p></div>
+      <div class="face rv"><h3>Avatar HeyGen</h3><p>O âncora do Plantão. Só comédia, look fixo, aviso de IA. Nunca veredito.</p></div>
+      <div class="face rv"><h3>Narração em off</h3><p>Narrador de documentário sobre imagem de frasco real.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MENSAGEM -->
+<section id="mensagem">
+  <div class="wrap">
+    <p class="bordao rv">Se vale, a Valota fala.</p>
+    <p class="oneliner rv">Eu ajudo viciados em perfume a acertar a compra sem cair no hype, pra cheirar caro gastando certo.</p>
+    <div class="plan">
+      <div class="step rv"><div class="n">1</div><h3>Assiste o laudo</h3><p>Teste na pele, preço em reais e fixação no calor.</p></div>
+      <div class="step rv"><div class="n">2</div><h3>Confere o selo</h3><p>Vale o frasco, vale o decant ou passa longe.</p></div>
+      <div class="step rv"><div class="n">3</div><h3>Compra no preço certo</h3><p>Link sinalizado só para o que vale. "Ganho comissão no link. Não ganho pra mentir."</p></div>
+    </div>
+    <div class="bio rv">
+      <svg viewBox="0 0 200 200" role="img" aria-label="Foto de perfil: monograma V">
+        <defs><radialGradient id="pf" cx=".38" cy=".38" r=".7"><stop offset="0" stop-color="#1A4A52"/><stop offset=".7" stop-color="#0F2E33"/><stop offset="1" stop-color="#0A1F23"/></radialGradient></defs>
+        <circle cx="100" cy="100" r="98" fill="url(#pf)"/><circle cx="100" cy="100" r="80" fill="none" stroke="#D49A4E" stroke-width="1.5"/><circle cx="100" cy="100" r="70" fill="none" stroke="#FFC93C" stroke-width="7"/>
+        <text x="100" y="130" text-anchor="middle" font-family="'Bodoni Moda', serif" font-weight="700" font-size="84" fill="#FFC93C" style="font-variation-settings:'opsz' 6">V</text>
+      </svg>
+      <div>
+        <p class="name">Valota | Perfume sem hype</p>
+        <p class="txt">Se vale, a Valota fala.
+Nicho, árabe e grife testados na pele, sem publi disfarçada.
+Promoções que eu compraria hoje 👇</p>
+        <p class="chars">Bio principal, 118 de 150 caracteres</p>
+      </div>
+    </div>
+    <div class="series rv" aria-label="Séries fixas">
+      <div class="serie"><b>Laudo Valota</b><span>Resenha sincera, termina no Selo</span></div>
+      <div class="serie"><b>Tribunal do Frasco</b><span>O perfume é o réu</span></div>
+      <div class="serie"><b>Blind buy ou blind BYE</b><span>Achadinhos e árabes</span></div>
+      <div class="serie"><b>Plantão Valota</b><span>Promoções reais, com avatar ou off</span></div>
+      <div class="serie"><b>Árabe ou Grife?</b><span>O árabe que lembra o original</span></div>
+      <div class="serie"><b>Presente sem erro</b><span>Até R$ 300, para quem vai presentear</span></div>
+      <div class="serie"><b>Teste do Calor</b><span>Fixação no verão brasileiro</span></div>
+      <div class="serie"><b>Confissões dos Borrifados</b><span>DMs lidas com bipe de censura</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ROTEIRO -->
+<section id="roteiro">
+  <div class="wrap">
+    <div class="head rv"><h2>Do perfil vazio à comunidade Borrifados</h2></div>
+    <div class="timeline">
+      <div class="phase hot rv"><p class="when">30 dias<small>Fundação</small></p>
+        <ul>
+          <li><strong>Auditar 30 perfis à mão</strong> para confirmar que o petróleo está livre no nicho</li>
+          <li>Selo, foto de perfil, destaques e templates de Reel e carrossel na paleta</li>
+          <li>Bio, nome e post fixado "Regras da casa", antes do primeiro Reel</li>
+          <li>9 posts de lançamento, com o manifesto "Oi, eu sou a Osiany e tenho __ frascos"</li>
+          <li><strong>Plantão Valota de Black Friday em 27/11</strong>, com link sinalizado nos stories</li>
+        </ul>
+      </div>
+      <div class="phase rv"><p class="when">90 dias<small>Construção</small></p>
+        <ul>
+          <li>Cadência fixa das séries: segunda Laudo, quarta Tribunal, sexta Blind buy</li>
+          <li>Canal "Reunião dos Borrifados", "Mostra tua prateleira" e uma live por mês</li>
+          <li>Teste de reconhecimento com pergunta aberta e Trial Reels</li>
+          <li>Afiliado dentro das séries, no máximo 1 em cada 4 ou 5 posts</li>
+          <li>Decants só como pesquisa: enquete, lista de espera e consulta à Anvisa</li>
+        </ul>
+      </div>
+      <div class="phase rv"><p class="when">12 meses<small>Escala</small></p>
+        <ul>
+          <li>"O que a Valota falou?" vira pergunta comum nos comentários do nicho</li>
+          <li>Galeria dos reprovados como prova de sinceridade difícil de copiar</li>
+          <li>Decants "do que eu aprovaria", via parceria regularizada</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METAS -->
+<section id="metas">
+  <div class="wrap">
+    <div class="head rv"><h2>As regras que viram números</h2><p class="lead">Ainda não há dados do Instagram, então a primeira meta é registrar a linha de base no mês 1. Estas são as regras de operação que a squad recomenda medir desde o primeiro post.</p></div>
+    <div class="goals">
+      <div class="goal rv"><b>100%</b><p>das peças com o kit fixo: nome, Selo, Petróleo, bordão e fontes</p></div>
+      <div class="goal rv"><b>50%</b><p>dos temas abrindo a porta para quem compra pouco: presente, iniciante, fixação</p></div>
+      <div class="goal rv"><b>1 em 5</b><p>posts com foco comercial, no máximo</p></div>
+      <div class="goal rv"><b>0</b><p>exportações do TikTok com marca d'água</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RISCOS -->
+<section id="riscos">
+  <div class="wrap">
+    <div class="head rv"><h2>O que pode quebrar a marca</h2></div>
+    <table class="risks rv">
+      <thead><tr><th>Risco</th><th>Chance</th><th>Impacto</th><th>Sinal de alerta</th></tr></thead>
+      <tbody>
+        <tr><td>Comissão empurrando link de perfume ruim</td><td><span class="lvl alta">Alta</span></td><td><span class="lvl alta">Alto</span></td><td>Vontade de suavizar um "passa longe"</td></tr>
+        <tr><td>Volume diluindo o kit fixo</td><td><span class="lvl alta">Alta</span></td><td><span class="lvl alta">Alto</span></td><td>Post sem Selo, outra cor "só dessa vez"</td></tr>
+        <tr><td>Petróleo confundido com o azul das grifes masculinas</td><td><span class="lvl">Média</span></td><td><span class="lvl">Médio</span></td><td>Ninguém associa a cor à Valota no teste de reconhecimento</td></tr>
+        <tr><td>Credibilidade do avatar</td><td><span class="lvl">Média</span></td><td><span class="lvl alta">Alto</span></td><td>"Isso é IA?" em vídeo com link</td></tr>
+        <tr><td>Sinceridade encenada</td><td><span class="lvl">Média</span></td><td><span class="lvl alta">Alto</span></td><td>Galeria de reprovados só com perfume barato</td></tr>
+        <tr><td>Venda de decants sem regularização</td><td><span class="lvl">Futura</span></td><td><span class="lvl alta">Alto</span></td><td>Vender antes do parecer sobre a Anvisa</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="proximo">
+  <div class="wrap">
+    <h2 class="rv">O próximo passo é o Selo na tela</h2>
+    <p class="lead rv">Com a estratégia aprovada, a squad de criativos já pode produzir o kit: Selo, foto de perfil, destaques e os templates de Reel e carrossel em Petróleo.</p>
+    <div class="next rv">
+      <a class="btn primary" href="brand-strategy-report.md">Abrir o relatório completo</a>
+      <a class="btn" href="step-04-identity-system.md">Ver o sistema de identidade</a>
+      <a class="btn" href="step-02-identity.md">Ler o estudo de cores</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer>Brand Squad · Valota Parfum · 9 de novembro de 2026</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var loader = document.getElementById('loader'), selo = document.getElementById('seloHero');
+  function start(){ loader.classList.add('done'); setTimeout(function(){ selo.classList.add('stamp'); }, reduce ? 0 : 450); }
+  if (document.fonts && document.fonts.ready) { Promise.race([document.fonts.ready, new Promise(function(r){setTimeout(r,2500)})]).then(start); } else { window.addEventListener('load', start); }
+
+  /* progresso + dica de rolagem */
+  var bar = document.getElementById('progress'), hint = document.getElementById('hint'), scrollF = 0;
+  function onScroll(){
+    var h = document.documentElement, max = h.scrollHeight - h.clientHeight;
+    var p = max > 0 ? h.scrollTop / max : 0; bar.style.transform = 'scaleX(' + p + ')';
+    hint.classList.toggle('gone', h.scrollTop > 40);
+    scrollF = Math.min(1, h.scrollTop / (window.innerHeight * 1.2));
+  }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  /* revelação com escalonamento */
+  var els = document.querySelectorAll('.rv');
+  if (reduce || !('IntersectionObserver' in window)) { els.forEach(function(e){ e.classList.add('in'); }); }
+  else {
+    var io = new IntersectionObserver(function(entries){
+      var i = 0;
+      entries.forEach(function(en){ if (en.isIntersecting) { var el = en.target; el.style.transitionDelay = (i++ * 90) + 'ms'; el.classList.add('in'); io.unobserve(el); } });
+    }, {threshold:.15, rootMargin:'0px 0px -6% 0px'});
+    els.forEach(function(e){ io.observe(e); });
+  }
+
+  /* névoa de borrifo (Three.js), discreta */
+  if (typeof THREE === 'undefined') return;
+  var canvas = document.getElementById('mist');
+  var renderer = new THREE.WebGLRenderer({canvas:canvas, alpha:true, antialias:false});
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
+  var scene = new THREE.Scene(), camera = new THREE.PerspectiveCamera(55, 1, 1, 400);
+  camera.position.z = 50;
+
+  function cloud(n, spread, color, size, opacity){
+    var g = new THREE.BufferGeometry(), pos = new Float32Array(n*3), seed = new Float32Array(n);
+    for (var i=0;i<n;i++){
+      var r = Math.pow(Math.random(), .6) * spread, a = Math.random()*Math.PI*2;
+      pos[i*3] = Math.cos(a)*r*1.6 + 8; pos[i*3+1] = (Math.random()-.5)*spread*1.4; pos[i*3+2] = (Math.random()-.5)*spread;
+      seed[i] = Math.random()*100;
+    }
+    g.setAttribute('position', new THREE.BufferAttribute(pos,3));
+    var m = new THREE.PointsMaterial({color:color, size:size, transparent:true, opacity:opacity, depthWrite:false, blending:THREE.AdditiveBlending, sizeAttenuation:true});
+    var p = new THREE.Points(g, m); p.userData = {seed:seed, base:pos.slice(), opacity:opacity}; scene.add(p); return p;
+  }
+  var mist = cloud(520, 30, 0xF2E8D8, .9, .22);
+  var amber = cloud(15, 22, 0xD49A4E, 2, .35);
+  var gold = cloud(8, 18, 0xFFC93C, 1.6, .3);
+  var clouds = [mist, amber, gold];
+
+  var mx = 0, my = 0, tx = 0, ty = 0;
+  window.addEventListener('pointermove', function(e){ tx = (e.clientX/window.innerWidth - .5)*1.5; ty = (e.clientY/window.innerHeight - .5)*1.5; }, {passive:true});
+  function resize(){ var w = window.innerWidth, h = window.innerHeight; renderer.setSize(w,h,false); camera.aspect = w/h; camera.updateProjectionMatrix(); }
+  window.addEventListener('resize', resize); resize();
+
+  var t0 = performance.now();
+  function frame(now){
+    var t = (now - t0) / 1000;
+    mx += (tx - mx) * .04; my += (ty - my) * .04;
+    camera.position.x = mx * 3; camera.position.y = -my * 3; camera.lookAt(0,0,0);
+    clouds.forEach(function(c, ci){
+      var a = c.geometry.attributes.position.array, b = c.userData.base, s = c.userData.seed;
+      for (var i=0;i<s.length;i++){
+        var k = s[i];
+        a[i*3]   = b[i*3]   + Math.sin(t*.12 + k)*1.4;
+        a[i*3+1] = ((b[i*3+1] + t*(.35 + (k%1)*.4) + 21) % 42) - 21;
+        a[i*3+2] = b[i*3+2] + Math.cos(t*.1 + k)*1.2;
+      }
+      c.geometry.attributes.position.needsUpdate = true;
+      c.material.opacity = c.userData.opacity * (1 - scrollF * .85);
+      c.rotation.y = Math.sin(t*.03 + ci)*.08;
+    });
+    renderer.render(scene, camera);
+    if (!reduce) requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

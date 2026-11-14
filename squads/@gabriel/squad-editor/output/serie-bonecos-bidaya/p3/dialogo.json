@@ -1,0 +1,77 @@
+{
+  "personagens": {
+    "rafa": {
+      "voz": "2CECaLAGTS5NRGxgbcxr",
+      "ajustes": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.3,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      }
+    },
+    "bia": {
+      "voz": "GDzHdQOi6jjf8zaXhCYD",
+      "ajustes": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.3,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      }
+    }
+  },
+  "inicio": 0.3,
+  "pausa": 0.12,
+  "fim": 1.5,
+  "falas": [
+    {
+      "quem": "rafa",
+      "texto": "Bia, eu passei a noite inteira olhando pra essa caixa, então me fala logo como é que eu descubro se o meu Bidáia é original.",
+      "legenda": "Bia, eu passei a noite inteira olhando pra essa caixa, então me fala logo como é que eu descubro se o meu Bidaya é original."
+    },
+    {
+      "quem": "bia",
+      "texto": "Então, a resposta tava aí na sua mão o tempo todo, porque a própria Bidáia tem uma página no site só pra isso, e você escaneia o código do produto pra conferir se ele é original.",
+      "legenda": "Então, a resposta tava aí na sua mão o tempo todo, porque a própria Bidaya tem uma página no site só pra isso, e você escaneia o código do produto pra conferir se ele é original."
+    },
+    {
+      "quem": "rafa",
+      "texto": "Só isso? Então peraí, que eu vou escanear agora, e se der errado eu vou chorar aqui mesmo na sua frente."
+    },
+    {
+      "quem": "bia",
+      "texto": "E aí, Rafa, fala logo, porque eu tô mais nervosa do que você."
+    },
+    {
+      "quem": "rafa",
+      "texto": "Original, Bia, original, então além de árabe de Dubai o meu perfume ainda é verdadeiro!"
+    },
+    {
+      "quem": "bia",
+      "texto": "Ainda bem, e olha que tem mais uma coisa boa, porque a comunidade compara o seu Vanilla Porn com uma baunilha de uma marca de nicho francesa bem mais cara.",
+      "legenda": "Ainda bem, e olha que tem mais uma coisa boa, porque a comunidade compara o seu Vanilla P*rn com uma baunilha de uma marca de nicho francesa bem mais cara."
+    },
+    {
+      "quem": "rafa",
+      "texto": "Francesa? Então o meu perfume tem Dubai no endereço, Paraguai na prateleira e cheiro de Paris, ou seja, ele é bem mais viajado do que eu."
+    },
+    {
+      "quem": "bia",
+      "texto": "Mais viajado e mais cheiroso também, só que da próxima vez você confere o código antes, compra de loja de confiança e sempre desconfia quando o preço tá baixo demais."
+    },
+    {
+      "quem": "rafa",
+      "texto": "Combinado, e da próxima vez que alguém me falar de tradição milenar eu pergunto logo o ano em que a marca nasceu."
+    },
+    {
+      "quem": "bia",
+      "texto": "Isso, e se responderem dois mil e vinte e cinco, você já sabe que a família é bem jovem."
+    },
+    {
+      "quem": "rafa",
+      "texto": "E a próxima roubada em que eu me meto sai no próximo episódio, então segue a Valota Parfum pra não perder.",
+      "pausa_antes": 0.45
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "fundo": "branco",
+  "slides": [
+    {
+      "tipo": "capa",
+      "titulo": "🚨 5 lugares onde você precisa borrifar seu perfume pra ele durar mais!",
+      "subtitulo": "O 5º segura o cheiro por mais tempo que a sua pele, e quase ninguém usa. ➡️",
+      "imagens": [
+        {
+          "img": "capa-borrifando.png",
+          "pos": "center 20%"
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "1. Nas laterais do pescoço.",
+      "texto": "É um ponto quente e fica perto do nariz de quem chega perto de você: abraço, conversa, elevador.\n\nCalor ajuda o perfume a se espalhar.",
+      "passo": "1 borrifada de cada lado → deixa secar sozinho."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "2. Atrás da orelha e na nuca.",
+      "texto": "Pele quente e quase sem atrito: ninguém esfrega a nuca.\n\nO cheiro vai saindo aos poucos enquanto você se mexe.",
+      "passo": "Cabelo comprido? Levanta → borrifa na nuca → solta."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "3. No pulso e na dobra do cotovelo, mas sem esfregar.",
+      "texto": "Esfregar esquenta a pele e queima as notas de saída antes da hora.\n\nFrancis Kurkdjian, o perfumista do Le Male, chama esse hábito de \"muito ruim\".",
+      "passo": "Borrifa → espera secar → **não encosta um pulso no outro**."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "4. No peito, antes de vestir a camisa.",
+      "texto": "O calor do corpo vai soltando o perfume devagar, por baixo do tecido.\n\nFica um rastro gostoso, sem exagero.",
+      "passo": "Banho → hidratante sem cheiro → perfume → camisa."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "5. Na roupa.",
+      "texto": "No tecido, o perfume não sofre com o calor nem com a oleosidade da pele. Por isso costuma durar mais.\n\nAlgodão e lã seguram melhor.",
+      "passo": "Seda e roupa clara podem manchar: testa antes num cantinho escondido."
+    },
+    {
+      "tipo": "final",
+      "texto": "Se esse post te ajudou, já segue a **Valota Parfum** que por aqui eu te ensino de forma prática a fazer o seu perfume durar mais e render mais :)"
+    }
+  ]
+}

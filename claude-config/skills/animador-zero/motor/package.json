@@ -1,0 +1,10 @@
+{
+  "name": "animador-zero-motor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "puppeteer-core": "23.6.0",
+    "three": "0.169.0"
+  }
+}

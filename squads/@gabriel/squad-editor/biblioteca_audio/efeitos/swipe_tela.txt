@@ -1,0 +1,3 @@
+prompt: phone screen swipe sound, smooth digital
+duracao: 0.6
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)

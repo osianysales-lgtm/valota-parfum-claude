@@ -1,0 +1,3 @@
+prompt: fast clean whoosh swoosh transition, modern social media video
+duracao: 0.8
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Valota Parfum — perfumes que eu recomendo</title>
+  <meta name="description" content="Os perfumes árabes, de nicho e de grife que eu testei e recomendo, com link direto para comprar." />
+  <meta name="theme-color" content="#1A110C" />
+  <meta property="og:title" content="Valota Parfum — perfumes que eu recomendo" />
+  <meta property="og:description" content="Perfumes testados na pele, com link direto pra comprar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ebano: #1A110C;
+      --fumo: #2E211A;
+      --fumo-claro: #3D2D23;
+      --resina: #8A4A22;
+      --ambar: #D49A4E;
+      --ambar-claro: #E9BE7F;
+      --pergaminho: #EFE3CF;
+      --pergaminho-suave: #B9A890;
+      --display: "Bodoni Moda", "Didot", Georgia, serif;
+      --texto: "Figtree", system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      background: var(--ebano);
+      color: var(--pergaminho);
+      font-family: var(--texto);
+      font-size: 1rem;
+      line-height: 1.55;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* luz âmbar de fundo + grão de papel */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(60vmax 50vmax at 85% -10%, rgba(212, 154, 78, .20), transparent 60%),
+        radial-gradient(50vmax 40vmax at -10% 60%, rgba(138, 74, 34, .18), transparent 60%);
+      z-index: 0;
+    }
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .07;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      z-index: 0;
+    }
+
+    .pagina {
+      position: relative;
+      z-index: 1;
+      width: min(100% - 2.5rem, 68rem);
+      margin-inline: auto;
+      padding-block: 2.5rem 3rem;
+    }
+
+    a { color: inherit; }
+
+    :focus-visible {
+      outline: 2px solid var(--ambar-claro);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    /* ---------- topo / marca ---------- */
+    .topo {
+      display: grid;
+      gap: 1.25rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .marca {
+      font-family: var(--display);
+      font-weight: 500;
+      line-height: .82;
+      letter-spacing: -.03em;
+      font-variation-settings: "opsz" 96;
+    }
+    .marca__nome {
+      display: block;
+      font-size: clamp(4.5rem, 22vw, 9.5rem);
+      background: linear-gradient(175deg, var(--ambar-claro) 10%, var(--ambar) 45%, var(--resina) 110%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .marca__sobrenome {
+      display: block;
+      font-size: clamp(1.75rem, 8vw, 3.25rem);
+      font-style: italic;
+      font-weight: 400;
+      color: var(--pergaminho);
+      padding-left: .2em;
+      margin-top: .1em;
+      letter-spacing: 0;
+    }
+
+    .topo__frase {
+      max-width: 30ch;
+      font-size: 1.125rem;
+      color: var(--pergaminho-suave);
+    }
+
+    .redes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .625rem;
+    }
+    .rede {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      padding: .7rem 1.15rem;
+      border-radius: 999px;
+      background: var(--pergaminho);
+      color: var(--ebano);
+      font-weight: 600;
+      font-size: .9375rem;
+      text-decoration: none;
+      transition: background-color .2s;
+    }
+    .rede:hover { background: var(--ambar-claro); }
+    .rede--sec {
+      background: transparent;
+      color: var(--pergaminho);
+      box-shadow: inset 0 0 0 1px rgba(239, 227, 207, .3);
+    }
+    .rede--sec:hover { background: rgba(239, 227, 207, .08); }
+    .rede svg { width: 1.05rem; height: 1.05rem; flex: none; }
+
+    /* ---------- perfume do mês ---------- */
+    .destaque {
+      position: relative;
+      display: grid;
+      gap: 1.5rem;
+      padding: 1.75rem 1.5rem 1.75rem;
+      border-radius: 28px;
+      background:
+        radial-gradient(120% 70% at 50% 0%, rgba(212, 154, 78, .22), transparent 65%),
+        linear-gradient(180deg, var(--fumo), #22180F);
+      box-shadow: inset 0 0 0 1px rgba(233, 190, 127, .16);
+      overflow: hidden;
+      margin-bottom: 3.5rem;
+    }
+    .destaque__rotulo {
+      font-family: var(--display);
+      font-style: italic;
+      font-size: 1.125rem;
+      color: var(--ambar-claro);
+    }
+    .destaque__palco {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: 17rem;
+    }
+    .destaque__palco::before { /* reflexo no "pedestal" */
+      content: "";
+      position: absolute;
+      bottom: .5rem;
+      width: 70%;
+      height: 2.25rem;
+      border-radius: 50%;
+      background: radial-gradient(closest-side, rgba(212, 154, 78, .45), transparent);
+      filter: blur(6px);
+    }
+    .destaque__palco svg {
+      position: relative;
+      height: 17rem;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 24px 30px rgba(0, 0, 0, .55));
+    }
+    .destaque__marca {
+      color: var(--pergaminho-suave);
+      font-size: .9375rem;
+      font-weight: 500;
+    }
+    .destaque__nome {
+      font-family: var(--display);
+      font-weight: 500;
+      font-size: clamp(2.5rem, 11vw, 4.25rem);
+      line-height: .95;
+      letter-spacing: -.02em;
+      margin: .15rem 0 1rem;
+      font-variation-settings: "opsz" 96;
+    }
+    .destaque__nota {
+      font-family: var(--display);
+      font-size: 1.25rem;
+      line-height: 1.45;
+      max-width: 34ch;
+      color: var(--pergaminho);
+    }
+    .destaque__nota::before { content: "“"; color: var(--ambar); }
+    .destaque__nota::after { content: "”"; color: var(--ambar); }
+
+    /* ---------- vitrine das fotos (fundo branco vira pergaminho) ---------- */
+    .foto {
+      position: relative;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(90% 80% at 50% 35%, #FBF4E8, var(--pergaminho) 70%, #DCC9AA);
+      overflow: hidden;
+    }
+    .foto img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      mix-blend-mode: multiply;
+    }
+    .destaque__palco .foto {
+      width: min(100%, 17rem);
+      aspect-ratio: 4 / 5;
+      padding: 1.5rem;
+      border-radius: 26px;
+      box-shadow: 0 30px 60px -20px rgba(0, 0, 0, .7), 0 0 0 1px rgba(233, 190, 127, .35);
+    }
+    .destaque__palco .foto::after { /* brilho que passa uma vez */
+      content: "";
+      position: absolute;
+      inset: -20%;
+      background: linear-gradient(105deg, transparent 40%, rgba(255, 236, 200, .55) 50%, transparent 60%);
+      transform: translateX(-120%);
+      animation: brilho 1.6s cubic-bezier(.3, .7, .2, 1) .5s forwards;
+      pointer-events: none;
+    }
+    @keyframes brilho { to { transform: translateX(120%); } }
+    .perfume__frasco .foto {
+      width: 4.75rem;
+      height: 6rem;
+      padding: .4rem;
+      border-radius: 14px;
+    }
+
+    /* ---------- lista ---------- */
+    .lista__cabeca {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .lista__titulo {
+      font-family: var(--display);
+      font-weight: 500;
+      font-size: clamp(2rem, 7vw, 2.75rem);
+      line-height: 1;
+      letter-spacing: -.01em;
+    }
+
+    .filtros {
+      display: flex;
+      gap: .375rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+      margin-inline: -1.25rem;
+      padding-inline: 1.25rem;
+      padding-block: .25rem;
+    }
+    .filtros::-webkit-scrollbar { display: none; }
+    .filtro {
+      flex: none;
+      font: inherit;
+      font-size: .9375rem;
+      font-weight: 500;
+      color: var(--pergaminho-suave);
+      background: transparent;
+      border: 0;
+      border-radius: 999px;
+      padding: .5rem 1rem;
+      box-shadow: inset 0 0 0 1px rgba(239, 227, 207, .18);
+      cursor: pointer;
+      transition: background-color .2s, color .2s;
+    }
+    .filtro:hover { color: var(--pergaminho); }
+    .filtro[aria-pressed="true"] {
+      background: var(--ambar);
+      color: var(--ebano);
+      box-shadow: none;
+    }
+    .filtro span { opacity: .6; margin-left: .25rem; font-variant-numeric: tabular-nums; }
+
+    .perfumes {
+      list-style: none;
+      display: grid;
+      gap: 0;
+    }
+
+    .perfume {
+      display: grid;
+      grid-template-columns: 4.75rem 1fr;
+      gap: .25rem 1.25rem;
+      padding-block: 1.5rem;
+      border-top: 1px solid rgba(239, 227, 207, .1);
+    }
+    .perfume__frasco {
+      grid-row: span 2;
+      display: grid;
+      place-items: start center;
+      padding-top: .25rem;
+    }
+    .perfume__frasco svg {
+      width: 4.5rem;
+      height: 6.5rem;
+      object-fit: contain;
+      filter: drop-shadow(0 10px 12px rgba(0, 0, 0, .5));
+    }
+    .perfume__marca {
+      color: var(--pergaminho-suave);
+      font-size: .875rem;
+      font-weight: 500;
+    }
+    .perfume__nome {
+      font-family: var(--display);
+      font-weight: 500;
+      font-size: 1.625rem;
+      line-height: 1.1;
+      margin: .1rem 0 .5rem;
+    }
+    .perfume__nota {
+      color: var(--pergaminho-suave);
+      max-width: 46ch;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .375rem;
+      list-style: none;
+      margin-top: .75rem;
+    }
+    .tags li {
+      font-size: .8125rem;
+      font-weight: 500;
+      padding: .2rem .65rem;
+      border-radius: 999px;
+      background: rgba(212, 154, 78, .12);
+      color: var(--ambar-claro);
+    }
+
+    .lojas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin-top: 1rem;
+    }
+    .perfume .lojas { grid-column: 2; margin-top: .25rem; }
+
+    .loja {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      min-height: 2.875rem;
+      padding: .65rem 1.1rem .65rem .9rem;
+      border-radius: 14px;
+      background: var(--pergaminho);
+      color: var(--ebano);
+      font-weight: 600;
+      font-size: .9375rem;
+      line-height: 1.2;
+      text-decoration: none;
+      transition: background-color .2s, transform .15s;
+    }
+    .loja:hover { background: #fff; }
+    .loja:active { transform: scale(.97); }
+    .loja__ponto {
+      width: .7rem;
+      height: .7rem;
+      border-radius: 50%;
+      flex: none;
+      box-shadow: 0 0 0 2px rgba(26, 17, 12, .12);
+    }
+    .loja--sec {
+      background: rgba(239, 227, 207, .07);
+      color: var(--pergaminho);
+      box-shadow: inset 0 0 0 1px rgba(239, 227, 207, .16);
+    }
+    .loja--sec:hover { background: rgba(239, 227, 207, .14); }
+
+    .video {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      margin-top: .75rem;
+      font-size: .9375rem;
+      font-weight: 500;
+      color: var(--ambar-claro);
+      text-underline-offset: 3px;
+    }
+
+    .vazio {
+      padding: 2rem 0;
+      color: var(--pergaminho-suave);
+      border-top: 1px solid rgba(239, 227, 207, .1);
+    }
+
+    /* ---------- rodapé ---------- */
+    .rodape {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(239, 227, 207, .1);
+      display: grid;
+      gap: 1rem;
+      color: var(--pergaminho-suave);
+      font-size: .875rem;
+    }
+    .rodape p { max-width: 60ch; }
+    .rodape__marca {
+      font-family: var(--display);
+      font-size: 1.25rem;
+      color: var(--pergaminho);
+    }
+
+    /* ---------- animação de entrada: frasco enchendo ---------- */
+    .enche {
+      transform-box: fill-box;
+      transform-origin: bottom;
+      animation: encher 1.8s cubic-bezier(.3, .7, .2, 1) .3s both;
+    }
+    @keyframes encher {
+      from { transform: scaleY(0); }
+      to { transform: scaleY(1); }
+    }
+    .onda { animation: onda 5s ease-in-out infinite alternate; }
+    @keyframes onda {
+      from { transform: translateX(-6px); }
+      to { transform: translateX(6px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .enche, .onda { animation: none; }
+      .destaque__palco .foto::after { display: none; }
+      * { transition: none !important; }
+    }
+
+    /* ---------- telas maiores ---------- */
+    @media (min-width: 760px) {
+      .pagina { padding-block: 4rem 4rem; }
+      .topo {
+        grid-template-columns: auto 1fr;
+        align-items: end;
+        gap: 2rem 4rem;
+        padding-bottom: 3.5rem;
+      }
+      .topo__info { display: grid; gap: 1.25rem; padding-bottom: .75rem; }
+      .destaque {
+        grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+        align-items: center;
+        gap: 2rem 3rem;
+        padding: 3rem 3.5rem;
+        border-radius: 36px;
+      }
+      .destaque__palco { grid-row: span 2; min-height: 24rem; }
+      .destaque__palco svg { height: 23rem; }
+      .destaque__palco .foto { width: min(100%, 21rem); }
+      .destaque__rotulo { align-self: end; }
+      .destaque__corpo { align-self: start; }
+      .perfumes {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="pagina">
+    <header class="topo">
+      <h1 class="marca" id="marca"></h1>
+      <div class="topo__info">
+        <p class="topo__frase" id="frase"></p>
+        <nav class="redes" id="redes" aria-label="Minhas redes"></nav>
+      </div>
+    </header>
+
+    <section class="destaque" id="destaque" aria-labelledby="destaque-titulo" hidden></section>
+
+    <section aria-labelledby="lista-titulo">
+      <div class="lista__cabeca">
+        <h2 class="lista__titulo" id="lista-titulo">Minhas indicações</h2>
+        <div class="filtros" id="filtros" role="group" aria-label="Filtrar por tipo de perfume"></div>
+      </div>
+      <ul class="perfumes" id="perfumes" aria-live="polite"></ul>
+    </section>
+
+    <footer class="rodape">
+      <span class="rodape__marca" id="rodape-marca"></span>
+      <p>Alguns links desta página são de afiliado: se você comprar por eles, eu ganho uma pequena comissão e você não paga nada a mais. Preços e estoque são definidos por cada loja. Só indico perfume que eu testei.</p>
+    </footer>
+  </main>
+
+  <script src="produtos.js"></script>
+  <script>
+    const LOJAS = {
+      amazon:       { nome: "Amazon",        prep: "na", cor: "#FF9900" },
+      mercadolivre: { nome: "Mercado Livre", prep: "no", cor: "#FFE600" },
+      shopee:       { nome: "Shopee",        prep: "na", cor: "#EE4D2D" },
+      tiktokshop:   { nome: "TikTok Shop",   prep: "no", cor: "#25F4EE" },
+      magalu:       { nome: "Magalu",        prep: "na", cor: "#0086FF" },
+      aliexpress:   { nome: "AliExpress",    prep: "no", cor: "#E62E04" },
+      shein:        { nome: "Shein",         prep: "na", cor: "#1A110C" },
+      outro:        { nome: "Loja",          prep: "em", cor: "#D49A4E" },
+    };
+
+    const CATEGORIAS = [
+      { id: "todos", nome: "Todos" },
+      { id: "arabe", nome: "Árabes" },
+      { id: "nicho", nome: "Nicho" },
+      { id: "grife", nome: "Grife" },
+    ];
+
+    const esc = (s = "") => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+    /* ---------- frasco desenhado ---------- */
+    const FORMAS = {
+      1: { corpo: '<rect x="14" y="52" width="72" height="100" rx="9"/>', gargalo: [40, 40, 20, 14], tampa: '<rect x="30" y="10" width="40" height="32" rx="3"/>', topo: 58, ouro: true },
+      2: { corpo: '<rect x="24" y="46" width="52" height="106" rx="4"/>', gargalo: [42, 38, 16, 10], tampa: '<rect x="26" y="4" width="48" height="36" rx="2"/>', topo: 54, ouro: false },
+      3: { corpo: '<path d="M50 52 C86 52 92 80 92 106 C92 138 74 152 50 152 C26 152 8 138 8 106 C8 80 14 52 50 52Z"/>', gargalo: [40, 38, 20, 16], tampa: '<path d="M34 40 L34 24 C34 10 66 10 66 24 L66 40 Z"/>', topo: 62, ouro: true },
+    };
+    let uid = 0;
+
+    function frasco(p, { anima = false } = {}) {
+      const f = FORMAS[p.frasco] || FORMAS[1];
+      const id = "f" + (uid++);
+      const cor = p.cor || "#B4561F";
+      const [gx, gy, gw, gh] = f.gargalo;
+      const tampaFill = f.ouro ? `url(#${id}o)` : `url(#${id}p)`;
+      return `
+<svg viewBox="0 0 100 160" role="img" aria-label="Frasco de ${esc(p.nome)}">
+  <defs>
+    <clipPath id="${id}c">${f.corpo}</clipPath>
+    <linearGradient id="${id}l" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="${cor}" stop-opacity=".75"/>
+      <stop offset="1" stop-color="${cor}"/>
+    </linearGradient>
+    <linearGradient id="${id}o" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A5A24"/><stop offset=".35" stop-color="#F0C985"/>
+      <stop offset=".6" stop-color="#C08A45"/><stop offset="1" stop-color="#6B4219"/>
+    </linearGradient>
+    <linearGradient id="${id}p" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0d0907"/><stop offset=".4" stop-color="#3a2d25"/><stop offset="1" stop-color="#0d0907"/>
+    </linearGradient>
+  </defs>
+  <rect x="${gx}" y="${gy}" width="${gw}" height="${gh}" fill="rgba(239,227,207,.25)"/>
+  <g fill="rgba(239,227,207,.07)">${f.corpo}</g>
+  <g clip-path="url(#${id}c)">
+    <g class="${anima ? "enche" : ""}">
+      <rect x="0" y="${f.topo + 4}" width="100" height="120" fill="url(#${id}l)"/>
+      <path class="${anima ? "onda" : ""}" d="M-10 ${f.topo + 4} q15 -5 30 0 t30 0 t30 0 t30 0 v6 h-120z" fill="${cor}" opacity=".85"/>
+    </g>
+    <rect x="20" y="40" width="6" height="120" fill="#fff" opacity=".18"/>
+    <rect x="30" y="40" width="2" height="120" fill="#fff" opacity=".12"/>
+    <rect x="${f.ouro ? 30 : 34}" y="${f.topo + 26}" width="${f.ouro ? 40 : 32}" height="30" rx="2" fill="#EFE3CF" opacity=".9"/>
+    <rect x="${f.ouro ? 38 : 40}" y="${f.topo + 36}" width="${f.ouro ? 24 : 20}" height="2.5" fill="#1A110C" opacity=".75"/>
+    <rect x="${f.ouro ? 42 : 43}" y="${f.topo + 42}" width="${f.ouro ? 16 : 14}" height="1.5" fill="#1A110C" opacity=".45"/>
+  </g>
+  <g fill="none" stroke="rgba(239,227,207,.45)" stroke-width="1.2">${f.corpo}</g>
+  <g fill="${tampaFill}">${f.tampa}</g>
+</svg>`;
+    }
+
+    function visual(p, opts) {
+      if (p.imagem) return `<div class="foto"><img src="${esc(p.imagem)}" alt="Frasco de ${esc(p.nome)}" ${opts && opts.anima ? "" : 'loading="lazy"'}></div>`;
+      return frasco(p, opts);
+    }
+
+    function botoes(p, primeiroDestaque = true) {
+      return (p.links || []).filter(l => l && l.url).map((l, i) => {
+        const loja = LOJAS[l.loja] || LOJAS.outro;
+        const nome = l.nome || loja.nome;
+        const cls = primeiroDestaque && i === 0 ? "loja" : "loja loja--sec";
+        return `<a class="${cls}" href="${esc(l.url)}" target="_blank" rel="sponsored noopener">
+          <span class="loja__ponto" style="background:${loja.cor}" aria-hidden="true"></span>
+          Comprar ${loja.prep} ${esc(nome)}
+        </a>`;
+      }).join("");
+    }
+
+    const tags = p => p.tags && p.tags.length
+      ? `<ul class="tags" aria-label="Ocasiões">${p.tags.map(t => `<li>${esc(t)}</li>`).join("")}</ul>` : "";
+
+    const video = p => p.video
+      ? `<a class="video" href="${esc(p.video)}" target="_blank" rel="noopener">Ver meu review no TikTok</a>` : "";
+
+    /* ---------- topo ---------- */
+    document.getElementById("marca").innerHTML =
+      `<span class="marca__nome">${esc(PERFIL.nome)}</span><span class="marca__sobrenome">${esc(PERFIL.sobrenome)}</span>`;
+    document.getElementById("frase").textContent = PERFIL.frase;
+    document.getElementById("rodape-marca").textContent = `${PERFIL.nome} ${PERFIL.sobrenome}`;
+
+    const icoTikTok = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-2.59-2.59c.27 0 .53.04.77.12V9.77a5.7 5.7 0 1 0 4.91 5.63V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3a4.3 4.3 0 0 1-3.24-1.48Z"/></svg>';
+    const icoInsta = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>';
+    let redes = "";
+    if (PERFIL.tiktok) redes += `<a class="rede" href="${esc(PERFIL.tiktok)}" target="_blank" rel="noopener">${icoTikTok}Me siga no TikTok</a>`;
+    if (PERFIL.instagram) redes += `<a class="rede rede--sec" href="${esc(PERFIL.instagram)}" target="_blank" rel="noopener">${icoInsta}Instagram</a>`;
+    document.getElementById("redes").innerHTML = redes;
+
+    /* ---------- perfume do mês ---------- */
+    const destaque = PERFUMES.find(p => p.destaque);
+    if (destaque) {
+      const el = document.getElementById("destaque");
+      el.hidden = false;
+      el.innerHTML = `
+        <div class="destaque__palco">${visual(destaque, { anima: true })}</div>
+        <p class="destaque__rotulo">Perfume do mês</p>
+        <div class="destaque__corpo">
+          <p class="destaque__marca">${esc(destaque.marca)}</p>
+          <h2 class="destaque__nome" id="destaque-titulo">${esc(destaque.nome)}</h2>
+          <p class="destaque__nota">${esc(destaque.nota)}</p>
+          ${tags(destaque)}
+          <div class="lojas">${botoes(destaque)}</div>
+          ${video(destaque)}
+        </div>`;
+    }
+
+    /* ---------- lista + filtros ---------- */
+    const lista = PERFUMES.filter(p => !p.destaque);
+    const filtrosEl = document.getElementById("filtros");
+    const listaEl = document.getElementById("perfumes");
+    let atual = "todos";
+
+    function renderFiltros() {
+      filtrosEl.innerHTML = CATEGORIAS
+        .map(c => ({ ...c, n: c.id === "todos" ? lista.length : lista.filter(p => p.categoria === c.id).length }))
+        .filter(c => c.n > 0)
+        .map(c => `<button class="filtro" type="button" data-cat="${c.id}" aria-pressed="${c.id === atual}">${c.nome}<span>${c.n}</span></button>`)
+        .join("");
+    }
+
+    function renderLista() {
+      const itens = atual === "todos" ? lista : lista.filter(p => p.categoria === atual);
+      listaEl.innerHTML = itens.length ? itens.map(p => `
+        <li class="perfume">
+          <div class="perfume__frasco">${visual(p)}</div>
+          <div>
+            <p class="perfume__marca">${esc(p.marca)}</p>
+            <h3 class="perfume__nome">${esc(p.nome)}</h3>
+            <p class="perfume__nota">${esc(p.nota)}</p>
+            ${tags(p)}
+            ${video(p)}
+          </div>
+          <div class="lojas">${botoes(p)}</div>
+        </li>`).join("")
+        : `<li class="vazio">Ainda não tem perfume nessa categoria. Volte em breve.</li>`;
+    }
+
+    filtrosEl.addEventListener("click", e => {
+      const b = e.target.closest(".filtro");
+      if (!b) return;
+      atual = b.dataset.cat;
+      renderFiltros();
+      renderLista();
+      filtrosEl.querySelector(`[data-cat="${atual}"]`).focus();
+    });
+
+    renderFiltros();
+    renderLista();
+  </script>
+</body>
+</html>

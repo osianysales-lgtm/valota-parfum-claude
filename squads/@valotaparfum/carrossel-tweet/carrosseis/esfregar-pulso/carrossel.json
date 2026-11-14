@@ -1,0 +1,50 @@
+{
+  "fundo": "branco",
+  "slides": [
+    {
+      "tipo": "capa",
+      "titulo": "Você também esfrega um pulso no outro depois do perfume?",
+      "subtitulo": "Não estraga do jeito que a internet fala, mas muda o cheiro que você sente. Arrasta que eu te explico.",
+      "imagens": [
+        {
+          "img": "capa-pulso.png",
+          "pos": "center 45%"
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "1. A pele esquenta na hora.",
+      "texto": "O atrito aquece o pulso, e calor faz o perfume evaporar mais rápido.\n\nA parte mais leve do cheiro vai embora antes da hora.",
+      "passo": "Borrifa → espera uns segundos o álcool secar → **só depois mexe o braço**."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "2. Você pula a saída do perfume.",
+      "texto": "Os primeiros minutos (cítricos, frescos, picantes) são a parte que o perfumista fez pra impressionar.\n\nEsfregando, você vai direto pro meio do perfume e nem conhece o começo.",
+      "passo": "Perfume novo? Borrifa → cheira o pulso logo depois, sem esfregar."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "3. O perfume vira uma camada mais fina.",
+      "texto": "Parte dele passa pro outro pulso e se espalha numa área maior. Camada fina costuma sumir mais rápido.\n\nVocê gasta a mesma borrifada e sente menos.",
+      "passo": "Quer nos 2 pulsos? 1 borrifada em cada → em vez de 1 só esfregada."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "4. O pulso perde perfume pra tudo.",
+      "texto": "Lavar a mão, relógio, pulseira, manga da blusa, mesa do trabalho. É a parte do corpo que mais encosta nas coisas.\n\nMesmo sem esfregar, ali o cheiro costuma durar menos.",
+      "passo": "Pulso pra você sentir → pescoço e nuca pra quem chega perto."
+    },
+    {
+      "tipo": "texto",
+      "titulo": "5. Mas ele não \"quebra as moléculas\".",
+      "texto": "Essa frase roda a internet, mas a sua pele não tem força pra quebrar molécula nenhuma.\n\nO perfume não estraga: ele só evapora mais rápido e muda a ordem do que você sente.",
+      "passo": "Esfregou sem querer? Relaxa → **o cheiro continua**, só a saída foi embora antes."
+    },
+    {
+      "tipo": "final",
+      "texto": "Se esse post te ajudou, já segue a **Valota Parfum** que por aqui eu te mostro de forma prática como gastar menos e cheirar melhor :)"
+    }
+  ]
+}

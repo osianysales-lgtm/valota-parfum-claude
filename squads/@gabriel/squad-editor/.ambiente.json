@@ -1,0 +1,10 @@
+{
+  "navegador": "/Users/osianysales/.cache/puppeteer/chrome/mac_arm-155.0.8059.39/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing",
+  "ffmpeg": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/node_modules/@ffmpeg-installer/darwin-arm64/ffmpeg",
+  "ffprobe": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/node_modules/@ffprobe-installer/darwin-arm64/ffprobe",
+  "python": "/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/.venv-whisper/bin/python",
+  "whisper": "faster-whisper",
+  "maquina": "MacBook-Air-de-Osiany.local",
+  "plataforma": "darwin",
+  "atualizado": "2026-11-14T13:09:30.172Z"
+}

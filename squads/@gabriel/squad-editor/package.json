@@ -1,0 +1,51 @@
+{
+  "name": "squad-editor",
+  "version": "3.8.1",
+  "description": "Squad Editor de Vídeo — edição universal com motion, gravação e mesclagem",
+  "scripts": {
+    "test": "echo \"Veja README_SETUP.md para os comandos\" && exit 0",
+    "check": "node tools/setup.js",
+    "setup": "node tools/setup.js",
+    "check-ffmpeg": "ffmpeg -version && echo 'FFmpeg OK'",
+    "qa": "node tools/qa_video.js",
+    "plano": "node tools/plano.js",
+    "frases": "node tools/frases.js",
+    "quadros": "node tools/quadros.js",
+    "narracao": "node tools/narracao.js",
+    "audio": "node tools/audio_inventario.js",
+    "voz": "node tools/voz.js",
+    "sfx": "node tools/sfx.js",
+    "recorte": "node tools/recorte.js"
+  },
+  "keywords": [
+    "video",
+    "editor",
+    "motion",
+    "whisper",
+    "ffmpeg",
+    "puppeteer"
+  ],
+  "author": "ExpxAgents",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@ffprobe-installer/ffprobe": "^2.1.2",
+    "@huggingface/transformers": "^4.3.2",
+    "dotenv": "^17.4.2",
+    "fluent-ffmpeg": "^2.1.3",
+    "gsap": "^3.12.5",
+    "puppeteer": "^25.1.0",
+    "sharp": "^0.35.5",
+    "three": "^0.187.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "_notas": {
+    "setup": "automático: na 1ª execução a Dafne/Salsicha rodam tools/setup.js (npm, FFmpeg, Python, faster-whisper). Manual: npm run setup",
+    "whisper": "100% local — faster-whisper (instalado pelo setup) ou openai-whisper",
+    "ffmpeg_global": "winget install ffmpeg (precisa estar no PATH)",
+    "gsap": "cópia local usada pela Dafne v3 — o render não depende de CDN"
+  }
+}

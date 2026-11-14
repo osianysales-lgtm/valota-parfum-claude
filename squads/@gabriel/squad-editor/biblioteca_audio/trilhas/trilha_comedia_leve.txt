@@ -1,0 +1,3 @@
+prompt: playful lighthearted comedy, pizzicato, ukulele, claps, whistles, 115 bpm, instrumental
+duracao: 54
+fonte: ElevenLabs Music

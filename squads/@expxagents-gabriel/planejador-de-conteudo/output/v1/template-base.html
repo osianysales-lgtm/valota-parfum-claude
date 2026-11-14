@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valota Parfum · Calendário Editorial</title>
+<style>
+:root{--bg:#F6F1EA;--card:#FFFFFF;--ink:#1E1B18;--muted:#6B635A;--gold:#B08A4E;--gold-soft:#EFE4D2;--line:#E6DCCD;--video:#8A5A2B;--carrossel:#3E6B67}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:32px 20px 60px}
+.brand{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:22px;flex-wrap:wrap}
+.nav{display:flex;align-items:center;gap:14px}
+.nav button{background:var(--card);border:1px solid var(--line);width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:18px;color:var(--ink)}
+.nav button:disabled{opacity:.35;cursor:default}
+h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:34px;margin:0;min-width:240px;text-align:center}
+.count{font-size:14px;color:var(--muted)}
+.count b{color:var(--ink);font-size:20px;font-family:Georgia,serif;font-weight:400}
+.legend{display:flex;gap:14px;font-size:12px;color:var(--muted);margin-bottom:14px}
+.tag{display:inline-block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#fff;padding:3px 7px;border-radius:20px;font-weight:600}
+.tag.Vídeo{background:var(--video)}.tag.Carrossel{background:var(--carrossel)}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+.dow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-align:center;padding:6px 0}
+.day{min-height:120px;background:transparent;border:1px solid var(--line);border-radius:14px;padding:8px;display:flex;flex-direction:column;gap:6px}
+.day.empty{border:none}
+.day .n{font-size:12px;color:var(--muted)}
+.day.has{background:var(--card);border:1.5px solid var(--gold);box-shadow:0 2px 10px rgba(176,138,78,.12)}
+.day.has .n{color:var(--gold);font-weight:700}
+.post{background:var(--gold-soft);border-radius:10px;padding:7px 8px;cursor:pointer;text-align:left;border:none;font:inherit;color:inherit;width:100%}
+.post:hover{filter:brightness(.97)}
+.post .t{font-size:11px;color:var(--muted);margin-left:4px}
+.post .h{font-size:12.5px;line-height:1.3;margin-top:5px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.overlay{position:fixed;inset:0;background:rgba(30,27,24,.55);display:none;align-items:flex-start;justify-content:center;padding:40px 16px;overflow-y:auto;z-index:10}
+.overlay.open{display:flex}
+.modal{background:var(--bg);max-width:680px;width:100%;border-radius:18px;padding:30px 30px 34px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:26px;cursor:pointer;color:var(--muted)}
+.modal h2{font-family:Georgia,serif;font-weight:400;font-size:26px;margin:10px 0 4px;line-height:1.2}
+.meta{font-size:13px;color:var(--muted);margin-bottom:18px}
+.sec{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:12px}
+.sec h3{margin:0 0 6px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.sec p{margin:0;white-space:pre-line;font-size:14.5px;line-height:1.55}
+.slide{border-top:1px dashed var(--line);padding:10px 0}
+.slide:first-of-type{border-top:none;padding-top:2px}
+.slide .sn{font-size:11px;color:var(--muted)}
+.slide .st{font-weight:600;font-size:14.5px;margin:2px 0}
+.slide .sx{font-size:14px;line-height:1.5;color:#3a352f}
+@media (max-width:760px){
+ .grid{grid-template-columns:1fr}
+ .dow,.day.empty,.day.nopost{display:none}
+ .day{min-height:auto}
+ h1{font-size:26px;min-width:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <div class="brand">Valota Parfum · @valotaparfum · TikTok</div>
+ <header>
+  <div class="nav"><button id="prev" aria-label="Mês anterior">‹</button><h1 id="month"></h1><button id="next" aria-label="Próximo mês">›</button></div>
+  <div class="count"><b id="cnt">0</b> posts no mês</div>
+ </header>
+ <div class="legend"><span><span class="tag Vídeo">Vídeo</span></span><span><span class="tag Carrossel">Carrossel</span></span></div>
+ <div class="grid" id="grid"></div>
+</div>
+<div class="overlay" id="ov"><div class="modal" id="md"></div></div>
+<script>
+const POSTS = /*DADOS*/[] /* <!-- DADOS_DO_MES --> *//*FIM*/;
+const MONTHS=["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+const DOW=["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"];
+const keys=[...new Set(POSTS.map(p=>p.date.slice(0,7)))].sort();
+let idx=0;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function render(){
+ const [y,m]=keys[idx].split("-").map(Number);
+ document.getElementById("month").textContent=MONTHS[m-1]+" "+y;
+ const list=POSTS.filter(p=>p.date.startsWith(keys[idx]));
+ document.getElementById("cnt").textContent=list.length;
+ document.getElementById("prev").disabled=idx===0;
+ document.getElementById("next").disabled=idx===keys.length-1;
+ const g=document.getElementById("grid");g.innerHTML=DOW.map(d=>`<div class="dow">${d}</div>`).join("");
+ const first=new Date(y,m-1,1).getDay(), days=new Date(y,m,0).getDate();
+ for(let i=0;i<first;i++)g.insertAdjacentHTML("beforeend",'<div class="day empty"></div>');
+ for(let d=1;d<=days;d++){
+  const ds=`${keys[idx]}-${String(d).padStart(2,"0")}`;
+  const ps=list.filter(p=>p.date===ds);
+  const cards=ps.map(p=>`<button class="post" data-i="${POSTS.indexOf(p)}"><span class="tag ${p.fmt}">${p.fmt}</span><span class="t">${p.time}</span><div class="h">${esc(p.title)}</div></button>`).join("");
+  g.insertAdjacentHTML("beforeend",`<div class="day ${ps.length?"has":"nopost"}"><div class="n">${d}</div>${cards}</div>`);
+ }
+ g.querySelectorAll(".post").forEach(b=>b.onclick=()=>open(POSTS[b.dataset.i]));
+}
+const sec=(t,v)=>v?`<div class="sec"><h3>${t}</h3><p>${esc(v)}</p></div>`:"";
+function open(p){
+ const [y,m,d]=p.date.split("-");
+ let body=sec("Objetivo",p.objetivo);
+ if(p.fmt==="Vídeo"){
+  body+=sec("Gancho (primeiros 3 segundos)",p.gancho)+sec("Orientações para gravação",p.orientacoes)+sec("Roteiro completo",p.roteiro)+sec("Legenda",p.legenda);
+ }else{
+  const sl=p.slides.map((s,i)=>`<div class="slide"><div class="sn">Slide ${i+1}${i===0?" · capa":i===p.slides.length-1?" · CTA":""}</div><div class="st">${esc(s[0])}</div><div class="sx">${esc(s[1])}</div></div>`).join("");
+  body+=`<div class="sec"><h3>Slides</h3>${sl}</div>`+sec("Legenda",p.legenda);
+ }
+ body+=sec("Recomendações",p.recomendacoes);
+ document.getElementById("md").innerHTML=`<button class="close" aria-label="Fechar">×</button><span class="tag ${p.fmt}">${p.fmt}</span><h2>${esc(p.title)}</h2><div class="meta">${p.weekday}, ${d}/${m}/${y} · ${p.time} · Pilar: ${esc(p.pilar)}</div>${body}`;
+ document.querySelector(".close").onclick=close;
+ document.getElementById("ov").classList.add("open");
+}
+function close(){document.getElementById("ov").classList.remove("open")}
+document.getElementById("ov").onclick=e=>{if(e.target.id==="ov")close()};
+document.addEventListener("keydown",e=>{if(e.key==="Escape")close()});
+document.getElementById("prev").onclick=()=>{if(idx>0){idx--;render()}};
+document.getElementById("next").onclick=()=>{if(idx<keys.length-1){idx++;render()}};
+render();
+</script>
+</body>
+</html>

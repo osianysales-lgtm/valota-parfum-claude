@@ -1,0 +1,76 @@
+{
+  "personagens": {
+    "valdir": {
+      "voz": "RGbeQtiShYRDVCrd9b9w",
+      "ajustes": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.3,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      }
+    },
+    "rafa": {
+      "voz": "2CECaLAGTS5NRGxgbcxr",
+      "ajustes": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.3,
+        "use_speaker_boost": true,
+        "speed": 1.05
+      }
+    }
+  },
+  "inicio": 0.3,
+  "pausa": 0.12,
+  "fim": 1.5,
+  "falas": [
+    {
+      "quem": "valdir",
+      "texto": "E aí, rapaz, vai levar ou vai só cheirar mais um, porque esse filme eu já conheço?"
+    },
+    {
+      "quem": "rafa",
+      "texto": "Ô, calma, Seu Valdir, que eu ainda tô no terceiro, e depois de uns três o nariz cansa, aí eu volto outro dia pra sentir com calma."
+    },
+    {
+      "quem": "valdir",
+      "texto": "Pois é, só que semana passada você também voltou pra sentir com calma, cheirou oito e foi comprar onde, hein?"
+    },
+    {
+      "quem": "rafa",
+      "texto": "Ah, é que eu tô esperando o cartão virar, né, aí eu passo aqui e levo."
+    },
+    {
+      "quem": "valdir",
+      "texto": "Então tá, porque a partir de hoje quem cheira e não leva paga vinte e nove e noventa de experiência olfativa, tá ali na plaquinha."
+    },
+    {
+      "quem": "rafa",
+      "texto": "Vinte e nove e noventa pra cheirar o ar, Seu Valdir, isso só pode ser brincadeira, né?"
+    },
+    {
+      "quem": "valdir",
+      "texto": "Brincadeira nenhuma, rapaz... ou paga, ou leva um decânti, e pronto.",
+      "legenda": "Brincadeira nenhuma, rapaz, ou paga ou leva um decant, e pronto.",
+      "ajustes": {
+        "speed": 0.9,
+        "stability": 0.6,
+        "style": 0.2
+      }
+    },
+    {
+      "quem": "rafa",
+      "texto": "Ah, é assim, é? Então eu vou ligar agora mesmo pro Procon."
+    },
+    {
+      "quem": "valdir",
+      "texto": "Pode ligar."
+    },
+    {
+      "quem": "rafa",
+      "texto": "E segue a Valota Parfum pra saber, no próximo episódio, o que o Procon fez quando uma perfumaria cobrou isso de uma cliente. E aproveita e comenta aqui o que você acha dessa história, porque ela aconteceu de verdade.",
+      "pausa_antes": 0.45
+    }
+  ]
+}

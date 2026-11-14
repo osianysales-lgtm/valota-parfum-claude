@@ -1,0 +1,3 @@
+prompt: perfume bottle spray atomizer spritz, two quick sprays, close mic
+duracao: 1.2
+fonte: ElevenLabs Sound Effects (eleven_text_to_sound_v2)
