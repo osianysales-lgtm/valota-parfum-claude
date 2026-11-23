@@ -1,2 +1,0 @@
-duracao_total=75.17
-fator=1.25

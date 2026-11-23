@@ -1,0 +1,18 @@
+0.0 13.5  Este es para el frío, este es para el calor, pero este es para todo el año.
+    0.0  Este
+    0.5  es
+    0.62  para
+    0.7  el
+    0.8  frío,
+    1.52  este
+    1.94  es
+    2.1  para
+    2.2  el
+    2.32  calor,
+    2.98  pero
+    3.1  este
+    3.4  es
+    12.78  para
+    12.96  todo
+    13.18  el
+    13.32  año.

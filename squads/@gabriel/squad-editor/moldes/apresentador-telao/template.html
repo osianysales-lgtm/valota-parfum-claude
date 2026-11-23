@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:MX;src:url(fontes/Montserrat-ExtraBold.ttf)}
+@font-face{font-family:MBo;src:url(fontes/Montserrat-Bold.ttf)}
+@font-face{font-family:MB;src:url(fontes/Montserrat-Black.ttf)}
+@font-face{font-family:MV;src:url(fontes/Montserrat-VariableFont_wght.ttf);font-weight:100 900}
+@font-face{font-family:GB;src:url(fontes/GothamBlack.otf)}
+:root{--pet:#0F2E33;--luz:#1A4A52;--amb:#D49A4E;--cre:#F2E8D8;--ama:#FFC93C;--noite:#0A1F23}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--noite)}
+#bg{position:absolute;inset:0;background:
+  radial-gradient(ellipse 900px 700px at 50% 42%, rgba(26,74,82,.95), rgba(15,46,51,0) 70%),
+  radial-gradient(ellipse 700px 260px at 50% 1300px, rgba(212,154,78,.16), rgba(212,154,78,0) 70%),
+  linear-gradient(#0F2E33, #0A1F23 70%, #071619)}
+#chao{position:absolute;left:0;right:0;bottom:0;height:640px;background:linear-gradient(rgba(7,22,25,0),rgba(7,22,25,.85));z-index:1}
+.selo{position:absolute;top:118px;left:0;right:0;text-align:center;font-family:MV;font-weight:600;font-size:24px;letter-spacing:10px;color:var(--amb);z-index:2}
+.selo b{font-weight:300;color:var(--cre);opacity:.7}
+.tit{position:absolute;top:168px;left:60px;right:60px;text-align:center;font-family:GB;font-size:66px;line-height:1.02;color:var(--cre);z-index:2}
+.tit em{font-style:normal;color:var(--ama)}
+#telao{position:absolute;left:50px;top:340px;width:980px;height:900px;border-radius:22px;overflow:hidden;
+  border:2px solid rgba(212,154,78,.55);
+  box-shadow:0 0 0 10px rgba(10,31,35,.9),0 0 0 11px rgba(212,154,78,.25),0 40px 120px rgba(0,0,0,.6),0 0 160px rgba(212,154,78,.18);
+  background:#0A1F23;z-index:2}
+#slides{position:absolute;inset:0}
+#over{position:absolute;inset:0;z-index:4}
+#tits{position:absolute;inset:0;z-index:2}
+#fontes{position:absolute;inset:0;z-index:3}
+#brilho{position:absolute;inset:0;background:linear-gradient(115deg,rgba(255,255,255,.08),rgba(255,255,255,0) 35%);z-index:50;pointer-events:none}
+.sl{position:absolute;inset:0;opacity:0}
+.sl img.full{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.escuro{background:radial-gradient(ellipse 620px 560px at 50% 48%,#1f5560 0%,#123a41 45%,#0A1F23 100%)}
+.halo{position:absolute;left:50%;top:50%;width:640px;height:640px;margin:-320px 0 0 -320px;border-radius:50%;background:radial-gradient(circle,rgba(212,154,78,.38),rgba(212,154,78,0) 65%)}
+.fonte{position:absolute;right:68px;top:1262px;text-align:right;font-family:MV;font-size:21px;font-weight:500;letter-spacing:2px;color:var(--cre);opacity:.55;z-index:3}
+.e{position:absolute;opacity:0;will-change:transform,opacity}
+.marca{border:4px solid var(--ama);border-radius:10px;box-shadow:0 0 30px rgba(255,201,60,.55)}
+.lupa{border-radius:16px;overflow:hidden;border:3px solid var(--ama);box-shadow:0 30px 80px rgba(0,0,0,.65),0 0 50px rgba(255,201,60,.35);background:#fff}
+.lupa img{display:block;width:100%}
+.fr img{display:block;filter:drop-shadow(0 30px 34px rgba(0,0,0,.6))}
+.tag{display:inline-block;font-family:MB;font-size:30px;letter-spacing:3px;border-radius:999px;padding:14px 30px 12px;white-space:nowrap}
+.tag.cre{color:var(--noite);background:var(--cre);box-shadow:0 8px 22px rgba(0,0,0,.35)}
+.tag.out{color:var(--cre);border:3px solid rgba(242,232,216,.85);background:rgba(10,31,35,.7)}
+.tag.ama{color:var(--noite);background:var(--ama);box-shadow:0 0 34px rgba(255,201,60,.5),0 8px 22px rgba(0,0,0,.3)}
+.nome{font-family:GB;font-size:40px;color:var(--cre);text-align:center;letter-spacing:1px;text-shadow:0 4px 14px rgba(0,0,0,.6)}
+.nome small{display:block;font-family:MBo;font-size:20px;letter-spacing:6px;color:var(--amb);margin-top:6px}
+.foto{border-radius:18px;overflow:hidden;box-shadow:0 24px 50px rgba(0,0,0,.55);border:3px solid rgba(242,232,216,.6)}
+.foto img{display:block;width:100%;height:100%;object-fit:cover}
+.carimbo{font-family:GB;font-size:64px;letter-spacing:6px;color:var(--cre);border:6px solid var(--cre);border-radius:14px;padding:6px 26px 2px;background:rgba(10,31,35,.55)}
+.cta{position:absolute;left:0;right:0;top:0;padding:56px 40px 220px;text-align:center;background:linear-gradient(rgba(10,31,35,.95) 45%,rgba(10,31,35,0))}
+.cta .a{font-family:GB;font-size:62px;color:var(--cre);line-height:1.05}
+.cta .b{margin-top:14px;font-family:MX;font-size:36px;letter-spacing:6px;color:var(--ama)}
+.cta .c{margin-top:22px;font-family:MV;font-weight:300;font-size:28px;letter-spacing:8px;color:var(--cre)}
+.cta .c b{font-weight:700}
+#av{position:absolute;left:10px;bottom:0;height:700px;width:394px;z-index:5;filter:drop-shadow(0 30px 50px rgba(0,0,0,.6))}
+#av{-webkit-mask-image:linear-gradient(to right,#000 88%,transparent 100%)}
+#av video{width:100%;height:100%;object-fit:contain;object-position:bottom left}
+#leg{position:absolute;left:470px;right:70px;top:1330px;z-index:6;font-family:MX;font-size:48px;line-height:1.18;color:var(--cre);text-shadow:0 4px 18px rgba(0,0,0,.6)}
+#leg span{display:inline}
+#leg span.h{color:var(--amb)}
+#ass{position:absolute;left:0;right:0;top:1380px;text-align:center;z-index:6;opacity:0}
+#ass b{display:block;font-family:GB;font-size:58px;color:var(--cre);letter-spacing:6px;line-height:1.05}
+#ass i{display:block;font-style:normal;font-family:MBo;font-size:28px;color:var(--amb);margin-top:12px;letter-spacing:4px}
+</style></head><body>
+<div id="bg"></div><div id="chao"></div>
+<div class="selo">VALOTA PARFUM <b>·</b> LANÇAMENTOS</div>
+<div id="tits"></div>
+<div id="telao"><div id="slides"></div><div id="brilho"></div></div>
+<div id="fontes"></div>
+<div id="over"></div>
+<div id="av"><video id="avv" src="gravacao/avatar_175.webm" muted playsinline preload="auto"></video></div>
+<div id="leg"></div>
+<div id="ass"><b>VALOTA PARFUM</b><i>@valotaparfum</i></div>
+<script>
+/*DADOS*/
+const $=s=>document.querySelector(s);const {S,K}=D;
+const cl=x=>Math.max(0,Math.min(1,x)),eo=x=>1-Math.pow(1-x,3),back=x=>{const c=1.70158;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const L=[];window.__L=L;
+// elemento genérico: pai, html, estilo, t0, t1, efeito
+function E(pai,html,st,t0,t1,fx,o={}){const d=document.createElement('div');d.className='e '+(o.cls||'');d.innerHTML=html;Object.assign(d.style,st||{});$(pai).appendChild(d);L.push({d,t0,t1,fx,...o});return d}
+const R=(x,y,w,h)=>({left:x+'px',top:y+'px',width:w!=null?w+'px':'',height:h!=null?h+'px':''});
+// slides do telão (crossfade 0,35 s)
+const SL=[];
+function slide(html,t0,t1,cls='',kb=0){const d=document.createElement('div');d.className='sl '+cls;d.innerHTML=html;$('#slides').appendChild(d);SL.push({d,t0,t1,kb})}
+function tit(html,t0,t1){E('#tits',html,{},t0,t1,'tit',{cls:'tit'})}
+function fonte(txt,t0,t1){E('#fontes',txt,{},t0,t1,'fade',{cls:'fonte'})}
+// no telão: coordenadas internas (0–980 × 0–900)
+const TX=(x,y,w,h)=>R(x,y,w,h);
+
+// ===== 1 · GANCHO: print do site oficial
+tit('ESTÁ NO SITE <em>OFICIAL</em><br>DA ARMANI',0,S.prova);
+slide('<img class="full" src="telao/s1_tela.png">',0,S.intro,'',0);
+fonte('PRINT · ARMANI.COM (EUA) · 21/11/2026',0,S.intro);
+E('#over','',R(548,462,420,200),0.45,S.intro,'draw',{cls:'marca'});
+E('#over','<img src="telao/s1_zoom.png">',R(450,830,600),K.vendendo+0.2,S.intro,'pop',{cls:'lupa'});
+
+// ===== intro: o frasco oficial + ainda não chegou no Brasil
+slide('<div class="halo"></div>',S.intro,S.prova,'escuro');
+E('#slides','<img src="telao/extremely_recorte.png" style="height:600px">',TX(490-188,110),S.intro+0.1,S.prova,'pop',{cls:'fr',z:5});
+E('#slides','<div class="nome">STRONGER WITH YOU EXTREMELY<small>EMPORIO ARMANI</small></div>',TX(0,32,980),K.extremely,S.prova,'fade',{z:5});
+E('#slides','<span class="tag ama">US$ 135 · SITE DOS EUA</span>',TX(0,742,980),K.dolares,S.prova,'pop',{z:6,center:1});
+E('#slides','<span class="tag out" style="font-size:28px">AINDA NÃO CHEGOU NO BRASIL</span>',TX(0,826,980),K.apareceu,S.prova,'stamp',{z:6,center:1});
+fonte('IMAGEM OFICIAL · ARMANI.COM',S.intro,S.prova);
+
+// ===== 2 · PROVA: print da Olfastory
+tit('ANUNCIADO<br>PARA <em>2027</em>',S.prova,S.boato);
+slide('<img class="full" src="telao/s2_tela.png">',S.prova,S.boato);
+fonte('PRINT · OLFASTORY.COM · PUBLICADO EM 20/11/2026',S.prova,S.boato);
+E('#over','',R(62,774,322,70),K.y2027,S.boato,'draw',{cls:'marca'});
+E('#over','<img src="telao/s2_zoom.png">',R(300,930,730),K.oriental,K.frutado,'pop',{cls:'lupa'});
+E('#over','',R(284,898,196,64),K.frutado,S.boato,'draw',{cls:'marca'});
+
+// ===== 3 · BOATO: maracujá × Power of You
+tit('O BOATO DO<br><em>MARACUJÁ</em>',S.boato,S.conf);
+slide('<div class="halo" style="left:72%"></div>',S.boato,S.conf,'escuro');
+const mar=E('#slides','<img src="telao/s3_maracuja.jpg">',TX(60,110,420,640),K.mar1,S.conf,'pop',{cls:'foto',z:5});
+E('#slides','<img src="telao/pou_recorte.png" style="height:520px">',TX(735-142,120),K.pou,S.conf,'pop',{cls:'fr',z:5});
+E('#slides','<div class="nome" style="font-size:32px">POWER OF YOU<small>TAMBÉM DA ARMANI</small></div>',TX(540,660,390),K.pou+0.15,S.conf,'fade',{z:5});
+E('#slides','<span class="tag cre" style="font-size:19px;letter-spacing:2px">ESSE TEM MARACUJÁ</span>',TX(560,772,350),K.pou+0.5,S.conf,'pop',{z:6,center:1});
+E('#slides','<div class="carimbo">BOATO</div>',TX(110,360),K.nenhuma,S.conf,'stamp',{z:7,rot:-8});
+E('#slides','<span class="tag out" style="font-size:19px;letter-spacing:2px">NENHUMA FONTE CONFIRMOU</span>',TX(60,772,420),K.nenhuma+0.3,S.conf,'up',{z:7,center:1});
+fonte('FOTO: WIKIMEDIA COMMONS · FRASCO: ARMANI.COM',S.boato,S.conf);
+
+// ===== 4 · CONFIRMADA: família → castanha → Parfum → "intense" → DNA
+tit('A ÚNICA NOTA<br><em>CONFIRMADA</em>',S.conf,S.cta);
+slide('<img class="full" src="telao/familia.jpg" style="object-position:50% 62%">',S.conf,K.castanha,'',1);
+fonte('IMAGEM OFICIAL · ARMANI.COM',S.conf,K.castanha);
+slide('<img class="full" src="telao/foto_castanha.jpg" style="object-position:50% 50%">',K.castanha,K.intenso,'',1);
+E('#slides','<span class="tag ama" style="font-family:GB;font-size:44px;letter-spacing:4px;padding:16px 36px 12px">CASTANHA · CONFIRMADA</span>',TX(0,60,980),K.castanha+0.1,K.intenso,'stamp',{z:6,center:1});
+E('#slides','<img src="telao/swy_parfum_recorte.png" style="height:470px">',TX(980-60-298,330),K.parfum,K.intenso,'up',{cls:'fr',z:5});
+E('#slides','<span class="tag cre" style="font-size:22px">NA BASE DO STRONGER WITH YOU PARFUM</span>',TX(0,830,980),K.parfum+0.3,K.intenso,'up',{z:6,center:1});
+fonte('FOTO: WIKIMEDIA COMMONS · FRASCO: ARMANI.COM',K.castanha,K.intenso);
+slide('<img class="full" src="telao/s1_tela.png" style="filter:brightness(.45) blur(3px)">',K.intenso,K.dna);
+E('#slides','<div class="lupa"><img src="telao/s4_intense.png"></div>',TX(40,330,900),K.intenso,K.dna,'pop',{z:6});
+E('#slides','',TX(40+12,330+64,664,70),K.intenso+0.45,K.dna,'draw',{cls:'marca',z:7});
+fonte('PRINT · ARMANI.COM (EUA)',K.intenso,K.dna);
+slide('<div class="halo"></div>',K.dna,S.cta,'escuro');
+E('#slides','<img src="telao/swy_parfum_recorte.png" style="height:520px">',TX(250-165,130),K.dna,S.cta,'pop',{cls:'fr',z:5});
+E('#slides','<img src="telao/extremely_recorte.png" style="height:560px">',TX(720-175,100),K.dna+0.25,S.cta,'pop',{cls:'fr',z:5});
+E('#slides','<div class="nome" style="font-size:28px">PARFUM<small>2025</small></div>',TX(85,680,330),K.dna+0.2,S.cta,'fade',{z:5});
+E('#slides','<div class="nome" style="font-size:28px">EXTREMELY<small>NOVO</small></div>',TX(545,680,350),K.dna+0.4,S.cta,'fade',{z:5});
+E('#slides','<span class="tag ama">MAIS INTENSO</span>',TX(0,790,980),K.forte,S.cta,'pop',{z:6,center:1});
+fonte('IMAGENS OFICIAIS · ARMANI.COM',K.dna,S.cta);
+
+// ===== 5 · PONTE + CTA
+tit('QUANDO CHEGAR<br>NO <em>BRASIL</em>…',S.cta,D.END+1);
+slide('<div class="halo"></div>',S.cta,K.chegar,'escuro',0);
+E('#slides','<img src="telao/extremely_recorte.png" style="height:700px">',TX(490-219,100),S.cta,K.chegar,'pop',{cls:'fr',z:5,pulse:1});
+slide('<img class="full" src="telao/familia.jpg" style="object-position:50% 70%"><div class="cta"><div class="a" id="c1">ENTRA NO MEU GRUPO</div><div class="b" id="c2">O LINK TÁ NA BIO</div><div class="c" id="c3">SEGUE A <b>VALOTA PARFUM</b></div></div>',K.chegar,D.END+1,'',1);
+fonte('IMAGEM OFICIAL · ARMANI.COM',S.cta,D.END+1);
+
+// os 3 textos do CTA entram na palavra
+const CT=[['#c1',K.grupo],['#c2',K.link],['#c3',K.segue]];
+
+// ---------- render
+const leg=$('#leg');let legAtual=-1;
+window.render=function(t){
+ for(const s of SL){const vis=t>=s.t0-0.35&&t<s.t1;
+  if(!vis){s.d.style.opacity=0;s.d.style.display='none';continue}
+  s.d.style.display='';const p=s.t0<=0?1:cl((t-s.t0+0.35)/0.35);s.d.style.opacity=eo(p).toFixed(3);
+  s.d.style.zIndex=1;
+  if(s.kb){const k=cl((t-s.t0)/Math.max(1,s.t1-s.t0));s.d.style.transform=`scale(${(1+0.06*k).toFixed(4)})`}
+ }
+ for(const o of L){
+  const vis=t>=o.t0&&t<o.t1;const pin=cl((t-o.t0)/0.38),pout=o.t1>D.END?0:cl((t-(o.t1-0.2))/0.2);
+  if(!vis){o.d.style.opacity=0;o.d.style.display='none';continue}
+  o.d.style.display='';if(o.z)o.d.style.zIndex=o.z;
+  let op=1,tr='';
+  switch(o.fx){
+   case 'pop':op=cl(pin*2.2);tr=`scale(${(0.6+0.4*back(pin)).toFixed(4)})`;break;
+   case 'up':op=eo(pin);tr=`translateY(${(30*(1-eo(pin))).toFixed(1)}px)`;break;
+   case 'fade':case 'tit':op=eo(pin);break;
+   case 'stamp':{const p=cl((t-o.t0)/0.26);op=cl(p*3);tr=`scale(${(1.6-0.6*eo(p)).toFixed(4)})`;break}
+   case 'draw':{const p=eo(cl((t-o.t0)/0.45));op=1;o.d.style.clipPath=`inset(0 ${(100-100*p).toFixed(1)}% 0 0)`;break}
+  }
+  if(o.fx==='tit'&&o.t0>0)op=eo(cl((t-o.t0)/0.3));
+  op*=1-pout;
+  if(o.center){o.d.style.textAlign='center'}
+  if(o.rot!=null)tr+=` rotate(${o.rot}deg)`;
+  if(o.pulse)tr+=` scale(${(1+0.02*Math.sin(t*2.4)).toFixed(4)})`;
+  o.d.style.opacity=op.toFixed(3);o.d.style.transform=tr;
+ }
+ // maracujá apaga quando vira boato
+ const pm=cl((t-K.nenhuma)/0.4);mar.querySelector('img').style.filter=`saturate(${(1-0.5*pm).toFixed(3)}) brightness(${(1-0.3*pm).toFixed(3)})`;
+ // CTA por palavra
+ for(const [id,tt] of CT){const p=cl((t-tt)/0.35);const el=$(id);el.style.opacity=eo(p).toFixed(3);el.style.transform=`translateY(${(20*(1-eo(p))).toFixed(1)}px)`}
+ // legenda
+ const gi=D.LEG.findIndex(g=>t>=g.t0&&t<g.t1);
+ if(gi!==legAtual){legAtual=gi;leg.innerHTML=gi<0?'':D.LEG[gi].p.map(w=>`<span class="${w.h?'h':''}">${w.w}</span>`).join(' ')}
+ if(gi>=0){const p=cl((t-D.LEG[gi].t0)/0.16);leg.style.opacity=p;leg.style.transform=`translateY(${(8*(1-eo(p))).toFixed(1)}px)`}else leg.style.opacity=0;
+ // fim: avatar sai, entra a assinatura
+ const fo=cl((t-D.FIM-0.15)/0.45);$('#avv').style.opacity=(1-fo).toFixed(3);$('#av').style.visibility=fo>=0.999?'hidden':'visible';$('#ass').style.opacity=cl((t-D.FIM-0.4)/0.4).toFixed(3);
+};
+window.render(0);
+</script></body></html>

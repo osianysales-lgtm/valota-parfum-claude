@@ -1,0 +1,905 @@
+{
+  "ok": false,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": false,
+    "errorCount": 2,
+    "warningCount": 7,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "gsap_non_transform_motion",
+        "severity": "error",
+        "message": "GSAP tween on \"#fn-sign\" uses motion that snaps to integer device pixels: letterSpacing. Layout and text-reflow properties snap during browser layout; roundProps rounds the tween value. Slow motion or an ease-out tail then stutters under the seek-by-frame capture engine. Animate transforms (x/y/scale/opacity) instead.",
+        "selector": "#fn-sign",
+        "dataAttributes": {},
+        "sourceFile": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/compositions/final.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "do not animate letterSpacing (they reflow text and snap glyph positions): for letterSpacing, split the text into per-character elements and animate each glyph's x (the spread), since uniform scale is NOT equivalent, or hold the final value statically. Transforms interpolate sub-pixel and stay smooth at any speed."
+      },
+      {
+        "code": "duplicate_media_discovery_risk",
+        "severity": "warning",
+        "message": "Detected 15 matching img entries with the same source/start/duration.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/compositions/intro.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Avoid duplicated media nodes that can be discovered twice during compilation."
+      },
+      {
+        "code": "gsap_non_transform_motion",
+        "severity": "error",
+        "message": "GSAP tween on \"#in-t3\" uses motion that snaps to integer device pixels: letterSpacing. Layout and text-reflow properties snap during browser layout; roundProps rounds the tween value. Slow motion or an ease-out tail then stutters under the seek-by-frame capture engine. Animate transforms (x/y/scale/opacity) instead.",
+        "selector": "#in-t3",
+        "dataAttributes": {},
+        "sourceFile": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/compositions/intro.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "do not animate letterSpacing (they reflow text and snap glyph positions): for letterSpacing, split the text into per-character elements and animate each glyph's x (the spread), since uniform scale is NOT equivalent, or hold the final value statically. Transforms interpolate sub-pixel and stay smooth at any speed."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "This HTML file has 7 timed elements. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/compositions/intro.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "composition_heavy_overlay_count_high",
+        "severity": "warning",
+        "message": "This composition has 25 elements carrying \"heavy overlay\" CSS (filter:blur, radial-gradient, or clip-path). Field signal: a composition with ~40 such elements (including opacity:0 / visibility:hidden ones) captures solid-black for the first ~half of the render, recovering near the end. Reproduces identically via drawElement, forced screenshot capture, and snapshot, so the capture layer itself is the offender (not encoder/mux). Independent of duration. Presence alone matters; only display:none elements are excluded here.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/compositions/intro.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split this sub-composition further into per-transition mini-compositions and concat the pieces (FFmpeg or the runtime's slideshow) so each capture only sees a small subset of heavy overlays at once. Even hidden overlays (opacity:0 / visibility:hidden) contribute: either remove truly unused ones from the source or scope them into their own per-transition sub-composition. If an overlay is genuinely inert for the whole clip, use display:none so it never enters the render tree. Field ref ts=1784040753 (#hyperframes-cli-feedback)."
+      },
+      {
+        "code": "duplicate_media_discovery_risk",
+        "severity": "warning",
+        "message": "Detected 15 matching img entries with the same source/start/duration.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/compositions/ranking.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Avoid duplicated media nodes that can be discovered twice during compilation."
+      },
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 359 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/compositions/ranking.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split this sub-composition further into smaller .html files, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "This HTML file has 10 timed elements. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/compositions/ranking.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "composition_heavy_overlay_count_high",
+        "severity": "warning",
+        "message": "This composition has 28 elements carrying \"heavy overlay\" CSS (filter:blur, radial-gradient, or clip-path). Field signal: a composition with ~40 such elements (including opacity:0 / visibility:hidden ones) captures solid-black for the first ~half of the render, recovering near the end. Reproduces identically via drawElement, forced screenshot capture, and snapshot, so the capture layer itself is the offender (not encoder/mux). Independent of duration. Presence alone matters; only display:none elements are excluded here.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/compositions/ranking.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split this sub-composition further into per-transition mini-compositions and concat the pieces (FFmpeg or the runtime's slideshow) so each capture only sees a small subset of heavy overlays at once. Even hidden overlays (opacity:0 / visibility:hidden) contribute: either remove truly unused ones from the source or scope them into their own per-transition sub-composition. If an overlay is genuinely inert for the whole clip, use display:none so it never enters the render tree. Field ref ts=1784040753 (#hyperframes-cli-feedback)."
+      }
+    ],
+    "filesScanned": 4
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 12,
+    "infoCount": 1,
+    "findings": [
+      {
+        "selector": "#in-t1",
+        "dataAttributes": {},
+        "sourceFile": "compositions/intro.html",
+        "bbox": {
+          "x": 272.53,
+          "y": 213.28,
+          "width": 554.47,
+          "height": 57.62
+        },
+        "time": 1,
+        "rect": {
+          "left": 272.53,
+          "top": 213.28,
+          "right": 827,
+          "bottom": 270.9,
+          "width": 554.47,
+          "height": 57.62
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "RANQUEANDO",
+        "message": "<span> \"RANQUEANDO\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1,
+        "lastSeen": 1,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1
+        ]
+      },
+      {
+        "selector": "#in-t2",
+        "dataAttributes": {},
+        "sourceFile": "compositions/intro.html",
+        "bbox": {
+          "x": 123.42,
+          "y": 268.88,
+          "width": 833.14,
+          "height": 142.55
+        },
+        "time": 1,
+        "rect": {
+          "left": 123.42,
+          "top": 268.88,
+          "right": 956.56,
+          "bottom": 411.43,
+          "width": 833.14,
+          "height": 142.55
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "MASCULINOS",
+        "message": "<span> \"MASCULINOS\" is outside the safe area: YouTube Shorts (top and right edges).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1,
+        "lastSeen": 1,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1
+        ]
+      },
+      {
+        "selector": "#rk10-num",
+        "dataAttributes": {},
+        "sourceFile": "compositions/ranking.html",
+        "bbox": {
+          "x": 424.34,
+          "y": 238,
+          "width": 231.32,
+          "height": 150
+        },
+        "time": 3,
+        "rect": {
+          "left": 424.34,
+          "top": 238,
+          "right": 655.66,
+          "bottom": 388,
+          "width": 231.32,
+          "height": 150
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "10º",
+        "message": "<span> \"10º\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3,
+        "lastSeen": 3,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          3
+        ]
+      },
+      {
+        "selector": "#rk-label",
+        "dataAttributes": {},
+        "sourceFile": "compositions/ranking.html",
+        "bbox": {
+          "x": 171.02,
+          "y": 186,
+          "width": 737.96,
+          "height": 34
+        },
+        "time": 3,
+        "rect": {
+          "left": 171.02,
+          "top": 186,
+          "right": 908.98,
+          "bottom": 220,
+          "width": 737.96,
+          "height": 34
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "TOP 10 · MASCULINOS LATTAFA",
+        "message": "<div> \"TOP 10 · MASCULINOS LATTAFA\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3,
+        "lastSeen": 13,
+        "occurrences": 6,
+        "heldMs": 0,
+        "times": [
+          3,
+          5,
+          7,
+          9,
+          11,
+          13
+        ]
+      },
+      {
+        "selector": "#rk8-num",
+        "dataAttributes": {},
+        "sourceFile": "compositions/ranking.html",
+        "bbox": {
+          "x": 463.5,
+          "y": 238,
+          "width": 153,
+          "height": 150
+        },
+        "time": 5,
+        "rect": {
+          "left": 463.5,
+          "top": 238,
+          "right": 616.5,
+          "bottom": 388,
+          "width": 153,
+          "height": 150
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "8º",
+        "message": "<span> \"8º\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 5,
+        "lastSeen": 5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5
+        ]
+      },
+      {
+        "selector": "#rk6-num",
+        "dataAttributes": {},
+        "sourceFile": "compositions/ranking.html",
+        "bbox": {
+          "x": 453.38,
+          "y": 230.67,
+          "width": 173.24,
+          "height": 164.66
+        },
+        "time": 7,
+        "rect": {
+          "left": 453.38,
+          "top": 230.67,
+          "right": 626.62,
+          "bottom": 395.33,
+          "width": 173.24,
+          "height": 164.66
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "6º",
+        "message": "<span> \"6º\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 7,
+        "lastSeen": 7,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          7
+        ]
+      },
+      {
+        "selector": "#rk5-num",
+        "dataAttributes": {},
+        "sourceFile": "compositions/ranking.html",
+        "bbox": {
+          "x": 463.5,
+          "y": 238,
+          "width": 153,
+          "height": 150
+        },
+        "time": 9,
+        "rect": {
+          "left": 463.5,
+          "top": 238,
+          "right": 616.5,
+          "bottom": 388,
+          "width": 153,
+          "height": 150
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "5º",
+        "message": "<span> \"5º\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 9,
+        "lastSeen": 9,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9
+        ]
+      },
+      {
+        "selector": "#rk3-num",
+        "dataAttributes": {},
+        "sourceFile": "compositions/ranking.html",
+        "bbox": {
+          "x": 469.62,
+          "y": 243.39,
+          "width": 140.76,
+          "height": 139.22
+        },
+        "time": 11,
+        "rect": {
+          "left": 469.62,
+          "top": 243.39,
+          "right": 610.38,
+          "bottom": 382.61,
+          "width": 140.76,
+          "height": 139.22
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "3º",
+        "message": "<span> \"3º\" is outside the safe area: Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 11,
+        "lastSeen": 11,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          11
+        ]
+      },
+      {
+        "selector": "#rk2-num",
+        "dataAttributes": {},
+        "sourceFile": "compositions/ranking.html",
+        "bbox": {
+          "x": 463.94,
+          "y": 238,
+          "width": 152.11,
+          "height": 150
+        },
+        "time": 13,
+        "rect": {
+          "left": 463.94,
+          "top": 238,
+          "right": 616.05,
+          "bottom": 388,
+          "width": 152.11,
+          "height": 150
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "2º",
+        "message": "<span> \"2º\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 13,
+        "lastSeen": 13,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          13
+        ]
+      },
+      {
+        "selector": "#fn-q > div:nth-of-type(3)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/final.html",
+        "bbox": {
+          "x": 111.48,
+          "y": 704.16,
+          "width": 857.02,
+          "height": 102
+        },
+        "time": 17,
+        "rect": {
+          "left": 111.48,
+          "top": 704.16,
+          "right": 968.5,
+          "bottom": 806.16,
+          "width": 857.02,
+          "height": 102
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "perfume masculino",
+        "message": "<div> \"perfume masculino\" is outside the safe area: TikTok (left and right edges), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17,
+        "lastSeen": 17,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          17
+        ]
+      },
+      {
+        "selector": "#fn-q > div:nth-of-type(5)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/final.html",
+        "bbox": {
+          "x": 235.97,
+          "y": 916.31,
+          "width": 608.06,
+          "height": 112
+        },
+        "time": 17,
+        "rect": {
+          "left": 235.97,
+          "top": 916.31,
+          "right": 844.03,
+          "bottom": 1028.31,
+          "width": 608.06,
+          "height": 112
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "LATTAFA?",
+        "message": "<div> \"LATTAFA?\" is outside the safe area: TikTok (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17,
+        "lastSeen": 17,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          17
+        ]
+      },
+      {
+        "selector": "#fn-sign",
+        "dataAttributes": {},
+        "sourceFile": "compositions/final.html",
+        "bbox": {
+          "x": 324.09,
+          "y": 1250,
+          "width": 445.32,
+          "height": 37
+        },
+        "time": 17,
+        "rect": {
+          "left": 324.09,
+          "top": 1250,
+          "right": 769.41,
+          "bottom": 1287,
+          "width": 445.32,
+          "height": 37
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "VALOTA PARFUM",
+        "message": "<div> \"VALOTA PARFUM\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17,
+        "lastSeen": 17,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          17
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 1,
+        "selector": "#in-title",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -5.94,
+          "top": 213.28,
+          "right": 1085.94,
+          "bottom": 530.04,
+          "width": 1091.88,
+          "height": 316.76
+        },
+        "containerSelector": "#intro > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 5.94,
+          "right": 5.94
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/intro.html",
+        "bbox": {
+          "x": -5.94,
+          "y": 213.28,
+          "width": 1091.88,
+          "height": 316.76
+        },
+        "firstSeen": 1,
+        "lastSeen": 1,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1
+        ]
+      }
+    ],
+    "duration": 18,
+    "samples": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 13,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      1,
+      5,
+      9,
+      13,
+      17
+    ],
+    "checked": 29,
+    "passed": 29
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 3,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "The film's last line \"LATTAFA?\" (1 word) is on screen 1.86 s (±0.01 s), under the 2.00 s a closing line needs: hold it about 0.5 s + 0.3 s a word and at least 2 s before the film ends; see references/motion.md.",
+        "text": "LATTAFA?",
+        "selector": "#fn-q > div:nth-of-type(5)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/final.html",
+        "bbox": {
+          "x": 235.97,
+          "y": 916.53,
+          "width": 608.06,
+          "height": 112
+        },
+        "time": 16.141,
+        "words": 1,
+        "seconds": 1.863,
+        "floorSeconds": 2,
+        "measured": [
+          {
+            "time": 15.875,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 16,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 16.125,
+            "opacity": 0.32,
+            "heightPx": 112
+          },
+          {
+            "time": 16.25,
+            "opacity": 0.99,
+            "heightPx": 112
+          },
+          {
+            "time": 16.375,
+            "opacity": 1,
+            "heightPx": 112
+          },
+          {
+            "time": 16.5,
+            "opacity": 1,
+            "heightPx": 112
+          },
+          {
+            "time": 16.625,
+            "opacity": 1,
+            "heightPx": 112
+          },
+          {
+            "time": 17.5,
+            "opacity": 1,
+            "heightPx": 112
+          },
+          {
+            "time": 17.625,
+            "opacity": 1,
+            "heightPx": 112
+          },
+          {
+            "time": 17.75,
+            "opacity": 1,
+            "heightPx": 112
+          },
+          {
+            "time": 17.875,
+            "opacity": 1,
+            "heightPx": 112
+          }
+        ]
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "The film's last line \"Comenta aqui embaixo\" (3 words) is on screen 1.60 s (±0.01 s), under the 2.00 s a closing line needs: hold it about 0.5 s + 0.3 s a word and at least 2 s before the film ends; see references/motion.md.",
+        "text": "Comenta aqui embaixo",
+        "selector": "#fn-cta",
+        "dataAttributes": {},
+        "sourceFile": "compositions/final.html",
+        "bbox": {
+          "x": 317.58,
+          "y": 1151.57,
+          "width": 444.83,
+          "height": 47
+        },
+        "time": 16.406,
+        "words": 3,
+        "seconds": 1.598,
+        "floorSeconds": 2,
+        "measured": [
+          {
+            "time": 16.125,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 16.25,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 16.375,
+            "opacity": 0.47,
+            "heightPx": 47
+          },
+          {
+            "time": 16.5,
+            "opacity": 0.92,
+            "heightPx": 47
+          },
+          {
+            "time": 16.625,
+            "opacity": 1,
+            "heightPx": 47
+          },
+          {
+            "time": 16.75,
+            "opacity": 1,
+            "heightPx": 47
+          },
+          {
+            "time": 16.875,
+            "opacity": 1,
+            "heightPx": 47
+          },
+          {
+            "time": 17.5,
+            "opacity": 1,
+            "heightPx": 47
+          },
+          {
+            "time": 17.625,
+            "opacity": 1,
+            "heightPx": 47
+          },
+          {
+            "time": 17.75,
+            "opacity": 1,
+            "heightPx": 47
+          },
+          {
+            "time": 17.875,
+            "opacity": 1,
+            "heightPx": 47
+          }
+        ]
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "The film's last line \"VALOTA PARFUM\" (2 words) is on screen 1.40 s (±0.01 s), under the 2.00 s a closing line needs: hold it about 0.5 s + 0.3 s a word and at least 2 s before the film ends; see references/motion.md.",
+        "text": "VALOTA PARFUM",
+        "selector": "#fn-sign",
+        "dataAttributes": {},
+        "sourceFile": "compositions/final.html",
+        "bbox": {
+          "x": 300.61,
+          "y": 1250,
+          "width": 492.27,
+          "height": 37
+        },
+        "time": 16.602,
+        "words": 2,
+        "seconds": 1.402,
+        "floorSeconds": 2,
+        "measured": [
+          {
+            "time": 16.25,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 16.375,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 16.5,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 16.625,
+            "opacity": 0.52,
+            "heightPx": 37
+          },
+          {
+            "time": 16.75,
+            "opacity": 0.86,
+            "heightPx": 37
+          },
+          {
+            "time": 16.875,
+            "opacity": 0.98,
+            "heightPx": 37
+          },
+          {
+            "time": 17,
+            "opacity": 1,
+            "heightPx": 37
+          },
+          {
+            "time": 17.5,
+            "opacity": 1,
+            "heightPx": 37
+          },
+          {
+            "time": 17.625,
+            "opacity": 1,
+            "heightPx": 37
+          },
+          {
+            "time": 17.75,
+            "opacity": 1,
+            "heightPx": 37
+          },
+          {
+            "time": 17.875,
+            "opacity": 1,
+            "heightPx": 37
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 144
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

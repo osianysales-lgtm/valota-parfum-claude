@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:MX;src:url(fontes/Montserrat-ExtraBold.ttf)}
+@font-face{font-family:MBo;src:url(fontes/Montserrat-Bold.ttf)}
+@font-face{font-family:GB;src:url(fontes/GothamBlack.otf)}
+@font-face{font-family:MV;src:url(fontes/Montserrat-VariableFont_wght.ttf);font-weight:100 900}
+:root{--pet:#0F2E33;--noite:#0A1F23;--luz:#1A4A52;--amb:#D49A4E;--cre:#F2E8D8;--ama:#FFC93C}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#05090b}
+#bgb{position:absolute;left:-200px;top:-100px;width:1480px;height:2000px;object-fit:cover;filter:blur(18px) brightness(.5)}
+#palco{position:absolute;inset:0;-webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 150px,#000 330px)}
+#cena{position:absolute;left:0;top:0;transform-origin:0 0}
+.du{position:absolute;left:0;top:0;display:none}
+.du img{position:absolute;display:block}
+.du .fd,.du .og{left:0;top:0}
+.du .og{opacity:0}
+#somb{position:absolute;inset:0;pointer-events:none;
+ background:linear-gradient(180deg,rgba(3,8,10,.35) 0%,rgba(3,8,10,.15) 22%,rgba(3,8,10,0) 34%,rgba(3,8,10,0) 82%,rgba(3,8,10,.3) 100%)}
+/* título fixo (estilo do reel DfzhFuNzIgK) */
+#tit{position:absolute;left:0;right:0;top:128px;text-align:center;font-family:MV;font-weight:800;font-size:74px;line-height:1;letter-spacing:1px;color:#D9D0C1;
+ text-shadow:0 3px 16px rgba(0,0,0,.55)}
+/* rótulo + preço + nome de cada lado */
+.col{position:absolute;top:238px;width:470px;margin-left:-235px;text-align:center;color:var(--cre);text-shadow:0 2px 12px rgba(0,0,0,.7)}
+.col .rt{font-family:MV;font-weight:500;font-size:23px;letter-spacing:8px;margin-right:-8px;line-height:1}
+.col .pr{margin-top:12px;font-family:MV;font-weight:800;line-height:1;white-space:nowrap}
+.col .pr .rs{font-weight:700;font-size:32px;margin-right:8px;position:relative;top:-6px}
+.col .pr .n{font-size:88px;letter-spacing:-1px}
+.col .pr .c{font-size:34px;position:relative;top:-40px;margin-left:2px}
+.col .nm{margin-top:10px;font-family:MV;font-weight:500;font-size:26px;line-height:1.25;letter-spacing:3.5px;text-transform:uppercase}
+/* final */
+#cta{position:absolute;inset:0;opacity:0;overflow:hidden;background:var(--noite)}
+#cta .bgc{position:absolute;left:-177px;top:0;width:1434px;height:1920px;object-fit:cover;filter:blur(10px) brightness(.45)}
+#cta .tint{position:absolute;inset:0;background:radial-gradient(ellipse 900px 1300px at 50% 50%,rgba(26,74,82,.55),rgba(15,46,51,.75) 55%,rgba(10,31,35,.92))}
+#cta .c{position:absolute;left:60px;right:60px;text-align:center}
+.q1{top:330px;font-family:MX;font-size:56px;line-height:1.14;color:var(--cre)}
+.q2{top:478px;font-family:GB;font-size:82px;line-height:1.06;color:var(--ama);letter-spacing:1px}
+#card{position:absolute;left:190px;top:760px;width:700px;height:640px;border-radius:44px;background:rgba(10,31,35,.78);border:2px solid rgba(212,154,78,.55);box-shadow:0 40px 90px rgba(0,0,0,.55);text-align:center}
+#card .av{position:absolute;left:225px;top:56px;width:250px;height:250px;border-radius:50%;padding:7px;background:linear-gradient(135deg,var(--ama),var(--amb))}
+#card .av img{width:100%;height:100%;border-radius:50%;border:6px solid var(--noite);object-fit:cover;display:block}
+#card .u{position:absolute;left:0;right:0;top:340px;font-family:MX;font-size:50px;color:var(--cre)}
+#card .n{position:absolute;left:0;right:0;top:410px;font-family:MBo;font-size:30px;color:var(--amb);letter-spacing:1px}
+#card .bt{position:absolute;left:170px;top:488px;width:360px;height:96px;border-radius:24px;background:var(--ama);color:var(--pet);font-family:MX;font-size:42px;line-height:96px}
+.siga{top:1480px;font-family:MX;font-size:54px;line-height:1.16;color:var(--cre)}
+.siga em{font-style:normal;color:var(--ama)}
+</style></head><body>
+<img id="bgb" src="cenario_vazio.jpg"><div id="palco"><div id="cena"></div></div>
+<div id="somb"></div>
+<div id="txt"></div>
+<div id="tit">ÁRABE VS GRIFE</div>
+<div id="cta"><img class="bgc" src="cenario_vazio.jpg"><div class="tint"></div>
+ <div class="c q1">QUER ENCONTRAR AS<br>MELHORES OFERTAS DE</div>
+ <div class="c q2">PERFUMES<br>ORIGINAIS?</div>
+ <div id="card"><div class="av"><img src="avatar.png"></div><div class="u">@valotaparfum</div><div class="n">Valota Parfum</div><div class="bt">Seguir</div></div>
+ <div class="c siga">ME SEGUE E CLICA<br>NO <em>LINK DA BIO</em></div>
+</div>
+<script>
+/*DADOS*/
+const D=window.D,$=s=>document.querySelector(s);
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),eo=p=>1-Math.pow(1-p,3),
+ eb=p=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(p-1,3)+c1*Math.pow(p-1,2)};
+const S=0.72, OX=(1080-D.W*S)/2, OY=1920-D.H*S;   // cena um pouco menor e encostada embaixo: abre espaço pro texto acima da mulher
+const FX=540, FY=1150;                          // foco do zoom lento
+const cena=$('#cena'), txt=$('#txt');
+cena.style.width=D.W+'px';cena.style.height=D.H+'px';
+const DU=D.DUPLAS.map(d=>{
+ const g=document.createElement('div');g.className='du';g.style.width=D.W+'px';g.style.height=D.H+'px';
+ const im=(src,c,o)=>{const e=document.createElement('img');e.src=src;e.className=c;
+  if(o)Object.assign(e.style,{left:o.x+'px',top:o.y+'px',width:o.w+'px',height:o.h+'px'});g.appendChild(e);return e};
+ const fd=im(d.fundo,'fd'),E=im(`camadas/${d.n}_esq.png`,'le',d.esq),R=im(`camadas/${d.n}_dir.png`,'ld',d.dir),og=im(d.foto,'og');
+ // reflexo de cada frasco na mesa, andando junto com ele
+ const rf=(o,src,dy)=>{const w=document.createElement('div');const H=170,base=o.base+dy;
+  Object.assign(w.style,{position:'absolute',left:o.x+'px',top:base+'px',width:o.w+'px',height:H+'px',overflow:'hidden',opacity:.3,
+   webkitMaskImage:'linear-gradient(180deg,#000 0%,rgba(0,0,0,.35) 45%,rgba(0,0,0,0) 100%)'});
+  const e=document.createElement('img');e.src=src;Object.assign(e.style,{position:'absolute',left:0,top:(base-dy-o.y-o.h)+'px',width:o.w+'px',height:o.h+'px',transform:'scaleY(-1)',filter:'blur(1.5px) brightness(.75)'});
+  w.appendChild(e);g.insertBefore(w,E);return w};
+ // (reflexo andando junto foi testado e reprovado: "tira as sombras")
+ if(d.desce)og.style.clipPath=`inset(0 0 0 ${d.dir.x}px)`;   // árabe rebaixado: a foto original só cobre o lado da grife
+ E.style.transformOrigin='0% 100%';R.style.transformOrigin='100% 100%';
+ cena.appendChild(g);
+ const col=(cls,x,b)=>{const c=document.createElement('div');c.className='col '+cls;c.style.left=x+'px';
+  c.innerHTML=`<div class="rt">${cls=='a'?'ÁRABE':'GRIFE'}</div><div class="pr"><span class="rs">R$</span><span class="n">${b.preco[0]}</span><span class="c">,${b.preco[1]}</span></div><div class="nm">${b.nome}</div>`;c.style.display='none';txt.appendChild(c);
+  return {c,rt:c.querySelector('.rt'),pr:c.querySelector('.pr'),nm:c.querySelector('.nm')}};
+ const A=col('a',290,d.a),G=col('g',790,d.g);
+ // texto logo acima do frasco mais alto da dupla (alinhado dos dois lados)
+ const alvo=OY+Math.min(d.esq.y+d.desce,d.dir.y)*S-46;
+ [A,G].forEach(o=>{o.c.style.display='block'});const hh=Math.max(A.c.offsetHeight,G.c.offsetHeight);
+ [A,G].forEach(o=>{o.c.style.top=(alvo-hh)+'px';o.c.style.display='none'});
+ return {d,g,E,R,og,A,G};
+});
+function lado(o,dir,u){   // rótulo, preço e nome deslizam dos cantos e se encontram (suave)
+ [[o.rt,0.20],[o.pr,0.28],[o.nm,0.38]].forEach(([e,t0])=>{const q=cl((u-t0)/0.7);
+  e.style.transform=`translateX(${(dir*230*(1-eo(q))).toFixed(1)}px)`;e.style.opacity=eo(cl(q*1.6)).toFixed(3);});
+}
+window.render=function(t){
+ DU.forEach(({d,g,E,R,og,A,G})=>{
+  const on=t>=d.ini&&t<d.fim;g.style.display=on?'block':'none';A.c.style.display=G.c.style.display=on?'block':'none';
+  if(!on)return;
+  const u=t-d.ini;
+  // zoom lento da cena inteira
+  const z=1+0.035*cl(u/(d.fim-d.ini));const s=S*z;
+  cena.style.transform=`translate(${(FX-(FX-OX)*z).toFixed(2)}px,${(FY-(FY-OY)*z).toFixed(2)}px) scale(${s.toFixed(5)})`;
+  // mãos se encontrando
+  // frascos deslizam ENCOSTADOS na mesa (sem subir, sem inclinar), freando como se arrastassem na madeira
+  const q=cl(u/1.05),p=1-Math.pow(1-q,2.4),DX=640;
+  E.style.transform=`translate(${(-DX*(1-p)).toFixed(1)}px,${d.desce}px)`;
+  R.style.transform=`translate(${(DX*(1-p)).toFixed(1)}px,0px)`;
+  const ov=cl((u-1.0)/0.25);og.style.opacity=ov.toFixed(3);   // foto original por cima no encontro = reflexos na mesa
+  const ut=d.ini<0?u+0.8:u;lado(A,-1,ut);lado(G,1,ut);   // 1ª dupla: texto já inteiro no 1º quadro (capa)
+ });
+ // final
+ const C=D.CTA,ct=$('#cta');const a=cl((t-C.ini)/0.35);const tf=(1-cl((t-C.ini+0.05)/0.2)).toFixed(3);
+ $('#tit').style.opacity=tf;ct.style.opacity=a.toFixed(3);ct.style.display=a>0?'block':'none';
+ if(a>0){
+  const q=eo(cl((t-C.ini-0.1)/0.5));ct.querySelector('.q1').style.cssText+=`;opacity:${q};transform:translateY(${(30*(1-q)).toFixed(1)}px)`;
+  const q2=eo(cl((t-C.ini-0.35)/0.5));ct.querySelector('.q2').style.cssText+=`;opacity:${q2};transform:translateY(${(30*(1-q2)).toFixed(1)}px) scale(${(0.9+0.1*eb(cl((t-C.ini-0.35)/0.5))).toFixed(3)})`;
+  const cd=cl((t-C.card)/0.5);const card=$('#card');card.style.opacity=eo(cd).toFixed(3);card.style.transform=`translateY(${(60*(1-eo(cd))).toFixed(1)}px) scale(${(0.86+0.14*eb(cd)).toFixed(3)})`;
+  const sg=eo(cl((t-C.siga)/0.45));const si=ct.querySelector('.siga');si.style.opacity=sg.toFixed(3);si.style.transform=`translateY(${(26*(1-sg)).toFixed(1)}px)`;
+  const bt=card.querySelector('.bt'),tp=Math.sin(Math.PI*cl((t-C.toque)/0.3));
+  bt.style.transform=`scale(${(1-0.08*tp).toFixed(3)})`;
+  if(t>=C.toque+0.15){bt.textContent='Seguindo';bt.style.background='transparent';bt.style.color='#F2E8D8';bt.style.border='3px solid #D49A4E';bt.style.lineHeight='90px'}
+  else{bt.textContent='Seguir';bt.style.background='#FFC93C';bt.style.color='#0F2E33';bt.style.border='none';bt.style.lineHeight='96px'}
+  bt.style.boxShadow=`0 0 ${(40*Math.max(tp,0.3)).toFixed(0)}px rgba(255,201,60,${(0.45*Math.max(tp,t<C.toque?0.6:0)).toFixed(2)})`;
+ }
+};
+</script></body></html>

@@ -1,0 +1,4 @@
+file '/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v72-clima-para-cada-perfume/tmp/rodada_1.mp4'
+file '/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v72-clima-para-cada-perfume/tmp/rodada_2.mp4'
+file '/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v72-clima-para-cada-perfume/tmp/rodada_3.mp4'
+file '/Users/osianysales/Downloads/ClaudCode/squads/@gabriel/squad-editor/output/v72-clima-para-cada-perfume/tmp/rodada_4.mp4'

@@ -1,0 +1,239 @@
+<template>
+  <style>
+
+    @font-face { font-family: 'Gotham Black'; src: url('assets/fonts/GothamBlack.otf'); font-weight: 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0F2E33; font-family: 'Montserrat', sans-serif; }
+    .bg { position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 70% 42% at 50% 46%, rgba(212,154,78,0.30) 0%, rgba(212,154,78,0.08) 45%, rgba(15,46,51,0) 70%),
+        radial-gradient(ellipse 120% 80% at 50% 40%, #17454B 0%, #0F2E33 55%, #071B1E 100%); }
+    .dot { position: absolute; border-radius: 50%; background: radial-gradient(circle, #FFD58A 0%, rgba(212,154,78,0) 70%); }
+    .pedestal { position: absolute; left: 50%; top: 1190px; width: 700px; margin-left: -350px; height: 190px; }
+    .pedestal .side { position: absolute; left: 0; right: 0; top: 60px; height: 95px;
+      background: linear-gradient(90deg, #061518 0%, #12363B 30%, #1B474D 50%, #12363B 70%, #061518 100%);
+      border-radius: 0 0 50% 50% / 0 0 60px 60px; }
+    .pedestal .top { position: absolute; left: 0; right: 0; top: 0; height: 120px; border-radius: 50%;
+      background: radial-gradient(ellipse at 50% 40%, #24565C 0%, #143B40 55%, #0B2629 100%);
+      box-shadow: inset 0 0 0 2px rgba(212,154,78,0.55), 0 0 40px rgba(212,154,78,0.18); }
+    .stage { position: absolute; inset: 0; perspective: 1700px; perspective-origin: 50% 45%; }
+    .spin { position: absolute; left: 50%; transform-style: preserve-3d; }
+    .spin img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+    .shine { position: absolute; inset: 0; -webkit-mask-size: 100% 100%; mask-size: 100% 100%;
+      background: linear-gradient(100deg, rgba(255,255,255,0) 38%, rgba(255,246,225,0.55) 49%, rgba(255,255,255,0) 60%);
+      background-size: 300% 100%; background-position: 130% 0; mix-blend-mode: screen; }
+    .shadow { position: absolute; left: 50%; top: 1272px; width: 460px; height: 70px; margin-left: -230px;
+      border-radius: 50%; background: radial-gradient(ellipse, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 70%); }
+    .slide { position: absolute; inset: 0; }
+
+    #in-title { position: absolute; left: 0; right: 0; top: 285px; text-align: center; color: #fff; }
+    #in-t1 { display: block; font-weight: 300; font-size: 46px; letter-spacing: 0.42em; color: #F2E8D8; margin-left: 0.42em; }
+    #in-t2 { display: block; font-weight: 900; font-size: 100px; line-height: 1.02; letter-spacing: -0.01em; margin-top: 10px; }
+    #in-t3 { display: block; font-family: 'Gotham Black', 'Montserrat', sans-serif; font-weight: 900; font-size: 112px; line-height: 1; color: #D49A4E; letter-spacing: 0.04em; }
+  </style>
+  <div id="root" data-composition-id="intro" data-width="1080" data-height="1920" data-layout-allow-overlap>
+    <div class="bg"></div>
+      <i class="dot" id="in-dot0" style="left:288px;top:953px;width:6.6px;height:6.6px;opacity:0.40"></i>
+      <i class="dot" id="in-dot1" style="left:661px;top:379px;width:4.1px;height:4.1px;opacity:0.49"></i>
+      <i class="dot" id="in-dot2" style="left:309px;top:581px;width:11.0px;height:11.0px;opacity:0.35"></i>
+      <i class="dot" id="in-dot3" style="left:863px;top:872px;width:8.5px;height:8.5px;opacity:0.24"></i>
+      <i class="dot" id="in-dot4" style="left:669px;top:1342px;width:7.7px;height:7.7px;opacity:0.45"></i>
+      <i class="dot" id="in-dot5" style="left:705px;top:377px;width:9.3px;height:9.3px;opacity:0.40"></i>
+      <i class="dot" id="in-dot6" style="left:349px;top:337px;width:10.1px;height:10.1px;opacity:0.35"></i>
+      <i class="dot" id="in-dot7" style="left:750px;top:1355px;width:9.0px;height:9.0px;opacity:0.52"></i>
+      <i class="dot" id="in-dot8" style="left:439px;top:1261px;width:7.1px;height:7.1px;opacity:0.53"></i>
+      <i class="dot" id="in-dot9" style="left:904px;top:417px;width:5.0px;height:5.0px;opacity:0.26"></i>
+      <i class="dot" id="in-dot10" style="left:987px;top:823px;width:8.4px;height:8.4px;opacity:0.29"></i>
+      <i class="dot" id="in-dot11" style="left:547px;top:763px;width:6.5px;height:6.5px;opacity:0.40"></i>
+      <i class="dot" id="in-dot12" style="left:621px;top:1385px;width:8.8px;height:8.8px;opacity:0.52"></i>
+      <i class="dot" id="in-dot13" style="left:882px;top:1489px;width:8.7px;height:8.7px;opacity:0.24"></i>
+      <i class="dot" id="in-dot14" style="left:886px;top:1458px;width:10.3px;height:10.3px;opacity:0.39"></i>
+      <i class="dot" id="in-dot15" style="left:745px;top:553px;width:9.8px;height:9.8px;opacity:0.39"></i>
+    <div class="pedestal"><div class="side"></div><div class="top"></div></div>
+    <div id="in-f0" class="clip slide" data-start="0.00" data-duration="0.25">
+      <div class="stage">
+        <div class="shadow" id="in-f0-shadow"></div>
+        <div class="spin" id="in-f0-spin" style="width:431px;height:560px;margin-left:-215px;top:690px">
+          <img class="layer" src="assets/bottles/khamrah.webp" alt="" style="transform:translateZ(-56.0px);filter:brightness(0.30) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/khamrah.webp" alt="" style="transform:translateZ(-52.0px);filter:brightness(0.32) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/khamrah.webp" alt="" style="transform:translateZ(-48.0px);filter:brightness(0.34) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/khamrah.webp" alt="" style="transform:translateZ(-44.0px);filter:brightness(0.35) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/khamrah.webp" alt="" style="transform:translateZ(-40.0px);filter:brightness(0.37) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/khamrah.webp" alt="" style="transform:translateZ(-36.0px);filter:brightness(0.39) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/khamrah.webp" alt="" style="transform:translateZ(-32.0px);filter:brightness(0.41) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/khamrah.webp" alt="" style="transform:translateZ(-28.0px);filter:brightness(0.42) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/khamrah.webp" alt="" style="transform:translateZ(-24.0px);filter:brightness(0.44) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/khamrah.webp" alt="" style="transform:translateZ(-20.0px);filter:brightness(0.46) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/khamrah.webp" alt="" style="transform:translateZ(-16.0px);filter:brightness(0.48) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/khamrah.webp" alt="" style="transform:translateZ(-12.0px);filter:brightness(0.50) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/khamrah.webp" alt="" style="transform:translateZ(-8.0px);filter:brightness(0.51) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/khamrah.webp" alt="" style="transform:translateZ(-4.0px);filter:brightness(0.53) saturate(0.9)" />
+          <img class="front" src="assets/bottles/khamrah.webp" alt="" />
+          <div class="shine" id="in-f0-shine" style="-webkit-mask-image:url(assets/bottles/khamrah.webp);mask-image:url(assets/bottles/khamrah.webp)"></div>
+        </div>
+      </div>
+    </div>
+    <div id="in-f1" class="clip slide" data-start="0.25" data-duration="0.25">
+      <div class="stage">
+        <div class="shadow" id="in-f1-shadow"></div>
+        <div class="spin" id="in-f1-spin" style="width:244px;height:560px;margin-left:-122px;top:690px">
+          <img class="layer" src="assets/bottles/asad-elixir.webp" alt="" style="transform:translateZ(-56.0px);filter:brightness(0.30) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/asad-elixir.webp" alt="" style="transform:translateZ(-52.0px);filter:brightness(0.32) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/asad-elixir.webp" alt="" style="transform:translateZ(-48.0px);filter:brightness(0.34) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/asad-elixir.webp" alt="" style="transform:translateZ(-44.0px);filter:brightness(0.35) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/asad-elixir.webp" alt="" style="transform:translateZ(-40.0px);filter:brightness(0.37) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/asad-elixir.webp" alt="" style="transform:translateZ(-36.0px);filter:brightness(0.39) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/asad-elixir.webp" alt="" style="transform:translateZ(-32.0px);filter:brightness(0.41) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/asad-elixir.webp" alt="" style="transform:translateZ(-28.0px);filter:brightness(0.42) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/asad-elixir.webp" alt="" style="transform:translateZ(-24.0px);filter:brightness(0.44) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/asad-elixir.webp" alt="" style="transform:translateZ(-20.0px);filter:brightness(0.46) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/asad-elixir.webp" alt="" style="transform:translateZ(-16.0px);filter:brightness(0.48) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/asad-elixir.webp" alt="" style="transform:translateZ(-12.0px);filter:brightness(0.50) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/asad-elixir.webp" alt="" style="transform:translateZ(-8.0px);filter:brightness(0.51) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/asad-elixir.webp" alt="" style="transform:translateZ(-4.0px);filter:brightness(0.53) saturate(0.9)" />
+          <img class="front" src="assets/bottles/asad-elixir.webp" alt="" />
+          <div class="shine" id="in-f1-shine" style="-webkit-mask-image:url(assets/bottles/asad-elixir.webp);mask-image:url(assets/bottles/asad-elixir.webp)"></div>
+        </div>
+      </div>
+    </div>
+    <div id="in-f2" class="clip slide" data-start="0.50" data-duration="0.25">
+      <div class="stage">
+        <div class="shadow" id="in-f2-shadow"></div>
+        <div class="spin" id="in-f2-spin" style="width:340px;height:560px;margin-left:-170px;top:690px">
+          <img class="layer" src="assets/bottles/fakhar-black.webp" alt="" style="transform:translateZ(-56.0px);filter:brightness(0.30) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fakhar-black.webp" alt="" style="transform:translateZ(-52.0px);filter:brightness(0.32) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fakhar-black.webp" alt="" style="transform:translateZ(-48.0px);filter:brightness(0.34) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fakhar-black.webp" alt="" style="transform:translateZ(-44.0px);filter:brightness(0.35) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fakhar-black.webp" alt="" style="transform:translateZ(-40.0px);filter:brightness(0.37) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fakhar-black.webp" alt="" style="transform:translateZ(-36.0px);filter:brightness(0.39) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fakhar-black.webp" alt="" style="transform:translateZ(-32.0px);filter:brightness(0.41) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fakhar-black.webp" alt="" style="transform:translateZ(-28.0px);filter:brightness(0.42) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fakhar-black.webp" alt="" style="transform:translateZ(-24.0px);filter:brightness(0.44) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fakhar-black.webp" alt="" style="transform:translateZ(-20.0px);filter:brightness(0.46) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fakhar-black.webp" alt="" style="transform:translateZ(-16.0px);filter:brightness(0.48) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fakhar-black.webp" alt="" style="transform:translateZ(-12.0px);filter:brightness(0.50) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fakhar-black.webp" alt="" style="transform:translateZ(-8.0px);filter:brightness(0.51) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fakhar-black.webp" alt="" style="transform:translateZ(-4.0px);filter:brightness(0.53) saturate(0.9)" />
+          <img class="front" src="assets/bottles/fakhar-black.webp" alt="" />
+          <div class="shine" id="in-f2-shine" style="-webkit-mask-image:url(assets/bottles/fakhar-black.webp);mask-image:url(assets/bottles/fakhar-black.webp)"></div>
+        </div>
+      </div>
+    </div>
+    <div id="in-f3" class="clip slide" data-start="0.75" data-duration="0.25">
+      <div class="stage">
+        <div class="shadow" id="in-f3-shadow"></div>
+        <div class="spin" id="in-f3-spin" style="width:255px;height:560px;margin-left:-128px;top:690px">
+          <img class="layer" src="assets/bottles/fahad.webp" alt="" style="transform:translateZ(-56.0px);filter:brightness(0.30) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fahad.webp" alt="" style="transform:translateZ(-52.0px);filter:brightness(0.32) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fahad.webp" alt="" style="transform:translateZ(-48.0px);filter:brightness(0.34) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fahad.webp" alt="" style="transform:translateZ(-44.0px);filter:brightness(0.35) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fahad.webp" alt="" style="transform:translateZ(-40.0px);filter:brightness(0.37) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fahad.webp" alt="" style="transform:translateZ(-36.0px);filter:brightness(0.39) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fahad.webp" alt="" style="transform:translateZ(-32.0px);filter:brightness(0.41) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fahad.webp" alt="" style="transform:translateZ(-28.0px);filter:brightness(0.42) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fahad.webp" alt="" style="transform:translateZ(-24.0px);filter:brightness(0.44) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fahad.webp" alt="" style="transform:translateZ(-20.0px);filter:brightness(0.46) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fahad.webp" alt="" style="transform:translateZ(-16.0px);filter:brightness(0.48) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fahad.webp" alt="" style="transform:translateZ(-12.0px);filter:brightness(0.50) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fahad.webp" alt="" style="transform:translateZ(-8.0px);filter:brightness(0.51) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/fahad.webp" alt="" style="transform:translateZ(-4.0px);filter:brightness(0.53) saturate(0.9)" />
+          <img class="front" src="assets/bottles/fahad.webp" alt="" />
+          <div class="shine" id="in-f3-shine" style="-webkit-mask-image:url(assets/bottles/fahad.webp);mask-image:url(assets/bottles/fahad.webp)"></div>
+        </div>
+      </div>
+    </div>
+    <div id="in-f4" class="clip slide" data-start="1.00" data-duration="0.25">
+      <div class="stage">
+        <div class="shadow" id="in-f4-shadow"></div>
+        <div class="spin" id="in-f4-spin" style="width:167px;height:560px;margin-left:-83px;top:690px">
+          <img class="layer" src="assets/bottles/his-confession.webp" alt="" style="transform:translateZ(-56.0px);filter:brightness(0.30) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/his-confession.webp" alt="" style="transform:translateZ(-52.0px);filter:brightness(0.32) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/his-confession.webp" alt="" style="transform:translateZ(-48.0px);filter:brightness(0.34) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/his-confession.webp" alt="" style="transform:translateZ(-44.0px);filter:brightness(0.35) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/his-confession.webp" alt="" style="transform:translateZ(-40.0px);filter:brightness(0.37) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/his-confession.webp" alt="" style="transform:translateZ(-36.0px);filter:brightness(0.39) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/his-confession.webp" alt="" style="transform:translateZ(-32.0px);filter:brightness(0.41) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/his-confession.webp" alt="" style="transform:translateZ(-28.0px);filter:brightness(0.42) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/his-confession.webp" alt="" style="transform:translateZ(-24.0px);filter:brightness(0.44) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/his-confession.webp" alt="" style="transform:translateZ(-20.0px);filter:brightness(0.46) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/his-confession.webp" alt="" style="transform:translateZ(-16.0px);filter:brightness(0.48) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/his-confession.webp" alt="" style="transform:translateZ(-12.0px);filter:brightness(0.50) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/his-confession.webp" alt="" style="transform:translateZ(-8.0px);filter:brightness(0.51) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/his-confession.webp" alt="" style="transform:translateZ(-4.0px);filter:brightness(0.53) saturate(0.9)" />
+          <img class="front" src="assets/bottles/his-confession.webp" alt="" />
+          <div class="shine" id="in-f4-shine" style="-webkit-mask-image:url(assets/bottles/his-confession.webp);mask-image:url(assets/bottles/his-confession.webp)"></div>
+        </div>
+      </div>
+    </div>
+    <div id="in-f5" class="clip slide" data-start="1.25" data-duration="0.25">
+      <div class="stage">
+        <div class="shadow" id="in-f5-shadow"></div>
+        <div class="spin" id="in-f5-spin" style="width:202px;height:560px;margin-left:-101px;top:690px">
+          <img class="layer" src="assets/bottles/maahir-honor.webp" alt="" style="transform:translateZ(-56.0px);filter:brightness(0.30) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/maahir-honor.webp" alt="" style="transform:translateZ(-52.0px);filter:brightness(0.32) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/maahir-honor.webp" alt="" style="transform:translateZ(-48.0px);filter:brightness(0.34) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/maahir-honor.webp" alt="" style="transform:translateZ(-44.0px);filter:brightness(0.35) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/maahir-honor.webp" alt="" style="transform:translateZ(-40.0px);filter:brightness(0.37) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/maahir-honor.webp" alt="" style="transform:translateZ(-36.0px);filter:brightness(0.39) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/maahir-honor.webp" alt="" style="transform:translateZ(-32.0px);filter:brightness(0.41) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/maahir-honor.webp" alt="" style="transform:translateZ(-28.0px);filter:brightness(0.42) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/maahir-honor.webp" alt="" style="transform:translateZ(-24.0px);filter:brightness(0.44) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/maahir-honor.webp" alt="" style="transform:translateZ(-20.0px);filter:brightness(0.46) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/maahir-honor.webp" alt="" style="transform:translateZ(-16.0px);filter:brightness(0.48) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/maahir-honor.webp" alt="" style="transform:translateZ(-12.0px);filter:brightness(0.50) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/maahir-honor.webp" alt="" style="transform:translateZ(-8.0px);filter:brightness(0.51) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/maahir-honor.webp" alt="" style="transform:translateZ(-4.0px);filter:brightness(0.53) saturate(0.9)" />
+          <img class="front" src="assets/bottles/maahir-honor.webp" alt="" />
+          <div class="shine" id="in-f5-shine" style="-webkit-mask-image:url(assets/bottles/maahir-honor.webp);mask-image:url(assets/bottles/maahir-honor.webp)"></div>
+        </div>
+      </div>
+    </div>
+    <div id="in-f6" class="clip slide" data-start="1.50" data-duration="0.25">
+      <div class="stage">
+        <div class="shadow" id="in-f6-shadow"></div>
+        <div class="spin" id="in-f6-spin" style="width:311px;height:560px;margin-left:-156px;top:690px">
+          <img class="layer" src="assets/bottles/the-kingdom.webp" alt="" style="transform:translateZ(-56.0px);filter:brightness(0.30) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/the-kingdom.webp" alt="" style="transform:translateZ(-52.0px);filter:brightness(0.32) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/the-kingdom.webp" alt="" style="transform:translateZ(-48.0px);filter:brightness(0.34) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/the-kingdom.webp" alt="" style="transform:translateZ(-44.0px);filter:brightness(0.35) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/the-kingdom.webp" alt="" style="transform:translateZ(-40.0px);filter:brightness(0.37) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/the-kingdom.webp" alt="" style="transform:translateZ(-36.0px);filter:brightness(0.39) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/the-kingdom.webp" alt="" style="transform:translateZ(-32.0px);filter:brightness(0.41) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/the-kingdom.webp" alt="" style="transform:translateZ(-28.0px);filter:brightness(0.42) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/the-kingdom.webp" alt="" style="transform:translateZ(-24.0px);filter:brightness(0.44) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/the-kingdom.webp" alt="" style="transform:translateZ(-20.0px);filter:brightness(0.46) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/the-kingdom.webp" alt="" style="transform:translateZ(-16.0px);filter:brightness(0.48) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/the-kingdom.webp" alt="" style="transform:translateZ(-12.0px);filter:brightness(0.50) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/the-kingdom.webp" alt="" style="transform:translateZ(-8.0px);filter:brightness(0.51) saturate(0.9)" />
+          <img class="layer" src="assets/bottles/the-kingdom.webp" alt="" style="transform:translateZ(-4.0px);filter:brightness(0.53) saturate(0.9)" />
+          <img class="front" src="assets/bottles/the-kingdom.webp" alt="" />
+          <div class="shine" id="in-f6-shine" style="-webkit-mask-image:url(assets/bottles/the-kingdom.webp);mask-image:url(assets/bottles/the-kingdom.webp)"></div>
+        </div>
+      </div>
+    </div>
+    <div id="in-title">
+      <span id="in-t1">RANQUEANDO</span>
+      <span id="in-t2">MASCULINOS</span>
+      <span id="in-t3">LATTAFA</span>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#in-f0-spin", {rotationY: -30, scale: 1.12}, {rotationY: 18, scale: 1, duration: 0.25, ease: "power2.out"}, 0.00);
+    tl.fromTo("#in-f0-shine", {backgroundPosition: "130% 0"}, {backgroundPosition: "-30% 0", duration: 0.25, ease: "none"}, 0.00);
+    tl.fromTo("#in-f1-spin", {rotationY: 30, scale: 1.12}, {rotationY: -18, scale: 1, duration: 0.25, ease: "power2.out"}, 0.25);
+    tl.fromTo("#in-f1-shine", {backgroundPosition: "130% 0"}, {backgroundPosition: "-30% 0", duration: 0.25, ease: "none"}, 0.25);
+    tl.fromTo("#in-f2-spin", {rotationY: -30, scale: 1.12}, {rotationY: 18, scale: 1, duration: 0.25, ease: "power2.out"}, 0.50);
+    tl.fromTo("#in-f2-shine", {backgroundPosition: "130% 0"}, {backgroundPosition: "-30% 0", duration: 0.25, ease: "none"}, 0.50);
+    tl.fromTo("#in-f3-spin", {rotationY: 30, scale: 1.12}, {rotationY: -18, scale: 1, duration: 0.25, ease: "power2.out"}, 0.75);
+    tl.fromTo("#in-f3-shine", {backgroundPosition: "130% 0"}, {backgroundPosition: "-30% 0", duration: 0.25, ease: "none"}, 0.75);
+    tl.fromTo("#in-f4-spin", {rotationY: -30, scale: 1.12}, {rotationY: 18, scale: 1, duration: 0.25, ease: "power2.out"}, 1.00);
+    tl.fromTo("#in-f4-shine", {backgroundPosition: "130% 0"}, {backgroundPosition: "-30% 0", duration: 0.25, ease: "none"}, 1.00);
+    tl.fromTo("#in-f5-spin", {rotationY: 30, scale: 1.12}, {rotationY: -18, scale: 1, duration: 0.25, ease: "power2.out"}, 1.25);
+    tl.fromTo("#in-f5-shine", {backgroundPosition: "130% 0"}, {backgroundPosition: "-30% 0", duration: 0.25, ease: "none"}, 1.25);
+    tl.fromTo("#in-f6-spin", {rotationY: -30, scale: 1.12}, {rotationY: 18, scale: 1, duration: 0.25, ease: "power2.out"}, 1.50);
+    tl.fromTo("#in-f6-shine", {backgroundPosition: "130% 0"}, {backgroundPosition: "-30% 0", duration: 0.25, ease: "none"}, 1.50);
+    tl.fromTo("#in-t3", { scale: 1.12 }, { scale: 1, duration: 0.6, ease: "power3.out" }, 0);
+    tl.fromTo("[id^='in-dot']", { y: 0 }, { y: -60, duration: 1.75, ease: "none" }, 0);
+    window.__timelines["intro"] = tl;
+  </script>
+</template>

@@ -36,3 +36,11 @@ Atualização em 10/11/2026 (2):
 Atualização em 10/11/2026 (3): a pedido dela, o controle foi movido de Downloads para **/Users/osianysales/Documents/Controle de Conteúdo Valota Parfum** (a pasta Documentos sincroniza com o iCloud). As squads continuam em Downloads/ClaudCode/squads/@valotaparfum; o controle aponta para elas com caminho absoluto (constante SQUADS no servidor.py e no gerar_plano.py).
 
 Atualização em 10/11/2026 (4): a pedido dela, os roteiros da squad ficam separados por formato: `copy-viral-perfumes/output/carrosseis/` e `copy-viral-perfumes/output/videos/` (narração e avatar). Todo roteiro novo vai na subpasta certa, e o campo `roteiro` do plano aponta para ela.
+
+Atualização em 17/11/2026: sincronizei o controle com o Instagram dela, que estava muito atrasado em relação ao que ela posta de verdade.
+- **Posts:** cada post publicado ficou marcado como postado, com ig_views, curtidas e link. As tags são `sync-ig-17-11` e `pauta-17-11`.
+- **Lugar no plano:** o que ela postou fora do plano entrou no lugar da ideia daquele dia, e as ideias que não saíram voltaram pro banco.
+- **Horários:** o IG só mostra a data, então os horários dos posts sincronizados são aproximados.
+- **Como ler as views:** dá pra ler pelo Playwright: a grade de /valotaparfum/reels/ mostra as views, e fetch('/p/CODE/') dá a meta description com curtidas e data. Se o navegador estiver "already in use", outra conversa está segurando o Chrome de testes.
+- **Backup:** dados/backups/plano-antes-sync-instagram-*.json.
+- Ver [[formato-viral-frascos-so-musica]].

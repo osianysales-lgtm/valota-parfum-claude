@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:MB;src:url(fontes/Montserrat-Black.ttf)}
+@font-face{font-family:MX;src:url(fontes/Montserrat-ExtraBold.ttf)}
+@font-face{font-family:MBo;src:url(fontes/Montserrat-Bold.ttf)}
+@font-face{font-family:GB;src:url(fontes/GothamBlack.otf)}
+:root{--pet:#0F2E33;--fundo:#0A1F23;--luz:#1A4A52;--amb:#D49A4E;--cre:#F2E8D8;--pim:#D9483B}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--pet)}
+#bg{position:absolute;inset:0;background:radial-gradient(ellipse 1000px 1200px at 50% 35%,var(--luz) 0%,var(--pet) 55%,var(--fundo) 100%)}
+.cena{position:absolute;inset:0;opacity:0}
+.fio{position:absolute;left:390px;width:300px;height:3px;background:var(--amb);opacity:.8}
+#hook{position:absolute;left:0;right:0;top:150px;text-align:center}
+#hook .h1{font-family:GB;font-size:76px;line-height:1.05;color:var(--cre);letter-spacing:-.5px}
+#hook .h2{font-family:MBo;font-size:40px;color:var(--amb);margin-top:18px;letter-spacing:6px;text-transform:uppercase}
+.card{position:absolute;background:#fff;border-radius:28px;overflow:hidden;box-shadow:0 22px 50px rgba(0,0,0,.45)}
+.card img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;transform:scale(.9)}
+.card .q{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:GB;font-size:110px;color:var(--pet)}
+.rot{position:absolute;left:0;right:0;text-align:center}
+.rot small{display:block;font-family:MBo;font-size:32px;color:var(--cre);letter-spacing:8px;margin-bottom:6px;opacity:.85}
+.rot b{display:block;font-family:GB;font-size:104px;letter-spacing:6px}
+.red b{color:var(--pim)} .amb b{color:var(--amb)}
+.nome{position:absolute;left:0;right:0;top:180px;text-align:center}
+.nome b{display:block;font-family:GB;font-size:88px;color:var(--cre);letter-spacing:2px;line-height:1}
+.nome i{display:block;font-style:normal;font-family:MBo;font-size:34px;color:var(--amb);letter-spacing:12px;margin-top:16px}
+.notas{position:absolute;left:0;right:0;top:880px;text-align:center;font-family:MBo;font-size:40px;color:var(--cre);letter-spacing:1px;opacity:0}
+.sub{position:absolute;left:0;right:0;top:940px;text-align:center;font-family:MBo;font-size:36px;color:var(--amb);letter-spacing:1px;opacity:0;font-style:italic}
+.ved{position:absolute;left:0;right:0;top:1000px;text-align:center;opacity:0}
+.ved span{display:inline-block;font-family:GB;font-size:34px;letter-spacing:10px;padding:12px 30px 10px 40px;border:3px solid;border-radius:999px}
+.ved.red span{color:var(--pim);border-color:var(--pim)} .ved.amb span{color:var(--amb);border-color:var(--amb)}
+#elev .foto{position:absolute;left:250px;top:300px;width:580px;height:744px;border-radius:28px;overflow:hidden;box-shadow:0 22px 50px rgba(0,0,0,.5)}
+#elev .foto img{width:100%;height:100%;object-fit:cover;filter:saturate(.85) contrast(1.05)}
+#elev .foto:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,46,51,0) 55%,rgba(10,31,35,.75) 100%)}
+#elev .andar{position:absolute;left:0;right:0;top:965px;text-align:center;z-index:2;font-family:MBo;font-size:30px;letter-spacing:8px;color:var(--cre)}
+#elev .andar b{font-family:GB;font-size:56px;color:var(--amb);letter-spacing:2px;margin-left:12px;vertical-align:-6px}
+#av{position:absolute;left:290px;top:1225px;width:500px;height:640px;border-radius:30px;overflow:hidden;border:5px solid var(--cre);box-shadow:0 18px 40px rgba(0,0,0,.5);background:#000}
+#av video{width:100%;height:100%;object-fit:cover}
+#leg{position:absolute;left:40px;right:40px;top:1105px;height:100px;display:flex;align-items:center;justify-content:center;text-align:center}
+#leg span{font-family:MX;font-size:54px;color:var(--cre);margin:0 9px;display:inline-block;text-shadow:0 3px 10px rgba(0,0,0,.55);text-transform:uppercase;letter-spacing:.5px}
+#leg span.h{color:var(--amb)}
+#ass{position:absolute;left:0;right:0;top:1400px;text-align:center;opacity:0}
+#ass b{display:block;font-family:GB;font-size:92px;color:var(--cre);letter-spacing:12px}
+#ass i{display:block;font-style:normal;font-family:MBo;font-size:40px;color:var(--amb);margin-top:14px;letter-spacing:4px}
+</style></head><body>
+<div id="bg"></div>
+<div id="stage"></div>
+<div id="leg"></div>
+<div id="av"><video id="avv" src="gravacao/avatar_175.mp4" muted playsinline preload="auto"></video></div>
+<div id="ass"><b>VALOTA PARFUM</b><i>@valotaparfum</i></div>
+<script>
+/*DADOS*/
+const D=window.D,$=s=>document.querySelector(s),stage=$('#stage');
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),eo=p=>1-Math.pow(1-p,3);
+function el(html,id){const d=document.createElement('div');d.className='cena';d.id=id;d.innerHTML=html;stage.appendChild(d);return d}
+function card(k,x,y,w,h){const d=document.createElement('div');d.className='card';Object.assign(d.style,{left:x+'px',top:y+'px',width:w+'px',height:h+'px'});d.innerHTML=`<img src="${D.F[k][0]}"><div class="q">?</div>`;return d}
+const A=['fah','polo','mil'],B=['isl','xt','lion'];
+const hook=el(`<div class="h1">ELA PRENDEU A<br>RESPIRAÇÃO</div><div class="h2">culpa do seu perfume</div>`,'hook');
+function trio(id,ks,cor,txt){const c=el('',id);ks.forEach((k,i)=>c.appendChild(card(k,90+i*310,520,280,320)));
+  const r=document.createElement('div');r.className='rot '+cor;r.style.top='880px';r.innerHTML=`<small>3 PERFUMES QUE</small><b>${txt}</b>`;c.appendChild(r);return c}
+trio('trioA',A,'red','AFASTAM');trio('trioB',B,'amb','ATRAEM');trio('trioA2',A,'red','AFASTAM');trio('trioB2',B,'amb','ATRAEM');
+const elev=el(`<div class="foto"><img src="fotos/elevador.jpg"></div><div class="andar">ANDAR<b>1</b></div>`,'elev');
+const BIG={};
+for(const k in D.F){const f=D.F[k],g=A.includes(k)?'red':'amb';
+  const c=el(`<div class="nome"><b>${f[1]}</b><i>${f[2]}</i></div><div class="notas">${f[3]}</div><div class="sub">${f[4]}</div><div class="ved ${g}"><span>${g==='red'?'AFASTA':'ATRAI'}</span></div>`,'big_'+k);
+  const cd=card(k,300,370,480,480);c.appendChild(cd);BIG[k]={c,cd};}
+const lionB=el(`<div class="nome"><b>E O ÚLTIMO</b><i>AINDA ESCONDIDO</i></div>`,'lionB');const lc=card('lion',300,370,480,480);lionB.appendChild(lc);
+const cta=el(`<div class="nome" style="top:200px"><b style="font-size:70px">ENTRA NO MEU GRUPO</b><i>O LINK TÁ NA BIO</i></div><div class="ved amb" style="top:900px;opacity:1"><span>SEGUE A VALOTA PARFUM</span></div>`,'cta');
+B.forEach((k,i)=>cta.appendChild(card(k,90+i*310,450,280,320)));
+cta.querySelectorAll('.q').forEach(q=>q.remove());
+const leg=$('#leg');let legAtual=-1;
+const blur=(img,v)=>img.style.filter=v>0.2?`blur(${v.toFixed(1)}px)`:'none';
+window.render=function(t){
+  for(const id in D.CENA){const node=document.getElementById(id);if(!node)continue;const [a,b]=D.CENA[id];
+    if(t<a||t>=b){node.style.opacity=0;continue}
+    const pin=cl((t-a)/0.4),pout=cl((t-(b-0.2))/0.2);node.style.opacity=(eo(pin)*(1-pout)).toFixed(3);node.style.transform=`translateY(${(18*(1-eo(pin))).toFixed(1)}px)`}
+  hook.style.opacity=t<D.CENA.hook[1]-0.2?1:cl((D.CENA.hook[1]-t)/0.2);hook.style.transform='none';
+  document.querySelectorAll('#trioA img,#trioB img,#trioA2 img,#trioB2 img,#lionB img').forEach(i=>blur(i,18));
+  for(const k in BIG){const p=cl((t-D.REVELA[k])/0.5),c=BIG[k];blur(c.cd.querySelector('img'),18*(1-eo(p)));c.cd.querySelector('.q').style.opacity=(1-p).toFixed(2);
+    c.c.querySelector('.notas').style.opacity=cl((t-D.NOTAS[k])/0.4);c.c.querySelector('.sub').style.opacity=D.SUB[k]?cl((t-D.SUB[k])/0.4):0;
+    const v=cl((t-D.VERED[k])/0.35);const ve=c.c.querySelector('.ved');ve.style.opacity=v;ve.style.transform=`scale(${(0.92+0.08*eo(v)).toFixed(3)})`}
+  const lb=D.CENA.lionB;if(t>=lb[0]&&t<lb[1]){lc.style.transform=`scale(${(1+0.035*cl((t-lb[0])/1.5)).toFixed(4)})`}
+  if(t>=D.REVELA.lion){const g=Math.max(0,1-(t-D.REVELA.lion)/1.5);BIG.lion.cd.style.boxShadow=`0 22px 50px rgba(0,0,0,.45),0 0 ${(70*g).toFixed(0)}px ${(14*g).toFixed(0)}px rgba(212,154,78,${(0.7*g).toFixed(2)})`}
+  const e=D.CENA.elev;if(t>=e[0]&&t<e[1]){const p=cl((t-e[0])/(e[1]-e[0]-0.3));elev.querySelector('.andar b').textContent=String(1+Math.floor(p*7.99));elev.querySelector('.foto img').style.transform=`scale(${(1.02+0.06*p).toFixed(4)})`}
+  const fo=cl((t-D.FALA_FIM-0.15)/0.45);$('#av').style.opacity=1-fo;$('#ass').style.opacity=cl((t-D.FALA_FIM-0.4)/0.4);
+  if(t>D.FALA_FIM+0.15)$('#cta').style.opacity=1-fo;
+  let gi=-1;for(let i=0;i<D.LEG.length;i++){if(t>=D.LEG[i].t0&&t<D.LEG[i].t1){gi=i;break}}
+  if(gi!==legAtual){legAtual=gi;leg.innerHTML=gi<0?'':D.LEG[gi].p.map(w=>`<span class="${w.h?'h':''}">${w.w}</span>`).join('')}
+  leg.style.opacity=gi>=0&&t<D.FALA_FIM+0.1?1:0;
+};
+</script></body></html>

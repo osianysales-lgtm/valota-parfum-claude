@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:M;src:url(fonts/Montserrat-VF.ttf)}
+@font-face{font-family:GB;src:url(fonts/GothamBlack.otf)}
+:root{--pet:#0F2E33;--noite:#0A1F23;--luz:#1A4A52;--amb:#D49A4E;--ama:#FFC93C;--cre:#F2E8D8;--ced:#6B4430;--pim:#9C452A;--men:#7DBFB3;--stop:#E0453A}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--pet)}
+.abs{position:absolute}
+#bg{position:absolute;inset:0;background:radial-gradient(ellipse 900px 1100px at 50% 40%,var(--luz) 0%,var(--pet) 55%,var(--noite) 100%)}
+#dots{position:absolute;inset:0;opacity:.07;background-image:radial-gradient(var(--cre) 1.6px,transparent 1.8px);background-size:34px 34px}
+#fumaca img,#capaFum img{position:absolute;mix-blend-mode:screen}
+#notas{position:absolute;inset:0}
+#notas img{position:absolute;filter:drop-shadow(0 14px 16px rgba(0,0,0,.55))}
+#vel{position:absolute;inset:0;background:radial-gradient(ellipse 470px 560px at 50% 760px,rgba(15,46,51,.9) 0%,rgba(15,46,51,.55) 62%,rgba(15,46,51,0) 100%)}
+/* capa (A) */
+#capa{position:absolute;inset:0;overflow:hidden;background:#120c0a}
+#capa .bgf{position:absolute;left:-156px;top:-60px;width:1393px;filter:blur(18px) brightness(.62) saturate(1.1);transform:scale(1.06)}
+#capa .vin{position:absolute;inset:0;background:radial-gradient(ellipse 620px 760px at 50% 760px,rgba(0,0,0,0) 0%,rgba(10,10,10,.25) 60%,rgba(8,6,6,.75) 100%)}
+#capa .glow{position:absolute;left:540px;top:870px;width:760px;height:760px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(212,154,78,.55) 0%,rgba(212,154,78,.18) 40%,rgba(212,154,78,0) 70%)}
+#capa .nota{position:absolute;filter:drop-shadow(0 14px 16px rgba(0,0,0,.55))}
+#capa .fr{position:absolute;left:540px;top:640px;height:462px;transform:translateX(-50%);filter:drop-shadow(0 26px 30px rgba(0,0,0,.65))}
+.stop{position:absolute;width:200px;height:200px;border-radius:50%;border:20px solid var(--stop);box-shadow:0 0 30px 8px rgba(224,69,58,.8),inset 0 0 26px 6px rgba(224,69,58,.65);background:rgba(224,69,58,.06)}
+.stop:after{content:'';position:absolute;left:50%;top:50%;width:100%;height:20px;background:var(--stop);transform:translate(-50%,-50%) rotate(-45deg);box-shadow:0 0 22px 5px rgba(224,69,58,.8)}
+#capa .tit{position:absolute;left:0;right:0;top:305px;text-align:center}
+.l1{font-family:GB;font-size:128px;line-height:1;color:#fff;letter-spacing:1px;text-shadow:0 8px 24px rgba(0,0,0,.6)}
+.ouro{font-family:M;font-weight:900;background:linear-gradient(180deg,#FFE7A6 0%,#FFC93C 38%,#D49A4E 100%);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 8px 18px rgba(0,0,0,.55))}
+.l2{font-size:104px;line-height:1.02;margin-top:6px;letter-spacing:1px}
+.pillA{display:inline-block;background:var(--ama);color:var(--noite);font-family:M;font-weight:800;font-size:38px;letter-spacing:1px;padding:12px 30px;border-radius:60px;box-shadow:0 10px 22px rgba(0,0,0,.45)}
+/* cabeçalho N/5 */
+#head{position:absolute;left:0;right:0;top:268px;text-align:center;opacity:0}
+#head .bol{display:flex;gap:16px;justify-content:center;margin-bottom:14px}
+#head .bol i{width:24px;height:24px;border-radius:50%;border:4px solid var(--amb)}
+#head .bol i.on{background:var(--ama);border-color:var(--ama);box-shadow:0 0 12px rgba(255,201,60,.7)}
+#head .bol i.ok{background:var(--amb)}
+#head .ht{display:inline-block;font-size:82px;letter-spacing:1px;line-height:1.05;white-space:nowrap}
+#head .ht span{font-family:GB;color:var(--cre);-webkit-text-fill-color:var(--cre);margin-right:14px}
+/* elementos */
+.cena{position:absolute;inset:0;opacity:0}
+.e{position:absolute;width:0;height:0;opacity:0}
+.in{position:absolute;left:0;top:0;width:max-content;transform:translate(-50%,-50%)}
+.chip{font-family:M;font-weight:800;font-size:38px;padding:12px 28px;border-radius:60px;white-space:nowrap;box-shadow:0 8px 18px rgba(0,0,0,.4)}
+.card{width:260px;border-radius:26px;background:rgba(10,31,35,.82);border:4px solid var(--amb);padding:14px 10px 16px;text-align:center;box-shadow:0 14px 28px rgba(0,0,0,.45)}
+.card img{height:150px;max-width:230px;object-fit:contain;display:block;margin:0 auto 8px;filter:drop-shadow(0 8px 10px rgba(0,0,0,.5))}
+.card b{font-family:M;font-weight:800;font-size:34px;color:var(--cre)}
+.fr{filter:drop-shadow(0 24px 26px rgba(0,0,0,.6))}
+.stamp{font-family:GB;font-size:92px;padding:6px 30px;border:11px solid;border-radius:20px;letter-spacing:4px;background:rgba(10,31,35,.55)}
+.stamp.red{color:#E0453A;border-color:#E0453A} .stamp.ama{color:var(--ama);border-color:var(--ama)}
+.big{width:420px;height:470px;border-radius:34px;border:5px solid var(--cre);text-align:center;padding-top:26px;box-shadow:0 18px 34px rgba(0,0,0,.5)}
+.big h3{font-family:GB;font-size:44px;line-height:1.05;letter-spacing:1px}
+.nm{font-family:GB;font-size:44px;color:var(--cre);text-align:center;letter-spacing:1px}
+.nm small{display:block;font-family:M;font-weight:700;font-size:32px;color:var(--amb);letter-spacing:3px;margin-top:4px}
+.tab{width:900px}
+.tab .row{display:flex;align-items:center;height:84px;border-bottom:3px solid rgba(242,232,216,.18)}
+.tab .row b{flex:1;white-space:nowrap;font-family:M;font-weight:800;font-size:38px;color:var(--cre);padding-left:20px}
+.tab .row i{width:170px;text-align:center;font-style:normal;font-family:GB;font-size:56px;color:var(--men);opacity:0}
+.pola{width:700px;background:#fff;padding:30px 30px 26px;border-radius:10px;box-shadow:0 20px 40px rgba(0,0,0,.55)}
+.pola .fot{height:440px;background:radial-gradient(ellipse at 50% 60%,#F2E8D8 0%,#d9c8ad 100%);position:relative;overflow:hidden}
+.pola .fot img{position:absolute;bottom:22px;filter:drop-shadow(0 14px 14px rgba(0,0,0,.35))}
+.pola p{font-family:M;font-weight:800;font-size:44px;color:var(--noite);text-align:center;margin-top:20px}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none}
+.grupo{width:600px;border-radius:26px;overflow:hidden;border:6px solid var(--cre);box-shadow:0 18px 36px rgba(0,0,0,.55)}
+.grupo img{width:100%;display:block}
+/* legenda (caixinha desde o 1º quadro) */
+#leg{position:absolute;left:0;right:0;top:1118px;text-align:center}
+#leg .bx{display:inline-block;font-family:GB;font-size:60px;color:var(--cre);background:rgba(10,31,35,.9);padding:6px 22px;border-radius:16px;white-space:nowrap}
+#leg .bx b{color:var(--noite);background:var(--amb);padding:0 12px;border-radius:10px;font-weight:normal}
+/* avatar AV1 */
+#av{position:absolute;left:290px;top:1225px;width:500px;height:640px;border-radius:30px;overflow:hidden;border:6px solid var(--cre);box-shadow:0 0 0 4px var(--noite),0 16px 34px rgba(0,0,0,.5);background:#000}
+#av video,#av img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+#av i{position:absolute;left:0;right:0;bottom:18px;text-align:center;font-family:M;font-weight:800;font-size:30px;font-style:normal;color:#fff;text-shadow:0 2px 8px #000}
+#ass{position:absolute;left:0;right:0;top:1440px;text-align:center;opacity:0}
+#ass b{display:block;font-family:GB;font-size:92px;color:var(--cre);letter-spacing:10px}
+#ass i{display:block;font-style:normal;font-family:M;font-weight:800;font-size:44px;color:var(--amb);margin-top:12px;letter-spacing:3px}
+</style></head><body>
+<div id="bg"></div><div id="dots"></div>
+<div id="fumaca"><img src="fumaca/fumaca_a.png" data-o=".26" style="left:-260px;top:120px;width:1400px"><img src="fumaca/fumaca_b.png" data-o=".24" style="left:40px;top:640px;width:1400px"><img src="fumaca/fumaca_a.png" data-o=".2" style="left:-400px;top:1150px;width:1500px;transform:scaleX(-1)"></div>
+<div id="notas"></div><div id="vel"></div>
+<div id="stage"></div>
+<div id="head"><div class="bol"></div><div class="ht ouro"></div></div>
+<div id="capa">
+  <img class="bgf" src="ref/capa_foto.png"><div class="vin"></div><div id="capaFum"><img src="fumaca/fumaca_b.png" data-o=".16" style="left:-300px;top:450px;width:1500px"><img src="fumaca/fumaca_a.png" data-o=".12" style="left:-100px;top:1000px;width:1400px"></div><div id="capaNotas"></div><div class="glow"></div>
+  <div class="stop" style="left:105px;top:770px"></div><div class="stop" style="left:775px;top:770px"></div>
+  <img class="fr" src="capa/frasco_ok.png">
+  <div class="tit"><div class="l1">NÃO COMPRE</div><div class="ouro l2">O LIQUID BRUN</div><div class="pillA" style="margin-top:18px">ANTES DE SABER ESSAS 5 COISAS</div></div>
+</div>
+<div id="flash"></div>
+<div id="leg"></div>
+<div id="av"></div>
+<div id="ass"><b>VALOTA PARFUM</b><i>@valotaparfum</i></div>
+<script>
+/*DADOS*/
+const D=window.D,T=D.T,$=s=>document.querySelector(s);
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),eo=p=>1-Math.pow(1-p,3),eob=p=>{const c=1.70158;return 1+(c+1)*Math.pow(p-1,3)+c*Math.pow(p-1,2)};
+// ---------- capa: notas em volta do frasco ----------
+[['baunilha',20,620,250,-14],['castanha',860,630,150,10],['canela',20,975,240,14],['flor',830,915,210,-6],['cardamomo',300,1010,130,8],['pralina',665,975,125,-4]]
+ .forEach(([k,x,y,w,r])=>{const i=new Image();i.className='nota';i.src='notas/cut/'+k+'.png';Object.assign(i.style,{left:x+'px',top:y+'px',width:w+'px',transform:`rotate(${r}deg)`});$('#capaNotas').appendChild(i)});
+// ---------- notas flutuando no fundo (o vídeo inteiro depois da capa) ----------
+const FUNDO=[['baunilha',-30,300,300,-16],['castanha',880,330,170,12],['canela',-40,1010,280,20],['flor',800,980,300,-8],['pralina',890,620,170,-6],['cardamomo',10,650,170,10],['limao',30,1500,200,-12],['ambar',880,1560,150,0],['castanha',40,1700,150,-20],['flor',830,1330,230,14]];
+const NF=FUNDO.map(([k,x,y,w,r],j)=>{const i=new Image();i.src='notas/cut/'+k+'.png';Object.assign(i.style,{left:x+'px',top:y+'px',width:w+'px'});$('#notas').appendChild(i);return {i,r,j}});
+// ---------- construtor de elementos ----------
+const stage=$('#stage'),CEN={},EL=[];
+for(const id in D.CENA){if(id==='capa')continue;const c=document.createElement('div');c.className='cena';c.id=id;stage.appendChild(c);CEN[id]=c}
+function E(cena,t,x,y,html,anim='pop',extra={}){const e=document.createElement('div');e.className='e';e.style.left=x+'px';e.style.top=y+'px';
+  const n=document.createElement('div');n.className='in';n.innerHTML=html;e.appendChild(n);CEN[cena].appendChild(e);const o={e,n,t,anim,cena,...extra};EL.push(o);return o}
+const IMG=(src,h,cls='fr')=>`<img class="${cls}" src="${src}" style="height:${h}px;display:block">`;
+const NOTA=(k,txt)=>`<div class="card"><img src="notas/cut/${k}.png"><b>${txt}</b></div>`;
+const S0=k=>D.CENA[k][0];
+// ===== 1 · O CHEIRO =====
+E('s1',T.doce,300,470,`<div class="chip" style="background:var(--amb);color:var(--noite)">DOCE</div>`);
+E('s1',T.quente,540,470,`<div class="chip" style="background:var(--pim);color:var(--cre)">QUENTE</div>`);
+E('s1',T.chique,780,470,`<div class="chip" style="background:var(--ama);color:var(--noite)">CHIQUE</div>`);
+E('s1',S0('s1')+0.05,540,770,IMG('capa/frasco_ok.png',440),'up');
+E('s1',T.canela,200,655,NOTA('canela','CANELA'));
+E('s1',T.flor,880,655,`<div class="card"><img src="notas/cut/flor.png"><b>FLOR DE<br>LARANJEIRA</b></div>`);
+E('s1',T.baunilha,200,905,NOTA('baunilha','BAUNILHA'));
+E('s1',T.pralina,880,905,NOTA('pralina','PRALINÊ'));
+E('s1',T.castanha,975,815,`<img src="notas/cut/castanha.png" style="width:130px;display:block;filter:drop-shadow(0 8px 10px rgba(0,0,0,.6))">`,'pop');
+E('s1',T.madeira,540,1048,`<div class="chip" style="background:var(--ced);color:var(--cre);border:3px solid var(--cre)">🪵 MADEIRA MACIA</div>`);
+// ===== 2 · NÃO É PRA TODO DIA =====
+const SOL=`<svg width="230" height="230" viewBox="-115 -115 230 230"><g class="raios">${Array.from({length:12},(_,k)=>`<rect x="-9" y="-108" width="18" height="40" rx="9" fill="#FFC93C" stroke="#0A1F23" stroke-width="5" transform="rotate(${k*30})"/>`).join('')}</g><circle r="58" fill="#FFC93C" stroke="#0A1F23" stroke-width="7"/><path d="M-22 6 q22 22 44 0" fill="none" stroke="#0A1F23" stroke-width="7" stroke-linecap="round"/><circle cx="-20" cy="-12" r="7" fill="#0A1F23"/><circle cx="20" cy="-12" r="7" fill="#0A1F23"/><path d="M40 8 q8 18 0 26 q-8 -8 0 -26z" fill="#7DBFB3" stroke="#0A1F23" stroke-width="4"/></svg>`;
+const LUA=`<svg width="230" height="230" viewBox="-115 -115 230 230"><g class="est">${[[-80,-70],[70,-85],[85,40],[-90,50],[10,-100]].map(([x,y])=>`<path d="M${x} ${y-14} L${x+4} ${y-4} L${x+14} ${y} L${x+4} ${y+4} L${x} ${y+14} L${x-4} ${y+4} L${x-14} ${y} L${x-4} ${y-4}Z" fill="#FFC93C" stroke="#0A1F23" stroke-width="3"/>`).join('')}</g><path d="M30 -70 A75 75 0 1 0 30 70 A58 58 0 1 1 30 -70Z" fill="#F2E8D8" stroke="#0A1F23" stroke-width="7"/></svg>`;
+const cDia=E('s2',S0('s2')+0.05,300,705,`<div class="big" style="background:var(--amb)"><h3 style="color:var(--noite)">DE DIA,<br>NO CALOR</h3><div style="margin-top:28px">${SOL}</div></div>`,'up');
+const cNoi=E('s2',S0('s2')+0.2,780,705,`<div class="big" style="background:var(--noite);border-color:var(--amb)"><h3 style="color:var(--cre)">À NOITE</h3><div style="margin-top:80px">${LUA}</div></div>`,'up');
+E('s2',T.pesa,300,800,`<div class="stamp red" style="transform:rotate(-12deg)">PESA</div>`,'stamp');
+E('s2',T.brilha,780,800,`<div class="stamp ama" style="transform:rotate(-12deg)">BRILHA</div>`,'stamp');
+E('s2',T.jantar,195,1020,`<div class="chip" style="font-size:32px;padding:12px 22px;background:var(--cre);color:var(--noite)">🍷 JANTAR</div>`);
+E('s2',T.encontro,540,1020,`<div class="chip" style="font-size:32px;padding:12px 22px;background:var(--cre);color:var(--noite)">💘 ENCONTRO</div>`);
+E('s2',T.balada,880,1020,`<div class="chip" style="font-size:32px;padding:12px 22px;background:var(--cre);color:var(--noite)">🪩 BALADA</div>`);
+// ===== 3 · FIXAÇÃO =====
+const REL=`<svg width="300" height="300" viewBox="-150 -150 300 300"><circle r="128" fill="#F2E8D8" stroke="#0A1F23" stroke-width="10"/><circle r="128" fill="none" stroke="#D49A4E" stroke-width="6" stroke-dasharray="4 30" transform="scale(.86)"/>${Array.from({length:12},(_,k)=>`<rect x="-4" y="-118" width="8" height="${k%3?14:24}" fill="#0A1F23" transform="rotate(${k*30})"/>`).join('')}<g class="hh"><rect x="-7" y="-62" width="14" height="70" rx="7" fill="#0A1F23"/></g><g class="mm"><rect x="-5" y="-100" width="10" height="108" rx="5" fill="#9C452A"/></g><circle r="12" fill="#0A1F23"/></svg>`;
+const aneis=E('s3',T.chega,540,610,`<div class="aneis" style="position:relative;width:10px;height:10px">${[0,1,2].map(k=>`<i style="position:absolute;left:50%;top:50%;width:300px;height:300px;border-radius:50%;border:8px solid var(--amb);transform:translate(-50%,-50%)"></i>`).join('')}</div>`,'fade');
+const rel=E('s3',S0('s3')+0.05,540,610,REL,'up');
+E('s3',T.fixacao,540,830,`<div style="width:820px"><div style="display:flex;justify-content:space-between;font-family:M;font-weight:800;font-size:36px;color:var(--cre);margin-bottom:12px"><span>FIXAÇÃO</span><span class="hrs" style="color:var(--ama)">HORAS NA PELE</span></div><div style="height:46px;border-radius:30px;background:rgba(242,232,216,.15);border:4px solid var(--cre);overflow:hidden"><div class="bar" style="height:100%;width:0;background:linear-gradient(90deg,var(--amb),var(--ama))"></div></div></div>`,'up');
+E('s3',T.chega,540,1010,`<div class="chip" style="background:var(--ama);color:var(--noite)">CHEGA ANTES DE VOCÊ 👃</div>`);
+// ===== 4 · LEMBRA O ALTHAÏR? =====
+E('s4a',S0('s4a')+0.05,320,700,IMG('capa/frasco_ok.png',420),'up');
+E('s4a',S0('s4a')+0.25,760,700,IMG('frascos/althair.png',420),'up');
+E('s4a',S0('s4a')+0.4,320,985,`<div class="nm">LIQUID BRUN<small>FRENCH AVENUE</small></div>`,'up');
+E('s4a',S0('s4a')+0.55,760,985,`<div class="nm">ALTHAÏR<small>PARFUMS DE MARLY</small></div>`,'up');
+const interr=E('s4a',S0('s4a')+0.6,540,700,`<div class="ouro" style="font-size:150px;font-family:GB">?</div>`,'pop',{ate:T.lembrasim});
+E('s4a',T.lembrasim,540,700,`<div class="stamp ama" style="transform:rotate(-10deg);font-size:76px">LEMBRA SIM ✓</div>`,'stamp');
+E('s4b',S0('s4b')+0.02,540,760,`<div class="tab"><div style="display:flex;align-items:flex-end;height:170px;border-bottom:4px solid var(--amb)"><b style="flex:1"></b><div style="width:170px;text-align:center">${IMG('capa/frasco_ok.png',150).replace('display:block','display:inline-block')}</div><div style="width:170px;text-align:center">${IMG('frascos/althair.png',150).replace('display:block','display:inline-block')}</div></div>
+ ${['🟤 CANELA','🌼 FLOR DE LARANJEIRA','🍦 BAUNILHA','🌰 PRALINÊ'].map(x=>`<div class="row"><b>${x}</b><i>✓</i><i>✓</i></div>`).join('')}</div>`,'up');
+E('s4b',T.quase,540,1050,`<div class="chip" style="background:var(--ama);color:var(--noite)">QUASE IGUAL</div>`);
+E('s4c',S0('s4c')+0.05,540,760,`<div class="pola" style="transform:rotate(-4deg)"><div class="fot"><img src="capa/frasco_ok.png" style="left:140px;height:360px"><img src="frascos/althair.png" style="left:370px;height:340px"></div><p>FOTO DE FAMÍLIA 📸</p></div>`,'up');
+E('s4c',T.primos,800,470,`<div class="chip" style="background:var(--pim);color:var(--cre);transform:rotate(8deg)">OS PRIMOS 👀</div>`);
+// ===== 5 · ONDE COMPRAR =====
+const FR_GEN=`<svg width="260" height="420" viewBox="0 0 260 420"><rect x="95" y="10" width="70" height="60" rx="8" fill="#1A4A52" stroke="#0A1F23" stroke-width="7"/><rect x="105" y="70" width="50" height="26" fill="#D49A4E" stroke="#0A1F23" stroke-width="6"/><rect x="20" y="96" width="220" height="310" rx="40" fill="#1A4A52" stroke="#0A1F23" stroke-width="8"/><rect x="60" y="190" width="140" height="110" rx="12" fill="#F2E8D8" stroke="#0A1F23" stroke-width="6"/><text x="130" y="268" text-anchor="middle" font-family="GB" font-size="80" fill="#9C452A">?</text></svg>`;
+E('s5a',S0('s5a')+0.05,540,720,FR_GEN,'up');
+E('s5a',T.falso,540,760,`<div class="stamp red" style="transform:rotate(-12deg);font-size:84px">ÁRABE FALSO ✕</div>`,'stamp');
+const ESC=`<svg width="300" height="340" viewBox="0 0 300 340"><path d="M150 14 L272 60 V160 C272 240 216 296 150 324 C84 296 28 240 28 160 V60 Z" fill="#7DBFB3" stroke="#0A1F23" stroke-width="10"/><path d="M150 44 L246 80 V160 C246 222 204 268 150 292 Z" fill="#F2E8D8" opacity=".35"/><path d="M92 170 L134 212 L214 128" fill="none" stroke="#0A1F23" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+E('s5b',T.loja,540,770,ESC,'pop',{ate:T.grupo});
+E('s5b',T.loja,540,475,`<div class="chip" style="background:var(--men);color:var(--noite)">✓ SÓ LOJA DE CONFIANÇA</div>`,'pop',{ate:T.link});
+E('s5b',T.link,540,475,`<div class="chip" style="background:var(--noite);color:var(--cre);border:3px solid var(--amb)">SEM ÁRABE FALSO, SEM OFERTA FALSA</div>`);
+E('s5b',T.grupo,540,770,`<div class="grupo"><img src="marcas/grupo-whatsapp.png"></div>`,'pop');
+E('s5b',T.link,540,1048,`<div class="chip" style="background:var(--ama);color:var(--noite);font-size:42px">👉 LINK NA BIO</div>`);
+// ===== CTA =====
+E('cta',T.salva,540,420,`<div style="font-family:GB;font-size:112px;color:var(--cre);text-shadow:0 8px 20px rgba(0,0,0,.5)">SALVA 🔖</div>`);
+E('cta',S0('cta')+0.05,540,760,IMG('capa/frasco_ok.png',440),'up');
+E('cta',T.segue,540,1048,`<div class="chip" style="background:var(--ama);color:var(--noite);font-size:42px">SEGUE A VALOTA PARFUM</div>`);
+// ---------- cabeçalho ----------
+const bol=$('#head .bol');for(let k=1;k<=5;k++){const i=document.createElement('i');bol.appendChild(i)}
+// ---------- avatar ----------
+$('#av').innerHTML=D.AV?`<video src="${D.AV}" muted playsinline preload="auto"></video>`:`<img src="tmp/avatar_placeholder.png"><i>(seu avatar entra aqui)</i>`;
+const leg=$('#leg');let legAt=-2,headAt=-1;
+window.render=function(t){
+  // capa: fixa desde o 1º quadro, sai junto com a fala "o cheiro"
+  const cf=D.CENA.capa[1];$('#capa').style.opacity=t<cf?1:cl(1-(t-cf)/0.3);
+  document.querySelectorAll('#capa .stop').forEach((s,k)=>s.style.opacity=(0.86+0.14*Math.sin(t*7+k*1.7)).toFixed(3));
+  // notas do fundo: flutuam o vídeo inteiro; mais apagadas no CTA
+  const ctaOn=t>=D.CENA.cta[0];const op=ctaOn?0.22:0.5;
+  NF.forEach(({i,r,j})=>{i.style.opacity=op;i.style.transform=`translate(${(Math.sin(t*0.5+j)*14).toFixed(1)}px,${(Math.cos(t*0.42+j*1.3)*18).toFixed(1)}px) rotate(${(r+Math.sin(t*0.35+j)*5).toFixed(2)}deg)`});
+  document.querySelectorAll('#fumaca img,#capaFum img').forEach((f,k)=>{f.style.opacity=(+f.dataset.o*(0.85+0.15*Math.sin(t*0.6+k))).toFixed(3);f.style.transform=`translate(${(Math.sin(t*0.18+k*2)*70).toFixed(1)}px,${(-t*7+k*30).toFixed(1)}px) scale(${(1.1+0.06*Math.sin(t*0.3+k)).toFixed(3)})`});
+  // cenas
+  for(const id in D.CENA){const [a,b]=D.CENA[id];const c=CEN[id];if(!c)continue;if(t<a||t>=b){c.style.opacity=0;continue}
+    const pin=cl((t-a)/0.25),pout=id==='cta'?0:cl((t-(b-0.16))/0.16);c.style.opacity=(eo(pin)*(1-pout)).toFixed(3)}
+  // elementos
+  for(const o of EL){const [a,b]=D.CENA[o.cena];if(t<o.t||t>=b||(o.ate&&t>=o.ate)){o.e.style.opacity=0;continue}
+    const p=cl((t-o.t)/(o.anim==='stamp'?0.2:0.32));let tr='translate(-50%,-50%)';
+    if(o.anim==='pop')tr+=` scale(${(0.4+0.6*eob(p)).toFixed(3)})`;else if(o.anim==='up')tr+=` translateY(${(40*(1-eo(p))).toFixed(1)}px)`;
+    else if(o.anim==='stamp')tr+=` scale(${(2.1-1.1*eo(p)).toFixed(3)})`;
+    o.n.style.transform=tr;o.e.style.opacity=(o.anim==='stamp'?cl(p*1.6):eo(p)).toFixed(3)}
+  // vida nas ilustrações
+  document.querySelectorAll('.raios').forEach(g=>g.setAttribute('transform',`rotate(${(t*25)%360})`));
+  document.querySelectorAll('.est path').forEach((s,k)=>s.style.opacity=(0.55+0.45*Math.abs(Math.sin(t*2.2+k))).toFixed(2));
+  cDia.n.querySelector('.big').style.filter=t>=T.pesa&&t<D.CENA.s2[1]?'saturate(.6) brightness(.8)':'none';
+  cNoi.n.querySelector('.big').style.boxShadow=t>=T.brilha?`0 0 ${(40+20*Math.sin(t*6)).toFixed(0)}px 10px rgba(255,201,60,.55)`:'0 18px 34px rgba(0,0,0,.5)';
+  const s3=D.CENA.s3;const pr=cl((t-s3[0])/(s3[1]-s3[0]));
+  rel.n.querySelector('.mm').setAttribute('transform',`rotate(${(pr*360*6).toFixed(1)})`);rel.n.querySelector('.hh').setAttribute('transform',`rotate(${(pr*300).toFixed(1)})`);
+  const bf=cl((t-T.dura)/(T.pele+0.4-T.dura));document.querySelectorAll('.bar').forEach(b=>b.style.width=(92*eo(bf)).toFixed(1)+'%');
+  aneis.n.querySelectorAll('i').forEach((r,k)=>{const q=((t-T.chega)*0.9+k/3)%1;r.style.transform=`translate(-50%,-50%) scale(${(1+q*1.4).toFixed(3)})`;r.style.opacity=t>=T.chega?(1-q).toFixed(2):0});
+  // tabela: ✓ ticam um por um
+  document.querySelectorAll('#s4b .row').forEach((r,k)=>r.querySelectorAll('i').forEach((c,m)=>{const tk=T.lista+0.1+k*0.22+m*0.08;const p=cl((t-tk)/0.18);c.style.opacity=p;c.style.transform=`scale(${(0.5+0.5*eob(p)).toFixed(2)})`}));
+  // flash da foto de família
+  $('#flash').style.opacity=t>=T.foto&&t<T.foto+0.35?(0.85*(1-(t-T.foto)/0.35)).toFixed(2):0;
+  // cabeçalho 1–5
+  let hi=-1;for(let k=0;k<D.HEAD.length;k++){if(t>=D.HEAD[k][0]&&t<D.HEAD[k][1]){hi=k;break}}
+  const hd=$('#head');if(hi<0){hd.style.opacity=0}else{const [a,b,num,tit]=D.HEAD[hi];
+    if(hi!==headAt){headAt=hi;const ht=hd.querySelector('.ht');ht.innerHTML=`<span>${num}.</span>${tit}`;let fs=82;ht.style.fontSize=fs+'px';while(ht.scrollWidth>930&&fs>50){fs-=2;ht.style.fontSize=fs+'px'}bol.querySelectorAll('i').forEach((i,k)=>i.className=k<num-1?'ok':(k===num-1?'on':''))}
+    const p=cl((t-a)/0.25),q=cl((t-(b-0.14))/0.14);hd.style.opacity=(eo(p)*(1-q)).toFixed(3);hd.style.transform=`translateY(${(-20*(1-eo(p))).toFixed(1)}px)`}
+  // legenda (caixinha)
+  let gi=-1;for(let i=0;i<D.LEG.length;i++){if(t>=D.LEG[i].t0&&t<D.LEG[i].t1){gi=i;break}}
+  if(gi!==legAt){legAt=gi;leg.innerHTML=gi<0?'':`<span class="bx">${D.LEG[gi].p.map(w=>w.h?`<b>${w.w}</b>`:w.w).join(' ')}</span>`}
+  leg.style.opacity=gi<0?0:1;
+  // avatar sai no fim da fala → assinatura
+  const fo=cl((t-D.FALA_FIM-0.15)/0.45);$('#av').style.opacity=1-fo;$('#ass').style.opacity=cl((t-D.FALA_FIM-0.4)/0.4);
+};
+render(0);
+</script></body></html>

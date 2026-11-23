@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:M;src:url(fonts/Montserrat-VF.ttf)}
+@font-face{font-family:GB;src:url(fonts/GothamBlack.otf)}
+:root{--pet:#0F2E33;--noite:#0A1F23;--luz:#1A4A52;--amb:#D49A4E;--ama:#FFC93C;--cre:#F2E8D8;--ced:#6B4430;--pim:#9C452A;--stop:#D9483B}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--pet)}
+#bg{position:absolute;inset:0;background:radial-gradient(ellipse 900px 1100px at 50% 38%,var(--luz) 0%,var(--pet) 55%,var(--noite) 100%)}
+#dots{position:absolute;inset:0;opacity:.08;background-image:radial-gradient(var(--cre) 1.6px,transparent 1.8px);background-size:34px 34px}
+/* notas no fundo */
+#notas{position:absolute;inset:0}
+#notas img{position:absolute;filter:drop-shadow(0 14px 18px rgba(0,0,0,.55));opacity:.9}
+#notas .vel{position:absolute;inset:0;background:radial-gradient(ellipse 560px 620px at 50% 560px,rgba(15,46,51,.92) 0%,rgba(15,46,51,.55) 60%,rgba(15,46,51,0) 100%)}
+/* capa */
+#capa{position:absolute;left:0;top:0;width:1080px;height:1092px;overflow:hidden}
+#capa .foto{position:absolute;left:0;top:-70px;width:1080px}
+#capa .fade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,31,35,.0) 0%,rgba(10,31,35,0) 52%,rgba(10,31,35,.78) 78%,var(--pet) 100%)}
+.stop{position:absolute;width:250px;height:250px;border-radius:50%;border:24px solid var(--stop);
+  box-shadow:0 0 26px 6px rgba(217,72,59,.85),inset 0 0 26px 6px rgba(217,72,59,.7);filter:drop-shadow(0 0 14px rgba(255,120,100,.6))}
+.stop:after{content:'';position:absolute;left:50%;top:50%;width:100%;height:20px;background:var(--stop);transform:translate(-50%,-50%) rotate(-45deg);box-shadow:0 0 22px 4px rgba(217,72,59,.85)}
+#hook{position:absolute;left:70px;right:70px;top:745px}
+#hook .h1{font-family:GB;font-size:112px;line-height:.98;color:#fff;letter-spacing:-1px;text-shadow:0 6px 22px rgba(0,0,0,.65)}
+#hook .h2{font-family:M;font-weight:700;font-size:40px;color:rgba(242,232,216,.82);margin-top:22px;letter-spacing:.5px;text-shadow:0 4px 14px rgba(0,0,0,.7)}
+/* cena de item */
+#item{position:absolute;inset:0;display:none}
+.kick{position:absolute;left:50%;top:300px;transform:translateX(-50%);background:var(--amb);color:var(--noite);font-family:GB;font-size:40px;letter-spacing:3px;padding:12px 30px;border-radius:60px;white-space:nowrap}
+.tit{position:absolute;left:0;right:0;top:385px;text-align:center;font-family:GB;font-size:96px;color:var(--cre);letter-spacing:1px}
+.frasco{position:absolute;left:50%;top:520px;height:520px;transform:translateX(-50%) rotate(-4deg);filter:drop-shadow(0 22px 26px rgba(0,0,0,.6))}
+.pill{position:absolute;font-family:M;font-weight:800;font-size:40px;padding:14px 28px;border-radius:60px;white-space:nowrap;box-shadow:0 8px 18px rgba(0,0,0,.4)}
+/* legenda + avatar (modelo AV1) */
+#leg{position:absolute;left:40px;right:40px;top:1105px;height:120px;display:flex;align-items:center;justify-content:center;text-align:center}
+#leg span{font-family:GB;font-size:64px;color:var(--cre);-webkit-text-stroke:3px var(--noite);paint-order:stroke fill;text-shadow:0 6px 0 rgba(0,0,0,.35);margin:0 10px}
+#leg span.h{color:var(--noite);-webkit-text-stroke:0;background:var(--amb);padding:0 14px;border-radius:12px;text-shadow:none}
+#av{position:absolute;left:290px;top:1225px;width:500px;height:640px;border-radius:30px;overflow:hidden;border:6px solid var(--cre);box-shadow:0 0 0 4px var(--noite),0 16px 34px rgba(0,0,0,.5);background:#000}
+#av img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+#av b{position:absolute;left:0;right:0;bottom:18px;text-align:center;font-family:M;font-weight:800;font-size:30px;color:#fff;text-shadow:0 2px 8px #000}
+/* linhas do recorte do feed (só na conferência) */
+.guia{position:absolute;left:0;right:0;height:0;border-top:4px dashed #ff00ff;display:none}
+body.g .guia{display:block}
+</style></head><body>
+<div id="bg"></div><div id="dots"></div>
+<div id="notas"></div>
+<div id="capa">
+  <img class="foto" src="ref/capa_foto.png">
+  <div class="fade"></div>
+  <div class="stop" style="left:22px;top:300px;width:210px;height:210px;border-width:20px"></div>
+  <div class="stop" style="left:848px;top:300px;width:210px;height:210px;border-width:20px"></div>
+  <div id="hook"><div class="h1">NÃO COMPRE<br>O LIQUID BRUN</div><div class="h2">(ANTES DE SABER ESSAS 5 COISAS)</div></div>
+</div>
+<div id="item">
+  <div class="kick">COISA 1 DE 5</div>
+  <div class="tit">O CHEIRO</div>
+  <img class="frasco" src="frascos/liquidbrun_cut.png">
+  <div class="pill" style="left:70px;top:610px;background:var(--pim);color:var(--cre)">🟤 canela</div>
+  <div class="pill" style="left:590px;top:660px;background:var(--cre);color:var(--noite)">🌼 flor de laranjeira</div>
+  <div class="pill" style="left:70px;top:800px;background:var(--amb);color:var(--noite)">🍦 baunilha</div>
+  <div class="pill" style="left:760px;top:860px;background:var(--ced);color:var(--cre)">🌰 pralinê</div>
+</div>
+<div id="leg"></div>
+<div id="av"><img src="tmp/avatar_placeholder.png"><b>(seu avatar entra aqui)</b></div>
+<div class="guia" style="top:240px"></div><div class="guia" style="top:1680px"></div>
+<script>
+const q=new URLSearchParams(location.search), modo=q.get('m')||'capa';
+if(q.get('g'))document.body.classList.add('g');
+const leg=document.querySelector('#leg');
+if(modo==='capa'){leg.innerHTML='';document.querySelector('#notas').style.display='none'}
+else{document.querySelector('#capa').style.display='none';document.querySelector('#item').style.display='block';
+  leg.innerHTML='<span>ABRE COM</span><span class="h">CANELA</span>';
+  const N=[['baunilha',-40,250,430,-18],['castanha',830,240,260,12],['canela',-30,690,300,22],['flor',770,560,360,-8],['pralina',820,880,250,-6],['cardamomo',40,960,220,10],['limao',880,930,180,-14]];
+  const box=document.querySelector('#notas');
+  N.forEach(([k,x,y,w,r])=>{const i=new Image();i.src='notas/cut/'+k+'.png';Object.assign(i.style,{left:x+'px',top:y+'px',width:w+'px',transform:`rotate(${r}deg)`});box.appendChild(i)});
+  const v=document.createElement('div');v.className='vel';box.appendChild(v);}
+</script></body></html>

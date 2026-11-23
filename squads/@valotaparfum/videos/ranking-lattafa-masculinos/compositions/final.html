@@ -1,0 +1,85 @@
+<template>
+  <style>
+
+    @font-face { font-family: 'Gotham Black'; src: url('assets/fonts/GothamBlack.otf'); font-weight: 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0F2E33; font-family: 'Montserrat', sans-serif; }
+    .bg { position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 70% 42% at 50% 46%, rgba(212,154,78,0.30) 0%, rgba(212,154,78,0.08) 45%, rgba(15,46,51,0) 70%),
+        radial-gradient(ellipse 120% 80% at 50% 40%, #17454B 0%, #0F2E33 55%, #071B1E 100%); }
+    .dot { position: absolute; border-radius: 50%; background: radial-gradient(circle, #FFD58A 0%, rgba(212,154,78,0) 70%); }
+    .pedestal { position: absolute; left: 50%; top: 1190px; width: 700px; margin-left: -350px; height: 190px; }
+    .pedestal .side { position: absolute; left: 0; right: 0; top: 60px; height: 95px;
+      background: linear-gradient(90deg, #061518 0%, #12363B 30%, #1B474D 50%, #12363B 70%, #061518 100%);
+      border-radius: 0 0 50% 50% / 0 0 60px 60px; }
+    .pedestal .top { position: absolute; left: 0; right: 0; top: 0; height: 120px; border-radius: 50%;
+      background: radial-gradient(ellipse at 50% 40%, #24565C 0%, #143B40 55%, #0B2629 100%);
+      box-shadow: inset 0 0 0 2px rgba(212,154,78,0.55), 0 0 40px rgba(212,154,78,0.18); }
+    .stage { position: absolute; inset: 0; perspective: 1700px; perspective-origin: 50% 45%; }
+    .spin { position: absolute; left: 50%; transform-style: preserve-3d; }
+    .spin img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+    .shine { position: absolute; inset: 0; -webkit-mask-size: 100% 100%; mask-size: 100% 100%;
+      background: linear-gradient(100deg, rgba(255,255,255,0) 38%, rgba(255,246,225,0.55) 49%, rgba(255,255,255,0) 60%);
+      background-size: 300% 100%; background-position: 130% 0; mix-blend-mode: screen; }
+    .shadow { position: absolute; left: 50%; top: 1272px; width: 460px; height: 70px; margin-left: -230px;
+      border-radius: 50%; background: radial-gradient(ellipse, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 70%); }
+    .slide { position: absolute; inset: 0; }
+
+    #fn-q { position: absolute; left: 110px; right: 110px; top: 470px; text-align: center; color: #fff; }
+    .fn-line { font-weight: 800; font-size: 72px; line-height: 1.12; letter-spacing: -0.01em; }
+    .fn-w { display: inline-block; }
+    .fn-brand { font-family: 'Gotham Black', 'Montserrat', sans-serif; font-weight: 900; color: #D49A4E; font-size: 100px; margin-top: 14px; letter-spacing: 0.03em; }
+    #fn-cta { position: absolute; left: 0; right: 0; top: 1030px; text-align: center; font-weight: 400; font-size: 38px; color: #F2E8D8; }
+    #fn-sign { position: absolute; left: 0; right: 0; top: 1130px; text-align: center; font-weight: 600; font-size: 30px; letter-spacing: 0.45em; color: #D49A4E; margin-left: 0.45em; }
+    #fn-rule { position: absolute; left: 50%; top: 1105px; width: 120px; margin-left: -60px; height: 2px; background: #D49A4E; opacity: 0.7; }
+  </style>
+  <div id="root" data-composition-id="final" data-width="1080" data-height="1920" data-layout-allow-overlap>
+    <div class="bg"></div>
+      <i class="dot" id="fn-dot0" style="left:658px;top:1190px;width:9.6px;height:9.6px;opacity:0.53"></i>
+      <i class="dot" id="fn-dot1" style="left:770px;top:1407px;width:4.2px;height:4.2px;opacity:0.35"></i>
+      <i class="dot" id="fn-dot2" style="left:966px;top:1079px;width:10.3px;height:10.3px;opacity:0.22"></i>
+      <i class="dot" id="fn-dot3" style="left:510px;top:596px;width:7.8px;height:7.8px;opacity:0.39"></i>
+      <i class="dot" id="fn-dot4" style="left:73px;top:560px;width:6.0px;height:6.0px;opacity:0.52"></i>
+      <i class="dot" id="fn-dot5" style="left:795px;top:492px;width:9.6px;height:9.6px;opacity:0.23"></i>
+      <i class="dot" id="fn-dot6" style="left:653px;top:452px;width:4.0px;height:4.0px;opacity:0.50"></i>
+      <i class="dot" id="fn-dot7" style="left:261px;top:559px;width:10.9px;height:10.9px;opacity:0.50"></i>
+      <i class="dot" id="fn-dot8" style="left:338px;top:1454px;width:7.8px;height:7.8px;opacity:0.43"></i>
+      <i class="dot" id="fn-dot9" style="left:257px;top:1429px;width:8.8px;height:8.8px;opacity:0.54"></i>
+      <i class="dot" id="fn-dot10" style="left:918px;top:659px;width:6.5px;height:6.5px;opacity:0.24"></i>
+      <i class="dot" id="fn-dot11" style="left:200px;top:378px;width:6.1px;height:6.1px;opacity:0.40"></i>
+      <i class="dot" id="fn-dot12" style="left:63px;top:1114px;width:6.4px;height:6.4px;opacity:0.29"></i>
+      <i class="dot" id="fn-dot13" style="left:846px;top:877px;width:6.2px;height:6.2px;opacity:0.36"></i>
+      <i class="dot" id="fn-dot14" style="left:736px;top:368px;width:10.8px;height:10.8px;opacity:0.19"></i>
+      <i class="dot" id="fn-dot15" style="left:780px;top:1314px;width:4.1px;height:4.1px;opacity:0.47"></i>
+    <div id="fn-q">
+      <div class="fn-line"><span class="fn-w" id="fn-w0">E</span> <span class="fn-w" id="fn-w1">pra</span> <span class="fn-w" id="fn-w2">você,</span></div>
+      <div class="fn-line"><span class="fn-w" id="fn-w3">qual</span> <span class="fn-w" id="fn-w4">é</span> <span class="fn-w" id="fn-w5">o</span> <span class="fn-w" id="fn-w6">seu</span></div>
+      <div class="fn-line"><span class="fn-w" id="fn-w7">perfume</span> <span class="fn-w" id="fn-w8">masculino</span></div>
+      <div class="fn-line"><span class="fn-w" id="fn-w9">favorito</span> <span class="fn-w" id="fn-w10">da</span></div>
+      <div class="fn-line"><span class="fn-w fn-brand" id="fn-w11">LATTAFA?</span></div>
+    </div>
+    <div id="fn-cta">Comenta aqui embaixo</div>
+    <div id="fn-rule"></div>
+    <div id="fn-sign">VALOTA PARFUM</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#fn-w0", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.22, ease: "power3.out"}, 0.10);
+    tl.fromTo("#fn-w1", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.22, ease: "power3.out"}, 0.18);
+    tl.fromTo("#fn-w2", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.22, ease: "power3.out"}, 0.26);
+    tl.fromTo("#fn-w3", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.22, ease: "power3.out"}, 0.34);
+    tl.fromTo("#fn-w4", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.22, ease: "power3.out"}, 0.42);
+    tl.fromTo("#fn-w5", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.22, ease: "power3.out"}, 0.50);
+    tl.fromTo("#fn-w6", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.22, ease: "power3.out"}, 0.58);
+    tl.fromTo("#fn-w7", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.22, ease: "power3.out"}, 0.66);
+    tl.fromTo("#fn-w8", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.22, ease: "power3.out"}, 0.74);
+    tl.fromTo("#fn-w9", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.22, ease: "power3.out"}, 0.82);
+    tl.fromTo("#fn-w10", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.22, ease: "power3.out"}, 0.90);
+    tl.fromTo("#fn-w11", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.22, ease: "power3.out"}, 0.98);
+    tl.fromTo("#fn-cta", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.95);
+    tl.fromTo("#fn-rule", {scaleX: 0}, {scaleX: 1, duration: 0.4, ease: "power2.out"}, 1.05);
+    tl.fromTo("#fn-sign", {opacity: 0, y: 16}, {opacity: 1, y: 0, duration: 0.4, ease: "power3.out"}, 1.1);
+    tl.fromTo("[id^='fn-dot']", { y: 0 }, { y: -80, duration: 3.25, ease: "none" }, 0);
+    window.__timelines["final"] = tl;
+  </script>
+</template>

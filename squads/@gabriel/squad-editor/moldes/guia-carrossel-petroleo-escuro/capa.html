@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:MX;src:url(../fontes/Montserrat-ExtraBold.ttf)}
+@font-face{font-family:MB;src:url(../fontes/Montserrat-Black.ttf)}
+@font-face{font-family:MBo;src:url(../fontes/Montserrat-Bold.ttf)}
+@font-face{font-family:MV;src:url(../fontes/Montserrat-VariableFont_wght.ttf)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;overflow:hidden;background:#050B0D;position:relative}
+#bg{position:absolute;inset:-80px;background:url(foto.jpg) center 30%/cover;filter:blur(44px) brightness(.38) saturate(.35)}
+#foto{position:absolute;left:var(--fx);top:var(--fy);width:var(--fw);
+ -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 9%,#000 93%,transparent 100%),linear-gradient(90deg,transparent 0,#000 13%,#000 87%,transparent 100%);
+ -webkit-mask-composite:source-in;mask-composite:intersect}
+#topo{position:absolute;left:0;right:0;top:0;height:900px;background:linear-gradient(180deg,#040A0C 0,#040A0Cf0 26%,#0A1F23cc 40%,#0A1F2300 62%)}
+#vin{position:absolute;inset:0;background:radial-gradient(ellipse 85% 70% at 50% 58%,transparent 55%,#000a 100%)}
+#base{position:absolute;left:0;right:0;bottom:0;height:300px;background:linear-gradient(0deg,#03080A 0,#03080A00 100%)}
+#txt{position:absolute;left:0;right:0;top:var(--ty);text-align:center}
+.l1{display:flex;align-items:center;justify-content:center;gap:26px}
+.n{font-family:MV;font-weight:900;font-size:214px;line-height:.82;
+ background:linear-gradient(180deg,#FFE9B8 0,#F2C978 40%,#D49A4E 72%,#A86F2C 100%);-webkit-background-clip:text;color:transparent;
+ filter:drop-shadow(0 6px 18px #000c)}
+.w{text-align:left;font-family:MV;font-weight:900;color:#F2E8D8;font-size:90px;line-height:.95;letter-spacing:-1px;text-shadow:0 5px 22px #000e}
+.mom{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:16px;font-family:MX;font-size:60px;letter-spacing:9px;color:#F2E8D8;text-shadow:0 4px 18px #000e}
+.mom i{display:block;width:90px;height:4px;background:linear-gradient(90deg,#D49A4E00,#D49A4E)}.mom i:last-child{transform:scaleX(-1)}
+.pil{display:inline-block;margin-top:16px;padding:12px 34px 14px;border-radius:60px;background:#FFC93C;color:#0A1F23;
+ font-family:MX;font-size:44px;letter-spacing:.5px;box-shadow:0 8px 26px #0009}
+</style></head><body style="--fx:110px;--fy:540px;--fw:860px;--ty:258px">
+<div id="bg"></div><img id="foto" src="foto.jpg"><div id="vin"></div><div id="topo"></div><div id="base"></div>
+<div id="txt"><div class="l1"><div class="n">4</div><div class="w">ÁRABES MAIS<br>HYPADOS</div></div>
+<div class="mom"><i></i>DO MOMENTO<i></i></div>
+<div class="pil">o hype é verdade?</div></div>
+</body></html>

@@ -1,0 +1,61 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'Montserrat';src:url('file:///Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/carrossel-tweet/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');font-weight:100 900;font-style:normal}
+@font-face{font-family:'Montserrat';src:url('file:///Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/carrossel-tweet/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');font-weight:100 900;font-style:italic}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1350px;overflow:hidden}
+body{font-family:'Montserrat';background:#0A1F23;color:#0A1F23;position:relative;-webkit-font-smoothing:antialiased}
+.abs{position:absolute}
+.grao{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'300'%20height%3D'300'%3E%3Cfilter%20id%3D'n'%3E%3CfeTurbulence%20type%3D'fractalNoise'%20baseFrequency%3D'0.9'%20numOctaves%3D'3'%20stitchTiles%3D'stitch'%2F%3E%3CfeColorMatrix%20values%3D'0%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200.1%200'%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20filter%3D'url(%23n)'%2F%3E%3C%2Fsvg%3E");mix-blend-mode:overlay;pointer-events:none;z-index:50}
+.vinheta{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,transparent 55%,rgba(0,0,0,.45));pointer-events:none;z-index:49}
+/* dossiê */
+.couro{position:absolute;left:46px;top:58px;right:-60px;bottom:-60px;border-radius:44px 0 0 0;background:#6B4430;
+  box-shadow:0 30px 70px rgba(0,0,0,.55), inset 0 0 0 2px rgba(242,232,216,.08), inset 0 0 80px rgba(0,0,0,.45)}
+.couro:after{content:'';position:absolute;inset:0;border-radius:inherit;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'400'%20height%3D'400'%3E%3Cfilter%20id%3D'c'%3E%3CfeTurbulence%20type%3D'turbulence'%20baseFrequency%3D'0.045'%20numOctaves%3D'4'%20seed%3D'7'%2F%3E%3CfeColorMatrix%20values%3D'0%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200%200%20%200%200%200%20-1.6%201.05'%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20filter%3D'url(%23c)'%2F%3E%3C%2Fsvg%3E");opacity:.55;mix-blend-mode:multiply}
+.costura{position:absolute;left:62px;top:74px;right:-60px;bottom:-60px;border-radius:32px 0 0 0;border:2px dashed rgba(242,232,216,.22);border-right:0;border-bottom:0}
+.aba{position:absolute;left:96px;top:118px;width:70px;bottom:-20px;background:#F2E8D8;filter:brightness(.93);border-radius:10px 0 0 0;
+  box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.papel{position:absolute;left:150px;top:112px;right:-20px;bottom:-30px;background:#F2E8D8;border-radius:6px 0 0 0;
+  box-shadow:-10px 14px 40px rgba(0,0,0,.35)}
+.papel:before{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'300'%20height%3D'300'%3E%3Cfilter%20id%3D'n'%3E%3CfeTurbulence%20type%3D'fractalNoise'%20baseFrequency%3D'0.65'%20numOctaves%3D'3'%20stitchTiles%3D'stitch'%2F%3E%3CfeColorMatrix%20values%3D'0%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200.07%200'%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20filter%3D'url(%23n)'%2F%3E%3C%2Fsvg%3E");mix-blend-mode:multiply}
+.papel:after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 30%,transparent 50%,rgba(107,68,48,.10))}
+.furos{position:absolute;left:172px;top:150px;bottom:20px;width:26px;display:flex;flex-direction:column;justify-content:space-between;z-index:3}
+.furos i{display:block;width:24px;height:24px;border-radius:50%;background:#6B4430;box-shadow:inset 0 3px 5px rgba(0,0,0,.55);opacity:.85}
+.vert{position:absolute;writing-mode:vertical-rl;transform:rotate(180deg);font-weight:600;letter-spacing:4px;font-size:17px;text-transform:uppercase}
+/* texto */
+.era{font-weight:800;font-size:28px;letter-spacing:3px;color:#9C452A}
+.tit{font-weight:900;font-size:66px;line-height:1;letter-spacing:-1px;color:#0A1F23;margin-top:14px}
+.txt{font-weight:500;font-size:28.5px;line-height:1.42;color:#0A1F23;margin-top:26px}
+/* polaroid */
+.pol{position:absolute;background:#F2E8D8;padding:20px 20px 96px;box-shadow:0 22px 50px rgba(10,31,35,.38),0 2px 6px rgba(10,31,35,.25);z-index:5}
+.pol:before{content:'';position:absolute;inset:0;background:rgba(255,255,255,.35);pointer-events:none}
+.pol .foto{position:relative;width:100%;height:100%;background-size:cover;filter:contrast(1.04) saturate(.88);z-index:1}
+.pol .foto:after{content:'';position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(10,31,35,.25)}
+.pol .nome{position:absolute;left:0;right:0;bottom:22px;text-align:center;font-style:italic;font-weight:600;font-size:44px;color:#9C452A;z-index:1;letter-spacing:-.5px}
+.fita{position:absolute;width:170px;height:46px;background:rgba(212,154,78,.62);z-index:6;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+.fita:after{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'300'%20height%3D'300'%3E%3Cfilter%20id%3D'n'%3E%3CfeTurbulence%20type%3D'fractalNoise'%20baseFrequency%3D'1.2'%20numOctaves%3D'3'%20stitchTiles%3D'stitch'%2F%3E%3CfeColorMatrix%20values%3D'0%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200.18%200'%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20filter%3D'url(%23n)'%2F%3E%3C%2Fsvg%3E");mix-blend-mode:multiply}
+/* frasco */
+.frasco{position:absolute;z-index:4;filter:drop-shadow(0 26px 30px rgba(10,31,35,.38)) drop-shadow(0 6px 8px rgba(10,31,35,.25))}
+.sombra{position:absolute;z-index:3;height:46px;border-radius:50%;background:radial-gradient(ellipse,rgba(10,31,35,.42),transparent 70%)}
+.rot .k{font-weight:700;font-size:19px;letter-spacing:2.2px;white-space:nowrap;color:#9C452A}
+.rot .p{font-weight:900;font-size:52px;line-height:1.02;color:#0A1F23;margin-top:10px;letter-spacing:-1px}
+.rot .m{font-weight:400;font-size:27px;color:#0A1F23;margin-top:6px;letter-spacing:1px}
+.chip{display:inline-flex;align-items:center;gap:10px;margin-top:18px;padding:10px 22px;border-radius:999px;font-weight:700;font-size:21px;letter-spacing:.3px;white-space:nowrap}
+.chip b{display:inline-block;width:12px;height:12px;border-radius:50%;background:currentColor;opacity:.7}
+.clima{font-style:italic;font-weight:500;font-size:23px;margin-top:14px;color:#6B4430;white-space:nowrap}
+.seta{position:absolute;z-index:6}
+</style></head><body><div class="couro"></div><div class="costura"></div><div class="aba"></div><div class="papel"></div><div class="furos"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="vert" style="left:66px;top:150px;color:rgba(242,232,216,.75)">@valotaparfum</div>
+    <div class="vert" style="right:14px;bottom:40px;color:rgba(10,31,35,.45);font-size:13px;letter-spacing:1.5px;font-weight:500;text-transform:none;z-index:7">Foto: Liam Mendes · CC BY-SA 2.0</div><div class="abs" style="left:236px;top:176px;width:790px;z-index:4">
+      <div class="era">007 · 2006–2021</div><div class="tit">O BRUTO</div><div class="txt" style="font-size:28px">O Bond dele apanhava, sangrava e ainda ajeitava o terno da Tom Ford, a grife que vestiu ele em quatro filmes, e o perfume que os fãs mais ligam a ele é o Tobacco Vanille, da mesma marca. O Tobacco Touch traz esse clima de tabaco com baunilha, escuro e marcante, do jeito que o Bond mais intenso pede.</div></div>
+    <div class="pol" style="left:228px;top:670px;width:380px;height:520px;transform:rotate(-3.5deg)">
+      <div class="foto" style="background-image:url('file:///Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/carrossel-lista/carrosseis/2026-11-19-celebridades-007-arabe/atores/craig.jpg');background-position:center 22%"></div>
+      <div class="nome" style="font-size:44px">Daniel Craig</div></div>
+    <div class="fita" style="left:330px;top:648px;transform:rotate(5deg)"></div>
+    <div class="sombra" style="left:700px;width:300px;bottom:52px"></div>
+    <img class="frasco" src="file:///Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/carrossel-lista/carrosseis/2026-11-19-celebridades-007-arabe/frascos/tobaccotouch.png" style="left:715px;bottom:70px;height:380px">
+    <div class="abs rot" style="left:636px;top:610px;width:400px;z-index:6">
+      <div class="k">O ÁRABE COM A CARA DELE</div>
+      <div class="p">Tobacco Touch</div>
+      <div class="m">Maison Alhambra</div>
+      <div class="chip" style="background:#6B4430;color:#F2E8D8"><b></b>tabaco · baunilha · cacau</div>
+      </div><div class="vinheta"></div><div class="grao"></div></body></html>

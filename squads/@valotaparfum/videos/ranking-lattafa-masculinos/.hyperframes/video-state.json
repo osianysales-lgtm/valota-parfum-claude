@@ -1,0 +1,782 @@
+{
+  "version": 1,
+  "historyId": "98b0f072-8b2f-45c7-abbe-0377b4858820",
+  "currentRevision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+  "pendingChanges": false,
+  "files": {
+    ".media/manifest.jsonl": {
+      "hash": "17d879be7999a2f197024724952edfe37d53d0c4ea149a1d4ddcfae00df662e9",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/17/17d879be7999a2f197024724952edfe37d53d0c4ea149a1d4ddcfae00df662e9"
+    },
+    "AGENTS.md": {
+      "hash": "268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/26/268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a"
+    },
+    "CLAUDE.md": {
+      "hash": "268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/26/268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a"
+    },
+    "assets/cut/art-of-universe.png": {
+      "hash": "559f047dd7f535ff1ee35e002fb1be276a83d08a0d17c0700e7a6615166ff968",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/55/559f047dd7f535ff1ee35e002fb1be276a83d08a0d17c0700e7a6615166ff968"
+    },
+    "assets/cut/asad-bourbon.png": {
+      "hash": "099209d1f7a29e1a1f23dbc9f427f34cc7d3a65423b4a131459790f19833bc9b",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/09/099209d1f7a29e1a1f23dbc9f427f34cc7d3a65423b4a131459790f19833bc9b"
+    },
+    "assets/cut/asad-elixir.png": {
+      "hash": "b7d2aadf85ced0a7ed7fcceeefe0ca0871e6724dc8a79d41a2461e8e4f4a5197",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/b7/b7d2aadf85ced0a7ed7fcceeefe0ca0871e6724dc8a79d41a2461e8e4f4a5197"
+    },
+    "assets/cut/asad.png": {
+      "hash": "0ad9d34bc971dc43cd9eff4539324ded657527d9211328b63b0151fb5cce2c3f",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/0a/0ad9d34bc971dc43cd9eff4539324ded657527d9211328b63b0151fb5cce2c3f"
+    },
+    "assets/cut/fahad.png": {
+      "hash": "a46abd59bf5d3c803bbfdba6efb3bc94f605706027dbf05b110948749f2d6aa2",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/a4/a46abd59bf5d3c803bbfdba6efb3bc94f605706027dbf05b110948749f2d6aa2"
+    },
+    "assets/cut/fakhar-black.png": {
+      "hash": "003a408b7c3692b3aa3399ab9f3ed097c14af0e939ce30fc30c2d29621e537c4",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/00/003a408b7c3692b3aa3399ab9f3ed097c14af0e939ce30fc30c2d29621e537c4"
+    },
+    "assets/cut/his-confession.png": {
+      "hash": "82a97e296a25173293af3194c3e288f2dee166824c349d56959601c944d270a4",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/82/82a97e296a25173293af3194c3e288f2dee166824c349d56959601c944d270a4"
+    },
+    "assets/cut/maahir-honor.png": {
+      "hash": "bfe88a6b3a0bfeb0b938f9951d240dd88cd24e1639ed258fe70d6609d1506d3b",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/bf/bfe88a6b3a0bfeb0b938f9951d240dd88cd24e1639ed258fe70d6609d1506d3b"
+    },
+    "assets/cut/the-kingdom.png": {
+      "hash": "b43314b5b637defb813ba24e5cdb8fe0d5bac4318ee1f3caca9fc7b89aa3f112",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/b4/b43314b5b637defb813ba24e5cdb8fe0d5bac4318ee1f3caca9fc7b89aa3f112"
+    },
+    "assets/fonts/GothamBlack.otf": {
+      "hash": "99b87c0c6bf6947cd0034d9636fc2b8926dd1007281edf7a108b74e78636c5b0",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/99/99b87c0c6bf6947cd0034d9636fc2b8926dd1007281edf7a108b74e78636c5b0"
+    },
+    "assets/ref/art-of-universe.jpg": {
+      "hash": "9f60907d7d7856cd48e0b4fbeb654f0b59448b9f85fedba80794cbf2347657cf",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/9f/9f60907d7d7856cd48e0b4fbeb654f0b59448b9f85fedba80794cbf2347657cf"
+    },
+    "assets/ref/asad-bourbon.jpg": {
+      "hash": "ea7ed87f7931442d03bc0c0be6ccfa5163653935d68d4b4001ba88935e606be3",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/ea/ea7ed87f7931442d03bc0c0be6ccfa5163653935d68d4b4001ba88935e606be3"
+    },
+    "assets/ref/asad-elixir.jpg": {
+      "hash": "34e4ec75542e52ec5c0d6b799670a1abd9ad3f4d5f19794e09815497eb752db3",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/34/34e4ec75542e52ec5c0d6b799670a1abd9ad3f4d5f19794e09815497eb752db3"
+    },
+    "assets/ref/asad.jpg": {
+      "hash": "dc58b1864042b1d0aea8bec3ad73c5d105512ebec4f5b79ce44f71e9abd8dcf0",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/dc/dc58b1864042b1d0aea8bec3ad73c5d105512ebec4f5b79ce44f71e9abd8dcf0"
+    },
+    "assets/ref/fahad.jpg": {
+      "hash": "cd58aeff8bb59945ce49a2a58d86ebdc9d543f32c9bbc9129115e2be5a02edda",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/cd/cd58aeff8bb59945ce49a2a58d86ebdc9d543f32c9bbc9129115e2be5a02edda"
+    },
+    "assets/ref/fakhar-black.jpg": {
+      "hash": "bc8fde2d380594dddfb1ad92937f94794e7e4c4da717cffea2d6e8b0bd8fde2a",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/bc/bc8fde2d380594dddfb1ad92937f94794e7e4c4da717cffea2d6e8b0bd8fde2a"
+    },
+    "assets/ref/his-confession.jpg": {
+      "hash": "57ecd8bd7b23f124c17e1b52ed21b30d8844b7a18792654a13a248c6fda803b9",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/57/57ecd8bd7b23f124c17e1b52ed21b30d8844b7a18792654a13a248c6fda803b9"
+    },
+    "assets/ref/khamrah.jpg": {
+      "hash": "f6f08f7ab106bd9d5de2152cff6b4a113c79408febd0787e7ee4513399af886b",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/f6/f6f08f7ab106bd9d5de2152cff6b4a113c79408febd0787e7ee4513399af886b"
+    },
+    "assets/ref/maahir-honor.jpg": {
+      "hash": "ec9ae3ac08c22cbe886542c12a8995f0258a6240c08e7b451d6b63254fde123d",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/ec/ec9ae3ac08c22cbe886542c12a8995f0258a6240c08e7b451d6b63254fde123d"
+    },
+    "assets/ref/the-kingdom.jpg": {
+      "hash": "700310ffb57ca6fe012ed25fd3c79304d2aa60c07409d36ad402ee1988d852c2",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/70/700310ffb57ca6fe012ed25fd3c79304d2aa60c07409d36ad402ee1988d852c2"
+    },
+    "assets/src/art-of-universe.png": {
+      "hash": "224f9ebef32456150c9980c6e4d77d5c801cadff23dcaec22bd7c7ae83445bed",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/22/224f9ebef32456150c9980c6e4d77d5c801cadff23dcaec22bd7c7ae83445bed"
+    },
+    "assets/src/asad-bourbon.png": {
+      "hash": "1aa0a10ff7a01e6dc200753c4f81474ac666846b043552cd9e7a3ddd0626fd10",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/1a/1aa0a10ff7a01e6dc200753c4f81474ac666846b043552cd9e7a3ddd0626fd10"
+    },
+    "assets/src/asad-elixir.png": {
+      "hash": "94af97c3c65c84fb8222dad764d4824cc0dd5a1239bd8d3ac346767f019773e9",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/94/94af97c3c65c84fb8222dad764d4824cc0dd5a1239bd8d3ac346767f019773e9"
+    },
+    "assets/src/asad.png": {
+      "hash": "6d2301d2896f6f4fe620fff424be841e3d4f743898763655d421b761f34ba893",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/6d/6d2301d2896f6f4fe620fff424be841e3d4f743898763655d421b761f34ba893"
+    },
+    "assets/src/fahad.png": {
+      "hash": "69cd2c924bcec22902964aea1fe339ddc3e1e255aabb3fad56b5d8f87887ff85",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/69/69cd2c924bcec22902964aea1fe339ddc3e1e255aabb3fad56b5d8f87887ff85"
+    },
+    "assets/src/fakhar-black.png": {
+      "hash": "75f881e918fc3e735a130967aad3c34d9f55fe4ef534961098dec97170d152f3",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/75/75f881e918fc3e735a130967aad3c34d9f55fe4ef534961098dec97170d152f3"
+    },
+    "assets/src/his-confession.png": {
+      "hash": "9147a6a24da7a6874aa980b5a2e45d6c64882afad627d76d0b665cd0a914c2f3",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/91/9147a6a24da7a6874aa980b5a2e45d6c64882afad627d76d0b665cd0a914c2f3"
+    },
+    "assets/src/maahir-honor.png": {
+      "hash": "1be46af68cd0f35bd262dd58174d0ec973bd6d378bc9f852dee5d09f547a5dc5",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/1b/1be46af68cd0f35bd262dd58174d0ec973bd6d378bc9f852dee5d09f547a5dc5"
+    },
+    "assets/src/the-kingdom.png": {
+      "hash": "3a95254e9432825208369e5e523a177e25a73022d87692a9ec8b66e31c7e4f77",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/3a/3a95254e9432825208369e5e523a177e25a73022d87692a9ec8b66e31c7e4f77"
+    },
+    "compositions/final.html": {
+      "hash": "ad2d05dab50c3dd9a6e320849cff04d40735b06941fb83014142360f2f92fc6d",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/ad/ad2d05dab50c3dd9a6e320849cff04d40735b06941fb83014142360f2f92fc6d"
+    },
+    "compositions/intro.html": {
+      "hash": "af5a716ec9d7364dcb1aaa4f56f4096f76debc587f29c10908957ca05920e7fe",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/af/af5a716ec9d7364dcb1aaa4f56f4096f76debc587f29c10908957ca05920e7fe"
+    },
+    "compositions/ranking.html": {
+      "hash": "5a45698d79976d6146e25d6a3b18c2789e0b58d6d2b2b8118746682cd3606cb7",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/5a/5a45698d79976d6146e25d6a3b18c2789e0b58d6d2b2b8118746682cd3606cb7"
+    },
+    "gerar_cenas.py": {
+      "hash": "720c8d70888f88e02c03ab534f0c4fd45c39052565001ab5bdbba3dfe5020990",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/72/720c8d70888f88e02c03ab534f0c4fd45c39052565001ab5bdbba3dfe5020990"
+    },
+    "hyperframes.json": {
+      "hash": "35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/35/35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7"
+    },
+    "index.html": {
+      "hash": "4f9bb130343e6651f301908d7709cec8dd0d3a4bddf1fb0f42c733f0559e5049",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/4f/4f9bb130343e6651f301908d7709cec8dd0d3a4bddf1fb0f42c733f0559e5049"
+    },
+    "meta.json": {
+      "hash": "cb19a6543d27cac8aeac32b0d2212222bc6ebdb95c9178b9c24f73c5c8a54170",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/cb/cb19a6543d27cac8aeac32b0d2212222bc6ebdb95c9178b9c24f73c5c8a54170"
+    },
+    "package.json": {
+      "hash": "7d23b585df08582fe32e229d226dbe30c7f9a5c6aa795afd490b9c60e4d1f95c",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/7d/7d23b585df08582fe32e229d226dbe30c7f9a5c6aa795afd490b9c60e4d1f95c"
+    },
+    "assets/cut/khamrah.png": {
+      "hash": "aceb8f53819a1d2b19192a32134ebf60eeaec4ce81e8bf5cb7aea89badbc6a03",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/ac/aceb8f53819a1d2b19192a32134ebf60eeaec4ce81e8bf5cb7aea89badbc6a03"
+    },
+    "assets/src/khamrah.png": {
+      "hash": "ae8e13904636b4fd27637df910ad3903702abe9da51d5046f84915ffd41abe34",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/ae/ae8e13904636b4fd27637df910ad3903702abe9da51d5046f84915ffd41abe34"
+    },
+    "assets/bottles/art-of-universe.webp": {
+      "hash": "505a98a9453e606aa49eb61b71e29fd7ede1cc4867c688e95c957be552fe6d4c",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/50/505a98a9453e606aa49eb61b71e29fd7ede1cc4867c688e95c957be552fe6d4c"
+    },
+    "assets/bottles/asad-bourbon.webp": {
+      "hash": "bec01a3668e8c9db02cc648907f90650e2513491e6a0a83ba5357a57e5dd0bcf",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/be/bec01a3668e8c9db02cc648907f90650e2513491e6a0a83ba5357a57e5dd0bcf"
+    },
+    "assets/bottles/asad-elixir.webp": {
+      "hash": "1608f8e42416637c568d9157ee62f56539a2d27d8d4cd954fe96bf35af29e975",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/16/1608f8e42416637c568d9157ee62f56539a2d27d8d4cd954fe96bf35af29e975"
+    },
+    "assets/bottles/asad.webp": {
+      "hash": "19a31780d849982cc878c1f2d5817df2fde15d8457a9922695d0bf74ef3292b4",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/19/19a31780d849982cc878c1f2d5817df2fde15d8457a9922695d0bf74ef3292b4"
+    },
+    "assets/bottles/fahad.webp": {
+      "hash": "cd5150b2815747b6c1ab081566b5b94d91da08f4dc6fce19cfff0fbd8528329e",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/cd/cd5150b2815747b6c1ab081566b5b94d91da08f4dc6fce19cfff0fbd8528329e"
+    },
+    "assets/bottles/fakhar-black.webp": {
+      "hash": "52d1e89ef79784fa45c3f82b4ca70441c679f417e305a69c35da092b8884d028",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/52/52d1e89ef79784fa45c3f82b4ca70441c679f417e305a69c35da092b8884d028"
+    },
+    "assets/bottles/his-confession.webp": {
+      "hash": "251650da2f5b8ece401a9ec5182071f3ba5fd2d86e4f0531e24a16eea33a4f18",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/25/251650da2f5b8ece401a9ec5182071f3ba5fd2d86e4f0531e24a16eea33a4f18"
+    },
+    "assets/bottles/khamrah.webp": {
+      "hash": "0aede0acb875a35c1b0fbf8f2f2ef19e29eafb679f2a5fcd4551c6dabb4d95f8",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/0a/0aede0acb875a35c1b0fbf8f2f2ef19e29eafb679f2a5fcd4551c6dabb4d95f8"
+    },
+    "assets/bottles/maahir-honor.webp": {
+      "hash": "923ed0addb52d65845a0dc0503c28d512f3fa93e38493711b70096f4dba05ddb",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/92/923ed0addb52d65845a0dc0503c28d512f3fa93e38493711b70096f4dba05ddb"
+    },
+    "assets/bottles/the-kingdom.webp": {
+      "hash": "4c7bef5cd692fd7c30c576087d1afa6c18d487c61313c4d910438ed93788f4ef",
+      "content": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/4c/4c7bef5cd692fd7c30c576087d1afa6c18d487c61313c4d910438ed93788f4ef"
+    }
+  },
+  "revisions": {
+    "c634472f-6985-430f-846d-1165ad7f6be3": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794803558402,
+      "endedAt": 1794803558425,
+      "files": {
+        "assets/bottles/art-of-universe.webp": {
+          "before": null,
+          "after": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/50/505a98a9453e606aa49eb61b71e29fd7ede1cc4867c688e95c957be552fe6d4c"
+        },
+        "assets/bottles/asad-bourbon.webp": {
+          "before": null,
+          "after": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/be/bec01a3668e8c9db02cc648907f90650e2513491e6a0a83ba5357a57e5dd0bcf"
+        },
+        "assets/bottles/asad-elixir.webp": {
+          "before": null,
+          "after": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/16/1608f8e42416637c568d9157ee62f56539a2d27d8d4cd954fe96bf35af29e975"
+        },
+        "assets/bottles/asad.webp": {
+          "before": null,
+          "after": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/19/19a31780d849982cc878c1f2d5817df2fde15d8457a9922695d0bf74ef3292b4"
+        },
+        "assets/bottles/fahad.webp": {
+          "before": null,
+          "after": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/cd/cd5150b2815747b6c1ab081566b5b94d91da08f4dc6fce19cfff0fbd8528329e"
+        },
+        "assets/bottles/fakhar-black.webp": {
+          "before": null,
+          "after": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/52/52d1e89ef79784fa45c3f82b4ca70441c679f417e305a69c35da092b8884d028"
+        },
+        "assets/bottles/his-confession.webp": {
+          "before": null,
+          "after": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/25/251650da2f5b8ece401a9ec5182071f3ba5fd2d86e4f0531e24a16eea33a4f18"
+        },
+        "assets/bottles/khamrah.webp": {
+          "before": null,
+          "after": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/0a/0aede0acb875a35c1b0fbf8f2f2ef19e29eafb679f2a5fcd4551c6dabb4d95f8"
+        },
+        "assets/bottles/maahir-honor.webp": {
+          "before": null,
+          "after": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/92/923ed0addb52d65845a0dc0503c28d512f3fa93e38493711b70096f4dba05ddb"
+        },
+        "assets/bottles/the-kingdom.webp": {
+          "before": null,
+          "after": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/4c/4c7bef5cd692fd7c30c576087d1afa6c18d487c61313c4d910438ed93788f4ef"
+        },
+        "compositions/intro.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/8e/8ee324788036c0e595d515659c3f959f006c633c73a751eeaa5f6090983b70f5",
+          "after": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/c7/c736fd4e5fc78675efc8f71e4f00a60ecdcf908bc11c8eb72361a6f12a455012"
+        },
+        "compositions/ranking.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/ab/abf8d922ac37ae52e42d5925648bcf10d14bebe4c4695786ca9e921365a92cc7",
+          "after": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/45/4575eea69aa2e0d42d0fedbff4d30af1d53fcc5f69cec9ea61ed155886e5c7bb"
+        },
+        "gerar_cenas.py": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/3e/3e5140d12b6e1e8e5377913e78b293b93c9592523c373d4cf8e56df169ff9e44",
+          "after": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/da/da07fd5931ea0cbf6a7a2dbbb2564879d37952e3f37a694a66b5d2f7384330bc"
+        }
+      }
+    },
+    "b924329e-f784-481a-a100-e7dddc2c3f4f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794803605335,
+      "endedAt": 1794803605337,
+      "files": {
+        "compositions/final.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/7c/7ceff1a1fa7d5b087940bd8e309bb4e817114c5efc4db4b58c11d6875a0e857b",
+          "after": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/ad/ad2d05dab50c3dd9a6e320849cff04d40735b06941fb83014142360f2f92fc6d"
+        },
+        "compositions/intro.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/c7/c736fd4e5fc78675efc8f71e4f00a60ecdcf908bc11c8eb72361a6f12a455012",
+          "after": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/af/af5a716ec9d7364dcb1aaa4f56f4096f76debc587f29c10908957ca05920e7fe"
+        },
+        "compositions/ranking.html": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/45/4575eea69aa2e0d42d0fedbff4d30af1d53fcc5f69cec9ea61ed155886e5c7bb",
+          "after": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/5a/5a45698d79976d6146e25d6a3b18c2789e0b58d6d2b2b8118746682cd3606cb7"
+        },
+        "gerar_cenas.py": {
+          "before": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/da/da07fd5931ea0cbf6a7a2dbbb2564879d37952e3f37a694a66b5d2f7384330bc",
+          "after": "/Users/osianysales/.cache/hyperframes/history/98b0f072-8b2f-45c7-abbe-0377b4858820/blobs/72/720c8d70888f88e02c03ab534f0c4fd45c39052565001ab5bdbba3dfe5020990"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+      "id": "f1dc278d-7fce-4f3c-8741-b0100dfd3bde"
+    },
+    "revisions": {
+      "c634472f-6985-430f-846d-1165ad7f6be3": [
+        {
+          "id": "c1766b76-d51e-4910-b9e0-31cff932af86",
+          "scope": "project",
+          "report": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/checks/c1766b76-d51e-4910-b9e0-31cff932af86.json",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794803566428,
+          "contentHash": "0c38279a1f8d30069a2636c0c124e4f985a41985b53a1a1a434f1a658d94ad66",
+          "revision": "c634472f-6985-430f-846d-1165ad7f6be3",
+          "inputFingerprint": "e0b314303c8be8513283e7e735873f7f002213a419dea104abd944ff6513e9f7",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "b924329e-f784-481a-a100-e7dddc2c3f4f": [
+        {
+          "id": "f1dc278d-7fce-4f3c-8741-b0100dfd3bde",
+          "scope": "project",
+          "report": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/checks/f1dc278d-7fce-4f3c-8741-b0100dfd3bde.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794803614280,
+          "contentHash": "433ed590b0a11f39cd2fe8e61105a79bfeecb73de63bc0d0e73bfdab1ba4d2a7",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+      "id": "e2cd933d-6118-4c4a-b004-50c7e9c15f85-5"
+    },
+    "revisions": {
+      "b924329e-f784-481a-a100-e7dddc2c3f4f": [
+        {
+          "scope": "full",
+          "id": "495d0bff-4a2e-4fd7-a166-e6d41b0cf1e8-0",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/7226594d-939b-4e77-8354-626832cd60c0/frame-00-at-0s.png",
+          "time": 0,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803637110,
+          "contentHash": "584bcf693d7d9aa9550e2d4edffc5c40d30284b2f4343f158a8b75c8c282cdfd",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "495d0bff-4a2e-4fd7-a166-e6d41b0cf1e8-1",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/7226594d-939b-4e77-8354-626832cd60c0/frame-01-at-0.6s.png",
+          "time": 0.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803637110,
+          "contentHash": "1faa257e37e92fb5274f93ff3e3f519475b5f085fc4f356404f7ed5d84d4143b",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "495d0bff-4a2e-4fd7-a166-e6d41b0cf1e8-2",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/7226594d-939b-4e77-8354-626832cd60c0/frame-02-at-1.9s.png",
+          "time": 1.9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803637110,
+          "contentHash": "22f82ee0b8681d575853f55c492cde4747324a6c4dcffe89176581a3f3bd7631",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "495d0bff-4a2e-4fd7-a166-e6d41b0cf1e8-3",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/7226594d-939b-4e77-8354-626832cd60c0/frame-03-at-2.4s.png",
+          "time": 2.4,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803637110,
+          "contentHash": "72c7e45f5761516dd30e9f4d9c9ee07bcaf45ba27fe3783353638a7294475334",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "495d0bff-4a2e-4fd7-a166-e6d41b0cf1e8-4",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/7226594d-939b-4e77-8354-626832cd60c0/frame-04-at-3s.png",
+          "time": 3,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803637110,
+          "contentHash": "54973d99f7df29b5625bc3acd5e692afa639dbcba5b07b46926e6b94b4c996f7",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "495d0bff-4a2e-4fd7-a166-e6d41b0cf1e8-5",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/7226594d-939b-4e77-8354-626832cd60c0/frame-05-at-5.2s.png",
+          "time": 5.2,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803637111,
+          "contentHash": "18888950eea67822f636b180d67f03be573952033d97bb42b39c2614920f5157",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "495d0bff-4a2e-4fd7-a166-e6d41b0cf1e8-6",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/7226594d-939b-4e77-8354-626832cd60c0/frame-06-at-9.9s.png",
+          "time": 9.9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803637111,
+          "contentHash": "aa4fdf97a6e06b7d662c3774ee5abb55000cb2509cc43ee52e7943297d538ebd",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "495d0bff-4a2e-4fd7-a166-e6d41b0cf1e8-7",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/7226594d-939b-4e77-8354-626832cd60c0/frame-07-at-13.6s.png",
+          "time": 13.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803637111,
+          "contentHash": "7f2516a8511833f3ea395975bb53be7dca45f23b4e7f652b84490a68bb6eb9bf",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "495d0bff-4a2e-4fd7-a166-e6d41b0cf1e8-8",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/7226594d-939b-4e77-8354-626832cd60c0/frame-08-at-14.5s.png",
+          "time": 14.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803637111,
+          "contentHash": "4b9750351baa3e175b8cb5d2ad8632a671856852f0ca765fa628583bad84536c",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "495d0bff-4a2e-4fd7-a166-e6d41b0cf1e8-9",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/7226594d-939b-4e77-8354-626832cd60c0/frame-09-at-15.3s.png",
+          "time": 15.3,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803637111,
+          "contentHash": "29b696c8da8288b93122f239f55b2a32bb4ddd79e8b0bc9140f118cfea5be991",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "495d0bff-4a2e-4fd7-a166-e6d41b0cf1e8-10",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/7226594d-939b-4e77-8354-626832cd60c0/frame-10-at-16.5s.png",
+          "time": 16.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803637111,
+          "contentHash": "7e911bb9396f72622f57cd3aa3163b9341b57760b6d71f04ee91a3a0e312f11d",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "495d0bff-4a2e-4fd7-a166-e6d41b0cf1e8-11",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/7226594d-939b-4e77-8354-626832cd60c0/frame-11-at-17.9s.png",
+          "time": 17.9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803637111,
+          "contentHash": "7f1886cf9657d3d0eff459ec3353ed657482e8b896b4c2103d99c93e3748e422",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "495d0bff-4a2e-4fd7-a166-e6d41b0cf1e8-12",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/7226594d-939b-4e77-8354-626832cd60c0/frame-12-at-17.75s.png",
+          "time": 17.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803637111,
+          "contentHash": "c1344a8c7a4fad1db9da80651aaf224763a155ebe7d6c10d44e3ab256323e969",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "e2cd933d-6118-4c4a-b004-50c7e9c15f85-0",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/78779ed6-917f-44b0-8545-440ba67e8963/frame-00-at-1.76s.png",
+          "time": 1.76,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803659524,
+          "contentHash": "f19fd3d5ed3d0ca982fcf2a663b80dd8b78e2bdbbd562f83648afd1ff0f280fa",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "e2cd933d-6118-4c4a-b004-50c7e9c15f85-1",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/78779ed6-917f-44b0-8545-440ba67e8963/frame-01-at-3.04s.png",
+          "time": 3.04,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803659524,
+          "contentHash": "32eb2fe5e0b1cc07046726fed839e9ea6c841e9965a5390b1c8f7eceaa2f9345",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "e2cd933d-6118-4c4a-b004-50c7e9c15f85-2",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/78779ed6-917f-44b0-8545-440ba67e8963/frame-02-at-3.06s.png",
+          "time": 3.06,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803659524,
+          "contentHash": "238a862401106d3331a98ff3916c4cfa87760e3714e10739f330f39396e7e120",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "e2cd933d-6118-4c4a-b004-50c7e9c15f85-3",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/78779ed6-917f-44b0-8545-440ba67e8963/frame-03-at-4.34s.png",
+          "time": 4.34,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803659524,
+          "contentHash": "ec2f090bc4cff4a291ee9881e296f545a95c8b03c1ea8355daa62060340f7d17",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "e2cd933d-6118-4c4a-b004-50c7e9c15f85-4",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/78779ed6-917f-44b0-8545-440ba67e8963/frame-04-at-7s.png",
+          "time": 7,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803659524,
+          "contentHash": "10dbdf835730f93f6a9e17cc1471cfc6dcb2091cbbaa0393995ef5bdb0d03b9d",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "e2cd933d-6118-4c4a-b004-50c7e9c15f85-5",
+          "image": "/Users/osianysales/Downloads/ClaudCode/squads/@valotaparfum/videos/ranking-lattafa-masculinos/.hyperframes/artifacts/snapshots/78779ed6-917f-44b0-8545-440ba67e8963/frame-05-at-12.94s.png",
+          "time": 12.94,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794803659524,
+          "contentHash": "9c4dcde88b75c6428cd2ee1f681c6f2728567814cc079f2d1597ae84858660c4",
+          "revision": "b924329e-f784-481a-a100-e7dddc2c3f4f",
+          "inputFingerprint": "15b9f6914e80335eedb148709b913fa9e6153ea64c50c688da41174f3a08f9df",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": []
+  }
+}

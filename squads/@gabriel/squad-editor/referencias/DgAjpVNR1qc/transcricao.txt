@@ -1,0 +1,8 @@
+[  0.0-  2.9] Notas olfativas explicadas em três palavras.
+[  2.9-  5.4] Ambar, quente, rica e doce.
+[  5.4-  8.3] Musk, aveludado, limpo e fresco.
+[  8.3- 11.4] Patioli, terroso, amadeirado e verde.
+[ 11.4- 14.6] Bergamota, cítrico, amargo e floral.
+[ 14.6- 17.8] Bud, amadeirado, couro e esfumaçado.
+[ 17.8- 21.5] Favatonca, doce, cremosa e aveludada.
+[ 21.5- 24.9] Vetiver, terroso, esfumaçado e amadeirado.

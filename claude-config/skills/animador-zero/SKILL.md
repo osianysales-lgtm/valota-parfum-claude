@@ -99,6 +99,21 @@ python scripts/previa.py <projeto> 0.5 3 6 9 12 15 20 25 30
 
 Escolha de 6 a 10 tempos que cubram os planos diferentes. Olhe a `previa.jpg` você mesmo: confira se ninguém está cortado, se a tela está legível, se as legendas não cobrem nada importante. Corrija o que precisar e só então mostre a imagem para a pessoa, explicando em uma frase o que cada quadro mostra. Ajuste o que ela pedir.
 
+### Bonecos (série 3D): checklist OBRIGATÓRIO antes do render
+
+Um render de bonecos leva perto de 1h30 neste Mac (dividir em partes não acelera, a placa de vídeo é uma só). Cada erro que passa custa mais 1h30 dela. Por isso, antes de todo render, rode:
+
+```
+python3 scripts/qa_bonecos.py <projeto> <fins das caminhadas> <momentos em que os dois ficam perto> <ações com objeto>
+```
+
+Ele tira 1 quadro no meio de **cada corte**, mede o brilho e monta `previa/qa.jpg`. Olhe **todos** os quadros e só renderize se passar nos 4 pontos:
+
+1. **Luz não "pisca".** Para ela, "piscando" é a diferença de brilho entre um corte e outro, não a luz mudando dentro do plano. Nenhum plano pode sair marcado em vermelho (fora de mediana ±12). No quarto, ajuste com `quarto.expShot`. Os closes do mural com spot saem quase o dobro mais claros que o quarto. Mantenha também `semSoco: true`, sem bloom, raios de sol e poeira.
+2. **Ninguém anda por cima, atravessa, encosta ou entrelaça braço com ninguém**, nem em pé nem sentado. Deixe pelo menos ~1,1 de distância entre os dois (sentados na cama também), e os caminhos do `mov` não se cruzam.
+3. **Nenhum plano mostra só um pedaço de corpo sem contexto**, como ombro, nuca, braço ou parede/móvel tampando. Se a câmera ficar atrás de um boneco ou dentro de um móvel, mude a câmera ou tire o boneco do caminho. Nos closes de objeto (fotos do mural), a câmera fica entre o objeto e o boneco, e ninguém aponta pra dentro do quadro.
+4. **Objeto citado na fala aparece** no quadro, como o perfume na gaveta.
+
 ## Passo 6: renderizar
 
 ```

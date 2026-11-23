@@ -1,0 +1,41 @@
+{
+  "saida": "v66-quero-um-perfume-snow.mp4",
+  "cena": {
+    "arquivo": "/Users/osianysales/Downloads/ClaudCode/osiany.MOV",
+    "inicio": 0.3,
+    "dur": 1.0,
+    "y": 60
+  },
+  "frases": [
+    "Quero um perfume\npara academia...",
+    "Quero um perfume\npro trabalho...",
+    "Quero um perfume\npro dia...",
+    "Quero um perfume\npra noite...",
+    "Quero um perfume pra\nir na padaria...",
+    "Quero um perfume pra\nquando eu tô feliz...",
+    "Quero um perfume pra\nquando eu tô triste...",
+    "Quero um perfume\npra dormir...",
+    "Quero um perfume pra\ntomar banho...",
+    "Quero um perfume pra\nbuscar o perfume novo...",
+    "Quero um perfume pra\nusar perfume..."
+  ],
+  "final": {
+    "arquivo": "/Users/osianysales/Downloads/ClaudCode/snow.MOV",
+    "inicio": 0,
+    "dur": 5.09,
+    "legendas": [
+      {
+        "texto": "E o Snow, que apareceu\nlá no fundo, também\naprovou...",
+        "y": 15,
+        "de": 0,
+        "ate": 2.6
+      },
+      {
+        "texto": "Mas não use perfume\nem animais, mesmo\nele querendo 🤭",
+        "y": 15,
+        "de": 2.6,
+        "ate": 5.2
+      }
+    ]
+  }
+}

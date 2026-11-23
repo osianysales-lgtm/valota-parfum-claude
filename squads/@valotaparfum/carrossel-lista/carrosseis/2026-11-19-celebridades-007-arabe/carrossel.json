@@ -1,0 +1,110 @@
+{
+  "nome": "Perfumes das celebridades · edição James Bond 007 · o árabe com a cara de cada Bond",
+  "referencia": "instagram.com/p/Df2cU2hloFG (@luisjordao, 17/11/2026)",
+  "capa": {
+    "linha1": "PERFUMES DAS",
+    "linha2": "CELEBRIDADES",
+    "edicao": "edição James Bond 007",
+    "pilula": "o árabe com a cara de cada Bond",
+    "fotos": [
+      "connery",
+      "moore",
+      "brosnan",
+      "craig",
+      "pattinson"
+    ],
+    "frascos": [
+      "qaaed",
+      "ameer",
+      "tresnuit",
+      "tobaccotouch",
+      "kayaan"
+    ]
+  },
+  "atores": [
+    {
+      "id": "connery",
+      "nome": "Sean Connery",
+      "era": "007 · 1962–1971",
+      "titulo": "O ORIGINAL",
+      "layout": "A",
+      "texto": "Primeiro Bond do cinema, ele misturava charme bruto de escocês com smoking impecável, e dizem que era fã dos clássicos da Guerlain, como o Habit Rouge. Por isso o árabe dele tem patente no nome, já que Qaa'ed quer dizer comandante e o Bond dos livros é justamente o Comandante James Bond.",
+      "frasco": "qaaed",
+      "perfume": "Qaa'ed Intense",
+      "marca": "Lattafa",
+      "familia": "ambar",
+      "notas": "tabaco · mel · canela",
+      "clima": "cheiro de cassino à meia-noite",
+      "credito": "Foto: Rob Mieremet / Anefo · CC BY-SA 3.0 NL"
+    },
+    {
+      "id": "moore",
+      "nome": "Roger Moore",
+      "era": "007 · 1973–1985",
+      "titulo": "O BEM-HUMORADO",
+      "layout": "B",
+      "texto": "Ele salvava o mundo soltando piada e levantando a sobrancelha, e dizem que usava o Jicky, da Guerlain, uma lavanda com baunilha criada lá em 1889. Então o árabe dele é o Príncipe dos Árabes, que junta lavanda com especiarias e fica elegante sem pesar, do jeitinho dele.",
+      "frasco": "ameer",
+      "perfume": "Ameer Al Arab",
+      "marca": "Asdaaf",
+      "familia": "pimenta",
+      "notas": "lavanda · açafrão · cardamomo",
+      "clima": "fresco e temperado, de terno claro",
+      "credito": "Foto: Allan Warren · CC BY-SA 3.0"
+    },
+    {
+      "id": "brosnan",
+      "nome": "Pierce Brosnan",
+      "era": "007 · 1995–2002",
+      "titulo": "O GALÃ",
+      "layout": "A",
+      "texto": "O Bond dos anos 90 saía de qualquer explosão com o cabelo no lugar, e revistas de estilo colocam ele na lista de quem usa o Green Irish Tweed, da Creed. O Tres Nuit é o árabe que a comunidade mais compara com esse clássico verde, então dá pra ter cheiro de galã sem pagar preço de Creed.",
+      "frasco": "tresnuit",
+      "perfume": "Tres Nuit",
+      "marca": "Armaf",
+      "familia": "menta",
+      "notas": "verde · limão · violeta",
+      "clima": "cheiro de homem arrumado",
+      "credito": "Foto: Sebaso · CC BY-SA 3.0",
+      "fh": 400,
+      "fx": 200,
+      "sw": 380
+    },
+    {
+      "id": "craig",
+      "nome": "Daniel Craig",
+      "era": "007 · 2006–2021",
+      "titulo": "O BRUTO",
+      "layout": "B",
+      "texto": "O Bond dele apanhava, sangrava e ainda ajeitava o terno da Tom Ford, a grife que vestiu ele em quatro filmes, e o perfume que os fãs mais ligam a ele é o Tobacco Vanille, da mesma marca. O Tobacco Touch traz esse clima de tabaco com baunilha, escuro e marcante, do jeito que o Bond mais intenso pede.",
+      "frasco": "tobaccotouch",
+      "perfume": "Tobacco Touch",
+      "marca": "Maison Alhambra",
+      "familia": "cedro",
+      "notas": "tabaco · baunilha · cacau",
+      "clima": "escuro, quente e marcante",
+      "credito": "Foto: Liam Mendes · CC BY-SA 2.0"
+    },
+    {
+      "id": "pattinson",
+      "nome": "Robert Pattinson",
+      "era": "NOVO 007 · 2026",
+      "titulo": "O MISTERIOSO",
+      "layout": "C",
+      "texto": "Anunciado em novembro como o novo James Bond, ele é rosto do Dior Homme desde 2013 e tem aquele jeito discreto de quem fala pouco e chama atenção mesmo assim. O Kayaan Classic é o árabe que a comunidade compara com o Dior Homme Intense, um cheiro de pó de arroz chique com madeira que é elegante sem gritar.",
+      "frasco": "kayaan",
+      "perfume": "Kayaan Classic",
+      "marca": "Al Wataniah",
+      "familia": "algodao",
+      "notas": "pó de arroz · couro · madeira",
+      "clima": "elegante sem gritar",
+      "credito": "Foto: Harald Krichel · CC BY-SA 4.0"
+    }
+  ],
+  "final": {
+    "kicker": "MISSÃO CUMPRIDA",
+    "titulo": "Agora você sabe o que cada 007 levaria na mala.",
+    "cta": "Siga @valotaparfum para mais dicas e achados de perfumaria",
+    "nota": "Perfumes ligados aos atores segundo revistas e fãs · árabes escolhidos pela personalidade de cada Bond"
+  }
+}

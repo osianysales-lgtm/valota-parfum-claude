@@ -1,7 +1,7 @@
 - [Direção de arte do Instagram Valota](valota-instagram-direcao-de-arte.md) — sempre checar últimas 9 publicações + cadência Petróleo & Âmbar antes de criar capa
 - [Paleta oficial + cartela aprovada](paleta-50-50-cores-familia.md) — SEMPRE abrir direcao-de-arte/paleta/paleta-valota-parfum.png antes de criar conteúdo; 50% base + 50% famílias
 - [Tipografia de posts e vídeos](tipografia-posts-videos.md) — usar Montserrat (ExtraBold, Regular, Light/Thin) + Gotham em todo post/vídeo novo
-- [Nome sempre "Valota Parfum"](nome-valota-parfum.md) — nunca escrever/falar só "Valota", em nada
+- [Nome sempre "Valota Parfum"](nome-valota-parfum.md) — nunca escrever/falar só "Valota"; na VOZ pronuncia "Valota Parfã" (roteiro_voz "Valota Parfã." com PONTO, nunca "!" = soa forçado; escrita "Parfum")
 - [Controle de conteúdo 6 posts/dia](valota-parfum-controle-conteudo.md) — sistema local em Documentos + plano 10/11–09/12/2026, como usar e dados do TikTok
 - [PADRÃO de carrossel estilo tweet](valota-carrossel-tweet.md) — template + estrutura de copy aprovados; pedir print das 3 últimas publicações antes de gerar
 - [Não cortar quando cheira/mostra perfume](video-nao-cortar-cheirando-perfume.md) — conferir quadros de todo trecho removido antes de montar
@@ -13,19 +13,19 @@
 - [Copy sempre pelo squad + narração](copy-sempre-squad-e-narracao.md) — perguntar se é avatar; avatar = fala fluida, poucas pausas, vícios de linguagem naturais
 - [Feed de referência @imersaoexponencia](referencia-feed-imersaoexponencia.md) — é assim que ela quer o feed; prints em direcao-de-arte/referencias/
 - [Narração = fundo creme + âmbar](video-narracao-fundo-creme.md) — NA1 creme (v20) e NA2 âmbar (v24) intercalados; fundo claro = fontes grossas
-- [Velocidade da voz = ritmo do v28 (~4,35 palavras/s)](voz-velocidade-padrao.md) — fator muda por geração (v28 1,47x, v29 1,67x); calcular e mandar amostra; 1,15x é LENTO
+- [Velocidade da voz = 1,75x FIXO em TODOS](voz-velocidade-padrao.md) — decisão dela 14/11 (v33): não recalcular nem mandar amostra; voz 1x → final 1,75x
 - [CTA padrão 13/11: "...pra mais dicas e achados de perfumaria"](cta-final-indicacao-perfume.md) — fala "Segue a Valota Parfum pra…", legenda "Siga @valotaparfum para…"; salva (indicação/dica), compartilha (engraçado), comenta quase nunca · BONECOS: fala "parte X sai no próximo episódio aqui com a gente" (tela: "dos bonecos") + TODO pedido de seguir gera curiosidade do próximo vídeo ("aproveita e comenta": SIM no Cobrar pra cheirar, NÃO na Bidaya, decidido por saga)
-- [Legenda complementa + 1ª linha chamativa](legenda-complementa-gancho-1a-linha.md) — legenda traz algo a mais, nunca repete o vídeo; primeiras palavras fazem continuar lendo
+- [Legenda complementa + 1ª linha chamativa](legenda-complementa-gancho-1a-linha.md) — legenda traz algo a mais, nunca repete o vídeo; 1ª linha faz continuar lendo · BONECOS: abre com a polêmica real + estreia da saga + puxa comentário sobre a situação
 - [Sugestão de hashtags com nome do perfume](hashtags-sugestao-nome-perfume.md) — bloco TikTok+Instagram em toda legenda; nome de cada perfume certinho; base #perfume #perfumes #cheiroso
 - [Regra nova = só pros próximos](regra-nova-vale-pros-proximos.md) — não refazer vídeo pronto nem gastar crédito ElevenLabs/render sem ela pedir
 - [Copy fluida e conectada](copy-fluida-conectada.md) — REGRA DE TODA COPY (inclusive diálogo de bonecos e copy pronta do squad): 15–25 palavras/frase, conectivo em toda frase; conferir ANTES de gerar voz, sem ela pedir
 - [Lembrete: testar vídeo de 15–30 s](lembrete-testar-videos-curtos.md) — toda vez que 3+ vídeos seguidos forem de 50 s a 1 min, lembrar ela de testar curto
-- [Sistema de templates por formato](sistema-templates-por-formato.md) — COR VEM DO FORMATO: AV1 petróleo/AV2 react CREME, NA1 creme/NA2 âmbar, HU selo, CA1–CA3; intercalar; substitui 50/30/15/5
+- [Sistema de templates por formato](sistema-templates-por-formato.md) — 1º OLHAR O FEED: post anterior claro → este escuro (e vice-versa), vale antes da alternância · COR VEM DO FORMATO: AV1 petróleo/AV2 react CREME, NA1 creme/NA2 âmbar, HU selo, CA1–CA3; intercalar; substitui 50/30/15/5
 - [Nunca gerar HTML](nao-gerar-html.md) — copy/roteiro vai direto no chat; painel da Íris desativado (gasta muito token)
 - [Gancho escrito fixo na tela](gancho-escrito-fixo-na-tela.md) — aparece grande no 1º quadro e fica 5–10 s parado (maioria assiste no mudo)
 - [Template de veredito com selo na capa](template-veredito-selo-capa.md) — selo amarelo (vale) / Pimenta (não vale) junto do gancho ~10 s, lateral direita, v22 gen.js chave VEREDITO
-- [Variar os perfumes](variar-perfumes.md) — não repetir Sauvage/BR540/Untold/Aventus; contar menções e priorizar perfumes novos
-- [Carrossel lista por blocos](carrossel-lista-por-blocos.md) — modelo @tiagodesign.br na cartela oficial; carrossel-lista/gerar.py; 1º uso 13/11 08h (10 árabes)
+- [Variar os perfumes](variar-perfumes.md) — não repetir Sauvage/BR540/Untold/Aventus; contar menções (árabe E o nicho que ele lembra) e priorizar perfumes novos, mas que tenham anúncio no Mercado Livre
+- [Carrossel lista por blocos](carrossel-lista-por-blocos.md) — modelo @tiagodesign.br na cartela oficial; carrossel-lista/gerar.py; + gerar_ranking.py (top em série, 1 perfume/slide, 15/11)
 - [Não repetir gancho](ganchos-nao-repetir.md) — ler conhecimento/ganchos-usados.md antes; nada de 8X/18X, preço x preço, "qual é você", "3 X", "não compra"
 - [Sem "padaria" e sem borrifadas](copy-sem-padaria-sem-borrifadas.md) — doce = "sobremesa", nunca padaria (lembra pão); não usar contagem de borrifadas
 - [Linguagem leiga, sem termo técnico](linguagem-leiga-sem-termo-tecnico.md) — nada de Iso E Super/ambroxan em post; trocar por imagem do dia a dia ("cheiro fantasma", "madeira macia")
@@ -37,4 +37,46 @@
 - [Não generalizar ajuste de uma saga/peça](nao-generalizar-ajuste-de-uma-saga.md) — pedido dela vale só pro que ela está olhando; não virar regra geral nem mexer em outra saga sem perguntar
 - [Série de bonecos: 6 episódios aprovados](serie-bonecos-6-episodios.md) — roteiros FINAIS das sagas Cobrar pra cheirar + Bidaya; legenda ≤20 caracteres/linha, selo PARTE, bipe no Vanilla P*rn
 - [Direção de cena dos bonecos](bonecos-direcao-cena.md) — seguir reel referência; ação vira cena (Valdir anda e pendura a placa); info = corte pra tela 3D; nada na cara; nunca só o casco; boca sempre mexendo
-- [Backup no GitHub](backup-github.md) — repo privado osianysales-lgtm/valota-parfum-claude, colaboradora isabella612; "salva no GitHub" = ./salvar-no-github.sh, "puxa as novidades" = ./puxar-do-github.sh
+- [Backup no GitHub](backup-github.md) — repo PÚBLICO (desde 15/11) osianysales-lgtm/valota-parfum-claude, colaboradora isabella612; "salva no GitHub" = ./salvar-no-github.sh, "puxa as novidades" = ./puxar-do-github.sh
+- [Referência: adaptar, não copiar](video-referencia-adaptar-nao-copiar.md) — embaralhar ordem do reel de referência; suspense = lento desde o início, sem entrada rápida
+- [Estilo de vídeo: como antes + 1–2 fotos](video-cenas-adultas-pouco-texto.md) — frases/animação/legendas de antes, só uma foto ou outra; vídeo todo em foto = "cara de comercial" (v35)
+- [Comparativo = preço dos dois](comparativo-mostrar-preco-dos-dois.md) — 15/11: sempre mostrar os 2 preços (tela + fala) na revelação, nunca como gancho
+- [Grupo de ofertas no WhatsApp](cta-grupo-whatsapp-ofertas.md) — 15/11: CTA "Clica no link da bio pra comprar árabe original, de loja de confiança e no preço de verdade" + slogan "Sem árabe falso, sem oferta falsa"; ainda não é CTA padrão
+- [Recorte de frasco limpo](frasco-recorte-limpo.md) — sem sobra de fundo; conferir em magenta; máscara geométrica quando o fundo é colorido (v36 Heaven)
+- [CTA grupo WhatsApp de ofertas](cta-grupo-whatsapp-ofertas.md) — 15/11: legenda do v38 fecha com "criei um grupo no WhatsApp… só lojas de confiança… clica na bio e entra agora"; confirmar se vira padrão
+- [Prints de prova social legíveis](video-prints-prova-social-legiveis.md) — v39: TODOS os prints, devagar, em feed descendo (nunca empilhados), frase de insegurança no topo; início com prints reais, nada de chat simulado
+- [Formato viral: frascos só música (MES)](formato-viral-frascos-so-musica.md) — calor x frio 57,9 mil e árabe x grife c/ preço 23,2 mil (17/11); fichas 17h viraram MES; ≥1 MES/dia
+- [Letra neutra em vídeo de frascos](letra-neutra-arabe-vs-grife.md) — v54: pílula/ExtraBold = "letra bruta"; usar estilo do reel DfzhFuNzIgK, texto logo acima dos frascos; molde arabe-x-grife-maos-encontro
+- [Recorte de frasco perfeito](recorte-frasco-perfeito.md) — 18/11 v56: halo/serrilhado reprovado ("não quero vídeo mal feito"); foto boa (Fragrantica alta) + conferir cada frasco AMPLIADO antes do storyboard
+- [Abertura em 5 s, sem entregar a lista](abertura-5s-sem-entregar-lista.md) — 18/11 v56: fala antes do 1º item ≤ ~28 palavras + sem mostrar itens antes da vez · 18/11 "5 erros": SEM papinho, 1ª frase já entra no erro 1
+- [Preço = menor do Mercado Livre confiável](preco-mercado-livre-mais-barato.md) — 18/11 v56: nunca o preço da loja patrocinada da referência; MercadoLíder/loja oficial/+1000 vendas; NUNCA escrever/falar "Mercado Livre", só o preço
+- [Narração com ritmo uniforme](narracao-ritmo-uniforme.md) — 18/11 v56: frase regravada sozinha mudou o ritmo ("voz fica mais rápida"); mudou texto = regravar tudo junto; fala só o preço, sem "no Mercado Livre"
+- [Roteiro de referência = linha a linha](roteiro-referencia-linha-a-linha.md) — 18/11: "segue o roteiro dele a linha", só troca palavras + piadinhas; reescrever do zero foi reprovado 2x
+- [Vídeo: tudo encaixado e centralizado](video-layout-encaixado-centralizado.md) — 18/11 v58: lista colada na moldura e figurinhas fora do eixo = reprovado; rodar qa.js (v61) antes do render; letras nunca coladas
+- [Bonecos: absurdo → conflito → revelação → virada → piada+CTA](bonecos-estrutura-absurdo-conflito-revelacao.md) — 18/11 Bidaya episódio único: algo novo a cada segundo, humor ácido (um ignorante, outro explica), meta = compartilhar
+- [Bonecos: cena praça + pernas com joelho](bonecos-cena-praca-motor.md) — 18/11 motor: cena "praca", tapete, anda/senta/chão/deita, planos que seguem; vozes eleven_v3 natural com tags de emoção (ela aprovou); quem anda pro banco fica de costas
+- [Marca real: não inventar afirmação](marca-real-nao-inventar-afirmacao.md) — 18/11 "quem afirmou que a Bidaya fala tradição milenar?": só fato com fonte; a piada vem do personagem
+- [Vídeo mão + perfumes (Nano Banana, sem Veo)](video-mao-perfumes-fotos-nano-banana.md) — 18/11 mao-voltinha/gerar.py: fotos + tremida na troca, quadros exatos da referência, reel sem áudio
+- [Carrossel dossiê "Perfumes das celebridades 007"](carrossel-dossie-celebridades.md) — 19/11: olhar TODOS os slides da ref; sem árabe inspirado no ML = árabe com a cara da personalidade do famoso; gerar.js com layouts A/B/C
+- [Perfume da referência não achado = perguntar](perfume-referencia-nao-achado-perguntar.md) — 19/11 v60: arte de IA trocou nomes ("Paradise"=Full-House azul-claro, "Amber Elixir"=The Kingdom Lattafa); comparar frasco e perguntar antes de trocar
+- [Desenhos = ilustração da Velma, prévia em tela inteira](video-desenhos-ilustracao-velma.md) — 20/11 v62: "MELHORE OS DESENHOS / USE MOTION DESIGNER": nada de emoji em círculo; molde de ilustrações SVG no v62; storyboard mostra só o topo → mandar prévia tela inteira com avatar
+- [Vídeo de cliente: sóbrio e rosto livre](video-cliente-sobrio-sem-rosto.md) — 20/11 v63 olinda: sem marca/CTA Valota, preto+branco+dourado, nada por cima do rosto (qa_rosto.js); perguntar se é Valota ou cliente
+- [Referência: letra igual, som por posição, dedo livre](video-referencia-letra-sons-dedo.md) — 20/11 v64: não trocar a letra da ref sem ela pedir; pop nos laterais x sino no favorito; frasco nunca tampa o dedo/joinha
+- [Referência sem comentários / v65 sem preço](referencia-sem-comentarios-sem-preco-v65.md) — 20/11: nunca usar comentário do post da referência; v65 Vulcan Feu sem preço, "onde comprar" = só o grupo
+- [Bonecos polêmica = reação de quem assiste](bonecos-polemica-reacao-do-publico.md) — 21/11 "parceria paga": v1 com CONAR/influencer vilão reprovada; foco no que o público sente ao ver o aviso, sem criticar quem não sinaliza
+- [Não incentivar "cheirar antes de comprar"](nao-incentivar-cheirar-antes-de-comprar.md) — 21/11: muita gente não tem como; conselho = olhar as notas + review sincera de quem comprou
+- [Cena QUARTO no motor dos bonecos](bonecos-cena-quarto-motor.md) — 21/11 parceria paga: cama, gaveta, porta, mural de barbante; falas 19–20 sem voz (créditos ElevenLabs acabaram)
+- [Eleven v3 reprovado na voz dela](voz-eleven-v3-reprovada-narracao.md) — 21/11 v66: clone dela no v3 "não parece minha voz"; narração = multilingual_v2 sem tags, emoção por pontuação
+- [Bonecos: luz escura, sem estouro, sem piscar](bonecos-luz-escura-sem-estouro.md) — 21/11: v1 estourou/piscava (raios de sol), Rafa desbotado; quarto mais escuro; objeto citado na fala tem que aparecer
+- [Avatar review recortado, sem contorno](avatar-review-recortado-sem-contorno.md) — 21/11 v69: recorte à esquerda SEM contorno, fotos reais no fundo; frascos HD legíveis (belezanaweb/Época), não Fragrantica pequeno
+- [Carrossel "NOSSA, que perfume" (@nevesperfume)](carrossel-nossa-que-perfume.md) — 21/11: pergunta grife x resposta árabe, Bree Serif, foto dela no Museu Imperial, frascos Nano Banana sem mão
+- [Checklist bonecos ANTES do render](bonecos-checklist-antes-render.md) — 22/11 bronca "já era pra ter aprendido": rodar animador-zero/scripts/qa_bonecos.py, 1 quadro por corte; brilho igual entre cortes (= "pisca"), ninguém por cima/encostando, nada de só ombro/braço, objeto citado aparece
+- [Esquete: personagem sonsa que acha que arrasa](comedia-personagem-sonsa.md) — 22/11 reel "brasileiro médio": ela nunca percebe o desastre, lê sinal ruim como elogio; "igual do cara, sem ser tão igual, do meu jeitinho"
+- [Fim do take = braço; abertura sem picotar](video-fim-take-braco-e-cortes-calmos.md) — 22/11 v71: cortar antes do braço/pulseira indo parar a câmera; frescos com menos cortes e mais longos, última cheirada inteira, fala entra depois de pegar o frasco
+- [Texto dentro do recorte do feed + letra igual à da referência](texto-tela-feed-e-fonte-referencia.md) — 22/11 v71: texto grande entre y 260 e o rosto (grade 3:4 corta 240 px); letra CapCut/TikTok = TikTok Sans branca c/ contorno preto, em v71/fonts
+- [Disponível no Brasil = buscar em lojas BR](disponibilidade-brasil-busca-lojas-br.md) — 22/11: filtrar busca só em lojas brasileiras antes de dizer "difícil de achar"; já anunciado aqui = pode manter (Odyssey Aqua tinha)
+- [Carrossel "8 árabes pra comprar sem testar"](carrossel-8-arabes-sem-testar.md) — 22/11 ref @satefragrances DfuXYvqkYoI, sem Philos Pura/Salvo, petróleo, CTA "Quer perfume cheiroso sem pagar preço de grife? Clica no link da bio e segue a Valota Parfum"
+- [Referência "igual" = não perguntar](referencia-igual-nao-perguntar.md) — 22/11 bronca: se ela disse "igual dele", copiar textos/decisões da ref; só perguntar o que ela mandou mudar
+- [CTA de perfil: sem número falso, posts reais](cta-perfil-sem-numero-falso.md) — 22/11 v72: "000 seguidores" reprovado; 3 últimas postagens reais (Instagram ou print); música não some no CTA
+- [Template "carrossel em vídeo" = fundo v53](template-carrossel-em-video-v53.md) — 22/11: "nosso template/notas no fundo estilo carrossel" em vídeo = petróleo + fumaça + notas flutuando (7 Club de Nuit); molde em output/v73
+- [Capa com foto dela = frasco em pé](capa-foto-dela-frasco-em-pe.md) — 22/11 v74: foto flat-lay → recortar frasco, pôr em pé no centro sobre a foto desfocada, chamada centralizada no topo; foto deitada + texto à esquerda reprovada

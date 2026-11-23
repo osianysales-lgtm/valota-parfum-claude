@@ -1,0 +1,4 @@
+[0-4.6] Este es para el frío, este es para el calor, pero este es para todo el año.
+[4.4-9.1] Este es para el frío, este es para el calor, pero este es para todo el año.
+[8.9-13.6] Este es para el frío, este es para el calor, pero este es para todo el año.
+[13.4-18.05] Este es para el frío, este es para el calor, pero este es para todo el año.

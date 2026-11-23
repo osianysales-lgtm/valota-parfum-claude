@@ -1,0 +1,141 @@
+{
+ "slides": [
+  {
+   "pct": "1%",
+   "foto": "fotos/harvey-01-caneca.jpg",
+   "pos": "82% 30%",
+   "pessoa": "fotos/harvey-01-caneca-recorte.png",
+   "p_alt": 1060,
+   "p_x": 580,
+   "p_y": 140,
+   "h": 235,
+   "frascos": [
+    "frascos/fahrenheit.png",
+    "frascos/kouros.png",
+    "frascos/malbec.png",
+    "frascos/quasar.png",
+    "frascos/malbec-sport.png",
+    "frascos/silver-scent-intense.png"
+   ],
+   "ang": 50,
+   "y_meio": 720
+  },
+  {
+   "pct": "25%",
+   "foto": "fotos/harvey-25-terno-bege.jpg",
+   "pos": "30% 30%",
+   "pessoa": "fotos/harvey-25-terno-bege-recorte.png",
+   "p_alt": 930,
+   "p_x": 540,
+   "p_y": 190,
+   "h": 245,
+   "frascos": [
+    "frascos/le-male.png",
+    "frascos/acqua-di-gio.png",
+    "frascos/essencial-unico.png",
+    "frascos/capri-in-love.png",
+    "frascos/asad-bourbon.png"
+   ],
+   "ang": 40,
+   "y_meio": 720
+  },
+  {
+   "pct": "50%",
+   "sub": "quase lá",
+   "foto": "fotos/harvey-50-risca.jpg",
+   "pos": "50% 30%",
+   "pessoa": "fotos/harvey-50-risca-recorte.png",
+   "p_alt": 900,
+   "p_x": 540,
+   "p_y": 150,
+   "brilho": 0.5,
+   "h": 235,
+   "frascos": [
+    "frascos/sauvage.png",
+    "frascos/le-male-le-parfum.png",
+    "frascos/malbec-gold.png",
+    "frascos/essencial-sentir.png",
+    "frascos/9pm.png",
+    "frascos/fakhar-black.png"
+   ],
+   "ang": 50,
+   "y_meio": 720
+  },
+  {
+   "pct": "75%",
+   "sub": "falta pouco",
+   "foto": "fotos/harvey-75-retrato-pb.jpg",
+   "pos": "50% 20%",
+   "pessoa": "fotos/harvey-75-retrato-pb-recorte.png",
+   "p_alt": 1150,
+   "p_x": 540,
+   "p_y": 170,
+   "brilho": 0.7,
+   "h": 200,
+   "frascos": [
+    "frascos/man-in-black.png",
+    "frascos/myslf.png",
+    "frascos/le-male-elixir.png",
+    "frascos/light-blue-intense.png",
+    "frascos/adg-parfum.png",
+    "frascos/dylan-blue.png",
+    {
+     "src": "frascos/rayhaan-obsidian.png",
+     "brilho": 1.6
+    },
+    "frascos/stronger-with-you-parfum.png",
+    "frascos/aventus.png"
+   ],
+   "ang": 58,
+   "y_meio": 720
+  },
+  {
+   "pct": "100%",
+   "sub": "nível hard",
+   "foto": "fotos/harvey-100-terno.jpg",
+   "pos": "50% 20%",
+   "pessoa": "fotos/harvey-100-terno-inteira.png",
+   "p_alt": 1150,
+   "p_x": 540,
+   "p_y": 20,
+   "brilho": 0.6,
+   "h": 182,
+   "frascos": [
+    "frascos/nishane-hacivat.png",
+    "frascos/born-in-roma-intense.png",
+    "frascos/pacific-chill.png",
+    "frascos/noir-extreme.png",
+    "frascos/sospiro-basso.png",
+    "frascos/god-of-fire.png",
+    "frascos/gentleman-reserve-privee.png",
+    {
+     "src": "frascos/hawas-black.png",
+     "esc": 1.06,
+     "brilho": 1.7
+    },
+    "frascos/dior-homme-intense.png",
+    "frascos/bleu-de-chanel.png",
+    {
+     "src": "frascos/code-parfum.png",
+     "esc": 2.05
+    }
+   ],
+   "ang": 62,
+   "y_meio": 720,
+   "p_oval": true,
+   "y_extra": 1092
+  }
+ ],
+ "cta": {
+  "foto": "fotos/harvey-100-terno.jpg",
+  "pos": "center 25%",
+  "titulo": "Salva pra\n**não esquecer**",
+  "texto": "e segue a **@valotaparfum**\npra mais dicas e achados\nde perfumaria",
+  "avatar": "fotos/perfil-avatar.jpg",
+  "feed": [
+   "fotos/feed-1.png",
+   "fotos/feed-2.png",
+   "fotos/feed-3.png"
+  ]
+ }
+}

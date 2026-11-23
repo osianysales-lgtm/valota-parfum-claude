@@ -117,3 +117,7 @@ Leva gente ao perfil: quem viu a Parte 1 vai procurar a 2. **A Parte 2 sai no m�
 **Legenda da Parte 2:** Parte 1 no perfil 👆 Siga @valotaparfum para mais dicas e achados de perfumaria.
 
 Dica: no TikTok, crie uma playlist "Testes Valota Parfum" com as séries. No Instagram, fixe a Parte 1 da série mais forte do mês.
+
+## Pronúncia + CTA do grupo (Osiany, 16/11/2026)
+- Na FALA o nome é **"Valota Parfã"** (escrever assim no roteiro_voz.txt). Na tela/legenda continua "Valota Parfum".
+- CTA do grupo (vídeo de indicação): "Quer esses perfumes originais com preço bom? Entra no meu grupo de perfumes no WhatsApp, o link tá na bio, e segue a Valota Parfã pra mais dicas e achados de perfumaria." Tela: ENTRA NO MEU GRUPO / O LINK TÁ NA BIO.

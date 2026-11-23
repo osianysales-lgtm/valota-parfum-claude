@@ -30,11 +30,11 @@ const r3 = x => Math.round(x * 1000) / 1000;
 function palavrasDe(al, desloc) {
   const out = []; let at = null;
   al.characters.forEach((c, i) => {
-    if (/\s/.test(c)) { if (at) { out.push(at); at = null; } return; }
+    if (/\s/.test(c)) { if (at) { if (!/^\[.*\]$/.test(at.word)) out.push(at); at = null; } return; }   // 18/11: tags do v3 ([gasps]...) nao viram palavra
     if (!at) at = { word: '', start: r3(desloc + al.character_start_times_seconds[i]), end: 0 };
     at.word += c; at.end = r3(desloc + al.character_end_times_seconds[i]);
   });
-  if (at) out.push(at);
+  if (at && !/^\[.*\]$/.test(at.word)) out.push(at);
   return out;
 }
 
@@ -67,15 +67,16 @@ function envelope(ff, arquivo) {
   for (const [i, f] of D.falas.entries()) {
     const per = D.personagens[f.quem] || {};
     const voz = !per.voz || per.voz === 'osiany' ? cfg.voice_id : per.voz;
-    const ajustes = { ...cfg.ajustes, ...(per.ajustes || {}) };
+    const MOD = D.modelo || cfg.modelo;   // 18/11: dialogo.json pode pedir outro modelo (ex.: eleven_v3, que entende [whispers], [gasps]...)
+    const ajustes = D.modelo ? { ...(per.ajustes || {}) } : { ...cfg.ajustes, ...(per.ajustes || {}) };
     if (per.velocidade) ajustes.speed = per.velocidade;
     if (f.ajustes) Object.assign(ajustes, f.ajustes);   // ajuste so desta fala (ex.: mais devagar/estavel pra ficar clara)
-    const chave = crypto.createHash('md5').update(JSON.stringify([f.texto, voz, ajustes, cfg.modelo])).digest('hex').slice(0, 8);
+    const chave = crypto.createHash('md5').update(JSON.stringify([f.texto, voz, ajustes, MOD])).digest('hex').slice(0, 8);
     const base = path.join(dirFalas, `${String(i + 1).padStart(2, '0')}_${f.quem}_${chave}`);
     if (!fs.existsSync(base + '.json')) {
       console.log(`[Diálogo] ${f.quem}: "${f.texto}"`);
       const r = await chamar(`/v1/text-to-speech/${voz}/with-timestamps?output_format=mp3_44100_128`, {
-        text: f.texto, model_id: cfg.modelo, language_code: 'pt', voice_settings: ajustes,
+        text: f.texto, model_id: MOD, language_code: 'pt', voice_settings: ajustes,
       });
       fs.writeFileSync(base + '.mp3', Buffer.from(r.audio_base64, 'base64'));
       fs.writeFileSync(base + '.json', JSON.stringify(r.normalized_alignment && !r.alignment ? r.normalized_alignment : r.alignment));

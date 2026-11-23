@@ -31,3 +31,5 @@ Referência: reel de onde ela comprou a skill Animador Zero — instagram.com/re
 **Why:** ela viu os 6 primeiros episódios e reclamou: boca fechada falando, card sobre o rosto da Bia, plano só da cabeça, coisa surgindo do nada ("coisa de preguiçoso", "faz isso virar realmente uma história"). A tentativa de pôr o card no topo da tela também foi reprovada.
 
 **How to apply:** em todo roteiro.js de boneco, transformar cada explicação em ação encenada ou corte pra tela 3D; gerar folha de prévia (um quadro de cada plano) e mandar pra ela aprovar ANTES de renderizar. Backup do motor antes dos ajustes: ~/.claude/skills/animador-zero/backup-antes-ajuste-cabeca-telas-1411/. Ver [[serie-bonecos-6-episodios]], [[serie-bonecos-vozes-elenco]], [[serie-bonecos-3d-episodios]].
+
+**21/11 (episódio parceria paga):** ela não gostou do cenário de ESCRITÓRIO ("não achei legal da outra vez"). Pediu o QUARTO do Rafa, com a Bia chegando como amiga. O quarto tem que ser "bem legível": cama, café na mão e objetos de quarto. Objetos de cena (barbante, fotos na parede) precisam de uma tour clara, foto por foto, pra dar pra acompanhar o que ele faz.

@@ -1,0 +1,41 @@
+PROMPT FIXO · ÁRABE X GRIFE · MÃOS SE ENCONTRANDO (v54)
+
+COMO USAR (toda vez):
+1. Abrir um CHAT NOVO no Gemini.
+2. Anexar 3 imagens nesta ordem:
+   - imagem 1 = 01-maahir-honor-x-torino-21.jpg (SEMPRE ela, nunca a última gerada)
+   - imagem 2 = foto do frasco ÁRABE
+   - imagem 3 = foto do frasco de GRIFE
+3. Colar o prompt abaixo trocando só [ÁRABE] e [GRIFE].
+
+----------------------------------------------------------------
+Edite a imagem 1. Ela é a base e deve continuar igual: mesmo cenário, mesma janela com a lua, mesma mulher de costas, mesmo abajur, mesma poltrona, mesma mesa redonda de madeira, mesma luz, mesmas cores, mesmo enquadramento, mesmas duas mãos na mesma posição e frascos no mesmo tamanho e no mesmo lugar.
+
+Troque apenas os dois perfumes:
+- O frasco da esquerda passa a ser o [ÁRABE], idêntico ao da imagem 2: mesmo formato, cor, tampa, rótulo, letras e proporção.
+- O frasco da direita passa a ser o [GRIFE], idêntico ao da imagem 3: mesmo formato, cor, tampa, rótulo, letras e proporção.
+
+Regras das mãos:
+- A mão masculina da esquerda segura o frasco de verdade, com os dedos passando pela frente e pela lateral do frasco, e o frasco não pode parecer colado na frente da mão.
+- A mão feminina da direita segura o frasco pela lateral, sem cobrir nenhuma letra do rótulo.
+- As duas mãos levam os frascos ao encontro um do outro no centro da mesa, quase encostando.
+- Pele das mãos lisa, nítida e realista, sem pixel, sem quadriculado, sem blocos e sem borrão.
+
+Regras do rótulo:
+- O nome de cada perfume tem que ficar inteiro, legível e escrito exatamente como nas fotos, sem letra inventada, trocada ou cortada.
+
+Qualidade: foto realista, nítida em alta resolução, com reflexo suave dos frascos na madeira e luz quente do abajur nos frascos.
+Formato vertical 3:4. Não escreva nenhum texto novo, não coloque logo e não coloque marca d'água.
+----------------------------------------------------------------
+
+SE ERRAR (no mesmo chat, uma correção por vez):
+- Mão quadriculada: "Refaça com a mesma composição, mas com as mãos totalmente nítidas e lisas, sem pixel nem quadriculado."
+- Frasco colado: "Faça os dedos da mão esquerda passarem pela frente do frasco, segurando de verdade."
+- Rótulo errado/cortado: "Corrija o rótulo do frasco da [esquerda/direita] para ficar idêntico à imagem [2/3], com o nome inteiro e visível."
+- Cenário mudou: "Volte o cenário para ficar idêntico à imagem 1, mudando só os frascos."
+
+ANTES DE MANDAR PRO CLAUDE, CONFERIR:
+[ ] mãos lisas (dar zoom no polegar e no punho)
+[ ] dedos na frente do frasco da esquerda
+[ ] nome dos 2 perfumes inteiro e certo
+[ ] cenário igual ao da 01

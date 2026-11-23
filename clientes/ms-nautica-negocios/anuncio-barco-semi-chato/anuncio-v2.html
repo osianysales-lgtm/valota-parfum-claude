@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=block" rel="stylesheet">
+<style>
+@font-face{font-family:"GothamBlack";src:url("file:///Users/osianysales/Library/Fonts/Gotham%20Black.otf")}
+:root{--navy:#0A2247;--navy2:#061631;--green:#2FA84F;--lime:#8CC63F}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1254px;height:1254px;overflow:hidden;position:relative;font-family:Montserrat,sans-serif;color:var(--navy);background:#000}
+.foto{position:absolute;inset:0;width:1254px;height:1254px;filter:saturate(1.06) contrast(1.03)}
+svg.camada{position:absolute;inset:0;width:1254px;height:1254px}
+
+/* topo */
+.logo{position:absolute;left:66px;top:46px;width:300px;mix-blend-mode:multiply;filter:contrast(1.3) brightness(1.08)}
+.kicker{position:absolute;left:72px;top:166px;font-weight:800;font-style:italic;font-size:42px;color:var(--green);letter-spacing:-.005em}
+.h1{position:absolute;left:64px;top:216px;font-family:GothamBlack,Montserrat;font-size:110px;line-height:.93;letter-spacing:-.028em;
+  text-transform:uppercase;color:var(--navy)}
+.h1 .m{position:relative;z-index:0;display:inline-block}
+.h1 .m::before{content:"";position:absolute;z-index:-1;left:-10px;right:-12px;bottom:6px;height:34px;background:var(--lime);
+  transform:skewX(-16deg);opacity:.95}
+.atrib{position:absolute;left:72px;top:448px;display:flex;gap:22px;font-weight:700;font-size:18.5px;letter-spacing:.05em;text-transform:uppercase;color:#1E3A62}
+.atrib span{display:flex;align-items:center;gap:10px}
+.atrib i{width:9px;height:9px;background:var(--green);transform:rotate(45deg)}
+
+/* selo condição especial */
+.selo{position:absolute;right:58px;top:52px;width:196px;height:196px}
+
+/* faixa de baixo */
+.col-e{position:absolute;left:70px;top:792px;color:#fff}
+.tag{display:inline-flex;align-items:center;gap:10px;font-weight:900;font-size:22px;letter-spacing:.12em;text-transform:uppercase;
+  padding:10px 18px;border-radius:4px}
+.tag.lima{background:var(--lime);color:var(--navy2)}
+.tag.vazada{border:2px solid rgba(255,255,255,.75);color:#fff;padding:8px 16px}
+.prod{margin-top:16px;font-weight:800;font-size:33px;line-height:1.1}
+.prod span{font-weight:500;opacity:.85}
+.apartir{margin-top:14px;font-weight:700;font-style:italic;font-size:30px;color:var(--lime)}
+.valor{display:flex;align-items:flex-start;font-family:GothamBlack,Montserrat;line-height:.84;margin-top:2px}
+.valor .rs{font-size:50px;margin:14px 10px 0 0}
+.valor .n{font-size:150px;letter-spacing:-.04em}
+.valor .c{font-size:50px;margin:14px 0 0 4px}
+
+.div{position:absolute;left:712px;top:800px;width:2px;height:250px;background:rgba(255,255,255,.16)}
+.col-d{position:absolute;left:752px;top:792px;width:440px;color:#fff}
+.col-d .t{margin-top:16px;font-family:GothamBlack,Montserrat;font-size:44px;line-height:.98;text-transform:uppercase;letter-spacing:-.01em}
+.col-d .s{margin-top:10px;font-weight:600;font-size:25px;opacity:.9}
+.col-d .q{margin-top:18px;display:inline-block;font-weight:900;font-size:21px;letter-spacing:.12em;text-transform:uppercase;color:var(--navy2);
+  background:#fff;padding:10px 18px;border-radius:4px}
+.col-d .q b{color:var(--green)}
+
+.cta{position:absolute;left:70px;top:1098px;display:flex;align-items:center;gap:20px;background:var(--green);color:#fff;
+  height:104px;padding:0 40px 0 26px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.cta svg{width:58px;height:58px}
+.cta small{display:block;font-size:18px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;opacity:.95}
+.cta strong{display:block;font-size:46px;font-weight:900;line-height:1.02;letter-spacing:.005em}
+.local{position:absolute;left:752px;top:1110px;color:#fff;display:flex;gap:16px;align-items:center}
+.local svg{width:34px;height:44px;flex:none}
+.local b{display:block;font-size:27px;font-weight:800}
+.local span{font-size:21px;font-weight:500;opacity:.85}
+.nota{position:absolute;left:70px;right:60px;bottom:20px;font-size:16px;color:rgba(255,255,255,.55)}
+</style></head>
+<body>
+<img class="foto" src="assets/arte-original.jpg">
+
+<!-- céu claro (cobre a arte antiga) + faixa marinho -->
+<svg class="camada" viewBox="0 0 1254 1254">
+  <defs>
+    <linearGradient id="ceu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6FAFD"/><stop offset=".7" stop-color="#EAF2F8"/><stop offset="1" stop-color="#DCE9F2"/>
+    </linearGradient>
+    <radialGradient id="sol" cx="0.08" cy="0.55" r="0.5"><stop offset="0" stop-color="#FFF6DD" stop-opacity=".9"/><stop offset="1" stop-color="#FFF6DD" stop-opacity="0"/></radialGradient>
+    <filter id="pena" x="-10%" y="-10%" width="120%" height="140%"><feGaussianBlur stdDeviation="11"/></filter>
+    <linearGradient id="mar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0D2C57"/><stop offset=".35" stop-color="#0A2247"/><stop offset="1" stop-color="#061631"/>
+    </linearGradient>
+    <filter id="sombra"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+  <g filter="url(#pena)">
+    <path d="M-40 -40 H1300 V412 C1240 418 1150 412 1060 408 C960 404 900 402 860 396 C800 380 760 378 720 392 C690 420 680 470 668 548 C600 584 400 584 200 584 C100 584 20 586 -40 588 Z" fill="url(#ceu)"/>
+  </g>
+  <path d="M-40 -40 H1300 V380 C1100 380 900 372 800 350 C740 340 690 360 668 420 C660 480 640 540 560 556 C380 566 120 566 -40 568 Z" fill="url(#sol)" opacity=".6"/>
+
+  <!-- sombra + faixa -->
+  <path d="M0 742 C220 730 420 724 600 734 C760 744 980 768 1254 752 V1254 H0 Z" fill="#000" opacity=".35" filter="url(#sombra)"/>
+  <path d="M0 738 C220 726 420 720 600 730 C760 740 980 764 1254 748 V1254 H0 Z" fill="url(#mar)"/>
+  <path d="M0 738 C220 726 420 720 600 730 C760 740 980 764 1254 748" fill="none" stroke="#8CC63F" stroke-width="5"/>
+
+  <!-- ligações: preço → barco da frente ; conjunto → carreta -->
+  <g stroke="#fff" stroke-width="2.5" fill="none">
+    <path d="M300 790 L300 676"/>
+    <path d="M940 790 L940 612"/>
+  </g>
+  <g>
+    <circle cx="300" cy="670" r="17" fill="#8CC63F" opacity=".35"/><circle cx="300" cy="670" r="9" fill="#8CC63F" stroke="#fff" stroke-width="3"/>
+    <circle cx="940" cy="606" r="17" fill="#fff" opacity=".35"/><circle cx="940" cy="606" r="9" fill="#fff" stroke="#0A2247" stroke-width="3"/>
+  </g>
+</svg>
+
+<img class="logo" src="assets/logo.png" alt="">
+
+<!-- selo -->
+<svg class="selo" viewBox="0 0 200 200">
+  <defs><path id="circ" d="M100 100 m-74 0 a74 74 0 1 1 148 0 a74 74 0 1 1 -148 0"/></defs>
+  <circle cx="100" cy="100" r="98" fill="#0A2247"/>
+  <circle cx="100" cy="100" r="56" fill="none" stroke="#8CC63F" stroke-width="2" opacity=".6"/>
+  <text font-family="Montserrat" font-weight="800" font-size="15.5" letter-spacing="3.1" fill="#fff"><textPath href="#circ">CONDIÇÃO ESPECIAL • TEMPO LIMITADO •</textPath></text>
+  <circle cx="100" cy="104" r="30" fill="none" stroke="#8CC63F" stroke-width="6"/>
+  <rect x="94" y="62" width="12" height="9" rx="2" fill="#8CC63F"/>
+  <path d="M100 104 V86 M100 104 L113 112" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+</svg>
+
+<div class="kicker">Chega de pescar</div>
+<div class="h1">no barco<br><span class="m">dos outros.</span></div>
+<div class="atrib"><span><i></i>Alumínio de alta qualidade</span><span><i></i>Estrutura reforçada</span></div>
+
+<!-- preço: SÓ O BARCO -->
+<div class="col-e">
+  <div class="tag lima">Só o barco</div>
+  <div class="prod">Semi-chato <span>de 5 a 6 metros</span></div>
+  <div class="apartir">a partir de</div>
+  <div class="valor"><span class="rs">R$</span><span class="n">8.990</span><span class="c">,00</span></div>
+</div>
+
+<div class="div"></div>
+
+<!-- conjunto -->
+<div class="col-d">
+  <div class="tag vazada">Também temos</div>
+  <div class="t">Conjunto<br>completo</div>
+  <div class="s">Barco + motor + carreta</div>
+  <div class="q">Valor <b>sob consulta</b></div>
+</div>
+
+<div class="cta">
+  <svg viewBox="0 0 52 52"><path d="M26 4a21 21 0 0 0-18.2 31.5L5 47l11.8-2.7A21 21 0 1 0 26 4z" fill="none" stroke="#fff" stroke-width="3.4" stroke-linejoin="round"/>
+    <path d="M19.2 15.5c.6 0 1.1.1 1.5 1l2 4.7c.2.5.1 1-.2 1.4l-1.6 1.9c-.3.4-.3.9 0 1.3a17 17 0 0 0 6.6 6.3c.4.2.9.2 1.2-.2l1.8-2c.4-.4.9-.5 1.4-.3l4.5 2.1c.5.2.8.8.7 1.3-.3 2.5-2.5 4.6-5.2 4.6C24.3 37.6 14.6 28 14.6 20.3c0-2.6 2-4.8 4.6-4.8z" fill="#fff"/></svg>
+  <div><small>Chama no WhatsApp</small><strong>(67) 99923-3636</strong></div>
+</div>
+<div class="local">
+  <svg viewBox="0 0 34 44"><path d="M17 2C8.7 2 2 8.6 2 16.8 2 28 17 42 17 42s15-14 15-25.2C32 8.6 25.3 2 17 2z" fill="none" stroke="#8CC63F" stroke-width="3"/><circle cx="17" cy="17" r="5.5" fill="#8CC63F"/></svg>
+  <div><b>Fátima do Sul · MS</b><span>Atendemos toda a região</span></div>
+</div>
+<div class="nota">*R$ 8.990,00 refere-se somente ao barco semi-chato, sem motor e sem carreta. Imagem ilustrativa.</div>
+</body></html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:MX;src:url(fontes/Montserrat-ExtraBold.ttf)}
+@font-face{font-family:MBo;src:url(fontes/Montserrat-Bold.ttf)}
+@font-face{font-family:MB;src:url(fontes/Montserrat-Black.ttf)}
+@font-face{font-family:MV;src:url(fontes/Montserrat-VariableFont_wght.ttf)}
+@font-face{font-family:GB;src:url(fontes/GothamBlack.otf)}
+:root{--pet:#0F2E33;--luz:#1A4A52;--amb:#D49A4E;--cre:#F2E8D8;--ama:#FFC93C;--noite:#0A1F23}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#020708}
+#tudo{position:absolute;inset:0}
+/* fundo MAIS ESCURO (pedido: igual ao do Club de Nuit, v53 rev. 2): petróleo → noite → preto */
+#bg{position:absolute;inset:0;background:radial-gradient(70% 42% at 50% 36%,#123c43 0%,#0A1F23 42%,#04100f 72%,#010405 100%)}
+.fm{position:absolute;-webkit-mask-size:100% 100%}
+#fm1{left:-300px;top:-150px;width:1700px;height:1500px;-webkit-mask-image:url(fumaca/fumaca_a.png);background:#5f8f88;opacity:.12}
+#fm2{left:-400px;top:300px;width:1800px;height:1500px;-webkit-mask-image:url(fumaca/fumaca_b.png);background:var(--amb);opacity:.12}
+#fm3{left:-250px;top:800px;width:1600px;height:1200px;-webkit-mask-image:url(fumaca/fumaca_a.png);background:var(--cre);opacity:.05}
+#notas{position:absolute;inset:0}
+#notas img{position:absolute;filter:blur(2.2px) saturate(.85) brightness(.9)}
+#vin{position:absolute;inset:0;background:radial-gradient(80% 58% at 50% 42%,rgba(0,0,0,0) 50%,rgba(0,0,0,.78) 100%)}
+#moldura{position:absolute;left:16px;top:16px;right:16px;bottom:16px;border:2px solid rgba(212,154,78,.32);border-radius:36px;pointer-events:none}
+#stage{position:absolute;left:0;top:0;width:1080px;height:1920px;transform-origin:540px 700px}
+.e{position:absolute;opacity:0;display:none}
+.e img{display:block}
+/* capa (igual à capa aprovada) */
+#capa{position:absolute;inset:0;overflow:hidden;background:#050B0D}
+#cbg{position:absolute;inset:-80px;background:url(capa/foto.jpg) center 30%/cover;filter:blur(44px) brightness(.38) saturate(.35)}
+#cfoto{position:absolute;left:110px;top:540px;width:860px;transform-origin:540px 1000px;
+ -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 9%,#000 93%,transparent 100%),linear-gradient(90deg,transparent 0,#000 13%,#000 87%,transparent 100%);-webkit-mask-composite:source-in}
+#ctopo{position:absolute;left:0;right:0;top:0;height:900px;background:linear-gradient(180deg,#040A0C 0,#040A0Cf0 26%,#0A1F23cc 40%,#0A1F2300 62%)}
+#cvin{position:absolute;inset:0;background:radial-gradient(ellipse 85% 70% at 50% 58%,transparent 55%,#000a 100%)}
+#cbase{position:absolute;left:0;right:0;bottom:0;height:300px;background:linear-gradient(0deg,#03080A 0,#03080A00 100%)}
+#ctxt{position:absolute;left:0;right:0;top:258px;text-align:center}
+.cl1{display:flex;align-items:center;justify-content:center;gap:26px}
+.cn{font-family:MV;font-weight:900;font-size:214px;line-height:.82;background:linear-gradient(180deg,#FFE9B8 0,#F2C978 40%,#D49A4E 72%,#A86F2C 100%);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 6px 18px #000c)}
+.cw{text-align:left;font-family:MV;font-weight:900;color:var(--cre);font-size:90px;line-height:.95;letter-spacing:-1px;text-shadow:0 5px 22px #000e}
+.cmom{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:16px;font-family:MX;font-size:60px;letter-spacing:9px;color:var(--cre);text-shadow:0 4px 18px #000e}
+.cmom i{display:block;width:90px;height:4px;background:linear-gradient(90deg,#D49A4E00,#D49A4E)}.cmom i:last-child{transform:scaleX(-1)}
+.cpil{display:inline-block;margin-top:16px;padding:12px 34px 14px;border-radius:60px;background:var(--ama);color:var(--noite);font-family:MX;font-size:44px;letter-spacing:.5px;box-shadow:0 8px 26px #0009}
+/* cabeçalho do lugar */
+.rank{left:0;right:0;text-align:center;font-family:GB;color:var(--cre);font-size:64px;letter-spacing:10px;text-shadow:0 6px 24px rgba(0,0,0,.6)}
+.rank b{font-family:MV;font-weight:900;font-size:150px;letter-spacing:0;vertical-align:-18px;margin-right:22px;background:linear-gradient(180deg,#FFE9B8 0,#F2C978 40%,#D49A4E 72%,#A86F2C 100%);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 6px 18px #000c)}
+.nome{left:0;right:0;text-align:center;font-family:GB;font-size:66px;line-height:1.05;color:var(--cre);text-shadow:0 5px 0 rgba(0,0,0,.4),0 10px 26px rgba(0,0,0,.5)}
+.marca{left:0;right:0;text-align:center;font-family:MBo;font-size:30px;letter-spacing:12px;color:var(--amb)}
+.glow{width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,rgba(212,154,78,.34) 0%,rgba(212,154,78,.10) 40%,rgba(212,154,78,0) 68%)}
+.fr img{filter:drop-shadow(0 26px 30px rgba(0,0,0,.7))}
+.gr{text-align:center;width:330px}
+.gr .chip{display:inline-block;white-space:nowrap;font-family:MB;font-size:24px;letter-spacing:4px;color:var(--noite);background:var(--cre);border-radius:999px;padding:9px 22px 7px}
+.gr b{display:block;font-family:GB;font-size:36px;color:var(--cre);margin-top:14px;line-height:1.05}
+.gr small{display:block;font-family:MBo;font-size:21px;letter-spacing:6px;color:var(--amb);margin-top:6px}
+.gr img{margin:18px auto 0;filter:drop-shadow(0 18px 24px rgba(0,0,0,.65)) brightness(.95)}
+.nt{text-align:center;width:180px}
+.nt .ib{height:120px;display:flex;align-items:flex-end;justify-content:center}
+.nt img{max-width:150px;max-height:120px;filter:drop-shadow(0 12px 18px rgba(0,0,0,.55))}
+.nt .lab{margin-top:10px;font-family:MB;font-size:21px;letter-spacing:2px;color:var(--cre);line-height:1.15;text-shadow:0 3px 10px rgba(0,0,0,.6)}
+.tag{font-family:MB;font-size:30px;border-radius:999px;padding:14px 30px 12px;white-space:nowrap;text-align:center;display:inline-block;line-height:1.1}
+.tag.out{color:var(--cre);border:3px solid var(--amb);background:rgba(5,15,16,.7)}
+.tag.cre{color:var(--noite);background:var(--cre);box-shadow:0 8px 22px rgba(0,0,0,.4)}
+.tag.ama{color:var(--noite);background:var(--ama);box-shadow:0 0 34px rgba(255,201,60,.35),0 8px 22px rgba(0,0,0,.35)}
+.tag small{display:block;font-family:MBo;font-size:15px;letter-spacing:3px;margin-top:3px;opacity:.75}
+.foto{padding:12px 12px 14px;background:var(--cre);border-radius:18px;box-shadow:0 24px 50px rgba(0,0,0,.6)}
+.foto img{width:330px;height:413px;object-fit:cover;border-radius:10px}
+.print{padding:14px;background:#fff;border-radius:26px;box-shadow:0 22px 46px rgba(0,0,0,.6)}
+.print img{width:600px;border-radius:14px}
+.sil img{filter:brightness(0) drop-shadow(0 0 2px rgba(242,232,216,.9)) drop-shadow(0 0 26px rgba(212,154,78,.55))}
+.q{left:0;right:0;text-align:center;font-family:GB;font-size:300px;color:var(--amb);text-shadow:0 10px 40px rgba(0,0,0,.6)}
+.mini{text-align:center}
+.mini img{margin:0 auto;filter:drop-shadow(0 14px 18px rgba(0,0,0,.6))}
+.mini b{display:block;font-family:MV;font-weight:900;font-size:44px;margin-top:10px;background:linear-gradient(180deg,#FFE9B8,#D49A4E 70%,#A86F2C);-webkit-background-clip:text;color:transparent}
+.mini.apag img{filter:grayscale(.6) brightness(.55) drop-shadow(0 14px 18px rgba(0,0,0,.6))}
+/* legenda discreta (pegada v56) */
+#leg{position:absolute;left:50px;right:50px;top:1468px;height:90px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;text-align:center}
+#leg span{font-family:MV;font-weight:600;font-size:42px;color:var(--cre);margin:0 7px;display:inline-block;text-shadow:0 3px 12px rgba(0,0,0,.9),0 0 3px rgba(0,0,0,.8)}
+#leg span.h{color:var(--ama);font-weight:800}
+#leg .cx{display:inline-block;padding:8px 26px 10px;border-radius:22px}
+#leg.nacapa .cx{background:rgba(4,12,14,.93);box-shadow:0 10px 30px rgba(0,0,0,.55);border:2px solid rgba(212,154,78,.35)}
+#cortina{position:absolute;left:-260px;top:-60px;width:1600px;height:2000px;-webkit-mask-image:url(fumaca/fumaca_b.png);-webkit-mask-size:100% 100%;background:#9fb8b3;opacity:0}
+#cortina2{position:absolute;left:-200px;top:0;width:1500px;height:1900px;-webkit-mask-image:url(fumaca/fumaca_a.png);-webkit-mask-size:100% 100%;background:var(--amb);opacity:0}
+</style></head><body>
+<div id="tudo">
+<div id="bg"></div><div id="fm1" class="fm"></div><div id="fm2" class="fm"></div><div id="fm3" class="fm"></div>
+<div id="notas"></div><div id="vin"></div>
+<div id="stage"></div>
+<div id="capa"><div id="cbg"></div><img id="cfoto" src="capa/foto.jpg"><div id="cvin"></div><div id="ctopo"></div><div id="cbase"></div>
+ <div id="ctxt"><div class="cl1"><div class="cn">4</div><div class="cw">ÁRABES MAIS<br>HYPADOS</div></div>
+ <div class="cmom"><i></i>DO MOMENTO<i></i></div><div class="cpil">o hype é verdade?</div></div></div>
+<div id="cortina"></div><div id="cortina2"></div>
+<div id="leg"></div>
+<div id="moldura"></div>
+</div>
+<script>
+/*DADOS*/
+const D=window.D,K=D.K,S=D.S,$=s=>document.querySelector(s),stage=$('#stage');
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),eo=p=>1-Math.pow(1-p,3);
+const back=p=>{const c=1.7;p=cl(p);return 1+(c+1)*Math.pow(p-1,3)+c*Math.pow(p-1,2)};
+const L=window.__L=[];
+function E(html,css,t0,t1,fx='pop',extra={}){const d=document.createElement('div');d.className='e '+(extra.cls||'');d.innerHTML=html;Object.assign(d.style,css||{});stage.appendChild(d);const o={d,t0,t1,fx,...extra};L.push(o);return o}
+const pos=(x,y,extra={})=>Object.assign({left:x+'px',top:y+'px'},extra);
+const centro=(y,extra={})=>Object.assign({left:'0',right:'0',top:y+'px',textAlign:'center'},extra);
+const AR={elite:446/736,fahad:420/1073,fuego:442/709,cedrus:496/717,wildvetiver:558/1002,myslf:217/747,cedarchic:739/1420};
+const frasco=(nome,cx,yb,h,t0,t1,fx='pop',ex={})=>{const w=Math.round(h*AR[nome]);return E(`<img src="frascos/final/${nome}.png" style="width:${w}px;height:${h}px">`,pos(cx-w/2,yb-h),t0,t1,fx,{cls:'fr '+(ex.cls||''),...ex})};
+
+// ---------- os 4 perfumes (dados do carrossel: notas, ocasião, fixação; preço = Mercado Livre 21/11)
+const PF=[
+ {k:'e',rank:'4º',nome:'CLUB DE NUIT ÉLITE',marca:'ARMAF',img:'elite',t0:S.s4,t1:S.s3,
+  g:'wildvetiver',gnome:'WILD VETIVER',gmarca:'CREED',chip:'LEMBRA O',tl:K.e_lembra,gfim:K.e_calor,
+  notas:[['bergamota','BERGAMOTA',K.e_berg],['rosa','ROSA',K.e_berg+0.2],['groselha','GROSELHA PRETA',K.e_gros],['vetiver','VETIVER',K.e_vet],['cedro','CEDRO',K.e_vet+0.25]],
+  pills:[['CALOR E DIA A DIA',K.e_calor,'cre'],['+8H DE FIXAÇÃO',K.e_hora,'out'],['≈ R$ 380',K.e_preco,'ama']],fm:'#4f8a82'},
+ {k:'f',rank:'3º',nome:'FAHAD',marca:'LATTAFA',img:'fahad',t0:S.s3,t1:S.grupo,
+  g:'myslf',gnome:'MYSLF',gmarca:'YVES SAINT LAURENT',chip:'LEMBRA O',tl:K.f_lembra,gfim:99,
+  notas:[['tangerina','CÍTRICOS',K.f_citr],['abacaxi','ABACAXI',K.f_abac],['flor_laranjeira','FLOR DE LARANJEIRA',K.f_flor],['cedro','CEDRO',K.f_flor+0.45],['incenso','INCENSO',K.f_inc]],
+  pills:[['QUALQUER OCASIÃO',K.f_ocas,'cre'],['+7H30 DE FIXAÇÃO',K.f_hora,'out'],['≈ R$ 320',K.f_preco,'ama']],fm:'#D49A4E'},
+ {k:'u',rank:'2º',nome:'CLUB DE NUIT<br>INTENSO FUEGO',marca:'ARMAF',img:'fuego',t0:S.s2,t1:S.ponta,
+  g:'myslf',gnome:'MYSLF',gmarca:'YVES SAINT LAURENT',chip:'LEMBRA O MESMO',tl:K.u_lembra,gfim:99,
+  notas:[['abacaxi','ABACAXI',K.u_abac],['toranja','CÍTRICOS',K.u_abac+0.22],['pimenta','PIMENTA',K.u_pim],['baunilha','BAUNILHA',K.u_baun],['mel','MEL',K.u_mel]],
+  pills:[['DIA E NOITE',K.u_dia,'cre'],['+9H DE FIXAÇÃO',K.u_hora,'out'],['≈ R$ 430',K.u_preco,'ama']],fm:'#E0A040'},
+ {k:'c',rank:'1º',nome:'CEDRUS BLANC',marca:'RAYHAAN',img:'cedrus',t0:S.s1,t1:S.hype,
+  g:'cedarchic',gnome:'CEDAR CHIC',gmarca:'CAROLINA HERRERA',chip:'LEMBRA O',tl:K.c_lembra,gfim:99,
+  notas:[['laranja','LARANJA',K.c_lar],['bergamota','BERGAMOTA',K.c_berg],['cedro','CEDRO',K.c_cedro]],
+  pills:[['LIMPO E CÍTRICO',K.c_limpo,'cre'],['+8H30 DE FIXAÇÃO',K.c_hora,'out'],['≈ R$ 310',K.c_preco,'ama']],fm:'#F2E8D8'}];
+
+const BGPOS=[[-50,170,290],[810,150,270],[-70,720,250],[835,690,280],[20,1230,230],[830,1200,250]];
+const bgNotas=[];
+const addBg=(lista,t0,t1)=>BGPOS.forEach(([x,y,w],i)=>{const im=document.createElement('img');im.src=`notas/${lista[i%lista.length]}.png`;im.style.left=x+'px';im.style.top=y+'px';im.style.width=w+'px';im.style.opacity=0;$('#notas').appendChild(im);bgNotas.push({im,t0,t1,ph:i*1.3+t0})});
+
+PF.forEach(p=>{
+ const {t0,t1}=p;
+ addBg(p.notas.map(n=>n[0]),t0,p.k==='c'?S.cta:t1);
+ E(`<b>${p.rank}</b>LUGAR`,{top:'92px'},t0,t1,'up',{cls:'rank'});
+ const duas=p.nome.includes('<br>');
+ E(p.nome,{top:'274px',fontSize:duas?'58px':'66px'},t0+0.12,t1,'up',{cls:'nome'});
+ E(p.marca,{top:duas?'404px':'358px'},t0+0.2,t1,'fade',{cls:'marca'});
+ const yb=1000,cx=p.k==='f'?400:390;
+ E('',pos(cx-380,yb-680),t0,t1,'fade',{cls:'glow',pulse:1,nq:1});
+ frasco(p.img,cx,yb,p.k==='f'?600:(p.k==='c'?520:(p.k==='u'?530:560)),t0+0.15,t1,'pop');
+ const gh=p.g==='myslf'?330:340,gw=Math.round(gh*AR[p.g]);
+ E(`<span class="chip">${p.chip}</span><b>${p.gnome}</b><small>${p.gmarca}</small><img src="frascos/final/${p.g}.png" style="width:${gw}px;height:${gh}px">`,pos(650,470),p.tl,Math.min(t1,p.gfim),'pop',{cls:'gr'});
+ // notas da frente (linha)
+ const n=p.notas.length,esp=190,x0=540-(n*esp)/2;
+ p.notas.forEach(([img,lab,t],i)=>E(`<div class="ib"><img src="notas/${img}.png"></div><div class="lab">${lab}</div>`,pos(x0+i*esp+5,1062),t,t1,'pop',{cls:'nt'}));
+ // pílulas: ocasião (linha 1, centro) · fixação + preço (linha 2, lado a lado)
+ p.pills.forEach(([tx,t,c],i)=>{let st;
+  if(i===0)st=centro(1252);else if(i===1)st={top:'1334px',right:'552px'};else st={top:'1334px',left:'552px'};
+  const fim=(p.k==='c'&&i===0)?K.c_camisa:t1;
+  E(`<span class="tag ${c}">${tx}${c==='ama'?'<small>MERCADO LIVRE</small>':''}</span>`,st,t,fim,'pop')});
+});
+// 4º: foto real no "perfeito pro calor" (troca o card da grife)
+E('<img src="fotos/calor.jpg">',pos(628,490,{transform:'rotate(4deg)'}),K.e_calor,S.s3,'pop',{cls:'foto',rot:4});
+// 1º: cheiro de camisa de lavanderia
+E('<span class="tag cre" style="font-size:28px">CHEIRO DE CAMISA RECÉM-LAVADA</span>',centro(1252),K.c_camisa,S.hype,'pop');
+
+// ---------- CTA do grupo (no meio)
+addBg(['bergamota','abacaxi','incenso','vetiver','flor_laranjeira','groselha'],S.grupo,S.s2);
+E('GRUPO DE OFERTAS',{top:'120px',fontSize:'74px'},S.grupo,S.s2,'up',{cls:'nome'});
+E('NO WHATSAPP',{top:'214px'},S.grupo+0.15,S.s2,'fade',{cls:'marca'});
+E('<img src="grupo.png">',pos(226,300),S.grupo+0.3,S.s2,'pop',{cls:'print'});
+E('<span class="tag cre">PERFUME ORIGINAL</span>',centro(820),K.g_orig,S.s2,'pop');
+E('<span class="tag cre">LOJA DE CONFIANÇA</span>',centro(915),K.g_conf,S.s2,'pop');
+E('<span class="tag cre">PREÇO DE VERDADE</span>',centro(1010),K.g_verd,S.s2,'pop');
+E('<span class="tag ama" style="font-family:GB;font-size:56px;padding:20px 54px 16px">LINK NA BIO</span>',centro(1140),K.g_link,S.s2,'stamp');
+
+// ---------- ponta solta: o 1º não tem nada de doce
+E('<b>1º</b>LUGAR',{top:'92px'},S.ponta,S.s1,'up',{cls:'rank'});
+E('',pos(10,330),S.ponta,S.s1,'fade',{cls:'glow',pulse:1,nq:1});
+frasco('cedrus',390,1000,560,S.ponta+0.1,S.s1,'pop',{cls:'sil'});
+E('?',{top:'430px'},S.ponta+0.3,S.s1,'pop',{cls:'q'});
+E('<span class="tag ama" style="font-family:GB;font-size:52px;padding:18px 46px 14px">NADA DE DOCE</span>',centro(1050,{transform:'rotate(-4deg)'}),K.p_doce,S.s1,'stamp',{rot:-4});
+[['fuego','2º',300],['fahad','3º',540],['elite','4º',780]].forEach(([f,r,cx],i)=>{const h=f==='fahad'?190:160,w=Math.round(h*AR[f]);
+ E(`<img src="frascos/final/${f}.png" style="width:${w}px;height:${h}px"><b>${r}</b>`,pos(cx-90,1415-h-60,{width:'180px'}),K.p_ganhar+i*0.12,S.s1,'pop',{cls:'mini apag'})});
+// os 3 aparecem embaixo → o frasco "?" sobe um pouco
+// ---------- hype: esse sim merece
+addBg(['laranja','bergamota','cedro'],S.hype,S.cta);
+E('',pos(160,280),S.hype,S.cta,'fade',{cls:'glow',pulse:1,nq:1});
+frasco('cedrus',540,1000,660,S.hype,S.cta,'pop');
+E('<span class="tag ama" style="font-family:GB;font-size:58px;padding:20px 48px 16px">ESSE MERECE O HYPE</span>',centro(1060,{transform:'rotate(-4deg)'}),K.h_merece,S.cta,'stamp',{rot:-4});
+E('<span class="tag out" style="font-size:34px">"QUAL AMACIANTE VOCÊ USA?"</span>',centro(1230),K.h_perg,S.cta,'up');
+E('CEDRUS BLANC',{top:'150px',fontSize:'72px'},S.hype+0.1,S.cta,'up',{cls:'nome'});
+E('RAYHAAN',{top:'240px'},S.hype+0.2,S.cta,'fade',{cls:'marca'});
+
+// ---------- CTA final
+addBg(['cedro','abacaxi','bergamota','incenso','vetiver','laranja'],S.cta,D.END+1);
+E('<span class="tag ama" style="font-size:46px;padding:20px 46px 16px">SALVA PRA NÃO ESQUECER</span>',centro(250),K.salva,D.END+1,'pop');
+E('<span class="tag cre" style="font-size:42px">SEGUE A VALOTA PARFUM</span>',centro(390),K.segue,D.END+1,'pop');
+E('@valotaparfum',{top:'500px',fontSize:'34px',letterSpacing:'3px'},K.arroba,D.END+1,'fade',{cls:'marca'});
+[['elite','4º',150,300],['fuego','2º',405,350],['cedrus','1º',675,400],['fahad','3º',930,350]].forEach(([f,r,cx,h],i)=>{const w=Math.round(h*AR[f]);
+ E(`<img src="frascos/final/${f}.png" style="width:${w}px;height:${h}px"><b>${r}</b>`,pos(cx-Math.max(w+10,160)/2,1260-h-60,{width:Math.max(w+10,160)+'px'}),K.salva+0.15+i*0.1,D.END+1,'pop',{cls:'mini'})});
+
+// ---------- render
+const SC=[['capa',0,S.s4],['s4',S.s4,S.s3],['s3',S.s3,S.grupo],['grupo',S.grupo,S.s2],['s2',S.s2,S.ponta],['ponta',S.ponta,S.s1],['s1',S.s1,S.hype],['hype',S.hype,S.cta],['cta',S.cta,D.END+1]];
+const FMC={s4:'#4f8a82',s3:'#D49A4E',grupo:'#D49A4E',s2:'#E0A040',ponta:'#D49A4E',s1:'#F2E8D8',hype:'#F2E8D8',cta:'#D49A4E',capa:'#D49A4E'};
+const leg=$('#leg');let legAtual=-1;
+window.render=function(t){
+ for(const o of L){
+  const vis=t>=o.t0&&t<o.t1;const pin=cl((t-o.t0)/0.38),pout=cl((t-(o.t1-0.2))/0.2);
+  if(!vis){o.d.style.opacity=0;o.d.style.display='none';continue}
+  o.d.style.display='block';
+  let op=1,tr='';
+  switch(o.fx){
+   case 'pop':op=cl(pin*2.2);tr=`scale(${(0.6+0.4*back(pin)).toFixed(4)})`;break;
+   case 'up':op=eo(pin);tr=`translateY(${(34*(1-eo(pin))).toFixed(1)}px)`;break;
+   case 'fade':op=eo(pin);break;
+   case 'stamp':{const p=cl((t-o.t0)/0.26);op=cl(p*3);tr=`scale(${(1.6-0.6*eo(p)).toFixed(4)})`;break}
+   case 'none':op=1;break;
+  }
+  op*=1-pout;
+  if(o.rot!=null)tr+=` rotate(${o.rot}deg)`;
+  if(o.pulse)tr+=` scale(${(1+0.04*Math.sin(t*2.4)).toFixed(4)})`;
+  o.d.style.opacity=op.toFixed(3);o.d.style.transform=tr;
+ }
+ // capa: parada no 1º quadro, zoom lento; some na cortina
+ const cf=cl((t-S.s4+0.25)/0.5);$('#capa').style.opacity=(1-cf).toFixed(3);$('#capa').style.display=cf>=1?'none':'block';
+ $('#cfoto').style.transform=`scale(${(1+0.035*cl(t/S.s4)).toFixed(4)})`;
+ // fumaça andando devagar, tingida pela família do perfume da vez
+ const sc=SC.find(s=>t>=s[1]&&t<s[2])||SC[0];
+ $('#fm2').style.background=FMC[sc[0]];
+ $('#fm1').style.transform=`translate(${(60*Math.sin(t*0.11)).toFixed(1)}px,${(-30*t/60).toFixed(1)}px) rotate(${(3*Math.sin(t*0.07)).toFixed(2)}deg)`;
+ $('#fm2').style.transform=`translate(${(-80*Math.sin(t*0.09+1)).toFixed(1)}px,${(-50*t/60).toFixed(1)}px)`;
+ $('#fm3').style.transform=`translate(${(70*Math.sin(t*0.13+2)).toFixed(1)}px,${(-40*t/60).toFixed(1)}px)`;
+ // notas de fundo do perfume da vez: flutuam na fumaça
+ bgNotas.forEach(({im,t0,t1,ph})=>{const a=cl((t-t0)/0.6)*(1-cl((t-t1+0.3)/0.3));im.style.opacity=(0.30*a).toFixed(3);
+  im.style.transform=`translate(${(14*Math.sin(t*0.55+ph)).toFixed(1)}px,${(18*Math.sin(t*0.42+ph*1.7)).toFixed(1)}px) rotate(${(6*Math.sin(t*0.3+ph)).toFixed(2)}deg)`});
+ // câmera: leve aproximação em cada cena
+ stage.style.transform=`scale(${(1+0.022*cl((t-sc[1])/10)).toFixed(4)})`;
+ // cortina de fumaça na troca de cena
+ let cv=0,cx=0;for(const tt of [S.s4,S.s3,S.grupo,S.s2,S.ponta,S.s1,S.hype,S.cta]){const p=(t-tt+0.45)/0.9;if(p>0&&p<1){cv=Math.sin(Math.PI*p);cx=-500+1000*p}}
+ $('#cortina').style.opacity=(0.7*cv).toFixed(3);$('#cortina').style.transform=`translateX(${cx.toFixed(1)}px)`;
+ $('#cortina2').style.opacity=(0.45*cv).toFixed(3);$('#cortina2').style.transform=`translateX(${(-cx*0.6).toFixed(1)}px)`;
+ // legenda discreta
+ const gi=D.LEG.findIndex(g=>t>=g.t0&&t<g.t1);
+ if(gi!==legAtual){legAtual=gi;leg.innerHTML=gi<0?'':'<div class="cx">'+D.LEG[gi].p.map(w=>`<span class="${w.h?'h':''}">${w.w}</span>`).join('')+'</div>'}
+ leg.classList.toggle('nacapa',t<S.s4-0.1);
+ if(gi>=0){const p=t<S.s4-0.1?1:cl((t-D.LEG[gi].t0)/0.15);leg.style.opacity=p;leg.style.transform=`translateY(${(8*(1-eo(p))).toFixed(1)}px)`}else leg.style.opacity=0;
+};
+window.render(0);
+</script></body></html>
