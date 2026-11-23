@@ -39,3 +39,10 @@ __pycache__/
 **/carrosseis/**/*.jpg
 **/carrosseis/**/*.jpeg
 *.log
+
+# --- fora do GitHub público (23/11/2026) ---
+# gravações da voz dela
+/osiany.m4a
+/Nova Grava*.m4a
+# trabalhos de clientes
+/clientes/
