@@ -1,0 +1,211 @@
+{
+ "topo": "BLACK FRIDAY · PARTE 1",
+ "rodape": "@valotaparfum",
+ "acento": "amarelo",
+ "capa": {
+  "linha1": "PARTE 1 · OS 5 ÁRABES",
+  "destaque": "BLACK",
+  "linha3": "que **valem o desconto**",
+  "frasco": "frascos/liquid.png",
+  "tam1": 64
+ },
+ "perfumes": [
+  {
+   "posicao": "1",
+   "nome": "Liquid Brun",
+   "fundo": "petroleo",
+   "chip": {
+    "familia": "ambar",
+    "icone": "chama",
+    "rotulo": "DOCE QUENTINHO"
+   },
+   "frasco": "frascos/liquid.png",
+   "ingredientes": [
+    {
+     "img": "ing/canela.png",
+     "x": -46,
+     "y": 428,
+     "w": 160,
+     "rot": -14
+    },
+    {
+     "img": "ing/baunilha.png",
+     "x": 290,
+     "y": 450,
+     "w": 140,
+     "rot": 8
+    }
+   ],
+   "lembra_marca": "Parfums de Marly",
+   "lembra": "Althaïr",
+   "tag": "casa de nicho francesa",
+   "notas": [
+    "canela",
+    "baunilha",
+    "praliné"
+   ],
+   "usa": "**Usa:** noite, frio e encontro",
+   "descricao": "Aquele doce quentinho de **canela com baunilha** que faz todo mundo chegar mais perto, e o Althaïr que ele lembra custa **bem mais caro**."
+  },
+  {
+   "posicao": "2",
+   "nome": "Asad Bourbon",
+   "fundo": "creme",
+   "chip": {
+    "familia": "cedro",
+    "icone": "semente",
+    "rotulo": "CACAU E BAUNILHA"
+   },
+   "frasco": "frascos/asadbourbon.png",
+   "ingredientes": [
+    {
+     "img": "ing/cacau.png",
+     "x": -46,
+     "y": 428,
+     "w": 160,
+     "rot": -10
+    },
+    {
+     "img": "ing/lavanda.png",
+     "x": 320,
+     "y": 477,
+     "w": 110,
+     "rot": 14
+    }
+   ],
+   "lembra_marca": "Azzaro",
+   "lembra": "The Most Wanted",
+   "tag": "grife francesa",
+   "notas": [
+    "cacau",
+    "baunilha",
+    "lavanda"
+   ],
+   "usa": "**Usa:** frio, noite e date",
+   "descricao": "**Cacau com baunilha** e um toque de lavanda: é doce sem enjoar e agrada quase todo mundo, por isso é um ótimo **presente**."
+  },
+  {
+   "posicao": "3",
+   "nome": "9pm",
+   "fundo": "petroleo",
+   "chip": {
+    "familia": "pimenta",
+    "icone": "chama",
+    "rotulo": "DOCE DE BALADA"
+   },
+   "frasco": "frascos/9pm.png",
+   "ingredientes": [
+    {
+     "img": "ing/maca.png",
+     "x": -46,
+     "y": 428,
+     "w": 160,
+     "rot": -8
+    },
+    {
+     "img": "ing/canela.png",
+     "x": 290,
+     "y": 450,
+     "w": 140,
+     "rot": 12
+    }
+   ],
+   "lembra_marca": "Jean Paul Gaultier",
+   "lembra": "Ultra Male",
+   "tag": "grife francesa",
+   "notas": [
+    "maçã",
+    "canela",
+    "baunilha"
+   ],
+   "usa": "**Usa:** balada e noite",
+   "descricao": "O **docinho de maçã com canela** de um dos vídeos que mais rodaram aqui no perfil, porque ninguém acredita que não é o **Ultra Male**."
+  },
+  {
+   "posicao": "4",
+   "nome": "Supremacy Collector's",
+   "fundo": "creme",
+   "chip": {
+    "familia": "bergamota",
+    "icone": "citrico",
+    "rotulo": "FRUTADO ELEGANTE"
+   },
+   "frasco": "frascos/supremacy.png",
+   "ingredientes": [
+    {
+     "img": "ing/abacaxi.png",
+     "x": -46,
+     "y": 428,
+     "w": 160,
+     "rot": -10
+    },
+    {
+     "img": "ing/bergamota.png",
+     "x": 290,
+     "y": 450,
+     "w": 140,
+     "rot": 8
+    }
+   ],
+   "lembra_marca": "Creed",
+   "lembra": "Absolu Aventus",
+   "tag": "casa de nicho",
+   "notas": [
+    "abacaxi",
+    "bergamota",
+    "musgo"
+   ],
+   "usa": "**Usa:** dia, trabalho e calor",
+   "descricao": "O **queridinho mais recente** da Afnan: abre com abacaxi fresquinho e fica elegante, com cara de **perfume de rico**."
+  },
+  {
+   "posicao": "5",
+   "nome": "Hawas Black",
+   "fundo": "petroleo",
+   "chip": {
+    "familia": "menta",
+    "icone": "gota",
+    "rotulo": "FRESCO MARCANTE"
+   },
+   "frasco": "frascos/hawas.png",
+   "ingredientes": [
+    {
+     "img": "ing/toranja.png",
+     "x": -46,
+     "y": 428,
+     "w": 160,
+     "rot": -10
+    },
+    {
+     "img": "ing/abacaxi.png",
+     "x": 290,
+     "y": 450,
+     "w": 140,
+     "rot": 10
+    }
+   ],
+   "lembra_marca": "Nishane",
+   "lembra": "Hacivat",
+   "tag": "casa de nicho turca",
+   "notas": [
+    "abacaxi",
+    "toranja",
+    "musgo"
+   ],
+   "usa": "**Usa:** dia a dia e trabalho",
+   "descricao": "É o meu: foi com ele que **uma pessoa me parou na rua** só pra perguntar o nome do perfume."
+  }
+ ],
+ "final": {
+  "tipo": "seguir",
+  "kicker": "PARTE 2 · NO PRÓXIMO POST",
+  "titulo": "E PRA ELA?",
+  "surpresas": [
+   "🎀",
+   "🎀",
+   "🎀"
+  ],
+  "previa": "Na parte 2 vêm os **presentes pra namorada e esposa**, e um deles lembra um clássico da **Chanel** 👀",
+  "cta": "**Segue a Valota Parfum** pra não perder a parte 2 e mais achados de perfumaria."
+ }
+}

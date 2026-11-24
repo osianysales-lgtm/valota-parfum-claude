@@ -15,6 +15,7 @@ Quem usa esta skill normalmente não sabe programar. Fale em português simples,
 2. **Nada é renderizado sem a pessoa ver a prévia.** O render inteiro leva minutos; a prévia leva segundos.
 3. **Diga a verdade sobre o resultado.** Se a transcrição errou uma palavra, se um plano ficou estranho, se algo falhou, avise. Não prometa views nem ganhos.
 4. **Sem marcas de terceiros.** Não coloque logos de empresas, marcas ou personagens de outras pessoas nas telas do vídeo. O robô é um personagem original; pode ser chamado de "Claude" nas falas e legendas, mas não use o logo da Anthropic.
+5. **Legenda é obrigatória.** Todo vídeo com fala sai com legenda na tela, do começo ao fim de cada fala. Confira na prévia e no vídeo final; sem legenda não entrega.
 
 ## Onde ficam as coisas
 

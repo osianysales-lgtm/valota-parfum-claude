@@ -65,7 +65,7 @@ def slide_perfume(d, p, base):
   </div>
   <div style="display:flex;flex-direction:column;justify-content:space-between;padding:6px 0">
     <div>
-      <div class="rot">LEMBRA</div>
+      <div class="rot">{html.escape(p.get('rot_lembra', 'LEMBRA'))}</div>
       <div class="nicho">{html.escape(p['lembra_marca'])}<strong>{html.escape(p['lembra'])}</strong></div>
       <div class="tag">{html.escape(p['tag'])}</div>
     </div>

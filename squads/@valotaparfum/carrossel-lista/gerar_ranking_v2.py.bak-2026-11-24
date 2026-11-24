@@ -1,0 +1,111 @@
+#!/usr/bin/env python3
+"""Carrossel RANKING v2 (23/11/2026, "deixa mais bonito"): mesmo JSON do gerar_ranking.py, com
+- ingredientes recortados apoiados no cartão do frasco (campo "ingredientes": [{"img","x","y","w","rot"}],
+  x/y em px a partir do canto superior esquerdo do cartão 420x590; pode vazar da borda);
+- medidor de FIXAÇÃO de 12 tracinhos (campo "fixacao": horas cheias, "fixacao_txt": rótulo, ex. "+12h");
+- notas em linha, frase final em bloco com barra de destaque, brilho atrás do frasco.
+Uso: python3 gerar_ranking_v2.py carrosseis/<nome>/carrossel.json
+"""
+import html
+import json
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import gerar as g  # noqa: E402
+import gerar_ranking as r  # noqa: E402
+import capa_variantes  # noqa: E402
+
+CSS_V2 = """<style>
+.pos{font-size:230px;font-weight:900;font-style:italic;line-height:.82;letter-spacing:-.04em;position:relative;padding-right:58px}
+.anel{position:absolute;right:0;top:8px;width:46px;height:46px;border-radius:50%;border:12px solid currentColor}
+.cab{position:absolute;left:96px;right:80px;top:150px;display:flex;align-items:flex-end;gap:34px}
+.cab .chips{margin-bottom:16px}
+.cab h2{font-size:62px;line-height:1.02;margin:0}
+.grade2{position:absolute;left:96px;right:80px;top:420px;display:grid;grid-template-columns:420px 1fr;gap:48px;align-items:stretch}
+.cartao{height:590px;border-radius:36px;position:relative;overflow:visible}
+.cartao .luz{position:absolute;inset:0;border-radius:36px;overflow:hidden}
+.cartao .luz:before{content:"";position:absolute;left:50%;top:44%;width:560px;height:560px;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(255,250,240,.75) 0%,rgba(255,250,240,0) 62%)}
+.cartao .luz:after{content:"";position:absolute;left:0;right:0;bottom:0;height:38%;background:linear-gradient(180deg,rgba(10,31,35,0),rgba(10,31,35,.16))}
+.cartao .fr{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);max-width:300px;max-height:430px;object-fit:contain;filter:drop-shadow(0 26px 24px rgba(10,31,35,.42))}
+.cartao .ing{position:absolute;object-fit:contain;filter:drop-shadow(0 16px 18px rgba(10,31,35,.45))}
+.rot{font-size:22px;font-weight:800;letter-spacing:.22em;opacity:.6;margin-bottom:10px}
+.nicho{font-size:42px;font-weight:500;line-height:1.08}
+.nicho strong{font-weight:900;display:block}
+.tag{display:inline-block;margin-top:12px;font-size:23px;font-weight:700;padding:6px 16px;border-radius:999px;border:2px solid currentColor;opacity:.75}
+.pilulas{display:flex;flex-wrap:wrap;gap:10px}
+.pilula{font-size:27px;font-weight:800;padding:9px 20px;border-radius:999px}
+.fix{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:12px}
+.fix b{font-size:52px;font-weight:900;font-style:italic;line-height:.9;letter-spacing:-.02em}
+.barra{display:flex;gap:6px}
+.barra i{flex:1;height:26px;border-radius:7px}
+.usa{font-size:28px;font-weight:500;line-height:1.3}
+.usa strong{font-weight:800}
+.desc2{position:absolute;left:96px;right:80px;top:1062px;font-size:33px;font-weight:500;line-height:1.32;padding:4px 0 4px 30px;border-left:8px solid}
+.desc2 strong{font-weight:900}
+</style>"""
+
+
+def slide_perfume(d, p, base):
+    escuro = p["fundo"] == "petroleo"
+    txt = g.CREME if escuro else g.NOITE
+    num = g.acento(d) if escuro else g.LUZ
+    apoio = "rgba(242,232,216,.6)" if escuro else "rgba(10,31,35,.55)"
+    cor_fam, txt_fam = g.FAMILIAS[p["chip"]["familia"]]
+    borda = f"border:2px solid {g.CREME};" if (escuro and p["chip"]["familia"] in ("cedro", "pimenta")) else ""
+    destaque = g.AMARELO if escuro else g.PETROLEO
+    vazio = "rgba(242,232,216,.16)" if escuro else "rgba(10,31,35,.12)"
+    pilulas = "".join(f'<span class="pilula" style="background:{cor_fam};color:{txt_fam};{borda}">{html.escape(n)}</span>' for n in p["notas"])
+    ings = "".join(f'<img class="ing" src="{g.uri(i["img"], base)}" style="left:{i["x"]}px;top:{i["y"]}px;width:{i["w"]}px;transform:rotate({i.get("rot", 0)}deg)">'
+                   for i in p.get("ingredientes", []))
+    h = int(p.get("fixacao", 12))
+    barra = "".join(f'<i style="background:{destaque if k < h else vazio}"></i>' for k in range(12))
+    corpo = f"""{CSS_V2}
+<div class="topo" style="color:{apoio}">{html.escape(d['topo'])}</div>
+<div class="cab" style="color:{txt}">
+  <div class="pos" style="color:{num}">{html.escape(p['posicao'])}<span class="anel"></span></div>
+  <div><div class="chips">{g.chip(p['chip'], escuro)}</div><h2>{html.escape(p['nome'])}</h2></div>
+</div>
+<div class="grade2" style="color:{txt}">
+  <div class="cartao" style="background:{cor_fam};{borda}">
+    <div class="luz"></div>
+    <img class="fr" src="{g.uri(p['frasco'], base)}">
+    {ings}
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:space-between;padding:4px 0">
+    <div>
+      <div class="rot">{html.escape(p.get('rot_lembra', 'LEMBRA'))}</div>
+      <div class="nicho">{html.escape(p['lembra_marca'])}<strong>{html.escape(p['lembra'])}</strong></div>
+      <div class="tag">{html.escape(p['tag'])}</div>
+    </div>
+    <div><div class="rot">TEM CHEIRO DE</div><div class="pilulas">{pilulas}</div></div>
+    <div>
+      <div class="fix"><div class="rot" style="margin:0">FIXAÇÃO</div><b style="color:{destaque}">{html.escape(p.get('fixacao_txt', f'+{h}h'))}</b></div>
+      <div class="barra">{barra}</div>
+    </div>
+    <div class="usa">{g.rico(p['usa'])}</div>
+  </div>
+</div>
+<div class="desc2" style="color:{txt};border-color:{cor_fam}">{g.rico(p['descricao'])}</div>
+<div class="rodape" style="color:{txt}">{html.escape(d['rodape'])}</div>"""
+    return g.pagina(corpo, "grade-petroleo" if escuro else "grade-creme")
+
+
+def main():
+    arq = Path(sys.argv[1]).resolve()
+    base = arq.parent
+    d = json.loads(arq.read_text(encoding="utf-8"))
+    saida = base / "saida"
+    saida.mkdir(exist_ok=True)
+    paginas = [capa_variantes.capa_a(d["capa"], g.uri(d["capa"]["frasco"], base), g.acento(d))]
+    paginas += [slide_perfume(d, p, base) for p in d["perfumes"]]
+    f = d["final"]
+    paginas += [g.slide_final(d, f, base) if f.get("tipo") == "salvar" else r.slide_serie(d, f, base)]
+    for k, pg in enumerate(paginas, 1):
+        png = saida / f"{k:02d}.png"
+        g.render(pg, png)
+        print("ok", png)
+
+
+if __name__ == "__main__":
+    main()

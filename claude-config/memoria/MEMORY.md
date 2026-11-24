@@ -1,3 +1,4 @@
+- [LEGENDA OBRIGATÓRIA em vídeo com fala](video-com-fala-legenda-obrigatoria.md) — 23/11: Reels, narração, avatar, gravado, bonecos, cliente: TODO vídeo com qualquer fala sai com legenda na tela; conferir na prévia e no final, sem ela lembrar
 - [Direção de arte do Instagram Valota](valota-instagram-direcao-de-arte.md) — sempre checar últimas 9 publicações + cadência Petróleo & Âmbar antes de criar capa
 - [Paleta oficial + cartela aprovada](paleta-50-50-cores-familia.md) — SEMPRE abrir direcao-de-arte/paleta/paleta-valota-parfum.png antes de criar conteúdo; 50% base + 50% famílias
 - [Tipografia de posts e vídeos](tipografia-posts-videos.md) — usar Montserrat (ExtraBold, Regular, Light/Thin) + Gotham em todo post/vídeo novo
@@ -25,7 +26,7 @@
 - [Gancho escrito fixo na tela](gancho-escrito-fixo-na-tela.md) — aparece grande no 1º quadro e fica 5–10 s parado (maioria assiste no mudo)
 - [Template de veredito com selo na capa](template-veredito-selo-capa.md) — selo amarelo (vale) / Pimenta (não vale) junto do gancho ~10 s, lateral direita, v22 gen.js chave VEREDITO
 - [Variar os perfumes](variar-perfumes.md) — não repetir Sauvage/BR540/Untold/Aventus; contar menções (árabe E o nicho que ele lembra) e priorizar perfumes novos, mas que tenham anúncio no Mercado Livre
-- [Carrossel lista por blocos](carrossel-lista-por-blocos.md) — modelo @tiagodesign.br na cartela oficial; carrossel-lista/gerar.py; + gerar_ranking.py (top em série, 1 perfume/slide, 15/11)
+- [Carrossel lista por blocos](carrossel-lista-por-blocos.md) — modelo @tiagodesign.br na cartela oficial; carrossel-lista/gerar.py; + gerar_ranking.py (top em série, 1 perfume/slide) · 23/11: carrossel "de um vídeo" = estilo de carrossel DELA, nunca a arte do vídeo · 24/11: capa nunca igual às anteriores, conceito novo por tema (cupom Black aprovado)
 - [Não repetir gancho](ganchos-nao-repetir.md) — ler conhecimento/ganchos-usados.md antes; nada de 8X/18X, preço x preço, "qual é você", "3 X", "não compra"
 - [Sem "padaria" e sem borrifadas](copy-sem-padaria-sem-borrifadas.md) — doce = "sobremesa", nunca padaria (lembra pão); não usar contagem de borrifadas
 - [Linguagem leiga, sem termo técnico](linguagem-leiga-sem-termo-tecnico.md) — nada de Iso E Super/ambroxan em post; trocar por imagem do dia a dia ("cheiro fantasma", "madeira macia")
@@ -47,7 +48,7 @@
 - [Prints de prova social legíveis](video-prints-prova-social-legiveis.md) — v39: TODOS os prints, devagar, em feed descendo (nunca empilhados), frase de insegurança no topo; início com prints reais, nada de chat simulado
 - [Formato viral: frascos só música (MES)](formato-viral-frascos-so-musica.md) — calor x frio 57,9 mil e árabe x grife c/ preço 23,2 mil (17/11); fichas 17h viraram MES; ≥1 MES/dia
 - [Letra neutra em vídeo de frascos](letra-neutra-arabe-vs-grife.md) — v54: pílula/ExtraBold = "letra bruta"; usar estilo do reel DfzhFuNzIgK, texto logo acima dos frascos; molde arabe-x-grife-maos-encontro
-- [Recorte de frasco perfeito](recorte-frasco-perfeito.md) — 18/11 v56: halo/serrilhado reprovado ("não quero vídeo mal feito"); foto boa (Fragrantica alta) + conferir cada frasco AMPLIADO antes do storyboard
+- [Recorte de frasco perfeito](recorte-frasco-perfeito.md) — 3 broncas (v56, v59, v80 "recortou igual sua cara"): folha AMPLIADA no fundo do vídeo + zoom em tampas/bases ANTES do storyboard; recortar-fundo-branco.swift + defringe + alisar; grife = card branco sem recorte
 - [Abertura em 5 s, sem entregar a lista](abertura-5s-sem-entregar-lista.md) — 18/11 v56: fala antes do 1º item ≤ ~28 palavras + sem mostrar itens antes da vez · 18/11 "5 erros": SEM papinho, 1ª frase já entra no erro 1
 - [Preço = menor do Mercado Livre confiável](preco-mercado-livre-mais-barato.md) — 18/11 v56: nunca o preço da loja patrocinada da referência; MercadoLíder/loja oficial/+1000 vendas; NUNCA escrever/falar "Mercado Livre", só o preço
 - [Narração com ritmo uniforme](narracao-ritmo-uniforme.md) — 18/11 v56: frase regravada sozinha mudou o ritmo ("voz fica mais rápida"); mudou texto = regravar tudo junto; fala só o preço, sem "no Mercado Livre"
@@ -56,7 +57,7 @@
 - [Bonecos: absurdo → conflito → revelação → virada → piada+CTA](bonecos-estrutura-absurdo-conflito-revelacao.md) — 18/11 Bidaya episódio único: algo novo a cada segundo, humor ácido (um ignorante, outro explica), meta = compartilhar
 - [Bonecos: cena praça + pernas com joelho](bonecos-cena-praca-motor.md) — 18/11 motor: cena "praca", tapete, anda/senta/chão/deita, planos que seguem; vozes eleven_v3 natural com tags de emoção (ela aprovou); quem anda pro banco fica de costas
 - [Marca real: não inventar afirmação](marca-real-nao-inventar-afirmacao.md) — 18/11 "quem afirmou que a Bidaya fala tradição milenar?": só fato com fonte; a piada vem do personagem
-- [Vídeo mão + perfumes (Nano Banana, sem Veo)](video-mao-perfumes-fotos-nano-banana.md) — 18/11 mao-voltinha/gerar.py: fotos + tremida na troca, quadros exatos da referência, reel sem áudio
+- [Vídeo mão + perfumes (Nano Banana, sem Veo)](video-mao-perfumes-fotos-nano-banana.md) — 18/11 mao-voltinha/gerar.py (tremida) · 23/11 hawas-video/gerar.py (troca = zoom pelo frasco, NUNCA efeito por cima "cara de Word"), reel sem áudio
 - [Carrossel dossiê "Perfumes das celebridades 007"](carrossel-dossie-celebridades.md) — 19/11: olhar TODOS os slides da ref; sem árabe inspirado no ML = árabe com a cara da personalidade do famoso; gerar.js com layouts A/B/C
 - [Perfume da referência não achado = perguntar](perfume-referencia-nao-achado-perguntar.md) — 19/11 v60: arte de IA trocou nomes ("Paradise"=Full-House azul-claro, "Amber Elixir"=The Kingdom Lattafa); comparar frasco e perguntar antes de trocar
 - [Desenhos = ilustração da Velma, prévia em tela inteira](video-desenhos-ilustracao-velma.md) — 20/11 v62: "MELHORE OS DESENHOS / USE MOTION DESIGNER": nada de emoji em círculo; molde de ilustrações SVG no v62; storyboard mostra só o topo → mandar prévia tela inteira com avatar
@@ -80,3 +81,11 @@
 - [CTA de perfil: sem número falso, posts reais](cta-perfil-sem-numero-falso.md) — 22/11 v72: "000 seguidores" reprovado; 3 últimas postagens reais (Instagram ou print); música não some no CTA
 - [Template "carrossel em vídeo" = fundo v53](template-carrossel-em-video-v53.md) — 22/11: "nosso template/notas no fundo estilo carrossel" em vídeo = petróleo + fumaça + notas flutuando (7 Club de Nuit); molde em output/v73
 - [Capa com foto dela = frasco em pé](capa-foto-dela-frasco-em-pe.md) — 22/11 v74: foto flat-lay → recortar frasco, pôr em pé no centro sobre a foto desfocada, chamada centralizada no topo; foto deitada + texto à esquerda reprovada
+- [Corte com folga no fim da fala](corte-fim-da-fala-com-folga.md) — 23/11 v75: "Natura" saiu cortado; medir fim da voz em dB (< -40) + 0,25 s, conferir transcrevendo o final
+- [Compra sempre pelo link da bio](compra-sempre-pelo-link-da-bio.md) — 23/11: nunca mandar comprar em revendedora/loja/outro lugar; onde comprar = link da bio (grupo)
+- [Gancho de preço: fala abre no valor](gancho-preco-fala-abre-no-valor.md) — 23/11 v79: "até R$ 300" = 1ª palavra da narração é o valor; v79 sem preço por perfume
+- [Título de capa = lockup de luxo](capa-titulo-lockup-luxo.md) — 23/11 v80: "DE NICHO" em marca-texto amarelo = "muito amador"; aprovado fino espaçado entre filetes dourados; foto de fundo bem apagada SÓ na capa; mostrar 2–3 opções lado a lado
+- [Carrossel "4 perfumes: dia, noite, versátil, 🔞"](carrossel-4-perfumes-ocasioes.md) — 24/11 ref @ruanparfum_: v1 colorida REPROVADA ("mais parecido com o dele"); v2 = veludo petróleo + Didot + capa borrada igual à ref · SEMPRE fechar com lâmina SEGUIR (esqueci, ela cobrou; TikTok)
+- [Perfume que ela já criticou = fora da indicação](perfumes-que-ela-ja-falou-mal.md) — 24/11 Black: Eclaire fora ("já falei mal"); olhar o CONTEXTO da menção (lista de odiados/nunca use), não só a contagem
+- [Fundo com notas, nunca chapado](fundo-com-notas-nao-chapado.md) — 24/11 v81/v82: notas DE CADA perfume espalhadas no fundo, visíveis (11 posições, op. ~0,55); no petróleo nota escura leva brilho
+- [Sempre mostrar o inspirado](sempre-mostrar-inspirado.md) — 24/11 "sempre coloca os inspirados": todo perfume indicado leva card LEMBRA O (2+ fontes; sem consenso = usar o mais citado e avisar)

@@ -18,7 +18,11 @@ import tempfile
 from pathlib import Path
 
 AQUI = Path(__file__).resolve().parent
-CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+import os as _os
+CHROME = (r"C:\Program Files\Google\Chrome\Application\chrome.exe" if _os.name == "nt" else
+          _os.environ.get("CHROME") or next((c for c in [
+              "/Users/osianysales/.cache/puppeteer/chrome/mac_arm-155.0.8059.39/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing",
+              "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"] if _os.path.exists(c)), "google-chrome"))
 L, A = 1080, 1350
 MONTSERRAT = (AQUI.parent / "carrossel-tweet/fonts/Montserrat-VariableFont_wght.ttf").as_uri()
 GOTHAM = (Path.home() / "Library/Fonts/Gotham Black.otf").as_uri()
@@ -237,7 +241,7 @@ def slide_final(d, f, base):
 </div>
 
 <div style="position:absolute;left:96px;top:1120px;color:{NOITE};font-size:32px;font-weight:600;line-height:1.35;max-width:540px">
-  Fica no <strong style="font-weight:900">canto direito</strong>, embaixo do post. Depois é só abrir em <strong style="font-weight:900">Salvos</strong>.
+  {rico(f['explica']) if f.get('explica') else 'Fica no <strong style="font-weight:900">canto direito</strong>, embaixo do post. Depois é só abrir em <strong style="font-weight:900">Salvos</strong>.'}
 </div>"""
     return pagina(corpo, "", f"background:{acento(d)}")
 

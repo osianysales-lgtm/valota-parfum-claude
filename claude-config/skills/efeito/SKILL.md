@@ -66,5 +66,5 @@ Entregue com uma linha: onde está o arquivo, o que foi feito e o lembrete de as
 - O efeito é função pura do tempo: nada de `Math.random()` (use `rnd(semente)`), `Date.now()`, `setTimeout` nem estado guardado entre quadros.
 - Nunca cubra o rosto. O que precisa passar pela pessoa vai **atrás** dela: desenhe antes de `pessoa(g, k.recorte)`.
 - Não edite nada da pasta da skill. Tudo vai no `efeito.js` da pasta de trabalho.
-- Esta skill coloca só o visual. Música, legendas e efeitos sonoros ficam com ela, no editor que ela usa.
+- **Legenda é obrigatória** em vídeo com fala: se o vídeo tem fala, acrescente legenda sincronizada (transcrever o áudio) antes de entregar. Nunca entregue vídeo com fala sem legenda. Música e efeitos sonoros ficam com ela, no editor que ela usa.
 - Sem exagero na entrega: é uma primeira versão feita por IA, e a pessoa aprova antes de postar.

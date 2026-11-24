@@ -1,0 +1,136 @@
+{
+  "tipo": "motion",
+  "titulo": "v81 · Black Friday PARTE 1 · 5 masculinos (narração creme)",
+  "referencia": "squad copy-viral (gancho C) · molde v80 com frascos em card branco, tema creme",
+  "legenda": {
+    "usar": true,
+    "destaque": "nomes dos perfumes em marca-texto âmbar",
+    "palavras_chave": []
+  },
+  "cenas": [
+    {
+      "id": "capa",
+      "inicio": 0,
+      "fim": 4.913,
+      "fala": "Sexta-feira é Black Friday, então anota os cinco perfumes que eu mais indiquei aqui e que valem o desconto, nessa parte um.",
+      "ideia": "gancho",
+      "layout": "cheia",
+      "visual": "capa creme: PARTE 1 + SEXTA É / BLACK 🖤 + pílula + 5 cards \"?\" · fixa até o 1º perfume",
+      "movimento": "parada (capa do feed)",
+      "quadro": {
+        "html": "index.html",
+        "t": 0
+      }
+    },
+    {
+      "id": "l",
+      "inicio": 4.913,
+      "fim": 7.862,
+      "fala": "LIQUID BRUN",
+      "ideia": "LIQUID BRUN → lembra ALTHAÏR",
+      "layout": "cheia",
+      "visual": "card branco do árabe + card LEMBRA O + notas na palavra + notas do perfume no fundo",
+      "movimento": "pop no nome, card no LEMBRA, cortina na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 7.27
+      }
+    },
+    {
+      "id": "b",
+      "inicio": 7.862,
+      "fim": 11.528,
+      "fala": "ASAD BOURBON",
+      "ideia": "ASAD BOURBON → lembra THE MOST WANTED",
+      "layout": "cheia",
+      "visual": "card branco do árabe + card LEMBRA O + notas na palavra + notas do perfume no fundo",
+      "movimento": "pop no nome, card no LEMBRA, cortina na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 10.79
+      }
+    },
+    {
+      "id": "n",
+      "inicio": 11.528,
+      "fim": 14.213,
+      "fala": "9PM",
+      "ideia": "9PM → lembra ULTRA MALE",
+      "layout": "cheia",
+      "visual": "card branco do árabe + card LEMBRA O + notas na palavra + notas do perfume no fundo",
+      "movimento": "pop no nome, card no LEMBRA, cortina na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 13.68
+      }
+    },
+    {
+      "id": "c",
+      "inicio": 14.213,
+      "fim": 18.297,
+      "fala": "SUPREMACY COLLECTOR'S",
+      "ideia": "SUPREMACY COLLECTOR'S → lembra ABSOLU AVENTUS",
+      "layout": "cheia",
+      "visual": "card branco do árabe + card LEMBRA O + notas na palavra + notas do perfume no fundo",
+      "movimento": "pop no nome, card no LEMBRA, cortina na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 17.48
+      }
+    },
+    {
+      "id": "h",
+      "inicio": 18.297,
+      "fim": 22.978,
+      "fala": "HAWAS BLACK",
+      "ideia": "HAWAS BLACK → lembra HACIVAT",
+      "layout": "cheia",
+      "visual": "card branco do árabe + card LEMBRA O + notas na palavra + notas do perfume no fundo",
+      "movimento": "pop no nome, card no LEMBRA, cortina na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 22.04
+      }
+    },
+    {
+      "id": "cta",
+      "inicio": 22.978,
+      "fim": 29.69,
+      "fala": "CTA grupo",
+      "ideia": "grupo + presente",
+      "layout": "cheia",
+      "visual": "carimbo CUIDADO COM OFERTA FALSA + print real do grupo + LINK NA BIO + slogan + PRESENTE DE FIM DE ANO",
+      "movimento": "pop",
+      "quadro": {
+        "html": "index.html",
+        "t": 29
+      }
+    },
+    {
+      "id": "fim",
+      "inicio": 29.69,
+      "fim": 34.083,
+      "fala": "E a parte dois, com os presentes pra namorada e pra esposa, sai no próximo vídeo.",
+      "ideia": "chamada da outra parte",
+      "layout": "cheia",
+      "visual": "PARTE 2 · PRESENTES PRA NAMORADA E ESPOSA + 3 cards ? com laço",
+      "movimento": "pop",
+      "quadro": {
+        "html": "index.html",
+        "t": 33.8
+      }
+    }
+  ],
+  "audio": {
+    "narracao": "narracao_175.wav",
+    "musica": null,
+    "efeitos": "whoosh por cena, impacto no nome, brilho no card, pop nas notas, carimbo na oferta falsa, notificação no grupo"
+  },
+  "encerramento": "CTA só do grupo (link na bio) + chamada da parte 2",
+  "aprovacao": {
+    "aprovado": true,
+    "em": "2026-11-24T14:34:58.305Z",
+    "nota": "Osiany 24/11: tira o Club de Nuit da parte 1 → Supremacy Collector's (recente e elogiado)",
+    "impressao": "6db5cbeb2e5a0b64"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "tipo": "motion",
+  "titulo": "v80 · 8 árabes disfarçados de nicho (narração petróleo, molde guia-carrossel)",
+  "referencia": "reel Be Parfums Df4dHNfhuce; versão C da squad copy-viral; molde moldes/guia-carrossel-petroleo-escuro",
+  "legenda": {
+    "usar": true,
+    "destaque": "nomes dos perfumes em amarelo",
+    "palavras_chave": []
+  },
+  "cenas": [
+    {
+      "id": "capa",
+      "inicio": 0,
+      "fim": 4.184,
+      "fala": "Esses oito árabes tão se passando por perfume de nicho na cara dura, e o último disfarce engana até nariz treinado.",
+      "ideia": "gancho",
+      "layout": "cheia",
+      "visual": "capa petróleo: 8 ÁRABES / DISFARÇADOS / DE NICHO (marca-texto amarelo) + \"🕵️ e ninguém percebeu\" + 8 silhuetas com ? · fixa até o 1º perfume",
+      "movimento": "parada (capa do feed)",
+      "quadro": {
+        "html": "index.html",
+        "t": 0
+      }
+    },
+    {
+      "id": "p1",
+      "inicio": 4.184,
+      "fim": 8.694,
+      "fala": "Começando pelo Muharib, disfarçado de Naxos da Xerjoff com mel e tabaco, cheiro de herdeiro sem esperar a herança.",
+      "ideia": "Muharib → disfarçado de Naxos",
+      "layout": "cheia",
+      "visual": "selo \"🕵️ DISFARÇADOS DE NICHO\" fixo · \"1 DE 8\" + nome + marca · frasco do árabe à esquerda + card da grife com o verbo da fala à direita · notas na palavra · pílula \"HERDEIRO SEM HERANÇA\"",
+      "movimento": "pop/escala no nome, card entra no verbo, cortina de fumaça na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 6.44
+      }
+    },
+    {
+      "id": "p2",
+      "inicio": 8.694,
+      "fim": 12.581,
+      "fala": "Já o Elliur finge ser o Pacific Chill da Louis Vuitton com hortelã gelada, tipo drink na piscina do amigo rico.",
+      "ideia": "Elliur → finge ser o Pacific Chill",
+      "layout": "cheia",
+      "visual": "selo \"🕵️ DISFARÇADOS DE NICHO\" fixo · \"2 DE 8\" + nome + marca · frasco do árabe à esquerda + card da grife com o verbo da fala à direita · notas na palavra · pílula \"DRINK NA PISCINA DO AMIGO RICO\"",
+      "movimento": "pop/escala no nome, card entra no verbo, cortina de fumaça na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 10.64
+      }
+    },
+    {
+      "id": "p3",
+      "inicio": 12.581,
+      "fim": 16.485,
+      "fala": "E o Karus Gold se infiltra no Bal d'Afrique da Byredo, limpinho, cara de quem corre na orla, às seis.",
+      "ideia": "Karus Gold → se infiltra no Bal d'Afrique",
+      "layout": "cheia",
+      "visual": "selo \"🕵️ DISFARÇADOS DE NICHO\" fixo · \"3 DE 8\" + nome + marca · frasco do árabe à esquerda + card da grife com o verbo da fala à direita · notas na palavra · pílula \"LIMPINHO + CORRE NA ORLA ÀS 6H\"",
+      "movimento": "pop/escala no nome, card entra no verbo, cortina de fumaça na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 14.53
+      }
+    },
+    {
+      "id": "p4",
+      "inicio": 16.485,
+      "fim": 19.919,
+      "fala": "Depois, o Gris treinou pra ser o Himalaya da Creed, chefe que nunca grita e todo mundo obedece.",
+      "ideia": "Gris → treinou pra ser o Himalaya",
+      "layout": "cheia",
+      "visual": "selo \"🕵️ DISFARÇADOS DE NICHO\" fixo · \"4 DE 8\" + nome + marca · frasco do árabe à esquerda + card da grife com o verbo da fala à direita · notas na palavra · pílula \"NUNCA GRITA, TODO MUNDO OBEDECE\"",
+      "movimento": "pop/escala no nome, card entra no verbo, cortina de fumaça na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 18.2
+      }
+    },
+    {
+      "id": "p5",
+      "inicio": 19.919,
+      "fim": 24.979,
+      "fala": "Só que aqui o disfarce fica ousado, porque o Blind Ecstasy imita o Drunk Lovers com conhaque e já chega na festa alegrinho.",
+      "ideia": "carimbo DISFARCE OUSADO + silhueta → Blind Ecstasy imita o Drunk Lovers",
+      "layout": "cheia",
+      "visual": "selo \"🕵️ DISFARÇADOS DE NICHO\" fixo · \"5 DE 8\" + nome + marca · frasco do árabe à esquerda + card da grife com o verbo da fala à direita · notas na palavra · pílula \"CHEGA NA FESTA ALEGRINHO\"",
+      "movimento": "pop/escala no nome, card entra no verbo, cortina de fumaça na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 22.45
+      }
+    },
+    {
+      "id": "p6",
+      "inicio": 24.979,
+      "fim": 28.462,
+      "fala": "Já o Vulcan Feu se passa pelo God of Fire com manga, suco de manga de cartão black.",
+      "ideia": "Vulcan Feu → se passa pelo God of Fire",
+      "layout": "cheia",
+      "visual": "selo \"🕵️ DISFARÇADOS DE NICHO\" fixo · \"6 DE 8\" + nome + marca · frasco do árabe à esquerda + card da grife com o verbo da fala à direita · notas na palavra · pílula \"SUCO DE MANGA DE CARTÃO BLACK\"",
+      "movimento": "pop/escala no nome, card entra no verbo, cortina de fumaça na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 26.72
+      }
+    },
+    {
+      "id": "p7",
+      "inicio": 28.462,
+      "fim": 32.662,
+      "fala": "E o Maahir Honor faz o papel do Torino 21 com menta e limão, banho de hotel cinco estrelas no chuveiro de casa.",
+      "ideia": "Maahir Honor → faz o papel do Torino21",
+      "layout": "cheia",
+      "visual": "selo \"🕵️ DISFARÇADOS DE NICHO\" fixo · \"7 DE 8\" + nome + marca · frasco do árabe à esquerda + card da grife com o verbo da fala à direita · notas na palavra · pílula \"BANHO DE HOTEL 5 ESTRELAS\"",
+      "movimento": "pop/escala no nome, card entra no verbo, cortina de fumaça na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 30.56
+      }
+    },
+    {
+      "id": "p8",
+      "inicio": 32.662,
+      "fim": 37.808,
+      "fala": "Mas o mestre do disfarce é o Liquid Brun, que lembra o Althaïr da Parfums de Marly com baunilha, e se alguém desconfiar, você só sorri.",
+      "ideia": "carimbo MESTRE DO DISFARCE + silhueta → Liquid Brun lembra o Althaïr",
+      "layout": "cheia",
+      "visual": "selo \"🕵️ DISFARÇADOS DE NICHO\" fixo · \"8 DE 8\" + nome + marca · frasco do árabe à esquerda + card da grife com o verbo da fala à direita · notas na palavra · pílula \"SE DESCONFIAREM, SÓ SORRI\"",
+      "movimento": "pop/escala no nome, card entra no verbo, cortina de fumaça na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 35.23
+      }
+    },
+    {
+      "id": "cta",
+      "inicio": 37.808,
+      "fim": 44.48,
+      "fala": "Salva esse vídeo pra não esquecer. Quer ficar cheiroso sem pagar preço de grife? Segue a Valota Parfum pra mais dicas e achados de perfumaria.",
+      "ideia": "CTA salva + segue",
+      "layout": "cheia",
+      "visual": "SALVA PRA NÃO ESQUECER · CHEIRO DE NICHO SEM PREÇO DE GRIFE · SEGUE A VALOTA PARFUM · @valotaparfum · os 8 frascos",
+      "movimento": "pop em sequência",
+      "quadro": {
+        "html": "index.html",
+        "t": 41.14
+      }
+    }
+  ],
+  "audio": {
+    "narracao": "narracao_175.wav",
+    "trilha": null,
+    "efeitos": "whoosh por cena, impacto no nome, brilho no card, pop nas notas, carimbo nas pontas soltas, tilintar no drink/festa, splash no banho"
+  },
+  "encerramento": "CTA salva + segue a Valota Parfum",
+  "aprovacao": {
+    "aprovado": true,
+    "em": "2026-11-24T02:35:27.734Z",
+    "nota": "Osiany aprovou storyboard + capa B com foto do Burj mais pra cima: 'manda bala' (23/11)",
+    "impressao": "12218f64777dd7b5"
+  }
+}

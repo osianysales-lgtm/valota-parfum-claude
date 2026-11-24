@@ -1,0 +1,25 @@
+# Plano — v80 · 8 árabes disfarçados de nicho (narração petróleo, molde guia-carrossel)
+
+**Tipo:** motion
+**Referência:** reel Be Parfums Df4dHNfhuce; versão C da squad copy-viral; molde moldes/guia-carrossel-petroleo-escuro
+**Duração estimada:** 44.5s · **Cenas:** 10
+**Legenda:** destaque "nomes dos perfumes em amarelo"
+
+| cena | tempo | fala | ideia | tela | visual / movimento |
+|---|---|---|---|---|---|
+| capa | 0.0–4.2s | Esses oito árabes tão se passando por perfume de nicho na cara dura, e o último disfarce engana até nariz treinado. | gancho | cheia | capa petróleo: 8 ÁRABES / DISFARÇADOS / DE NICHO (marca-texto amarelo) + "🕵️ e ninguém percebeu" + 8 silhuetas com ? · fixa até o 1º perfume · parada (capa do feed) |
+| p1 | 4.2–8.7s | Começando pelo Muharib, disfarçado de Naxos da Xerjoff com mel e tabaco, cheiro de herdeiro sem esperar a herança. | Muharib → disfarçado de Naxos | cheia | selo "🕵️ DISFARÇADOS DE NICHO" fixo · "1 DE 8" + nome + marca · frasco do árabe à esquerda + card da grife com o verbo da fala à direita · notas na palavra · pílula "HERDEIRO SEM HERANÇA" · pop/escala no nome, card entra no verbo, cortina de fumaça na troca |
+| p2 | 8.7–12.6s | Já o Elliur finge ser o Pacific Chill da Louis Vuitton com hortelã gelada, tipo drink na piscina do amigo rico. | Elliur → finge ser o Pacific Chill | cheia | selo "🕵️ DISFARÇADOS DE NICHO" fixo · "2 DE 8" + nome + marca · frasco do árabe à esquerda + card da grife com o verbo da fala à direita · notas na palavra · pílula "DRINK NA PISCINA DO AMIGO RICO" · pop/escala no nome, card entra no verbo, cortina de fumaça na troca |
+| p3 | 12.6–16.5s | E o Karus Gold se infiltra no Bal d'Afrique da Byredo, limpinho, cara de quem corre na orla, às seis. | Karus Gold → se infiltra no Bal d'Afrique | cheia | selo "🕵️ DISFARÇADOS DE NICHO" fixo · "3 DE 8" + nome + marca · frasco do árabe à esquerda + card da grife com o verbo da fala à direita · notas na palavra · pílula "LIMPINHO + CORRE NA ORLA ÀS 6H" · pop/escala no nome, card entra no verbo, cortina de fumaça na troca |
+| p4 | 16.5–19.9s | Depois, o Gris treinou pra ser o Himalaya da Creed, chefe que nunca grita e todo mundo obedece. | Gris → treinou pra ser o Himalaya | cheia | selo "🕵️ DISFARÇADOS DE NICHO" fixo · "4 DE 8" + nome + marca · frasco do árabe à esquerda + card da grife com o verbo da fala à direita · notas na palavra · pílula "NUNCA GRITA, TODO MUNDO OBEDECE" · pop/escala no nome, card entra no verbo, cortina de fumaça na troca |
+| p5 | 19.9–25.0s | Só que aqui o disfarce fica ousado, porque o Blind Ecstasy imita o Drunk Lovers com conhaque e já chega na festa alegrinho. | carimbo DISFARCE OUSADO + silhueta → Blind Ecstasy imita o Drunk Lovers | cheia | selo "🕵️ DISFARÇADOS DE NICHO" fixo · "5 DE 8" + nome + marca · frasco do árabe à esquerda + card da grife com o verbo da fala à direita · notas na palavra · pílula "CHEGA NA FESTA ALEGRINHO" · pop/escala no nome, card entra no verbo, cortina de fumaça na troca |
+| p6 | 25.0–28.5s | Já o Vulcan Feu se passa pelo God of Fire com manga, suco de manga de cartão black. | Vulcan Feu → se passa pelo God of Fire | cheia | selo "🕵️ DISFARÇADOS DE NICHO" fixo · "6 DE 8" + nome + marca · frasco do árabe à esquerda + card da grife com o verbo da fala à direita · notas na palavra · pílula "SUCO DE MANGA DE CARTÃO BLACK" · pop/escala no nome, card entra no verbo, cortina de fumaça na troca |
+| p7 | 28.5–32.7s | E o Maahir Honor faz o papel do Torino 21 com menta e limão, banho de hotel cinco estrelas no chuveiro de casa. | Maahir Honor → faz o papel do Torino21 | cheia | selo "🕵️ DISFARÇADOS DE NICHO" fixo · "7 DE 8" + nome + marca · frasco do árabe à esquerda + card da grife com o verbo da fala à direita · notas na palavra · pílula "BANHO DE HOTEL 5 ESTRELAS" · pop/escala no nome, card entra no verbo, cortina de fumaça na troca |
+| p8 | 32.7–37.8s | Mas o mestre do disfarce é o Liquid Brun, que lembra o Althaïr da Parfums de Marly com baunilha, e se alguém desconfiar, você só sorri. | carimbo MESTRE DO DISFARCE + silhueta → Liquid Brun lembra o Althaïr | cheia | selo "🕵️ DISFARÇADOS DE NICHO" fixo · "8 DE 8" + nome + marca · frasco do árabe à esquerda + card da grife com o verbo da fala à direita · notas na palavra · pílula "SE DESCONFIAREM, SÓ SORRI" · pop/escala no nome, card entra no verbo, cortina de fumaça na troca |
+| cta | 37.8–44.5s | Salva esse vídeo pra não esquecer. Quer ficar cheiroso sem pagar preço de grife? Segue a Valota Parfum pra mais dicas e achados de perfumaria. | CTA salva + segue | cheia | SALVA PRA NÃO ESQUECER · CHEIRO DE NICHO SEM PREÇO DE GRIFE · SEGUE A VALOTA PARFUM · @valotaparfum · os 8 frascos · pop em sequência |
+
+**Áudio:** narração: narracao_175.wav · efeitos: whoosh por cena, impacto no nome, brilho no card, pop nas notas, carimbo nas pontas soltas, tilintar no drink/festa, splash no banho
+
+**Encerramento:** CTA salva + segue a Valota Parfum
+
+**Aprovado em 2026-11-24T02:35:27.734Z** — Osiany aprovou storyboard + capa B com foto do Burj mais pra cima: 'manda bala' (23/11)

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:MB;src:url(fontes/Montserrat-Black.ttf)}
+@font-face{font-family:MX;src:url(fontes/Montserrat-ExtraBold.ttf)}
+@font-face{font-family:MBo;src:url(fontes/Montserrat-Bold.ttf)}
+@font-face{font-family:GB;src:url(fontes/GothamBlack.otf)}
+:root{--pet:#0F2E33;--fundo:#0A1F23;--luz:#1A4A52;--amb:#D49A4E;--ama:#FFC93C;--cre:#F2E8D8;--pim:#D9483B}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--pet)}
+#bg{position:absolute;inset:0;background:radial-gradient(ellipse 900px 1100px at 50% 40%,var(--luz) 0%,var(--pet) 55%,var(--fundo) 100%)}
+#dots{position:absolute;inset:0;opacity:.10;background-image:radial-gradient(var(--cre) 1.6px,transparent 1.8px);background-size:34px 34px}
+.cena{position:absolute;inset:0;opacity:0;will-change:transform,opacity}
+.abs{position:absolute}
+.centro{left:0!important;right:0;text-align:center}
+/* gancho */
+#hook .tarja{position:absolute;left:0;right:0;top:290px;text-align:center}
+#hook .tarja span{display:inline-block;background:var(--pim);color:var(--cre);font-family:GB;font-size:112px;padding:14px 40px 8px;border-radius:18px;transform:rotate(-3deg);box-shadow:0 14px 30px rgba(0,0,0,.45);letter-spacing:1px}
+#hook .sub{position:absolute;left:0;right:0;top:470px;text-align:center;font-family:GB;font-size:92px;color:var(--cre);letter-spacing:2px;text-shadow:0 6px 0 rgba(0,0,0,.25)}
+#hook .chipH{position:absolute;left:0;right:0;top:598px;text-align:center}
+#hook .chipH span{display:inline-block;font-family:MX;font-size:44px;color:var(--fundo);background:var(--amb);padding:10px 30px;border-radius:60px}
+#hook .linha{position:absolute;left:48px;top:760px;width:984px;height:260px}
+#hook .selo{position:absolute;left:730px;top:1050px;opacity:0;white-space:nowrap}
+#hook .selo span{display:inline-block;font-family:GB;font-size:44px;color:var(--fundo);background:var(--ama);padding:10px 22px;border-radius:14px;transform:rotate(-6deg);box-shadow:0 8px 18px rgba(0,0,0,.4)}
+/* cabeçalho fixo */
+#topo{position:absolute;left:0;right:0;top:262px;text-align:center;opacity:0}
+#topo span{display:inline-block;font-family:GB;font-size:50px;color:var(--cre);background:var(--pim);padding:10px 28px 6px;border-radius:14px;transform:rotate(-2deg);letter-spacing:1px;box-shadow:0 10px 20px rgba(0,0,0,.35)}
+/* cards */
+.card{position:absolute;background:#fff;border-radius:30px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.45),0 0 0 5px var(--cre)}
+.card img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;transform:scale(.9)}
+.card .q{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:GB;font-size:120px;color:var(--pet);opacity:.85}
+.card .x{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:GB;font-size:170px;color:var(--pim);opacity:0}
+/* tela do perfume */
+.nome{position:absolute;left:0;right:0;top:372px;text-align:center}
+.nome i{display:block;font-style:normal;font-family:MX;font-size:38px;color:var(--amb);letter-spacing:5px}
+.nome b{display:block;font-family:GB;font-size:88px;color:var(--cre);letter-spacing:1px;line-height:1.05;margin-top:6px}
+.tag{position:absolute;left:258px;top:540px;z-index:3;font-family:GB;font-size:34px;letter-spacing:3px;padding:8px 18px;border-radius:12px;color:var(--fundo);background:var(--amb)}
+.extra{position:absolute;opacity:0;z-index:4}
+.pill{display:inline-block;background:var(--cre);color:var(--pet);font-family:MX;font-size:40px;padding:14px 26px;border-radius:60px;box-shadow:0 8px 18px rgba(0,0,0,.35);white-space:nowrap}
+.chip{display:inline-block;background:var(--fundo);color:var(--ama);font-family:MX;font-size:46px;padding:16px 30px;border-radius:18px;border:4px solid var(--amb);white-space:nowrap;box-shadow:0 10px 22px rgba(0,0,0,.4)}
+.ico{font-size:120px;filter:drop-shadow(0 8px 10px rgba(0,0,0,.4))}
+.stamp{display:inline-block;font-family:GB;font-size:90px;padding:6px 34px;border:12px solid var(--pim);color:var(--pim);border-radius:20px;transform:rotate(-12deg);letter-spacing:3px;background:rgba(242,232,216,.82)}
+/* segredo */
+#segredo .t{position:absolute;left:0;right:0;top:960px;text-align:center;font-family:GB;font-size:78px;color:var(--cre);line-height:1.1}
+#segredo .t em{font-style:normal;color:var(--ama)}
+/* cta */
+#cta .t{position:absolute;left:0;right:0;top:400px;text-align:center}
+#cta .t b{display:block;font-family:GB;font-size:96px;color:var(--cre)}
+#cta .t i{display:block;font-style:normal;font-family:MX;font-size:44px;color:var(--amb);margin-top:12px}
+#cta .s{position:absolute;left:0;right:0;top:1000px;text-align:center;opacity:0}
+/* legenda */
+#leg{position:absolute;left:40px;right:40px;top:1290px;height:120px;display:flex;align-items:center;justify-content:center;text-align:center}
+#leg span{font-family:MB;font-size:66px;color:var(--cre);letter-spacing:.5px;-webkit-text-stroke:3px var(--fundo);paint-order:stroke fill;text-shadow:0 6px 0 rgba(0,0,0,.35);margin:0 10px;display:inline-block}
+#leg span.h{color:var(--fundo);-webkit-text-stroke:0;background:var(--amb);padding:0 14px;border-radius:12px;text-shadow:none}
+/* assinatura */
+#ass{position:absolute;left:0;right:0;top:1290px;text-align:center;opacity:0}
+#ass b{display:block;font-family:GB;font-size:96px;color:var(--cre);letter-spacing:10px}
+#ass i{display:block;font-style:normal;font-family:MX;font-size:44px;color:var(--amb);margin-top:12px;letter-spacing:3px}
+</style></head><body>
+<div id="bg"></div><div id="dots"></div>
+<div id="stage"></div>
+<div id="topo"><span>LISTA NEGRA 🚫 DOS PERFUMES</span></div>
+<div id="leg"></div>
+<div id="ass"><b>VALOTA PARFUM</b><i>@valotaparfum</i></div>
+<script>
+/*DADOS*/
+const D=window.D,$=s=>document.querySelector(s);
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),eob=p=>{const c=1.70158;return 1+(c+1)*Math.pow(p-1,3)+c*Math.pow(p-1,2)},eo=p=>1-Math.pow(1-p,3);
+const stage=$('#stage');
+function el(html,id){const d=document.createElement('div');d.className='cena';d.id=id;d.innerHTML=html;stage.appendChild(d);return d}
+function card(k,x,y,w,h,par){const d=document.createElement('div');d.className='card';Object.assign(d.style,{left:x+'px',top:y+'px',width:w+'px',height:h+'px'});
+  d.innerHTML=`<img src="${D.F[k][0]}"><div class="q">?</div><div class="x">✕</div>`;if(par)par.appendChild(d);return d}
+function blur(img,v){img.style.filter=v>0.05?`blur(${v.toFixed(1)}px) saturate(1.1)`:'none'}
+// gancho
+const H=D.HOOK;
+const hook=el(`<div class="tarja"><span>${H.tarja}</span></div><div class="sub">${H.sub}</div><div class="chipH"><span>${H.chip}</span></div><div class="linha"></div><div class="selo"><span>${H.selo}</span></div>`,'hook');
+const HC=D.ORDEM.map((k,i)=>card(k,i*200,0,184,240,hook.querySelector('.linha')));
+// telas dos perfumes
+const BIG={};
+for(const k of D.ORDEM){const f=D.F[k];
+  const c=el(`<div class="nome"><i>#${f[4]} DA LISTA · ${f[2]}</i><b>${f[1]}</b></div><div class="tag">${f[3]}</div>`,'big_'+k);
+  BIG[k]=card(k,240,520,600,600,c);}
+// último borrado
+const ultB=el(`<div class="nome"><i>#1 DA LISTA</i><b>O MAIS POLÊMICO</b></div>`,'ultB');const UC=card('kouros',240,520,600,600,ultB);
+// segredo
+const seg=el(`<div class="abs" style="left:48px;top:640px;width:984px;height:240px"></div><div class="t">${D.SEGREDO.t}<br><em>${D.SEGREDO.t2}</em></div>`,'segredo');
+const SC=D.ORDEM.map((k,i)=>card(k,i*200,0,184,240,seg.firstChild));
+// cta
+const cta=el(`<div class="t"><b>COMPARTILHA</b><i>com quem você quer ver cheiroso</i></div><div class="abs" style="left:48px;top:620px;width:984px;height:240px"></div><div class="s"><span class="chip" style="font-size:50px">SEGUE A VALOTA PARFUM</span></div>`,'cta');
+const CC=D.ORDEM.map((k,i)=>card(k,i*200,0,184,240,cta.children[1]));
+// extras
+const EX=D.EXTRA.map(([cn,t,html,x,y,cls])=>{const d=document.createElement('div');d.className='extra '+(cls.includes('centro')?'centro':'');d.style.left=x+'px';d.style.top=y+'px';d.innerHTML=html;$('#'+cn).appendChild(d);return {d,t,cls,cn}});
+const leg=$('#leg');let legAtual=-1;
+window.render=function(t){
+  for(const id in D.CENA){const node=document.getElementById(id);const [a,b]=D.CENA[id];
+    if(t<a||t>=b){node.style.opacity=0;continue}
+    if(id==='hook'){node.style.opacity=1;node.style.transform='none';const po=cl((t-(b-0.2))/0.2);node.style.opacity=1-po;continue}
+    const pin=cl((t-a)/0.35),pout=cl((t-(b-0.18))/0.18),s=0.88+0.12*eob(pin);
+    node.style.opacity=(eo(pin)*(1-pout)).toFixed(3);node.style.transform=`scale(${s.toFixed(4)})`}
+  // gancho: frascos borrados, o último pulsa e ganha o selo
+  HC.forEach((c,i)=>{blur(c.querySelector('img'),14);c.querySelector('.q').style.opacity=.8;
+    if(i===4){const g=cl((t-H.t_ult)/0.3);c.style.transform=`scale(${(1+0.08*g+0.03*Math.sin(t*9)*g).toFixed(3)})`;c.style.boxShadow=`0 0 ${(50*g).toFixed(0)}px ${(14*g).toFixed(0)}px rgba(217,72,59,${(0.8*g).toFixed(2)}),0 0 0 5px var(--cre)`}});
+  const ps=cl((t-H.t_nasc)/0.25);hook.querySelector('.selo').style.opacity=ps;hook.querySelector('.selo').style.transform=`scale(${(2-1*eo(ps)).toFixed(3)})`;
+  // cabeçalho fixo depois do gancho
+  $('#topo').style.opacity=cl((t-D.CENA.hook[1])/0.3);
+  // revelação do frasco grande
+  for(const k in BIG){const p=cl((t-D.REVELA[k])/0.45);blur(BIG[k].querySelector('img'),16*(1-eo(p)));BIG[k].querySelector('.q').style.opacity=(0.8*(1-p)).toFixed(2)}
+  if(t>=D.CENA.big_kouros[0]){const g=Math.max(0,1-(t-D.REVELA.kouros)/1.2);BIG.kouros.style.boxShadow=`0 0 ${(120*g+20).toFixed(0)}px ${(40*g).toFixed(0)}px rgba(217,72,59,${(0.85*g).toFixed(2)}),0 0 0 5px var(--cre)`}
+  // último borrado treme
+  const u=D.CENA.ultB;if(t>=u[0]&&t<u[1]){UC.style.transform=`translate(${(Math.sin(t*55)*4).toFixed(1)}px,0) scale(${(1+0.04*cl((t-u[0])/1.2)).toFixed(3)})`;blur(UC.querySelector('img'),18);UC.querySelector('.q').style.opacity=.85}
+  // segredo: os 5 aparecem nítidos e ganham ✕ em sequência
+  SC.forEach((c,i)=>{blur(c.querySelector('img'),0);c.querySelector('.q').style.opacity=0;c.querySelector('.x').style.opacity=cl((t-D.SEGREDO.t_lis-i*0.12)/0.15).toFixed(2)});
+  CC.forEach(c=>{blur(c.querySelector('img'),0);c.querySelector('.q').style.opacity=0});
+  const sp=cl((t-D.CTA.t_segue)/0.3);cta.querySelector('.s').style.opacity=sp;cta.querySelector('.s').style.transform=`scale(${(0.6+0.4*eob(sp)).toFixed(3)})`;
+  // extras
+  for(const x of EX){const [a,b]=D.CENA[x.cn];if(t<x.t||t>=b){x.d.style.opacity=0;continue}
+    const st=x.cls.includes('stamp'),pp=x.cls.includes('pop'),p=cl((t-x.t)/(st?0.22:0.3));let tr;
+    if(st)tr=`scale(${(2.2-1.2*eo(p)).toFixed(3)})`;else if(pp)tr=`scale(${(0.3+0.7*eob(p)).toFixed(3)}) rotate(${(-10+10*p).toFixed(1)}deg)`;else tr=`translateY(${(30*(1-eo(p))).toFixed(1)}px)`;
+    x.d.style.opacity=p.toFixed(2);x.d.style.transform=tr}
+  // assinatura depois da fala
+  $('#ass').style.opacity=cl((t-D.FALA_FIM-0.3)/0.4);
+  // legenda
+  let gi=-1;for(let i=0;i<D.LEG.length;i++){if(t>=D.LEG[i].t0&&t<D.LEG[i].t1){gi=i;break}}
+  if(gi!==legAtual){legAtual=gi;leg.innerHTML=gi<0?'':D.LEG[gi].p.map(w=>`<span class="${w.h?'h':''}">${w.w}</span>`).join('')}
+  if(gi>=0){const p=cl((t-D.LEG[gi].t0)/0.12);leg.style.transform=`scale(${(0.9+0.1*eob(p)).toFixed(3)})`;leg.style.opacity=1}else leg.style.opacity=0;
+};
+</script></body></html>

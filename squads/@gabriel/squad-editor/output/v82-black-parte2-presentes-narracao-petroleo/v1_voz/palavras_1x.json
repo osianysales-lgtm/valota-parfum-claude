@@ -1,0 +1,982 @@
+{
+"palavras": [
+{
+"word": "O",
+"voz": "O",
+"start": 0.0,
+"end": 0.209
+},
+{
+"word": "presente",
+"voz": "presente",
+"start": 0.29,
+"end": 0.697
+},
+{
+"word": "de",
+"voz": "de",
+"start": 0.755,
+"end": 0.813
+},
+{
+"word": "Natal",
+"voz": "Natal",
+"start": 0.871,
+"end": 1.196
+},
+{
+"word": "mais",
+"voz": "mais",
+"start": 1.254,
+"end": 1.416
+},
+{
+"word": "esperto",
+"voz": "esperto",
+"start": 1.498,
+"end": 2.183
+},
+{
+"word": "se",
+"voz": "se",
+"start": 2.252,
+"end": 2.357
+},
+{
+"word": "compra",
+"voz": "compra",
+"start": 2.426,
+"end": 2.752
+},
+{
+"word": "nessa",
+"voz": "nessa",
+"start": 2.798,
+"end": 3.077
+},
+{
+"word": "Black",
+"voz": "Bléqui",
+"start": 3.135,
+"end": 3.448
+},
+{
+"word": "Friday,",
+"voz": "Fráidei,",
+"start": 3.576,
+"end": 4.168
+},
+{
+"word": "por",
+"voz": "por",
+"start": 4.261,
+"end": 4.458
+},
+{
+"word": "isso,",
+"voz": "isso,",
+"start": 4.516,
+"end": 4.772
+},
+{
+"word": "na",
+"voz": "na",
+"start": 4.795,
+"end": 4.888
+},
+{
+"word": "parte",
+"voz": "parte",
+"start": 4.946,
+"end": 5.259
+},
+{
+"word": "dois,",
+"voz": "dois,",
+"start": 5.317,
+"end": 5.666
+},
+{
+"word": "separei",
+"voz": "separei",
+"start": 5.7,
+"end": 6.118
+},
+{
+"word": "os",
+"voz": "os",
+"start": 6.165,
+"end": 6.235
+},
+{
+"word": "cinco",
+"voz": "cinco",
+"start": 6.269,
+"end": 6.606
+},
+{
+"word": "que",
+"voz": "que",
+"start": 6.664,
+"end": 6.745
+},
+{
+"word": "valem",
+"voz": "valem",
+"start": 6.803,
+"end": 7.082
+},
+{
+"word": "o",
+"voz": "o",
+"start": 7.105,
+"end": 7.129
+},
+{
+"word": "desconto",
+"voz": "desconto",
+"start": 7.187,
+"end": 7.732
+},
+{
+"word": "pra",
+"voz": "pra",
+"start": 7.767,
+"end": 7.883
+},
+{
+"word": "quem",
+"voz": "quem",
+"start": 7.918,
+"end": 8.034
+},
+{
+"word": "você",
+"voz": "você",
+"start": 8.081,
+"end": 8.336
+},
+{
+"word": "ama.",
+"voz": "ama.",
+"start": 8.429,
+"end": 8.8
+},
+{
+"word": "Começando",
+"voz": "Começando",
+"start": 8.96,
+"end": 9.459
+},
+{
+"word": "por",
+"voz": "por",
+"start": 9.506,
+"end": 9.645
+},
+{
+"word": "ela,",
+"voz": "ela,",
+"start": 9.715,
+"end": 10.028
+},
+{
+"word": "o",
+"voz": "o",
+"start": 10.063,
+"end": 10.156
+},
+{
+"word": "Club",
+"voz": "Clâb",
+"start": 10.214,
+"end": 10.469
+},
+{
+"word": "de",
+"voz": "dê",
+"start": 10.597,
+"end": 10.701
+},
+{
+"word": "Nuit",
+"voz": "Nuí",
+"start": 10.748,
+"end": 10.934
+},
+{
+"word": "Woman",
+"voz": "Uúman",
+"start": 11.003,
+"end": 11.41
+},
+{
+"word": "é",
+"voz": "é",
+"start": 11.537,
+"end": 11.63
+},
+{
+"word": "o",
+"voz": "o",
+"start": 11.7,
+"end": 11.735
+},
+{
+"word": "árabe",
+"voz": "árabe",
+"start": 11.793,
+"end": 12.071
+},
+{
+"word": "que",
+"voz": "que",
+"start": 12.118,
+"end": 12.211
+},
+{
+"word": "lembra",
+"voz": "lembra",
+"start": 12.269,
+"end": 12.547
+},
+{
+"word": "o",
+"voz": "o",
+"start": 12.582,
+"end": 12.605
+},
+{
+"word": "Coco",
+"voz": "Kôko",
+"start": 12.675,
+"end": 12.977
+},
+{
+"word": "Mademoiselle",
+"voz": "Madmoazél",
+"start": 13.035,
+"end": 13.627
+},
+{
+"word": "da",
+"voz": "da",
+"start": 13.674,
+"end": 13.766
+},
+{
+"word": "Chanel,",
+"voz": "Chanél,",
+"start": 13.813,
+"end": 14.44
+},
+{
+"word": "enquanto",
+"voz": "enquanto",
+"start": 14.66,
+"end": 15.113
+},
+{
+"word": "o",
+"voz": "o",
+"start": 15.136,
+"end": 15.171
+},
+{
+"word": "Yara",
+"voz": "Iára",
+"start": 15.229,
+"end": 15.578
+},
+{
+"word": "é",
+"voz": "é",
+"start": 15.601,
+"end": 15.624
+},
+{
+"word": "cremoso",
+"voz": "cremoso",
+"start": 15.659,
+"end": 16.158
+},
+{
+"word": "e",
+"voz": "e",
+"start": 16.181,
+"end": 16.205
+},
+{
+"word": "fofinho",
+"voz": "fofinho",
+"start": 16.274,
+"end": 16.878
+},
+{
+"word": "de",
+"voz": "de",
+"start": 16.924,
+"end": 16.994
+},
+{
+"word": "abraçar.",
+"voz": "abraçar.",
+"start": 17.029,
+"end": 17.818
+},
+{
+"word": "E",
+"voz": "E",
+"start": 17.978,
+"end": 18.105
+},
+{
+"word": "o",
+"voz": "o",
+"start": 18.233,
+"end": 18.268
+},
+{
+"word": "Delilah",
+"voz": "Delaila",
+"start": 18.338,
+"end": 18.941
+},
+{
+"word": "é",
+"voz": "é",
+"start": 19.069,
+"end": 19.197
+},
+{
+"word": "rosa",
+"voz": "rosa",
+"start": 19.324,
+"end": 19.719
+},
+{
+"word": "com",
+"voz": "com",
+"start": 19.777,
+"end": 19.917
+},
+{
+"word": "lichia",
+"voz": "lichia",
+"start": 19.975,
+"end": 20.602
+},
+{
+"word": "e",
+"voz": "e",
+"start": 20.729,
+"end": 20.892
+},
+{
+"word": "lembra",
+"voz": "lembra",
+"start": 20.985,
+"end": 21.379
+},
+{
+"word": "o",
+"voz": "o",
+"start": 21.403,
+"end": 21.426
+},
+{
+"word": "Delina,",
+"voz": "Delína,",
+"start": 21.496,
+"end": 22.122
+},
+{
+"word": "que",
+"voz": "que",
+"start": 22.215,
+"end": 22.331
+},
+{
+"word": "custa",
+"voz": "custa",
+"start": 22.401,
+"end": 22.761
+},
+{
+"word": "bem",
+"voz": "bem",
+"start": 22.854,
+"end": 23.121
+},
+{
+"word": "mais",
+"voz": "mais",
+"start": 23.167,
+"end": 23.376
+},
+{
+"word": "caro.",
+"voz": "caro.",
+"start": 23.458,
+"end": 24.027
+},
+{
+"word": "Agora,",
+"voz": "Agora,",
+"start": 24.187,
+"end": 24.57
+},
+{
+"word": "pro",
+"voz": "pro",
+"start": 24.593,
+"end": 24.733
+},
+{
+"word": "namorado,",
+"voz": "namorado,",
+"start": 24.768,
+"end": 25.348
+},
+{
+"word": "pro",
+"voz": "pro",
+"start": 25.371,
+"end": 25.487
+},
+{
+"word": "marido",
+"voz": "marido",
+"start": 25.534,
+"end": 25.894
+},
+{
+"word": "ou",
+"voz": "ou",
+"start": 25.917,
+"end": 25.963
+},
+{
+"word": "pro",
+"voz": "pro",
+"start": 26.01,
+"end": 26.126
+},
+{
+"word": "seu",
+"voz": "seu",
+"start": 26.172,
+"end": 26.3
+},
+{
+"word": "pai,",
+"voz": "pai,",
+"start": 26.381,
+"end": 26.997
+},
+{
+"word": "o",
+"voz": "o",
+"start": 27.157,
+"end": 27.239
+},
+{
+"word": "Liquid",
+"voz": "Líquid",
+"start": 27.308,
+"end": 27.61
+},
+{
+"word": "Brun",
+"voz": "Brã",
+"start": 27.773,
+"end": 28.098
+},
+{
+"word": "é",
+"voz": "é",
+"start": 28.318,
+"end": 28.446
+},
+{
+"word": "baunilha",
+"voz": "baunilha",
+"start": 28.539,
+"end": 29.143
+},
+{
+"word": "com",
+"voz": "com",
+"start": 29.201,
+"end": 29.34
+},
+{
+"word": "canela",
+"voz": "canela",
+"start": 29.398,
+"end": 29.909
+},
+{
+"word": "que",
+"voz": "que",
+"start": 29.967,
+"end": 30.06
+},
+{
+"word": "lembra",
+"voz": "lembra",
+"start": 30.118,
+"end": 30.431
+},
+{
+"word": "o",
+"voz": "o",
+"start": 30.455,
+"end": 30.478
+},
+{
+"word": "Althaïr.",
+"voz": "Altaír.",
+"start": 30.548,
+"end": 31.337
+},
+{
+"word": "Já",
+"voz": "Já",
+"start": 31.497,
+"end": 31.753
+},
+{
+"word": "o",
+"voz": "o",
+"start": 31.811,
+"end": 31.834
+},
+{
+"word": "Vulcan",
+"voz": "Vúlcan",
+"start": 31.881,
+"end": 32.24
+},
+{
+"word": "Feu",
+"voz": "Fê",
+"start": 32.368,
+"end": 32.589
+},
+{
+"word": "tem",
+"voz": "tem",
+"start": 32.716,
+"end": 32.891
+},
+{
+"word": "manga",
+"voz": "manga",
+"start": 32.96,
+"end": 33.204
+},
+{
+"word": "com",
+"voz": "com",
+"start": 33.251,
+"end": 33.39
+},
+{
+"word": "gengibre",
+"voz": "gengibre",
+"start": 33.436,
+"end": 34.086
+},
+{
+"word": "e",
+"voz": "e",
+"start": 34.156,
+"end": 34.226
+},
+{
+"word": "lembra",
+"voz": "lembra",
+"start": 34.319,
+"end": 34.737
+},
+{
+"word": "o",
+"voz": "o",
+"start": 34.806,
+"end": 34.876
+},
+{
+"word": "God",
+"voz": "Gód",
+"start": 34.946,
+"end": 35.143
+},
+{
+"word": "of",
+"voz": "óf",
+"start": 35.213,
+"end": 35.294
+},
+{
+"word": "Fire.",
+"voz": "Fáier.",
+"start": 35.329,
+"end": 35.956
+},
+{
+"word": "Só",
+"voz": "Só",
+"start": 36.116,
+"end": 36.337
+},
+{
+"word": "que",
+"voz": "que",
+"start": 36.395,
+"end": 36.488
+},
+{
+"word": "na",
+"voz": "na",
+"start": 36.546,
+"end": 36.65
+},
+{
+"word": "Black",
+"voz": "Bléqui",
+"start": 36.731,
+"end": 37.103
+},
+{
+"word": "tem",
+"voz": "tem",
+"start": 37.173,
+"end": 37.323
+},
+{
+"word": "muita",
+"voz": "muita",
+"start": 37.382,
+"end": 37.66
+},
+{
+"word": "oferta",
+"voz": "oferta",
+"start": 37.683,
+"end": 38.078
+},
+{
+"word": "falsa,",
+"voz": "falsa,",
+"start": 38.159,
+"end": 38.577
+},
+{
+"word": "então",
+"voz": "então",
+"start": 38.601,
+"end": 38.879
+},
+{
+"word": "clica",
+"voz": "clica",
+"start": 38.914,
+"end": 39.204
+},
+{
+"word": "no",
+"voz": "no",
+"start": 39.262,
+"end": 39.344
+},
+{
+"word": "link",
+"voz": "link",
+"start": 39.39,
+"end": 39.587
+},
+{
+"word": "da",
+"voz": "da",
+"start": 39.645,
+"end": 39.75
+},
+{
+"word": "bio",
+"voz": "bio",
+"start": 39.82,
+"end": 40.156
+},
+{
+"word": "e",
+"voz": "e",
+"start": 40.238,
+"end": 40.377
+},
+{
+"word": "entra",
+"voz": "entra",
+"start": 40.458,
+"end": 40.748
+},
+{
+"word": "no",
+"voz": "no",
+"start": 40.795,
+"end": 40.865
+},
+{
+"word": "meu",
+"voz": "meu",
+"start": 40.911,
+"end": 41.027
+},
+{
+"word": "grupo",
+"voz": "grupo",
+"start": 41.085,
+"end": 41.41
+},
+{
+"word": "do",
+"voz": "do",
+"start": 41.445,
+"end": 41.515
+},
+{
+"word": "WhatsApp,",
+"voz": "WhatsApp,",
+"start": 41.538,
+"end": 42.211
+},
+{
+"word": "que",
+"voz": "que",
+"start": 42.234,
+"end": 42.351
+},
+{
+"word": "lá",
+"voz": "lá",
+"start": 42.397,
+"end": 42.525
+},
+{
+"word": "só",
+"voz": "só",
+"start": 42.618,
+"end": 42.734
+},
+{
+"word": "tem",
+"voz": "tem",
+"start": 42.792,
+"end": 42.954
+},
+{
+"word": "árabe",
+"voz": "árabe",
+"start": 43.012,
+"end": 43.291
+},
+{
+"word": "original",
+"voz": "original",
+"start": 43.326,
+"end": 43.883
+},
+{
+"word": "e",
+"voz": "e",
+"start": 43.976,
+"end": 44.104
+},
+{
+"word": "loja",
+"voz": "loja",
+"start": 44.162,
+"end": 44.44
+},
+{
+"word": "de",
+"voz": "de",
+"start": 44.475,
+"end": 44.545
+},
+{
+"word": "confiança.",
+"voz": "confiança.",
+"start": 44.603,
+"end": 45.497
+},
+{
+"word": "E",
+"voz": "E",
+"start": 45.657,
+"end": 45.785
+},
+{
+"word": "aproveita",
+"voz": "aproveita",
+"start": 45.878,
+"end": 46.516
+},
+{
+"word": "pra",
+"voz": "pra",
+"start": 46.563,
+"end": 46.691
+},
+{
+"word": "garantir",
+"voz": "garantir",
+"start": 46.737,
+"end": 47.155
+},
+{
+"word": "o",
+"voz": "o",
+"start": 47.201,
+"end": 47.225
+},
+{
+"word": "presente",
+"voz": "presente",
+"start": 47.271,
+"end": 47.863
+},
+{
+"word": "de",
+"voz": "de",
+"start": 47.91,
+"end": 47.968
+},
+{
+"word": "fim",
+"voz": "fim",
+"start": 48.037,
+"end": 48.211
+},
+{
+"word": "de",
+"voz": "de",
+"start": 48.27,
+"end": 48.351
+},
+{
+"word": "ano",
+"voz": "ano",
+"start": 48.386,
+"end": 48.537
+},
+{
+"word": "da",
+"voz": "da",
+"start": 48.571,
+"end": 48.653
+},
+{
+"word": "família",
+"voz": "família",
+"start": 48.711,
+"end": 49.047
+},
+{
+"word": "inteira",
+"voz": "inteira",
+"start": 49.071,
+"end": 49.489
+},
+{
+"word": "no",
+"voz": "no",
+"start": 49.535,
+"end": 49.605
+},
+{
+"word": "preço",
+"voz": "preço",
+"start": 49.651,
+"end": 49.93
+},
+{
+"word": "de",
+"voz": "de",
+"start": 49.976,
+"end": 50.034
+},
+{
+"word": "verdade.",
+"voz": "verdade.",
+"start": 50.081,
+"end": 50.742
+},
+{
+"word": "E",
+"voz": "E",
+"start": 50.902,
+"end": 50.995
+},
+{
+"word": "a",
+"voz": "a",
+"start": 51.053,
+"end": 51.076
+},
+{
+"word": "parte",
+"voz": "parte",
+"start": 51.134,
+"end": 51.459
+},
+{
+"word": "um,",
+"voz": "um,",
+"start": 51.529,
+"end": 51.784
+},
+{
+"word": "com",
+"voz": "com",
+"start": 51.97,
+"end": 52.086
+},
+{
+"word": "os",
+"voz": "os",
+"start": 52.121,
+"end": 52.167
+},
+{
+"word": "masculinos,",
+"voz": "masculinos,",
+"start": 52.225,
+"end": 52.806
+},
+{
+"word": "tá",
+"voz": "tá",
+"start": 52.829,
+"end": 52.899
+},
+{
+"word": "no",
+"voz": "no",
+"start": 52.957,
+"end": 53.003
+},
+{
+"word": "meu",
+"voz": "meu",
+"start": 53.038,
+"end": 53.143
+},
+{
+"word": "perfil.",
+"voz": "perfil.",
+"start": 53.189,
+"end": 53.944
+}
+]
+}

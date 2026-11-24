@@ -1,0 +1,214 @@
+{
+ "topo": "BLACK FRIDAY · PARTE 2",
+ "rodape": "@valotaparfum",
+ "acento": "rosa",
+ "capa": {
+  "linha1": "PARTE 2 · OS 5",
+  "destaque": "PRESENTES",
+  "tam_destaque": 132,
+  "linha3": "da Black **pra quem você ama**",
+  "frasco": "frascos/yara2e.png"
+ },
+ "perfumes": [
+  {
+   "posicao": "1",
+   "nome": "Club de Nuit Woman",
+   "fundo": "creme",
+   "chip": {
+    "familia": "rosa",
+    "icone": "gota",
+    "rotulo": "FLORAL CHIQUE"
+   },
+   "frasco": "frascos/cdnwoman2e.png",
+   "ingredientes": [
+    {
+     "img": "ing/rosa.png",
+     "x": -46,
+     "y": 428,
+     "w": 160,
+     "rot": -10
+    },
+    {
+     "img": "ing/laranja.png",
+     "x": 290,
+     "y": 450,
+     "w": 140,
+     "rot": 8
+    }
+   ],
+   "lembra_marca": "Chanel",
+   "lembra": "Coco Mademoiselle",
+   "tag": "grife francesa",
+   "notas": [
+    "laranja",
+    "rosa",
+    "patchouli"
+   ],
+   "usa": "**Presente pra:** a namorada elegante",
+   "descricao": "O clássico chique de **laranja com rosa** que lembra o **Coco Mademoiselle**, perfeito pra mulher que gosta de chegar arrasando."
+  },
+  {
+   "posicao": "2",
+   "nome": "Yara",
+   "fundo": "petroleo",
+   "chip": {
+    "familia": "rosa",
+    "icone": "semente",
+    "rotulo": "DOCINHO CREMOSO"
+   },
+   "frasco": "frascos/yara2e.png",
+   "ingredientes": [
+    {
+     "img": "ing/orquidea.png",
+     "x": -46,
+     "y": 428,
+     "w": 160,
+     "rot": -8
+    },
+    {
+     "img": "ing/laranja.png",
+     "x": 290,
+     "y": 450,
+     "w": 140,
+     "rot": 10
+    }
+   ],
+   "lembra_marca": "Aquolina",
+   "lembra": "Pink Sugar",
+   "tag": "o mais comparado",
+   "notas": [
+    "orquídea",
+    "tangerina",
+    "baunilha"
+   ],
+   "usa": "**Presente pra:** quem ama perfume docinho",
+   "descricao": "**Cremoso e fofinho** com cara de abraço, é aquele que a pessoa passa e todo mundo pergunta qual é."
+  },
+  {
+   "posicao": "3",
+   "nome": "Delilah",
+   "fundo": "creme",
+   "chip": {
+    "familia": "rosa",
+    "icone": "gota",
+    "rotulo": "FLORAL FRUTADO"
+   },
+   "frasco": "frascos/delilah.png",
+   "ingredientes": [
+    {
+     "img": "ing/rosa.png",
+     "x": -46,
+     "y": 428,
+     "w": 160,
+     "rot": -12
+    },
+    {
+     "img": "ing/lichia.png",
+     "x": 290,
+     "y": 450,
+     "w": 140,
+     "rot": 8
+    }
+   ],
+   "lembra_marca": "Parfums de Marly",
+   "lembra": "Delina",
+   "tag": "casa de nicho francesa",
+   "notas": [
+    "rosa",
+    "lichia",
+    "baunilha"
+   ],
+   "usa": "**Presente pra:** a esposa romântica",
+   "descricao": "**Rosa com lichia** num frasco lindo de dar de presente, e o Delina que ele lembra custa **bem mais caro**."
+  },
+  {
+   "posicao": "4",
+   "nome": "Club de Nuit Maleka",
+   "fundo": "petroleo",
+   "chip": {
+    "familia": "algodao",
+    "icone": "diamante",
+    "rotulo": "DOCE SOFISTICADO"
+   },
+   "frasco": "frascos/maleka.png",
+   "ingredientes": [
+    {
+     "img": "ing/lichia.png",
+     "x": -46,
+     "y": 438,
+     "w": 150,
+     "rot": -8
+    },
+    {
+     "img": "ing/caramelo.png",
+     "x": 290,
+     "y": 450,
+     "w": 140,
+     "rot": 10
+    }
+   ],
+   "lembra_marca": "Carolina Herrera",
+   "lembra": "Very Good Girl",
+   "tag": "grife",
+   "notas": [
+    "lichia",
+    "praliné",
+    "íris"
+   ],
+   "usa": "**Presente pra:** quem ama um doce chique",
+   "descricao": "**Lichia com docinho de praliné** que lembra o Very Good Girl, só que **sem o preço do salto vermelho**."
+  },
+  {
+   "posicao": "5",
+   "nome": "Vulcan Feu",
+   "fundo": "creme",
+   "chip": {
+    "familia": "amarelo",
+    "icone": "citrico",
+    "rotulo": "FRUTADO DIFERENTE"
+   },
+   "frasco": "frascos/vulcan.png",
+   "ingredientes": [
+    {
+     "img": "ing/manga.png",
+     "x": -46,
+     "y": 428,
+     "w": 160,
+     "rot": -10
+    },
+    {
+     "img": "ing/gengibre.png",
+     "x": 290,
+     "y": 450,
+     "w": 140,
+     "rot": 10
+    }
+   ],
+   "lembra_marca": "Stéphane Humbert Lucas",
+   "lembra": "God of Fire",
+   "tag": "casa de nicho",
+   "notas": [
+    "manga",
+    "gengibre",
+    "laranja"
+   ],
+   "usa": "**Presente pra:** o namorado, o marido ou o pai",
+   "descricao": "**Manga com gengibre**, diferente de tudo que ele já usou, e lembra o God of Fire, um nicho de **cartão black**."
+  }
+ ],
+ "final": {
+  "tipo": "seguir",
+  "kicker": "PERDEU A PARTE 1?",
+  "titulo": "TÁ NO PERFIL",
+  "tam_titulo": 104,
+  "frascos": [
+   "../2026-11-24-black-friday-parte1/frascos/liquid.png",
+   "../2026-11-24-black-friday-parte1/frascos/asadbourbon.png",
+   "../2026-11-24-black-friday-parte1/frascos/9pm.png",
+   "../2026-11-24-black-friday-parte1/frascos/supremacy.png",
+   "../2026-11-24-black-friday-parte1/frascos/hawas.png"
+  ],
+  "previa": "Lá estão os **5 masculinos que valem o desconto**, do docinho de balada ao que fez me pararem na rua.",
+  "cta": "**Segue a Valota Parfum** pra mais achados de perfumaria e presentes que não erram."
+ }
+}

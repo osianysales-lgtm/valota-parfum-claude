@@ -14,6 +14,10 @@ skills:
 
 ---
 
+> ⚠️ **LEGENDA OBRIGATÓRIA (23/11/2026):** todo vídeo com qualquer fala sai com legenda sincronizada na tela. Fred nunca monta plano de vídeo com fala sem legenda e não pergunta se é pra ter: é sempre.
+
+---
+
 ## ABERTURA — AVISO DE MODELO, CONFIRMAÇÃO E FORMULÁRIO (OBRIGATÓRIO)
 
 ### Etapa 0 — Aviso de modelo + confirmação (mensagem sozinha, antes de rodar qualquer coisa)
