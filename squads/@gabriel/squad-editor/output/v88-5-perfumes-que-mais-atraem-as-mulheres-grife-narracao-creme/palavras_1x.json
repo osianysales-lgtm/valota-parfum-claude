@@ -1,0 +1,1372 @@
+{
+"palavras": [
+{
+"word": "Lembra",
+"voz": "Lembra",
+"start": 0.0,
+"end": 0.546
+},
+{
+"word": "da",
+"voz": "da",
+"start": 0.592,
+"end": 0.662
+},
+{
+"word": "pesquisa",
+"voz": "pesquisa",
+"start": 0.708,
+"end": 1.091
+},
+{
+"word": "do",
+"voz": "do",
+"start": 1.138,
+"end": 1.196
+},
+{
+"word": "vídeo",
+"voz": "vídeo",
+"start": 1.242,
+"end": 1.428
+},
+{
+"word": "passado?",
+"voz": "passado?",
+"start": 1.474,
+"end": 2.09
+},
+{
+"word": "Então",
+"voz": "Então",
+"start": 2.38,
+"end": 2.775
+},
+{
+"word": "anota",
+"voz": "anota",
+"start": 2.81,
+"end": 3.216
+},
+{
+"word": "os",
+"voz": "os",
+"start": 3.239,
+"end": 3.32
+},
+{
+"word": "cinco",
+"voz": "cinco",
+"start": 3.355,
+"end": 3.715
+},
+{
+"word": "perfumes",
+"voz": "perfumes",
+"start": 3.773,
+"end": 4.47
+},
+{
+"word": "com",
+"voz": "com",
+"start": 4.551,
+"end": 4.702
+},
+{
+"word": "o",
+"voz": "o",
+"start": 4.725,
+"end": 4.748
+},
+{
+"word": "cheiro",
+"voz": "cheiro",
+"start": 4.783,
+"end": 5.05
+},
+{
+"word": "que",
+"voz": "que",
+"start": 5.097,
+"end": 5.201
+},
+{
+"word": "mais",
+"voz": "mais",
+"start": 5.271,
+"end": 5.538
+},
+{
+"word": "atrai",
+"voz": "atrai",
+"start": 5.608,
+"end": 5.886
+},
+{
+"word": "as",
+"voz": "as",
+"start": 5.921,
+"end": 6.002
+},
+{
+"word": "mulheres,",
+"voz": "mulheres,",
+"start": 6.072,
+"end": 6.79
+},
+{
+"word": "e",
+"voz": "e",
+"start": 6.888,
+"end": 7.016
+},
+{
+"word": "fica",
+"voz": "fica",
+"start": 7.086,
+"end": 7.399
+},
+{
+"word": "até",
+"voz": "até",
+"start": 7.422,
+"end": 7.585
+},
+{
+"word": "o",
+"voz": "o",
+"start": 7.678,
+"end": 7.712
+},
+{
+"word": "último,",
+"voz": "último,",
+"start": 7.84,
+"end": 8.235
+},
+{
+"word": "que",
+"voz": "que",
+"start": 8.27,
+"end": 8.363
+},
+{
+"word": "é",
+"voz": "é",
+"start": 8.397,
+"end": 8.421
+},
+{
+"word": "a",
+"voz": "a",
+"start": 8.456,
+"end": 8.479
+},
+{
+"word": "baunilha",
+"voz": "baunilha",
+"start": 8.537,
+"end": 8.978
+},
+{
+"word": "mais",
+"voz": "mais",
+"start": 9.036,
+"end": 9.257
+},
+{
+"word": "cremosa.",
+"voz": "cremosa.",
+"start": 9.315,
+"end": 10.034
+},
+{
+"word": "Começando",
+"voz": "Começando",
+"start": 10.173,
+"end": 10.661
+},
+{
+"word": "pelo",
+"voz": "pelo",
+"start": 10.707,
+"end": 10.928
+},
+{
+"word": "Dior",
+"voz": "Diór",
+"start": 10.974,
+"end": 11.276
+},
+{
+"word": "Homme",
+"voz": "Óme",
+"start": 11.334,
+"end": 11.439
+},
+{
+"word": "Intense,",
+"voz": "Intênse,",
+"start": 11.462,
+"end": 12.054
+},
+{
+"word": "que",
+"voz": "que",
+"start": 12.135,
+"end": 12.251
+},
+{
+"word": "é",
+"voz": "é",
+"start": 12.274,
+"end": 12.309
+},
+{
+"word": "lavanda",
+"voz": "lavanda",
+"start": 12.402,
+"end": 12.785
+},
+{
+"word": "com",
+"voz": "com",
+"start": 12.832,
+"end": 12.971
+},
+{
+"word": "íris,",
+"voz": "íris,",
+"start": 13.099,
+"end": 13.586
+},
+{
+"word": "uma",
+"voz": "uma",
+"start": 13.668,
+"end": 13.83
+},
+{
+"word": "flor",
+"voz": "flor",
+"start": 13.877,
+"end": 14.086
+},
+{
+"word": "com",
+"voz": "com",
+"start": 14.132,
+"end": 14.248
+},
+{
+"word": "cheirinho",
+"voz": "cheirinho",
+"start": 14.283,
+"end": 14.608
+},
+{
+"word": "de",
+"voz": "de",
+"start": 14.655,
+"end": 14.724
+},
+{
+"word": "talco,",
+"voz": "talco,",
+"start": 14.794,
+"end": 15.328
+},
+{
+"word": "em",
+"voz": "em",
+"start": 15.494,
+"end": 15.599
+},
+{
+"word": "cima",
+"voz": "cima",
+"start": 15.657,
+"end": 15.924
+},
+{
+"word": "de",
+"voz": "de",
+"start": 15.97,
+"end": 16.029
+},
+{
+"word": "madeira,",
+"voz": "madeira,",
+"start": 16.075,
+"end": 16.69
+},
+{
+"word": "ou",
+"voz": "ou",
+"start": 16.783,
+"end": 16.888
+},
+{
+"word": "seja,",
+"voz": "seja,",
+"start": 16.957,
+"end": 17.48
+},
+{
+"word": "é",
+"voz": "é",
+"start": 17.646,
+"end": 17.716
+},
+{
+"word": "o",
+"voz": "o",
+"start": 17.786,
+"end": 17.809
+},
+{
+"word": "tal",
+"voz": "tal",
+"start": 17.879,
+"end": 18.053
+},
+{
+"word": "cheiro",
+"voz": "cheiro",
+"start": 18.111,
+"end": 18.413
+},
+{
+"word": "de",
+"voz": "de",
+"start": 18.448,
+"end": 18.517
+},
+{
+"word": "conforto",
+"voz": "conforto",
+"start": 18.564,
+"end": 19.086
+},
+{
+"word": "que",
+"voz": "que",
+"start": 19.144,
+"end": 19.225
+},
+{
+"word": "deixa",
+"voz": "deixa",
+"start": 19.283,
+"end": 19.609
+},
+{
+"word": "ela",
+"voz": "ela",
+"start": 19.667,
+"end": 19.841
+},
+{
+"word": "à",
+"voz": "à",
+"start": 19.899,
+"end": 19.957
+},
+{
+"word": "vontade.",
+"voz": "vontade.",
+"start": 20.038,
+"end": 20.804
+},
+{
+"word": "Já",
+"voz": "Já",
+"start": 21.06,
+"end": 21.28
+},
+{
+"word": "o",
+"voz": "o",
+"start": 21.362,
+"end": 21.385
+},
+{
+"word": "Layton,",
+"voz": "Lêiton,",
+"start": 21.431,
+"end": 21.814
+},
+{
+"word": "da",
+"voz": "da",
+"start": 21.838,
+"end": 21.919
+},
+{
+"word": "Parfums",
+"voz": "Parfã",
+"start": 21.965,
+"end": 22.267
+},
+{
+"word": "de",
+"voz": "de",
+"start": 22.302,
+"end": 22.372
+},
+{
+"word": "Marly,",
+"voz": "Marlí,",
+"start": 22.418,
+"end": 22.97
+},
+{
+"word": "abre",
+"voz": "abre",
+"start": 23.155,
+"end": 23.469
+},
+{
+"word": "com",
+"voz": "com",
+"start": 23.515,
+"end": 23.666
+},
+{
+"word": "maçã",
+"voz": "maçã",
+"start": 23.689,
+"end": 24.142
+},
+{
+"word": "e",
+"voz": "e",
+"start": 24.2,
+"end": 24.223
+},
+{
+"word": "lavanda",
+"voz": "lavanda",
+"start": 24.27,
+"end": 24.978
+},
+{
+"word": "e",
+"voz": "e",
+"start": 25.106,
+"end": 25.268
+},
+{
+"word": "depois",
+"voz": "depois",
+"start": 25.338,
+"end": 25.733
+},
+{
+"word": "vira",
+"voz": "vira",
+"start": 25.826,
+"end": 26.081
+},
+{
+"word": "baunilha",
+"voz": "baunilha",
+"start": 26.139,
+"end": 26.673
+},
+{
+"word": "com",
+"voz": "com",
+"start": 26.731,
+"end": 26.847
+},
+{
+"word": "cardamomo",
+"voz": "cardamomo",
+"start": 26.894,
+"end": 27.497
+},
+{
+"word": "e",
+"voz": "e",
+"start": 27.521,
+"end": 27.544
+},
+{
+"word": "madeira,",
+"voz": "madeira,",
+"start": 27.59,
+"end": 28.24
+},
+{
+"word": "e",
+"voz": "e",
+"start": 28.336,
+"end": 28.498
+},
+{
+"word": "é",
+"voz": "é",
+"start": 28.545,
+"end": 28.568
+},
+{
+"word": "daqueles",
+"voz": "daqueles",
+"start": 28.626,
+"end": 29.34
+},
+{
+"word": "que",
+"voz": "que",
+"start": 29.441,
+"end": 29.569
+},
+{
+"word": "fazem",
+"voz": "fazem",
+"start": 29.65,
+"end": 30.045
+},
+{
+"word": "alguém",
+"voz": "alguém",
+"start": 30.103,
+"end": 30.37
+},
+{
+"word": "parar",
+"voz": "parar",
+"start": 30.428,
+"end": 30.672
+},
+{
+"word": "você",
+"voz": "você",
+"start": 30.718,
+"end": 31.02
+},
+{
+"word": "pra",
+"voz": "pra",
+"start": 31.113,
+"end": 31.241
+},
+{
+"word": "perguntar",
+"voz": "perguntar",
+"start": 31.287,
+"end": 31.717
+},
+{
+"word": "o",
+"voz": "o",
+"start": 31.74,
+"end": 31.763
+},
+{
+"word": "nome",
+"voz": "nome",
+"start": 31.81,
+"end": 31.96
+},
+{
+"word": "do",
+"voz": "do",
+"start": 31.984,
+"end": 32.03
+},
+{
+"word": "perfume.",
+"voz": "perfume.",
+"start": 32.077,
+"end": 32.75
+},
+{
+"word": "E",
+"voz": "E",
+"start": 32.971,
+"end": 33.063
+},
+{
+"word": "o",
+"voz": "o",
+"start": 33.121,
+"end": 33.156
+},
+{
+"word": "Tobacco",
+"voz": "Tobáco",
+"start": 33.203,
+"end": 33.621
+},
+{
+"word": "Vanille,",
+"voz": "Vaníle,",
+"start": 33.667,
+"end": 34.259
+},
+{
+"word": "do",
+"voz": "do",
+"start": 34.282,
+"end": 34.375
+},
+{
+"word": "Tom",
+"voz": "Tom",
+"start": 34.433,
+"end": 34.596
+},
+{
+"word": "Ford,",
+"voz": "Fórd,",
+"start": 34.689,
+"end": 35.107
+},
+{
+"word": "é",
+"voz": "é",
+"start": 35.13,
+"end": 35.165
+},
+{
+"word": "tabaco",
+"voz": "tabaco",
+"start": 35.223,
+"end": 35.757
+},
+{
+"word": "com",
+"voz": "com",
+"start": 35.815,
+"end": 35.966
+},
+{
+"word": "baunilha",
+"voz": "baunilha",
+"start": 36.024,
+"end": 36.755
+},
+{
+"word": "e",
+"voz": "e",
+"start": 36.848,
+"end": 36.883
+},
+{
+"word": "especiarias",
+"voz": "especiarias",
+"start": 36.906,
+"end": 37.615
+},
+{
+"word": "quentes,",
+"voz": "quentes,",
+"start": 37.696,
+"end": 38.102
+},
+{
+"word": "então",
+"voz": "então",
+"start": 38.137,
+"end": 38.532
+},
+{
+"word": "é",
+"voz": "é",
+"start": 38.578,
+"end": 38.601
+},
+{
+"word": "cheiro",
+"voz": "cheiro",
+"start": 38.648,
+"end": 38.938
+},
+{
+"word": "de",
+"voz": "de",
+"start": 38.985,
+"end": 39.054
+},
+{
+"word": "lareira,",
+"voz": "lareira,",
+"start": 39.112,
+"end": 39.716
+},
+{
+"word": "só",
+"voz": "só",
+"start": 39.971,
+"end": 40.122
+},
+{
+"word": "que",
+"voz": "que",
+"start": 40.18,
+"end": 40.25
+},
+{
+"word": "pede",
+"voz": "pede",
+"start": 40.296,
+"end": 40.552
+},
+{
+"word": "mão",
+"voz": "mão",
+"start": 40.598,
+"end": 40.749
+},
+{
+"word": "leve,",
+"voz": "leve,",
+"start": 40.807,
+"end": 41.156
+},
+{
+"word": "porque",
+"voz": "porque",
+"start": 41.202,
+"end": 41.434
+},
+{
+"word": "ele",
+"voz": "ele",
+"start": 41.457,
+"end": 41.574
+},
+{
+"word": "é",
+"voz": "é",
+"start": 41.597,
+"end": 41.62
+},
+{
+"word": "bem",
+"voz": "bem",
+"start": 41.678,
+"end": 41.899
+},
+{
+"word": "intenso.",
+"voz": "intenso.",
+"start": 41.957,
+"end": 42.63
+},
+{
+"word": "Agora,",
+"voz": "Agora,",
+"start": 42.967,
+"end": 43.547
+},
+{
+"word": "o",
+"voz": "o",
+"start": 43.605,
+"end": 43.687
+},
+{
+"word": "Grand",
+"voz": "Grã",
+"start": 43.779,
+"end": 43.977
+},
+{
+"word": "Soir,",
+"voz": "Suár,",
+"start": 44.046,
+"end": 44.465
+},
+{
+"word": "da",
+"voz": "da",
+"start": 44.488,
+"end": 44.569
+},
+{
+"word": "Maison",
+"voz": "Mezón",
+"start": 44.627,
+"end": 44.918
+},
+{
+"word": "Francis",
+"voz": "Franssís",
+"start": 44.976,
+"end": 45.428
+},
+{
+"word": "Kurkdjian,",
+"voz": "Kurkidjiã,",
+"start": 45.498,
+"end": 46.38
+},
+{
+"word": "é",
+"voz": "é",
+"start": 46.636,
+"end": 46.764
+},
+{
+"word": "âmbar",
+"voz": "âmbar",
+"start": 46.903,
+"end": 47.286
+},
+{
+"word": "quente",
+"voz": "quente",
+"start": 47.379,
+"end": 47.727
+},
+{
+"word": "com",
+"voz": "com",
+"start": 47.774,
+"end": 47.901
+},
+{
+"word": "baunilha,",
+"voz": "baunilha,",
+"start": 47.948,
+"end": 48.72
+},
+{
+"word": "aquele",
+"voz": "aquele",
+"start": 48.852,
+"end": 49.201
+},
+{
+"word": "cheiro",
+"voz": "cheiro",
+"start": 49.224,
+"end": 49.456
+},
+{
+"word": "de",
+"voz": "de",
+"start": 49.491,
+"end": 49.56
+},
+{
+"word": "pele",
+"voz": "pele",
+"start": 49.607,
+"end": 49.816
+},
+{
+"word": "quentinha",
+"voz": "quentinha",
+"start": 49.862,
+"end": 50.408
+},
+{
+"word": "que",
+"voz": "que",
+"start": 50.454,
+"end": 50.547
+},
+{
+"word": "gruda",
+"voz": "gruda",
+"start": 50.605,
+"end": 50.861
+},
+{
+"word": "no",
+"voz": "no",
+"start": 50.907,
+"end": 50.977
+},
+{
+"word": "casaco",
+"voz": "casaco",
+"start": 51.023,
+"end": 51.685
+},
+{
+"word": "e",
+"voz": "e",
+"start": 51.732,
+"end": 51.79
+},
+{
+"word": "faz",
+"voz": "faz",
+"start": 51.848,
+"end": 52.033
+},
+{
+"word": "ela",
+"voz": "ela",
+"start": 52.103,
+"end": 52.219
+},
+{
+"word": "lembrar",
+"voz": "lembrar",
+"start": 52.266,
+"end": 52.579
+},
+{
+"word": "de",
+"voz": "de",
+"start": 52.637,
+"end": 52.695
+},
+{
+"word": "você",
+"voz": "você",
+"start": 52.742,
+"end": 52.962
+},
+{
+"word": "no",
+"voz": "no",
+"start": 53.032,
+"end": 53.113
+},
+{
+"word": "dia",
+"voz": "dia",
+"start": 53.16,
+"end": 53.252
+},
+{
+"word": "seguinte.",
+"voz": "seguinte.",
+"start": 53.311,
+"end": 53.76
+},
+{
+"word": "E",
+"voz": "E",
+"start": 53.862,
+"end": 54.001
+},
+{
+"word": "o",
+"voz": "o",
+"start": 54.094,
+"end": 54.117
+},
+{
+"word": "último",
+"voz": "último",
+"start": 54.245,
+"end": 54.721
+},
+{
+"word": "é",
+"voz": "é",
+"start": 54.849,
+"end": 54.918
+},
+{
+"word": "o",
+"voz": "o",
+"start": 55.046,
+"end": 55.081
+},
+{
+"word": "Noir",
+"voz": "Nuár",
+"start": 55.127,
+"end": 55.487
+},
+{
+"word": "Extreme,",
+"voz": "Ekstrém,",
+"start": 55.534,
+"end": 56.207
+},
+{
+"word": "do",
+"voz": "do",
+"start": 56.37,
+"end": 56.486
+},
+{
+"word": "Tom",
+"voz": "Tom",
+"start": 56.555,
+"end": 56.718
+},
+{
+"word": "Ford,",
+"voz": "Fórd,",
+"start": 56.846,
+"end": 57.38
+},
+{
+"word": "que",
+"voz": "que",
+"start": 57.542,
+"end": 57.635
+},
+{
+"word": "tem",
+"voz": "tem",
+"start": 57.693,
+"end": 57.844
+},
+{
+"word": "uma",
+"voz": "uma",
+"start": 57.867,
+"end": 57.972
+},
+{
+"word": "baunilha",
+"voz": "baunilha",
+"start": 58.007,
+"end": 58.39
+},
+{
+"word": "cremosa",
+"voz": "cremosa",
+"start": 58.436,
+"end": 59.075
+},
+{
+"word": "que",
+"voz": "que",
+"start": 59.133,
+"end": 59.237
+},
+{
+"word": "lembra",
+"voz": "lembra",
+"start": 59.295,
+"end": 59.585
+},
+{
+"word": "sorvete,",
+"voz": "sorvete,",
+"start": 59.643,
+"end": 60.44
+},
+{
+"word": "com",
+"voz": "com",
+"start": 60.55,
+"end": 60.724
+},
+{
+"word": "cardamomo",
+"voz": "cardamomo",
+"start": 60.782,
+"end": 61.433
+},
+{
+"word": "e",
+"voz": "e",
+"start": 61.467,
+"end": 61.491
+},
+{
+"word": "sândalo,",
+"voz": "sândalo,",
+"start": 61.56,
+"end": 62.071
+},
+{
+"word": "ou",
+"voz": "ou",
+"start": 62.129,
+"end": 62.187
+},
+{
+"word": "seja,",
+"voz": "seja,",
+"start": 62.245,
+"end": 62.71
+},
+{
+"word": "é",
+"voz": "é",
+"start": 62.895,
+"end": 62.977
+},
+{
+"word": "exatamente",
+"voz": "exatamente",
+"start": 63.046,
+"end": 63.65
+},
+{
+"word": "o",
+"voz": "o",
+"start": 63.697,
+"end": 63.731
+},
+{
+"word": "doce",
+"voz": "doce",
+"start": 63.789,
+"end": 64.138
+},
+{
+"word": "na",
+"voz": "na",
+"start": 64.196,
+"end": 64.265
+},
+{
+"word": "medida",
+"voz": "medida",
+"start": 64.324,
+"end": 64.66
+},
+{
+"word": "que",
+"voz": "que",
+"start": 64.707,
+"end": 64.8
+},
+{
+"word": "o",
+"voz": "o",
+"start": 64.834,
+"end": 64.858
+},
+{
+"word": "estudo",
+"voz": "estudo",
+"start": 64.881,
+"end": 65.217
+},
+{
+"word": "colocou",
+"voz": "colocou",
+"start": 65.276,
+"end": 65.763
+},
+{
+"word": "lá",
+"voz": "lá",
+"start": 65.833,
+"end": 65.961
+},
+{
+"word": "no",
+"voz": "no",
+"start": 66.019,
+"end": 66.111
+},
+{
+"word": "topo.",
+"voz": "topo.",
+"start": 66.181,
+"end": 66.657
+},
+{
+"word": "Só",
+"voz": "Só",
+"start": 66.773,
+"end": 66.948
+},
+{
+"word": "que",
+"voz": "que",
+"start": 66.994,
+"end": 67.064
+},
+{
+"word": "eu",
+"voz": "eu",
+"start": 67.087,
+"end": 67.157
+},
+{
+"word": "sei",
+"voz": "sei",
+"start": 67.215,
+"end": 67.366
+},
+{
+"word": "que",
+"voz": "que",
+"start": 67.4,
+"end": 67.493
+},
+{
+"word": "esses",
+"voz": "esses",
+"start": 67.517,
+"end": 67.749
+},
+{
+"word": "cinco",
+"voz": "cinco",
+"start": 67.772,
+"end": 68.085
+},
+{
+"word": "não",
+"voz": "não",
+"start": 68.132,
+"end": 68.248
+},
+{
+"word": "são",
+"voz": "são",
+"start": 68.283,
+"end": 68.422
+},
+{
+"word": "baratos,",
+"voz": "baratos,",
+"start": 68.457,
+"end": 69.026
+},
+{
+"word": "então",
+"voz": "então",
+"start": 69.049,
+"end": 69.293
+},
+{
+"word": "no",
+"voz": "no",
+"start": 69.328,
+"end": 69.397
+},
+{
+"word": "próximo",
+"voz": "próximo",
+"start": 69.455,
+"end": 69.85
+},
+{
+"word": "vídeo",
+"voz": "vídeo",
+"start": 69.908,
+"end": 70.21
+},
+{
+"word": "eu",
+"voz": "eu",
+"start": 70.338,
+"end": 70.465
+},
+{
+"word": "trago",
+"voz": "trago",
+"start": 70.512,
+"end": 70.814
+},
+{
+"word": "os",
+"voz": "os",
+"start": 70.837,
+"end": 70.907
+},
+{
+"word": "árabes",
+"voz": "árabes",
+"start": 71.046,
+"end": 71.429
+},
+{
+"word": "que",
+"voz": "que",
+"start": 71.476,
+"end": 71.557
+},
+{
+"word": "lembram",
+"voz": "lembram",
+"start": 71.603,
+"end": 71.917
+},
+{
+"word": "cada",
+"voz": "cada",
+"start": 71.963,
+"end": 72.207
+},
+{
+"word": "um",
+"voz": "um",
+"start": 72.253,
+"end": 72.323
+},
+{
+"word": "deles",
+"voz": "deles",
+"start": 72.416,
+"end": 72.787
+},
+{
+"word": "pagando",
+"voz": "pagando",
+"start": 72.869,
+"end": 73.31
+},
+{
+"word": "bem",
+"voz": "bem",
+"start": 73.356,
+"end": 73.554
+},
+{
+"word": "menos,",
+"voz": "menos,",
+"start": 73.623,
+"end": 74.21
+},
+{
+"word": "então,",
+"voz": "então,",
+"start": 74.306,
+"end": 74.677
+},
+{
+"word": "pra",
+"voz": "pra",
+"start": 74.724,
+"end": 74.909
+},
+{
+"word": "não",
+"voz": "não",
+"start": 74.979,
+"end": 75.142
+},
+{
+"word": "perder,",
+"voz": "perder,",
+"start": 75.188,
+"end": 75.641
+},
+{
+"word": "segue",
+"voz": "segue",
+"start": 75.699,
+"end": 76.001
+},
+{
+"word": "a",
+"voz": "a",
+"start": 76.036,
+"end": 76.059
+},
+{
+"word": "Valota",
+"voz": "Valota",
+"start": 76.094,
+"end": 76.523
+},
+{
+"word": "Parfum.",
+"voz": "Parfã.",
+"start": 76.593,
+"end": 77.34
+}
+]
+}

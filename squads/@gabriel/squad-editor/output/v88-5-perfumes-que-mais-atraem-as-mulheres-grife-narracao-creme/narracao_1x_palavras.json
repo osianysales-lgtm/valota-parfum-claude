@@ -1,0 +1,1147 @@
+{
+  "fonte": "elevenlabs",
+  "voz": "Osiany Sales v2",
+  "voice_id": "LajrwgPkHCxzLCvnEwi7",
+  "palavras": [
+    {
+      "word": "Lembra",
+      "start": 0,
+      "end": 0.546
+    },
+    {
+      "word": "da",
+      "start": 0.592,
+      "end": 0.662
+    },
+    {
+      "word": "pesquisa",
+      "start": 0.708,
+      "end": 1.091
+    },
+    {
+      "word": "do",
+      "start": 1.138,
+      "end": 1.196
+    },
+    {
+      "word": "vídeo",
+      "start": 1.242,
+      "end": 1.428
+    },
+    {
+      "word": "passado?",
+      "start": 1.474,
+      "end": 2.09
+    },
+    {
+      "word": "Então",
+      "start": 2.38,
+      "end": 2.775
+    },
+    {
+      "word": "anota",
+      "start": 2.81,
+      "end": 3.216
+    },
+    {
+      "word": "os",
+      "start": 3.239,
+      "end": 3.32
+    },
+    {
+      "word": "cinco",
+      "start": 3.355,
+      "end": 3.715
+    },
+    {
+      "word": "perfumes",
+      "start": 3.773,
+      "end": 4.47
+    },
+    {
+      "word": "com",
+      "start": 4.551,
+      "end": 4.702
+    },
+    {
+      "word": "o",
+      "start": 4.725,
+      "end": 4.748
+    },
+    {
+      "word": "cheiro",
+      "start": 4.783,
+      "end": 5.05
+    },
+    {
+      "word": "que",
+      "start": 5.097,
+      "end": 5.201
+    },
+    {
+      "word": "mais",
+      "start": 5.271,
+      "end": 5.538
+    },
+    {
+      "word": "atrai",
+      "start": 5.608,
+      "end": 5.886
+    },
+    {
+      "word": "as",
+      "start": 5.921,
+      "end": 6.002
+    },
+    {
+      "word": "mulheres,",
+      "start": 6.072,
+      "end": 6.792
+    },
+    {
+      "word": "e",
+      "start": 7.198,
+      "end": 7.326
+    },
+    {
+      "word": "fica",
+      "start": 7.396,
+      "end": 7.709
+    },
+    {
+      "word": "até",
+      "start": 7.732,
+      "end": 7.895
+    },
+    {
+      "word": "o",
+      "start": 7.988,
+      "end": 8.022
+    },
+    {
+      "word": "último,",
+      "start": 8.15,
+      "end": 8.545
+    },
+    {
+      "word": "que",
+      "start": 8.58,
+      "end": 8.673
+    },
+    {
+      "word": "é",
+      "start": 8.707,
+      "end": 8.731
+    },
+    {
+      "word": "a",
+      "start": 8.766,
+      "end": 8.789
+    },
+    {
+      "word": "baunilha",
+      "start": 8.847,
+      "end": 9.288
+    },
+    {
+      "word": "mais",
+      "start": 9.346,
+      "end": 9.567
+    },
+    {
+      "word": "cremosa.",
+      "start": 9.625,
+      "end": 10.344
+    },
+    {
+      "word": "Começando",
+      "start": 10.983,
+      "end": 11.471
+    },
+    {
+      "word": "pelo",
+      "start": 11.517,
+      "end": 11.738
+    },
+    {
+      "word": "Diór",
+      "start": 11.784,
+      "end": 12.086
+    },
+    {
+      "word": "Óme",
+      "start": 12.144,
+      "end": 12.249
+    },
+    {
+      "word": "Intênse,",
+      "start": 12.272,
+      "end": 12.864
+    },
+    {
+      "word": "que",
+      "start": 12.945,
+      "end": 13.061
+    },
+    {
+      "word": "é",
+      "start": 13.084,
+      "end": 13.119
+    },
+    {
+      "word": "lavanda",
+      "start": 13.212,
+      "end": 13.595
+    },
+    {
+      "word": "com",
+      "start": 13.642,
+      "end": 13.781
+    },
+    {
+      "word": "íris,",
+      "start": 13.909,
+      "end": 14.396
+    },
+    {
+      "word": "uma",
+      "start": 14.478,
+      "end": 14.64
+    },
+    {
+      "word": "flor",
+      "start": 14.687,
+      "end": 14.896
+    },
+    {
+      "word": "com",
+      "start": 14.942,
+      "end": 15.058
+    },
+    {
+      "word": "cheirinho",
+      "start": 15.093,
+      "end": 15.418
+    },
+    {
+      "word": "de",
+      "start": 15.465,
+      "end": 15.534
+    },
+    {
+      "word": "talco,",
+      "start": 15.604,
+      "end": 16.138
+    },
+    {
+      "word": "em",
+      "start": 16.544,
+      "end": 16.649
+    },
+    {
+      "word": "cima",
+      "start": 16.707,
+      "end": 16.974
+    },
+    {
+      "word": "de",
+      "start": 17.02,
+      "end": 17.079
+    },
+    {
+      "word": "madeira,",
+      "start": 17.125,
+      "end": 17.74
+    },
+    {
+      "word": "ou",
+      "start": 17.833,
+      "end": 17.938
+    },
+    {
+      "word": "seja,",
+      "start": 18.007,
+      "end": 18.53
+    },
+    {
+      "word": "é",
+      "start": 18.866,
+      "end": 18.936
+    },
+    {
+      "word": "o",
+      "start": 19.006,
+      "end": 19.029
+    },
+    {
+      "word": "tal",
+      "start": 19.099,
+      "end": 19.273
+    },
+    {
+      "word": "cheiro",
+      "start": 19.331,
+      "end": 19.633
+    },
+    {
+      "word": "de",
+      "start": 19.668,
+      "end": 19.737
+    },
+    {
+      "word": "conforto",
+      "start": 19.784,
+      "end": 20.306
+    },
+    {
+      "word": "que",
+      "start": 20.364,
+      "end": 20.445
+    },
+    {
+      "word": "deixa",
+      "start": 20.503,
+      "end": 20.829
+    },
+    {
+      "word": "ela",
+      "start": 20.887,
+      "end": 21.061
+    },
+    {
+      "word": "à",
+      "start": 21.119,
+      "end": 21.177
+    },
+    {
+      "word": "vontade.",
+      "start": 21.258,
+      "end": 22.024
+    },
+    {
+      "word": "Já",
+      "start": 22.28,
+      "end": 22.5
+    },
+    {
+      "word": "o",
+      "start": 22.582,
+      "end": 22.605
+    },
+    {
+      "word": "Lêiton,",
+      "start": 22.651,
+      "end": 23.034
+    },
+    {
+      "word": "da",
+      "start": 23.058,
+      "end": 23.139
+    },
+    {
+      "word": "Parfã",
+      "start": 23.185,
+      "end": 23.487
+    },
+    {
+      "word": "de",
+      "start": 23.522,
+      "end": 23.592
+    },
+    {
+      "word": "Marlí,",
+      "start": 23.638,
+      "end": 24.219
+    },
+    {
+      "word": "abre",
+      "start": 24.555,
+      "end": 24.869
+    },
+    {
+      "word": "com",
+      "start": 24.915,
+      "end": 25.066
+    },
+    {
+      "word": "maçã",
+      "start": 25.089,
+      "end": 25.542
+    },
+    {
+      "word": "e",
+      "start": 25.6,
+      "end": 25.623
+    },
+    {
+      "word": "lavanda",
+      "start": 25.67,
+      "end": 26.378
+    },
+    {
+      "word": "e",
+      "start": 26.506,
+      "end": 26.668
+    },
+    {
+      "word": "depois",
+      "start": 26.738,
+      "end": 27.133
+    },
+    {
+      "word": "vira",
+      "start": 27.226,
+      "end": 27.481
+    },
+    {
+      "word": "baunilha",
+      "start": 27.539,
+      "end": 28.073
+    },
+    {
+      "word": "com",
+      "start": 28.131,
+      "end": 28.247
+    },
+    {
+      "word": "cardamomo",
+      "start": 28.294,
+      "end": 28.897
+    },
+    {
+      "word": "e",
+      "start": 28.921,
+      "end": 28.944
+    },
+    {
+      "word": "madeira,",
+      "start": 28.99,
+      "end": 29.64
+    },
+    {
+      "word": "e",
+      "start": 29.896,
+      "end": 30.058
+    },
+    {
+      "word": "é",
+      "start": 30.105,
+      "end": 30.128
+    },
+    {
+      "word": "daqueles",
+      "start": 30.186,
+      "end": 30.906
+    },
+    {
+      "word": "que",
+      "start": 31.161,
+      "end": 31.289
+    },
+    {
+      "word": "fazem",
+      "start": 31.37,
+      "end": 31.765
+    },
+    {
+      "word": "alguém",
+      "start": 31.823,
+      "end": 32.09
+    },
+    {
+      "word": "parar",
+      "start": 32.148,
+      "end": 32.392
+    },
+    {
+      "word": "você",
+      "start": 32.438,
+      "end": 32.74
+    },
+    {
+      "word": "pra",
+      "start": 32.833,
+      "end": 32.961
+    },
+    {
+      "word": "perguntar",
+      "start": 33.007,
+      "end": 33.437
+    },
+    {
+      "word": "o",
+      "start": 33.46,
+      "end": 33.483
+    },
+    {
+      "word": "nome",
+      "start": 33.53,
+      "end": 33.68
+    },
+    {
+      "word": "do",
+      "start": 33.704,
+      "end": 33.75
+    },
+    {
+      "word": "perfume.",
+      "start": 33.797,
+      "end": 34.47
+    },
+    {
+      "word": "E",
+      "start": 34.691,
+      "end": 34.783
+    },
+    {
+      "word": "o",
+      "start": 34.841,
+      "end": 34.876
+    },
+    {
+      "word": "Tobáco",
+      "start": 34.923,
+      "end": 35.341
+    },
+    {
+      "word": "Vaníle,",
+      "start": 35.387,
+      "end": 35.979
+    },
+    {
+      "word": "do",
+      "start": 36.002,
+      "end": 36.095
+    },
+    {
+      "word": "Tom",
+      "start": 36.153,
+      "end": 36.316
+    },
+    {
+      "word": "Fórd,",
+      "start": 36.409,
+      "end": 36.827
+    },
+    {
+      "word": "é",
+      "start": 36.85,
+      "end": 36.885
+    },
+    {
+      "word": "tabaco",
+      "start": 36.943,
+      "end": 37.477
+    },
+    {
+      "word": "com",
+      "start": 37.535,
+      "end": 37.686
+    },
+    {
+      "word": "baunilha",
+      "start": 37.744,
+      "end": 38.475
+    },
+    {
+      "word": "e",
+      "start": 38.568,
+      "end": 38.603
+    },
+    {
+      "word": "especiarias",
+      "start": 38.626,
+      "end": 39.335
+    },
+    {
+      "word": "quentes,",
+      "start": 39.416,
+      "end": 39.822
+    },
+    {
+      "word": "então",
+      "start": 39.857,
+      "end": 40.252
+    },
+    {
+      "word": "é",
+      "start": 40.298,
+      "end": 40.321
+    },
+    {
+      "word": "cheiro",
+      "start": 40.368,
+      "end": 40.658
+    },
+    {
+      "word": "de",
+      "start": 40.705,
+      "end": 40.774
+    },
+    {
+      "word": "lareira,",
+      "start": 40.832,
+      "end": 41.436
+    },
+    {
+      "word": "só",
+      "start": 41.691,
+      "end": 41.842
+    },
+    {
+      "word": "que",
+      "start": 41.9,
+      "end": 41.97
+    },
+    {
+      "word": "pede",
+      "start": 42.016,
+      "end": 42.272
+    },
+    {
+      "word": "mão",
+      "start": 42.318,
+      "end": 42.469
+    },
+    {
+      "word": "leve,",
+      "start": 42.527,
+      "end": 42.876
+    },
+    {
+      "word": "porque",
+      "start": 42.922,
+      "end": 43.154
+    },
+    {
+      "word": "ele",
+      "start": 43.177,
+      "end": 43.294
+    },
+    {
+      "word": "é",
+      "start": 43.317,
+      "end": 43.34
+    },
+    {
+      "word": "bem",
+      "start": 43.398,
+      "end": 43.619
+    },
+    {
+      "word": "intenso.",
+      "start": 43.677,
+      "end": 44.35
+    },
+    {
+      "word": "Agora,",
+      "start": 44.687,
+      "end": 45.267
+    },
+    {
+      "word": "o",
+      "start": 45.325,
+      "end": 45.407
+    },
+    {
+      "word": "Grã",
+      "start": 45.499,
+      "end": 45.697
+    },
+    {
+      "word": "Suár,",
+      "start": 45.766,
+      "end": 46.185
+    },
+    {
+      "word": "da",
+      "start": 46.208,
+      "end": 46.289
+    },
+    {
+      "word": "Mezón",
+      "start": 46.347,
+      "end": 46.638
+    },
+    {
+      "word": "Franssís",
+      "start": 46.696,
+      "end": 47.148
+    },
+    {
+      "word": "Kurkidjiã,",
+      "start": 47.218,
+      "end": 48.1
+    },
+    {
+      "word": "é",
+      "start": 48.356,
+      "end": 48.484
+    },
+    {
+      "word": "âmbar",
+      "start": 48.623,
+      "end": 49.006
+    },
+    {
+      "word": "quente",
+      "start": 49.099,
+      "end": 49.447
+    },
+    {
+      "word": "com",
+      "start": 49.494,
+      "end": 49.621
+    },
+    {
+      "word": "baunilha,",
+      "start": 49.668,
+      "end": 50.504
+    },
+    {
+      "word": "aquele",
+      "start": 51.142,
+      "end": 51.491
+    },
+    {
+      "word": "cheiro",
+      "start": 51.514,
+      "end": 51.746
+    },
+    {
+      "word": "de",
+      "start": 51.781,
+      "end": 51.85
+    },
+    {
+      "word": "pele",
+      "start": 51.897,
+      "end": 52.106
+    },
+    {
+      "word": "quentinha",
+      "start": 52.152,
+      "end": 52.698
+    },
+    {
+      "word": "que",
+      "start": 52.744,
+      "end": 52.837
+    },
+    {
+      "word": "gruda",
+      "start": 52.895,
+      "end": 53.151
+    },
+    {
+      "word": "no",
+      "start": 53.197,
+      "end": 53.267
+    },
+    {
+      "word": "casaco",
+      "start": 53.313,
+      "end": 53.975
+    },
+    {
+      "word": "e",
+      "start": 54.022,
+      "end": 54.08
+    },
+    {
+      "word": "faz",
+      "start": 54.138,
+      "end": 54.323
+    },
+    {
+      "word": "ela",
+      "start": 54.393,
+      "end": 54.509
+    },
+    {
+      "word": "lembrar",
+      "start": 54.556,
+      "end": 54.869
+    },
+    {
+      "word": "de",
+      "start": 54.927,
+      "end": 54.985
+    },
+    {
+      "word": "você",
+      "start": 55.032,
+      "end": 55.252
+    },
+    {
+      "word": "no",
+      "start": 55.322,
+      "end": 55.403
+    },
+    {
+      "word": "dia",
+      "start": 55.45,
+      "end": 55.542
+    },
+    {
+      "word": "seguinte.",
+      "start": 55.601,
+      "end": 56.158
+    },
+    {
+      "word": "E",
+      "start": 56.692,
+      "end": 56.831
+    },
+    {
+      "word": "o",
+      "start": 56.924,
+      "end": 56.947
+    },
+    {
+      "word": "último",
+      "start": 57.075,
+      "end": 57.551
+    },
+    {
+      "word": "é",
+      "start": 57.679,
+      "end": 57.748
+    },
+    {
+      "word": "o",
+      "start": 57.876,
+      "end": 57.911
+    },
+    {
+      "word": "Nuár",
+      "start": 57.957,
+      "end": 58.317
+    },
+    {
+      "word": "Ekstrém,",
+      "start": 58.364,
+      "end": 59.037
+    },
+    {
+      "word": "do",
+      "start": 59.2,
+      "end": 59.316
+    },
+    {
+      "word": "Tom",
+      "start": 59.385,
+      "end": 59.548
+    },
+    {
+      "word": "Fórd,",
+      "start": 59.676,
+      "end": 60.21
+    },
+    {
+      "word": "que",
+      "start": 60.372,
+      "end": 60.465
+    },
+    {
+      "word": "tem",
+      "start": 60.523,
+      "end": 60.674
+    },
+    {
+      "word": "uma",
+      "start": 60.697,
+      "end": 60.802
+    },
+    {
+      "word": "baunilha",
+      "start": 60.837,
+      "end": 61.22
+    },
+    {
+      "word": "cremosa",
+      "start": 61.266,
+      "end": 61.905
+    },
+    {
+      "word": "que",
+      "start": 61.963,
+      "end": 62.067
+    },
+    {
+      "word": "lembra",
+      "start": 62.125,
+      "end": 62.415
+    },
+    {
+      "word": "sorvete,",
+      "start": 62.473,
+      "end": 63.344
+    },
+    {
+      "word": "com",
+      "start": 63.75,
+      "end": 63.924
+    },
+    {
+      "word": "cardamomo",
+      "start": 63.982,
+      "end": 64.633
+    },
+    {
+      "word": "e",
+      "start": 64.667,
+      "end": 64.691
+    },
+    {
+      "word": "sândalo,",
+      "start": 64.76,
+      "end": 65.271
+    },
+    {
+      "word": "ou",
+      "start": 65.329,
+      "end": 65.387
+    },
+    {
+      "word": "seja,",
+      "start": 65.445,
+      "end": 65.91
+    },
+    {
+      "word": "é",
+      "start": 66.095,
+      "end": 66.177
+    },
+    {
+      "word": "exatamente",
+      "start": 66.246,
+      "end": 66.85
+    },
+    {
+      "word": "o",
+      "start": 66.897,
+      "end": 66.931
+    },
+    {
+      "word": "doce",
+      "start": 66.989,
+      "end": 67.338
+    },
+    {
+      "word": "na",
+      "start": 67.396,
+      "end": 67.465
+    },
+    {
+      "word": "medida",
+      "start": 67.524,
+      "end": 67.86
+    },
+    {
+      "word": "que",
+      "start": 67.907,
+      "end": 68
+    },
+    {
+      "word": "o",
+      "start": 68.034,
+      "end": 68.058
+    },
+    {
+      "word": "estudo",
+      "start": 68.081,
+      "end": 68.417
+    },
+    {
+      "word": "colocou",
+      "start": 68.476,
+      "end": 68.963
+    },
+    {
+      "word": "lá",
+      "start": 69.033,
+      "end": 69.161
+    },
+    {
+      "word": "no",
+      "start": 69.219,
+      "end": 69.311
+    },
+    {
+      "word": "topo.",
+      "start": 69.381,
+      "end": 69.857
+    },
+    {
+      "word": "Só",
+      "start": 70.263,
+      "end": 70.438
+    },
+    {
+      "word": "que",
+      "start": 70.484,
+      "end": 70.554
+    },
+    {
+      "word": "eu",
+      "start": 70.577,
+      "end": 70.647
+    },
+    {
+      "word": "sei",
+      "start": 70.705,
+      "end": 70.856
+    },
+    {
+      "word": "que",
+      "start": 70.89,
+      "end": 70.983
+    },
+    {
+      "word": "esses",
+      "start": 71.007,
+      "end": 71.239
+    },
+    {
+      "word": "cinco",
+      "start": 71.262,
+      "end": 71.575
+    },
+    {
+      "word": "não",
+      "start": 71.622,
+      "end": 71.738
+    },
+    {
+      "word": "são",
+      "start": 71.773,
+      "end": 71.912
+    },
+    {
+      "word": "baratos,",
+      "start": 71.947,
+      "end": 72.516
+    },
+    {
+      "word": "então",
+      "start": 72.539,
+      "end": 72.783
+    },
+    {
+      "word": "no",
+      "start": 72.818,
+      "end": 72.887
+    },
+    {
+      "word": "próximo",
+      "start": 72.945,
+      "end": 73.34
+    },
+    {
+      "word": "vídeo",
+      "start": 73.398,
+      "end": 73.7
+    },
+    {
+      "word": "eu",
+      "start": 73.828,
+      "end": 73.955
+    },
+    {
+      "word": "trago",
+      "start": 74.002,
+      "end": 74.304
+    },
+    {
+      "word": "os",
+      "start": 74.327,
+      "end": 74.397
+    },
+    {
+      "word": "árabes",
+      "start": 74.536,
+      "end": 74.919
+    },
+    {
+      "word": "que",
+      "start": 74.966,
+      "end": 75.047
+    },
+    {
+      "word": "lembram",
+      "start": 75.093,
+      "end": 75.407
+    },
+    {
+      "word": "cada",
+      "start": 75.453,
+      "end": 75.697
+    },
+    {
+      "word": "um",
+      "start": 75.743,
+      "end": 75.813
+    },
+    {
+      "word": "deles",
+      "start": 75.906,
+      "end": 76.277
+    },
+    {
+      "word": "pagando",
+      "start": 76.359,
+      "end": 76.8
+    },
+    {
+      "word": "bem",
+      "start": 76.846,
+      "end": 77.044
+    },
+    {
+      "word": "menos,",
+      "start": 77.113,
+      "end": 77.705
+    },
+    {
+      "word": "então,",
+      "start": 77.996,
+      "end": 78.367
+    },
+    {
+      "word": "pra",
+      "start": 78.414,
+      "end": 78.599
+    },
+    {
+      "word": "não",
+      "start": 78.669,
+      "end": 78.832
+    },
+    {
+      "word": "perder,",
+      "start": 78.878,
+      "end": 79.331
+    },
+    {
+      "word": "segue",
+      "start": 79.389,
+      "end": 79.691
+    },
+    {
+      "word": "a",
+      "start": 79.726,
+      "end": 79.749
+    },
+    {
+      "word": "Valota",
+      "start": 79.784,
+      "end": 80.213
+    },
+    {
+      "word": "Parfã.",
+      "start": 80.283,
+      "end": 81.038
+    }
+  ]
+}

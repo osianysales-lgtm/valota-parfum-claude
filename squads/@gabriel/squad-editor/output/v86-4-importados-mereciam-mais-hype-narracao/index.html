@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+/* v86 · 4 importados que mereciam mais hype · molde v82 (creme) com frascos em CARD BRANCO (sem recorte) */
+@font-face{font-family:MX;src:url(fontes/Montserrat-ExtraBold.ttf)}
+@font-face{font-family:MBo;src:url(fontes/Montserrat-Bold.ttf)}
+@font-face{font-family:MB;src:url(fontes/Montserrat-Black.ttf)}
+@font-face{font-family:MV;src:url(fontes/Montserrat-VariableFont_wght.ttf)}
+@font-face{font-family:GB;src:url(fontes/GothamBlack.otf)}
+:root{--pet:#0F2E33;--luz:#1A4A52;--amb:#D49A4E;--cre:#F2E8D8;--ama:#FFC93C;--noite:#0A1F23;--pim:#9C452A}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#020708}
+#tudo{position:absolute;inset:0}
+#bg{position:absolute;inset:0;background:radial-gradient(70% 42% at 50% 36%,#123c43 0%,#0A1F23 42%,#04100f 72%,#010405 100%)}
+.fm{position:absolute;-webkit-mask-size:100% 100%}
+#fm1{left:-300px;top:-150px;width:1700px;height:1500px;-webkit-mask-image:url(fumaca/fumaca_a.png);background:#5f8f88;opacity:.12}
+#fm2{left:-400px;top:300px;width:1800px;height:1500px;-webkit-mask-image:url(fumaca/fumaca_b.png);background:var(--amb);opacity:.18}
+#fm3{left:-250px;top:800px;width:1600px;height:1200px;-webkit-mask-image:url(fumaca/fumaca_a.png);background:var(--cre);opacity:.05}
+#notas{position:absolute;inset:0}
+#notas img{position:absolute;filter:blur(1.3px) saturate(1.05) brightness(1.08) drop-shadow(0 0 3px rgba(242,232,216,.55)) drop-shadow(0 0 30px rgba(242,232,216,.35))}
+#vin{position:absolute;inset:0;background:radial-gradient(80% 58% at 50% 42%,rgba(0,0,0,0) 50%,rgba(0,0,0,.78) 100%)}
+#moldura{position:absolute;left:16px;top:16px;right:16px;bottom:16px;border:2px solid rgba(212,154,78,.32);border-radius:36px;pointer-events:none}
+#stage{position:absolute;left:0;top:0;width:1080px;height:1920px;transform-origin:540px 700px}
+.e{position:absolute;opacity:0;display:none}
+.e img{display:block}
+/* capa (quadro 0 = capa do feed: tudo entre y 260 e 1660) */
+#capa{position:absolute;inset:0;overflow:hidden;background:radial-gradient(70% 42% at 50% 36%,#123c43 0%,#0A1F23 42%,#04100f 72%,#010405 100%)}
+#ctxt{position:absolute;left:0;right:0;top:280px;text-align:center}
+.cparte{display:inline-block;font-family:MB;font-size:36px;letter-spacing:8px;text-indent:8px;padding:12px 34px 10px;border-radius:999px;background:var(--ama);color:var(--noite);box-shadow:0 8px 24px rgba(0,0,0,.45)}
+.c1{margin-top:30px;font-family:MV;font-weight:900;font-size:112px;line-height:.95;color:var(--cre);text-shadow:0 5px 22px #000e}
+.c2{font-family:GB;font-size:170px;line-height:1.02;background:linear-gradient(180deg,#FFE9B8 0,#F2C978 40%,#D49A4E 72%,#A86F2C 100%);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 6px 18px #000c)}
+.cpil{display:inline-block;margin-top:30px;padding:14px 38px 16px;border-radius:60px;font-family:MB;font-size:50px;background:var(--ama);color:var(--noite);box-shadow:0 10px 30px #0009;transform:rotate(-2deg)}
+#cq{position:absolute;left:0;right:0;top:860px;height:420px;display:flex;justify-content:center;align-items:flex-end;gap:22px}
+#cq .q5{width:180px;height:280px;border-radius:24px;background:#fff;display:flex;align-items:center;justify-content:center;font-family:GB;font-size:140px;color:var(--pet);box-shadow:0 18px 34px rgba(0,0,0,.5),0 0 0 3px rgba(212,154,78,.6);position:relative}
+#cq .q5 i{position:absolute;top:-46px;left:0;right:0;text-align:center;font-style:normal;font-size:70px}
+/* selo fixo no topo durante a lista */
+.selo{left:0;right:0;text-align:center}
+.selo span{display:inline-block;font-family:MB;font-size:30px;letter-spacing:3px;color:var(--noite);background:var(--ama);border-radius:999px;padding:11px 28px 9px;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+.rank{left:0;right:0;text-align:center;font-family:GB;color:var(--cre);font-size:44px;letter-spacing:8px;text-shadow:0 6px 24px rgba(0,0,0,.6)}
+.rank b{font-family:MV;font-weight:900;font-size:104px;letter-spacing:0;vertical-align:-14px;margin-right:16px;background:linear-gradient(180deg,#FFE9B8 0,#F2C978 40%,#D49A4E 72%,#A86F2C 100%);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 6px 18px #000c)}
+.nome{left:0;right:0;text-align:center;font-family:GB;font-size:76px;line-height:1.05;color:var(--cre);text-shadow:0 5px 0 rgba(0,0,0,.4),0 10px 26px rgba(0,0,0,.5)}
+.marca{left:0;right:0;text-align:center;font-family:MBo;font-size:30px;letter-spacing:12px;color:var(--amb)}
+.glow{width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,rgba(212,154,78,.34) 0%,rgba(212,154,78,.10) 40%,rgba(212,154,78,0) 68%)}
+.acard{padding:18px;background:#fff;border-radius:26px;box-shadow:0 26px 40px rgba(0,0,0,.55),0 0 0 4px rgba(212,154,78,.7)}
+.gr{text-align:center;width:400px}
+.gr .chip{display:inline-block;white-space:nowrap;font-family:MB;font-size:28px;letter-spacing:2px;color:var(--noite);background:var(--cre);border-radius:999px;padding:9px 20px 7px}
+.gr b{display:block;font-family:GB;font-size:38px;color:var(--cre);margin-top:14px;line-height:1.05}
+.gr small{display:block;font-family:MBo;font-size:28px;letter-spacing:2px;line-height:1.1;color:var(--amb);margin-top:6px}
+.gcard{display:inline-block;margin-top:18px;padding:16px;background:#fff;border-radius:22px;box-shadow:0 18px 34px rgba(0,0,0,.55),0 0 0 3px rgba(212,154,78,.55)}
+.gcard img{margin:0!important}
+.nt{text-align:center;width:200px}
+.nt .ib{height:120px;display:flex;align-items:flex-end;justify-content:center}
+.nt img{max-width:150px;max-height:120px;filter:drop-shadow(0 0 3px rgba(242,232,216,.7)) drop-shadow(0 0 18px rgba(242,232,216,.5)) drop-shadow(0 12px 18px rgba(0,0,0,.55))}
+.nt .lab{margin-top:10px;font-family:MB;font-size:30px;letter-spacing:1px;color:var(--cre);line-height:1.15;text-shadow:0 3px 10px rgba(0,0,0,.6)}
+.tag{font-family:MB;font-size:32px;border-radius:999px;padding:15px 32px 13px;white-space:nowrap;text-align:center;display:inline-block;line-height:1.1}
+.tag.out{color:var(--cre);border:3px solid var(--amb);background:rgba(5,15,16,.75)}
+.tag.cre{color:var(--noite);background:var(--cre);box-shadow:0 8px 22px rgba(0,0,0,.4)}
+.tag.ama{color:var(--noite);background:var(--ama);box-shadow:0 0 34px rgba(255,201,60,.35),0 8px 22px rgba(0,0,0,.35)}
+.tag.pim{color:var(--cre);background:var(--pim);box-shadow:0 0 30px rgba(156,69,42,.45),0 8px 22px rgba(0,0,0,.4)}
+.grupo{padding:14px;background:#fff;border-radius:26px;box-shadow:0 26px 44px rgba(0,0,0,.55),0 0 0 4px rgba(212,154,78,.7)}
+.grupo img{border-radius:14px}
+.big{left:0;right:0;text-align:center;font-family:GB;font-size:150px;line-height:1;background:linear-gradient(180deg,#FFE9B8 0,#F2C978 40%,#D49A4E 72%,#A86F2C 100%);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 6px 18px #000c)}
+.mq{width:150px;height:220px;border-radius:20px;background:#fff;display:flex;align-items:center;justify-content:center;font-family:GB;font-size:100px;color:var(--pet);box-shadow:0 16px 30px rgba(0,0,0,.5),0 0 0 3px rgba(212,154,78,.6)}
+.mini{padding:10px;background:#fff;border-radius:16px;box-shadow:0 14px 26px rgba(0,0,0,.5),0 0 0 3px rgba(212,154,78,.55)}
+/* legenda (obrigatória) */
+#leg{position:absolute;left:50px;right:50px;top:1468px;height:90px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;text-align:center}
+#leg span{font-family:MV;font-weight:700;font-size:44px;color:var(--cre);margin:0 7px;display:inline-block;text-shadow:0 3px 12px rgba(0,0,0,.9),0 0 3px rgba(0,0,0,.8)}
+#leg span.h{color:var(--ama);font-weight:800}
+#leg .cx{display:inline-block;padding:8px 26px 10px;border-radius:22px}
+#leg.nacapa .cx{background:rgba(4,12,14,.93);box-shadow:0 10px 30px rgba(0,0,0,.55);border:2px solid rgba(212,154,78,.35)}
+#cortina{position:absolute;left:-260px;top:-60px;width:1600px;height:2000px;-webkit-mask-image:url(fumaca/fumaca_b.png);-webkit-mask-size:100% 100%;background:#9fb8b3;opacity:0}
+#cortina2{position:absolute;left:-200px;top:0;width:1500px;height:1900px;-webkit-mask-image:url(fumaca/fumaca_a.png);-webkit-mask-size:100% 100%;background:var(--amb);opacity:0}
+
+/* ===== TEMA CREME (fundo claro = fontes grossas, texto Petróleo Noite, nada de texto âmbar/amarelo sobre o creme) ===== */
+body.creme{background:#E9DCC6}
+.creme #bg,.creme #capa{background:radial-gradient(70% 45% at 50% 36%,#FBF5EA 0%,#F2E8D8 52%,#E4D3B8 100%)}
+.creme #fm1{background:#7FA8A1;opacity:.10}
+.creme #fm2{opacity:.13}
+.creme #fm3{background:#B98A5A;opacity:.07}
+.creme #notas img{filter:blur(1.2px) saturate(1.05) drop-shadow(0 10px 18px rgba(10,31,35,.18))}
+.creme #vin{background:radial-gradient(80% 58% at 50% 42%,rgba(0,0,0,0) 55%,rgba(110,80,40,.20) 100%)}
+.creme #moldura{border-color:rgba(15,46,51,.28)}
+.creme .cparte{background:var(--noite);color:var(--cre);box-shadow:0 8px 20px rgba(10,31,35,.25)}
+.creme .c1{color:var(--noite);text-shadow:none}
+.creme .c2{background:none;color:var(--noite);-webkit-background-clip:border-box;filter:none}
+.creme .cpil{background:var(--pet);color:var(--cre);box-shadow:0 10px 26px rgba(10,31,35,.3)}
+.creme #cq .q5{box-shadow:0 16px 30px rgba(10,31,35,.22),0 0 0 3px var(--pet)}
+.creme .selo span{background:var(--noite);color:var(--cre);box-shadow:0 8px 20px rgba(10,31,35,.25)}
+.creme .rank{color:var(--noite);text-shadow:none}
+.creme .rank b{background:linear-gradient(180deg,#1A4A52 0,#0F2E33 55%,#0A1F23 100%);-webkit-background-clip:text;filter:none}
+.creme .nome{color:var(--noite);text-shadow:none}
+.creme .marca{color:var(--pim);font-family:MB}
+.creme .glow{background:radial-gradient(circle,rgba(212,154,78,.30) 0%,rgba(212,154,78,.08) 40%,rgba(212,154,78,0) 68%)}
+.creme .acard{box-shadow:0 24px 40px rgba(10,31,35,.25),0 0 0 4px var(--pet)}
+.creme .gcard,.creme .grupo,.creme .mini,.creme .mq{box-shadow:0 16px 30px rgba(10,31,35,.22),0 0 0 3px var(--pet)}
+.creme .gr .chip{background:var(--noite);color:var(--cre)}
+.creme .gr b{color:var(--noite)}
+.creme .gr small{color:var(--pim);font-family:MB}
+.creme .nt img{filter:drop-shadow(0 10px 14px rgba(10,31,35,.25))}
+.creme .nt .lab{color:var(--noite);font-family:MB;text-shadow:none}
+.creme .tag.out{color:var(--noite);border-color:var(--noite);background:rgba(255,255,255,.75)}
+.creme .tag.cre{color:var(--cre);background:var(--noite);box-shadow:0 8px 20px rgba(10,31,35,.25)}
+.creme .tag.ama{box-shadow:0 8px 20px rgba(10,31,35,.22)}
+.creme .big{background:none;color:var(--noite);-webkit-background-clip:border-box;filter:none}
+.creme #leg span{color:var(--noite);font-weight:800;text-shadow:none}
+.creme #leg span.h{color:var(--noite);background:linear-gradient(180deg,rgba(212,154,78,0) 52%,rgba(212,154,78,.65) 52%,rgba(212,154,78,.65) 92%,rgba(212,154,78,0) 92%);padding:0 4px}
+.creme #leg .cx{background:rgba(255,255,255,.82);box-shadow:0 8px 22px rgba(10,31,35,.15)}
+.creme #leg.nacapa .cx{background:rgba(255,255,255,.95);border:2px solid rgba(15,46,51,.25)}
+.creme #cortina{background:#ffffff}
+</style></head><body>
+<div id="tudo">
+<div id="bg"></div><div id="fm1" class="fm"></div><div id="fm2" class="fm"></div><div id="fm3" class="fm"></div>
+<div id="notas"></div><div id="vin"></div>
+<div id="stage"></div>
+<div id="capa"><div id="ctxt"></div><div id="cq"></div></div>
+<div id="cortina"></div><div id="cortina2"></div>
+<div id="leg"></div>
+<div id="moldura"></div>
+</div>
+<script>
+window.D={"TEMA": "creme", "TOT": 4, "S": {"p1": 5.867, "p2": 16.725, "p3": 29.08, "p4": 41.718, "fim": 55.174}, "K": {"a_nome": 3.421, "a_fav": 5.079, "c_card": 6.093, "c_iris": 11.642, "c_baun": 13.295, "c_fix": 14.51, "g_nome": 17.408, "g_cafe": 20.293, "g_baun": 21.507, "g_form": 25.322, "g_mad": 27.14, "v_nome": 29.923, "v_iris": 31.369, "v_baun": 32.305, "v_erv": 33.22, "v_couro": 34.401, "v_bruto": 36.318, "v_card": 37.904, "v_banho": 40.014, "q_nome": 42.568, "q_mar": 45.969, "q_inc": 47.25, "q_mad": 47.986, "q_card": 49.945, "q_melh": 50.622, "q_v2": 53.03, "f_salva": 57.927, "f_segue": 59.129, "f_cards": 55.674}, "FIM": 61.497, "END": 62.897, "LEG": [{"t0": -0.1, "t1": 0.829, "p": [{"w": "Esses", "h": false}, {"w": "quatro", "h": false}, {"w": "perfumes", "h": false}]}, {"t0": 0.829, "t1": 1.565, "p": [{"w": "importados", "h": false}, {"w": "mereciam", "h": false}]}, {"t0": 1.565, "t1": 2.406, "p": [{"w": "muito", "h": false}, {"w": "mais", "h": false}, {"w": "hype", "h": false}]}, {"t0": 2.406, "t1": 3.056, "p": [{"w": "porque", "h": false}, {"w": "são", "h": false}, {"w": "excelentes", "h": false}]}, {"t0": 3.056, "t1": 3.335, "p": [{"w": "e", "h": false}, {"w": "o", "h": false}, {"w": "primeiro", "h": false}]}, {"t0": 3.335, "t1": 4.323, "p": [{"w": "é", "h": false}, {"w": "o", "h": false}, {"w": "Armani", "h": true}, {"w": "Code", "h": true}, {"w": "Parfum", "h": true}]}, {"t0": 4.323, "t1": 4.761, "p": [{"w": "que", "h": false}, {"w": "inclusive", "h": false}]}, {"t0": 4.761, "t1": 5.867, "p": [{"w": "é", "h": false}, {"w": "um", "h": false}, {"w": "dos", "h": false}, {"w": "meus", "h": false}, {"w": "favoritos", "h": false}, {"w": "da", "h": false}, {"w": "vida", "h": false}]}, {"t0": 5.867, "t1": 6.73, "p": [{"w": "Sabe", "h": false}, {"w": "o", "h": false}, {"w": "Le", "h": true}, {"w": "Male", "h": true}, {"w": "Le", "h": true}, {"w": "Parfum", "h": true}]}, {"t0": 6.73, "t1": 7.281, "p": [{"w": "aquele", "h": false}, {"w": "cheiro", "h": false}, {"w": "que", "h": false}, {"w": "você", "h": false}]}, {"t0": 7.281, "t1": 7.689, "p": [{"w": "adora", "h": false}]}, {"t0": 7.689, "t1": 8.14, "p": [{"w": "Pois", "h": false}, {"w": "é", "h": false}]}, {"t0": 8.14, "t1": 8.823, "p": [{"w": "agora", "h": false}, {"w": "imagina", "h": false}, {"w": "ele", "h": false}, {"w": "mais", "h": false}]}, {"t0": 8.823, "t1": 9.195, "p": [{"w": "encorpado", "h": false}]}, {"t0": 9.195, "t1": 9.752, "p": [{"w": "mais", "h": false}, {"w": "sério", "h": false}, {"w": "e", "h": false}, {"w": "mais", "h": false}]}, {"t0": 9.752, "t1": 10.077, "p": [{"w": "maduro", "h": false}]}, {"t0": 10.077, "t1": 10.375, "p": [{"w": "e", "h": false}, {"w": "aí", "h": false}]}, {"t0": 10.375, "t1": 10.601, "p": [{"w": "gente", "h": false}]}, {"t0": 10.601, "t1": 11.151, "p": [{"w": "que", "h": false}, {"w": "perfumão", "h": false}]}, {"t0": 11.151, "t1": 11.974, "p": [{"w": "Porque", "h": false}, {"w": "aqui", "h": false}, {"w": "tem", "h": false}, {"w": "íris", "h": false}]}, {"t0": 11.974, "t1": 12.571, "p": [{"w": "uma", "h": false}, {"w": "flor", "h": false}, {"w": "com", "h": false}, {"w": "cheirinho", "h": false}]}, {"t0": 12.571, "t1": 13.077, "p": [{"w": "de", "h": false}, {"w": "talco", "h": false}]}, {"t0": 13.077, "t1": 13.746, "p": [{"w": "e", "h": false}, {"w": "uma", "h": false}, {"w": "baunilha", "h": false}, {"w": "bem", "h": false}]}, {"t0": 13.746, "t1": 14.37, "p": [{"w": "docinha", "h": false}]}, {"t0": 14.37, "t1": 15.326, "p": [{"w": "e", "h": false}, {"w": "a", "h": false}, {"w": "fixação", "h": false}, {"w": "é", "h": false}, {"w": "bizarra", "h": false}]}, {"t0": 15.326, "t1": 16.148, "p": [{"w": "porque", "h": false}, {"w": "passa", "h": false}, {"w": "de", "h": false}, {"w": "10", "h": false}, {"w": "horas", "h": false}]}, {"t0": 16.148, "t1": 16.725, "p": [{"w": "na", "h": false}, {"w": "minha", "h": false}, {"w": "pele", "h": false}]}, {"t0": 16.725, "t1": 17.295, "p": [{"w": "Já", "h": false}, {"w": "o", "h": false}, {"w": "segundo", "h": false}]}, {"t0": 17.295, "t1": 19.087, "p": [{"w": "é", "h": false}, {"w": "o", "h": false}, {"w": "Gentleman", "h": true}, {"w": "Society", "h": true}, {"w": "Extrême", "h": true}]}, {"t0": 19.087, "t1": 19.722, "p": [{"w": "da", "h": false}, {"w": "Givenchy", "h": true}]}, {"t0": 19.722, "t1": 20.233, "p": [{"w": "pra", "h": false}, {"w": "quem", "h": false}, {"w": "ama", "h": false}, {"w": "cheiro", "h": false}]}, {"t0": 20.233, "t1": 20.625, "p": [{"w": "de", "h": false}, {"w": "café", "h": false}]}, {"t0": 20.625, "t1": 21.387, "p": [{"w": "porque", "h": false}, {"w": "ele", "h": false}, {"w": "junta", "h": false}, {"w": "o", "h": false}, {"w": "café", "h": false}]}, {"t0": 21.387, "t1": 22.31, "p": [{"w": "com", "h": false}, {"w": "baunilha", "h": false}, {"w": "e", "h": false}, {"w": "fica", "h": false}]}, {"t0": 22.31, "t1": 22.914, "p": [{"w": "sensacional", "h": false}]}, {"t0": 22.914, "t1": 23.657, "p": [{"w": "Só", "h": false}, {"w": "que", "h": false}, {"w": "não", "h": false}, {"w": "é", "h": false}, {"w": "aquele", "h": false}, {"w": "doce", "h": false}]}, {"t0": 23.657, "t1": 24.499, "p": [{"w": "que", "h": false}, {"w": "faz", "h": false}, {"w": "você", "h": false}, {"w": "pensar", "h": false}]}, {"t0": 24.499, "t1": 24.911, "p": [{"w": "meu", "h": false}, {"w": "Deus", "h": false}]}, {"t0": 24.911, "t1": 25.249, "p": [{"w": "que", "h": false}, {"w": "perfume", "h": false}]}, {"t0": 25.249, "t1": 25.826, "p": [{"w": "de", "h": false}, {"w": "formiguinha", "h": false}]}, {"t0": 25.826, "t1": 26.198, "p": [{"w": "isso", "h": false}, {"w": "é", "h": false}, {"w": "cheiro", "h": false}]}, {"t0": 26.198, "t1": 26.861, "p": [{"w": "de", "h": false}, {"w": "adolescente", "h": false}]}, {"t0": 26.861, "t1": 27.598, "p": [{"w": "porque", "h": false}, {"w": "ele", "h": false}, {"w": "é", "h": false}, {"w": "maduro", "h": false}]}, {"t0": 27.598, "t1": 28.42, "p": [{"w": "sério", "h": false}, {"w": "e", "h": false}, {"w": "passa", "h": false}, {"w": "das", "h": false}, {"w": "8", "h": false}]}, {"t0": 28.42, "t1": 29.08, "p": [{"w": "horas", "h": false}, {"w": "na", "h": false}, {"w": "pele", "h": false}]}, {"t0": 29.08, "t1": 29.458, "p": [{"w": "Agora", "h": false}]}, {"t0": 29.458, "t1": 29.85, "p": [{"w": "o", "h": false}, {"w": "terceiro", "h": false}]}, {"t0": 29.85, "t1": 31.011, "p": [{"w": "é", "h": false}, {"w": "o", "h": false}, {"w": "Valentino", "h": true}, {"w": "Uomo", "h": true}, {"w": "Intense", "h": true}]}, {"t0": 31.011, "t1": 31.707, "p": [{"w": "que", "h": false}, {"w": "tem", "h": false}, {"w": "uma", "h": false}, {"w": "íris", "h": false}, {"w": "mais", "h": false}]}, {"t0": 31.707, "t1": 32.178, "p": [{"w": "carregada", "h": false}]}, {"t0": 32.178, "t1": 33.154, "p": [{"w": "com", "h": false}, {"w": "baunilha", "h": false}, {"w": "e", "h": false}, {"w": "um", "h": false}, {"w": "toque", "h": false}]}, {"t0": 33.154, "t1": 33.731, "p": [{"w": "de", "h": false}, {"w": "ervinha", "h": false}]}, {"t0": 33.731, "t1": 34.235, "p": [{"w": "tudo", "h": false}, {"w": "engolido", "h": false}]}, {"t0": 34.235, "t1": 35.436, "p": [{"w": "por", "h": false}, {"w": "um", "h": false}, {"w": "couro", "h": false}, {"w": "quente", "h": false}, {"w": "e", "h": false}, {"w": "intenso", "h": false}]}, {"t0": 35.436, "t1": 35.973, "p": [{"w": "Ou", "h": false}, {"w": "seja", "h": false}]}, {"t0": 35.973, "t1": 36.922, "p": [{"w": "é", "h": false}, {"w": "um", "h": false}, {"w": "cheiro", "h": false}, {"w": "bruto", "h": false}, {"w": "mesmo", "h": false}]}, {"t0": 36.922, "t1": 37.818, "p": [{"w": "e", "h": false}, {"w": "se", "h": false}, {"w": "você", "h": false}, {"w": "curte", "h": false}, {"w": "a", "h": false}, {"w": "vibe", "h": false}]}, {"t0": 37.818, "t1": 38.733, "p": [{"w": "do", "h": false}, {"w": "Dior", "h": true}, {"w": "Homme", "h": true}, {"w": "Intense", "h": true}]}, {"t0": 38.733, "t1": 39.496, "p": [{"w": "vai", "h": false}, {"w": "amar", "h": false}, {"w": "esse", "h": false}, {"w": "aqui", "h": false}]}, {"t0": 39.496, "t1": 40.239, "p": [{"w": "que", "h": false}, {"w": "na", "h": false}, {"w": "minha", "h": false}, {"w": "pele", "h": false}, {"w": "passa", "h": false}]}, {"t0": 40.239, "t1": 41.341, "p": [{"w": "das", "h": false}, {"w": "10", "h": false}, {"w": "horas", "h": false}, {"w": "e", "h": false}, {"w": "só", "h": false}, {"w": "sai", "h": false}]}, {"t0": 41.341, "t1": 41.718, "p": [{"w": "no", "h": false}, {"w": "banho", "h": false}]}, {"t0": 41.718, "t1": 42.415, "p": [{"w": "E", "h": false}, {"w": "pra", "h": false}, {"w": "fechar", "h": false}]}, {"t0": 42.415, "t1": 43.543, "p": [{"w": "o", "h": false}, {"w": "Acqua", "h": true}, {"w": "di", "h": true}, {"w": "Giò", "h": true}, {"w": "Parfum", "h": true}]}, {"t0": 43.543, "t1": 44.08, "p": [{"w": "pra", "h": false}, {"w": "quem", "h": false}, {"w": "não", "h": false}, {"w": "curte", "h": false}]}, {"t0": 44.08, "t1": 45.379, "p": [{"w": "essa", "h": false}, {"w": "vibe", "h": false}, {"w": "de", "h": false}, {"w": "talco", "h": false}, {"w": "e", "h": false}, {"w": "prefere", "h": false}]}, {"t0": 45.379, "t1": 45.883, "p": [{"w": "um", "h": false}, {"w": "cheiro", "h": false}, {"w": "fresquinho", "h": false}]}, {"t0": 45.883, "t1": 46.168, "p": [{"w": "de", "h": false}, {"w": "mar", "h": false}]}, {"t0": 46.168, "t1": 46.798, "p": [{"w": "que", "h": false}, {"w": "na", "h": false}, {"w": "minha", "h": false}, {"w": "pele", "h": false}, {"w": "fica", "h": false}]}, {"t0": 46.798, "t1": 47.873, "p": [{"w": "com", "h": false}, {"w": "um", "h": false}, {"w": "fundo", "h": false}, {"w": "de", "h": false}, {"w": "incenso", "h": false}]}, {"t0": 47.873, "t1": 48.843, "p": [{"w": "e", "h": false}, {"w": "madeira", "h": false}, {"w": "bem", "h": false}, {"w": "chique", "h": false}]}, {"t0": 48.843, "t1": 49.54, "p": [{"w": "Então", "h": false}, {"w": "é", "h": false}, {"w": "como", "h": false}, {"w": "se", "h": false}, {"w": "fosse", "h": false}]}, {"t0": 49.54, "t1": 50.323, "p": [{"w": "o", "h": false}, {"w": "Acqua", "h": true}, {"w": "di", "h": true}, {"w": "Giò", "h": true}, {"w": "clássico", "h": false}]}, {"t0": 50.323, "t1": 51.199, "p": [{"w": "muito", "h": false}, {"w": "mais", "h": false}, {"w": "melhorado", "h": false}]}, {"t0": 51.199, "t1": 51.543, "p": [{"w": "e", "h": false}, {"w": "sim", "h": false}]}, {"t0": 51.543, "t1": 52.087, "p": [{"w": "eu", "h": false}, {"w": "sei", "h": false}, {"w": "que", "h": false}, {"w": "muito", "h": false}, {"w": "mais", "h": false}]}, {"t0": 52.087, "t1": 52.831, "p": [{"w": "melhorado", "h": false}, {"w": "não", "h": false}, {"w": "existe", "h": false}]}, {"t0": 52.831, "t1": 54.005, "p": [{"w": "mas", "h": false}, {"w": "é", "h": false}, {"w": "a", "h": false}, {"w": "versão", "h": false}, {"w": "2.0", "h": false}]}, {"t0": 54.005, "t1": 55.174, "p": [{"w": "mais", "h": false}, {"w": "escura", "h": false}, {"w": "e", "h": false}, {"w": "elegante", "h": false}]}, {"t0": 55.174, "t1": 55.473, "p": [{"w": "E", "h": false}, {"w": "aí", "h": false}]}, {"t0": 55.473, "t1": 56.156, "p": [{"w": "você", "h": false}, {"w": "concorda", "h": false}, {"w": "comigo", "h": false}]}, {"t0": 56.156, "t1": 56.953, "p": [{"w": "que", "h": false}, {"w": "esses", "h": false}, {"w": "quatro", "h": false}, {"w": "mereciam", "h": false}]}, {"t0": 56.953, "t1": 57.689, "p": [{"w": "muito", "h": false}, {"w": "mais", "h": false}, {"w": "hype", "h": false}]}, {"t0": 57.689, "t1": 58.451, "p": [{"w": "Então", "h": false}, {"w": "salva", "h": false}, {"w": "esse", "h": false}, {"w": "vídeo", "h": false}]}, {"t0": 58.451, "t1": 59.334, "p": [{"w": "pra", "h": false}, {"w": "não", "h": false}, {"w": "esquecer", "h": false}, {"w": "e", "h": false}, {"w": "segue", "h": false}]}, {"t0": 59.334, "t1": 60.197, "p": [{"w": "a", "h": false}, {"w": "Valota", "h": true}, {"w": "Parfum", "h": true}, {"w": "pra", "h": false}, {"w": "mais", "h": false}]}, {"t0": 60.197, "t1": 60.767, "p": [{"w": "dicas", "h": false}, {"w": "e", "h": false}, {"w": "achados", "h": false}]}, {"t0": 60.767, "t1": 63.897, "p": [{"w": "de", "h": false}, {"w": "perfumaria", "h": false}]}], "PF": [{"k": "c", "n": 1, "nome": "ARMANI CODE PARFUM", "marca": "GIORGIO ARMANI", "img": "code", "bg": ["iris", "baunilha", "bergamota", "salvia"], "t0": 5.867, "t1": 16.725, "show": 5.867, "g": "lemale", "gnome": "LE MALE LE PARFUM", "gmarca": "JEAN PAUL GAULTIER", "chip": "VERSÃO ADULTA DO", "tl": 6.093, "notas": [["iris", "ÍRIS", 11.642], ["baunilha", "BAUNILHA", 13.295]], "pills": [["❤️ UM DOS MEUS FAVORITOS", 5.867, "pim", 14.51], ["⏱️ +10H NA MINHA PELE", 14.51, "ama"]], "fm": "#9C452A"}, {"k": "g", "n": 2, "nome": "GENTLEMAN SOCIETY<br>EXTRÊME", "fs": "60px", "my": "432px", "h": 500, "marca": "GIVENCHY", "img": "gentleman", "bg": ["cafe", "baunilha", "hortela", "salvia", "madeira"], "t0": 16.725, "t1": 29.08, "show": 17.408, "notas": [["cafe", "CAFÉ", 20.293], ["baunilha", "BAUNILHA", 21.507]], "pills": [["🐜 NADA DE PERFUME DE FORMIGUINHA", 25.322, "pim", 27.14], ["MADURO, SÉRIO E +8H ⏱️", 27.14, "ama"]], "fm": "#8A5A3A"}, {"k": "v", "n": 3, "nome": "VALENTINO UOMO INTENSE", "fs": "58px", "marca": "VALENTINO", "img": "valentino", "bg": ["iris", "couro", "baunilha", "salvia", "laranja"], "t0": 29.08, "t1": 41.718, "show": 29.923, "g": "diorhi", "gnome": "DIOR HOMME INTENSE", "gmarca": "DIOR", "chip": "VIBE DO", "tl": 37.904, "notas": [["iris", "ÍRIS", 31.369], ["baunilha", "BAUNILHA", 32.305], ["salvia", "ERVINHA", 33.22], ["couro", "COURO", 34.401]], "pills": [["🔥 CHEIRO BRUTO MESMO", 36.318, "pim", 40.014], ["🚿 +10H, SÓ SAI NO BANHO", 40.014, "ama"]], "fm": "#5A3A2A"}, {"k": "q", "n": 4, "nome": "ACQUA DI GIÒ PARFUM", "marca": "GIORGIO ARMANI", "img": "adgparfum", "bg": ["mar", "bergamota", "salvia", "incenso", "madeira"], "t0": 41.718, "t1": 55.174, "show": 42.568, "g": "adg", "gnome": "ACQUA DI GIÒ CLÁSSICO", "gmarca": "GIORGIO ARMANI", "chip": "VERSÃO 2.0 DO", "tl": 49.945, "notas": [["mar", "MAR", 45.969], ["incenso", "INCENSO", 47.25], ["madeira", "MADEIRA", 47.986]], "pills": [["😅 \"MUITO MAIS MELHORADO\"", 50.622, "pim", 53.03], ["🖤 MAIS ESCURO E ELEGANTE", 53.03, "ama"]], "fm": "#3E7C8A"}], "CAPA": {"html": "<div class=\"cparte\">4 PERFUMES IMPORTADOS</div><div class=\"c1\">QUE MERECIAM</div><div class=\"c2\" style=\"font-size:150px\">MAIS HYPE</div><div class=\"cpil\">e são excelentes ✨</div>", "q": ["", "", "", ""], "rev": [["code", 3.421]], "fav": ["❤️ UM DOS MEUS FAVORITOS", 5.079]}, "SELOS": [["🔥 MERECIAM MAIS HYPE", 5.867, 55.174]], "FIMC": {"cards": ["code", "gentleman", "valentino", "adgparfum"]}, "BG_FIM": ["iris", "cafe", "couro", "mar", "baunilha", "incenso"], "AR": {"adg": 0.5942, "adgparfum": 0.5812, "code": 0.4656, "diorhi": 0.6, "gentleman": 0.551, "lemale": 0.5369, "valentino": 0.6568}};
+const D=window.D,K=D.K,S=D.S,$=s=>document.querySelector(s),stage=$('#stage');
+if(D.TEMA==='creme')document.body.classList.add('creme');
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),eo=p=>1-Math.pow(1-p,3);
+const back=p=>{const c=1.7;p=cl(p);return 1+(c+1)*Math.pow(p-1,3)+c*Math.pow(p-1,2)};
+const L=window.__L=[];
+function E(html,css,t0,t1,fx='pop',extra={}){const d=document.createElement('div');d.className='e '+(extra.cls||'');d.innerHTML=html;Object.assign(d.style,css||{});stage.appendChild(d);const o={d,t0,t1,fx,...extra};L.push(o);return o}
+const pos=(x,y,extra={})=>Object.assign({left:x+'px',top:y+'px'},extra);
+const centro=(y,extra={})=>Object.assign({left:'0',right:'0',top:y+'px',textAlign:'center'},extra);
+const AR=D.AR;
+// card branco do frasco (sem recorte): cx = centro, yb = base do card
+const acard=(img,cx,yb,h,t0,t1,fx='pop')=>{const w=Math.round(h*AR[img]);return E(`<div class="acard"><img src="frascos/cards/${img}.jpg" style="width:${w}px;height:${h}px"></div>`,pos(cx-(w+36)/2,yb-h-36),t0,t1,fx)};
+
+// ---------- capa
+$('#ctxt').innerHTML=D.CAPA.html;
+D.CAPA.q.forEach((lac,i)=>{const d=document.createElement('div');d.className='q5';d.innerHTML=(lac?'<i>'+lac+'</i>':'')+'<span class="qm">?</span>';const rv=(D.CAPA.rev||[]).find((r,j)=>j===i);if(rv){const h=240,w=Math.round(h*AR[rv[0]]);d.innerHTML+=`<img class="qi" src="frascos/cards/${rv[0]}.jpg" style="position:absolute;width:${w}px;height:${h}px;opacity:0">`;d.dataset.rt=rv[1]}$('#cq').appendChild(d)});
+if(D.CAPA.fav){const f=document.createElement('div');f.id='cfav';f.innerHTML=`<span class="tag pim" style="font-size:36px">${D.CAPA.fav[0]}</span>`;f.style.cssText='position:absolute;left:0;right:0;top:1330px;text-align:center;opacity:0';$('#capa').appendChild(f)}
+
+const BGPOS=[[-60,165,300],[790,140,300],[-90,600,280],[830,590,290],[-50,1040,250],[850,1010,260],[40,1290,210],[830,1300,220],[-30,1590,280],[400,1680,240],[790,1600,290]];
+const bgNotas=[];
+const addBg=(lista,t0,t1)=>BGPOS.forEach(([x,y,w],i)=>{const im=document.createElement('img');im.src=`notas/${lista[i%lista.length]}.png`;im.style.left=x+'px';im.style.top=y+'px';im.style.width=w+'px';im.style.opacity=0;$('#notas').appendChild(im);bgNotas.push({im,t0,t1,ph:i*1.3+t0})});
+
+// selos fixos no topo (podem trocar no meio: PRA ELA → PRA ELE)
+D.SELOS.forEach(([tx,t0,t1])=>E(`<span>${tx}</span>`,{top:'52px'},t0,t1,'fade',{cls:'selo'}));
+
+// ---------- os 5 perfumes
+const PF=D.PF;
+PF.forEach(p=>{
+ const {t0,t1}=p,sh=p.show;
+ addBg(p.bg||p.notas.map(n=>n[0]),t0,t1);
+ E(`<b>${p.n}</b>DE ${D.TOT}`,{top:'128px'},p.rank||sh,t1,'up',{cls:'rank'});
+ const longo=p.nome.length>13;
+ E(p.nome,{top:'284px',fontSize:p.fs||(longo?'64px':'76px')},sh+0.08,t1,'up',{cls:'nome'});
+ E(p.marca,{top:p.my||(longo?'364px':'374px')},sh+0.16,t1,'fade',{cls:'marca'});
+ const so=!p.g, cx=so?540:320, h=p.h||(so?580:540), yb=1060;
+ const gl=E('',pos(cx-380,yb-680),sh,t1,'fade',{cls:'glow',pulse:1,nq:1});
+ const ac=acard(p.img,cx,yb,h,sh+0.1,t1,'pop');
+ if(!so&&p.tl-sh>1.2){ac.mv=[p.tl,540-cx];gl.mv=[p.tl,540-cx]}
+ if(!so){const gh=300,gw=Math.round(gh*AR[p.g]);
+  E(`<span class="chip">${p.chip}</span><b>${p.gnome}</b><small>${p.gmarca}</small><div class="gcard"><img src="frascos/cards/${p.g}.jpg" style="width:${gw}px;height:${gh}px"></div>`,pos(560,450),p.tl,t1,'pop',{cls:'gr'});}
+ const n=p.notas.length,esp=200,x0=540-(n*esp)/2;
+ p.notas.forEach(([img,lab,t],i)=>E(`<div class="ib"><img src="notas/${img}.png"></div><div class="lab">${lab}</div>`,pos(x0+i*esp,1100),t,t1,'pop',{cls:'nt'}));
+ p.pills.forEach(([tx,t,c,te])=>E(`<span class="tag ${c}">${tx}</span>`,centro(1330),t,te||t1,'pop'));
+});
+
+// ---------- fim: concorda? + salva + segue
+const F=D.FIMC;
+addBg(D.BG_FIM,S.fim,D.END+1);
+E('<span class="tag pim" style="font-size:36px">E AÍ, CONCORDA? 🤔</span>',centro(250),S.fim,D.END+1,'pop');
+E('MERECIAM<br>MAIS HYPE',{top:'350px',fontSize:'126px'},S.fim+0.1,D.END+1,'pop',{cls:'big'});
+F.cards.forEach((img,i)=>{const tot=F.cards.length,esp=220,cx=540-((tot-1)*esp)/2+i*esp,h=230,w=Math.round(h*AR[img]);
+ E(`<div class="mini"><img src="frascos/cards/${img}.jpg" style="width:${w}px;height:${h}px"></div>`,pos(cx-(w+20)/2,660),K.f_cards+i*0.08,D.END+1,'pop')});
+E('<span class="tag ama" style="font-family:GB;font-size:46px;padding:20px 44px 14px">📌 SALVA PRA NÃO ESQUECER</span>',centro(1000),K.f_salva,D.END+1,'pop');
+E('<span class="tag cre" style="font-size:38px">SEGUE A @VALOTAPARFUM 💛</span>',centro(1130),K.f_segue,D.END+1,'pop');
+
+// ---------- render
+const SC=[['capa',0,S.p1],...PF.map(p=>[p.k,p.t0,p.t1]),['fim',S.fim,D.END+1]];
+const FMC={capa:'#D49A4E',cta:'#9C452A',fim:'#D49A4E'};PF.forEach(p=>FMC[p.k]=p.fm);
+const leg=$('#leg');let legAtual=-1;
+const TROCAS=[S.p1,...PF.slice(1).map(p=>p.t0),S.fim];
+window.render=function(t){
+ for(const o of L){
+  const vis=t>=o.t0&&t<o.t1;const pin=cl((t-o.t0)/0.38),pout=cl((t-(o.t1-0.2))/0.2);
+  if(!vis){o.d.style.opacity=0;o.d.style.display='none';continue}
+  o.d.style.display='block';
+  let op=1,tr='';
+  switch(o.fx){
+   case 'pop':op=cl(pin*2.2);tr=`scale(${(0.6+0.4*back(pin)).toFixed(4)})`;break;
+   case 'up':op=eo(pin);tr=`translateY(${(34*(1-eo(pin))).toFixed(1)}px)`;break;
+   case 'fade':op=eo(pin);break;
+   case 'stamp':{const p=cl((t-o.t0)/0.26);op=cl(p*3);tr=`scale(${(1.6-0.6*eo(p)).toFixed(4)})`;break}
+  }
+  if(o.mv){const q=eo(cl((t-o.mv[0])/0.5));tr=`translateX(${(o.mv[1]*(1-q)).toFixed(1)}px) `+tr}
+  op*=1-pout;
+  if(o.rot!=null)tr+=` rotate(${o.rot}deg)`;
+  if(o.pulse)tr+=` scale(${(1+0.04*Math.sin(t*2.4)).toFixed(4)})`;
+  o.d.style.opacity=op.toFixed(3);o.d.style.transform=tr;
+ }
+ const cf=cl((t-S.p1+0.25)/0.5);$('#capa').style.opacity=(1-cf).toFixed(3);$('#capa').style.display=cf>=1?'none':'block';
+ document.querySelectorAll('#cq .q5').forEach((s,i)=>{let fl=1;if(s.dataset.rt){const p=cl((t-s.dataset.rt)/0.35);fl=Math.abs(Math.cos(Math.PI*p));const on=p>=0.5;s.querySelector('.qm').style.opacity=on?0:1;s.querySelector('.qi').style.opacity=on?1:0}
+  s.style.transform=`translateY(${(6*Math.sin(t*2+i)).toFixed(1)}px) rotate(${(i%2?3:-3)}deg) scaleX(${fl.toFixed(3)})`});
+ if(D.CAPA.fav){const p=cl((t-D.CAPA.fav[1])/0.38);$('#cfav').style.opacity=cl(p*2.2);$('#cfav').style.transform=`scale(${(0.6+0.4*back(p)).toFixed(4)})`}
+ const sc=SC.find(s=>t>=s[1]&&t<s[2])||SC[0];
+ $('#fm2').style.background=FMC[sc[0]];
+ $('#fm1').style.transform=`translate(${(60*Math.sin(t*0.11)).toFixed(1)}px,${(-30*t/60).toFixed(1)}px) rotate(${(3*Math.sin(t*0.07)).toFixed(2)}deg)`;
+ $('#fm2').style.transform=`translate(${(-80*Math.sin(t*0.09+1)).toFixed(1)}px,${(-50*t/60).toFixed(1)}px)`;
+ $('#fm3').style.transform=`translate(${(70*Math.sin(t*0.13+2)).toFixed(1)}px,${(-40*t/60).toFixed(1)}px)`;
+ bgNotas.forEach(({im,t0,t1,ph})=>{const a=cl((t-t0)/0.6)*(1-cl((t-t1+0.3)/0.3));im.style.opacity=((D.TEMA==='creme'?0.5:0.58)*a).toFixed(3);
+  im.style.transform=`translate(${(14*Math.sin(t*0.55+ph)).toFixed(1)}px,${(18*Math.sin(t*0.42+ph*1.7)).toFixed(1)}px) rotate(${(6*Math.sin(t*0.3+ph)).toFixed(2)}deg)`});
+ stage.style.transform=`scale(${(1+0.022*cl((t-sc[1])/10)).toFixed(4)})`;
+ let cv=0,cx=0;for(const tt of TROCAS){const p=(t-tt+0.45)/0.9;if(p>0&&p<1){cv=Math.sin(Math.PI*p);cx=-500+1000*p}}
+ $('#cortina').style.opacity=((D.TEMA==='creme'?0.55:0.7)*cv).toFixed(3);$('#cortina').style.transform=`translateX(${cx.toFixed(1)}px)`;
+ $('#cortina2').style.opacity=(0.45*cv).toFixed(3);$('#cortina2').style.transform=`translateX(${(-cx*0.6).toFixed(1)}px)`;
+ const gi=D.LEG.findIndex(g=>t>=g.t0&&t<g.t1);
+ if(gi!==legAtual){legAtual=gi;leg.innerHTML=gi<0?'':'<div class="cx">'+D.LEG[gi].p.map(w=>`<span class="${w.h?'h':''}">${w.w}</span>`).join('')+'</div>'}
+ leg.classList.toggle('nacapa',t<S.p1-0.1);
+ if(gi>=0){const p=t<S.p1-0.1?1:cl((t-D.LEG[gi].t0)/0.15);leg.style.opacity=p;leg.style.transform=`translateY(${(8*(1-eo(p))).toFixed(1)}px)`}else leg.style.opacity=0;
+};
+window.render(0);
+</script></body></html>

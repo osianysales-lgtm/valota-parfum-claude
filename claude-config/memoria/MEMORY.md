@@ -49,6 +49,7 @@
 - [Formato viral: frascos só música (MES)](formato-viral-frascos-so-musica.md) — calor x frio 57,9 mil e árabe x grife c/ preço 23,2 mil (17/11); fichas 17h viraram MES; ≥1 MES/dia
 - [Letra neutra em vídeo de frascos](letra-neutra-arabe-vs-grife.md) — v54: pílula/ExtraBold = "letra bruta"; usar estilo do reel DfzhFuNzIgK, texto logo acima dos frascos; molde arabe-x-grife-maos-encontro
 - [Recorte de frasco perfeito](recorte-frasco-perfeito.md) — 3 broncas (v56, v59, v80 "recortou igual sua cara"): folha AMPLIADA no fundo do vídeo + zoom em tampas/bases ANTES do storyboard; recortar-fundo-branco.swift + defringe + alisar; grife = card branco sem recorte
+- [JOSÉ confere os frascos antes de mandar](jose-inspetor-frascos.md) — 24/11 "quero tudo perfeito": nada com frasco recortado vai pra ela sem o José aprovar (.claude/agents/jose.md + squad-editor/tools/jose.js, folha ampliada + zoom tampa/base)
 - [Abertura em 5 s, sem entregar a lista](abertura-5s-sem-entregar-lista.md) — 18/11 v56: fala antes do 1º item ≤ ~28 palavras + sem mostrar itens antes da vez · 18/11 "5 erros": SEM papinho, 1ª frase já entra no erro 1
 - [Preço = menor do Mercado Livre confiável](preco-mercado-livre-mais-barato.md) — 18/11 v56: nunca o preço da loja patrocinada da referência; MercadoLíder/loja oficial/+1000 vendas; NUNCA escrever/falar "Mercado Livre", só o preço
 - [Narração com ritmo uniforme](narracao-ritmo-uniforme.md) — 18/11 v56: frase regravada sozinha mudou o ritmo ("voz fica mais rápida"); mudou texto = regravar tudo junto; fala só o preço, sem "no Mercado Livre"
@@ -89,3 +90,9 @@
 - [Perfume que ela já criticou = fora da indicação](perfumes-que-ela-ja-falou-mal.md) — 24/11 Black: Eclaire fora ("já falei mal"); olhar o CONTEXTO da menção (lista de odiados/nunca use), não só a contagem
 - [Fundo com notas, nunca chapado](fundo-com-notas-nao-chapado.md) — 24/11 v81/v82: notas DE CADA perfume espalhadas no fundo, visíveis (11 posições, op. ~0,55); no petróleo nota escura leva brilho
 - [Sempre mostrar o inspirado](sempre-mostrar-inspirado.md) — 24/11 "sempre coloca os inspirados": todo perfume indicado leva card LEMBRA O (2+ fontes; sem consenso = usar o mais citado e avisar)
+- [Emoji nítido, sem contorno](emoji-nitido-sem-contorno.md) — 24/11 v83: emoji da ref "ficou muito ruim" → Apple Color Emoji ~0,6em, sem contorno; "letra curvada" do Edits = Advercase + efeito Olho de peixe (v83 gerar.js faz o olho de peixe SÓ na letra; emoji reto, sem efeito); emenda de tomadas = corte seco (dissolve reprovado)
+- [Anúncio tráfego pago do grupo (v84 + v85 Black Friday)](video-trafego-pago-grupo-v84.md) — 24–25/11: print com círculos (preço + vendido por) + tela do grupo rolando ATRÁS dela; nomes borrados, nunca cortar; "metade do preço" é decisão dela
+- [Perfumes que ela TEM = "na minha pele"](perfumes-que-ela-tem.md) — 25/11: Armani Code Parfum (favorito), Valentino Uomo Intense, Acqua di Giò Parfum; nos outros só "na pele"
+- [Ref com "estudo" = conferir e usar dado real](referencia-com-estudo-conferir-dados.md) — 25/11 v87: "3.500 mulheres" não existia → pesquisa real 3.743 (madeira 86%) + Karolinska 2022 (baunilha); "faz como o dele, em minhas palavras, pesquisa tudo certinho"
+- [Tudo legível no celular](legivel-no-celular.md) — 25/11: legenda sempre + nenhum texto da tela abaixo de ~28 px (em 1080); reduzir quadro a ~390 px e ler antes de mandar
+- [Página do grupo no Vercel](pagina-grupo-whatsapp-vercel.md) — 25/11: valotaparfum-grupo.vercel.app, ponte pro anúncio do Facebook (não aceita link do WhatsApp); pasta valotaparfum-grupo/

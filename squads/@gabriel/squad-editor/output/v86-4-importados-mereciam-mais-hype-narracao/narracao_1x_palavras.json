@@ -1,0 +1,1547 @@
+{
+  "fonte": "elevenlabs",
+  "voz": "Osiany Sales v2",
+  "voice_id": "LajrwgPkHCxzLCvnEwi7",
+  "palavras": [
+    {
+      "word": "Esses",
+      "start": 0,
+      "end": 0.476
+    },
+    {
+      "word": "quatro",
+      "start": 0.604,
+      "end": 1.01
+    },
+    {
+      "word": "perfumes",
+      "start": 1.045,
+      "end": 1.567
+    },
+    {
+      "word": "importados",
+      "start": 1.625,
+      "end": 2.264
+    },
+    {
+      "word": "mereciam",
+      "start": 2.345,
+      "end": 2.786
+    },
+    {
+      "word": "muito",
+      "start": 2.914,
+      "end": 3.309
+    },
+    {
+      "word": "mais",
+      "start": 3.379,
+      "end": 3.576
+    },
+    {
+      "word": "ráipe,",
+      "start": 3.634,
+      "end": 4.261
+    },
+    {
+      "word": "porque",
+      "start": 4.725,
+      "end": 5.027
+    },
+    {
+      "word": "são",
+      "start": 5.085,
+      "end": 5.236
+    },
+    {
+      "word": "excelentes,",
+      "start": 5.271,
+      "end": 5.84
+    },
+    {
+      "word": "e",
+      "start": 5.863,
+      "end": 5.886
+    },
+    {
+      "word": "o",
+      "start": 5.921,
+      "end": 5.944
+    },
+    {
+      "word": "primeiro",
+      "start": 5.991,
+      "end": 6.327
+    },
+    {
+      "word": "é",
+      "start": 6.351,
+      "end": 6.374
+    },
+    {
+      "word": "o",
+      "start": 6.409,
+      "end": 6.444
+    },
+    {
+      "word": "Armâni",
+      "start": 6.502,
+      "end": 7.001
+    },
+    {
+      "word": "Côude",
+      "start": 7.059,
+      "end": 7.314
+    },
+    {
+      "word": "Parfã,",
+      "start": 7.361,
+      "end": 7.953
+    },
+    {
+      "word": "que",
+      "start": 8.081,
+      "end": 8.22
+    },
+    {
+      "word": "inclusive",
+      "start": 8.278,
+      "end": 8.824
+    },
+    {
+      "word": "é",
+      "start": 8.847,
+      "end": 8.87
+    },
+    {
+      "word": "um",
+      "start": 8.916,
+      "end": 8.963
+    },
+    {
+      "word": "dos",
+      "start": 9.009,
+      "end": 9.114
+    },
+    {
+      "word": "meus",
+      "start": 9.183,
+      "end": 9.334
+    },
+    {
+      "word": "favoritos",
+      "start": 9.404,
+      "end": 9.95
+    },
+    {
+      "word": "da",
+      "start": 9.996,
+      "end": 10.089
+    },
+    {
+      "word": "vida.",
+      "start": 10.159,
+      "end": 10.588
+    },
+    {
+      "word": "Sabe",
+      "start": 11.053,
+      "end": 11.366
+    },
+    {
+      "word": "o",
+      "start": 11.389,
+      "end": 11.413
+    },
+    {
+      "word": "Lê",
+      "start": 11.447,
+      "end": 11.54
+    },
+    {
+      "word": "Mále",
+      "start": 11.61,
+      "end": 11.9
+    },
+    {
+      "word": "Lê",
+      "start": 11.947,
+      "end": 12.016
+    },
+    {
+      "word": "Parfã,",
+      "start": 12.098,
+      "end": 12.539
+    },
+    {
+      "word": "aquele",
+      "start": 12.562,
+      "end": 12.817
+    },
+    {
+      "word": "cheiro",
+      "start": 12.864,
+      "end": 13.108
+    },
+    {
+      "word": "que",
+      "start": 13.131,
+      "end": 13.201
+    },
+    {
+      "word": "você",
+      "start": 13.247,
+      "end": 13.456
+    },
+    {
+      "word": "adora?",
+      "start": 13.526,
+      "end": 14.106
+    },
+    {
+      "word": "Pois",
+      "start": 14.571,
+      "end": 14.826
+    },
+    {
+      "word": "é,",
+      "start": 14.907,
+      "end": 15.139
+    },
+    {
+      "word": "agora",
+      "start": 15.36,
+      "end": 15.72
+    },
+    {
+      "word": "imagina",
+      "start": 15.743,
+      "end": 16.138
+    },
+    {
+      "word": "ele",
+      "start": 16.161,
+      "end": 16.289
+    },
+    {
+      "word": "mais",
+      "start": 16.347,
+      "end": 16.498
+    },
+    {
+      "word": "encorpado,",
+      "start": 16.556,
+      "end": 17.171
+    },
+    {
+      "word": "mais",
+      "start": 17.206,
+      "end": 17.392
+    },
+    {
+      "word": "sério",
+      "start": 17.415,
+      "end": 17.775
+    },
+    {
+      "word": "e",
+      "start": 17.844,
+      "end": 17.891
+    },
+    {
+      "word": "mais",
+      "start": 17.949,
+      "end": 18.111
+    },
+    {
+      "word": "maduro,",
+      "start": 18.181,
+      "end": 18.704
+    },
+    {
+      "word": "e",
+      "start": 18.75,
+      "end": 18.913
+    },
+    {
+      "word": "aí,",
+      "start": 18.947,
+      "end": 19.249
+    },
+    {
+      "word": "gente,",
+      "start": 19.272,
+      "end": 19.632
+    },
+    {
+      "word": "que",
+      "start": 19.667,
+      "end": 19.76
+    },
+    {
+      "word": "perfumão!",
+      "start": 19.807,
+      "end": 20.503
+    },
+    {
+      "word": "Porque",
+      "start": 20.84,
+      "end": 21.142
+    },
+    {
+      "word": "aqui",
+      "start": 21.165,
+      "end": 21.374
+    },
+    {
+      "word": "tem",
+      "start": 21.444,
+      "end": 21.618
+    },
+    {
+      "word": "íris,",
+      "start": 21.699,
+      "end": 22.152
+    },
+    {
+      "word": "uma",
+      "start": 22.279,
+      "end": 22.442
+    },
+    {
+      "word": "flor",
+      "start": 22.5,
+      "end": 22.686
+    },
+    {
+      "word": "com",
+      "start": 22.732,
+      "end": 22.86
+    },
+    {
+      "word": "cheirinho",
+      "start": 22.906,
+      "end": 23.266
+    },
+    {
+      "word": "de",
+      "start": 23.324,
+      "end": 23.406
+    },
+    {
+      "word": "talco,",
+      "start": 23.487,
+      "end": 24.102
+    },
+    {
+      "word": "e",
+      "start": 24.439,
+      "end": 24.567
+    },
+    {
+      "word": "uma",
+      "start": 24.613,
+      "end": 24.764
+    },
+    {
+      "word": "baunilha",
+      "start": 24.822,
+      "end": 25.344
+    },
+    {
+      "word": "bem",
+      "start": 25.403,
+      "end": 25.553
+    },
+    {
+      "word": "docinha,",
+      "start": 25.611,
+      "end": 26.447
+    },
+    {
+      "word": "e",
+      "start": 26.703,
+      "end": 26.831
+    },
+    {
+      "word": "a",
+      "start": 26.865,
+      "end": 26.889
+    },
+    {
+      "word": "fixação",
+      "start": 26.947,
+      "end": 27.655
+    },
+    {
+      "word": "é",
+      "start": 27.69,
+      "end": 27.713
+    },
+    {
+      "word": "bizarra,",
+      "start": 27.759,
+      "end": 28.34
+    },
+    {
+      "word": "porque",
+      "start": 28.375,
+      "end": 28.63
+    },
+    {
+      "word": "passa",
+      "start": 28.7,
+      "end": 29.025
+    },
+    {
+      "word": "de",
+      "start": 29.083,
+      "end": 29.164
+    },
+    {
+      "word": "dez",
+      "start": 29.234,
+      "end": 29.478
+    },
+    {
+      "word": "horas",
+      "start": 29.547,
+      "end": 29.768
+    },
+    {
+      "word": "na",
+      "start": 29.814,
+      "end": 29.884
+    },
+    {
+      "word": "minha",
+      "start": 29.93,
+      "end": 30.093
+    },
+    {
+      "word": "pele.",
+      "start": 30.162,
+      "end": 30.638
+    },
+    {
+      "word": "Já",
+      "start": 31.103,
+      "end": 31.312
+    },
+    {
+      "word": "o",
+      "start": 31.382,
+      "end": 31.416
+    },
+    {
+      "word": "segundo",
+      "start": 31.486,
+      "end": 32.02
+    },
+    {
+      "word": "é",
+      "start": 32.101,
+      "end": 32.148
+    },
+    {
+      "word": "o",
+      "start": 32.206,
+      "end": 32.252
+    },
+    {
+      "word": "Djêntlêmen",
+      "start": 32.299,
+      "end": 33.077
+    },
+    {
+      "word": "Sossáieti",
+      "start": 33.169,
+      "end": 34.145
+    },
+    {
+      "word": "Ekstrém,",
+      "start": 34.272,
+      "end": 35.12
+    },
+    {
+      "word": "da",
+      "start": 35.457,
+      "end": 35.584
+    },
+    {
+      "word": "Jivanchí,",
+      "start": 35.642,
+      "end": 36.583
+    },
+    {
+      "word": "pra",
+      "start": 36.989,
+      "end": 37.128
+    },
+    {
+      "word": "quem",
+      "start": 37.187,
+      "end": 37.349
+    },
+    {
+      "word": "ama",
+      "start": 37.407,
+      "end": 37.57
+    },
+    {
+      "word": "cheiro",
+      "start": 37.604,
+      "end": 37.848
+    },
+    {
+      "word": "de",
+      "start": 37.883,
+      "end": 37.941
+    },
+    {
+      "word": "café,",
+      "start": 37.988,
+      "end": 38.522
+    },
+    {
+      "word": "porque",
+      "start": 38.568,
+      "end": 38.812
+    },
+    {
+      "word": "ele",
+      "start": 38.835,
+      "end": 38.951
+    },
+    {
+      "word": "junta",
+      "start": 39.021,
+      "end": 39.311
+    },
+    {
+      "word": "o",
+      "start": 39.334,
+      "end": 39.358
+    },
+    {
+      "word": "café",
+      "start": 39.404,
+      "end": 39.845
+    },
+    {
+      "word": "com",
+      "start": 39.903,
+      "end": 40.054
+    },
+    {
+      "word": "baunilha",
+      "start": 40.112,
+      "end": 40.762
+    },
+    {
+      "word": "e",
+      "start": 40.983,
+      "end": 41.111
+    },
+    {
+      "word": "fica",
+      "start": 41.157,
+      "end": 41.471
+    },
+    {
+      "word": "sensacional.",
+      "start": 41.517,
+      "end": 42.457
+    },
+    {
+      "word": "Só",
+      "start": 42.794,
+      "end": 43.003
+    },
+    {
+      "word": "que",
+      "start": 43.05,
+      "end": 43.119
+    },
+    {
+      "word": "não",
+      "start": 43.166,
+      "end": 43.259
+    },
+    {
+      "word": "é",
+      "start": 43.317,
+      "end": 43.34
+    },
+    {
+      "word": "aquele",
+      "start": 43.375,
+      "end": 43.665
+    },
+    {
+      "word": "doce",
+      "start": 43.735,
+      "end": 44.048
+    },
+    {
+      "word": "que",
+      "start": 44.094,
+      "end": 44.164
+    },
+    {
+      "word": "faz",
+      "start": 44.211,
+      "end": 44.361
+    },
+    {
+      "word": "você",
+      "start": 44.408,
+      "end": 44.617
+    },
+    {
+      "word": "pensar:",
+      "start": 44.687,
+      "end": 45.395
+    },
+    {
+      "word": "meu",
+      "start": 45.859,
+      "end": 46.08
+    },
+    {
+      "word": "Deus,",
+      "start": 46.207,
+      "end": 46.544
+    },
+    {
+      "word": "que",
+      "start": 46.579,
+      "end": 46.66
+    },
+    {
+      "word": "perfume",
+      "start": 46.718,
+      "end": 47.125
+    },
+    {
+      "word": "de",
+      "start": 47.171,
+      "end": 47.24
+    },
+    {
+      "word": "formiguinha,",
+      "start": 47.298,
+      "end": 48.123
+    },
+    {
+      "word": "isso",
+      "start": 48.181,
+      "end": 48.39
+    },
+    {
+      "word": "é",
+      "start": 48.436,
+      "end": 48.471
+    },
+    {
+      "word": "cheiro",
+      "start": 48.506,
+      "end": 48.785
+    },
+    {
+      "word": "de",
+      "start": 48.831,
+      "end": 48.889
+    },
+    {
+      "word": "adolescente,",
+      "start": 48.924,
+      "end": 49.946
+    },
+    {
+      "word": "porque",
+      "start": 49.992,
+      "end": 50.247
+    },
+    {
+      "word": "ele",
+      "start": 50.271,
+      "end": 50.375
+    },
+    {
+      "word": "é",
+      "start": 50.398,
+      "end": 50.422
+    },
+    {
+      "word": "maduro,",
+      "start": 50.48,
+      "end": 51.223
+    },
+    {
+      "word": "sério",
+      "start": 51.281,
+      "end": 51.768
+    },
+    {
+      "word": "e",
+      "start": 51.826,
+      "end": 51.884
+    },
+    {
+      "word": "passa",
+      "start": 51.954,
+      "end": 52.221
+    },
+    {
+      "word": "das",
+      "start": 52.268,
+      "end": 52.395
+    },
+    {
+      "word": "oito",
+      "start": 52.442,
+      "end": 52.686
+    },
+    {
+      "word": "horas",
+      "start": 52.72,
+      "end": 52.964
+    },
+    {
+      "word": "na",
+      "start": 53.011,
+      "end": 53.103
+    },
+    {
+      "word": "pele.",
+      "start": 53.173,
+      "end": 53.719
+    },
+    {
+      "word": "Agora,",
+      "start": 54.055,
+      "end": 54.671
+    },
+    {
+      "word": "o",
+      "start": 54.717,
+      "end": 54.787
+    },
+    {
+      "word": "terceiro",
+      "start": 54.857,
+      "end": 55.379
+    },
+    {
+      "word": "é",
+      "start": 55.402,
+      "end": 55.437
+    },
+    {
+      "word": "o",
+      "start": 55.472,
+      "end": 55.495
+    },
+    {
+      "word": "Valentíno",
+      "start": 55.53,
+      "end": 56.169
+    },
+    {
+      "word": "Uômo",
+      "start": 56.215,
+      "end": 56.517
+    },
+    {
+      "word": "Intênse,",
+      "start": 56.54,
+      "end": 57.306
+    },
+    {
+      "word": "que",
+      "start": 57.434,
+      "end": 57.55
+    },
+    {
+      "word": "tem",
+      "start": 57.608,
+      "end": 57.759
+    },
+    {
+      "word": "uma",
+      "start": 57.817,
+      "end": 57.991
+    },
+    {
+      "word": "íris",
+      "start": 58.061,
+      "end": 58.363
+    },
+    {
+      "word": "mais",
+      "start": 58.432,
+      "end": 58.595
+    },
+    {
+      "word": "carregada,",
+      "start": 58.653,
+      "end": 59.443
+    },
+    {
+      "word": "com",
+      "start": 59.477,
+      "end": 59.64
+    },
+    {
+      "word": "baunilha",
+      "start": 59.698,
+      "end": 60.36
+    },
+    {
+      "word": "e",
+      "start": 60.429,
+      "end": 60.557
+    },
+    {
+      "word": "um",
+      "start": 60.627,
+      "end": 60.696
+    },
+    {
+      "word": "toque",
+      "start": 60.789,
+      "end": 61.138
+    },
+    {
+      "word": "de",
+      "start": 61.184,
+      "end": 61.265
+    },
+    {
+      "word": "ervinha,",
+      "start": 61.3,
+      "end": 62.066
+    },
+    {
+      "word": "tudo",
+      "start": 62.194,
+      "end": 62.426
+    },
+    {
+      "word": "engolido",
+      "start": 62.449,
+      "end": 63.018
+    },
+    {
+      "word": "por",
+      "start": 63.076,
+      "end": 63.204
+    },
+    {
+      "word": "um",
+      "start": 63.262,
+      "end": 63.309
+    },
+    {
+      "word": "couro",
+      "start": 63.367,
+      "end": 63.599
+    },
+    {
+      "word": "quente",
+      "start": 63.657,
+      "end": 64.063
+    },
+    {
+      "word": "e",
+      "start": 64.086,
+      "end": 64.11
+    },
+    {
+      "word": "intenso.",
+      "start": 64.179,
+      "end": 65.05
+    },
+    {
+      "word": "Ou",
+      "start": 65.178,
+      "end": 65.352
+    },
+    {
+      "word": "seja,",
+      "start": 65.433,
+      "end": 66.049
+    },
+    {
+      "word": "é",
+      "start": 66.118,
+      "end": 66.188
+    },
+    {
+      "word": "um",
+      "start": 66.269,
+      "end": 66.339
+    },
+    {
+      "word": "cheiro",
+      "start": 66.385,
+      "end": 66.664
+    },
+    {
+      "word": "bruto",
+      "start": 66.722,
+      "end": 67.151
+    },
+    {
+      "word": "mesmo,",
+      "start": 67.221,
+      "end": 67.732
+    },
+    {
+      "word": "e",
+      "start": 67.778,
+      "end": 67.906
+    },
+    {
+      "word": "se",
+      "start": 67.964,
+      "end": 68.069
+    },
+    {
+      "word": "você",
+      "start": 68.127,
+      "end": 68.371
+    },
+    {
+      "word": "curte",
+      "start": 68.498,
+      "end": 68.823
+    },
+    {
+      "word": "a",
+      "start": 68.87,
+      "end": 68.893
+    },
+    {
+      "word": "váibe",
+      "start": 68.963,
+      "end": 69.311
+    },
+    {
+      "word": "do",
+      "start": 69.346,
+      "end": 69.439
+    },
+    {
+      "word": "Diór",
+      "start": 69.497,
+      "end": 69.775
+    },
+    {
+      "word": "Óme",
+      "start": 69.822,
+      "end": 69.961
+    },
+    {
+      "word": "Intênse,",
+      "start": 69.996,
+      "end": 70.785
+    },
+    {
+      "word": "vai",
+      "start": 70.948,
+      "end": 71.192
+    },
+    {
+      "word": "amar",
+      "start": 71.238,
+      "end": 71.54
+    },
+    {
+      "word": "esse",
+      "start": 71.61,
+      "end": 71.772
+    },
+    {
+      "word": "aqui,",
+      "start": 71.795,
+      "end": 72.237
+    },
+    {
+      "word": "que",
+      "start": 72.283,
+      "end": 72.376
+    },
+    {
+      "word": "na",
+      "start": 72.446,
+      "end": 72.515
+    },
+    {
+      "word": "minha",
+      "start": 72.573,
+      "end": 72.713
+    },
+    {
+      "word": "pele",
+      "start": 72.794,
+      "end": 73.119
+    },
+    {
+      "word": "passa",
+      "start": 73.189,
+      "end": 73.537
+    },
+    {
+      "word": "das",
+      "start": 73.583,
+      "end": 73.758
+    },
+    {
+      "word": "dez",
+      "start": 73.839,
+      "end": 74.117
+    },
+    {
+      "word": "horas",
+      "start": 74.245,
+      "end": 74.675
+    },
+    {
+      "word": "e",
+      "start": 74.837,
+      "end": 74.965
+    },
+    {
+      "word": "só",
+      "start": 75.023,
+      "end": 75.174
+    },
+    {
+      "word": "sai",
+      "start": 75.255,
+      "end": 75.464
+    },
+    {
+      "word": "no",
+      "start": 75.511,
+      "end": 75.615
+    },
+    {
+      "word": "banho.",
+      "start": 75.685,
+      "end": 76.114
+    },
+    {
+      "word": "E",
+      "start": 76.172,
+      "end": 76.265
+    },
+    {
+      "word": "pra",
+      "start": 76.393,
+      "end": 76.544
+    },
+    {
+      "word": "fechar,",
+      "start": 76.614,
+      "end": 77.264
+    },
+    {
+      "word": "o",
+      "start": 77.391,
+      "end": 77.519
+    },
+    {
+      "word": "Ácua",
+      "start": 77.659,
+      "end": 78.018
+    },
+    {
+      "word": "di",
+      "start": 78.088,
+      "end": 78.216
+    },
+    {
+      "word": "Djó",
+      "start": 78.274,
+      "end": 78.529
+    },
+    {
+      "word": "Parfã,",
+      "start": 78.657,
+      "end": 79.295
+    },
+    {
+      "word": "pra",
+      "start": 79.365,
+      "end": 79.516
+    },
+    {
+      "word": "quem",
+      "start": 79.562,
+      "end": 79.725
+    },
+    {
+      "word": "não",
+      "start": 79.748,
+      "end": 79.864
+    },
+    {
+      "word": "curte",
+      "start": 79.922,
+      "end": 80.282
+    },
+    {
+      "word": "essa",
+      "start": 80.305,
+      "end": 80.491
+    },
+    {
+      "word": "váibe",
+      "start": 80.561,
+      "end": 80.955
+    },
+    {
+      "word": "de",
+      "start": 81.002,
+      "end": 81.083
+    },
+    {
+      "word": "talco",
+      "start": 81.153,
+      "end": 81.768
+    },
+    {
+      "word": "e",
+      "start": 82.233,
+      "end": 82.418
+    },
+    {
+      "word": "prefere",
+      "start": 82.488,
+      "end": 82.894
+    },
+    {
+      "word": "um",
+      "start": 82.918,
+      "end": 82.964
+    },
+    {
+      "word": "cheiro",
+      "start": 82.999,
+      "end": 83.231
+    },
+    {
+      "word": "fresquinho",
+      "start": 83.289,
+      "end": 83.753
+    },
+    {
+      "word": "de",
+      "start": 83.8,
+      "end": 83.881
+    },
+    {
+      "word": "mar,",
+      "start": 83.951,
+      "end": 84.264
+    },
+    {
+      "word": "que",
+      "start": 84.299,
+      "end": 84.392
+    },
+    {
+      "word": "na",
+      "start": 84.438,
+      "end": 84.508
+    },
+    {
+      "word": "minha",
+      "start": 84.555,
+      "end": 84.717
+    },
+    {
+      "word": "pele",
+      "start": 84.787,
+      "end": 85.077
+    },
+    {
+      "word": "fica",
+      "start": 85.123,
+      "end": 85.367
+    },
+    {
+      "word": "com",
+      "start": 85.402,
+      "end": 85.53
+    },
+    {
+      "word": "um",
+      "start": 85.576,
+      "end": 85.623
+    },
+    {
+      "word": "fundo",
+      "start": 85.704,
+      "end": 86.029
+    },
+    {
+      "word": "de",
+      "start": 86.087,
+      "end": 86.157
+    },
+    {
+      "word": "incenso",
+      "start": 86.192,
+      "end": 86.946
+    },
+    {
+      "word": "e",
+      "start": 87.283,
+      "end": 87.422
+    },
+    {
+      "word": "madeira",
+      "start": 87.48,
+      "end": 87.945
+    },
+    {
+      "word": "bem",
+      "start": 88.003,
+      "end": 88.165
+    },
+    {
+      "word": "chique.",
+      "start": 88.235,
+      "end": 88.885
+    },
+    {
+      "word": "Então",
+      "start": 89.291,
+      "end": 89.721
+    },
+    {
+      "word": "é",
+      "start": 89.767,
+      "end": 89.802
+    },
+    {
+      "word": "como",
+      "start": 89.849,
+      "end": 90.023
+    },
+    {
+      "word": "se",
+      "start": 90.046,
+      "end": 90.127
+    },
+    {
+      "word": "fosse",
+      "start": 90.185,
+      "end": 90.476
+    },
+    {
+      "word": "o",
+      "start": 90.51,
+      "end": 90.534
+    },
+    {
+      "word": "Ácua",
+      "start": 90.592,
+      "end": 90.812
+    },
+    {
+      "word": "di",
+      "start": 90.859,
+      "end": 90.952
+    },
+    {
+      "word": "Djó",
+      "start": 90.998,
+      "end": 91.149
+    },
+    {
+      "word": "clássico",
+      "start": 91.219,
+      "end": 91.822
+    },
+    {
+      "word": "muito",
+      "start": 91.88,
+      "end": 92.147
+    },
+    {
+      "word": "mais",
+      "start": 92.194,
+      "end": 92.345
+    },
+    {
+      "word": "melhorado,",
+      "start": 92.403,
+      "end": 93.227
+    },
+    {
+      "word": "e",
+      "start": 93.413,
+      "end": 93.541
+    },
+    {
+      "word": "sim,",
+      "start": 93.622,
+      "end": 93.981
+    },
+    {
+      "word": "eu",
+      "start": 94.016,
+      "end": 94.144
+    },
+    {
+      "word": "sei",
+      "start": 94.19,
+      "end": 94.307
+    },
+    {
+      "word": "que",
+      "start": 94.341,
+      "end": 94.423
+    },
+    {
+      "word": "muito",
+      "start": 94.481,
+      "end": 94.748
+    },
+    {
+      "word": "mais",
+      "start": 94.783,
+      "end": 94.91
+    },
+    {
+      "word": "melhorado",
+      "start": 94.968,
+      "end": 95.456
+    },
+    {
+      "word": "não",
+      "start": 95.502,
+      "end": 95.595
+    },
+    {
+      "word": "existe,",
+      "start": 95.642,
+      "end": 96.234
+    },
+    {
+      "word": "mas",
+      "start": 96.269,
+      "end": 96.408
+    },
+    {
+      "word": "é",
+      "start": 96.478,
+      "end": 96.512
+    },
+    {
+      "word": "a",
+      "start": 96.547,
+      "end": 96.57
+    },
+    {
+      "word": "versão",
+      "start": 96.617,
+      "end": 96.988
+    },
+    {
+      "word": "dois",
+      "start": 97.023,
+      "end": 97.244
+    },
+    {
+      "word": "ponto",
+      "start": 97.29,
+      "end": 97.534
+    },
+    {
+      "word": "zero,",
+      "start": 97.604,
+      "end": 98.196
+    },
+    {
+      "word": "mais",
+      "start": 98.324,
+      "end": 98.556
+    },
+    {
+      "word": "escura",
+      "start": 98.625,
+      "end": 99.218
+    },
+    {
+      "word": "e",
+      "start": 99.299,
+      "end": 99.461
+    },
+    {
+      "word": "elegante.",
+      "start": 99.496,
+      "end": 100.216
+    },
+    {
+      "word": "E",
+      "start": 100.75,
+      "end": 100.878
+    },
+    {
+      "word": "aí,",
+      "start": 100.959,
+      "end": 101.238
+    },
+    {
+      "word": "você",
+      "start": 101.273,
+      "end": 101.458
+    },
+    {
+      "word": "concorda",
+      "start": 101.516,
+      "end": 101.899
+    },
+    {
+      "word": "comigo",
+      "start": 101.946,
+      "end": 102.41
+    },
+    {
+      "word": "que",
+      "start": 102.468,
+      "end": 102.608
+    },
+    {
+      "word": "esses",
+      "start": 102.677,
+      "end": 102.921
+    },
+    {
+      "word": "quatro",
+      "start": 102.979,
+      "end": 103.327
+    },
+    {
+      "word": "mereciam",
+      "start": 103.351,
+      "end": 103.803
+    },
+    {
+      "word": "muito",
+      "start": 103.862,
+      "end": 104.221
+    },
+    {
+      "word": "mais",
+      "start": 104.268,
+      "end": 104.442
+    },
+    {
+      "word": "ráipe?",
+      "start": 104.512,
+      "end": 105.023
+    },
+    {
+      "word": "Então",
+      "start": 105.15,
+      "end": 105.499
+    },
+    {
+      "word": "salva",
+      "start": 105.568,
+      "end": 105.905
+    },
+    {
+      "word": "esse",
+      "start": 105.928,
+      "end": 106.079
+    },
+    {
+      "word": "vídeo",
+      "start": 106.149,
+      "end": 106.427
+    },
+    {
+      "word": "pra",
+      "start": 106.485,
+      "end": 106.613
+    },
+    {
+      "word": "não",
+      "start": 106.671,
+      "end": 106.776
+    },
+    {
+      "word": "esquecer",
+      "start": 106.81,
+      "end": 107.379
+    },
+    {
+      "word": "e",
+      "start": 107.426,
+      "end": 107.588
+    },
+    {
+      "word": "segue",
+      "start": 107.67,
+      "end": 108.006
+    },
+    {
+      "word": "a",
+      "start": 108.03,
+      "end": 108.053
+    },
+    {
+      "word": "Valota",
+      "start": 108.099,
+      "end": 108.447
+    },
+    {
+      "word": "Parfã",
+      "start": 108.494,
+      "end": 108.935
+    },
+    {
+      "word": "pra",
+      "start": 109.063,
+      "end": 109.237
+    },
+    {
+      "word": "mais",
+      "start": 109.283,
+      "end": 109.481
+    },
+    {
+      "word": "dicas",
+      "start": 109.539,
+      "end": 109.899
+    },
+    {
+      "word": "e",
+      "start": 109.957,
+      "end": 109.98
+    },
+    {
+      "word": "achados",
+      "start": 110.038,
+      "end": 110.502
+    },
+    {
+      "word": "de",
+      "start": 110.537,
+      "end": 110.584
+    },
+    {
+      "word": "perfumaria.",
+      "start": 110.642,
+      "end": 111.64
+    }
+  ]
+}

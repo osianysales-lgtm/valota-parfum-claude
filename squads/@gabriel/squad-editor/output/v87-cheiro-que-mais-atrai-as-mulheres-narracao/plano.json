@@ -1,0 +1,136 @@
+{
+  "tipo": "motion",
+  "titulo": "v87 · O cheiro que mais atrai as mulheres (narração petróleo)",
+  "referencia": "reel @albertokouty.perfumes DbRmwTBlJw8 · roteiro igual ao dele com dados reais (pesquisa 3.743 mulheres + estudo 2022)",
+  "legenda": {
+    "usar": true,
+    "destaque": "notas e números em amarelo",
+    "palavras_chave": []
+  },
+  "cenas": [
+    {
+      "id": "capa",
+      "inicio": 0,
+      "fim": 3.88,
+      "fala": "O cheiro que mais atrai as mulheres não é o mais caro, nem de grife, nem o mais famoso.",
+      "ideia": "gancho",
+      "layout": "cheia",
+      "visual": "capa: PESQUISA + O CHEIRO QUE MAIS ATRAI AS MULHERES + pílula; carimbos ✕ caro/grife/famoso",
+      "movimento": "parada (capa do feed), carimbo em cada ✕",
+      "quadro": {
+        "html": "index.html",
+        "t": 2.6
+      }
+    },
+    {
+      "id": "pesq",
+      "inicio": 3.88,
+      "fim": 14.98,
+      "fala": "Pesquisa com +3.700 mulheres; elas votaram; dá pra separar em 2 grupos.",
+      "ideia": "prova",
+      "layout": "cheia",
+      "visual": "+3.700 dourado, MULHERES OUVIDAS, bolinhas de notas, cards ❌ NÃO ATRAI / ✅ ATRAI, fonte embaixo",
+      "movimento": "pop na palavra, cortina na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 12
+      }
+    },
+    {
+      "id": "g1",
+      "inicio": 14.98,
+      "fim": 26.63,
+      "fala": "Grupo que menos atrai: óbvio/saturado, forte/enjoativo, não marca.",
+      "ideia": "os 3 tipos",
+      "layout": "cheia",
+      "visual": "etiqueta pimenta + 3 caixas numeradas com subtítulo na palavra",
+      "movimento": "sobe na palavra",
+      "quadro": {
+        "html": "index.html",
+        "t": 25.5
+      }
+    },
+    {
+      "id": "g2",
+      "inicio": 26.63,
+      "fim": 33.61,
+      "fala": "Grupo que atrai constrói memória, cérebro, emoção e lembrança.",
+      "ideia": "virada",
+      "layout": "cheia",
+      "visual": "CONSTRÓI MEMÓRIA dourado + 🧠 + EMOÇÃO/LEMBRANÇA + MESMO SEM ELA QUERER",
+      "movimento": "pop + brilho",
+      "quadro": {
+        "html": "index.html",
+        "t": 33.3
+      }
+    },
+    {
+      "id": "res",
+      "inicio": 33.61,
+      "fim": 43.5,
+      "fala": "Madeira 86%, ervas (lavanda e alecrim) 78%, especiarias quentes 72%.",
+      "ideia": "dado real",
+      "layout": "cheia",
+      "visual": "barras com número contando (Showers To You × Fragrantica) + fonte",
+      "movimento": "barra enche na fala",
+      "quadro": {
+        "html": "index.html",
+        "t": 42.8
+      }
+    },
+    {
+      "id": "bau",
+      "inicio": 43.5,
+      "fim": 53.42,
+      "fala": "Estudo de 2022: baunilha no topo dos cheiros mais agradáveis; quente, cremosa, gruda na pele.",
+      "ideia": "o nº 1",
+      "layout": "cheia",
+      "visual": "card do estudo (Karolinska) + baunilha + BAUNILHA + pílulas",
+      "movimento": "pop",
+      "quadro": {
+        "html": "index.html",
+        "t": 52.6
+      }
+    },
+    {
+      "id": "hype",
+      "inicio": 53.42,
+      "fim": 58.11,
+      "fala": "Poucos caras usam, todo mundo atrás do próximo hype.",
+      "ideia": "ironia",
+      "layout": "cheia",
+      "visual": "POUCOS CARAS USAM ISSO + PRÓXIMO HYPE + mais forte/caro/hypado",
+      "movimento": "pop",
+      "quadro": {
+        "html": "index.html",
+        "t": 57.8
+      }
+    },
+    {
+      "id": "fim",
+      "inicio": 58.11,
+      "fim": 64.863,
+      "fala": "No próximo vídeo, 3+ perfumes desse grupo; segue a Valota Parfum.",
+      "ideia": "CTA + curiosidade",
+      "layout": "cheia",
+      "visual": "NO PRÓXIMO VÍDEO + 3+ PERFUMES + 3 cards ? + SEGUE A @VALOTAPARFUM",
+      "movimento": "pop",
+      "quadro": {
+        "html": "index.html",
+        "t": 63.6
+      }
+    }
+  ],
+  "audio": {
+    "narracao": "narracao_175.wav",
+    "musica": null,
+    "efeitos": "whoosh por cena, carimbo nos ✕, impacto nos números, ding no grupo que atrai, buzzer no que não atrai, pop nas pílulas"
+  },
+  "encerramento": "chamada do próximo vídeo (3+ perfumes do grupo que atrai) + segue a Valota Parfum, sem \"comenta aqui\"",
+  "aprovacao": {
+    "aprovado": true,
+    "em": "2026-11-25T10:34:46.435Z",
+    "nota": "Osiany 25/11: manda bala (roteiro igual ao do albertokouty com dados reais)",
+    "impressao": "c07b23b5d0cafcbf"
+  }
+}

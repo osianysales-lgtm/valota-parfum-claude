@@ -1,0 +1,116 @@
+{
+  "tipo": "motion",
+  "titulo": "v89 · Os 5 perfumes que mais atraem as mulheres · VERSÃO ÁRABE (narração petróleo)",
+  "referencia": "mesmo título do v88 · árabes que lembram os originais",
+  "legenda": {
+    "usar": true,
+    "destaque": "nomes dos perfumes",
+    "palavras_chave": []
+  },
+  "cenas": [
+    {
+      "id": "capa",
+      "inicio": 0,
+      "fim": 6.137,
+      "fala": "gancho + promessa de ficar até o último",
+      "ideia": "gancho",
+      "layout": "cheia",
+      "visual": "capa: VERSÃO ÁRABE + 5 cards ?",
+      "movimento": "parada (capa do feed)",
+      "quadro": {
+        "html": "index.html",
+        "t": 1
+      }
+    },
+    {
+      "id": "h",
+      "inicio": 6.137,
+      "fim": 12.147,
+      "fala": "HIS CONFESSION",
+      "ideia": "HIS CONFESSION → lembra DIOR HOMME INTENSE",
+      "layout": "cheia",
+      "visual": "card branco + card LEMBRA O + notas na palavra + pílula",
+      "movimento": "pop no nome, cortina na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 11.55
+      }
+    },
+    {
+      "id": "d",
+      "inicio": 12.147,
+      "fim": 19.079,
+      "fala": "DÉTOUR NOIR",
+      "ideia": "DÉTOUR NOIR → lembra LAYTON",
+      "layout": "cheia",
+      "visual": "card branco + card LEMBRA O + notas na palavra + pílula",
+      "movimento": "pop no nome, cortina na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 18.48
+      }
+    },
+    {
+      "id": "t",
+      "inicio": 19.079,
+      "fim": 25.137,
+      "fala": "TOBACCO TOUCH",
+      "ideia": "TOBACCO TOUCH → lembra TOBACCO VANILLE",
+      "layout": "cheia",
+      "visual": "card branco + card LEMBRA O + notas na palavra + pílula",
+      "movimento": "pop no nome, cortina na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 24.54
+      }
+    },
+    {
+      "id": "e",
+      "inicio": 25.137,
+      "fim": 31.285,
+      "fala": "ETERNAL OUD",
+      "ideia": "ETERNAL OUD → lembra GRAND SOIR",
+      "layout": "cheia",
+      "visual": "card branco + card LEMBRA O + notas na palavra + pílula",
+      "movimento": "pop no nome, cortina na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 30.68
+      }
+    },
+    {
+      "id": "o",
+      "inicio": 31.285,
+      "fim": 41.379,
+      "fala": "ODYSSEY HOMME",
+      "ideia": "ODYSSEY HOMME → lembra NOIR EXTREME",
+      "layout": "cheia",
+      "visual": "card branco + card LEMBRA O + notas na palavra + pílula",
+      "movimento": "pop no nome, cortina na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 40.78
+      }
+    },
+    {
+      "id": "fim",
+      "inicio": 41.379,
+      "fim": 48.28,
+      "fala": "fecho + segue",
+      "ideia": "CTA",
+      "layout": "cheia",
+      "visual": "OS 5 ÁRABES + QUE LEMBRAM OS ORIGINAIS 💘",
+      "movimento": "pop",
+      "quadro": {
+        "html": "index.html",
+        "t": 47.78
+      }
+    }
+  ],
+  "audio": {
+    "narracao": "narracao_175.wav",
+    "musica": null,
+    "efeitos": "whoosh por cena, impacto no nome, pop nas notas, brilho no LEMBRA O"
+  },
+  "encerramento": "CHEIROSO SEM PAGAR PREÇO DE GRIFE 💸"
+}

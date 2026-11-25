@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Valota Parfum · Grupo de Ofertas</title>
+<meta name="description" content="Ofertas de perfumes originais, árabes, designers e nicho: cupons e descontos de lojas confiáveis no grupo gratuito do WhatsApp.">
+<meta name="theme-color" content="#0A1F23">
+<link rel="icon" href="/osiany.jpg">
+<meta property="og:title" content="Valota Parfum · Grupo de Ofertas no WhatsApp">
+<meta property="og:description" content="Perfumes originais, árabes, designers e nicho, com cupom e desconto de lojas confiáveis. Entre no grupo gratuito.">
+<meta property="og:image" content="https://valotaparfum-grupo.vercel.app/og.jpg">
+<meta property="og:url" content="https://valotaparfum-grupo.vercel.app/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="og.jpg">
+<style>
+  :root{
+    --petroleo:#0F2E33; --noite:#0A1F23; --luz:#1A4A52;
+    --creme:#F2E8D8; --ambar:#D49A4E; --amarelo:#FFC93C;
+    --menta:#7DBFB3; --rosa:#E6AEB9; --algodao:#DCD6E2; --cedro:#6B4430;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:'Montserrat',system-ui,sans-serif;
+    color:var(--creme);background:var(--noite);
+    -webkit-font-smoothing:antialiased;
+  }
+  .app{
+    position:relative;max-width:480px;margin:0 auto;min-height:100svh;overflow:hidden;
+    background:linear-gradient(180deg,var(--petroleo) 0%,var(--petroleo) 55%,var(--noite) 100%);
+    padding-bottom:calc(110px + env(safe-area-inset-bottom));
+  }
+
+  /* HERO: foto grande que some no petróleo */
+  .hero{position:relative;height:min(46svh,440px);min-height:290px}
+  .hero img{
+    width:100%;height:100%;object-fit:cover;object-position:55% 0%;display:block;
+  }
+  .hero::after{
+    content:"";position:absolute;left:0;right:0;top:0;bottom:-4px;pointer-events:none;
+    background:
+      linear-gradient(180deg,rgba(10,31,35,.75) 0%,rgba(10,31,35,0) 22%),
+      linear-gradient(0deg,var(--petroleo) 0%,var(--petroleo) 6%,rgba(15,46,51,.88) 26%,rgba(15,46,51,0) 58%);
+  }
+  .topo{position:absolute;z-index:2;top:calc(20px + env(safe-area-inset-top));left:0;right:0;display:flex;align-items:center;justify-content:center;gap:12px}
+  .topo span{height:1px;width:34px;background:linear-gradient(90deg,transparent,var(--ambar))}
+  .topo span:last-child{background:linear-gradient(90deg,var(--ambar),transparent)}
+  .topo b{font-weight:400;font-size:13px;letter-spacing:.42em;margin-right:-.42em;text-transform:uppercase}
+
+  .conteudo{position:relative;z-index:3;margin-top:-104px;padding:0 20px;text-align:center}
+
+  .selo{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--amarelo);color:var(--noite);
+    font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;
+    padding:8px 14px;border-radius:999px;margin-bottom:14px;
+    box-shadow:0 8px 24px rgba(255,201,60,.25);
+  }
+  .selo i{width:8px;height:8px;border-radius:50%;background:var(--noite);animation:pisca 1.6s ease-in-out infinite}
+  @keyframes pisca{50%{opacity:.25}}
+
+  h1{font-weight:900;font-size:clamp(32px,9.4vw,42px);line-height:1.04;letter-spacing:-.015em;margin-bottom:14px;text-wrap:balance}
+  h1 em{font-style:normal;color:var(--ambar);white-space:nowrap}
+  .sub{font-size:17px;line-height:1.5;color:rgba(242,232,216,.9);margin:0 auto 20px;max-width:350px;text-wrap:balance}
+  .sub b{font-weight:700;color:var(--creme)}
+
+  .tipos{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+  .tipo{font-size:14px;font-weight:700;padding:9px 15px;border-radius:999px;color:var(--noite)}
+
+  .btn{
+    position:relative;display:flex;align-items:center;justify-content:center;gap:10px;
+    width:100%;padding:21px 14px;border-radius:18px;overflow:hidden;white-space:nowrap;
+    background:linear-gradient(180deg,#e2ad66 0%,var(--ambar) 55%,#c48a40 100%);
+    color:var(--noite);font-weight:800;font-size:clamp(16px,4.7vw,19px);text-decoration:none;
+    box-shadow:0 14px 34px rgba(212,154,78,.35), inset 0 1px 0 rgba(255,255,255,.35);
+    animation:pulse 2.6s ease-in-out infinite;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .btn::before{
+    content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;
+    background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);
+    animation:brilho 3.2s ease-in-out infinite;
+  }
+  .btn:active{transform:scale(.98)}
+  .btn:focus-visible{outline:3px solid var(--amarelo);outline-offset:4px}
+  .btn svg{width:26px;height:26px;flex:none}
+  .btn .seta{width:20px;height:20px}
+  @keyframes pulse{0%,100%{box-shadow:0 14px 34px rgba(212,154,78,.35),0 0 0 0 rgba(212,154,78,.5)}50%{box-shadow:0 14px 34px rgba(212,154,78,.35),0 0 0 12px rgba(212,154,78,0)}}
+  @keyframes brilho{0%,55%{left:-60%}100%{left:130%}}
+  .gratis{margin-top:12px;font-size:14px;color:rgba(242,232,216,.72)}
+
+  /* O QUE VOCÊ RECEBE */
+  .card{
+    margin:34px 0 0;padding:22px 18px;border-radius:22px;text-align:left;
+    background:linear-gradient(160deg,rgba(26,74,82,.55),rgba(10,31,35,.55));
+    border:1px solid rgba(242,232,216,.12);
+  }
+  .card h2{font-size:13px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--ambar);text-align:center;margin-bottom:18px}
+  .item{display:flex;gap:14px;align-items:center;padding:12px 0}
+  .item + .item{border-top:1px solid rgba(242,232,216,.09)}
+  .ico{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;flex:none;color:var(--noite)}
+  .ico svg{width:24px;height:24px}
+  .item strong{display:block;font-size:16px;font-weight:700;margin-bottom:2px}
+  .item p{font-size:14px;line-height:1.4;color:rgba(242,232,216,.75)}
+
+  .slogan{margin-top:30px;font-size:16px;font-weight:600}
+  .slogan b{color:var(--amarelo);font-weight:800}
+  footer{margin-top:14px;font-size:14px;color:rgba(242,232,216,.55)}
+  footer a{color:inherit}
+
+  /* barra fixa embaixo quando o botão sai da tela */
+  .fixa{
+    position:fixed;z-index:10;left:50%;bottom:0;width:100%;max-width:480px;
+    transform:translate(-50%,120%);transition:transform .35s ease;
+    padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+    background:linear-gradient(180deg,rgba(10,31,35,0),rgba(10,31,35,.92) 35%);
+  }
+  .fixa.on{transform:translate(-50%,0)}
+  .fixa .btn{padding:18px 20px;font-size:18px}
+
+  /* entrada suave */
+  .sobe{opacity:0;transform:translateY(14px);animation:sobe .7s ease forwards}
+  .d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.4s}.d5{animation-delay:.5s}
+  @keyframes sobe{to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){.btn,.btn::before,.selo i{animation:none}.sobe{animation:none;opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <header class="hero">
+    <div class="topo"><span></span><b>Valota Parfum</b><span></span></div>
+    <img src="og.jpg" alt="Osiany, da Valota Parfum, segurando um perfume" width="1080" height="1080" fetchpriority="high">
+  </header>
+
+  <main class="conteudo">
+    <div class="selo sobe d1"><i></i>Grupo gratuito no WhatsApp</div>
+
+    <h1 class="sobe d2">Quer perfume original <em>sem pagar caro?</em></h1>
+    <p class="sub sobe d3">Então entra no grupo, onde eu mando cupons de <b>árabes, designers e nicho</b> só de lojas confiáveis.</p>
+
+    <div class="sobe d3">
+      <a class="btn" id="cta" href="https://chat.whatsapp.com/IpapnNqakmQJilcfKIi7jM?s=cl&amp;p=i&amp;iam=2" rel="noopener">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C8.86 3 3.05 8.8 3.05 15.97c0 2.29.6 4.53 1.74 6.5L3 29l6.7-1.750a12.95 12.95 0 0 0 6.33 1.62h.01c7.17 0 13-5.8 13-12.97C29.04 8.8 23.21 3 16.04 3Zm0 23.7h-.01a10.8 10.8 0 0 1-5.5-1.5l-.4-.24-3.970 1.040 1.060-3.870-.26-.4a10.7 10.7 0 0 1-1.650-5.750c0-5.95 4.850-10.79 10.8-10.79 5.94 0 10.78 4.84 10.78 10.8 0 5.95-4.84 10.79-10.790 10.79Zm5.920-8.080c-.32-.16-1.920-.95-2.220-1.060-.3-.11-.51-.16-.73.16-.21.32-.84 1.060-1.030 1.270-.19.22-.38.24-.7.080-.33-.16-1.370-.5-2.6-1.6-.97-.86-1.620-1.920-1.810-2.250-.19-.32-.02-.5.14-.66.15-.14.33-.38.49-.57.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.56-.08-.16-.73-1.750-1-2.4-.26-.63-.53-.54-.73-.55h-.62c-.21 0-.56.08-.86.4-.3.33-1.130 1.110-1.130 2.7 0 1.6 1.160 3.130 1.320 3.350.16.21 2.280 3.480 5.520 4.880.77.33 1.370.53 1.840.68.77.25 1.480.21 2.030.13.62-.09 1.920-.79 2.190-1.540.27-.76.27-1.4.19-1.540-.08-.13-.3-.21-.62-.37Z"/></svg>
+        Entrar no grupo gratuito
+        <svg class="seta" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <p class="gratis">Grupo de ofertas no WhatsApp · é de graça</p>
+    </div>
+
+    <div class="tipos sobe d4">
+      <span class="tipo" style="background:var(--algodao)">Designers</span>
+      <span class="tipo" style="background:var(--menta)">Árabes</span>
+      <span class="tipo" style="background:var(--rosa)">Nicho</span>
+    </div>
+
+    <section class="card sobe d5">
+      <h2>No grupo você recebe</h2>
+      <div class="item">
+        <div class="ico" style="background:var(--ambar)"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="7.5" r="1.6" fill="currentColor"/></svg></div>
+        <div><strong>Cupons e descontos</strong><p>Achados com preço de verdade, sem promoção maquiada.</p></div>
+      </div>
+      <div class="item">
+        <div class="ico" style="background:var(--menta)"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m8.5 12 2.5 2.5 4.5-5"/></svg></div>
+        <div><strong>Só lojas de confiança</strong><p>Perfume original, de quem entrega o que promete.</p></div>
+      </div>
+      <div class="item">
+        <div class="ico" style="background:var(--rosa)"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M9 3h6v3H9zM10 6v2.2A5 5 0 0 0 6 13v5a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3v-5a5 5 0 0 0-4-4.8V6"/></svg></div>
+        <div><strong>Designers, árabes e nicho</strong><p>Do perfume de grife ao árabe que lembra ele.</p></div>
+      </div>
+    </section>
+
+    <p class="slogan">Sem perfume falso, <b>sem oferta falsa.</b></p>
+    <footer><a href="https://www.instagram.com/valotaparfum/" rel="noopener">Instagram @valotaparfum</a></footer>
+  </main>
+</div>
+
+<div class="fixa" id="fixa" aria-hidden="true">
+  <a class="btn" tabindex="-1" href="https://chat.whatsapp.com/IpapnNqakmQJilcfKIi7jM?s=cl&amp;p=i&amp;iam=2" rel="noopener">Entrar no grupo gratuito
+    <svg class="seta" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </a>
+</div>
+
+<script>
+  (function(){
+    var cta=document.getElementById('cta'),fixa=document.getElementById('fixa');
+    if(!('IntersectionObserver' in window))return;
+    new IntersectionObserver(function(e){fixa.classList.toggle('on',!e[0].isIntersecting && e[0].boundingClientRect.top<0)}).observe(cta);
+  })();
+</script>
+</body>
+</html>

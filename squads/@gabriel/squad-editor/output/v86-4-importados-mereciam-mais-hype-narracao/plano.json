@@ -1,0 +1,108 @@
+{
+  "tipo": "motion",
+  "titulo": "v86 · 4 importados que mereciam mais hype (narração creme)",
+  "referencia": "@lucasleitefrag Dfvcm6xtKpQ, roteiro linha a linha; Bleu Noir trocado por Acqua di Giò Parfum",
+  "legenda": {
+    "usar": true,
+    "destaque": "nomes dos perfumes com marca-texto âmbar",
+    "palavras_chave": []
+  },
+  "cenas": [
+    {
+      "id": "capa",
+      "inicio": 0,
+      "fim": 5.87,
+      "fala": "Esses quatro perfumes importados mereciam muito mais hype… o primeiro é o Armani Code Parfum, um dos meus favoritos da vida.",
+      "ideia": "gancho fixo ~6 s",
+      "layout": "cheia",
+      "visual": "capa creme: 4 PERFUMES IMPORTADOS / QUE MERECIAM / MAIS HYPE + 4 cards \"?\" (o 1º vira o Armani Code) + selo ❤️ UM DOS MEUS FAVORITOS",
+      "movimento": "cards balançando, 1º card gira e revela o frasco",
+      "quadro": {
+        "html": "index.html",
+        "t": 5.6
+      }
+    },
+    {
+      "id": "c",
+      "inicio": 5.87,
+      "fim": 16.73,
+      "fala": "Sabe o Le Male Le Parfum… íris, talco e baunilha… passa de 10 horas na minha pele.",
+      "ideia": "ARMANI CODE PARFUM → versão adulta do LE MALE LE PARFUM",
+      "layout": "cheia",
+      "visual": "1 DE 4 + card branco + card VERSÃO ADULTA DO + notas ÍRIS/BAUNILHA + pílulas FAVORITO → +10H NA MINHA PELE",
+      "movimento": "pop no nome, card no Le Male, cortina na troca",
+      "quadro": {
+        "html": "index.html",
+        "t": 15.6
+      }
+    },
+    {
+      "id": "g",
+      "inicio": 16.73,
+      "fim": 29.08,
+      "fala": "Gentleman Society Extrême… café com baunilha… nada de perfume de formiguinha… passa das 8 horas.",
+      "ideia": "GENTLEMAN SOCIETY EXTRÊME (café)",
+      "layout": "cheia",
+      "visual": "2 DE 4 + card branco centralizado + notas CAFÉ/BAUNILHA + pílulas FORMIGUINHA → MADURO, SÉRIO E +8H",
+      "movimento": "pop no nome e nas notas",
+      "quadro": {
+        "html": "index.html",
+        "t": 28.6
+      }
+    },
+    {
+      "id": "v",
+      "inicio": 29.08,
+      "fim": 41.72,
+      "fala": "Valentino Uomo Intense… íris, baunilha, ervinha e couro… vibe do Dior Homme Intense… só sai no banho.",
+      "ideia": "VALENTINO UOMO INTENSE → vibe do DIOR HOMME INTENSE",
+      "layout": "cheia",
+      "visual": "3 DE 4 + card branco (desliza pro lado quando entra o Dior) + 4 notas + pílulas CHEIRO BRUTO → +10H SÓ SAI NO BANHO",
+      "movimento": "pop nas notas na palavra",
+      "quadro": {
+        "html": "index.html",
+        "t": 39
+      }
+    },
+    {
+      "id": "q",
+      "inicio": 41.72,
+      "fim": 55.17,
+      "fala": "Acqua di Giò Parfum… mar, incenso e madeira… o clássico muito mais melhorado, versão 2.0.",
+      "ideia": "ACQUA DI GIÒ PARFUM → versão 2.0 do ACQUA DI GIÒ clássico",
+      "layout": "cheia",
+      "visual": "4 DE 4 + card branco (desliza quando entra o clássico) + notas MAR/INCENSO/MADEIRA + pílulas MUITO MAIS MELHORADO → MAIS ESCURO E ELEGANTE",
+      "movimento": "pop nas notas",
+      "quadro": {
+        "html": "index.html",
+        "t": 54.2
+      }
+    },
+    {
+      "id": "fim",
+      "inicio": 55.17,
+      "fim": 62.897,
+      "fala": "E aí, você concorda… salva esse vídeo… segue a Valota Parfum pra mais dicas e achados de perfumaria.",
+      "ideia": "concorda? + salva + segue",
+      "layout": "cheia",
+      "visual": "E AÍ, CONCORDA? + MERECIAM MAIS HYPE + 4 minis + SALVA PRA NÃO ESQUECER + SEGUE A @VALOTAPARFUM",
+      "movimento": "pop em sequência",
+      "quadro": {
+        "html": "index.html",
+        "t": 61.5
+      }
+    }
+  ],
+  "audio": {
+    "narracao": "narracao_175.wav",
+    "musica": null,
+    "efeitos": "whoosh por cena, impacto no nome, brilho no card de comparação, pop nas notas, ding nas pílulas"
+  },
+  "encerramento": "CTA padrão de indicação: salva + segue a Valota Parfum",
+  "aprovacao": {
+    "aprovado": true,
+    "em": "2026-11-25T10:32:29.693Z",
+    "nota": "Osiany 25/11: manda bala (storyboard aprovado)",
+    "impressao": "4caeaa5b07a5a276"
+  }
+}

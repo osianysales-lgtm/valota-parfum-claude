@@ -1,0 +1,308 @@
+{
+ "narracao": {
+  "file": "narracao_175.wav",
+  "volume": 1
+ },
+ "sfx": [
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_suave.mp3",
+   "t": 0.05,
+   "volume": 0.4
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/impact_grave.mp3",
+   "t": 0.3,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/carimbo.mp3",
+   "t": 1.718,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/carimbo.mp3",
+   "t": 2.401,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/carimbo.mp3",
+   "t": 3.469,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_rapido.mp3",
+   "t": 4.165,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/impact_grave.mp3",
+   "t": 5.703,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 7.773,
+   "volume": 0.32
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/click_ui.mp3",
+   "t": 8.857,
+   "volume": 0.35
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 9.235,
+   "volume": 0.22
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 9.475,
+   "volume": 0.22
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 9.715,
+   "volume": 0.22
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 12.805,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/impact_grave.mp3",
+   "t": 14.311,
+   "volume": 0.25
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/ding_acerto.mp3",
+   "t": 14.561,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_suave.mp3",
+   "t": 14.981,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/buzzer_erro.mp3",
+   "t": 15.031,
+   "volume": 0.22
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_rapido.mp3",
+   "t": 17.661,
+   "volume": 0.25
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 19.418,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_rapido.mp3",
+   "t": 21.455,
+   "volume": 0.25
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 23.359,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_rapido.mp3",
+   "t": 24.626,
+   "volume": 0.25
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 25.761,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_suave.mp3",
+   "t": 26.63,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/ding_acerto.mp3",
+   "t": 26.68,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/impact_grave.mp3",
+   "t": 27.711,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/shine_brilho.mp3",
+   "t": 29.688,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 30.325,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 30.677,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/plim_brilho_magico.mp3",
+   "t": 32.727,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_suave.mp3",
+   "t": 33.609,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_rapido.mp3",
+   "t": 33.659,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/impact_grave.mp3",
+   "t": 35.129,
+   "volume": 0.22
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 35.991,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 39.476,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 40.975,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 42.816,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_suave.mp3",
+   "t": 43.499,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_rapido.mp3",
+   "t": 43.549,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/click_ui.mp3",
+   "t": 46.475,
+   "volume": 0.35
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/shine_brilho.mp3",
+   "t": 49.395,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/impact_grave.mp3",
+   "t": 49.495,
+   "volume": 0.25
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/ding_acerto.mp3",
+   "t": 50.078,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 51.577,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 52.36,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/shine_brilho.mp3",
+   "t": 52.818,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_suave.mp3",
+   "t": 53.422,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_rapido.mp3",
+   "t": 53.472,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/boing_cartoon.mp3",
+   "t": 54.105,
+   "volume": 0.2
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/impact_grave.mp3",
+   "t": 55.664,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 56.905,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 57.277,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 57.582,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_suave.mp3",
+   "t": 58.106,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_rapido.mp3",
+   "t": 58.156,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/impact_grave.mp3",
+   "t": 59.565,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 60.328,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 61.098,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/click_ui.mp3",
+   "t": 62.431,
+   "volume": 0.4
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/plim_brilho_magico.mp3",
+   "t": 62.731,
+   "volume": 0.3
+  }
+ ]
+}

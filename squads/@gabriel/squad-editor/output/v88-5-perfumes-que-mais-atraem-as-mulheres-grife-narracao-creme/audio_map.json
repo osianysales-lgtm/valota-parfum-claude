@@ -1,0 +1,198 @@
+{
+ "narracao": {
+  "file": "narracao_175.wav",
+  "volume": 1
+ },
+ "sfx": [
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_suave.mp3",
+   "t": 0.05,
+   "volume": 0.4
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/impact_grave.mp3",
+   "t": 0.3,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_rapido.mp3",
+   "t": 5.713,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/impact_grave.mp3",
+   "t": 6.221,
+   "volume": 0.2
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 6.987,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 7.385,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 9.086,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/ding_acerto.mp3",
+   "t": 10.508,
+   "volume": 0.25
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_rapido.mp3",
+   "t": 11.934,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/impact_grave.mp3",
+   "t": 12.196,
+   "volume": 0.2
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 13.437,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 13.769,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 14.837,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 15.268,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/ding_acerto.mp3",
+   "t": 17.287,
+   "volume": 0.25
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_rapido.mp3",
+   "t": 18.741,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/impact_grave.mp3",
+   "t": 18.923,
+   "volume": 0.2
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 20.027,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 20.485,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 20.989,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/ding_acerto.mp3",
+   "t": 22.25,
+   "volume": 0.25
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_rapido.mp3",
+   "t": 24.453,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/impact_grave.mp3",
+   "t": 24.967,
+   "volume": 0.2
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 26.702,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 27.299,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/ding_acerto.mp3",
+   "t": 29.766,
+   "volume": 0.25
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/suspense_dun.mp3",
+   "t": 30.678,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_rapido.mp3",
+   "t": 30.678,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/impact_grave.mp3",
+   "t": 31.451,
+   "volume": 0.2
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 33.292,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 34.633,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 35.077,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/ding_acerto.mp3",
+   "t": 37.718,
+   "volume": 0.25
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/whoosh_rapido.mp3",
+   "t": 38.056,
+   "volume": 0.28
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/plim_brilho_magico.mp3",
+   "t": 38.156,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/pop_leve.mp3",
+   "t": 41.022,
+   "volume": 0.3
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/caixa_registradora.mp3",
+   "t": 41.818,
+   "volume": 0.22
+  },
+  {
+   "file": "../../biblioteca_audio/efeitos/click_ui.mp3",
+   "t": 43.157,
+   "volume": 0.4
+  }
+ ]
+}

@@ -1,5 +1,8 @@
 # Valota Parfum · regras globais
 
 - **LEGENDA OBRIGATÓRIA em todo vídeo com fala (Reels, narração, avatar, gravado, bonecos 3D, cliente, efeito, HyperFrames):** qualquer fala = legenda sincronizada na tela, do começo ao fim. A Osiany perde view sem legenda (gente no carro, no mudo, sem poder ouvir alto). Conferir na prévia e no vídeo final; sem legenda não entrega. Ela não vai lembrar: é sempre.
+- **LEGÍVEL NO CELULAR (25/11):** todo texto da tela (rótulo de nota, marca, chip, selo, legenda) tem que dar pra ler no celular: nada abaixo de ~28 px em vídeo 1080×1920, fonte grossa e contraste forte. Antes de mandar, reduzir um quadro de cada cena pra ~390 px de largura e ler.
 - **Todo texto falado ou corrido (avatar, narração, legenda, roteiro_voz) segue `REGRA-CONECTIVOS.md`:** 15–25 palavras por frase, toda frase começa com conectivo ou retoma a anterior, poucos pontos finais, lista numa frase só. Nada de frase solta que soe como robô.
 - **Vale pra QUALQUER copy, inclusive diálogo de bonecos e copy que já chega pronta do squad:** antes de gerar voz/vídeo, conferir a copy contra `REGRA-CONECTIVOS.md` e reescrever se estiver picotada (falas curtas soltas, muitos pontos). Diálogo = falas emendadas, cada uma retomando a anterior, no máximo 1–2 reações curtas por parte. A Osiany já pediu isso várias vezes: não esperar ela reclamar.
+
+- **JOSÉ confere os frascos ANTES de mandar (24/11):** toda peça com frasco recortado (vídeo, carrossel, capa, storyboard, prévia) passa pelo José (`.claude/agents/jose.md` + `squads/@gabriel/squad-editor/tools/jose.js`): folha ampliada no fundo da peça e no magenta + zoom de tampa e base, olhar um por um. Só manda com tudo ✅. A Osiany quer tudo perfeito.
